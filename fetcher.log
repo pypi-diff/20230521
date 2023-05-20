@@ -454,3 +454,30 @@
 [2023-05-21 01:19:20] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
 [2023-05-21 01:19:21] INFO root fetch - main [MainThread]: End processing [new-component]: success
 [2023-05-21 01:19:21] INFO root fetch - main [MainThread]: Store serial: [18184647]
+[2023-05-21 01:24:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184647]
+[2023-05-21 01:24:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 01:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wsgi_lithium
+[2023-05-21 01:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basinmaker
+[2023-05-21 01:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pain001
+[2023-05-21 01:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: returnn
+[2023-05-21 01:24:30] INFO root fetch - processPackages [wsgi_lithium]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 01:24:30] INFO root fetch - processPackages [pain001]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 01:24:30] INFO root fetch - processPackages [basinmaker]: New version: [3.1.0] Old Version: [3.0.3a0]
+[2023-05-21 01:24:30] INFO root fetch - processPackages [returnn]: New version: [1.20230521.10102] Old Version: [1.20230519.94459]
+[2023-05-21 01:24:30] INFO root fetch - processPackages [pain001]: executing diffoscope
+[2023-05-21 01:24:30] INFO root fetch - processPackages [pain001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pain001-0.0.8.tar.gz tmp/pain001-0.0.9.tar.gz --markdown 20230521/p/pain001/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 01:24:30] INFO root fetch - processPackages [basinmaker]: Downloading https://files.pythonhosted.org/packages/3c/b4/51e97761dbcddb0a3835096e96703ff9507cc14a1cd0995aa20298e59bf4/basinmaker-3.0.3a0.tar.gz
+[2023-05-21 01:24:30] INFO root fetch - processPackages [wsgi_lithium]: Downloading https://files.pythonhosted.org/packages/8f/3a/12995b03004b39b78050e1e89f7831dab6899ec1b057e983ff7773bcc345/wsgi_lithium-0.3.0.tar.gz
+[2023-05-21 01:24:30] INFO root fetch - processPackages [wsgi_lithium]: executing diffoscope
+[2023-05-21 01:24:30] INFO root fetch - processPackages [wsgi_lithium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsgi_lithium-0.2.0.tar.gz tmp/wsgi_lithium-0.3.0.tar.gz --markdown 20230521/w/wsgi_lithium/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 01:24:30] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/b1/0f/3ddcee07ad11ae0c60263eadd1f46751065b40acf82b9f996050936b8d32/returnn-1.20230521.10102.tar.gz
+[2023-05-21 01:24:30] INFO root fetch - processPackages [basinmaker]: Downloading https://files.pythonhosted.org/packages/9f/b8/e9079ab335ff05ce5ea025390184b193cdf27cb5e96ccbeb04ae5b120274/basinmaker-3.1.0.tar.gz
+[2023-05-21 01:24:30] INFO root fetch - processPackages [basinmaker]: executing diffoscope
+[2023-05-21 01:24:30] INFO root fetch - processPackages [basinmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basinmaker-3.0.3a0.tar.gz tmp/basinmaker-3.1.0.tar.gz --markdown 20230521/b/basinmaker/3.0.3a0-3.1.0/diff.md --exclude *.pyd
+[2023-05-21 01:24:31] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-05-21 01:24:31] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230519.94459.tar.gz tmp/returnn-1.20230521.10102.tar.gz --markdown 20230521/r/returnn/1.20230519.94459-1.20230521.10102/diff.md --exclude *.pyd
+[2023-05-21 01:24:31] INFO root fetch - main [MainThread]: End processing [pain001]: success
+[2023-05-21 01:24:31] INFO root fetch - main [MainThread]: End processing [wsgi_lithium]: success
+[2023-05-21 01:24:33] INFO root fetch - main [MainThread]: End processing [basinmaker]: success
+[2023-05-21 01:24:35] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-05-21 01:24:35] INFO root fetch - main [MainThread]: Store serial: [18184656]
