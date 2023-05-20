@@ -205,3 +205,25 @@
 [2023-05-21 00:36:16] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
 [2023-05-21 00:36:16] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
 [2023-05-21 00:36:16] INFO root fetch - main [MainThread]: Store serial: [18184531]
+[2023-05-21 00:41:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184531]
+[2023-05-21 00:41:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysr
+[2023-05-21 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sha256bit
+[2023-05-21 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: riotwatcher
+[2023-05-21 00:41:24] INFO root fetch - processPackages [sha256bit]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 00:41:24] INFO root fetch - processPackages [riotwatcher]: New version: [3.2.5] Old Version: [3.2.4]
+[2023-05-21 00:41:25] INFO root fetch - processPackages [pysr]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-21 00:41:25] INFO root fetch - processPackages [sha256bit]: executing diffoscope
+[2023-05-21 00:41:25] INFO root fetch - processPackages [sha256bit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sha256bit-0.0.6.tar.gz tmp/sha256bit-0.0.7.tar.gz --markdown 20230521/s/sha256bit/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 00:41:25] INFO root fetch - processPackages [riotwatcher]: Downloading https://files.pythonhosted.org/packages/2c/f1/176ca257e62bfd51b53dfd42ab2de87515de32e0b187290c5ad9c4d8bc30/riotwatcher-3.2.4.tar.gz
+[2023-05-21 00:41:25] INFO root fetch - processPackages [pysr]: Downloading https://files.pythonhosted.org/packages/73/ab/db4ac056fdd819802b0be21ffe3646ee022a42f6a5dc9284315b12b4a5a0/pysr-0.9.4.tar.gz
+[2023-05-21 00:41:25] INFO root fetch - processPackages [riotwatcher]: Downloading https://files.pythonhosted.org/packages/d8/f9/7e7f2f56fd27af66158ee62eb85d330e4fe5b67f98457d44a94fcabd8022/riotwatcher-3.2.5.tar.gz
+[2023-05-21 00:41:25] INFO root fetch - processPackages [pysr]: Downloading https://files.pythonhosted.org/packages/94/ab/d3fde0e696012fdbfa1a72dbc577dac59abbdf676445377b79642490eea7/pysr-0.9.5.tar.gz
+[2023-05-21 00:41:25] INFO root fetch - processPackages [pysr]: executing diffoscope
+[2023-05-21 00:41:25] INFO root fetch - processPackages [pysr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysr-0.9.4.tar.gz tmp/pysr-0.9.5.tar.gz --markdown 20230521/p/pysr/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-21 00:41:25] INFO root fetch - processPackages [riotwatcher]: executing diffoscope
+[2023-05-21 00:41:25] INFO root fetch - processPackages [riotwatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riotwatcher-3.2.4.tar.gz tmp/riotwatcher-3.2.5.tar.gz --markdown 20230521/r/riotwatcher/3.2.4-3.2.5/diff.md --exclude *.pyd
+[2023-05-21 00:41:26] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
+[2023-05-21 00:41:26] INFO root fetch - main [MainThread]: End processing [pysr]: success
+[2023-05-21 00:41:27] INFO root fetch - main [MainThread]: End processing [riotwatcher]: success
+[2023-05-21 00:41:27] INFO root fetch - main [MainThread]: Store serial: [18184540]
