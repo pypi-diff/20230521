@@ -299,3 +299,23 @@
 [2023-05-21 00:57:06] INFO root fetch - processPackages [mkdocs-entangled-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_entangled_plugin-0.2.0.tar.gz tmp/mkdocs_entangled_plugin-0.3.0.tar.gz --markdown 20230521/m/mkdocs-entangled-plugin/0.2.0-0.3.0/diff.md --exclude *.pyd
 [2023-05-21 00:57:07] INFO root fetch - main [MainThread]: End processing [mkdocs-entangled-plugin]: success
 [2023-05-21 00:57:07] INFO root fetch - main [MainThread]: Store serial: [18184573]
+[2023-05-21 01:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184573]
+[2023-05-21 01:02:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 01:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llfuse
+[2023-05-21 01:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2023-05-21 01:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt-cu101
+[2023-05-21 01:02:16] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-21 01:02:16] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230519] Old Version: [0.7.0b20230518]
+[2023-05-21 01:02:16] INFO root fetch - processPackages [llfuse]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-21 01:02:16] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-21 01:02:16] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230521/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-21 01:02:16] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-21 01:02:16] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230518.tar.gz tmp/tmnt-cu101-0.7.0b20230519.tar.gz --markdown 20230521/t/tmnt-cu101/0.7.0b20230518-0.7.0b20230519/diff.md --exclude *.pyd
+[2023-05-21 01:02:16] INFO root fetch - processPackages [llfuse]: Downloading https://files.pythonhosted.org/packages/16/33/fa07c4ddfc30fb7e629897d5f79cd8086e5636c599248fe39a6fafd0acbe/llfuse-1.4.3.tar.gz
+[2023-05-21 01:02:16] INFO root fetch - processPackages [llfuse]: Downloading https://files.pythonhosted.org/packages/3e/c3/d74bb2dbfc2eddae86b209f134f8ef655db34c7f5104c1fccd4df5a05da3/llfuse-1.4.4.tar.gz
+[2023-05-21 01:02:16] INFO root fetch - processPackages [llfuse]: executing diffoscope
+[2023-05-21 01:02:16] INFO root fetch - processPackages [llfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llfuse-1.4.3.tar.gz tmp/llfuse-1.4.4.tar.gz --markdown 20230521/l/llfuse/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-21 01:02:17] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-21 01:02:19] INFO root fetch - main [MainThread]: End processing [llfuse]: success
+[2023-05-21 01:02:36] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-21 01:02:36] INFO root fetch - main [MainThread]: Store serial: [18184587]
