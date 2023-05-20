@@ -537,3 +537,43 @@
 [2023-05-21 01:34:59] INFO root fetch - processPackages [jrnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrnl-4.0b2.tar.gz tmp/jrnl-4.0b3.tar.gz --markdown 20230521/j/jrnl/4.0b2-4.0b3/diff.md --exclude *.pyd
 [2023-05-21 01:35:00] INFO root fetch - main [MainThread]: End processing [jrnl]: success
 [2023-05-21 01:35:00] INFO root fetch - main [MainThread]: Store serial: [18184677]
+[2023-05-21 01:40:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184677]
+[2023-05-21 01:40:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytez
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textagon
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proconip
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: politely
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bytez
+[2023-05-21 01:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiotieba-reviewer
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [proconip]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [politely]: New version: [3.3.0] Old Version: [3.2.5]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [aiotieba-reviewer]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-05-21 01:40:09] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230521/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/4b/c6/6e602e8c75941c1f86487172c2f26bbdb624cd7c57c8fd098041a81d4240/bytez-0.1.95.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/4b/c6/6e602e8c75941c1f86487172c2f26bbdb624cd7c57c8fd098041a81d4240/bytez-0.1.95.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [politely]: Downloading https://files.pythonhosted.org/packages/fd/ac/50c7d5b0af2757e833ea7c45b1d901660e616543beedcfe5289ad1774b7a/politely-3.2.5.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [aiotieba-reviewer]: Downloading https://files.pythonhosted.org/packages/30/4f/cafd81a4d8e18ce8dea56b1f52335223622088604c2126aa53f273cfae3c/aiotieba-reviewer-0.1.8.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.94.tar.gz tmp/bytez-0.1.95.tar.gz --markdown 20230521/b/bytez/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.94.tar.gz tmp/bytez-0.1.95.tar.gz --markdown 20230521/b/bytez/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-21 01:40:09] INFO root fetch - processPackages [proconip]: Downloading https://files.pythonhosted.org/packages/0a/1a/c23ea9b1d6dd8bf2817578968c98139d32df4ae43df0fb95a1f70cd91440/proconip-1.0.0.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [politely]: Downloading https://files.pythonhosted.org/packages/8c/4d/1a43cab41d71ed371de8cc0e632d67154dd170dde40a3836ff057553ccd9/politely-3.3.0.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [proconip]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [proconip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proconip-0.0.2.tar.gz tmp/proconip-1.0.0.tar.gz --markdown 20230521/p/proconip/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 01:40:09] INFO root fetch - processPackages [politely]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [politely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/politely-3.2.5.tar.gz tmp/politely-3.3.0.tar.gz --markdown 20230521/p/politely/3.2.5-3.3.0/diff.md --exclude *.pyd
+[2023-05-21 01:40:09] INFO root fetch - processPackages [aiotieba-reviewer]: Downloading https://files.pythonhosted.org/packages/9c/1b/748c9493fd2396aa413f601219bd122935bb71015a502039da7d5bc4e596/aiotieba-reviewer-0.2.0.tar.gz
+[2023-05-21 01:40:09] INFO root fetch - processPackages [aiotieba-reviewer]: executing diffoscope
+[2023-05-21 01:40:09] INFO root fetch - processPackages [aiotieba-reviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotieba-reviewer-0.1.8.tar.gz tmp/aiotieba-reviewer-0.2.0.tar.gz --markdown 20230521/a/aiotieba-reviewer/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 01:40:10] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 01:40:10] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 01:40:10] INFO root fetch - main [MainThread]: End processing [proconip]: success
+[2023-05-21 01:40:11] INFO root fetch - main [MainThread]: End processing [politely]: success
+[2023-05-21 01:40:11] INFO root fetch - main [MainThread]: End processing [aiotieba-reviewer]: success
+[2023-05-21 01:40:13] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-21 01:40:13] INFO root fetch - main [MainThread]: Store serial: [18184698]
