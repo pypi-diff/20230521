@@ -267,3 +267,22 @@
 [2023-05-21 00:46:44] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-21 00:46:45] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-21 00:46:45] INFO root fetch - main [MainThread]: Store serial: [18184558]
+[2023-05-21 00:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184558]
+[2023-05-21 00:51:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 00:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2023-05-21 00:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalpy
+[2023-05-21 00:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inference-interface
+[2023-05-21 00:51:53] INFO root fetch - processPackages [kfish]: New version: [99.0.202305202245] Old Version: [99.0.202305202036]
+[2023-05-21 00:51:53] INFO root fetch - processPackages [digitalpy]: New version: [0.3.9.2] Old Version: [0.3.9.1]
+[2023-05-21 00:51:53] WARNING root fetch - processPackages [inference-interface]: Skipping, unable to determine old version
+[2023-05-21 00:51:53] INFO root fetch - main [MainThread]: End processing [inference-interface] error
+[2023-05-21 00:51:53] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/ce/2f/cb592223516f27008542c294718a1fe350cada22541c7064f9b43e29af10/kfish-99.0.202305202245-py3-none-any.whl
+[2023-05-21 00:51:53] INFO root fetch - processPackages [digitalpy]: Downloading https://files.pythonhosted.org/packages/f8/ba/15ed2b4188119cb9560b4b2c6cb641f7ad0d8b0bcc3de0a2f360c901bc39/digitalpy-0.3.9.1.tar.gz
+[2023-05-21 00:51:53] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-21 00:51:53] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305202036-py3-none-any.whl.zip tmp/kfish-99.0.202305202245-py3-none-any.whl.zip --markdown 20230521/k/kfish/99.0.202305202036-99.0.202305202245/diff.md --exclude *.pyd
+[2023-05-21 00:51:54] INFO root fetch - processPackages [digitalpy]: Downloading https://files.pythonhosted.org/packages/a4/30/e7b995fd3fbdee7a21ab1bc52e16c1f0faeeaacf5fad65b400166a004b90/digitalpy-0.3.9.2.tar.gz
+[2023-05-21 00:51:54] INFO root fetch - processPackages [digitalpy]: executing diffoscope
+[2023-05-21 00:51:54] INFO root fetch - processPackages [digitalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalpy-0.3.9.1.tar.gz tmp/digitalpy-0.3.9.2.tar.gz --markdown 20230521/d/digitalpy/0.3.9.1-0.3.9.2/diff.md --exclude *.pyd
+[2023-05-21 00:51:54] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-21 00:51:56] INFO root fetch - main [MainThread]: End processing [digitalpy]: success
+[2023-05-21 00:51:56] INFO root fetch - main [MainThread]: Store serial: [18184566]
