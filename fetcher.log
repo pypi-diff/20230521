@@ -440,3 +440,17 @@
 [2023-05-21 01:13:36] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-21 01:14:00] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-05-21 01:14:00] INFO root fetch - main [MainThread]: Store serial: [18184641]
+[2023-05-21 01:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184641]
+[2023-05-21 01:19:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 01:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-beta
+[2023-05-21 01:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: new-component
+[2023-05-21 01:19:19] INFO root fetch - processPackages [certora-cli-beta]: New version: [4.0.5] Old Version: [4.0.4]
+[2023-05-21 01:19:19] INFO root fetch - processPackages [new-component]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-21 01:19:20] INFO root fetch - processPackages [certora-cli-beta]: Downloading https://files.pythonhosted.org/packages/3c/ab/892308217fa41b4a977209cd60b5d0284bf9871dd4090c997941590e4408/certora-cli-beta-4.0.4.tar.gz
+[2023-05-21 01:19:20] INFO root fetch - processPackages [new-component]: Downloading https://files.pythonhosted.org/packages/1c/9c/e502459d6b1bd493e2f8890d60ae41e37cd1b61886a6712eae8cd44df9d4/new-component-0.4.4.tar.gz
+[2023-05-21 01:19:20] INFO root fetch - processPackages [new-component]: executing diffoscope
+[2023-05-21 01:19:20] INFO root fetch - processPackages [new-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/new-component-0.4.3.tar.gz tmp/new-component-0.4.4.tar.gz --markdown 20230521/n/new-component/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-21 01:19:20] WARNING root fetch - processPackages [certora-cli-beta]: Skipping package: exceeds size limit 38974453>=10485760
+[2023-05-21 01:19:20] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
+[2023-05-21 01:19:21] INFO root fetch - main [MainThread]: End processing [new-component]: success
+[2023-05-21 01:19:21] INFO root fetch - main [MainThread]: Store serial: [18184647]
