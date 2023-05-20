@@ -632,3 +632,41 @@
 [2023-05-21 01:50:37] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 01:50:43] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
 [2023-05-21 01:50:43] INFO root fetch - main [MainThread]: Store serial: [18184724]
+[2023-05-21 01:55:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184724]
+[2023-05-21 01:55:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 01:55:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: to-pip
+[2023-05-21 01:55:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bytez
+[2023-05-21 01:55:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskipy
+[2023-05-21 01:55:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bytez
+[2023-05-21 01:55:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: animegifs
+[2023-05-21 01:55:52] INFO root fetch - processPackages [taskipy]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-05-21 01:55:52] INFO root fetch - processPackages [to-pip]: New version: [2.0.0] Old Version: [1.9.2]
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 01:55:52] INFO root fetch - processPackages [animegifs]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/5b/65/aebd869c34d69110e07864d55bec8e3c3ef1164ded7ad15990ae5d6c46c4/bytez-0.1.98.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/5b/65/aebd869c34d69110e07864d55bec8e3c3ef1164ded7ad15990ae5d6c46c4/bytez-0.1.98.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [to-pip]: Downloading https://files.pythonhosted.org/packages/86/50/db48b2ec1a034f0dc7dec4c2a493ffd09f5709507fe3b88adfb4551e642b/to-pip-1.9.2.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [taskipy]: Downloading https://files.pythonhosted.org/packages/e0/cb/184cefa69870cb3e4b35ae72f6cdd346d7c7d6367afcc4b81e165c5186df/taskipy-1.8.2.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [animegifs]: Downloading https://files.pythonhosted.org/packages/dc/e6/46c02456cdb9e747162efd10abf6c4d39d498fac2d0d5082f904b52bed6a/animegifs-0.5.2.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [to-pip]: Downloading https://files.pythonhosted.org/packages/71/38/2b87d72702332729b6715c0b0e47f91de8efcbdaab93ce9b06162202969d/to-pip-2.0.0.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [animegifs]: Downloading https://files.pythonhosted.org/packages/36/a3/d3aca617dc947cc59e022094e128aff8bb7c23c477e2e70fa3197d8ffed6/animegifs-0.5.3.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/6e/80/4e6a1f9975f14fc67430db156c377405ed3413411112910687459668dbde/bytez-0.1.99.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/6e/80/4e6a1f9975f14fc67430db156c377405ed3413411112910687459668dbde/bytez-0.1.99.tar.gz
+[2023-05-21 01:55:52] INFO root fetch - processPackages [taskipy]: Downloading https://files.pythonhosted.org/packages/79/54/fd460129c71ec41464da5cc3e360d3e466d4054630d295f25a5368914bde/taskipy-1.9.0.tar.gz
+[2023-05-21 01:55:53] INFO root fetch - processPackages [to-pip]: executing diffoscope
+[2023-05-21 01:55:53] INFO root fetch - processPackages [to-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-pip-1.9.2.tar.gz tmp/to-pip-2.0.0.tar.gz --markdown 20230521/t/to-pip/1.9.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-21 01:55:53] INFO root fetch - processPackages [animegifs]: executing diffoscope
+[2023-05-21 01:55:53] INFO root fetch - processPackages [animegifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animegifs-0.5.2.tar.gz tmp/animegifs-0.5.3.tar.gz --markdown 20230521/a/animegifs/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-21 01:55:53] INFO root fetch - processPackages [taskipy]: executing diffoscope
+[2023-05-21 01:55:53] INFO root fetch - processPackages [taskipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskipy-1.8.2.tar.gz tmp/taskipy-1.9.0.tar.gz --markdown 20230521/t/taskipy/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 01:55:53] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 01:55:53] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 01:55:53] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 01:55:53] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [to-pip]: success
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [animegifs]: success
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [taskipy]: success
+[2023-05-21 01:55:54] INFO root fetch - main [MainThread]: Store serial: [18184744]
