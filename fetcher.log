@@ -286,3 +286,16 @@
 [2023-05-21 00:51:54] INFO root fetch - main [MainThread]: End processing [kfish]: success
 [2023-05-21 00:51:56] INFO root fetch - main [MainThread]: End processing [digitalpy]: success
 [2023-05-21 00:51:56] INFO root fetch - main [MainThread]: Store serial: [18184566]
+[2023-05-21 00:57:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184566]
+[2023-05-21 00:57:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 00:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-entangled-plugin
+[2023-05-21 00:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MakerToolbox
+[2023-05-21 00:57:05] WARNING root fetch - processPackages [MakerToolbox]: Skipping, unable to determine old version
+[2023-05-21 00:57:05] INFO root fetch - main [MainThread]: End processing [MakerToolbox] error
+[2023-05-21 00:57:05] INFO root fetch - processPackages [mkdocs-entangled-plugin]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 00:57:05] INFO root fetch - processPackages [mkdocs-entangled-plugin]: Downloading https://files.pythonhosted.org/packages/9b/a2/f94a86faae15f76daf39735f4aed443a9fb5af5e568919f9d472cbc222b5/mkdocs_entangled_plugin-0.2.0.tar.gz
+[2023-05-21 00:57:06] INFO root fetch - processPackages [mkdocs-entangled-plugin]: Downloading https://files.pythonhosted.org/packages/ff/17/e54ee4de120c4caf5a63ffbd406749b78551cbfb4233a9fbe52a711ac15a/mkdocs_entangled_plugin-0.3.0.tar.gz
+[2023-05-21 00:57:06] INFO root fetch - processPackages [mkdocs-entangled-plugin]: executing diffoscope
+[2023-05-21 00:57:06] INFO root fetch - processPackages [mkdocs-entangled-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_entangled_plugin-0.2.0.tar.gz tmp/mkdocs_entangled_plugin-0.3.0.tar.gz --markdown 20230521/m/mkdocs-entangled-plugin/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 00:57:07] INFO root fetch - main [MainThread]: End processing [mkdocs-entangled-plugin]: success
+[2023-05-21 00:57:07] INFO root fetch - main [MainThread]: Store serial: [18184573]
