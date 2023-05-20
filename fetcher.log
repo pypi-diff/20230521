@@ -385,3 +385,58 @@
 [2023-05-21 01:07:54] INFO root fetch - main [MainThread]: End processing [tomcli]: success
 [2023-05-21 01:08:20] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-21 01:08:20] INFO root fetch - main [MainThread]: Store serial: [18184618]
+[2023-05-21 01:13:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184618]
+[2023-05-21 01:13:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-reveal-slides
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latch-postgres
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hstrat
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xspf-lib
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: abc-0329
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: abc-0329
+[2023-05-21 01:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-master
+[2023-05-21 01:13:28] INFO root fetch - processPackages [latch-postgres]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [kfish]: New version: [99.0.202305202247] Old Version: [99.0.202305202245]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [abc-0329]: New version: [1684623811] Old Version: [1684623787]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [xspf-lib]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [hstrat]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [abc-0329]: New version: [1684623811] Old Version: [1684623787]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230520.9.20.792154] Old Version: [20230520.8.16.965969]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [abc-0329]: Downloading https://files.pythonhosted.org/packages/18/7e/e8835031694c98ea9b2e27e7cf9dbb6b37defc83c581803d8e053e956d19/abc_0329-1684623787.tar.gz
+[2023-05-21 01:13:28] INFO root fetch - processPackages [kcli]: New version: [99.0.202305202309] Old Version: [99.0.202305202245]
+[2023-05-21 01:13:28] INFO root fetch - processPackages [abc-0329]: Downloading https://files.pythonhosted.org/packages/18/7e/e8835031694c98ea9b2e27e7cf9dbb6b37defc83c581803d8e053e956d19/abc_0329-1684623787.tar.gz
+[2023-05-21 01:13:28] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5a/7b/28c4e2dbb4636d6d074086dc294b4bf6cb806bd92571dd8330da241403d7/certora-cli-alpha-master-20230520.8.16.965969.tar.gz
+[2023-05-21 01:13:28] WARNING root fetch - processPackages [abc-0329]: Skipping package: exceeds size limit 16660716>=10485760
+[2023-05-21 01:13:28] INFO root fetch - main [MainThread]: End processing [abc-0329] error
+[2023-05-21 01:13:28] WARNING root fetch - processPackages [abc-0329]: Skipping package: exceeds size limit 16660716>=10485760
+[2023-05-21 01:13:29] INFO root fetch - main [MainThread]: End processing [abc-0329] error
+[2023-05-21 01:13:29] INFO root fetch - processPackages [xspf-lib]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [xspf-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xspf-lib-0.3.0.tar.gz tmp/xspf_lib-0.3.1.tar.gz --markdown 20230521/x/xspf-lib/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 01:13:29] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978979>=10485760
+[2023-05-21 01:13:29] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-21 01:13:29] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/ae/13/39d419d215647ab33e237cb4b041d4e3797e149ce92633170cb461336096/streamlit-reveal-slides-0.0.2.tar.gz
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/31/e4/bdad4af0e9eeafe014146c9e648026c601654ae5bed22c345c95d4a8b536/kcli-99.0.202305202245-py3-none-any.whl
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/06/63/75b47d657a037071e9511cd992d968464d479ec95e24aeb90019259c53a5/kfish-99.0.202305202247-py3-none-any.whl
+[2023-05-21 01:13:29] INFO root fetch - processPackages [hstrat]: Downloading https://files.pythonhosted.org/packages/7d/d6/c8ea3edb8bffc88bd688fd9b7e9f6d0a39f426bcf1e086fb352037e6be9b/hstrat-1.7.1-py2.py3-none-any.whl
+[2023-05-21 01:13:29] INFO root fetch - processPackages [latch-postgres]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [latch-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_postgres-0.1.8.tar.gz tmp/latch_postgres-0.1.9.tar.gz --markdown 20230521/l/latch-postgres/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305202245-py3-none-any.whl.zip tmp/kfish-99.0.202305202247-py3-none-any.whl.zip --markdown 20230521/k/kfish/99.0.202305202245-99.0.202305202247/diff.md --exclude *.pyd
+[2023-05-21 01:13:29] INFO root fetch - processPackages [hstrat]: Downloading https://files.pythonhosted.org/packages/1a/e0/aff69cd9507c8677d2d0162e5fe51bc8b23b9d6f395fa50a426da1429992/hstrat-1.7.2.tar.gz
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/ca/dd/94bde4ab1c54cab7ce796f5f8b3177e3ea26a18c1c77a7a10db4a781d0a1/kcli-99.0.202305202309-py3-none-any.whl
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305202245-py3-none-any.whl.zip tmp/kcli-99.0.202305202309-py3-none-any.whl.zip --markdown 20230521/k/kcli/99.0.202305202245-99.0.202305202309/diff.md --exclude *.pyd
+[2023-05-21 01:13:29] INFO root fetch - processPackages [hstrat]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [hstrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstrat-1.7.1-py2.py3-none-any.whl.zip tmp/hstrat-1.7.2.tar.gz --markdown 20230521/h/hstrat/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-21 01:13:29] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/a4/02/611f2439661288b376f2d753410093cb2d172025f17f29ca54ad51f744d2/streamlit-reveal-slides-0.1.0.tar.gz
+[2023-05-21 01:13:29] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-05-21 01:13:29] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.0.2.tar.gz tmp/streamlit-reveal-slides-0.1.0.tar.gz --markdown 20230521/s/streamlit-reveal-slides/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 01:13:30] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
+[2023-05-21 01:13:30] INFO root fetch - main [MainThread]: End processing [latch-postgres]: success
+[2023-05-21 01:13:30] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-21 01:13:35] INFO root fetch - main [MainThread]: End processing [hstrat]: success
+[2023-05-21 01:13:36] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-21 01:14:00] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-05-21 01:14:00] INFO root fetch - main [MainThread]: Store serial: [18184641]
