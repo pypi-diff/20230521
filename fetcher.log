@@ -53,3 +53,32 @@
 [2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
 [2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
 [2023-05-21 00:08:59] INFO root fetch - main [MainThread]: Store serial: [18184448]
+[2023-05-21 00:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184448]
+[2023-05-21 00:14:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 00:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IMDBTraktSyncer
+[2023-05-21 00:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mathsym-adasneves
+[2023-05-21 00:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: veilcord
+[2023-05-21 00:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mathsym-adasneves
+[2023-05-21 00:14:08] INFO root fetch - processPackages [mathsym-adasneves]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-21 00:14:08] INFO root fetch - processPackages [veilcord]: New version: [0.0.2] Old Version: [0.0.0.5]
+[2023-05-21 00:14:08] INFO root fetch - processPackages [mathsym-adasneves]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-21 00:14:08] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-21 00:14:08] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/c8/06/7453fc7186c98a606df6cab9905f49026b5e229d5c97cd7df12e9f74d4a6/mathsym_adasneves-1.1.2.tar.gz
+[2023-05-21 00:14:08] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/c8/06/7453fc7186c98a606df6cab9905f49026b5e229d5c97cd7df12e9f74d4a6/mathsym_adasneves-1.1.2.tar.gz
+[2023-05-21 00:14:08] INFO root fetch - processPackages [veilcord]: Downloading https://files.pythonhosted.org/packages/33/2a/0e2b49e5f7b417ea26874c4bb106ecf500f61772d59f4246dcd62eb7bed2/veilcord-0.0.2.tar.gz
+[2023-05-21 00:14:08] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/c5/35/a31faaecb7ad2ddae134b516f5bc849c8ba3c935f5207fb086dd49dbbd22/IMDBTraktSyncer-1.2.4.tar.gz
+[2023-05-21 00:14:08] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-21 00:14:08] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.5.tar.gz tmp/veilcord-0.0.2.tar.gz --markdown 20230521/v/veilcord/0.0.0.5-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 00:14:09] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-21 00:14:09] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.2.3.tar.gz tmp/IMDBTraktSyncer-1.2.4.tar.gz --markdown 20230521/I/IMDBTraktSyncer/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/fc/7f/31be2927147a2156f1d84706d733ab4e52ebc99930d8ee050806c5aac097/mathsym_adasneves-1.1.3.tar.gz
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/fc/7f/31be2927147a2156f1d84706d733ab4e52ebc99930d8ee050806c5aac097/mathsym_adasneves-1.1.3.tar.gz
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: executing diffoscope
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathsym_adasneves-1.1.2.tar.gz tmp/mathsym_adasneves-1.1.3.tar.gz --markdown 20230521/m/mathsym-adasneves/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: executing diffoscope
+[2023-05-21 00:14:09] INFO root fetch - processPackages [mathsym-adasneves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathsym_adasneves-1.1.2.tar.gz tmp/mathsym_adasneves-1.1.3.tar.gz --markdown 20230521/m/mathsym-adasneves/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-21 00:14:10] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-21 00:14:10] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-21 00:14:10] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
+[2023-05-21 00:14:52] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
+[2023-05-21 00:14:52] INFO root fetch - main [MainThread]: Store serial: [18184463]
