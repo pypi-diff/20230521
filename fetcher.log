@@ -26,3 +26,30 @@
 [2023-05-21 00:03:48] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
 [2023-05-21 00:03:49] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
 [2023-05-21 00:03:49] INFO root fetch - main [MainThread]: Store serial: [18184435]
+[2023-05-21 00:08:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184435]
+[2023-05-21 00:08:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 00:08:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: veilcord
+[2023-05-21 00:08:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xspf-lib
+[2023-05-21 00:08:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BTKSorgu
+[2023-05-21 00:08:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-rich-presence
+[2023-05-21 00:08:57] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.9] Old Version: [1.2.8.4]
+[2023-05-21 00:08:57] INFO root fetch - processPackages [xspf-lib]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 00:08:57] INFO root fetch - processPackages [discord-rich-presence]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-21 00:08:57] INFO root fetch - processPackages [veilcord]: New version: [0.0.0.5] Old Version: [0.0.0.40]
+[2023-05-21 00:08:57] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/87/a7/5ab87328a39fde96b365c792b8fbdd7b32d001ae774e55b169e1dca8e330/BTKSorgu-1.2.8.4.tar.gz
+[2023-05-21 00:08:57] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-21 00:08:57] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.40.tar.gz tmp/veilcord-0.0.0.5.tar.gz --markdown 20230521/v/veilcord/0.0.0.40-0.0.0.5/diff.md --exclude *.pyd
+[2023-05-21 00:08:57] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/79/c1/9ebe363a4741bc715b865824c62e6602a42b234c655b722a626037e53e5d/xspf-lib-0.3.0.tar.gz
+[2023-05-21 00:08:58] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-21 00:08:58] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.8.4.tar.gz tmp/BTKSorgu-1.2.9.tar.gz --markdown 20230521/B/BTKSorgu/1.2.8.4-1.2.9/diff.md --exclude *.pyd
+[2023-05-21 00:08:58] INFO root fetch - processPackages [discord-rich-presence]: Downloading https://files.pythonhosted.org/packages/af/a0/286d5b472f62b9d3f7368cbee66bc72f44e0c40fa3cfc1e26441fd37bc12/discord-rich-presence-1.0.2.tar.gz
+[2023-05-21 00:08:58] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/34/67/47ea10633e7c8e6e84a8a5f6593ccc4f0ae244b32c4c23605254ea5fc405/xspf_lib-0.3.1.tar.gz
+[2023-05-21 00:08:58] INFO root fetch - processPackages [discord-rich-presence]: executing diffoscope
+[2023-05-21 00:08:58] INFO root fetch - processPackages [discord-rich-presence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-rich-presence-1.0.1.tar.gz tmp/discord-rich-presence-1.0.2.tar.gz --markdown 20230521/d/discord-rich-presence/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-21 00:08:58] INFO root fetch - processPackages [xspf-lib]: executing diffoscope
+[2023-05-21 00:08:58] INFO root fetch - processPackages [xspf-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xspf-lib-0.3.0.tar.gz tmp/xspf_lib-0.3.1.tar.gz --markdown 20230521/x/xspf-lib/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [discord-rich-presence]: success
+[2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-21 00:08:59] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
+[2023-05-21 00:08:59] INFO root fetch - main [MainThread]: Store serial: [18184448]
