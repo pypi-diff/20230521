@@ -609,3 +609,26 @@
 [2023-05-21 01:45:24] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
 [2023-05-21 01:45:24] INFO root fetch - main [MainThread]: End processing [bytez]: success
 [2023-05-21 01:45:24] INFO root fetch - main [MainThread]: Store serial: [18184711]
+[2023-05-21 01:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184711]
+[2023-05-21 01:50:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 01:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlflow-tmp
+[2023-05-21 01:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ooo-dev-tools
+[2023-05-21 01:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synthizer
+[2023-05-21 01:50:32] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.7]
+[2023-05-21 01:50:32] INFO root fetch - processPackages [synthizer]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-21 01:50:32] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-21 01:50:33] INFO root fetch - processPackages [mlflow-tmp]: Downloading https://files.pythonhosted.org/packages/e8/c7/5b80893f9c9df9e90da1a59104b52a6157f307ba44ca801acd059b29984d/mlflow_tmp-2.2.7.tar.gz
+[2023-05-21 01:50:33] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/41/44/3184c5212ea19d64e5dcf92dc1f7e0c08bda64a5787bdf62a49038d1b40a/ooo_dev_tools-0.9.7.tar.gz
+[2023-05-21 01:50:33] INFO root fetch - processPackages [synthizer]: Downloading https://files.pythonhosted.org/packages/a4/75/ec1d33097caf213667ca3cb06ccbd448b6449e63469088bd81138036559a/synthizer-0.8.9.tar.gz
+[2023-05-21 01:50:33] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 01:50:33] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.7.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.7-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 01:50:33] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/20/e8/b38a2ad24f414b81985e10c35e1192cb22350ca6b0dc68f0104509e3c0bf/ooo_dev_tools-0.9.8.tar.gz
+[2023-05-21 01:50:33] INFO root fetch - processPackages [synthizer]: Downloading https://files.pythonhosted.org/packages/f8/73/9f5334662b91d5db3c03104d52a8597a9b67b8406b871d89bafccdef873d/synthizer-0.9.0.tar.gz
+[2023-05-21 01:50:33] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2023-05-21 01:50:33] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.7.tar.gz tmp/ooo_dev_tools-0.9.8.tar.gz --markdown 20230521/o/ooo-dev-tools/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-21 01:50:33] INFO root fetch - processPackages [synthizer]: executing diffoscope
+[2023-05-21 01:50:33] INFO root fetch - processPackages [synthizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthizer-0.8.9.tar.gz tmp/synthizer-0.9.0.tar.gz --markdown 20230521/s/synthizer/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 01:50:35] INFO root fetch - main [MainThread]: End processing [synthizer]: success
+[2023-05-21 01:50:37] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 01:50:43] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2023-05-21 01:50:43] INFO root fetch - main [MainThread]: Store serial: [18184724]
