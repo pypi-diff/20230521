@@ -163,3 +163,45 @@
 [2023-05-21 00:31:04] INFO root fetch - processPackages [capabilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capabilities-0.3.8.tar.gz tmp/capabilities-0.3.9.tar.gz --markdown 20230521/c/capabilities/0.3.8-0.3.9/diff.md --exclude *.pyd
 [2023-05-21 00:31:06] INFO root fetch - main [MainThread]: End processing [capabilities]: success
 [2023-05-21 00:31:06] INFO root fetch - main [MainThread]: Store serial: [18184513]
+[2023-05-21 00:36:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184513]
+[2023-05-21 00:36:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: triade
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphscope-client
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphscope
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gs-apps
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gs-coordinator
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-engine
+[2023-05-21 00:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-include
+[2023-05-21 00:36:14] INFO root fetch - processPackages [triade]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [graphscope-client]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-include]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-engine]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [graphscope]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-coordinator]: New version: [0.22.0a20230520] Old Version: [0.22.0a20230519]
+[2023-05-21 00:36:14] INFO root fetch - processPackages [triade]: Downloading https://files.pythonhosted.org/packages/61/b7/e933a98d2e932efd9325773f8e87022474a90e12d0f3d8c3252bde71a56d/triade-0.2.0.tar.gz
+[2023-05-21 00:36:14] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/54/8e/b9b0d5ed34122c052917f07b57e98d61997a1547de270001ee7ecc400569/graphscope_client-0.22.0a20230519-cp39-cp39-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:14] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 23356787>=10485760
+[2023-05-21 00:36:14] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/f3/9f/318b1dedc51ad50d42b9355ab52d1ed24ab9a37717aaa18c42ec812e4c1b/gs_include-0.22.0a20230519-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/57/72/debbd34b5096c07300e3228ef5cdd90ee6b46714e8f857d33ab358ebaa72/gs_apps-0.22.0a20230519-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:14] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/05/a3/858382c526d8ebd70c385cd64c98467d20fd585cd5d41e45ee2799739aea/graphscope-0.22.0a20230519-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:14] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 30431352>=10485760
+[2023-05-21 00:36:14] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-21 00:36:14] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 42840875>=10485760
+[2023-05-21 00:36:14] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-05-21 00:36:14] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 110721366>=10485760
+[2023-05-21 00:36:14] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2023-05-21 00:36:14] INFO root fetch - processPackages [triade]: Downloading https://files.pythonhosted.org/packages/f9/34/f5f5abeaf4c47d23305545a5efef8d71cad6d6c5dbdfa990b8dbb357f84d/triade-0.2.1.tar.gz
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/5c/10/4170fa44326c0ce0c699d0e2ba3c975b74acc029c0bf5c3bedb94561ca6c/gs_coordinator-0.22.0a20230520-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:14] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/40/d7/5bb8dc371b7d5689b84c44ab6d3de9b9f6eb34fdbf7880d22a27c2006924/gs_engine-0.22.0a20230520-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-21 00:36:15] INFO root fetch - processPackages [triade]: executing diffoscope
+[2023-05-21 00:36:15] INFO root fetch - processPackages [triade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triade-0.2.0.tar.gz tmp/triade-0.2.1.tar.gz --markdown 20230521/t/triade/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 00:36:15] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-05-21 00:36:15] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.22.0a20230519-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_coordinator-0.22.0a20230520-py2.py3-none-macosx_11_0_x86_64.whl.zip --markdown 20230521/g/gs-coordinator/0.22.0a20230519-0.22.0a20230520/diff.md --exclude *.pyd
+[2023-05-21 00:36:15] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2023-05-21 00:36:15] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.22.0a20230519-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_engine-0.22.0a20230520-py2.py3-none-macosx_11_0_x86_64.whl.zip --markdown 20230521/g/gs-engine/0.22.0a20230519-0.22.0a20230520/diff.md --exclude *.pyd
+[2023-05-21 00:36:16] INFO root fetch - main [MainThread]: End processing [triade]: success
+[2023-05-21 00:36:16] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2023-05-21 00:36:16] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-05-21 00:36:16] INFO root fetch - main [MainThread]: Store serial: [18184531]
