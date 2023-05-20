@@ -82,3 +82,47 @@
 [2023-05-21 00:14:10] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
 [2023-05-21 00:14:52] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
 [2023-05-21 00:14:52] INFO root fetch - main [MainThread]: Store serial: [18184463]
+[2023-05-21 00:19:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184463]
+[2023-05-21 00:20:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mindspore-dev
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fling-start
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eth-libs
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyInjection
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kurses-py
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easyenergy
+[2023-05-21 00:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: upk2esphome
+[2023-05-21 00:20:00] INFO root fetch - processPackages [mindspore-dev]: New version: [2.1.0.dev20230521] Old Version: [2.0.0rc1.dev20230514]
+[2023-05-21 00:20:00] INFO root fetch - processPackages [pyInjection]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-21 00:20:00] INFO root fetch - processPackages [easyenergy]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 00:20:00] INFO root fetch - processPackages [kurses-py]: New version: [0.1.1.2] Old Version: [0.1.1]
+[2023-05-21 00:20:00] WARNING root fetch - processPackages [eth-libs]: Skipping, unable to determine old version
+[2023-05-21 00:20:00] INFO root fetch - processPackages [upk2esphome]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-21 00:20:00] INFO root fetch - processPackages [fling-start]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 00:20:00] INFO root fetch - main [MainThread]: End processing [eth-libs] error
+[2023-05-21 00:20:01] INFO root fetch - processPackages [upk2esphome]: executing diffoscope
+[2023-05-21 00:20:01] INFO root fetch - processPackages [upk2esphome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upk2esphome-1.0.2.tar.gz tmp/upk2esphome-1.1.0.tar.gz --markdown 20230521/u/upk2esphome/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 00:20:01] INFO root fetch - processPackages [fling-start]: Downloading https://files.pythonhosted.org/packages/f2/3e/77f9fe6ab6feaffabfe3acc9b03eb372327af91aff161803eb95a07126f5/fling_start-0.1.8.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/3c/54/4145a44e5f0f1aa82da9d8b1bbd38cc950f886d77cc143c019ebb6ca8380/mindspore_dev-2.0.0rc1.dev20230514-cp39-none-any.whl
+[2023-05-21 00:20:01] INFO root fetch - processPackages [pyInjection]: Downloading https://files.pythonhosted.org/packages/7d/84/99a3aecb0b07e4d643aa0aada82ca67da366eda4f183c4bbbf37ee8d5356/pyInjection-1.0.7.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [easyenergy]: Downloading https://files.pythonhosted.org/packages/45/18/c005fb4bc6d9266ecf33e35d3d0bfafb63aada52aa92922feb63e2b3012b/easyenergy-0.3.0.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [kurses-py]: Downloading https://files.pythonhosted.org/packages/72/d3/8263aed32ce533d25548b7021dc61a616957b5f8e8973a621494c734afe3/kurses_py-0.1.1-py3-none-any.whl
+[2023-05-21 00:20:01] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 236681139>=10485760
+[2023-05-21 00:20:01] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2023-05-21 00:20:01] INFO root fetch - processPackages [fling-start]: Downloading https://files.pythonhosted.org/packages/63/2b/2b9ba9a11a01b3cff4d98799a8c0cf7a85cc3c4fac82f4487003cf5798de/fling_start-0.1.9.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [pyInjection]: Downloading https://files.pythonhosted.org/packages/49/18/7e0bac450874afce9ddf6d30ae963cfa8da6068218c8aea1e648ab979935/pyInjection-1.0.8.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [pyInjection]: executing diffoscope
+[2023-05-21 00:20:01] INFO root fetch - processPackages [pyInjection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyInjection-1.0.7.tar.gz tmp/pyInjection-1.0.8.tar.gz --markdown 20230521/p/pyInjection/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-21 00:20:01] INFO root fetch - processPackages [kurses-py]: Downloading https://files.pythonhosted.org/packages/40/3e/7cfee01d6fd0d6fa9fb7d19e5f7235518af69e6b054e52d9ccad0bcb4886/kurses_py-0.1.1.2.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [fling-start]: executing diffoscope
+[2023-05-21 00:20:01] INFO root fetch - processPackages [fling-start]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fling_start-0.1.8.tar.gz tmp/fling_start-0.1.9.tar.gz --markdown 20230521/f/fling-start/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 00:20:01] INFO root fetch - processPackages [easyenergy]: Downloading https://files.pythonhosted.org/packages/21/c4/5ca14d4cffaf80c6e8854d9400a2784ba9e0584699fc505647948779c58b/easyenergy-0.3.1.tar.gz
+[2023-05-21 00:20:01] INFO root fetch - processPackages [easyenergy]: executing diffoscope
+[2023-05-21 00:20:01] INFO root fetch - processPackages [easyenergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyenergy-0.3.0.tar.gz tmp/easyenergy-0.3.1.tar.gz --markdown 20230521/e/easyenergy/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 00:20:01] INFO root fetch - processPackages [kurses-py]: executing diffoscope
+[2023-05-21 00:20:01] INFO root fetch - processPackages [kurses-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kurses_py-0.1.1-py3-none-any.whl.zip tmp/kurses_py-0.1.1.2.tar.gz --markdown 20230521/k/kurses-py/0.1.1-0.1.1.2/diff.md --exclude *.pyd
+[2023-05-21 00:20:02] INFO root fetch - main [MainThread]: End processing [upk2esphome]: success
+[2023-05-21 00:20:02] INFO root fetch - main [MainThread]: End processing [pyInjection]: success
+[2023-05-21 00:20:02] INFO root fetch - main [MainThread]: End processing [fling-start]: success
+[2023-05-21 00:20:02] INFO root fetch - main [MainThread]: End processing [easyenergy]: success
+[2023-05-21 00:20:44] INFO root fetch - main [MainThread]: End processing [kurses-py]: success
+[2023-05-21 00:20:44] INFO root fetch - main [MainThread]: Store serial: [18184487]
