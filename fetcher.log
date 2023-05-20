@@ -481,3 +481,51 @@
 [2023-05-21 01:24:33] INFO root fetch - main [MainThread]: End processing [basinmaker]: success
 [2023-05-21 01:24:35] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-05-21 01:24:35] INFO root fetch - main [MainThread]: Store serial: [18184656]
+[2023-05-21 01:29:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184656]
+[2023-05-21 01:29:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: returnn
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cwsearch-utils
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abc-0329
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abc-0329
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bytez
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpyt
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lazylearn
+[2023-05-21 01:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: obsidian-pdf-gen
+[2023-05-21 01:29:45] INFO root fetch - processPackages [abc-0329]: New version: [1684625112] Old Version: [1684625092]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [lazylearn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [gpyt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [bytez]: New version: [0.1.94] Old Version: [0.1.93]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [returnn]: New version: [1.20230521.10102] Old Version: [1.20230519.94459]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [obsidian-pdf-gen]: New version: [1.7.1] Old Version: [1.6.2]
+[2023-05-21 01:29:45] INFO root fetch - processPackages [abc-0329]: Downloading https://files.pythonhosted.org/packages/13/21/8c40e3b9c1e02e18daf05a5e680d53c687ea8420380be572997e9d7d2412/abc_0329-1684625092.tar.gz
+[2023-05-21 01:29:45] INFO root fetch - processPackages [gpyt]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [gpyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpyt-0.2.8.tar.gz tmp/gpyt-0.2.9.tar.gz --markdown 20230521/g/gpyt/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 01:29:45] INFO root fetch - processPackages [lazylearn]: Downloading https://files.pythonhosted.org/packages/d1/01/e9c5981ec2b59ac884530b2d7861a130e9a9dccd9de6a71a114e366cbe88/lazylearn-0.0.2.tar.gz
+[2023-05-21 01:29:45] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/c2/29/1284da07ca244eb28cc22791946e79a79180c2e8aba001d12c3add4866aa/bytez-0.1.94.tar.gz
+[2023-05-21 01:29:45] INFO root fetch - processPackages [obsidian-pdf-gen]: Downloading https://files.pythonhosted.org/packages/aa/f8/c16b6c911f62b47c92171873221287fa8b83c420e5e8f110964f1e4f465e/obsidian_pdf_gen-1.6.2.tar.gz
+[2023-05-21 01:29:45] WARNING root fetch - processPackages [abc-0329]: Skipping package: exceeds size limit 16663581>=10485760
+[2023-05-21 01:29:45] INFO root fetch - main [MainThread]: End processing [abc-0329] error
+[2023-05-21 01:29:45] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230519.94459.tar.gz tmp/returnn-1.20230521.10102.tar.gz --markdown 20230521/r/returnn/1.20230519.94459-1.20230521.10102/diff.md --exclude *.pyd
+[2023-05-21 01:29:45] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.93.tar.gz tmp/bytez-0.1.94.tar.gz --markdown 20230521/b/bytez/0.1.93-0.1.94/diff.md --exclude *.pyd
+[2023-05-21 01:29:45] INFO root fetch - processPackages [lazylearn]: Downloading https://files.pythonhosted.org/packages/26/5a/f14d6cd6317d3322912dc9f851651794b7961d72bdcf59714edfa2980ead/lazylearn-0.0.3.tar.gz
+[2023-05-21 01:29:45] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230521/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 01:29:45] INFO root fetch - processPackages [obsidian-pdf-gen]: Downloading https://files.pythonhosted.org/packages/44/ba/ece6cfa545c90b5297eeb9e1a2cf93f323c1b53a6738742a5faf2280ad54/obsidian_pdf_gen-1.7.1.tar.gz
+[2023-05-21 01:29:45] INFO root fetch - processPackages [lazylearn]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [lazylearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylearn-0.0.2.tar.gz tmp/lazylearn-0.0.3.tar.gz --markdown 20230521/l/lazylearn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 01:29:45] INFO root fetch - processPackages [obsidian-pdf-gen]: executing diffoscope
+[2023-05-21 01:29:45] INFO root fetch - processPackages [obsidian-pdf-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obsidian_pdf_gen-1.6.2.tar.gz tmp/obsidian_pdf_gen-1.7.1.tar.gz --markdown 20230521/o/obsidian-pdf-gen/1.6.2-1.7.1/diff.md --exclude *.pyd
+[2023-05-21 01:29:46] INFO root fetch - processPackages [abc-0329]: New version: [1684625112] Old Version: [1684625092]
+[2023-05-21 01:29:46] INFO root fetch - processPackages [abc-0329]: Downloading https://files.pythonhosted.org/packages/13/21/8c40e3b9c1e02e18daf05a5e680d53c687ea8420380be572997e9d7d2412/abc_0329-1684625092.tar.gz
+[2023-05-21 01:29:46] WARNING root fetch - processPackages [abc-0329]: Skipping package: exceeds size limit 16663581>=10485760
+[2023-05-21 01:29:46] INFO root fetch - main [MainThread]: End processing [abc-0329] error
+[2023-05-21 01:29:46] INFO root fetch - main [MainThread]: End processing [gpyt]: success
+[2023-05-21 01:29:46] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 01:29:47] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-21 01:29:47] INFO root fetch - main [MainThread]: End processing [obsidian-pdf-gen]: success
+[2023-05-21 01:29:48] INFO root fetch - main [MainThread]: End processing [lazylearn]: success
+[2023-05-21 01:29:50] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-05-21 01:29:50] INFO root fetch - main [MainThread]: Store serial: [18184675]
