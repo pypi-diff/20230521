@@ -1,0 +1,28 @@
+[2023-05-21 00:03:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184425]
+[2023-05-21 00:03:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 00:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BTKSorgu
+[2023-05-21 00:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IMDBTraktSyncer
+[2023-05-21 00:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BTKSorgu
+[2023-05-21 00:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sha256bit
+[2023-05-21 00:03:47] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.9] Old Version: [1.2.8.3]
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.9] Old Version: [1.2.8.3]
+[2023-05-21 00:03:47] INFO root fetch - processPackages [sha256bit]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/c2/c0/3f17c115676e35a301647cadb00df444b4427ff38cda57f99706e17214c9/BTKSorgu-1.2.8.3.tar.gz
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/c2/c0/3f17c115676e35a301647cadb00df444b4427ff38cda57f99706e17214c9/BTKSorgu-1.2.8.3.tar.gz
+[2023-05-21 00:03:47] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/da/98/e84c5bbeb15476212fcc60110850f274606b2a63eac90960fc26038982cf/sha256bit-0.0.6.tar.gz
+[2023-05-21 00:03:47] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/95/71/bfb2f8f04148685b6ad6e2cfc55077d6bd87a4a95475a2e17b37714b564a/IMDBTraktSyncer-1.2.3.tar.gz
+[2023-05-21 00:03:47] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-21 00:03:47] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.2.2.tar.gz tmp/IMDBTraktSyncer-1.2.3.tar.gz --markdown 20230521/I/IMDBTraktSyncer/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.8.3.tar.gz tmp/BTKSorgu-1.2.9.tar.gz --markdown 20230521/B/BTKSorgu/1.2.8.3-1.2.9/diff.md --exclude *.pyd
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-21 00:03:47] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.8.3.tar.gz tmp/BTKSorgu-1.2.9.tar.gz --markdown 20230521/B/BTKSorgu/1.2.8.3-1.2.9/diff.md --exclude *.pyd
+[2023-05-21 00:03:47] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/54/1b/6e82e418e5638ff245ea0bd3b3c0508421fa758eaa3b8e5c4a003425eda3/sha256bit-0.0.7.tar.gz
+[2023-05-21 00:03:47] INFO root fetch - processPackages [sha256bit]: executing diffoscope
+[2023-05-21 00:03:47] INFO root fetch - processPackages [sha256bit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sha256bit-0.0.6.tar.gz tmp/sha256bit-0.0.7.tar.gz --markdown 20230521/s/sha256bit/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 00:03:48] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-21 00:03:48] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-21 00:03:48] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-21 00:03:49] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
+[2023-05-21 00:03:49] INFO root fetch - main [MainThread]: Store serial: [18184435]
