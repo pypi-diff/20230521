@@ -529,3 +529,11 @@
 [2023-05-21 01:29:48] INFO root fetch - main [MainThread]: End processing [lazylearn]: success
 [2023-05-21 01:29:50] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-05-21 01:29:50] INFO root fetch - main [MainThread]: Store serial: [18184675]
+[2023-05-21 01:34:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184675]
+[2023-05-21 01:34:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 01:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jrnl
+[2023-05-21 01:34:58] INFO root fetch - processPackages [jrnl]: New version: [4.0b3] Old Version: [4.0b2]
+[2023-05-21 01:34:59] INFO root fetch - processPackages [jrnl]: executing diffoscope
+[2023-05-21 01:34:59] INFO root fetch - processPackages [jrnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrnl-4.0b2.tar.gz tmp/jrnl-4.0b3.tar.gz --markdown 20230521/j/jrnl/4.0b2-4.0b3/diff.md --exclude *.pyd
+[2023-05-21 01:35:00] INFO root fetch - main [MainThread]: End processing [jrnl]: success
+[2023-05-21 01:35:00] INFO root fetch - main [MainThread]: Store serial: [18184677]
