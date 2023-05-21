@@ -1183,3 +1183,36 @@
 [2023-05-21 02:33:16] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 02:33:26] INFO root fetch - main [MainThread]: End processing [FreeTAKServer]: success
 [2023-05-21 02:33:26] INFO root fetch - main [MainThread]: Store serial: [18185005]
+[2023-05-21 02:38:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185005]
+[2023-05-21 02:38:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytez
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tokendito
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: transliter
+[2023-05-21 02:38:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: state-machine-semaphore
+[2023-05-21 02:38:35] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 02:38:35] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:38:35] INFO root fetch - processPackages [tokendito]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-21 02:38:35] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 02:38:35] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230521] Old Version: [0.1.4.dev20230520]
+[2023-05-21 02:38:35] WARNING root fetch - processPackages [transliter]: Skipping, unable to determine old version
+[2023-05-21 02:38:35] INFO root fetch - main [MainThread]: End processing [transliter] error
+[2023-05-21 02:38:35] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-21 02:38:35] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230521/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:38:35] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-21 02:38:35] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230521/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:38:35] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 02:38:35] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:38:36] INFO root fetch - processPackages [tokendito]: Downloading https://files.pythonhosted.org/packages/e8/c6/ebb079b1647636723d2df6623f0ffa0b74033f1090b6b9c91073dd778d71/tokendito-2.1.1.tar.gz
+[2023-05-21 02:38:36] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/57/0b/a67df547ad420b884c34c2e737ad94e2bee0043f57f2d35eb1c93b864ea7/aeppl-nightly-0.1.4.dev20230521.tar.gz
+[2023-05-21 02:38:36] INFO root fetch - processPackages [tokendito]: executing diffoscope
+[2023-05-21 02:38:36] INFO root fetch - processPackages [tokendito]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tokendito-2.1.0.tar.gz tmp/tokendito-2.1.1.tar.gz --markdown 20230521/t/tokendito/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-21 02:38:36] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-21 02:38:36] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230520.tar.gz tmp/aeppl-nightly-0.1.4.dev20230521.tar.gz --markdown 20230521/a/aeppl-nightly/0.1.4.dev20230520-0.1.4.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 02:38:37] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-21 02:38:37] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 02:38:37] INFO root fetch - main [MainThread]: End processing [tokendito]: success
+[2023-05-21 02:38:37] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-21 02:38:38] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-21 02:38:38] INFO root fetch - main [MainThread]: Store serial: [18185023]
