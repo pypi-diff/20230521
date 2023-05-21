@@ -9619,3 +9619,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:12:56] INFO root fetch - main [MainThread]: End processing [nml]: success
 [2023-05-21 23:12:56] INFO root fetch - main [MainThread]: End processing [gpudb]: success
 [2023-05-21 23:12:56] INFO root fetch - main [MainThread]: Store serial: [18189330]
+[2023-05-21 23:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189330]
+[2023-05-21 23:18:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: regis
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-skill-weather
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqrack
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sftp-uploader
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aihandler
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: open-space-toolkit-physics
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ovos-skill-weather]: New version: [0.0.1a7] Old Version: [0.0.1a6]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [pyqrack]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [aihandler]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [open-space-toolkit-physics]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-21 23:18:06] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/06/bb/2f363d9a48514deab3abc6daa11c68c090cc80f4fed699197bbf88f1e573/sftp_uploader-1.0.7.tar.gz
+[2023-05-21 23:18:06] INFO root fetch - processPackages [open-space-toolkit-physics]: Downloading https://files.pythonhosted.org/packages/f3/4f/01110499d6cc5ecce4aefb22ac97733868d2ef62b659c1a26bca04343927/open_space_toolkit_physics-0.8.0-py39-none-any.whl
+[2023-05-21 23:18:06] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-21 23:18:06] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.6.tar.gz tmp/sftp_uploader-1.0.7.tar.gz --markdown 20230521/s/sftp-uploader/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-21 23:18:06] INFO root fetch - processPackages [ovos-skill-weather]: Downloading https://files.pythonhosted.org/packages/72/e9/06a96ba53194624bad57934ce5b4e9a1f2bffabf9256ee2c27f0c93fe127/ovos_skill_weather-0.0.1a7-py3-none-any.whl
+[2023-05-21 23:18:06] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-05-21 23:18:06] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230521/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 23:18:06] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-05-21 23:18:06] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.8.tar.gz tmp/aihandler-1.9.9.tar.gz --markdown 20230521/a/aihandler/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 23:18:07] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-05-21 23:18:07] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.9.5.tar.gz tmp/pyqrack-1.9.6.tar.gz --markdown 20230521/p/pyqrack/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-21 23:18:07] INFO root fetch - processPackages [ovos-skill-weather]: executing diffoscope
+[2023-05-21 23:18:07] INFO root fetch - processPackages [ovos-skill-weather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_weather-0.0.1a6-py3-none-any.whl.zip tmp/ovos_skill_weather-0.0.1a7-py3-none-any.whl.zip --markdown 20230521/o/ovos-skill-weather/0.0.1a6-0.0.1a7/diff.md --exclude *.pyd
+[2023-05-21 23:18:07] INFO root fetch - processPackages [open-space-toolkit-physics]: Downloading https://files.pythonhosted.org/packages/41/8d/85b43505c4d2d4cd3a548061a54b5b0dcad4f397f5d490b84dd8e682f9e5/open_space_toolkit_physics-0.8.1-py39-none-any.whl
+[2023-05-21 23:18:07] INFO root fetch - processPackages [open-space-toolkit-physics]: executing diffoscope
+[2023-05-21 23:18:07] INFO root fetch - processPackages [open-space-toolkit-physics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_physics-0.8.0-py39-none-any.whl.zip tmp/open_space_toolkit_physics-0.8.1-py39-none-any.whl.zip --markdown 20230521/o/open-space-toolkit-physics/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-21 23:18:08] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-21 23:18:08] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-05-21 23:18:08] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-05-21 23:18:08] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-05-21 23:18:27] INFO root fetch - main [MainThread]: End processing [ovos-skill-weather]: success
+[2023-05-21 23:18:30] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-physics]: success
+[2023-05-21 23:18:30] INFO root fetch - main [MainThread]: Store serial: [18189366]
