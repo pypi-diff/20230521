@@ -7708,3 +7708,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:20:16] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-05-21 19:20:27] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-21 19:20:27] INFO root fetch - main [MainThread]: Store serial: [18188205]
+[2023-05-21 19:25:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188205]
+[2023-05-21 19:25:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 19:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mesh-sandbox
+[2023-05-21 19:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ElectronCounting
+[2023-05-21 19:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-lav
+[2023-05-21 19:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FreeTVG-karjakak
+[2023-05-21 19:25:36] INFO root fetch - processPackages [py-lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-21 19:25:36] INFO root fetch - processPackages [FreeTVG-karjakak]: New version: [3.2.4rc1] Old Version: [3.2.4]
+[2023-05-21 19:25:36] INFO root fetch - processPackages [mesh-sandbox]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 19:25:36] INFO root fetch - processPackages [ElectronCounting]: New version: [1.0.0] Old Version: [0.1.6]
+[2023-05-21 19:25:36] INFO root fetch - processPackages [py-lav]: executing diffoscope
+[2023-05-21 19:25:36] INFO root fetch - processPackages [py-lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20230521/p/py-lav/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-21 19:25:36] INFO root fetch - processPackages [FreeTVG-karjakak]: executing diffoscope
+[2023-05-21 19:25:36] INFO root fetch - processPackages [FreeTVG-karjakak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeTVG-karjakak-3.2.4.tar.gz tmp/FreeTVG-karjakak-3.2.4rc1.tar.gz --markdown 20230521/F/FreeTVG-karjakak/3.2.4-3.2.4rc1/diff.md --exclude *.pyd
+[2023-05-21 19:25:37] INFO root fetch - processPackages [ElectronCounting]: Downloading https://files.pythonhosted.org/packages/73/2a/8185b97c1797c1979603b217ced9b254cadcb57c8bc768a60f7589f84a87/ElectronCounting-0.1.6.tar.gz
+[2023-05-21 19:25:37] INFO root fetch - processPackages [mesh-sandbox]: executing diffoscope
+[2023-05-21 19:25:37] INFO root fetch - processPackages [mesh-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesh_sandbox-0.1.8-py3-none-any.whl.zip tmp/mesh_sandbox-0.1.9-py3-none-any.whl.zip --markdown 20230521/m/mesh-sandbox/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 19:25:37] INFO root fetch - processPackages [ElectronCounting]: Downloading https://files.pythonhosted.org/packages/0c/7c/d760eed6f5cdf5c3d26ad8e1b1941f38547edac4ec754df91783c94251e2/ElectronCounting-1.0.0.tar.gz
+[2023-05-21 19:25:37] INFO root fetch - processPackages [ElectronCounting]: executing diffoscope
+[2023-05-21 19:25:37] INFO root fetch - processPackages [ElectronCounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ElectronCounting-0.1.6.tar.gz tmp/ElectronCounting-1.0.0.tar.gz --markdown 20230521/E/ElectronCounting/0.1.6-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 19:25:38] INFO root fetch - main [MainThread]: End processing [FreeTVG-karjakak]: success
+[2023-05-21 19:25:38] INFO root fetch - main [MainThread]: End processing [mesh-sandbox]: success
+[2023-05-21 19:25:38] INFO root fetch - main [MainThread]: End processing [ElectronCounting]: success
+[2023-05-21 19:26:22] INFO root fetch - main [MainThread]: End processing [py-lav]: success
+[2023-05-21 19:26:22] INFO root fetch - main [MainThread]: Store serial: [18188217]
