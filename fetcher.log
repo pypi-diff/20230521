@@ -8932,3 +8932,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:09:29] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
 [2023-05-21 22:09:30] INFO root fetch - main [MainThread]: End processing [openapi-pydantic]: success
 [2023-05-21 22:09:30] INFO root fetch - main [MainThread]: Store serial: [18188916]
+[2023-05-21 22:14:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188916]
+[2023-05-21 22:14:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 22:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discoger
+[2023-05-21 22:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aim-ui
+[2023-05-21 22:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim
+[2023-05-21 22:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hypua2jamo
+[2023-05-21 22:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quant-invest-lab
+[2023-05-21 22:14:39] INFO root fetch - processPackages [discoger]: New version: [1.2.0] Old Version: [1.1.6]
+[2023-05-21 22:14:39] INFO root fetch - processPackages [quant-invest-lab]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-21 22:14:39] INFO root fetch - processPackages [hypua2jamo]: New version: [0.7] Old Version: [0.6]
+[2023-05-21 22:14:39] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-21 22:14:39] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-21 22:14:39] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/15/04/0624cfb818b4aa00681fd98b1d6ff24f56e0dc30cc0aa27fb90fce93dcc3/aim-ui-4.0.0.dev4.tar.gz
+[2023-05-21 22:14:39] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 21591110>=10485760
+[2023-05-21 22:14:39] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-21 22:14:39] INFO root fetch - processPackages [discoger]: Downloading https://files.pythonhosted.org/packages/80/20/84701dd112588c4639aef807715f75c6846fbea4c3610c6b307f442f5d54/discoger-1.1.6.tar.gz
+[2023-05-21 22:14:39] INFO root fetch - processPackages [hypua2jamo]: Downloading https://files.pythonhosted.org/packages/76/59/229f279a39200ea4a7937754cf9d26f64054d5302053d4bcc8e97ad15c4f/hypua2jamo-0.6.tar.gz
+[2023-05-21 22:14:39] INFO root fetch - processPackages [quant-invest-lab]: Downloading https://files.pythonhosted.org/packages/c6/da/0896d9bf49ae89af329553600a1dff7259b33c17a2d2671b204513eff326/quant_invest_lab-0.2.8.tar.gz
+[2023-05-21 22:14:39] INFO root fetch - processPackages [quant-invest-lab]: executing diffoscope
+[2023-05-21 22:14:39] INFO root fetch - processPackages [quant-invest-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant_invest_lab-0.2.7.tar.gz tmp/quant_invest_lab-0.2.8.tar.gz --markdown 20230521/q/quant-invest-lab/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-21 22:14:39] INFO root fetch - processPackages [discoger]: Downloading https://files.pythonhosted.org/packages/c0/0f/b8a79a2b3c603a89cc27cb8777e028d7115ecce956f464b908378db60aad/discoger-1.2.0.tar.gz
+[2023-05-21 22:14:39] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-21 22:14:39] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev4.tar.gz tmp/aim-4.0.0.dev5.tar.gz --markdown 20230521/a/aim/4.0.0.dev4-4.0.0.dev5/diff.md --exclude *.pyd
+[2023-05-21 22:14:39] INFO root fetch - processPackages [hypua2jamo]: Downloading https://files.pythonhosted.org/packages/03/af/c96b9cac7c4e8934dc38fdd6a5206aeaa85c5de81cf9d57a92ef2042df2a/hypua2jamo-0.7.tar.gz
+[2023-05-21 22:14:39] INFO root fetch - processPackages [discoger]: executing diffoscope
+[2023-05-21 22:14:39] INFO root fetch - processPackages [discoger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discoger-1.1.6.tar.gz tmp/discoger-1.2.0.tar.gz --markdown 20230521/d/discoger/1.1.6-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 22:14:39] INFO root fetch - processPackages [hypua2jamo]: executing diffoscope
+[2023-05-21 22:14:39] INFO root fetch - processPackages [hypua2jamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypua2jamo-0.6.tar.gz tmp/hypua2jamo-0.7.tar.gz --markdown 20230521/h/hypua2jamo/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-21 22:14:40] INFO root fetch - main [MainThread]: End processing [quant-invest-lab]: success
+[2023-05-21 22:14:40] INFO root fetch - main [MainThread]: End processing [discoger]: success
+[2023-05-21 22:14:42] INFO root fetch - main [MainThread]: End processing [hypua2jamo]: success
+[2023-05-21 22:14:47] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-21 22:14:47] INFO root fetch - main [MainThread]: Store serial: [18188938]
