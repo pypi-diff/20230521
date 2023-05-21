@@ -3642,3 +3642,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:40:44] INFO root fetch - main [MainThread]: End processing [migdalor]: success
 [2023-05-21 10:40:45] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
 [2023-05-21 10:40:45] INFO root fetch - main [MainThread]: Store serial: [18186243]
+[2023-05-21 10:45:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186243]
+[2023-05-21 10:45:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: convert-labse-tf-pt
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: convert-labse-tf-pt
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: convert-labse-tf-pt
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toui
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfp-nightly
+[2023-05-21 10:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-assaf-VerifyTACDump
+[2023-05-21 10:45:54] INFO root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: New version: [20230521.8.20.471148] Old Version: [20230513.9.58.354056]
+[2023-05-21 10:45:54] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-21 10:45:54] INFO root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: Downloading https://files.pythonhosted.org/packages/a7/36/6ce8907049a78f7d49d8d9638f5793558beb8daefa98950151928a9e7279/certora-cli-alpha-assaf-VerifyTACDump-20230513.9.58.354056.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [toui]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-21 10:45:54] WARNING root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: Skipping package: exceeds size limit 39424208>=10485760
+[2023-05-21 10:45:54] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-assaf-VerifyTACDump] error
+[2023-05-21 10:45:54] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-21 10:45:54] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230521/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/41/2d/021a06ed56bd65ecdbe2b388c23e37746326089206191f01d1ed923cc56e/convert_labse_tf_pt-2.3.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/41/2d/021a06ed56bd65ecdbe2b388c23e37746326089206191f01d1ed923cc56e/convert_labse_tf_pt-2.3.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/41/2d/021a06ed56bd65ecdbe2b388c23e37746326089206191f01d1ed923cc56e/convert_labse_tf_pt-2.3.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/e6/3d/438173df66ba57b6e90f6104bd261a16dde1b0f01b095bec64386e99ea20/toui-2.3.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [toui]: executing diffoscope
+[2023-05-21 10:45:54] INFO root fetch - processPackages [toui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toui-2.2.0.tar.gz tmp/toui-2.3.0.tar.gz --markdown 20230521/t/toui/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/3e/6b/5e2538dea2bc400ea5c6241051e857ca4ab59fedfeb8a7bc4a8dbf40f159/convert_labse_tf_pt-2.4.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/3e/6b/5e2538dea2bc400ea5c6241051e857ca4ab59fedfeb8a7bc4a8dbf40f159/convert_labse_tf_pt-2.4.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/3e/6b/5e2538dea2bc400ea5c6241051e857ca4ab59fedfeb8a7bc4a8dbf40f159/convert_labse_tf_pt-2.4.0.tar.gz
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: executing diffoscope
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_labse_tf_pt-2.3.0.tar.gz tmp/convert_labse_tf_pt-2.4.0.tar.gz --markdown 20230521/c/convert-labse-tf-pt/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: executing diffoscope
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_labse_tf_pt-2.3.0.tar.gz tmp/convert_labse_tf_pt-2.4.0.tar.gz --markdown 20230521/c/convert-labse-tf-pt/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: executing diffoscope
+[2023-05-21 10:45:54] INFO root fetch - processPackages [convert-labse-tf-pt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_labse_tf_pt-2.3.0.tar.gz tmp/convert_labse_tf_pt-2.4.0.tar.gz --markdown 20230521/c/convert-labse-tf-pt/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-21 10:45:55] INFO root fetch - main [MainThread]: End processing [toui]: success
+[2023-05-21 10:45:56] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
+[2023-05-21 10:45:56] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
+[2023-05-21 10:45:56] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
+[2023-05-21 10:46:08] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-21 10:46:08] INFO root fetch - main [MainThread]: Store serial: [18186261]
