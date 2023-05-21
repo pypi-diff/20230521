@@ -8965,3 +8965,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:14:42] INFO root fetch - main [MainThread]: End processing [hypua2jamo]: success
 [2023-05-21 22:14:47] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-21 22:14:47] INFO root fetch - main [MainThread]: Store serial: [18188938]
+[2023-05-21 22:19:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188938]
+[2023-05-21 22:19:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: melnor-bluetooth
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synapticflow
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epyk
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckduckgo-search
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wagtail-cjkcms
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aij
+[2023-05-21 22:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bardapi
+[2023-05-21 22:19:56] INFO root fetch - processPackages [aij]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [bardapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [duckduckgo-search]: New version: [3.1.0] Old Version: [3.0.2]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-21 22:19:56] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.0.8.tar.gz tmp/aij-1.0.9.tar.gz --markdown 20230521/a/aij/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 22:19:56] INFO root fetch - processPackages [synapticflow]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [bardapi]: executing diffoscope
+[2023-05-21 22:19:56] INFO root fetch - processPackages [bardapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bardapi-0.1.8.tar.gz tmp/bardapi-0.1.9.tar.gz --markdown 20230521/b/bardapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 22:19:56] INFO root fetch - processPackages [wagtail-cjkcms]: New version: [23.5.1] Old Version: [23.4.3]
+[2023-05-21 22:19:56] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-05-21 22:19:56] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230521/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 22:19:57] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/1d/7b/4d2c2b27f0ac29d65190d4b4361f439f7be502055d20f44496debb78089c/duckduckgo_search-3.1.0.tar.gz
+[2023-05-21 22:19:57] INFO root fetch - processPackages [epyk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 22:19:57] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-05-21 22:19:57] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-3.0.2.tar.gz tmp/duckduckgo_search-3.1.0.tar.gz --markdown 20230521/d/duckduckgo-search/3.0.2-3.1.0/diff.md --exclude *.pyd
+[2023-05-21 22:19:57] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/57/77/3ce806ea6549c7a915cd72e466367501910391e67332b72ca75f07a1fec8/wagtail-cjkcms-23.4.3.tar.gz
+[2023-05-21 22:19:57] INFO root fetch - processPackages [synapticflow]: Downloading https://files.pythonhosted.org/packages/8a/e2/fca91e6373b02ca3e99c8e3aabe52f94783162e30a701a0575513b547588/synapticflow-0.0.4.tar.gz
+[2023-05-21 22:19:57] INFO root fetch - processPackages [epyk]: Downloading https://files.pythonhosted.org/packages/2b/b7/d8534d999b9d58a4412b4db34fefcdfbe6c581e844864d76492fdcb43548/epyk-1.9.8-py3-none-any.whl
+[2023-05-21 22:19:57] INFO root fetch - processPackages [synapticflow]: executing diffoscope
+[2023-05-21 22:19:57] INFO root fetch - processPackages [synapticflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapticflow-0.0.3.tar.gz tmp/synapticflow-0.0.4.tar.gz --markdown 20230521/s/synapticflow/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 22:19:57] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/4a/2c/cade46c32b2164aa6ca65ae6ba73b84c6977750b8089dddc77ac45c8f88d/wagtail-cjkcms-23.5.1.tar.gz
+[2023-05-21 22:19:57] INFO root fetch - processPackages [wagtail-cjkcms]: executing diffoscope
+[2023-05-21 22:19:57] INFO root fetch - processPackages [wagtail-cjkcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-cjkcms-23.4.3.tar.gz tmp/wagtail-cjkcms-23.5.1.tar.gz --markdown 20230521/w/wagtail-cjkcms/23.4.3-23.5.1/diff.md --exclude *.pyd
+[2023-05-21 22:19:58] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-21 22:19:58] INFO root fetch - processPackages [epyk]: Downloading https://files.pythonhosted.org/packages/16/be/cd2f93881ffe92a847a9cfff5f05b11b2f5cd93f2b1c552a7982a06aab4e/epyk-1.9.9-py3-none-any.whl
+[2023-05-21 22:19:58] INFO root fetch - main [MainThread]: End processing [bardapi]: success
+[2023-05-21 22:19:58] INFO root fetch - main [MainThread]: End processing [melnor-bluetooth]: success
+[2023-05-21 22:19:58] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-05-21 22:19:58] INFO root fetch - main [MainThread]: End processing [synapticflow]: success
+[2023-05-21 22:19:58] INFO root fetch - processPackages [epyk]: executing diffoscope
+[2023-05-21 22:19:58] INFO root fetch - processPackages [epyk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyk-1.9.8-py3-none-any.whl.zip tmp/epyk-1.9.9-py3-none-any.whl.zip --markdown 20230521/e/epyk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 22:19:59] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
+[2023-05-21 22:20:09] INFO root fetch - main [MainThread]: End processing [epyk]: success
+[2023-05-21 22:20:09] INFO root fetch - main [MainThread]: Store serial: [18188980]
