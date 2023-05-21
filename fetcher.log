@@ -3540,3 +3540,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [vule-magics]: success
 [2023-05-21 10:19:55] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2023-05-21 10:19:55] INFO root fetch - main [MainThread]: Store serial: [18186199]
+[2023-05-21 10:24:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186199]
+[2023-05-21 10:25:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 10:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-assaf-VerifyTACDump
+[2023-05-21 10:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EdgeGPT
+[2023-05-21 10:25:04] INFO root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: New version: [20230521.8.20.471148] Old Version: [20230513.9.58.354056]
+[2023-05-21 10:25:04] INFO root fetch - processPackages [EdgeGPT]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-05-21 10:25:04] INFO root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: Downloading https://files.pythonhosted.org/packages/a7/36/6ce8907049a78f7d49d8d9638f5793558beb8daefa98950151928a9e7279/certora-cli-alpha-assaf-VerifyTACDump-20230513.9.58.354056.tar.gz
+[2023-05-21 10:25:04] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/c3/23/a042d0745138769e2f9d66495263f26d205560b2c6f45e4494cd31590cc2/EdgeGPT-0.4.4.tar.gz
+[2023-05-21 10:25:04] WARNING root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: Skipping package: exceeds size limit 39424208>=10485760
+[2023-05-21 10:25:04] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-assaf-VerifyTACDump] error
+[2023-05-21 10:25:05] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/d9/4c/4c1228ef3489276c94b184a9700f7e3e4d8012a02a18f408bdc44e083f62/EdgeGPT-0.5.0.tar.gz
+[2023-05-21 10:25:05] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-21 10:25:05] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.4.4.tar.gz tmp/EdgeGPT-0.5.0.tar.gz --markdown 20230521/E/EdgeGPT/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 10:25:06] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-21 10:25:06] INFO root fetch - main [MainThread]: Store serial: [18186205]
