@@ -6184,3 +6184,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:54:46] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
 [2023-05-21 15:54:47] INFO root fetch - main [MainThread]: End processing [enhanced-google-search]: success
 [2023-05-21 15:54:47] INFO root fetch - main [MainThread]: Store serial: [18187487]
+[2023-05-21 15:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187487]
+[2023-05-21 15:59:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shopcloud-serverless
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ngff-zarr
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atomlite
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sosin
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sidetrek
+[2023-05-21 15:59:56] INFO root fetch - processPackages [atomlite]: New version: [1.1.1] Old Version: [0.0.0]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [shopcloud-serverless]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230521.8.54.540521] Old Version: [20230521.8.11.112771]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/df/28/639901bb1a9f974004eb4358a9ae2e34c32e8812ebef7f0c3bb93489f070/certora-cli-alpha-master-20230521.8.11.112771.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ngff-zarr]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sosin]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:59:56] INFO root fetch - processPackages [shopcloud-serverless]: Downloading https://files.pythonhosted.org/packages/22/2d/a36ab8dd3a5fda38dba120f23b4f30a418483df29c64cedb0221c0bc290f/shopcloud-serverless-4.8.0.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [atomlite]: Downloading https://files.pythonhosted.org/packages/40/12/8a88e2f7bbbca2470f01b8426e9127135233b4c9abab941a4bcd0b81cac4/atomlite-0.0.0.tar.gz
+[2023-05-21 15:59:56] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978441>=10485760
+[2023-05-21 15:59:56] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-21 15:59:56] INFO root fetch - processPackages [ngff-zarr]: Downloading https://files.pythonhosted.org/packages/25/b0/20fa362d4cc842cb614a191283f6976bcab0373886ccc3666daa66cce4c8/ngff_zarr-0.4.0.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/56/77/9e498ab55075001c0c3bce15bd90236bd202919ab21346ee5e9f59930496/sosin-1.1.5.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [atomlite]: Downloading https://files.pythonhosted.org/packages/14/69/fe1936d36f6783b073f65640157538a90c4b834c86c13a816dec14202418/atomlite-1.1.1.tar.gz
+[2023-05-21 15:59:56] WARNING root fetch - processPackages [ngff-zarr]: Skipping package: exceeds size limit 88124295>=10485760
+[2023-05-21 15:59:56] INFO root fetch - main [MainThread]: End processing [ngff-zarr] error
+[2023-05-21 15:59:56] INFO root fetch - processPackages [shopcloud-serverless]: Downloading https://files.pythonhosted.org/packages/4f/d4/70f3d770f4c6a21a1e2ef9d025083f271f16743383fe9e9d410d4046e9fe/shopcloud-serverless-4.9.0.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [atomlite]: executing diffoscope
+[2023-05-21 15:59:56] INFO root fetch - processPackages [atomlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomlite-0.0.0.tar.gz tmp/atomlite-1.1.1.tar.gz --markdown 20230521/a/atomlite/0.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-21 15:59:56] INFO root fetch - processPackages [shopcloud-serverless]: executing diffoscope
+[2023-05-21 15:59:56] INFO root fetch - processPackages [shopcloud-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shopcloud-serverless-4.8.0.tar.gz tmp/shopcloud-serverless-4.9.0.tar.gz --markdown 20230521/s/shopcloud-serverless/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/74/7a/f93f4c9f633adf16a784ca3a971d94fc825ca0e84c81f1175ab5c055a551/sosin-1.1.6.tar.gz
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sosin]: executing diffoscope
+[2023-05-21 15:59:56] INFO root fetch - processPackages [sosin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosin-1.1.5.tar.gz tmp/sosin-1.1.6.tar.gz --markdown 20230521/s/sosin/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [atomlite]: success
+[2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [shopcloud-serverless]: success
+[2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [sosin]: success
+[2023-05-21 15:59:57] INFO root fetch - main [MainThread]: Store serial: [18187503]
