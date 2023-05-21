@@ -3006,3 +3006,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:28:48] INFO root fetch - main [MainThread]: End processing [dorado]: success
 [2023-05-21 08:28:50] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 08:28:50] INFO root fetch - main [MainThread]: Store serial: [18185937]
+[2023-05-21 08:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185937]
+[2023-05-21 08:33:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 08:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dorado
+[2023-05-21 08:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-05-21 08:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bambooai
+[2023-05-21 08:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysast
+[2023-05-21 08:33:59] INFO root fetch - processPackages [pysast]: New version: [1.0.2a0] Old Version: [1.0.0a0]
+[2023-05-21 08:33:59] INFO root fetch - processPackages [vector-vault]: New version: [0.2] Old Version: [0.1.9]
+[2023-05-21 08:33:59] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:33:59] INFO root fetch - processPackages [bambooai]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-21 08:33:59] INFO root fetch - processPackages [pysast]: executing diffoscope
+[2023-05-21 08:33:59] INFO root fetch - processPackages [pysast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysast-1.0.0a0.tar.gz tmp/pysast-1.0.2a0.tar.gz --markdown 20230521/p/pysast/1.0.0a0-1.0.2a0/diff.md --exclude *.pyd
+[2023-05-21 08:33:59] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 08:33:59] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.9.tar.gz tmp/vector_vault-0.2.tar.gz --markdown 20230521/v/vector-vault/0.1.9-0.2/diff.md --exclude *.pyd
+[2023-05-21 08:33:59] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:33:59] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:33:59] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/7e/c4/97e83b2373deee1579cdd9fa19759d00279dfda963f1b432b2b9d4f2877d/bambooai-0.2.3.tar.gz
+[2023-05-21 08:33:59] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/ca/f7/2c85cb6d118bc073a52880abc57bf1c1acfc4ea37890a6993f33f242941c/bambooai-0.2.4.tar.gz
+[2023-05-21 08:33:59] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-21 08:33:59] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.2.3.tar.gz tmp/bambooai-0.2.4.tar.gz --markdown 20230521/b/bambooai/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-21 08:34:00] INFO root fetch - main [MainThread]: End processing [pysast]: success
+[2023-05-21 08:34:00] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 08:34:00] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:34:01] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-21 08:34:01] INFO root fetch - main [MainThread]: Store serial: [18185949]
