@@ -3600,3 +3600,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:30:17] INFO root fetch - main [MainThread]: End processing [ardilla]: success
 [2023-05-21 10:30:17] INFO root fetch - main [MainThread]: End processing [tkintertools]: success
 [2023-05-21 10:30:17] INFO root fetch - main [MainThread]: Store serial: [18186226]
+[2023-05-21 10:35:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186226]
+[2023-05-21 10:35:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 10:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-05-21 10:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kfish]: New version: [99.0.202305202311] Old Version: [99.0.202305202247]
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kcli]: New version: [99.0.202305202309] Old Version: [99.0.202305202245]
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305202245-py3-none-any.whl.zip tmp/kcli-99.0.202305202309-py3-none-any.whl.zip --markdown 20230521/k/kcli/99.0.202305202245-99.0.202305202309/diff.md --exclude *.pyd
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/2e/df/df6f9d388ef87e35cfcb78f4f5617e9b49c0e7b9fd43c9efb597efbc133d/kfish-99.0.202305202311-py3-none-any.whl
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-21 10:35:26] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305202247-py3-none-any.whl.zip tmp/kfish-99.0.202305202311-py3-none-any.whl.zip --markdown 20230521/k/kfish/99.0.202305202247-99.0.202305202311/diff.md --exclude *.pyd
+[2023-05-21 10:35:27] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-21 10:35:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-21 10:35:34] INFO root fetch - main [MainThread]: Store serial: [18186232]
