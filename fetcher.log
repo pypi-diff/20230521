@@ -6065,3 +6065,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:38:13] INFO root fetch - main [MainThread]: End processing [asynkit]: success
 [2023-05-21 15:38:52] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-21 15:38:52] INFO root fetch - main [MainThread]: Store serial: [18187386]
+[2023-05-21 15:43:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187386]
+[2023-05-21 15:44:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 15:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyroFork
+[2023-05-21 15:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emhass
+[2023-05-21 15:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tknodesystem
+[2023-05-21 15:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: APIxoo
+[2023-05-21 15:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hiddifypanel
+[2023-05-21 15:44:01] INFO root fetch - processPackages [emhass]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-21 15:44:01] INFO root fetch - processPackages [PyroFork]: New version: [2.2.0] Old Version: [2.1.8]
+[2023-05-21 15:44:01] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-21 15:44:01] INFO root fetch - processPackages [tknodesystem]: New version: [0.4] Old Version: [0.3]
+[2023-05-21 15:44:01] INFO root fetch - processPackages [APIxoo]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-21 15:44:01] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-21 15:44:01] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230521/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-21 15:44:01] INFO root fetch - processPackages [APIxoo]: Downloading https://files.pythonhosted.org/packages/4b/1f/e18f5466f1092bd9c4717b16a643c49247378152d182772c0a457ce5a369/APIxoo-0.1.1.tar.gz
+[2023-05-21 15:44:01] INFO root fetch - processPackages [tknodesystem]: Downloading https://files.pythonhosted.org/packages/85/fa/9502741474c8d2fb86de426154ad1ca0e3d77945c750a3f5be7a1365762a/tknodesystem-0.4.tar.gz
+[2023-05-21 15:44:01] INFO root fetch - processPackages [PyroFork]: Downloading https://files.pythonhosted.org/packages/0b/be/adf78a46f4a891ef39ac9a77e5f6c48e3ce22589eed114536ab414c1a28c/PyroFork-2.2.0.tar.gz
+[2023-05-21 15:44:01] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2023-05-21 15:44:01] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.4.8-py3-none-any.whl.zip tmp/emhass-0.4.9-py3-none-any.whl.zip --markdown 20230521/e/emhass/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-21 15:44:01] INFO root fetch - processPackages [tknodesystem]: executing diffoscope
+[2023-05-21 15:44:01] INFO root fetch - processPackages [tknodesystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tknodesystem-0.3.tar.gz tmp/tknodesystem-0.4.tar.gz --markdown 20230521/t/tknodesystem/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-21 15:44:01] INFO root fetch - processPackages [PyroFork]: executing diffoscope
+[2023-05-21 15:44:01] INFO root fetch - processPackages [PyroFork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-2.1.8.tar.gz tmp/PyroFork-2.2.0.tar.gz --markdown 20230521/P/PyroFork/2.1.8-2.2.0/diff.md --exclude *.pyd
+[2023-05-21 15:44:01] INFO root fetch - processPackages [APIxoo]: Downloading https://files.pythonhosted.org/packages/bc/d5/3a10ae702d1bebcc3d7e63802b3ff083c4b6a370f836bff5c1fea241b52d/APIxoo-0.2.0.tar.gz
+[2023-05-21 15:44:01] INFO root fetch - processPackages [APIxoo]: executing diffoscope
+[2023-05-21 15:44:01] INFO root fetch - processPackages [APIxoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/APIxoo-0.1.1.tar.gz tmp/APIxoo-0.2.0.tar.gz --markdown 20230521/A/APIxoo/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 15:44:02] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2023-05-21 15:44:03] INFO root fetch - main [MainThread]: End processing [APIxoo]: success
+[2023-05-21 15:44:03] INFO root fetch - main [MainThread]: End processing [tknodesystem]: success
+[2023-05-21 15:44:06] INFO root fetch - main [MainThread]: End processing [PyroFork]: success
+[2023-05-21 15:44:20] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-21 15:44:20] INFO root fetch - main [MainThread]: Store serial: [18187419]
