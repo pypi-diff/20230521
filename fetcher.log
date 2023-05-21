@@ -6030,3 +6030,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:33:02] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
 [2023-05-21 15:33:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
 [2023-05-21 15:33:02] INFO root fetch - main [MainThread]: Store serial: [18187370]
+[2023-05-21 15:38:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187370]
+[2023-05-21 15:38:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 15:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asynkit
+[2023-05-21 15:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigmaSMSApi
+[2023-05-21 15:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: configzen
+[2023-05-21 15:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov
+[2023-05-21 15:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: argrelay
+[2023-05-21 15:38:11] INFO root fetch - processPackages [configzen]: New version: [0.1.30] Old Version: [0.1.29]
+[2023-05-21 15:38:11] INFO root fetch - processPackages [sigmaSMSApi]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-21 15:38:11] INFO root fetch - processPackages [argrelay]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-05-21 15:38:11] WARNING root fetch - processPackages [argrelay]: fallback to get urls: [0.0.0.dev8]
+[2023-05-21 15:38:11] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 15:38:11] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 15:38:11] INFO root fetch - processPackages [asynkit]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-21 15:38:11] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 15:38:11] WARNING root fetch - processPackages [argrelay]: unable to get url for both version [0.0.0.dev8]
+[2023-05-21 15:38:11] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 15:38:11] INFO root fetch - main [MainThread]: End processing [argrelay] error
+[2023-05-21 15:38:11] INFO root fetch - processPackages [sigmaSMSApi]: Downloading https://files.pythonhosted.org/packages/d9/65/9e219062e24727cf31de663de8bde3c5c7d12ca7096fd4cb502da31e38e2/sigmaSMSApi-0.5.1-py3-none-any.whl
+[2023-05-21 15:38:11] INFO root fetch - processPackages [asynkit]: Downloading https://files.pythonhosted.org/packages/7a/5e/d375860d254aa093b9ca2002383e7ecf01a9963cf2b36ddd0ad241095cc8/asynkit-0.7.0.tar.gz
+[2023-05-21 15:38:11] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/42/04/c39680241da210ce2d5ad5bab960d865f9031912f5619714538ddd4bae6d/configzen-0.1.30.tar.gz
+[2023-05-21 15:38:11] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-21 15:38:11] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230521/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 15:38:11] INFO root fetch - processPackages [sigmaSMSApi]: executing diffoscope
+[2023-05-21 15:38:11] INFO root fetch - processPackages [sigmaSMSApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaSMSApi-0.5.0-py3-none-any.whl.zip tmp/sigmaSMSApi-0.5.1-py3-none-any.whl.zip --markdown 20230521/s/sigmaSMSApi/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-21 15:38:11] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 15:38:11] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.29.tar.gz tmp/configzen-0.1.30.tar.gz --markdown 20230521/c/configzen/0.1.29-0.1.30/diff.md --exclude *.pyd
+[2023-05-21 15:38:11] INFO root fetch - processPackages [asynkit]: Downloading https://files.pythonhosted.org/packages/3e/4b/080ea9f263521c489e821d42193c78b3bda242b9f456195bd4c7f102e4e5/asynkit-0.8.0.tar.gz
+[2023-05-21 15:38:11] INFO root fetch - processPackages [asynkit]: executing diffoscope
+[2023-05-21 15:38:11] INFO root fetch - processPackages [asynkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynkit-0.7.0.tar.gz tmp/asynkit-0.8.0.tar.gz --markdown 20230521/a/asynkit/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-21 15:38:12] INFO root fetch - main [MainThread]: End processing [sigmaSMSApi]: success
+[2023-05-21 15:38:12] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 15:38:13] INFO root fetch - main [MainThread]: End processing [asynkit]: success
+[2023-05-21 15:38:52] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-21 15:38:52] INFO root fetch - main [MainThread]: Store serial: [18187386]
