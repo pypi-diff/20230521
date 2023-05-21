@@ -1879,3 +1879,15 @@
 [2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.4.1.dev4.tar.gz tmp/cdk_webapp_skeleton-0.4.1.dev5.tar.gz --markdown 20230521/c/cdk-webapp-skeleton/0.4.1.dev4-0.4.1.dev5/diff.md --exclude *.pyd
 [2023-05-21 04:40:04] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
 [2023-05-21 04:40:04] INFO root fetch - main [MainThread]: Store serial: [18185398]
+[2023-05-21 04:45:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185398]
+[2023-05-21 04:45:13] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-21 04:50:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185401]
+[2023-05-21 04:50:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 04:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-account-invoicing
+[2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: New version: [16.0.20230516.0] Old Version: [16.0.20230515.0]
+[2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/aa/4c/ea1ab795240fc64c331ffa957de11aebe0bb04e464707fcaab7e56bb6b6b/odoo_addons_oca_account_invoicing-16.0.20230515.0-py3-none-any.whl
+[2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/da/a1/0832ccb6db91e8b0692adbd32a9e29ea77bce968b8bf000956bdef5bff50/odoo_addons_oca_account_invoicing-16.0.20230516.0-py3-none-any.whl
+[2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: executing diffoscope
+[2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20230515.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20230516.0-py3-none-any.whl.zip --markdown 20230521/o/odoo-addons-oca-account-invoicing/16.0.20230515.0-16.0.20230516.0/diff.md --exclude *.pyd
+[2023-05-21 04:50:20] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
+[2023-05-21 04:50:20] INFO root fetch - main [MainThread]: Store serial: [18185403]
