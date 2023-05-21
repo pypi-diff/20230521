@@ -4208,3 +4208,19 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:59:34] INFO root fetch - main [MainThread]: End processing [dicfg]: success
 [2023-05-21 11:59:34] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
 [2023-05-21 11:59:34] INFO root fetch - main [MainThread]: Store serial: [18186524]
+[2023-05-21 12:04:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186524]
+[2023-05-21 12:04:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-ansible
+[2023-05-21 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: migdalor
+[2023-05-21 12:04:43] INFO root fetch - processPackages [mkdocs-ansible]: New version: [0.1.dev2] Old Version: [0.1.5]
+[2023-05-21 12:04:43] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev2] Old Version: [0.0.2.dev1]
+[2023-05-21 12:04:43] INFO root fetch - processPackages [mkdocs-ansible]: Downloading https://files.pythonhosted.org/packages/29/d1/2f12a9d9421f6567fde3239fc28bfeb35f8a5816903e55e24434aefac38f/mkdocs-ansible-0.1.5.tar.gz
+[2023-05-21 12:04:43] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/79/5c/d208d3d3a3c29f554325c3eb0b863b855f0aa8fdb04a6bbafd0ab8e4d542/migdalor-0.0.2.dev2.tar.gz
+[2023-05-21 12:04:43] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 12:04:43] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev1.tar.gz tmp/migdalor-0.0.2.dev2.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev1-0.0.2.dev2/diff.md --exclude *.pyd
+[2023-05-21 12:04:43] INFO root fetch - processPackages [mkdocs-ansible]: Downloading https://files.pythonhosted.org/packages/e5/96/e5b3e89b30d7c0ca4e8ae35f6dfd83656c5ec410c610a99f07ba9f00cf63/mkdocs-ansible-0.1.dev2.tar.gz
+[2023-05-21 12:04:43] INFO root fetch - processPackages [mkdocs-ansible]: executing diffoscope
+[2023-05-21 12:04:43] INFO root fetch - processPackages [mkdocs-ansible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-ansible-0.1.5.tar.gz tmp/mkdocs-ansible-0.1.dev2.tar.gz --markdown 20230521/m/mkdocs-ansible/0.1.5-0.1.dev2/diff.md --exclude *.pyd
+[2023-05-21 12:04:44] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 12:04:45] INFO root fetch - main [MainThread]: End processing [mkdocs-ansible]: success
+[2023-05-21 12:04:45] INFO root fetch - main [MainThread]: Store serial: [18186530]
