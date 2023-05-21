@@ -6516,3 +6516,13 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:37:11] INFO root fetch - main [MainThread]: End processing [keksik-api]: success
 [2023-05-21 16:37:13] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
 [2023-05-21 16:37:13] INFO root fetch - main [MainThread]: Store serial: [18187647]
+[2023-05-21 16:42:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187647]
+[2023-05-21 16:42:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 16:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cz-conventional-gitmoji
+[2023-05-21 16:42:22] INFO root fetch - processPackages [cz-conventional-gitmoji]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-21 16:42:22] INFO root fetch - processPackages [cz-conventional-gitmoji]: Downloading https://files.pythonhosted.org/packages/b6/59/adfab84e9276bc47e607ba04ea52916332be804f2975c6541416a5243a53/cz_conventional_gitmoji-0.1.3.tar.gz
+[2023-05-21 16:42:22] INFO root fetch - processPackages [cz-conventional-gitmoji]: Downloading https://files.pythonhosted.org/packages/b6/be/a888deac09cd0564e86fb36116ae2b6f593d950f7413e25b878199413205/cz_conventional_gitmoji-0.2.0.tar.gz
+[2023-05-21 16:42:22] INFO root fetch - processPackages [cz-conventional-gitmoji]: executing diffoscope
+[2023-05-21 16:42:22] INFO root fetch - processPackages [cz-conventional-gitmoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cz_conventional_gitmoji-0.1.3.tar.gz tmp/cz_conventional_gitmoji-0.2.0.tar.gz --markdown 20230521/c/cz-conventional-gitmoji/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 16:42:24] INFO root fetch - main [MainThread]: End processing [cz-conventional-gitmoji]: success
+[2023-05-21 16:42:24] INFO root fetch - main [MainThread]: Store serial: [18187650]
