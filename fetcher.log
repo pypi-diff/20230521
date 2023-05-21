@@ -2784,3 +2784,13 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:41:54] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
 [2023-05-21 07:41:54] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
 [2023-05-21 07:41:54] INFO root fetch - main [MainThread]: Store serial: [18185779]
+[2023-05-21 07:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185779]
+[2023-05-21 07:47:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 07:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spider-st
+[2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: Downloading https://files.pythonhosted.org/packages/25/d4/0ea846fac7441184c86ccee7c0a9b7fc2e1c4bc8a808192d92ba0190315c/spider-st-0.0.1.tar.gz
+[2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: Downloading https://files.pythonhosted.org/packages/d5/9b/98a5057e77235db65dbf30c96f50b25a10e91dec86b9e433f9d43ed410c5/spider-st-0.0.3.tar.gz
+[2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: executing diffoscope
+[2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spider-st-0.0.1.tar.gz tmp/spider-st-0.0.3.tar.gz --markdown 20230521/s/spider-st/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 07:47:05] INFO root fetch - main [MainThread]: End processing [spider-st]: success
+[2023-05-21 07:47:05] INFO root fetch - main [MainThread]: Store serial: [18185789]
