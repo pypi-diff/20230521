@@ -1757,3 +1757,13 @@
 [2023-05-21 04:07:24] INFO root fetch - main [MainThread]: End processing [mpservice]: success
 [2023-05-21 04:07:24] INFO root fetch - main [MainThread]: End processing [xhs]: success
 [2023-05-21 04:07:24] INFO root fetch - main [MainThread]: Store serial: [18185339]
+[2023-05-21 04:12:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185339]
+[2023-05-21 04:12:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 04:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsutsuji-trackcomputer
+[2023-05-21 04:12:33] INFO root fetch - processPackages [tsutsuji-trackcomputer]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-21 04:12:33] INFO root fetch - processPackages [tsutsuji-trackcomputer]: Downloading https://files.pythonhosted.org/packages/fb/9b/c435467728ac4b87e87291b373db3e1aecad431d28a7b355b83c121db6cf/tsutsuji_trackcomputer-1.6.0-py3-none-any.whl
+[2023-05-21 04:12:34] INFO root fetch - processPackages [tsutsuji-trackcomputer]: Downloading https://files.pythonhosted.org/packages/0c/4d/05680e459951e636d137979851a91d74db31198ae56752f3f5a870cf0bab/tsutsuji_trackcomputer-1.6.1-py3-none-any.whl
+[2023-05-21 04:12:34] INFO root fetch - processPackages [tsutsuji-trackcomputer]: executing diffoscope
+[2023-05-21 04:12:34] INFO root fetch - processPackages [tsutsuji-trackcomputer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsutsuji_trackcomputer-1.6.0-py3-none-any.whl.zip tmp/tsutsuji_trackcomputer-1.6.1-py3-none-any.whl.zip --markdown 20230521/t/tsutsuji-trackcomputer/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-21 04:12:35] INFO root fetch - main [MainThread]: End processing [tsutsuji-trackcomputer]: success
+[2023-05-21 04:12:35] INFO root fetch - main [MainThread]: Store serial: [18185345]
