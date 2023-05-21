@@ -5337,3 +5337,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:39:06] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-05-21 14:39:46] INFO root fetch - main [MainThread]: End processing [funcs]: success
 [2023-05-21 14:39:46] INFO root fetch - main [MainThread]: Store serial: [18187046]
+[2023-05-21 14:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187046]
+[2023-05-21 14:44:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seaplayer
+[2023-05-21 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rosa-python-client
+[2023-05-21 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gb2seq
+[2023-05-21 14:44:54] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-21 14:44:54] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-21 14:44:54] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230521/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-21 14:44:54] INFO root fetch - processPackages [gb2seq]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 14:44:54] INFO root fetch - processPackages [rosa-python-client]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-21 14:44:55] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/0e/38/67f502c1eedd9452cec2fee5106485a05377255f7ca738018cda87182fdd/rosa_python_client-1.0.6.tar.gz
+[2023-05-21 14:44:55] INFO root fetch - processPackages [gb2seq]: Downloading https://files.pythonhosted.org/packages/63/93/cd71b29d455df9373a2970c83e812829bbb3047f9f1f7be17cd8392e83e2/gb2seq-0.2.4.tar.gz
+[2023-05-21 14:44:55] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/b8/47/7024cedf46bd9905d8e37d5767b186490c740821a22324e536fb0bea3e60/rosa_python_client-1.0.7.tar.gz
+[2023-05-21 14:44:55] INFO root fetch - processPackages [gb2seq]: Downloading https://files.pythonhosted.org/packages/ae/e1/74990aa8275bd0b902ca68c955ad0948b5cec820dc08d18714e6ccf3b617/gb2seq-0.2.5.tar.gz
+[2023-05-21 14:44:55] INFO root fetch - processPackages [rosa-python-client]: executing diffoscope
+[2023-05-21 14:44:55] INFO root fetch - processPackages [rosa-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosa_python_client-1.0.6.tar.gz tmp/rosa_python_client-1.0.7.tar.gz --markdown 20230521/r/rosa-python-client/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-21 14:44:55] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 14:44:55] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.4.tar.gz tmp/gb2seq-0.2.5.tar.gz --markdown 20230521/g/gb2seq/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 14:44:55] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-21 14:44:56] INFO root fetch - main [MainThread]: End processing [rosa-python-client]: success
+[2023-05-21 14:44:56] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 14:44:56] INFO root fetch - main [MainThread]: Store serial: [18187054]
