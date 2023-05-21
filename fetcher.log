@@ -3703,3 +3703,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:51:19] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
 [2023-05-21 10:51:20] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-21 10:51:20] INFO root fetch - main [MainThread]: Store serial: [18186269]
+[2023-05-21 10:56:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186269]
+[2023-05-21 10:56:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-bulk-ingest
+[2023-05-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2023-05-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: migdalor
+[2023-05-21 10:56:29] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 10:56:29] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev0] Old Version: [0.0.1.dev0]
+[2023-05-21 10:56:29] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230521.8.11.112771] Old Version: [20230520.9.20.792154]
+[2023-05-21 10:56:29] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-21 10:56:29] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230521/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 10:56:29] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 10:56:29] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.1.dev0.tar.gz tmp/migdalor-0.0.2.dev0.tar.gz --markdown 20230521/m/migdalor/0.0.1.dev0-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-05-21 10:56:29] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/15/47/94830c10ec3300609dcd287d6586151f10634d0061f721b07280084d4983/certora-cli-alpha-master-20230520.9.20.792154.tar.gz
+[2023-05-21 10:56:29] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978792>=10485760
+[2023-05-21 10:56:29] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-21 10:56:30] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-21 10:56:30] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 10:56:30] INFO root fetch - main [MainThread]: Store serial: [18186278]
