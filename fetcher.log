@@ -8540,3 +8540,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [vws-python]: success
 [2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [dlt]: success
 [2023-05-21 21:05:05] INFO root fetch - main [MainThread]: Store serial: [18188682]
+[2023-05-21 21:10:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188682]
+[2023-05-21 21:10:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 21:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ensmallen
+[2023-05-21 21:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlite-utils
+[2023-05-21 21:10:14] INFO root fetch - processPackages [sqlite-utils]: New version: [3.9.1] Old Version: [3.9]
+[2023-05-21 21:10:14] INFO root fetch - processPackages [ensmallen]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-21 21:10:14] INFO root fetch - processPackages [ensmallen]: Downloading https://files.pythonhosted.org/packages/75/07/70c25877db695ae02b4a944b722513282eaca44b6bec77e09bed7e8bea0c/ensmallen-0.8.8-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-05-21 21:10:14] INFO root fetch - processPackages [sqlite-utils]: Downloading https://files.pythonhosted.org/packages/86/4f/17aaa5880391e1a982119013e590ae246d709d7bf797127ab7dedfacb10a/sqlite-utils-3.9.tar.gz
+[2023-05-21 21:10:14] WARNING root fetch - processPackages [ensmallen]: Skipping package: exceeds size limit 18826030>=10485760
+[2023-05-21 21:10:14] INFO root fetch - main [MainThread]: End processing [ensmallen] error
+[2023-05-21 21:10:15] INFO root fetch - processPackages [sqlite-utils]: Downloading https://files.pythonhosted.org/packages/9c/c9/3b3d73898243153dd80aa56c1bf80f5dd700ae65d12c29324ac9db833e03/sqlite-utils-3.9.1.tar.gz
+[2023-05-21 21:10:15] INFO root fetch - processPackages [sqlite-utils]: executing diffoscope
+[2023-05-21 21:10:15] INFO root fetch - processPackages [sqlite-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-utils-3.9.tar.gz tmp/sqlite-utils-3.9.1.tar.gz --markdown 20230521/s/sqlite-utils/3.9-3.9.1/diff.md --exclude *.pyd
+[2023-05-21 21:10:17] INFO root fetch - main [MainThread]: End processing [sqlite-utils]: success
+[2023-05-21 21:10:17] INFO root fetch - main [MainThread]: Store serial: [18188689]
