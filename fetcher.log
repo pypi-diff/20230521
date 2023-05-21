@@ -2716,3 +2716,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:26:22] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.4.tar.gz tmp/vector_vault-0.1.5.tar.gz --markdown 20230521/v/vector-vault/0.1.4-0.1.5/diff.md --exclude *.pyd
 [2023-05-21 07:26:23] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
 [2023-05-21 07:26:23] INFO root fetch - main [MainThread]: Store serial: [18185749]
+[2023-05-21 07:31:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185749]
+[2023-05-21 07:31:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 07:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2023-05-21 07:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: configzen
+[2023-05-21 07:31:32] INFO root fetch - processPackages [configzen]: New version: [0.1.29] Old Version: [0.1.28]
+[2023-05-21 07:31:32] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-21 07:31:32] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-21 07:31:32] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230521/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-21 07:31:32] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/e9/e2/8529484a47f73dbac52e2fbe45f10cf14964dcf92ffa92a0336b51dc50e7/configzen-0.1.28.tar.gz
+[2023-05-21 07:31:32] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/1b/bc/6eae8cd3937b779c83124944060a4ebe4d928ac03687a0765c15413d2002/configzen-0.1.29.tar.gz
+[2023-05-21 07:31:33] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 07:31:33] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.28.tar.gz tmp/configzen-0.1.29.tar.gz --markdown 20230521/c/configzen/0.1.28-0.1.29/diff.md --exclude *.pyd
+[2023-05-21 07:31:33] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-21 07:31:33] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 07:31:33] INFO root fetch - main [MainThread]: Store serial: [18185755]
