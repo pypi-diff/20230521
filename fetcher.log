@@ -3682,3 +3682,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:45:56] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
 [2023-05-21 10:46:08] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-21 10:46:08] INFO root fetch - main [MainThread]: Store serial: [18186261]
+[2023-05-21 10:51:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186261]
+[2023-05-21 10:51:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 10:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helios-opentelemetry-sdk
+[2023-05-21 10:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tff-nightly
+[2023-05-21 10:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: convert-labse-tf-pt
+[2023-05-21 10:51:17] INFO root fetch - processPackages [helios-opentelemetry-sdk]: New version: [1.0.9] Old Version: [1.0.84]
+[2023-05-21 10:51:17] INFO root fetch - processPackages [convert-labse-tf-pt]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-21 10:51:17] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230521] Old Version: [0.0.1.dev20230520]
+[2023-05-21 10:51:17] INFO root fetch - processPackages [helios-opentelemetry-sdk]: Downloading https://files.pythonhosted.org/packages/2f/4f/7d5557035e6b8b4f90798de8ccfded902c529f178f19a736d88606820ddc/helios-opentelemetry-sdk-1.0.84.tar.gz
+[2023-05-21 10:51:17] INFO root fetch - processPackages [convert-labse-tf-pt]: Downloading https://files.pythonhosted.org/packages/b3/81/95143409674fb0db725150630dcbfe05fbfaeedc7fca9c00e393e5d2dd7a/convert_labse_tf_pt-2.4.1.tar.gz
+[2023-05-21 10:51:17] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/61/44/04c2c42a85377eb3c6c9217baaf4fab083fa75fdb213674a4244edc7e3b0/tff_nightly-0.0.1.dev20230521-py2.py3-none-any.whl
+[2023-05-21 10:51:17] INFO root fetch - processPackages [helios-opentelemetry-sdk]: executing diffoscope
+[2023-05-21 10:51:17] INFO root fetch - processPackages [helios-opentelemetry-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-opentelemetry-sdk-1.0.84.tar.gz tmp/helios-opentelemetry-sdk-1.0.9.tar.gz --markdown 20230521/h/helios-opentelemetry-sdk/1.0.84-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 10:51:17] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-21 10:51:17] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230520-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230521-py2.py3-none-any.whl.zip --markdown 20230521/t/tff-nightly/0.0.1.dev20230520-0.0.1.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 10:51:18] INFO root fetch - processPackages [convert-labse-tf-pt]: executing diffoscope
+[2023-05-21 10:51:18] INFO root fetch - processPackages [convert-labse-tf-pt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_labse_tf_pt-2.4.0.tar.gz tmp/convert_labse_tf_pt-2.4.1.tar.gz --markdown 20230521/c/convert-labse-tf-pt/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-21 10:51:19] INFO root fetch - main [MainThread]: End processing [helios-opentelemetry-sdk]: success
+[2023-05-21 10:51:19] INFO root fetch - main [MainThread]: End processing [convert-labse-tf-pt]: success
+[2023-05-21 10:51:20] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-21 10:51:20] INFO root fetch - main [MainThread]: Store serial: [18186269]
