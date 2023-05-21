@@ -4631,3 +4631,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:13:57] INFO root fetch - main [MainThread]: End processing [glances-api]: success
 [2023-05-21 13:13:57] INFO root fetch - main [MainThread]: End processing [jschon]: success
 [2023-05-21 13:13:57] INFO root fetch - main [MainThread]: Store serial: [18186709]
+[2023-05-21 13:19:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186709]
+[2023-05-21 13:19:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 13:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: migdalor
+[2023-05-21 13:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: install-pybci
+[2023-05-21 13:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysubcipher
+[2023-05-21 13:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiyobot
+[2023-05-21 13:19:06] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev6] Old Version: [0.0.2.dev5]
+[2023-05-21 13:19:06] INFO root fetch - processPackages [pysubcipher]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-21 13:19:06] INFO root fetch - processPackages [hiyobot]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 13:19:06] INFO root fetch - processPackages [install-pybci]: New version: [0.1.4b5] Old Version: [0.1.4b4]
+[2023-05-21 13:19:06] INFO root fetch - processPackages [pysubcipher]: Downloading https://files.pythonhosted.org/packages/c0/90/0a47a7f23a0a652bf7c31fa0f2d743b215a99551434f577bf8547c97ef18/pysubcipher-2.2.1.tar.gz
+[2023-05-21 13:19:06] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/86/be/884ba2c6679383142a1491fd13b22085b676ff23ed839f845e3a225c1441/migdalor-0.0.2.dev6.tar.gz
+[2023-05-21 13:19:06] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/f9/90/a03917cd24156aa0c59166ce41804ef0ffc8970e5fc94c467aed8003393f/hiyobot-0.2.2.tar.gz
+[2023-05-21 13:19:06] INFO root fetch - processPackages [install-pybci]: Downloading https://files.pythonhosted.org/packages/41/64/3f6c9065f77988e245a0136eefbc2e1c83f9ee8cf87213644af154b90005/install-pybci-0.1.4b4.tar.gz
+[2023-05-21 13:19:06] INFO root fetch - processPackages [pysubcipher]: executing diffoscope
+[2023-05-21 13:19:06] INFO root fetch - processPackages [pysubcipher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubcipher-2.2.0.tar.gz tmp/pysubcipher-2.2.1.tar.gz --markdown 20230521/p/pysubcipher/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-21 13:19:06] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 13:19:06] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev5.tar.gz tmp/migdalor-0.0.2.dev6.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev5-0.0.2.dev6/diff.md --exclude *.pyd
+[2023-05-21 13:19:06] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/2b/36/d996ec6a58c9a45d18d441482a4e3ae48dde85e67a47e5dc366da79034c8/hiyobot-0.2.3.tar.gz
+[2023-05-21 13:19:06] INFO root fetch - processPackages [install-pybci]: Downloading https://files.pythonhosted.org/packages/d0/19/49f080c16398378bb7269b2f38ea4cfe4d5db91edd857f294a0afe589d81/install-pybci-0.1.4b5.tar.gz
+[2023-05-21 13:19:07] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-21 13:19:07] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.2.2.tar.gz tmp/hiyobot-0.2.3.tar.gz --markdown 20230521/h/hiyobot/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 13:19:07] INFO root fetch - processPackages [install-pybci]: executing diffoscope
+[2023-05-21 13:19:07] INFO root fetch - processPackages [install-pybci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install-pybci-0.1.4b4.tar.gz tmp/install-pybci-0.1.4b5.tar.gz --markdown 20230521/i/install-pybci/0.1.4b4-0.1.4b5/diff.md --exclude *.pyd
+[2023-05-21 13:19:07] INFO root fetch - main [MainThread]: End processing [pysubcipher]: success
+[2023-05-21 13:19:08] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 13:19:08] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-21 13:19:08] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
+[2023-05-21 13:19:08] INFO root fetch - main [MainThread]: Store serial: [18186722]
