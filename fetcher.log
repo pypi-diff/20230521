@@ -5284,3 +5284,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [arxivai]: success
 [2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [ansible-compat]: success
 [2023-05-21 14:33:52] INFO root fetch - main [MainThread]: Store serial: [18187024]
+[2023-05-21 14:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187024]
+[2023-05-21 14:39:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feature-engineering-polars
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QuNet
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: funcs
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: migdalor
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flow-control
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tensorcircuit-nightly
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyloobins
+[2023-05-21 14:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fmsne
+[2023-05-21 14:39:01] INFO root fetch - processPackages [pyloobins]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev7] Old Version: [0.0.2.dev6]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [pyloobins]: executing diffoscope
+[2023-05-21 14:39:01] INFO root fetch - processPackages [pyloobins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyloobins-0.1.6.tar.gz tmp/pyloobins-0.1.7.tar.gz --markdown 20230521/p/pyloobins/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 14:39:01] INFO root fetch - processPackages [funcs]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [feature-engineering-polars]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [fmsne]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [flow-control]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-21 14:39:01] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230521] Old Version: [0.9.1.dev20230520]
+[2023-05-21 14:39:02] INFO root fetch - processPackages [funcs]: Downloading https://files.pythonhosted.org/packages/bc/09/7b513f90b6171976a6e43c819045f6e9f7f7bc2b204d471767f5e3b618d3/funcs-0.5.1.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [feature-engineering-polars]: Downloading https://files.pythonhosted.org/packages/41/07/76dbdb2e216e2c9dadcaa0e348b203e8dfe5dbca1dc640565bf7f23e0b9e/feature_engineering_polars-0.3.1.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/96/08/72bc50fc6a1f6c6459fde6b5a3dad656510f5e637cf3876035501b4cb981/fmsne-0.5.1.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/60/45/6ab2ff8c3e30680f899908cc0220c27563c29915b1147d1b0751d625ecb5/migdalor-0.0.2.dev7.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [flow-control]: Downloading https://files.pythonhosted.org/packages/65/d7/1705b554e781cf778b5d85449929b2e6b618a262da04e2b2428e34651551/flow_control-1.0.0.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/d3/50/e285e1d1bf7e167ba0041727756f5fc77a2b2f953f1531254765d10149ba/tensorcircuit-nightly-0.9.1.dev20230521.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230521/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev6.tar.gz tmp/migdalor-0.0.2.dev7.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev6-0.0.2.dev7/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [feature-engineering-polars]: Downloading https://files.pythonhosted.org/packages/8b/da/8ef4b94b4966019e24cc946357118873512b26662f4e7336b50bab93bc7c/feature_engineering_polars-0.3.2.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [funcs]: Downloading https://files.pythonhosted.org/packages/9a/b4/3e0ea6a377d9adc451d239a2e59632859f82a6035a967208e3ca31e3c3bd/funcs-0.6.0.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230520.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230521.tar.gz --markdown 20230521/t/tensorcircuit-nightly/0.9.1.dev20230520-0.9.1.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/d8/ce/2dd8e5caf8fe4e62c34513a7e05d988cae70bbb4a77f2b517e9e5e1bd299/fmsne-0.6.0.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [flow-control]: Downloading https://files.pythonhosted.org/packages/00/a1/f5d6a9ccb79bd54401e59986cd019a57cffa3b7bcdbc4b511b978a742d93/flow_control-2.0.0.tar.gz
+[2023-05-21 14:39:02] INFO root fetch - processPackages [feature-engineering-polars]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [feature-engineering-polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_engineering_polars-0.3.1.tar.gz tmp/feature_engineering_polars-0.3.2.tar.gz --markdown 20230521/f/feature-engineering-polars/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [funcs]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [funcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcs-0.5.1.tar.gz tmp/funcs-0.6.0.tar.gz --markdown 20230521/f/funcs/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [flow-control]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [flow-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow_control-1.0.0.tar.gz tmp/flow_control-2.0.0.tar.gz --markdown 20230521/f/flow-control/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-21 14:39:02] INFO root fetch - processPackages [fmsne]: executing diffoscope
+[2023-05-21 14:39:02] INFO root fetch - processPackages [fmsne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmsne-0.5.1.tar.gz tmp/fmsne-0.6.0.tar.gz --markdown 20230521/f/fmsne/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 14:39:03] INFO root fetch - main [MainThread]: End processing [pyloobins]: success
+[2023-05-21 14:39:03] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-21 14:39:03] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 14:39:03] INFO root fetch - main [MainThread]: End processing [feature-engineering-polars]: success
+[2023-05-21 14:39:03] INFO root fetch - main [MainThread]: End processing [flow-control]: success
+[2023-05-21 14:39:04] INFO root fetch - main [MainThread]: End processing [fmsne]: success
+[2023-05-21 14:39:06] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-21 14:39:46] INFO root fetch - main [MainThread]: End processing [funcs]: success
+[2023-05-21 14:39:46] INFO root fetch - main [MainThread]: Store serial: [18187046]
