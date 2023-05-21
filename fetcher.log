@@ -8617,3 +8617,12 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:20:46] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-21 21:20:46] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
 [2023-05-21 21:20:46] INFO root fetch - main [MainThread]: Store serial: [18188716]
+[2023-05-21 21:25:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188716]
+[2023-05-21 21:25:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 21:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqint
+[2023-05-21 21:25:55] INFO root fetch - processPackages [pyqint]: New version: [0.9.7.2] Old Version: [0.9.7.1]
+[2023-05-21 21:25:55] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/c6/91/7907d7a29f5c26c031da3175916525427e9150b5a9ab871b7734076bbf41/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 21:25:56] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2023-05-21 21:25:56] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/p/pyqint/0.9.7.1-0.9.7.2/diff.md --exclude *.pyd
+[2023-05-21 21:26:19] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2023-05-21 21:26:19] INFO root fetch - main [MainThread]: Store serial: [18188722]
