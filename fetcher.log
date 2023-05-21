@@ -4930,3 +4930,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:50:49] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-21 13:50:53] INFO root fetch - main [MainThread]: End processing [weewx]: success
 [2023-05-21 13:50:53] INFO root fetch - main [MainThread]: Store serial: [18186855]
+[2023-05-21 13:55:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186855]
+[2023-05-21 13:56:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 13:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: x-dgcnn
+[2023-05-21 13:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checkov
+[2023-05-21 13:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openshift-python-wrapper
+[2023-05-21 13:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openshift-python-wrapper
+[2023-05-21 13:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oceano-algos
+[2023-05-21 13:56:01] INFO root fetch - processPackages [x-dgcnn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 13:56:01] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 13:56:01] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2023-05-21 13:56:01] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2023-05-21 13:56:02] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 13:56:02] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-21 13:56:02] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230521/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-21 13:56:02] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230521/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 13:56:02] INFO root fetch - processPackages [x-dgcnn]: Downloading https://files.pythonhosted.org/packages/7b/e3/6227db45887c2cbf829bd5f0ff23144ee5ab183ae24b11892c0660a35adb/x-dgcnn-0.0.2.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [x-dgcnn]: Downloading https://files.pythonhosted.org/packages/38/a6/c64f9b848ae3f99132554f911c7c97b8e2af7d51a5f2c993a2ca714821f8/x-dgcnn-0.0.3.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [x-dgcnn]: executing diffoscope
+[2023-05-21 13:56:02] INFO root fetch - processPackages [x-dgcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-dgcnn-0.0.2.tar.gz tmp/x-dgcnn-0.0.3.tar.gz --markdown 20230521/x/x-dgcnn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20230521/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/diff.md --exclude *.pyd
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2023-05-21 13:56:02] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20230521/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/diff.md --exclude *.pyd
+[2023-05-21 13:56:03] INFO root fetch - main [MainThread]: End processing [x-dgcnn]: success
+[2023-05-21 13:56:03] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-21 13:56:04] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2023-05-21 13:56:04] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2023-05-21 13:56:43] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-21 13:56:43] INFO root fetch - main [MainThread]: Store serial: [18186867]
