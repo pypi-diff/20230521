@@ -2257,3 +2257,16 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 05:48:22] INFO root fetch - main [MainThread]: End processing [tatarubot2] error
 [2023-05-21 05:49:05] INFO root fetch - main [MainThread]: End processing [esterdb]: success
 [2023-05-21 05:49:05] INFO root fetch - main [MainThread]: Store serial: [18185517]
+[2023-05-21 05:54:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185517]
+[2023-05-21 05:54:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 05:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchility
+[2023-05-21 05:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipe21
+[2023-05-21 05:54:14] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-21 05:54:14] INFO root fetch - processPackages [torchility]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-21 05:54:14] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-21 05:54:14] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230521/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 05:54:14] INFO root fetch - processPackages [torchility]: executing diffoscope
+[2023-05-21 05:54:14] INFO root fetch - processPackages [torchility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchility-0.6.8.tar.gz tmp/torchility-0.6.9.tar.gz --markdown 20230521/t/torchility/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-21 05:54:15] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-21 05:54:15] INFO root fetch - main [MainThread]: End processing [torchility]: success
+[2023-05-21 05:54:15] INFO root fetch - main [MainThread]: Store serial: [18185523]
