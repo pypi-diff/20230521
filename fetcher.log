@@ -1633,3 +1633,50 @@
 [2023-05-21 03:40:46] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
 [2023-05-21 03:40:47] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-05-21 03:40:47] INFO root fetch - main [MainThread]: Store serial: [18185271]
+[2023-05-21 03:45:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185271]
+[2023-05-21 03:45:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-sphinx
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-wordpress
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lifx-cli
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-django
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proactive
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-apl
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: proactive-jupyter-kernel
+[2023-05-21 03:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dratio
+[2023-05-21 03:45:56] INFO root fetch - processPackages [lifx-cli]: New version: [2.5.3] Old Version: [2.5.2]
+[2023-05-21 03:45:56] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:45:56] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:45:56] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-21 03:45:56] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.785] Old Version: [0.0.784]
+[2023-05-21 03:45:57] INFO root fetch - processPackages [dratio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:45:57] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230521/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/4f/89/e5faa47e5330af4e9fb0f9aca7e02630e61b542f423f5710a31b3e90c9db/lifx_cli-2.5.3.tar.gz
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230521/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230521/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [dratio]: Downloading https://files.pythonhosted.org/packages/9f/90/4aefb2980b0b608114ed60fc07acceaf525fe5ea7982ba73c09d1f5d2b1e/dratio-0.0.8.tar.gz
+[2023-05-21 03:45:57] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-2.5.2.tar.gz tmp/lifx_cli-2.5.3.tar.gz --markdown 20230521/l/lifx-cli/2.5.2-2.5.3/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/b1/f7/8b98ea71322cedcafc46a6e27f2bcc8ee4e9008517d438117c1ee66598d1/nbdev-apl-0.0.785.tar.gz
+[2023-05-21 03:45:57] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-21 03:45:57] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.784.tar.gz tmp/nbdev-apl-0.0.785.tar.gz --markdown 20230521/n/nbdev-apl/0.0.784-0.0.785/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230521/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:45:57] INFO root fetch - processPackages [dratio]: Downloading https://files.pythonhosted.org/packages/9e/45/319047fb0cc78ea0faa858cc39f567247b59fa855588408223ad9993ed1d/dratio-0.0.9.tar.gz
+[2023-05-21 03:45:57] INFO root fetch - processPackages [dratio]: executing diffoscope
+[2023-05-21 03:45:57] INFO root fetch - processPackages [dratio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dratio-0.0.8.tar.gz tmp/dratio-0.0.9.tar.gz --markdown 20230521/d/dratio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-21 03:45:59] INFO root fetch - main [MainThread]: End processing [dratio]: success
+[2023-05-21 03:45:59] INFO root fetch - main [MainThread]: Store serial: [18185295]
