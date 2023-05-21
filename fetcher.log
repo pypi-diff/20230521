@@ -4964,3 +4964,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:56:04] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
 [2023-05-21 13:56:43] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-21 13:56:43] INFO root fetch - main [MainThread]: Store serial: [18186867]
+[2023-05-21 14:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186867]
+[2023-05-21 14:01:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-llm
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akeyless
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: comathon
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-bulk-ingest
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ResponsePrediction
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bike
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-tuan-chatgpt
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: returnn
+[2023-05-21 14:01:51] INFO root fetch - processPackages [python-llm]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 14:01:51] INFO root fetch - processPackages [ResponsePrediction]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-21 14:01:51] INFO root fetch - processPackages [comathon]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:01:51] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:01:51] INFO root fetch - processPackages [bike]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 14:01:52] INFO root fetch - processPackages [akeyless]: New version: [3.3.5] Old Version: [3.3.4]
+[2023-05-21 14:01:52] INFO root fetch - processPackages [nonebot-plugin-tuan-chatgpt]: New version: [0.4.1] Old Version: [0.4.0b1]
+[2023-05-21 14:01:52] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230521/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [returnn]: New version: [1.20230521.133937] Old Version: [1.20230521.10102]
+[2023-05-21 14:01:52] INFO root fetch - processPackages [bike]: Downloading https://files.pythonhosted.org/packages/9c/b2/12ed2b4d70751c70d34a68abeec9af6d27618517b0599596bad5619e35ad/bike-0.2.0.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [ResponsePrediction]: Downloading https://files.pythonhosted.org/packages/29/75/68035794501364db2200089a238052b20bba837d5a735ae8a92a15f7830b/ResponsePrediction-0.0.4.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [akeyless]: Downloading https://files.pythonhosted.org/packages/df/86/a48e60bd3006fa1bcdadfa124399eb58650777968e467bc0438103ba1693/akeyless-3.3.4.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [comathon]: Downloading https://files.pythonhosted.org/packages/32/49/b3c739e62b663a7b5a4c51f3217e64dcc67d844226dbf365780afd4ab7f0/comathon-0.0.8-py3-none-any.whl
+[2023-05-21 14:01:52] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/29/36/0bb8e69fe5c9adc66c26dc6c979ed2dcef02d74ba44aa227bcd2e86149b0/python-llm-0.1.7.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [nonebot-plugin-tuan-chatgpt]: Downloading https://files.pythonhosted.org/packages/5e/b0/b9bfff99991fd8482cba8531009ffade30d62c015b73a4f24a3e089f26a3/nonebot_plugin_tuan_chatgpt-0.4.0b1.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/22/68/dc5f640eb3ed96348459a05fb6c2ef039351e3bff2dad9311139621ec5bb/returnn-1.20230521.133937.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [python-llm]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [python-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-llm-0.1.6.tar.gz tmp/python-llm-0.1.7.tar.gz --markdown 20230521/p/python-llm/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [ResponsePrediction]: Downloading https://files.pythonhosted.org/packages/04/73/758d86f7589b69bbd28fa1a5c126a10e3c9275f7949ebbec5cc4b6b31d32/ResponsePrediction-0.0.5.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [akeyless]: Downloading https://files.pythonhosted.org/packages/9e/d9/a796708cce8d6077ff9f356852c4e447461bbb9a32697428cb2886134d37/akeyless-3.3.5.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [bike]: Downloading https://files.pythonhosted.org/packages/63/6e/8088ba908a2078dd73143f3dd9a7f46584f8c8139e52cb3ce8f6ee98d266/bike-0.3.0.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [ResponsePrediction]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [ResponsePrediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ResponsePrediction-0.0.4.tar.gz tmp/ResponsePrediction-0.0.5.tar.gz --markdown 20230521/R/ResponsePrediction/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [nonebot-plugin-tuan-chatgpt]: Downloading https://files.pythonhosted.org/packages/11/6e/068f81556f82ce80465f141605245e94361f6e5119756a17408f2ec58d6e/nonebot_plugin_tuan_chatgpt-0.4.1.tar.gz
+[2023-05-21 14:01:52] INFO root fetch - processPackages [akeyless]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [akeyless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akeyless-3.3.4.tar.gz tmp/akeyless-3.3.5.tar.gz --markdown 20230521/a/akeyless/3.3.4-3.3.5/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [comathon]: Downloading https://files.pythonhosted.org/packages/35/ff/5c23080c688565eb3a2360508b41c67749639b030edc03ca2442b35172c4/comathon-0.0.9-py3-none-any.whl
+[2023-05-21 14:01:52] INFO root fetch - processPackages [bike]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [bike]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bike-0.2.0.tar.gz tmp/bike-0.3.0.tar.gz --markdown 20230521/b/bike/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [nonebot-plugin-tuan-chatgpt]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [nonebot-plugin-tuan-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_tuan_chatgpt-0.4.0b1.tar.gz tmp/nonebot_plugin_tuan_chatgpt-0.4.1.tar.gz --markdown 20230521/n/nonebot-plugin-tuan-chatgpt/0.4.0b1-0.4.1/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230521.10102.tar.gz tmp/returnn-1.20230521.133937.tar.gz --markdown 20230521/r/returnn/1.20230521.10102-1.20230521.133937/diff.md --exclude *.pyd
+[2023-05-21 14:01:52] INFO root fetch - processPackages [comathon]: executing diffoscope
+[2023-05-21 14:01:52] INFO root fetch - processPackages [comathon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comathon-0.0.8-py3-none-any.whl.zip tmp/comathon-0.0.9-py3-none-any.whl.zip --markdown 20230521/c/comathon/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:01:53] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-21 14:01:53] INFO root fetch - main [MainThread]: End processing [python-llm]: success
+[2023-05-21 14:01:54] INFO root fetch - main [MainThread]: End processing [ResponsePrediction]: success
+[2023-05-21 14:01:54] INFO root fetch - main [MainThread]: End processing [bike]: success
+[2023-05-21 14:01:54] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tuan-chatgpt]: success
+[2023-05-21 14:01:54] INFO root fetch - main [MainThread]: End processing [comathon]: success
+[2023-05-21 14:01:58] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-05-21 14:02:13] INFO root fetch - main [MainThread]: End processing [akeyless]: success
+[2023-05-21 14:02:13] INFO root fetch - main [MainThread]: Store serial: [18186888]
