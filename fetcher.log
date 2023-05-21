@@ -2595,3 +2595,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:56:28] INFO root fetch - main [MainThread]: End processing [stmaterial]: success
 [2023-05-21 06:57:09] INFO root fetch - main [MainThread]: End processing [konductor]: success
 [2023-05-21 06:57:09] INFO root fetch - main [MainThread]: Store serial: [18185680]
+[2023-05-21 07:02:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185680]
+[2023-05-21 07:02:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 07:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ersciyt
+[2023-05-21 07:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swachhdata
+[2023-05-21 07:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: squander
+[2023-05-21 07:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-runtime-nightly
+[2023-05-21 07:02:18] INFO root fetch - processPackages [squander]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-05-21 07:02:18] INFO root fetch - processPackages [ersciyt]: New version: [1.88] Old Version: [1.87]
+[2023-05-21 07:02:18] INFO root fetch - processPackages [swachhdata]: New version: [1.5.5a1] Old Version: [1.5.4a1]
+[2023-05-21 07:02:18] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230519] Old Version: [2.14.0.dev20230518]
+[2023-05-21 07:02:19] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-21 07:02:19] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230518-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230519-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230521/t/tflite-runtime-nightly/2.14.0.dev20230518-2.14.0.dev20230519/diff.md --exclude *.pyd
+[2023-05-21 07:02:19] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/80/56/1d53f854fd396250a01df84a5f5b169e1740267558fb9987c624481c6154/ersciyt-1.88.tar.gz
+[2023-05-21 07:02:19] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/93/b8/4bc39503096f4be7b433b5baaf2907d238bac10ae608c2c3485643da2192/swachhdata-1.5.4a1-py3-none-any.whl
+[2023-05-21 07:02:19] INFO root fetch - processPackages [squander]: Downloading https://files.pythonhosted.org/packages/8a/60/dce6cfc137fda042f027fe2ab6d064c5b93fb9dce126a9423fefadc9a50e/squander-1.8.3.tar.gz
+[2023-05-21 07:02:19] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-21 07:02:19] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.87.tar.gz tmp/ersciyt-1.88.tar.gz --markdown 20230521/e/ersciyt/1.87-1.88/diff.md --exclude *.pyd
+[2023-05-21 07:02:19] INFO root fetch - processPackages [squander]: executing diffoscope
+[2023-05-21 07:02:19] INFO root fetch - processPackages [squander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squander-1.8.2.tar.gz tmp/squander-1.8.3.tar.gz --markdown 20230521/s/squander/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-05-21 07:02:19] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/b6/27/368bd13abc5b548400955e41ef9bec1a643f50825dc370a28d9b5556986d/swachhdata-1.5.5a1-py3-none-any.whl
+[2023-05-21 07:02:19] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-21 07:02:19] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-1.5.4a1-py3-none-any.whl.zip tmp/swachhdata-1.5.5a1-py3-none-any.whl.zip --markdown 20230521/s/swachhdata/1.5.4a1-1.5.5a1/diff.md --exclude *.pyd
+[2023-05-21 07:02:20] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-21 07:02:20] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-21 07:02:22] INFO root fetch - main [MainThread]: End processing [squander]: success
+[2023-05-21 07:02:49] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-21 07:02:49] INFO root fetch - main [MainThread]: Store serial: [18185686]
