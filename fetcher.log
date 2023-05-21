@@ -2175,3 +2175,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-21 05:38:01] INFO root fetch - main [MainThread]: End processing [llm-code]: success
 [2023-05-21 05:38:01] INFO root fetch - main [MainThread]: End processing [ggen]: success
 [2023-05-21 05:38:01] INFO root fetch - main [MainThread]: Store serial: [18185506]
+[2023-05-21 05:43:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185506]
+[2023-05-21 05:43:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 05:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver-folders-aws-s3
+[2023-05-21 05:43:10] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-21 05:43:10] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/f8/10/3a86463ed5a3cada680e1678f42cfdf2a07f27f8cdb90c8d0c3f57f9ab82/heaserver-folders-aws-s3-1.0.0a8.tar.gz
+[2023-05-21 05:43:10] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/f0/b0/dda81eace819afe1df5d783a040e576f769b7f6834886d20e39ca1737454/heaserver-folders-aws-s3-1.0.0a9.tar.gz
+[2023-05-21 05:43:11] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2023-05-21 05:43:11] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230521/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-21 05:43:12] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2023-05-21 05:43:12] INFO root fetch - main [MainThread]: Store serial: [18185509]
