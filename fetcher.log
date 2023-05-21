@@ -1680,3 +1680,18 @@
 [2023-05-21 03:45:58] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
 [2023-05-21 03:45:59] INFO root fetch - main [MainThread]: End processing [dratio]: success
 [2023-05-21 03:45:59] INFO root fetch - main [MainThread]: Store serial: [18185295]
+[2023-05-21 03:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185295]
+[2023-05-21 03:51:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bfg9000
+[2023-05-21 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-05-21 03:51:07] INFO root fetch - processPackages [bfg9000]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-21 03:51:07] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 03:51:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-21 03:51:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230521/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:51:08] INFO root fetch - processPackages [bfg9000]: Downloading https://files.pythonhosted.org/packages/ae/40/f96f17204dac0e863174ce169b87779f7509cc2e9723f0c1ae9f779b4091/bfg9000-0.6.0.tar.gz
+[2023-05-21 03:51:08] INFO root fetch - processPackages [bfg9000]: Downloading https://files.pythonhosted.org/packages/19/42/864d891364cfac97338666645295c5263e4c982f696bdc59684562540ca7/bfg9000-0.7.0.tar.gz
+[2023-05-21 03:51:08] INFO root fetch - processPackages [bfg9000]: executing diffoscope
+[2023-05-21 03:51:08] INFO root fetch - processPackages [bfg9000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfg9000-0.6.0.tar.gz tmp/bfg9000-0.7.0.tar.gz --markdown 20230521/b/bfg9000/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-21 03:51:09] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-21 03:51:10] INFO root fetch - main [MainThread]: End processing [bfg9000]: success
+[2023-05-21 03:51:10] INFO root fetch - main [MainThread]: Store serial: [18185306]
