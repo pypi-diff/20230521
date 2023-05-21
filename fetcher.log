@@ -3409,3 +3409,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:48:31] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.1.2.tar.gz tmp/hordelib-1.2.0.tar.gz --markdown 20230521/h/hordelib/1.1.2-1.2.0/diff.md --exclude *.pyd
 [2023-05-21 09:48:41] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-21 09:48:41] INFO root fetch - main [MainThread]: Store serial: [18186139]
+[2023-05-21 09:53:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186139]
+[2023-05-21 09:53:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 09:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nightly
+[2023-05-21 09:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2023-05-21 09:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sleepyask
+[2023-05-21 09:53:50] INFO root fetch - processPackages [sleepyask]: New version: [6.0.0] Old Version: [5.2.0]
+[2023-05-21 09:53:50] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-21 09:53:50] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230521] Old Version: [2.14.0.dev20230520]
+[2023-05-21 09:53:50] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/1a/c6/25707ae390633f39f77839676b1970e5727564bf62767c08d59a9c3b8e4f/sleepyask-5.2.0.tar.gz
+[2023-05-21 09:53:50] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/1c/5c/363bc82e1cbf55ca7182f451221180527475167ee377a2aeecb3fe485808/sleepyask-6.0.0.tar.gz
+[2023-05-21 09:53:50] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/17/70/f7aa9826f7d864c5253ea8eb222d1ff1d63691e758ea5b7f74d4e23fc28b/tf_nightly_cpu-2.14.0.dev20230521-cp39-cp39-win_amd64.whl
+[2023-05-21 09:53:50] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-21 09:53:50] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230521/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-21 09:53:50] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-05-21 09:53:50] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-5.2.0.tar.gz tmp/sleepyask-6.0.0.tar.gz --markdown 20230521/s/sleepyask/5.2.0-6.0.0/diff.md --exclude *.pyd
+[2023-05-21 09:53:50] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-21 09:53:50] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230520-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230521-cp39-cp39-win_amd64.whl.zip --markdown 20230521/t/tf-nightly-cpu/2.14.0.dev20230520-2.14.0.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 09:53:51] INFO root fetch - main [MainThread]: End processing [sleepyask]: success
+[2023-05-21 09:53:51] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-21 09:54:01] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-21 09:54:01] INFO root fetch - main [MainThread]: Store serial: [18186151]
