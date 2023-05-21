@@ -3836,3 +3836,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:06:56] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2023-05-21 11:06:56] INFO root fetch - main [MainThread]: End processing [bzip3]: success
 [2023-05-21 11:06:56] INFO root fetch - main [MainThread]: Store serial: [18186346]
+[2023-05-21 11:12:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186346]
+[2023-05-21 11:12:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 11:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topologicpy
+[2023-05-21 11:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: demisto-sdk
+[2023-05-21 11:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shinherpro
+[2023-05-21 11:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-react-admin
+[2023-05-21 11:12:06] INFO root fetch - processPackages [fastapi-react-admin]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 11:12:06] INFO root fetch - processPackages [shinherpro]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-05-21 11:12:06] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-21 11:12:06] INFO root fetch - processPackages [demisto-sdk]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-21 11:12:06] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/22/ac/32464f88823e919b097aae43c2222d7b6f366cb2de4171a419e13c962ff9/shinherpro-1.6.2.tar.gz
+[2023-05-21 11:12:06] INFO root fetch - processPackages [fastapi-react-admin]: Downloading https://files.pythonhosted.org/packages/f5/31/a2af3d3661ab08df97068c8255827848d78869ad091e89f4905e0616ef07/fastapi_react_admin-2.0.0.tar.gz
+[2023-05-21 11:12:06] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-05-21 11:12:06] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/09/d8/b40156edfeb2c658f2e1fbd96230c4ad73caeb31f2c65c8c3c79aadd10ae/demisto_sdk-1.8.3.tar.gz
+[2023-05-21 11:12:06] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-05-21 11:12:06] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-05-21 11:12:06] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/17/c3/c371cc0357707ecf33b25b43933af8afd8681fd52d004da7709162f619c8/shinherpro-1.6.3.tar.gz
+[2023-05-21 11:12:06] INFO root fetch - processPackages [fastapi-react-admin]: Downloading https://files.pythonhosted.org/packages/df/65/eacbe49cf90ef7d264196b30108a6a58534ceee1faca416636a0a9f82f32/fastapi_react_admin-2.0.1.tar.gz
+[2023-05-21 11:12:07] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-21 11:12:07] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.6.2.tar.gz tmp/shinherpro-1.6.3.tar.gz --markdown 20230521/s/shinherpro/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-05-21 11:12:07] INFO root fetch - processPackages [fastapi-react-admin]: executing diffoscope
+[2023-05-21 11:12:07] INFO root fetch - processPackages [fastapi-react-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_react_admin-2.0.0.tar.gz tmp/fastapi_react_admin-2.0.1.tar.gz --markdown 20230521/f/fastapi-react-admin/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 11:12:07] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/64/f1/eb1afa74c8cd36ec00a08aa9c524502235aca66e33f399269e7f2b852df2/demisto_sdk-1.9.0.tar.gz
+[2023-05-21 11:12:08] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-21 11:12:08] INFO root fetch - processPackages [demisto-sdk]: executing diffoscope
+[2023-05-21 11:12:08] INFO root fetch - processPackages [demisto-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demisto_sdk-1.8.3.tar.gz tmp/demisto_sdk-1.9.0.tar.gz --markdown 20230521/d/demisto-sdk/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 11:12:08] INFO root fetch - main [MainThread]: End processing [fastapi-react-admin]: success
+[2023-05-21 11:12:19] INFO root fetch - main [MainThread]: End processing [demisto-sdk]: success
+[2023-05-21 11:12:19] INFO root fetch - main [MainThread]: Store serial: [18186362]
