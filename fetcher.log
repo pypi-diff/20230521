@@ -1479,3 +1479,34 @@
 [2023-05-21 03:20:45] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-21 03:20:47] INFO root fetch - main [MainThread]: End processing [Pgenlib]: success
 [2023-05-21 03:20:47] INFO root fetch - main [MainThread]: Store serial: [18185153]
+[2023-05-21 03:25:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185153]
+[2023-05-21 03:25:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 03:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb
+[2023-05-21 03:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyagrum-nightly
+[2023-05-21 03:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2023-05-21 03:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hummuspy
+[2023-05-21 03:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hstsparser
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hstsparser]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 03:25:56] INFO root fetch - processPackages [duckdb]: New version: [0.8.1.dev23] Old Version: [0.8.1.dev2]
+[2023-05-21 03:25:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 03:25:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-21 03:25:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230521/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:25:56] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.0.9.dev202305201684304798] Old Version: [1.8.0.9.dev202305191684304798]
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hstsparser]: Downloading https://files.pythonhosted.org/packages/d4/b5/50bd293cb6d98e5bf3add28f677a30a9ac7084ff3a4bd3b7e1dd48150b36/hstsparser-1.1.6.tar.gz
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230521/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hstsparser]: executing diffoscope
+[2023-05-21 03:25:56] INFO root fetch - processPackages [hstsparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstsparser-1.1.5.tar.gz tmp/hstsparser-1.1.6.tar.gz --markdown 20230521/h/hstsparser/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-21 03:25:56] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/27/c6/83ce301f38c8e57eb12c35ff47805199cbc990376cd9f654347d9503f994/duckdb-0.8.1.dev23.tar.gz
+[2023-05-21 03:25:57] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/85/09/f7147b0b9050d350130ed78d3a1675d6d1231e06550a358eef09090c28a1/pyAgrum_nightly-1.8.0.9.dev202305201684304798-cp39-cp39-win_amd64.whl
+[2023-05-21 03:25:57] INFO root fetch - processPackages [duckdb]: executing diffoscope
+[2023-05-21 03:25:57] INFO root fetch - processPackages [duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb-0.8.1.dev2.tar.gz tmp/duckdb-0.8.1.dev23.tar.gz --markdown 20230521/d/duckdb/0.8.1.dev2-0.8.1.dev23/diff.md --exclude *.pyd
+[2023-05-21 03:25:57] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-21 03:25:57] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.0.9.dev202305191684304798-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.0.9.dev202305201684304798-cp39-cp39-win_amd64.whl.zip --markdown 20230521/p/pyagrum-nightly/1.8.0.9.dev202305191684304798-1.8.0.9.dev202305201684304798/diff.md --exclude *.pyd
+[2023-05-21 03:25:57] INFO root fetch - main [MainThread]: End processing [hstsparser]: success
+[2023-05-21 03:25:58] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-21 03:25:58] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-21 03:25:58] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-21 03:28:21] INFO root fetch - main [MainThread]: End processing [duckdb]: success
+[2023-05-21 03:28:21] INFO root fetch - main [MainThread]: Store serial: [18185185]
