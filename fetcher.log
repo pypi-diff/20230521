@@ -7145,3 +7145,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:55:48] INFO root fetch - main [MainThread]: End processing [task-assembly]: success
 [2023-05-21 17:56:01] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-21 17:56:01] INFO root fetch - main [MainThread]: Store serial: [18187931]
+[2023-05-21 18:01:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187931]
+[2023-05-21 18:01:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: denoising-diffusion-pytorch
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: c2cciutils
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: irene-pro
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keksik-api
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datoso
+[2023-05-21 18:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bgutils-hddly
+[2023-05-21 18:01:09] WARNING root fetch - processPackages [keksik-api]: Skipping, unable to determine old version
+[2023-05-21 18:01:09] INFO root fetch - main [MainThread]: End processing [keksik-api] error
+[2023-05-21 18:01:10] INFO root fetch - processPackages [denoising-diffusion-pytorch]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-21 18:01:10] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-21 18:01:10] INFO root fetch - processPackages [irene-pro]: New version: [0.0.39] Old Version: [0.0.38]
+[2023-05-21 18:01:10] INFO root fetch - processPackages [datoso]: New version: [0.2.9] Old Version: [0.2.8.1]
+[2023-05-21 18:01:10] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-21 18:01:10] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2023-05-21 18:01:10] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20230521/b/bgutils-hddly/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-21 18:01:10] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/c8/51/d63b86e02389105dc4f978e891c4a6384319f196f6f5d3274a839a3dd73c/c2cciutils-1.6.0.dev95.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [irene-pro]: Downloading https://files.pythonhosted.org/packages/b8/2b/64c72057b486057106eed4111f8e72c68aec2c1331cfef7090b20d550442/irene_pro-0.0.38.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Downloading https://files.pythonhosted.org/packages/7f/aa/2ea889891b84ef5950ae82f1a83b9234f2fecd20a49b1d7b02820882ae9e/denoising-diffusion-pytorch-1.6.4.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [datoso]: Downloading https://files.pythonhosted.org/packages/6c/63/ad0ff6eb73f21c953e20f0faeff3ab16551dd549d4bc139d7dd25838349d/datoso-0.2.8.1.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [denoising-diffusion-pytorch]: executing diffoscope
+[2023-05-21 18:01:10] INFO root fetch - processPackages [denoising-diffusion-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denoising-diffusion-pytorch-1.6.3.tar.gz tmp/denoising-diffusion-pytorch-1.6.4.tar.gz --markdown 20230521/d/denoising-diffusion-pytorch/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-21 18:01:10] INFO root fetch - processPackages [irene-pro]: Downloading https://files.pythonhosted.org/packages/16/02/0da3d955db8e4cbaffbaf08dd79fd77c1edba4ff79f06fe647aa364fbe12/irene_pro-0.0.39.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [datoso]: Downloading https://files.pythonhosted.org/packages/18/bb/1ce2d9d308c7c011450706fc303c3e3b28cae8db0fe0f19bc518fc766856/datoso-0.2.9.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/a1/2b/1d6a9f2a49b1cf5d42f9fe6f8498218d1aa03ad4f83547e435c82985bf79/c2cciutils-1.6.0.dev98.tar.gz
+[2023-05-21 18:01:10] INFO root fetch - processPackages [irene-pro]: executing diffoscope
+[2023-05-21 18:01:10] INFO root fetch - processPackages [irene-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irene_pro-0.0.38.tar.gz tmp/irene_pro-0.0.39.tar.gz --markdown 20230521/i/irene-pro/0.0.38-0.0.39/diff.md --exclude *.pyd
+[2023-05-21 18:01:10] INFO root fetch - processPackages [datoso]: executing diffoscope
+[2023-05-21 18:01:10] INFO root fetch - processPackages [datoso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datoso-0.2.8.1.tar.gz tmp/datoso-0.2.9.tar.gz --markdown 20230521/d/datoso/0.2.8.1-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 18:01:10] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-21 18:01:10] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230521/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-21 18:01:11] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2023-05-21 18:01:11] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
+[2023-05-21 18:01:11] INFO root fetch - main [MainThread]: End processing [irene-pro]: success
+[2023-05-21 18:01:12] INFO root fetch - main [MainThread]: End processing [datoso]: success
+[2023-05-21 18:01:17] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-21 18:01:17] INFO root fetch - main [MainThread]: Store serial: [18187965]
