@@ -1918,3 +1918,34 @@
 [2023-05-21 04:55:31] INFO root fetch - main [MainThread]: End processing [glitter-sdk]: success
 [2023-05-21 04:55:44] INFO root fetch - main [MainThread]: End processing [phymmr-tools]: success
 [2023-05-21 04:55:44] INFO root fetch - main [MainThread]: Store serial: [18185417]
+[2023-05-21 05:00:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185417]
+[2023-05-21 05:00:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 05:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pip-licenses
+[2023-05-21 05:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dramkit
+[2023-05-21 05:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chncal
+[2023-05-21 05:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finfactory
+[2023-05-21 05:00:54] INFO root fetch - processPackages [chncal]: New version: [2.2.3] Old Version: [2.1.2]
+[2023-05-21 05:00:54] INFO root fetch - processPackages [dramkit]: New version: [0.5.42] Old Version: [0.5.41]
+[2023-05-21 05:00:54] INFO root fetch - processPackages [pip-licenses]: New version: [4.3.2] Old Version: [4.3.1]
+[2023-05-21 05:00:54] INFO root fetch - processPackages [finfactory]: New version: [0.1.25] Old Version: [0.1.24]
+[2023-05-21 05:00:54] INFO root fetch - processPackages [pip-licenses]: Downloading https://files.pythonhosted.org/packages/cf/0e/f0cca6704ca13675ac6794576ba230c28bd605419c8e5566342eca43ffb8/pip-licenses-4.3.1.tar.gz
+[2023-05-21 05:00:54] INFO root fetch - processPackages [chncal]: Downloading https://files.pythonhosted.org/packages/5e/12/166ac26f4cad1ba0eaf6390a9260c8ebdae4fa3391b00bdcad7b400a4251/chncal-2.1.2.tar.gz
+[2023-05-21 05:00:54] INFO root fetch - processPackages [finfactory]: Downloading https://files.pythonhosted.org/packages/26/56/0505c39a9cbef30e6f5cf5c66c6416f6321b48827a93555480f892343909/finfactory-0.1.24.tar.gz
+[2023-05-21 05:00:54] INFO root fetch - processPackages [dramkit]: Downloading https://files.pythonhosted.org/packages/41/7f/431f1f4e0805defc824a2a542cf14e25ca2a9d16dbd75a1530a9b3ac1971/dramkit-0.5.41.tar.gz
+[2023-05-21 05:00:54] INFO root fetch - processPackages [pip-licenses]: Downloading https://files.pythonhosted.org/packages/f7/19/b78d6a8dd89c02983e5b1ed6df683825110a65f8a4bd07ee0697123cdec4/pip-licenses-4.3.2.tar.gz
+[2023-05-21 05:00:54] INFO root fetch - processPackages [finfactory]: Downloading https://files.pythonhosted.org/packages/ad/cb/a1b684d7d9c33155029470790f9f92a68afdfc4a412f43d223bee9d09d2c/finfactory-0.1.25.tar.gz
+[2023-05-21 05:00:55] INFO root fetch - processPackages [dramkit]: Downloading https://files.pythonhosted.org/packages/52/1c/824b9ad85e87fd472e4eb79739829d248cfe8adaf2e586acd3c31aed3c3a/dramkit-0.5.42.tar.gz
+[2023-05-21 05:00:55] INFO root fetch - processPackages [pip-licenses]: executing diffoscope
+[2023-05-21 05:00:55] INFO root fetch - processPackages [pip-licenses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-licenses-4.3.1.tar.gz tmp/pip-licenses-4.3.2.tar.gz --markdown 20230521/p/pip-licenses/4.3.1-4.3.2/diff.md --exclude *.pyd
+[2023-05-21 05:00:55] INFO root fetch - processPackages [finfactory]: executing diffoscope
+[2023-05-21 05:00:55] INFO root fetch - processPackages [finfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finfactory-0.1.24.tar.gz tmp/finfactory-0.1.25.tar.gz --markdown 20230521/f/finfactory/0.1.24-0.1.25/diff.md --exclude *.pyd
+[2023-05-21 05:00:55] INFO root fetch - processPackages [chncal]: Downloading https://files.pythonhosted.org/packages/47/07/5f44199dde1af443711e4b52427a3de4fa7ffe1987b5d4010c438b294fcb/chncal-2.2.3.tar.gz
+[2023-05-21 05:00:55] INFO root fetch - processPackages [dramkit]: executing diffoscope
+[2023-05-21 05:00:55] INFO root fetch - processPackages [dramkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dramkit-0.5.41.tar.gz tmp/dramkit-0.5.42.tar.gz --markdown 20230521/d/dramkit/0.5.41-0.5.42/diff.md --exclude *.pyd
+[2023-05-21 05:00:55] INFO root fetch - processPackages [chncal]: executing diffoscope
+[2023-05-21 05:00:55] INFO root fetch - processPackages [chncal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chncal-2.1.2.tar.gz tmp/chncal-2.2.3.tar.gz --markdown 20230521/c/chncal/2.1.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-21 05:00:56] INFO root fetch - main [MainThread]: End processing [finfactory]: success
+[2023-05-21 05:00:57] INFO root fetch - main [MainThread]: End processing [pip-licenses]: success
+[2023-05-21 05:00:59] INFO root fetch - main [MainThread]: End processing [dramkit]: success
+[2023-05-21 05:01:00] INFO root fetch - main [MainThread]: End processing [chncal]: success
+[2023-05-21 05:01:00] INFO root fetch - main [MainThread]: Store serial: [18185430]
