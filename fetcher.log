@@ -6780,3 +6780,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:08:37] INFO root fetch - main [MainThread]: End processing [gpulink]: success
 [2023-05-21 17:08:40] INFO root fetch - main [MainThread]: End processing [dvc]: success
 [2023-05-21 17:08:40] INFO root fetch - main [MainThread]: Store serial: [18187760]
+[2023-05-21 17:13:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187760]
+[2023-05-21 17:13:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 17:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keksik-api
+[2023-05-21 17:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: elefantolib-fastapi
+[2023-05-21 17:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gb2seq
+[2023-05-21 17:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Shiphelm
+[2023-05-21 17:13:49] INFO root fetch - processPackages [elefantolib-fastapi]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 17:13:49] INFO root fetch - processPackages [gb2seq]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 17:13:49] INFO root fetch - processPackages [keksik-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-21 17:13:49] INFO root fetch - processPackages [Shiphelm]: New version: [0.8.2a0] Old Version: [0.8.0]
+[2023-05-21 17:13:49] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 17:13:49] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.8.tar.gz tmp/gb2seq-0.2.9.tar.gz --markdown 20230521/g/gb2seq/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 17:13:49] INFO root fetch - processPackages [elefantolib-fastapi]: Downloading https://files.pythonhosted.org/packages/bd/20/ed0c16a29ef5bad129285db6bb29e6f38e58984dab41f57047c202321c86/elefantolib_fastapi-0.3.1.tar.gz
+[2023-05-21 17:13:49] INFO root fetch - processPackages [keksik-api]: Downloading https://files.pythonhosted.org/packages/78/71/4468c598cb0f2f5012b3a920d2dd61ffd276ceedf47d5f6a69e17418cd46/keksik_api-0.1.3.tar.gz
+[2023-05-21 17:13:49] INFO root fetch - processPackages [keksik-api]: executing diffoscope
+[2023-05-21 17:13:49] INFO root fetch - processPackages [keksik-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keksik_api-0.1.2.tar.gz tmp/keksik_api-0.1.3.tar.gz --markdown 20230521/k/keksik-api/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-21 17:13:49] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/95/3e/75bfe9f62b08982a86457b0e7414d3b3c538f9533ea79d79e71239a45ce4/Shiphelm-0.8.2a0.tar.gz
+[2023-05-21 17:13:49] INFO root fetch - processPackages [elefantolib-fastapi]: executing diffoscope
+[2023-05-21 17:13:49] INFO root fetch - processPackages [elefantolib-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib_fastapi-0.3.0.tar.gz tmp/elefantolib_fastapi-0.3.1.tar.gz --markdown 20230521/e/elefantolib-fastapi/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 17:13:49] INFO root fetch - processPackages [Shiphelm]: executing diffoscope
+[2023-05-21 17:13:49] INFO root fetch - processPackages [Shiphelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shiphelm-0.8.0.tar.gz tmp/Shiphelm-0.8.2a0.tar.gz --markdown 20230521/S/Shiphelm/0.8.0-0.8.2a0/diff.md --exclude *.pyd
+[2023-05-21 17:13:50] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 17:13:50] INFO root fetch - main [MainThread]: End processing [elefantolib-fastapi]: success
+[2023-05-21 17:13:50] INFO root fetch - main [MainThread]: End processing [Shiphelm]: success
+[2023-05-21 17:13:51] INFO root fetch - main [MainThread]: End processing [keksik-api]: success
+[2023-05-21 17:13:51] INFO root fetch - main [MainThread]: Store serial: [18187771]
