@@ -2660,3 +2660,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:08:05] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-21 07:10:49] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-21 07:10:49] INFO root fetch - main [MainThread]: Store serial: [18185711]
+[2023-05-21 07:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185711]
+[2023-05-21 07:15:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 07:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muutils
+[2023-05-21 07:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tflite-model-maker-nightly
+[2023-05-21 07:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tvdcn
+[2023-05-21 07:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blue-engine
+[2023-05-21 07:15:57] INFO root fetch - processPackages [muutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-21 07:15:57] INFO root fetch - processPackages [tvdcn]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-21 07:15:57] WARNING root fetch - processPackages [blue-engine]: Skipping, unable to determine old version
+[2023-05-21 07:15:57] INFO root fetch - main [MainThread]: End processing [blue-engine] error
+[2023-05-21 07:15:57] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305210508] Old Version: [0.4.3.dev202305200508]
+[2023-05-21 07:15:57] INFO root fetch - processPackages [tvdcn]: Downloading https://files.pythonhosted.org/packages/3f/9a/950eaca1b4951e1b0b5dfeccb056e04b10eb51b866df0e649888550009b8/tvdcn-0.2.5.tar.gz
+[2023-05-21 07:15:58] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-05-21 07:15:58] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.3.8.tar.gz tmp/muutils-0.3.9.tar.gz --markdown 20230521/m/muutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tvdcn]: Downloading https://files.pythonhosted.org/packages/68/be/5e17b8d9a03db11b220f1042e95189b86d1dee5e54e97b93db63ab486c2f/tvdcn-0.2.6.tar.gz
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/5f/2e/a0b7f47556f4340b7fc2cb9f8f4635c2583e3c621ab9b8848cf90e832209/tflite-model-maker-nightly-0.4.3.dev202305210508.tar.gz
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tvdcn]: executing diffoscope
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tvdcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvdcn-0.2.5.tar.gz tmp/tvdcn-0.2.6.tar.gz --markdown 20230521/t/tvdcn/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-21 07:15:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305200508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305210508.tar.gz --markdown 20230521/t/tflite-model-maker-nightly/0.4.3.dev202305200508-0.4.3.dev202305210508/diff.md --exclude *.pyd
+[2023-05-21 07:15:59] INFO root fetch - main [MainThread]: End processing [muutils]: success
+[2023-05-21 07:15:59] INFO root fetch - main [MainThread]: End processing [tvdcn]: success
+[2023-05-21 07:16:01] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-21 07:16:01] INFO root fetch - main [MainThread]: Store serial: [18185736]
