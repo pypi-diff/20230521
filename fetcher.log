@@ -4224,3 +4224,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:04:44] INFO root fetch - main [MainThread]: End processing [migdalor]: success
 [2023-05-21 12:04:45] INFO root fetch - main [MainThread]: End processing [mkdocs-ansible]: success
 [2023-05-21 12:04:45] INFO root fetch - main [MainThread]: Store serial: [18186530]
+[2023-05-21 12:09:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186530]
+[2023-05-21 12:09:53] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TeslaPy
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: issue-db-api
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xsdata
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: migdalor
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MeUtils
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sleepyask
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tkintertools
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vule-magics
+[2023-05-21 12:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dm-reverb-nightly
+[2023-05-21 12:09:53] INFO root fetch - processPackages [xsdata]: New version: [23.5] Old Version: [22.9]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [TeslaPy]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [issue-db-api]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [sleepyask]: New version: [7.0.0] Old Version: [6.2.0]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev4] Old Version: [0.0.2.dev3]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [tkintertools]: New version: [2.6.1.1] Old Version: [2.6.1]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [vule-magics]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [MeUtils]: New version: [2023.5.9.15.50.17] Old Version: [2023.5.5.13.0.43]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-21 12:09:53] INFO root fetch - processPackages [vule-magics]: executing diffoscope
+[2023-05-21 12:09:53] INFO root fetch - processPackages [vule-magics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vule_magics-1.1.3.tar.gz tmp/vule_magics-1.2.0.tar.gz --markdown 20230521/v/vule-magics/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 12:09:53] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-21 12:09:53] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230521/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/d3/f2/a0dd2d189e0c6bff51d1a387621c44855980887f9a28cb04dafec461b27f/sleepyask-6.2.0.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [issue-db-api]: Downloading https://files.pythonhosted.org/packages/81/30/38b8fe7af909d389e5459db9bab5eb04d380435e4be87fa681dc9eb3ace6/issue_db_api-0.9.2.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/8c/1f/7aee107e8e552319d78afe3f9971eed7bef5548ea11bbd921735424e5a58/migdalor-0.0.2.dev3.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [TeslaPy]: Downloading https://files.pythonhosted.org/packages/f5/54/e858b1d7bbc9aad9a33844bf129c4484e4a4e6ed82eaf9ab5c681ba2a8fa/TeslaPy-2.7.0.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [xsdata]: Downloading https://files.pythonhosted.org/packages/12/7b/ceb01e0eb4d9ce22cf95595c991471d0ab84b705d3728cbfa49a1fa6c258/xsdata-22.9.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [tkintertools]: Downloading https://files.pythonhosted.org/packages/b7/c6/320c7b86159b2067b4912dbaa68e3329e00fb22bac0ba826014603efd98a/tkintertools-2.6.1.1.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/1e/40/293044081736420bdc304199ae69e61f9201ee442ee97a31eec7abb563c6/sleepyask-7.0.0.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [issue-db-api]: Downloading https://files.pythonhosted.org/packages/40/87/2686392df688dd05ac1a75d633b1629edb1bd757c9c4e1545ac4b5bc5bdf/issue_db_api-0.9.3.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.5.5.13.0.43.tar.gz tmp/MeUtils-2023.5.9.15.50.17.tar.gz --markdown 20230521/M/MeUtils/2023.5.5.13.0.43-2023.5.9.15.50.17/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [tkintertools]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [TeslaPy]: Downloading https://files.pythonhosted.org/packages/14/9c/96470a1c4cc75054944412a9c4e18c6fb6f2e50d6a7fda4091e2e4801f1d/TeslaPy-2.8.0.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [tkintertools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkintertools-2.6.1.tar.gz tmp/tkintertools-2.6.1.1.tar.gz --markdown 20230521/t/tkintertools/2.6.1-2.6.1.1/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/ca/74/8f7aeeb7db6546437af272e4be415a99741637a6576f241d1f2683291252/migdalor-0.0.2.dev4.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-6.2.0.tar.gz tmp/sleepyask-7.0.0.tar.gz --markdown 20230521/s/sleepyask/6.2.0-7.0.0/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [issue-db-api]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [issue-db-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/issue_db_api-0.9.2.tar.gz tmp/issue_db_api-0.9.3.tar.gz --markdown 20230521/i/issue-db-api/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [xsdata]: Downloading https://files.pythonhosted.org/packages/8c/48/9188afd6b8114019c18f87c074ac2870797832f7e42b3390aca0b193e4ee/xsdata-23.5.tar.gz
+[2023-05-21 12:09:54] INFO root fetch - processPackages [TeslaPy]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [TeslaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TeslaPy-2.7.0.tar.gz tmp/TeslaPy-2.8.0.tar.gz --markdown 20230521/T/TeslaPy/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [xsdata]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [xsdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xsdata-22.9.tar.gz tmp/xsdata-23.5.tar.gz --markdown 20230521/x/xsdata/22.9-23.5/diff.md --exclude *.pyd
+[2023-05-21 12:09:54] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 12:09:54] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev3.tar.gz tmp/migdalor-0.0.2.dev4.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev3-0.0.2.dev4/diff.md --exclude *.pyd
+[2023-05-21 12:09:55] INFO root fetch - main [MainThread]: End processing [sleepyask]: success
+[2023-05-21 12:09:56] INFO root fetch - main [MainThread]: End processing [tkintertools]: success
+[2023-05-21 12:09:56] INFO root fetch - main [MainThread]: End processing [TeslaPy]: success
+[2023-05-21 12:09:56] INFO root fetch - main [MainThread]: End processing [issue-db-api]: success
+[2023-05-21 12:09:56] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 12:09:56] INFO root fetch - main [MainThread]: End processing [vule-magics]: success
+[2023-05-21 12:10:00] INFO root fetch - main [MainThread]: End processing [xsdata]: success
+[2023-05-21 12:10:01] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-05-21 12:10:46] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-21 12:10:46] INFO root fetch - main [MainThread]: Store serial: [18186558]
