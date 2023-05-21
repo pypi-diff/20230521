@@ -7416,3 +7416,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:32:37] INFO root fetch - main [MainThread]: End processing [python-llm]: success
 [2023-05-21 18:32:38] INFO root fetch - main [MainThread]: End processing [rsbackup]: success
 [2023-05-21 18:32:38] INFO root fetch - main [MainThread]: Store serial: [18188064]
+[2023-05-21 18:37:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188064]
+[2023-05-21 18:37:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 18:37:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ldimbenchmark
+[2023-05-21 18:37:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynamer
+[2023-05-21 18:37:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cozify
+[2023-05-21 18:37:47] INFO root fetch - processPackages [pynamer]: New version: [1.3.3] Old Version: [1.3.1]
+[2023-05-21 18:37:47] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-21 18:37:47] INFO root fetch - processPackages [cozify]: New version: [0.2.9.1] Old Version: [0.2.9]
+[2023-05-21 18:37:47] INFO root fetch - processPackages [cozify]: Downloading https://files.pythonhosted.org/packages/e6/95/3221426f10e274feefdbba9b95eba23829392589c5a6d935b2594d9b2310/cozify-0.2.9.tar.gz
+[2023-05-21 18:37:47] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/8c/b0/faf3f1a1f21512eb51e38cd9dfe52ee697db2997fc266fd03cfbcc92e933/ldimbenchmark-0.2.4.tar.gz
+[2023-05-21 18:37:48] INFO root fetch - processPackages [pynamer]: Downloading https://files.pythonhosted.org/packages/2d/70/1dd19126ecf16743067a8416a6573e15085ce603738fe077c6ce94acb680/pynamer-1.3.3.tar.gz
+[2023-05-21 18:37:48] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-21 18:37:48] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.3.tar.gz tmp/ldimbenchmark-0.2.4.tar.gz --markdown 20230521/l/ldimbenchmark/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-21 18:37:48] INFO root fetch - processPackages [pynamer]: executing diffoscope
+[2023-05-21 18:37:48] INFO root fetch - processPackages [pynamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynamer-1.3.1.tar.gz tmp/pynamer-1.3.3.tar.gz --markdown 20230521/p/pynamer/1.3.1-1.3.3/diff.md --exclude *.pyd
+[2023-05-21 18:37:48] INFO root fetch - processPackages [cozify]: Downloading https://files.pythonhosted.org/packages/88/f0/ccd5f9078ac053a5487227e4882316c2f55594f2a8eddc3a83f9d7f25ba7/cozify-0.2.9.1.tar.gz
+[2023-05-21 18:37:48] INFO root fetch - processPackages [cozify]: executing diffoscope
+[2023-05-21 18:37:48] INFO root fetch - processPackages [cozify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cozify-0.2.9.tar.gz tmp/cozify-0.2.9.1.tar.gz --markdown 20230521/c/cozify/0.2.9-0.2.9.1/diff.md --exclude *.pyd
+[2023-05-21 18:37:49] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-21 18:37:49] INFO root fetch - main [MainThread]: End processing [cozify]: success
+[2023-05-21 18:37:49] INFO root fetch - main [MainThread]: End processing [pynamer]: success
+[2023-05-21 18:37:49] INFO root fetch - main [MainThread]: Store serial: [18188073]
