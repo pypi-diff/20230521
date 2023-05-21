@@ -6284,3 +6284,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:10:21] INFO root fetch - main [MainThread]: End processing [pyjaws]: success
 [2023-05-21 16:10:27] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
 [2023-05-21 16:10:27] INFO root fetch - main [MainThread]: Store serial: [18187536]
+[2023-05-21 16:15:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187536]
+[2023-05-21 16:15:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ickle
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mleko
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shopcloud-serverless
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dynamicprompts
+[2023-05-21 16:15:36] INFO root fetch - processPackages [ickle]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-21 16:15:36] INFO root fetch - processPackages [mleko]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 16:15:36] INFO root fetch - processPackages [shopcloud-serverless]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-05-21 16:15:36] INFO root fetch - processPackages [yeref]: New version: [0.1.65] Old Version: [0.1.64]
+[2023-05-21 16:15:36] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-21 16:15:36] INFO root fetch - processPackages [shopcloud-serverless]: executing diffoscope
+[2023-05-21 16:15:36] INFO root fetch - processPackages [shopcloud-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shopcloud-serverless-4.8.0.tar.gz tmp/shopcloud-serverless-4.9.0.tar.gz --markdown 20230521/s/shopcloud-serverless/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-05-21 16:15:37] INFO root fetch - processPackages [ickle]: Downloading https://files.pythonhosted.org/packages/fa/e4/438ac75d6c09ffc48c70f218b8d165059e8e96225767c06bb419aec65c09/ickle-1.0.3.tar.gz
+[2023-05-21 16:15:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/cc/da/e555bc99b03f1ce0be6e9edf72a9325ab976534c6ae7df6a19bc998e6e5a/yeref-0.1.65.tar.gz
+[2023-05-21 16:15:37] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-05-21 16:15:37] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.64.tar.gz tmp/yeref-0.1.65.tar.gz --markdown 20230521/y/yeref/0.1.64-0.1.65/diff.md --exclude *.pyd
+[2023-05-21 16:15:37] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/8e/73/8bf2d148757b455a484d0b6cc8c1f203b44bbf7f16c28d2505811803c324/mleko-0.3.0.tar.gz
+[2023-05-21 16:15:37] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-05-21 16:15:37] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.2.0.tar.gz tmp/mleko-0.3.0.tar.gz --markdown 20230521/m/mleko/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 16:15:37] INFO root fetch - processPackages [ickle]: Downloading https://files.pythonhosted.org/packages/35/05/2bcfc32f43b1fce4dcd5b1e23d8c4dc4a56d19297ac7e4c9daa886436f37/ickle-1.0.4.tar.gz
+[2023-05-21 16:15:37] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-05-21 16:15:37] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230521/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-21 16:15:37] INFO root fetch - processPackages [ickle]: executing diffoscope
+[2023-05-21 16:15:37] INFO root fetch - processPackages [ickle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ickle-1.0.3.tar.gz tmp/ickle-1.0.4.tar.gz --markdown 20230521/i/ickle/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: End processing [shopcloud-serverless]: success
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: End processing [dynamicprompts]: success
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: End processing [ickle]: success
+[2023-05-21 16:15:38] INFO root fetch - main [MainThread]: Store serial: [18187551]
