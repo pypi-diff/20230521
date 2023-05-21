@@ -4558,3 +4558,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:58:16] INFO root fetch - main [MainThread]: End processing [zetsubou]: success
 [2023-05-21 12:58:29] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-21 12:58:29] INFO root fetch - main [MainThread]: Store serial: [18186680]
+[2023-05-21 13:03:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186680]
+[2023-05-21 13:03:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 13:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-plugin-sort
+[2023-05-21 13:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latex2mathml
+[2023-05-21 13:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: awesomeversion
+[2023-05-21 13:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xmldiff
+[2023-05-21 13:03:38] INFO root fetch - processPackages [poetry-plugin-sort]: New version: [0.2.0b2] Old Version: [0.1.1]
+[2023-05-21 13:03:38] INFO root fetch - processPackages [xmldiff]: New version: [2.6b1] Old Version: [2.6.2]
+[2023-05-21 13:03:38] INFO root fetch - processPackages [awesomeversion]: New version: [23.5.0] Old Version: [22.9.0]
+[2023-05-21 13:03:38] INFO root fetch - processPackages [latex2mathml]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-21 13:03:38] INFO root fetch - processPackages [xmldiff]: Downloading https://files.pythonhosted.org/packages/f5/36/401d05d4171d187782e3b87d1e5018d889432ff8f073b4b3c3eb3dfa7aa4/xmldiff-2.6.2.tar.gz
+[2023-05-21 13:03:38] INFO root fetch - processPackages [poetry-plugin-sort]: Downloading https://files.pythonhosted.org/packages/f3/cd/85177b21fcb96b6a4c0ec715eb6417ffb95fbbc30b928bb207fe1ff162e1/poetry_plugin_sort-0.1.1.tar.gz
+[2023-05-21 13:03:38] INFO root fetch - processPackages [awesomeversion]: Downloading https://files.pythonhosted.org/packages/58/97/f1ef084dded7d9b4c0b15a7644936384e72f7ba4daa1f30b4e87e98bd739/awesomeversion-22.9.0.tar.gz
+[2023-05-21 13:03:38] INFO root fetch - processPackages [latex2mathml]: Downloading https://files.pythonhosted.org/packages/c4/20/07644423847e54d4dc9d49cd99a0440c6d4f72d940db5b01484f4de4f1ad/latex2mathml-3.8.0.tar.gz
+[2023-05-21 13:03:39] INFO root fetch - processPackages [poetry-plugin-sort]: Downloading https://files.pythonhosted.org/packages/eb/b8/a18ac47c2e30c635192f216a3f714bc22ed600cba05d52c78a2ec633f745/poetry_plugin_sort-0.2.0b2.tar.gz
+[2023-05-21 13:03:39] INFO root fetch - processPackages [xmldiff]: Downloading https://files.pythonhosted.org/packages/cf/61/0509325c64d6086443f14398582a46ff902ee16948608486a35ce871467c/xmldiff-2.6b1.tar.gz
+[2023-05-21 13:03:39] INFO root fetch - processPackages [awesomeversion]: Downloading https://files.pythonhosted.org/packages/bd/17/5c11393fb101d4f9f722e68c0c02e99d9b26686c1d8e54492a71416beff3/awesomeversion-23.5.0.tar.gz
+[2023-05-21 13:03:39] INFO root fetch - processPackages [awesomeversion]: executing diffoscope
+[2023-05-21 13:03:39] INFO root fetch - processPackages [awesomeversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awesomeversion-22.9.0.tar.gz tmp/awesomeversion-23.5.0.tar.gz --markdown 20230521/a/awesomeversion/22.9.0-23.5.0/diff.md --exclude *.pyd
+[2023-05-21 13:03:39] INFO root fetch - processPackages [poetry-plugin-sort]: executing diffoscope
+[2023-05-21 13:03:39] INFO root fetch - processPackages [poetry-plugin-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_sort-0.1.1.tar.gz tmp/poetry_plugin_sort-0.2.0b2.tar.gz --markdown 20230521/p/poetry-plugin-sort/0.1.1-0.2.0b2/diff.md --exclude *.pyd
+[2023-05-21 13:03:39] INFO root fetch - processPackages [latex2mathml]: Downloading https://files.pythonhosted.org/packages/33/93/31c4d1c4c57637f9dc86028de6ffad6aa37dab2344636ece96334d62fe8f/latex2mathml-3.9.0.tar.gz
+[2023-05-21 13:03:39] INFO root fetch - processPackages [xmldiff]: executing diffoscope
+[2023-05-21 13:03:39] INFO root fetch - processPackages [xmldiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmldiff-2.6.2.tar.gz tmp/xmldiff-2.6b1.tar.gz --markdown 20230521/x/xmldiff/2.6.2-2.6b1/diff.md --exclude *.pyd
+[2023-05-21 13:03:39] INFO root fetch - processPackages [latex2mathml]: executing diffoscope
+[2023-05-21 13:03:39] INFO root fetch - processPackages [latex2mathml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex2mathml-3.8.0.tar.gz tmp/latex2mathml-3.9.0.tar.gz --markdown 20230521/l/latex2mathml/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-21 13:03:40] INFO root fetch - main [MainThread]: End processing [poetry-plugin-sort]: success
+[2023-05-21 13:03:40] INFO root fetch - main [MainThread]: End processing [awesomeversion]: success
+[2023-05-21 13:03:40] INFO root fetch - main [MainThread]: End processing [latex2mathml]: success
+[2023-05-21 13:03:41] INFO root fetch - main [MainThread]: End processing [xmldiff]: success
+[2023-05-21 13:03:41] INFO root fetch - main [MainThread]: Store serial: [18186692]
