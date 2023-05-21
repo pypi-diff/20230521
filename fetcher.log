@@ -5079,3 +5079,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:07:25] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
 [2023-05-21 14:07:30] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-05-21 14:07:30] INFO root fetch - main [MainThread]: Store serial: [18186913]
+[2023-05-21 14:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186913]
+[2023-05-21 14:12:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 14:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: statml
+[2023-05-21 14:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slideio
+[2023-05-21 14:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: areixio
+[2023-05-21 14:12:39] INFO root fetch - processPackages [statml]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 14:12:39] INFO root fetch - processPackages [slideio]: New version: [2.1.0] Old Version: [2.0.9]
+[2023-05-21 14:12:39] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 14:12:39] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-21 14:12:39] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.3.tar.gz tmp/statml-0.0.4.tar.gz --markdown 20230521/s/statml/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 14:12:39] INFO root fetch - processPackages [slideio]: Downloading https://files.pythonhosted.org/packages/f0/9b/82c1f30b33b2d926a06dbe11557851347786021d649556708fb4c9552dc1/slideio-2.0.9-cp39-cp39-win_amd64.whl
+[2023-05-21 14:12:39] WARNING root fetch - processPackages [slideio]: Skipping package: exceeds size limit 32521459>=10485760
+[2023-05-21 14:12:39] INFO root fetch - main [MainThread]: End processing [slideio] error
+[2023-05-21 14:12:40] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-05-21 14:12:40] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230521/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 14:12:40] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-21 14:12:50] INFO root fetch - main [MainThread]: End processing [areixio]: success
+[2023-05-21 14:12:50] INFO root fetch - main [MainThread]: Store serial: [18186927]
