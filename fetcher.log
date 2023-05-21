@@ -8817,3 +8817,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [XlsxWriter]: success
 [2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [patchparser]: success
 [2023-05-21 21:48:26] INFO root fetch - main [MainThread]: Store serial: [18188807]
+[2023-05-21 21:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188807]
+[2023-05-21 21:53:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansible-lint
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pebbles-bot
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reactivated
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arraykit
+[2023-05-21 21:53:36] INFO root fetch - processPackages [pebbles-bot]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ansible-lint]: New version: [6.9.1] Old Version: [6.9.0]
+[2023-05-21 21:53:36] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-21 21:53:36] INFO root fetch - processPackages [arraykit]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-21 21:53:36] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-21 21:53:36] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230521/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-21 21:53:36] INFO root fetch - processPackages [pebbles-bot]: Downloading https://files.pythonhosted.org/packages/2f/5f/24a99bbdc1ba4e42255a1e3c2c3c8529f762eaab6110ea7cd194aabb8fb2/pebbles_bot-0.3.1.tar.gz
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ansible-lint]: Downloading https://files.pythonhosted.org/packages/59/c9/bebba18cfb0eb91208fbfaf44156225aa55bfe7f2dbd5afeb6f020fa5dcb/ansible-lint-6.9.0.tar.gz
+[2023-05-21 21:53:36] INFO root fetch - processPackages [pebbles-bot]: Downloading https://files.pythonhosted.org/packages/68/f7/d8bd37b0553f1fc9ea84bbfc60ad401c4c43697d763d6192dae97fbf27ed/pebbles_bot-0.3.2.tar.gz
+[2023-05-21 21:53:36] INFO root fetch - processPackages [arraykit]: Downloading https://files.pythonhosted.org/packages/98/40/2342610da87227ad4320bd9a9687c4dde26b5246451c9b63f00a1799aeb0/arraykit-0.4.3-cp37-cp37m-macosx_10_9_x86_64.whl
+[2023-05-21 21:53:36] INFO root fetch - processPackages [ansible-lint]: Downloading https://files.pythonhosted.org/packages/fb/c0/915c941753e6ef9ca998621a5ee07a812a07d674cf5bb759de0488f1325d/ansible-lint-6.9.1.tar.gz
+[2023-05-21 21:53:36] INFO root fetch - processPackages [pebbles-bot]: executing diffoscope
+[2023-05-21 21:53:36] INFO root fetch - processPackages [pebbles-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pebbles_bot-0.3.1.tar.gz tmp/pebbles_bot-0.3.2.tar.gz --markdown 20230521/p/pebbles-bot/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-21 21:53:37] INFO root fetch - processPackages [ansible-lint]: executing diffoscope
+[2023-05-21 21:53:37] INFO root fetch - processPackages [ansible-lint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-lint-6.9.0.tar.gz tmp/ansible-lint-6.9.1.tar.gz --markdown 20230521/a/ansible-lint/6.9.0-6.9.1/diff.md --exclude *.pyd
+[2023-05-21 21:53:37] INFO root fetch - processPackages [arraykit]: executing diffoscope
+[2023-05-21 21:53:37] INFO root fetch - processPackages [arraykit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraykit-0.4.2.tar.gz tmp/arraykit-0.4.3-cp37-cp37m-macosx_10_9_x86_64.whl.zip --markdown 20230521/a/arraykit/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-21 21:53:37] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-21 21:53:38] INFO root fetch - main [MainThread]: End processing [pebbles-bot]: success
+[2023-05-21 21:53:38] INFO root fetch - main [MainThread]: End processing [arraykit]: success
+[2023-05-21 21:53:43] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
+[2023-05-21 21:53:43] INFO root fetch - main [MainThread]: Store serial: [18188835]
