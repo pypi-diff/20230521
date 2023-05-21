@@ -2383,3 +2383,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:20:08] INFO root fetch - main [MainThread]: End processing [creative-namer]: success
 [2023-05-21 06:20:08] INFO root fetch - main [MainThread]: End processing [textagon]: success
 [2023-05-21 06:20:08] INFO root fetch - main [MainThread]: Store serial: [18185581]
+[2023-05-21 06:25:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185581]
+[2023-05-21 06:25:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swachhdata
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: revChatGPT
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custardpy
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MakerToolbox
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickstart-vdk
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: creative-namer
+[2023-05-21 06:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: streamlit-reveal-slides
+[2023-05-21 06:25:17] INFO root fetch - processPackages [MakerToolbox]: New version: [0.0.11] Old Version: [0.0.10]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [custardpy]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [swachhdata]: New version: [1.5.2a1] Old Version: [1.5.1a1]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [creative-namer]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.873689654.dev10635] Old Version: [0.2.873309032.dev10605]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [revChatGPT]: New version: [5.1.0] Old Version: [5.0.4]
+[2023-05-21 06:25:17] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/ac/72/8aa24b855dc68c75528b1a3e1c50d79358475c55a9f788d9a0bb401d2f22/custardpy-0.4.1-py3-none-any.whl
+[2023-05-21 06:25:17] INFO root fetch - processPackages [creative-namer]: Downloading https://files.pythonhosted.org/packages/9e/4f/8068fd742c76fda21e92a0aefe8eda5d0bcfaa0daf3f69cc2759d8d65bf1/creative-namer-1.1.0.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [MakerToolbox]: Downloading https://files.pythonhosted.org/packages/14/ae/8c206509e6c3bdf73f2b0ee24e4ec33ffb3d9217dea8cba950b708606a21/makertoolbox-0.0.10.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/20/59/f6a1201f8111d78568ab86f8b13bff5d0c268981dd02c00bd430076568e1/streamlit-reveal-slides-0.1.1.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/20/dc/69740d5bafd2f01175a64efe17d16cb386dcb8a865f490d14c7da56d77ae/quickstart-vdk-0.2.873689654.dev10635.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/b8/42/05a0941cb7686ab5c0284623e101edad9a5f898861f0e1675a4bf5debb41/revChatGPT-5.1.0.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/b4/be/e7651a03eb65ad5b89f19c81ff47b800a8885afef1c6ae5579861446fc04/swachhdata-1.5.2a1-py3-none-any.whl
+[2023-05-21 06:25:17] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/24/58/3d4341bdc0147bc9292376436dcc262d0b4e3546373b08e19f012a11275f/custardpy-0.4.2-py3-none-any.whl
+[2023-05-21 06:25:17] INFO root fetch - processPackages [MakerToolbox]: Downloading https://files.pythonhosted.org/packages/76/ce/da44e07eeecf7b26ea52fe860b73f74a0e0c1366b5d39abad5cc848f7eb8/makertoolbox-0.0.11.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.0.4.tar.gz tmp/revChatGPT-5.1.0.tar.gz --markdown 20230521/r/revChatGPT/5.0.4-5.1.0/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.873309032.dev10605.tar.gz tmp/quickstart-vdk-0.2.873689654.dev10635.tar.gz --markdown 20230521/q/quickstart-vdk/0.2.873309032.dev10605-0.2.873689654.dev10635/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [creative-namer]: Downloading https://files.pythonhosted.org/packages/4f/df/8cf5808c98598033392424a2c79ae3ff461a2451fcd0d3cf46bc026e22fd/creative-namer-1.1.1.tar.gz
+[2023-05-21 06:25:17] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-1.5.1a1-py3-none-any.whl.zip tmp/swachhdata-1.5.2a1-py3-none-any.whl.zip --markdown 20230521/s/swachhdata/1.5.1a1-1.5.2a1/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.0.tar.gz tmp/streamlit-reveal-slides-0.1.1.tar.gz --markdown 20230521/s/streamlit-reveal-slides/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [custardpy]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [custardpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custardpy-0.4.1-py3-none-any.whl.zip tmp/custardpy-0.4.2-py3-none-any.whl.zip --markdown 20230521/c/custardpy/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [creative-namer]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [creative-namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/creative-namer-1.1.0.tar.gz tmp/creative-namer-1.1.1.tar.gz --markdown 20230521/c/creative-namer/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-21 06:25:17] INFO root fetch - processPackages [MakerToolbox]: executing diffoscope
+[2023-05-21 06:25:17] INFO root fetch - processPackages [MakerToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makertoolbox-0.0.10.tar.gz tmp/makertoolbox-0.0.11.tar.gz --markdown 20230521/M/MakerToolbox/0.0.10-0.0.11/diff.md --exclude *.pyd
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [custardpy]: success
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [MakerToolbox]: success
+[2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [creative-namer]: success
+[2023-05-21 06:25:22] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-05-21 06:25:22] INFO root fetch - main [MainThread]: Store serial: [18185599]
