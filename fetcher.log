@@ -2431,3 +2431,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:25:19] INFO root fetch - main [MainThread]: End processing [creative-namer]: success
 [2023-05-21 06:25:22] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-05-21 06:25:22] INFO root fetch - main [MainThread]: Store serial: [18185599]
+[2023-05-21 06:30:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185599]
+[2023-05-21 06:30:30] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-21 06:35:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185604]
+[2023-05-21 06:35:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 06:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: configzen
+[2023-05-21 06:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dorado
+[2023-05-21 06:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-adapter-telegram
+[2023-05-21 06:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mosek-license-server
+[2023-05-21 06:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airunner
+[2023-05-21 06:35:37] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 06:35:37] INFO root fetch - processPackages [configzen]: New version: [0.1.26] Old Version: [0.1.25]
+[2023-05-21 06:35:37] INFO root fetch - processPackages [mosek-license-server]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 06:35:37] INFO root fetch - processPackages [airunner]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-21 06:35:37] INFO root fetch - processPackages [nonebot-adapter-telegram]: New version: [0.1.0b9] Old Version: [0.1.0b8]
+[2023-05-21 06:35:37] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 06:35:37] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 06:35:37] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-05-21 06:35:37] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.9.4.tar.gz tmp/airunner-1.9.5.tar.gz --markdown 20230521/a/airunner/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-21 06:35:37] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/d8/15/fcf7f2bff9d1cec464c1f8dbfa7bc0b4d7b3426fb0cf766eac94d4801c8e/configzen-0.1.26.tar.gz
+[2023-05-21 06:35:37] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/99/0a/4b08e8612dfed039cb0e0761088e7368369261e34bcd45d60e0660ee3408/mosek_license_server-0.1.0.tar.gz
+[2023-05-21 06:35:37] INFO root fetch - processPackages [nonebot-adapter-telegram]: Downloading https://files.pythonhosted.org/packages/39/63/352c95368189e3a1a9e243c03e6ff9d5aa229d35b74c7bd9917b194bcd0f/nonebot-adapter-telegram-0.1.0b8.tar.gz
+[2023-05-21 06:35:37] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 06:35:37] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.25.tar.gz tmp/configzen-0.1.26.tar.gz --markdown 20230521/c/configzen/0.1.25-0.1.26/diff.md --exclude *.pyd
+[2023-05-21 06:35:37] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/52/a4/89d64a7b49408daa0437ab371e684ee859bf9dc5a0c7846c800277a493c8/mosek_license_server-0.1.1.tar.gz
+[2023-05-21 06:35:37] INFO root fetch - processPackages [nonebot-adapter-telegram]: Downloading https://files.pythonhosted.org/packages/5a/6e/76d06955b2984df0f0ae7d55dc31701c60646490b4b698e6d5ea1f1b4e1f/nonebot-adapter-telegram-0.1.0b9.tar.gz
+[2023-05-21 06:35:38] INFO root fetch - processPackages [mosek-license-server]: executing diffoscope
+[2023-05-21 06:35:38] INFO root fetch - processPackages [mosek-license-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosek_license_server-0.1.0.tar.gz tmp/mosek_license_server-0.1.1.tar.gz --markdown 20230521/m/mosek-license-server/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 06:35:38] INFO root fetch - processPackages [nonebot-adapter-telegram]: executing diffoscope
+[2023-05-21 06:35:38] INFO root fetch - processPackages [nonebot-adapter-telegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-adapter-telegram-0.1.0b8.tar.gz tmp/nonebot-adapter-telegram-0.1.0b9.tar.gz --markdown 20230521/n/nonebot-adapter-telegram/0.1.0b8-0.1.0b9/diff.md --exclude *.pyd
+[2023-05-21 06:35:38] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-05-21 06:35:38] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 06:35:39] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 06:35:39] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
+[2023-05-21 06:35:39] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-telegram]: success
+[2023-05-21 06:35:39] INFO root fetch - main [MainThread]: Store serial: [18185621]
