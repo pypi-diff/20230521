@@ -4283,3 +4283,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:10:01] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-05-21 12:10:46] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-21 12:10:46] INFO root fetch - main [MainThread]: Store serial: [18186558]
+[2023-05-21 12:15:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186558]
+[2023-05-21 12:15:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 12:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myloginpath
+[2023-05-21 12:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MeUtils
+[2023-05-21 12:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qm-sim
+[2023-05-21 12:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openlane
+[2023-05-21 12:15:55] INFO root fetch - processPackages [myloginpath]: New version: [0.0.4rc1] Old Version: [0.0.3]
+[2023-05-21 12:15:55] INFO root fetch - processPackages [qm-sim]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-21 12:15:55] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-21 12:15:55] INFO root fetch - processPackages [MeUtils]: New version: [2023.5.9.15.50.17] Old Version: [2023.5.5.13.0.43]
+[2023-05-21 12:15:55] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-05-21 12:15:55] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230521/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-21 12:15:55] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-05-21 12:15:55] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.5.5.13.0.43.tar.gz tmp/MeUtils-2023.5.9.15.50.17.tar.gz --markdown 20230521/M/MeUtils/2023.5.5.13.0.43-2023.5.9.15.50.17/diff.md --exclude *.pyd
+[2023-05-21 12:15:55] INFO root fetch - processPackages [myloginpath]: Downloading https://files.pythonhosted.org/packages/15/f5/6a76628324358c17d43751be4d48961e9ffb4c9490d6067523618ee429d2/myloginpath-0.0.3.tar.gz
+[2023-05-21 12:15:55] INFO root fetch - processPackages [qm-sim]: Downloading https://files.pythonhosted.org/packages/b8/82/2430c76b0b11fa4f8ca26152a909f1abb6b9d6925e3d278d9860b823f3aa/qm-sim-0.0.2.tar.gz
+[2023-05-21 12:15:56] INFO root fetch - processPackages [myloginpath]: Downloading https://files.pythonhosted.org/packages/85/4d/d87ac9b042ed895153f19b465968ab17b3778e94d8829e04a6ff5303ff89/myloginpath-0.0.4rc1.tar.gz
+[2023-05-21 12:15:56] INFO root fetch - processPackages [myloginpath]: executing diffoscope
+[2023-05-21 12:15:56] INFO root fetch - processPackages [myloginpath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myloginpath-0.0.3.tar.gz tmp/myloginpath-0.0.4rc1.tar.gz --markdown 20230521/m/myloginpath/0.0.3-0.0.4rc1/diff.md --exclude *.pyd
+[2023-05-21 12:15:56] INFO root fetch - processPackages [qm-sim]: Downloading https://files.pythonhosted.org/packages/29/54/abccc7f0fcda1ee727c90e05fc8bbf1b2eddfc644353023c361527ff1b2f/qm-sim-0.1.0.tar.gz
+[2023-05-21 12:15:56] INFO root fetch - processPackages [qm-sim]: executing diffoscope
+[2023-05-21 12:15:56] INFO root fetch - processPackages [qm-sim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qm-sim-0.0.2.tar.gz tmp/qm-sim-0.1.0.tar.gz --markdown 20230521/q/qm-sim/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 12:15:57] INFO root fetch - main [MainThread]: End processing [myloginpath]: success
+[2023-05-21 12:15:57] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2023-05-21 12:16:01] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-05-21 12:16:33] INFO root fetch - main [MainThread]: End processing [qm-sim]: success
+[2023-05-21 12:16:33] INFO root fetch - main [MainThread]: Store serial: [18186570]
