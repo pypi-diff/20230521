@@ -8400,3 +8400,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:42:31] INFO root fetch - main [MainThread]: End processing [classifier-free-guidance-pytorch]: success
 [2023-05-21 20:42:32] INFO root fetch - main [MainThread]: End processing [fling-hub]: success
 [2023-05-21 20:42:32] INFO root fetch - main [MainThread]: Store serial: [18188622]
+[2023-05-21 20:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188622]
+[2023-05-21 20:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188622]
+[2023-05-21 20:53:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydobiss
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amino.li
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: x-dgcnn
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: guacli
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: classifier-free-guidance-pytorch
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-mystrom
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alpha-trader-python
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhOn
+[2023-05-21 20:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: csv-embeddings-creator
+[2023-05-21 20:53:58] INFO root fetch - processPackages [x-dgcnn]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [amino.li]: New version: [1.1] Old Version: [0.8]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [pydobiss]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [guacli]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [alpha-trader-python]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [python-mystrom]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [csv-embeddings-creator]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [alpha-trader-python]: executing diffoscope
+[2023-05-21 20:53:58] INFO root fetch - processPackages [alpha-trader-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha_trader_python-0.2.1.tar.gz tmp/alpha_trader_python-0.3.0.tar.gz --markdown 20230521/a/alpha-trader-python/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 20:53:58] INFO root fetch - processPackages [amino.li]: Downloading https://files.pythonhosted.org/packages/51/01/a97a884d48b6277e6de86b983d792c27d4845bd67accbee37cc448c7f1a5/amino.li-0.8.tar.gz
+[2023-05-21 20:53:58] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 20:53:58] INFO root fetch - processPackages [x-dgcnn]: Downloading https://files.pythonhosted.org/packages/16/b3/aee4c5a8608e50b1656414551b46d1e4f41651c024c861f52ffd3d4dde30/x-dgcnn-0.0.4.tar.gz
+[2023-05-21 20:53:58] INFO root fetch - processPackages [pydobiss]: Downloading https://files.pythonhosted.org/packages/4d/14/d135eb4550a65ed1cdeab9a769d5bbe34687663a7071d9b07c3f6773bf54/pydobiss-0.1.8.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [guacli]: Downloading https://files.pythonhosted.org/packages/24/2f/1d77bff4241426654f6616ae7d61cb4d3528439eb03fe4fc8a5c3002c291/guacli-1.0.3.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [csv-embeddings-creator]: Downloading https://files.pythonhosted.org/packages/b9/17/c65badfc3f70a379e8bcc89e4221303b036c8bf230692ce97375385ea4ba/csv-embeddings-creator-1.0.4.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [python-mystrom]: Downloading https://files.pythonhosted.org/packages/05/f0/3318122405fb83b9da4486756c79620fce0c1ecccaf4f1742e17ff074ce3/python-mystrom-2.1.0.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: Downloading https://files.pythonhosted.org/packages/98/1c/884fd899c6441d7821cb3b5de42fe1db5920193d6a73516c9fb47ee674f1/classifier-free-guidance-pytorch-0.2.2.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [x-dgcnn]: Downloading https://files.pythonhosted.org/packages/3f/74/373d5d739faa32473b6878d4716a6f97e81465a67853a6e04cc7ab293e73/x-dgcnn-0.1.0.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [amino.li]: Downloading https://files.pythonhosted.org/packages/0a/c6/ea2eb8a04ae270bd12794e6752fc431cf9a0673e87e92a1dae1b59fdceec/amino.li-1.1.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [pydobiss]: Downloading https://files.pythonhosted.org/packages/10/63/a45072bd0f7f49983a839bdb4aef56e13d41b48ebbc1fa45e0df17dc9ae9/pydobiss-0.1.9.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [guacli]: Downloading https://files.pythonhosted.org/packages/43/b1/d97c7f11a9ef3f24dd76626fd62597a548a14d06fa90bcddd4001dbee7f1/guacli-1.1.0.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [amino.li]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [amino.li]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.li-0.8.tar.gz tmp/amino.li-1.1.tar.gz --markdown 20230521/a/amino.li/0.8-1.1/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [x-dgcnn]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [x-dgcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-dgcnn-0.0.4.tar.gz tmp/x-dgcnn-0.1.0.tar.gz --markdown 20230521/x/x-dgcnn/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classifier-free-guidance-pytorch-0.2.1.tar.gz tmp/classifier-free-guidance-pytorch-0.2.2.tar.gz --markdown 20230521/c/classifier-free-guidance-pytorch/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [python-mystrom]: Downloading https://files.pythonhosted.org/packages/94/18/76754f29de8b40b1172548c68932c19a9fe09258be52ced6b9f74b109db6/python-mystrom-2.2.0.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [guacli]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [guacli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guacli-1.0.3.tar.gz tmp/guacli-1.1.0.tar.gz --markdown 20230521/g/guacli/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [csv-embeddings-creator]: Downloading https://files.pythonhosted.org/packages/59/17/8ae5d0469404cc97b6f8f187ef35c43934dcddc058dba64225173a017ab5/csv-embeddings-creator-1.0.5.tar.gz
+[2023-05-21 20:53:59] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230521/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [pydobiss]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [pydobiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydobiss-0.1.8.tar.gz tmp/pydobiss-0.1.9.tar.gz --markdown 20230521/p/pydobiss/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [csv-embeddings-creator]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [csv-embeddings-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv-embeddings-creator-1.0.4.tar.gz tmp/csv-embeddings-creator-1.0.5.tar.gz --markdown 20230521/c/csv-embeddings-creator/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 20:53:59] INFO root fetch - processPackages [python-mystrom]: executing diffoscope
+[2023-05-21 20:53:59] INFO root fetch - processPackages [python-mystrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-mystrom-2.1.0.tar.gz tmp/python-mystrom-2.2.0.tar.gz --markdown 20230521/p/python-mystrom/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-21 20:54:00] INFO root fetch - main [MainThread]: End processing [alpha-trader-python]: success
+[2023-05-21 20:54:00] INFO root fetch - main [MainThread]: End processing [x-dgcnn]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [amino.li]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [guacli]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [classifier-free-guidance-pytorch]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [pydobiss]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [csv-embeddings-creator]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: End processing [python-mystrom]: success
+[2023-05-21 20:54:01] INFO root fetch - main [MainThread]: Store serial: [18188647]
