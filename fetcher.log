@@ -4070,3 +4070,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:33:11] INFO root fetch - main [MainThread]: End processing [ap-features]: success
 [2023-05-21 11:33:11] INFO root fetch - main [MainThread]: End processing [ha-services]: success
 [2023-05-21 11:33:11] INFO root fetch - main [MainThread]: Store serial: [18186460]
+[2023-05-21 11:38:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186460]
+[2023-05-21 11:38:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wraps
+[2023-05-21 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxel
+[2023-05-21 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-selfdoc
+[2023-05-21 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparse-array
+[2023-05-21 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-eytan-view-reentrency
+[2023-05-21 11:38:20] INFO root fetch - processPackages [pyxel]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 11:38:20] INFO root fetch - processPackages [flask-selfdoc]: New version: [1.4.0] Old Version: [1.3.1a0]
+[2023-05-21 11:38:20] INFO root fetch - processPackages [wraps]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-21 11:38:20] INFO root fetch - processPackages [certora-cli-alpha-eytan-view-reentrency]: New version: [20230521.8.26.801151] Old Version: [20230517.9.15.91422]
+[2023-05-21 11:38:20] INFO root fetch - processPackages [pysparse-array]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-21 11:38:20] INFO root fetch - processPackages [certora-cli-alpha-eytan-view-reentrency]: Downloading https://files.pythonhosted.org/packages/b9/dc/f1fe7cae67511a7df7c21211da619056d4078de0be12c08bafebd5d79b61/certora-cli-alpha-eytan-view_reentrency-20230517.9.15.91422.tar.gz
+[2023-05-21 11:38:20] WARNING root fetch - processPackages [certora-cli-alpha-eytan-view-reentrency]: Skipping package: exceeds size limit 39009607>=10485760
+[2023-05-21 11:38:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eytan-view-reentrency] error
+[2023-05-21 11:38:20] INFO root fetch - processPackages [flask-selfdoc]: Downloading https://files.pythonhosted.org/packages/90/e6/1e12c64c2238f1f0c83bbf3e298f59d80f6a522329fc1c45d92129fff277/flask-selfdoc-1.3.1a0.tar.gz
+[2023-05-21 11:38:20] INFO root fetch - processPackages [pyxel]: Downloading https://files.pythonhosted.org/packages/ef/a6/26d576fa8b8e9f9299d583b529b8b99c511285ea95478dc49ddfa5ff2086/pyxel-1.9.8-cp37-abi3-win_amd64.whl
+[2023-05-21 11:38:20] INFO root fetch - processPackages [pysparse-array]: Downloading https://files.pythonhosted.org/packages/51/59/037e9971caa9e70e36fabe497a2296129672ae477558782b3ede8ea4cd15/pysparse-array-1.0.2.tar.gz
+[2023-05-21 11:38:20] INFO root fetch - processPackages [wraps]: Downloading https://files.pythonhosted.org/packages/fe/31/a391b04046a88c4955918ecbeaeae3d9567870999563e422c3d3260cfff6/wraps-0.5.0.tar.gz
+[2023-05-21 11:38:20] INFO root fetch - processPackages [pysparse-array]: Downloading https://files.pythonhosted.org/packages/b5/52/010005638bdb84fea94bf65a039cf66a3122f0acf81fca9633a608dfc58f/pysparse-array-1.0.3.tar.gz
+[2023-05-21 11:38:20] INFO root fetch - processPackages [flask-selfdoc]: Downloading https://files.pythonhosted.org/packages/50/05/ccb71af0f2422fe450804199aee92f0e3b68420815d359b94407e14a567d/flask_selfdoc-1.4.0.tar.gz
+[2023-05-21 11:38:20] INFO root fetch - processPackages [wraps]: Downloading https://files.pythonhosted.org/packages/06/6a/50cc254bdee02185e82a9d5195123935c8a63e4b2f304836bb3d75044c64/wraps-0.6.0.tar.gz
+[2023-05-21 11:38:21] INFO root fetch - processPackages [flask-selfdoc]: executing diffoscope
+[2023-05-21 11:38:21] INFO root fetch - processPackages [flask-selfdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-selfdoc-1.3.1a0.tar.gz tmp/flask_selfdoc-1.4.0.tar.gz --markdown 20230521/f/flask-selfdoc/1.3.1a0-1.4.0/diff.md --exclude *.pyd
+[2023-05-21 11:38:21] INFO root fetch - processPackages [wraps]: executing diffoscope
+[2023-05-21 11:38:21] INFO root fetch - processPackages [wraps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wraps-0.5.0.tar.gz tmp/wraps-0.6.0.tar.gz --markdown 20230521/w/wraps/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 11:38:21] INFO root fetch - processPackages [pysparse-array]: executing diffoscope
+[2023-05-21 11:38:21] INFO root fetch - processPackages [pysparse-array]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparse-array-1.0.2.tar.gz tmp/pysparse-array-1.0.3.tar.gz --markdown 20230521/p/pysparse-array/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-21 11:38:21] INFO root fetch - processPackages [pyxel]: Downloading https://files.pythonhosted.org/packages/1f/7f/cb80db464bdf179b5965b0d550485ef4ecf471621622c1aae681515d460f/pyxel-1.9.9-cp37-abi3-win_amd64.whl
+[2023-05-21 11:38:22] INFO root fetch - main [MainThread]: End processing [flask-selfdoc]: success
+[2023-05-21 11:38:22] INFO root fetch - main [MainThread]: End processing [pysparse-array]: success
+[2023-05-21 11:38:22] INFO root fetch - main [MainThread]: End processing [wraps]: success
+[2023-05-21 11:38:22] INFO root fetch - processPackages [pyxel]: executing diffoscope
+[2023-05-21 11:38:22] INFO root fetch - processPackages [pyxel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxel-1.9.8-cp37-abi3-win_amd64.whl.zip tmp/pyxel-1.9.9-cp37-abi3-win_amd64.whl.zip --markdown 20230521/p/pyxel/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 11:38:24] INFO root fetch - main [MainThread]: End processing [pyxel]: success
+[2023-05-21 11:38:24] INFO root fetch - main [MainThread]: Store serial: [18186483]
