@@ -3031,3 +3031,12 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:34:00] INFO root fetch - main [MainThread]: End processing [dorado]: success
 [2023-05-21 08:34:01] INFO root fetch - main [MainThread]: End processing [bambooai]: success
 [2023-05-21 08:34:01] INFO root fetch - main [MainThread]: Store serial: [18185949]
+[2023-05-21 08:39:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185949]
+[2023-05-21 08:39:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 08:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: johnsnowlabs-tmp
+[2023-05-21 08:39:09] INFO root fetch - processPackages [johnsnowlabs-tmp]: New version: [4.4.6] Old Version: [4.4.5]
+[2023-05-21 08:39:10] INFO root fetch - processPackages [johnsnowlabs-tmp]: Downloading https://files.pythonhosted.org/packages/ae/50/cbf62e3092bcb13cbef96d126c53c27acfe92272f0571cc3b6a336a93723/johnsnowlabs_tmp-4.4.6.tar.gz
+[2023-05-21 08:39:10] INFO root fetch - processPackages [johnsnowlabs-tmp]: executing diffoscope
+[2023-05-21 08:39:10] INFO root fetch - processPackages [johnsnowlabs-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_tmp-4.4.5.tar.gz tmp/johnsnowlabs_tmp-4.4.6.tar.gz --markdown 20230521/j/johnsnowlabs-tmp/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2023-05-21 08:39:11] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-tmp]: success
+[2023-05-21 08:39:11] INFO root fetch - main [MainThread]: Store serial: [18185952]
