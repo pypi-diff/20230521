@@ -6840,3 +6840,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:19:02] INFO root fetch - main [MainThread]: End processing [django-page-blocks]: success
 [2023-05-21 17:19:03] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
 [2023-05-21 17:19:03] INFO root fetch - main [MainThread]: Store serial: [18187785]
+[2023-05-21 17:24:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187785]
+[2023-05-21 17:24:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LZGraphs
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hledger-args
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anisofilter
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sidetrek
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: runningz
+[2023-05-21 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: configzen
+[2023-05-21 17:24:12] INFO root fetch - processPackages [hledger-args]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-21 17:24:12] WARNING root fetch - processPackages [configzen]: Skipping, unable to determine old version
+[2023-05-21 17:24:12] INFO root fetch - main [MainThread]: End processing [configzen] error
+[2023-05-21 17:24:12] INFO root fetch - processPackages [anisofilter]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 17:24:12] INFO root fetch - processPackages [LZGraphs]: New version: [0.24] Old Version: [0.23]
+[2023-05-21 17:24:12] INFO root fetch - processPackages [runningz]: New version: [0.11.3] Old Version: [0.11.2]
+[2023-05-21 17:24:12] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 17:24:12] INFO root fetch - processPackages [LZGraphs]: Downloading https://files.pythonhosted.org/packages/68/e5/371714d401fd4f3407c1194893e84f35aee333bce7219b7d0b2d7fffabdb/LZGraphs-0.23.tar.gz
+[2023-05-21 17:24:12] INFO root fetch - processPackages [anisofilter]: Downloading https://files.pythonhosted.org/packages/c5/7a/7f88c543740785bc1b5eefc242ee7e493e07b8e995ca25e3dace32f8526b/anisofilter-1.0.4.tar.gz
+[2023-05-21 17:24:12] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/d6/f5/0685591b1e1f306a111bd02911f344b21a4ccb1172a93cf38835b53667c2/runningz-0.11.2-py39-none-any.whl
+[2023-05-21 17:24:12] INFO root fetch - processPackages [hledger-args]: Downloading https://files.pythonhosted.org/packages/08/6a/16657afeb14a35fb2cdc57faf0d469e6fe305ce9c985f968af7bfefe021c/hledger_args-0.0.7.tar.gz
+[2023-05-21 17:24:12] WARNING root fetch - processPackages [anisofilter]: Skipping package: exceeds size limit 19900240>=10485760
+[2023-05-21 17:24:12] INFO root fetch - main [MainThread]: End processing [anisofilter] error
+[2023-05-21 17:24:12] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 17:24:12] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 17:24:12] INFO root fetch - processPackages [LZGraphs]: Downloading https://files.pythonhosted.org/packages/4d/6d/51b023dd1ecd535b0e3fefed8613c1055e942f79cd66f532065a5511a3a4/LZGraphs-0.24.tar.gz
+[2023-05-21 17:24:12] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/69/84/5ea6f63ccf84174a679f29c0acd3698156a1ba2bfa9398d7c7e4fbbe5624/runningz-0.11.3-py39-none-any.whl
+[2023-05-21 17:24:12] INFO root fetch - processPackages [hledger-args]: Downloading https://files.pythonhosted.org/packages/c1/72/9dcdba38b83a1084c6047eaa40f53e33fb4824df9a646035d4a21212805d/hledger_args-0.0.8.tar.gz
+[2023-05-21 17:24:12] INFO root fetch - processPackages [LZGraphs]: executing diffoscope
+[2023-05-21 17:24:12] INFO root fetch - processPackages [LZGraphs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LZGraphs-0.23.tar.gz tmp/LZGraphs-0.24.tar.gz --markdown 20230521/L/LZGraphs/0.23-0.24/diff.md --exclude *.pyd
+[2023-05-21 17:24:12] INFO root fetch - processPackages [hledger-args]: executing diffoscope
+[2023-05-21 17:24:12] INFO root fetch - processPackages [hledger-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hledger_args-0.0.7.tar.gz tmp/hledger_args-0.0.8.tar.gz --markdown 20230521/h/hledger-args/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-21 17:24:12] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2023-05-21 17:24:12] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.11.2-py39-none-any.whl.zip tmp/runningz-0.11.3-py39-none-any.whl.zip --markdown 20230521/r/runningz/0.11.2-0.11.3/diff.md --exclude *.pyd
+[2023-05-21 17:24:13] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 17:24:14] INFO root fetch - main [MainThread]: End processing [LZGraphs]: success
+[2023-05-21 17:24:14] INFO root fetch - main [MainThread]: End processing [hledger-args]: success
+[2023-05-21 17:24:14] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2023-05-21 17:24:14] INFO root fetch - main [MainThread]: Store serial: [18187801]
