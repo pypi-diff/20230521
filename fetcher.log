@@ -670,3 +670,22 @@
 [2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [bytez]: success
 [2023-05-21 01:55:54] INFO root fetch - main [MainThread]: End processing [taskipy]: success
 [2023-05-21 01:55:54] INFO root fetch - main [MainThread]: Store serial: [18184744]
+[2023-05-21 02:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184744]
+[2023-05-21 02:01:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 02:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytez
+[2023-05-21 02:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: to-pip
+[2023-05-21 02:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-21 02:01:03] INFO root fetch - processPackages [to-pip]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 02:01:03] INFO root fetch - processPackages [to-pip]: Downloading https://files.pythonhosted.org/packages/b8/9f/a45cfe086c7d6d6f3c8d78c1b8287519069d448ed30f5cd168966caa0076/to-pip-2.0.1.tar.gz
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 02:01:03] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:01:03] INFO root fetch - processPackages [to-pip]: executing diffoscope
+[2023-05-21 02:01:03] INFO root fetch - processPackages [to-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-pip-2.0.0.tar.gz tmp/to-pip-2.0.1.tar.gz --markdown 20230521/t/to-pip/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 02:01:04] INFO root fetch - main [MainThread]: End processing [to-pip]: success
+[2023-05-21 02:01:05] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 02:01:05] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 02:01:05] INFO root fetch - main [MainThread]: Store serial: [18184753]
