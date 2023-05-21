@@ -3185,3 +3185,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:05:17] INFO root fetch - main [MainThread]: End processing [pysast]: success
 [2023-05-21 09:05:18] INFO root fetch - main [MainThread]: End processing [flet-material]: success
 [2023-05-21 09:05:18] INFO root fetch - main [MainThread]: Store serial: [18186017]
+[2023-05-21 09:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186017]
+[2023-05-21 09:10:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fief-server
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sisaptools
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sisaptools
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scorecardpipeline
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-nightly
+[2023-05-21 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpt-code-ui
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [fief-server]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [gpt-code-ui]: New version: [0.42.9] Old Version: [0.42.8]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [scorecardpipeline]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230521/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 09:10:27] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-21 09:10:27] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230521/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 09:10:27] INFO root fetch - processPackages [gpt-code-ui]: executing diffoscope
+[2023-05-21 09:10:27] INFO root fetch - processPackages [gpt-code-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_code_ui-0.42.8.tar.gz tmp/gpt_code_ui-0.42.9.tar.gz --markdown 20230521/g/gpt-code-ui/0.42.8-0.42.9/diff.md --exclude *.pyd
+[2023-05-21 09:10:27] INFO root fetch - processPackages [fief-server]: Downloading https://files.pythonhosted.org/packages/01/89/8b2cbeaaf06acc6e1251eaed15d49297614efbb6ffd2e3b970e05bf7c65c/fief-server-0.8.2.tar.gz
+[2023-05-21 09:10:27] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-21 09:10:27] INFO root fetch - processPackages [scorecardpipeline]: Downloading https://files.pythonhosted.org/packages/06/87/2ad43d126faa50159a64dbcc7c04bf94d32d138186015168741fc89f05ee/scorecardpipeline-0.1.5.tar.gz
+[2023-05-21 09:10:27] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2023-05-21 09:10:28] INFO root fetch - processPackages [scorecardpipeline]: executing diffoscope
+[2023-05-21 09:10:28] INFO root fetch - processPackages [scorecardpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecardpipeline-0.1.4.tar.gz tmp/scorecardpipeline-0.1.5.tar.gz --markdown 20230521/s/scorecardpipeline/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-21 09:10:28] INFO root fetch - processPackages [fief-server]: Downloading https://files.pythonhosted.org/packages/64/4c/11ba1a1c43bc6d0b294fe513fe818967738d8faaa77ed0dbec2df9a03d32/fief-server-0.9.0.tar.gz
+[2023-05-21 09:10:28] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-21 09:10:28] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230521/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-21 09:10:28] INFO root fetch - processPackages [fief-server]: executing diffoscope
+[2023-05-21 09:10:28] INFO root fetch - processPackages [fief-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fief-server-0.8.2.tar.gz tmp/fief-server-0.9.0.tar.gz --markdown 20230521/f/fief-server/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2023-05-21 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-21 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230521/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-21 09:10:29] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-21 09:10:29] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-21 09:10:29] INFO root fetch - main [MainThread]: End processing [scorecardpipeline]: success
+[2023-05-21 09:10:29] INFO root fetch - main [MainThread]: End processing [gpt-code-ui]: success
+[2023-05-21 09:10:29] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-21 09:10:30] INFO root fetch - main [MainThread]: End processing [fief-server]: success
+[2023-05-21 09:10:38] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-21 09:10:38] INFO root fetch - main [MainThread]: Store serial: [18186034]
