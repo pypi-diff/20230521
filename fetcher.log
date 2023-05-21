@@ -5221,3 +5221,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:28:41] INFO root fetch - main [MainThread]: End processing [YMS]: success
 [2023-05-21 14:28:41] INFO root fetch - main [MainThread]: End processing [toolforge-weld]: success
 [2023-05-21 14:28:41] INFO root fetch - main [MainThread]: Store serial: [18186992]
+[2023-05-21 14:33:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186992]
+[2023-05-21 14:33:50] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twilix-python
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-dllib
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna-ariadne
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arxivai
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arclet-alconna-avilla
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arclet-alconna-graia
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arclet-alconna-ichika
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tkdial
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ansible-compat
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: agixt
+[2023-05-21 14:33:50] INFO root fetch - processPackages [twilix-python]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-graia]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-avilla]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ichika]: New version: [0.13.2] Old Version: [0.13.1]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ariadne]: New version: [0.13.2] Old Version: [0.13.1]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [agixt]: New version: [1.1.56b0] Old Version: [1.1.55b0]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230520] Old Version: [2.4.0b20230519]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-avilla]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-avilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-avilla-0.2.0.tar.gz tmp/arclet-alconna-avilla-0.3.0.tar.gz --markdown 20230521/a/arclet-alconna-avilla/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [tkdial]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arxivai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.55b0.tar.gz tmp/agixt-1.1.56b0.tar.gz --markdown 20230521/a/agixt/1.1.55b0-1.1.56b0/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ansible-compat]: New version: [4.0.5] Old Version: [4.0.4]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ariadne]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ariadne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ariadne-0.13.1.tar.gz tmp/arclet-alconna-ariadne-0.13.2.tar.gz --markdown 20230521/a/arclet-alconna-ariadne/0.13.1-0.13.2/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ichika]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-ichika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ichika-0.13.1.tar.gz tmp/arclet-alconna-ichika-0.13.2.tar.gz --markdown 20230521/a/arclet-alconna-ichika/0.13.1-0.13.2/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-graia]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arclet-alconna-graia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-graia-0.9.0.tar.gz tmp/arclet-alconna-graia-0.9.1.tar.gz --markdown 20230521/a/arclet-alconna-graia/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/5f/6d/8fa864f8ef779f247a2f8c6fba3ee33d9404ed78561012eb728806d378a1/twilix-python-0.0.4.tar.gz
+[2023-05-21 14:33:50] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/50/17/784f7e3c247ac52f7d09d136bc14a3079168be7575b6de3a9bd092441eae/bigdl-dllib-2.4.0b20230519.tar.gz
+[2023-05-21 14:33:50] INFO root fetch - processPackages [tkdial]: Downloading https://files.pythonhosted.org/packages/50/7b/10e655dd03ea17d4b4650e7ecca7848a2b4af4fef2322e9333da5d51effd/tkdial-0.0.6.tar.gz
+[2023-05-21 14:33:50] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53560899>=10485760
+[2023-05-21 14:33:50] INFO root fetch - processPackages [bigdl-dllib]: Start processing: communica
+[2023-05-21 14:33:50] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ansible-compat]: Downloading https://files.pythonhosted.org/packages/d6/a4/7ee3a2e4dc271f7c9540b27c29d8b89d0255f8b4bb7f7eee3b9f303e9b12/ansible-compat-4.0.4.tar.gz
+[2023-05-21 14:33:50] INFO root fetch - processPackages [communica]: New version: [0.2.1b2] Old Version: [0.2.1b1]
+[2023-05-21 14:33:50] INFO root fetch - processPackages [twilix-python]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [twilix-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilix-python-0.0.3.tar.gz tmp/twilix-python-0.0.4.tar.gz --markdown 20230521/t/twilix-python/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [communica]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [communica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communica-0.2.1b1.tar.gz tmp/communica-0.2.1b2.tar.gz --markdown 20230521/c/communica/0.2.1b1-0.2.1b2/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arxivai]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [arxivai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivai-0.0.8.tar.gz tmp/arxivai-0.0.9.tar.gz --markdown 20230521/a/arxivai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [tkdial]: Downloading https://files.pythonhosted.org/packages/31/28/914bb0e866143602fc6d7c150c2c070f01e8ac20cacdced95c31e4d83e59/tkdial-0.0.7.tar.gz
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ansible-compat]: Downloading https://files.pythonhosted.org/packages/92/13/e07329567bdc3eb75bdd8b66f9260b1630f7a093adb068bf23d7dd855f46/ansible-compat-4.0.5.tar.gz
+[2023-05-21 14:33:50] INFO root fetch - processPackages [tkdial]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [tkdial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkdial-0.0.6.tar.gz tmp/tkdial-0.0.7.tar.gz --markdown 20230521/t/tkdial/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ansible-compat]: executing diffoscope
+[2023-05-21 14:33:50] INFO root fetch - processPackages [ansible-compat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-compat-4.0.4.tar.gz tmp/ansible-compat-4.0.5.tar.gz --markdown 20230521/a/ansible-compat/4.0.4-4.0.5/diff.md --exclude *.pyd
+[2023-05-21 14:33:51] INFO root fetch - main [MainThread]: End processing [arclet-alconna-avilla]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ariadne]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ichika]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [tkdial]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [communica]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [arxivai]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: End processing [ansible-compat]: success
+[2023-05-21 14:33:52] INFO root fetch - main [MainThread]: Store serial: [18187024]
