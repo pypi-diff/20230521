@@ -3228,3 +3228,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:10:30] INFO root fetch - main [MainThread]: End processing [fief-server]: success
 [2023-05-21 09:10:38] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-21 09:10:38] INFO root fetch - main [MainThread]: Store serial: [18186034]
+[2023-05-21 09:15:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186034]
+[2023-05-21 09:15:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 09:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lantana
+[2023-05-21 09:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-models-nightly
+[2023-05-21 09:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: htlfc
+[2023-05-21 09:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dj-user-login-history
+[2023-05-21 09:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wecopttool
+[2023-05-21 09:15:47] INFO root fetch - processPackages [lantana]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-05-21 09:15:47] INFO root fetch - processPackages [dj-user-login-history]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 09:15:47] INFO root fetch - processPackages [htlfc]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-21 09:15:47] INFO root fetch - processPackages [wecopttool]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-05-21 09:15:47] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-21 09:15:47] INFO root fetch - processPackages [htlfc]: Downloading https://files.pythonhosted.org/packages/44/d5/d29873e2b52c093f66b2a8d7180ca9cc5387896c961840fe6ddc8a7aef79/htlfc-0.5.0.tar.gz
+[2023-05-21 09:15:47] INFO root fetch - processPackages [wecopttool]: Downloading https://files.pythonhosted.org/packages/d7/cc/fb26c22675422d8d603048661a315245d052d3c4fde2359115a15dde9a76/wecopttool-2.4.0.tar.gz
+[2023-05-21 09:15:47] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/4d/13/cbf7e7dae08fcc66806943c6359608177e46c8119f2672f3fa02dc6f6158/lantana-2.6.6.tar.gz
+[2023-05-21 09:15:47] INFO root fetch - processPackages [dj-user-login-history]: Downloading https://files.pythonhosted.org/packages/4a/53/360ed71555e4b2d93a56494f6e9e5d42f38a53b30b75211bbfeb279613cb/dj-user-login-history-1.0.5.tar.gz
+[2023-05-21 09:15:47] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2023-05-21 09:15:47] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.6.5.tar.gz tmp/lantana-2.6.6.tar.gz --markdown 20230521/l/lantana/2.6.5-2.6.6/diff.md --exclude *.pyd
+[2023-05-21 09:15:47] INFO root fetch - processPackages [dj-user-login-history]: executing diffoscope
+[2023-05-21 09:15:47] INFO root fetch - processPackages [dj-user-login-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj-user-login-history-1.0.4.tar.gz tmp/dj-user-login-history-1.0.5.tar.gz --markdown 20230521/d/dj-user-login-history/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 09:15:47] INFO root fetch - processPackages [htlfc]: Downloading https://files.pythonhosted.org/packages/95/44/565014c371bbfa16bb2f591186e1c6b9ec8f8ddd2d168a13bd5d74bc86e5/htlfc-0.5.1.tar.gz
+[2023-05-21 09:15:47] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-21 09:15:47] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230521/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-21 09:15:47] INFO root fetch - processPackages [htlfc]: executing diffoscope
+[2023-05-21 09:15:47] INFO root fetch - processPackages [htlfc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htlfc-0.5.0.tar.gz tmp/htlfc-0.5.1.tar.gz --markdown 20230521/h/htlfc/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-21 09:15:47] INFO root fetch - processPackages [wecopttool]: Downloading https://files.pythonhosted.org/packages/51/b8/9534efeb339b28697b656ab761f9b4158ff666cdbb927ab645c618db3908/wecopttool-2.5.0.tar.gz
+[2023-05-21 09:15:48] INFO root fetch - processPackages [wecopttool]: executing diffoscope
+[2023-05-21 09:15:48] INFO root fetch - processPackages [wecopttool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wecopttool-2.4.0.tar.gz tmp/wecopttool-2.5.0.tar.gz --markdown 20230521/w/wecopttool/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-05-21 09:15:48] INFO root fetch - main [MainThread]: End processing [dj-user-login-history]: success
+[2023-05-21 09:15:49] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2023-05-21 09:15:49] INFO root fetch - main [MainThread]: End processing [wecopttool]: success
+[2023-05-21 09:16:04] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-21 09:16:29] INFO root fetch - main [MainThread]: End processing [htlfc]: success
+[2023-05-21 09:16:29] INFO root fetch - main [MainThread]: Store serial: [18186051]
