@@ -4772,3 +4772,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:29:39] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-21 13:29:52] INFO root fetch - main [MainThread]: End processing [signalflow]: success
 [2023-05-21 13:29:52] INFO root fetch - main [MainThread]: Store serial: [18186786]
+[2023-05-21 13:34:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186786]
+[2023-05-21 13:35:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 13:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oceano-algos
+[2023-05-21 13:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statml
+[2023-05-21 13:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: communica
+[2023-05-21 13:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2023-05-21 13:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aliyun-python-sdk-vpc
+[2023-05-21 13:35:04] INFO root fetch - processPackages [statml]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 13:35:04] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-21 13:35:04] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 13:35:04] INFO root fetch - processPackages [communica]: New version: [0.2.1b1] Old Version: [0.2.0]
+[2023-05-21 13:35:04] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:35:04] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-21 13:35:04] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230521/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 13:35:04] INFO root fetch - processPackages [communica]: Downloading https://files.pythonhosted.org/packages/b3/5d/f0329cd5a97f236b65b80328d4324643e70813f166404a568eaebd9e57dd/communica-0.2.0.tar.gz
+[2023-05-21 13:35:04] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/1a/a5/371b5aef43587abd15c1fa719348551a027d58d4c2a31cc3fffd9c18c373/statml-0.0.4.tar.gz
+[2023-05-21 13:35:04] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: Downloading https://files.pythonhosted.org/packages/f6/94/988ac3b39fee6b1e0a780e523d5c4f784b1fd2770073712afad4d74ac430/aliyun-python-sdk-vpc-3.0.8.tar.gz
+[2023-05-21 13:35:04] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-21 13:35:04] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.3.tar.gz tmp/statml-0.0.4.tar.gz --markdown 20230521/s/statml/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 13:35:04] INFO root fetch - processPackages [communica]: Downloading https://files.pythonhosted.org/packages/50/3c/bce5c30a20d7d25de5186fd1150808f9a609660b5f0e048e37fdf705e892/communica-0.2.1b1.tar.gz
+[2023-05-21 13:35:04] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-21 13:35:04] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230521/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:35:04] INFO root fetch - processPackages [communica]: executing diffoscope
+[2023-05-21 13:35:04] INFO root fetch - processPackages [communica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communica-0.2.0.tar.gz tmp/communica-0.2.1b1.tar.gz --markdown 20230521/c/communica/0.2.0-0.2.1b1/diff.md --exclude *.pyd
+[2023-05-21 13:35:04] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: Downloading https://files.pythonhosted.org/packages/5a/26/542e862c62b4bb1182c40068b24ce776e3def5d1bfc73b3bbf7b9fe8d648/aliyun-python-sdk-vpc-3.0.9.tar.gz
+[2023-05-21 13:35:04] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: executing diffoscope
+[2023-05-21 13:35:04] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-vpc-3.0.8.tar.gz tmp/aliyun-python-sdk-vpc-3.0.9.tar.gz --markdown 20230521/a/aliyun-python-sdk-vpc/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-21 13:35:05] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-21 13:35:05] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-21 13:35:06] INFO root fetch - main [MainThread]: End processing [communica]: success
+[2023-05-21 13:35:06] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-21 13:35:10] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-vpc]: success
+[2023-05-21 13:35:10] INFO root fetch - main [MainThread]: Store serial: [18186800]
