@@ -3490,3 +3490,14 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:09:32] INFO root fetch - main [MainThread]: End processing [gqt]: success
 [2023-05-21 10:09:33] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-05-21 10:09:33] INFO root fetch - main [MainThread]: Store serial: [18186178]
+[2023-05-21 10:14:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186178]
+[2023-05-21 10:14:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 10:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TaskWorker
+[2023-05-21 10:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2023-05-21 10:14:42] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230520.9.20.792154] Old Version: [20230520.8.16.965969]
+[2023-05-21 10:14:42] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5a/7b/28c4e2dbb4636d6d074086dc294b4bf6cb806bd92571dd8330da241403d7/certora-cli-alpha-master-20230520.8.16.965969.tar.gz
+[2023-05-21 10:14:42] WARNING root fetch - processPackages [TaskWorker]: Skipping, unable to determine old version
+[2023-05-21 10:14:42] INFO root fetch - main [MainThread]: End processing [TaskWorker] error
+[2023-05-21 10:14:42] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978979>=10485760
+[2023-05-21 10:14:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-21 10:14:42] INFO root fetch - main [MainThread]: Store serial: [18186184]
