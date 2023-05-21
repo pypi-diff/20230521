@@ -1,0 +1,1845 @@
+# Comparing `tmp/mixturemapping_binning-0.4.0-py39-none-any.whl.zip` & `tmp/mixturemapping_binning-0.5.0-py39-none-any.whl.zip`
+
+## zipinfo {}
+
+```diff
+@@ -1,31 +1,22 @@
+-Zip file size: 1303809 bytes, number of entries: 29
+--rw-r--r--  2.0 unx     3982 b- defN 23-May-07 11:10 mixturemapping_binning/__init__.py
+--rw-r--r--  2.0 unx    47407 b- defN 23-May-07 11:10 mixturemapping_binning/binning.py
+--rw-r--r--  2.0 unx    13569 b- defN 23-May-07 11:09 mixturemapping_binning/__pytransform/__init__.py
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/__init__.py
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/darwin/__init__.py
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/darwin/x86_64/__init__.py
+--rw-r--r--  2.0 unx  1465524 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/darwin/x86_64/_pytransform.dylib
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/linux/__init__.py
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/linux/x86_64/__init__.py
+--rw-r--r--  2.0 unx  1193952 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/linux/x86_64/_pytransform.so
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/windows/__init__.py
+--rw-r--r--  2.0 unx        8 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/windows/x86_64/__init__.py
+--rw-r--r--  2.0 unx  1161728 b- defN 23-May-07 11:10 mixturemapping_binning/__pytransform/platforms/windows/x86_64/_pytransform.dll
+--rw-r--r--  2.0 unx     2671 b- defN 23-May-07 11:08 src/__init__.py
+--rw-r--r--  2.0 unx     8904 b- defN 23-May-07 11:08 src/binning.py
+--rw-r--r--  2.0 unx     9095 b- defN 23-May-07 11:08 src/distributions.py
+--rw-r--r--  2.0 unx     5125 b- defN 23-May-07 11:08 src/utils.py
+--rw-r--r--  2.0 unx     1288 b- defN 23-May-07 11:08 src/layers/__init__.py
+--rw-r--r--  2.0 unx     2023 b- defN 23-May-07 11:08 src/layers/_mapping.py
+--rw-r--r--  2.0 unx     6633 b- defN 23-May-07 11:08 src/layers/binyield.py
+--rw-r--r--  2.0 unx     3140 b- defN 23-May-07 11:08 src/layers/covmatrix.py
+--rw-r--r--  2.0 unx     7088 b- defN 23-May-07 11:08 src/layers/distribution.py
+--rw-r--r--  2.0 unx    11214 b- defN 23-May-07 11:08 src/layers/generalmapping.py
+--rw-r--r--  2.0 unx    19051 b- defN 23-May-07 11:08 src/layers/gmrmapping.py
+--rw-r--r--  2.0 unx     7665 b- defN 23-May-07 11:08 src/layers/linearmapping.py
+--rw-r--r--  2.0 unx     2680 b- defN 23-May-07 11:10 mixturemapping_binning-0.4.0.dist-info/METADATA
+--rw-r--r--  2.0 unx       93 b- defN 23-May-07 11:10 mixturemapping_binning-0.4.0.dist-info/WHEEL
+--rw-r--r--  2.0 unx       27 b- defN 23-May-07 11:10 mixturemapping_binning-0.4.0.dist-info/top_level.txt
+--rw-rw-r--  2.0 unx     2846 b- defN 23-May-07 11:10 mixturemapping_binning-0.4.0.dist-info/RECORD
+-29 files, 3975761 bytes uncompressed, 1299065 bytes compressed:  67.3%
++Zip file size: 35497 bytes, number of entries: 20
++-rw-r--r--  2.0 unx      728 b- defN 23-May-21 20:40 mixturemapping_binning/__init__.py
++-rw-r--r--  2.0 unx     3984 b- defN 23-May-21 20:40 mixturemapping_binning/binning.py
++-rw-r--r--  2.0 unx     2672 b- defN 23-May-21 20:38 src/__init__.py
++-rw-r--r--  2.0 unx     8897 b- defN 23-May-21 20:38 src/binning.py
++-rw-r--r--  2.0 unx     9672 b- defN 23-May-21 20:38 src/distributions.py
++-rw-r--r--  2.0 unx     5534 b- defN 23-May-21 20:38 src/utils.py
++-rw-r--r--  2.0 unx     1416 b- defN 23-May-21 20:38 src/layers/__init__.py
++-rw-r--r--  2.0 unx     2011 b- defN 23-May-21 20:38 src/layers/_mapping.py
++-rw-r--r--  2.0 unx     6637 b- defN 23-May-21 20:38 src/layers/binyield.py
++-rw-r--r--  2.0 unx     5354 b- defN 23-May-21 20:38 src/layers/covmatrix.py
++-rw-r--r--  2.0 unx     9859 b- defN 23-May-21 20:38 src/layers/distribution.py
++-rw-r--r--  2.0 unx    21470 b- defN 23-May-21 20:38 src/layers/disttrafo.py
++-rw-r--r--  2.0 unx    10990 b- defN 23-May-21 20:38 src/layers/generalmapping.py
++-rw-r--r--  2.0 unx    15915 b- defN 23-May-21 20:38 src/layers/gmrmapping.py
++-rw-r--r--  2.0 unx     7866 b- defN 23-May-21 20:38 src/layers/linearmapping.py
++-rw-r--r--  2.0 unx     8059 b- defN 23-May-21 20:38 src/layers/normalization.py
++-rw-r--r--  2.0 unx     2680 b- defN 23-May-21 20:40 mixturemapping_binning-0.5.0.dist-info/METADATA
++-rw-r--r--  2.0 unx       93 b- defN 23-May-21 20:40 mixturemapping_binning-0.5.0.dist-info/WHEEL
++-rw-r--r--  2.0 unx       27 b- defN 23-May-21 20:40 mixturemapping_binning-0.5.0.dist-info/top_level.txt
++-rw-rw-r--  2.0 unx     1644 b- defN 23-May-21 20:40 mixturemapping_binning-0.5.0.dist-info/RECORD
++20 files, 125508 bytes uncompressed, 32835 bytes compressed:  73.8%
+```
+
+## zipnote {}
+
+```diff
+@@ -1,46 +1,13 @@
+ Filename: mixturemapping_binning/__init__.py
+ Comment: 
+ 
+ Filename: mixturemapping_binning/binning.py
+ Comment: 
+ 
+-Filename: mixturemapping_binning/__pytransform/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/darwin/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/darwin/x86_64/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/darwin/x86_64/_pytransform.dylib
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/linux/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/linux/x86_64/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/linux/x86_64/_pytransform.so
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/windows/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/windows/x86_64/__init__.py
+-Comment: 
+-
+-Filename: mixturemapping_binning/__pytransform/platforms/windows/x86_64/_pytransform.dll
+-Comment: 
+-
+ Filename: src/__init__.py
+ Comment: 
+ 
+ Filename: src/binning.py
+ Comment: 
+ 
+ Filename: src/distributions.py
+@@ -60,29 +27,35 @@
+ 
+ Filename: src/layers/covmatrix.py
+ Comment: 
+ 
+ Filename: src/layers/distribution.py
+ Comment: 
+ 
++Filename: src/layers/disttrafo.py
++Comment: 
++
+ Filename: src/layers/generalmapping.py
+ Comment: 
+ 
+ Filename: src/layers/gmrmapping.py
+ Comment: 
+ 
+ Filename: src/layers/linearmapping.py
+ Comment: 
+ 
+-Filename: mixturemapping_binning-0.4.0.dist-info/METADATA
++Filename: src/layers/normalization.py
++Comment: 
++
++Filename: mixturemapping_binning-0.5.0.dist-info/METADATA
+ Comment: 
+ 
+-Filename: mixturemapping_binning-0.4.0.dist-info/WHEEL
++Filename: mixturemapping_binning-0.5.0.dist-info/WHEEL
+ Comment: 
+ 
+-Filename: mixturemapping_binning-0.4.0.dist-info/top_level.txt
++Filename: mixturemapping_binning-0.5.0.dist-info/top_level.txt
+ Comment: 
+ 
+-Filename: mixturemapping_binning-0.4.0.dist-info/RECORD
++Filename: mixturemapping_binning-0.5.0.dist-info/RECORD
+ Comment: 
+ 
+ Zip file comment:
+```
+
+## mixturemapping_binning/__init__.py
+
+```diff
+@@ -1,62 +1,17 @@
+-from .__pytransform import pyarmor_runtime
+-
+-"""
+-# MixtureMapping
+-
+-[![Documentation](https://github.com/VK/dash-express-components/workflows/Publish%20release/badge.svg)](https://vk.github.io/mixturemapping-doc)
+-[![PyPI version](https://badge.fury.io/py/mixturemapping.svg)](https://badge.fury.io/py/mixturemapping)
+-
+-Train Gaussian Mixture Mappings
+-
+-
+-## Provides:
+-  1. Layers to build tensorflow models to map Gaussian mixtures
+-  2. Tools to compute yield values of Gaussian mixtures in complex binning schemes
+-
+-## Example
+-  
+-    import mixturemapping as mm  
+-    import tensorflow as tf
+-
+-    inMeans = tf.keras.Input(shape=(mixN, inputMixM), name="Means", dtype=dataType)
+-    inStdDevs = tf.keras.Input(shape=(mixN, inputMixM), name="StdDevs", dtype=dataType)
+-    inWeight = tf.keras.Input(shape=(mixN), name="Weights", dtype=dataType)
+-
+-    mapModel = tf.keras.Sequential()
+-    mapModel.add( tf.keras.layers.Dense(40, activation="relu", kernel_regularizer=regularizers.l2(0.001)) )
+-    mapModel.add( tf.keras.layers.Dense(40, activation="relu", kernel_regularizer=regularizers.l2(0.001)) )
+-    mapModel.add( tf.keras.layers.Dense(outputMixM))
+-    y = mapModel(inMeans)
+-
+-    deltaModel = tf.keras.Sequential()
+-    deltaModel.add( tf.keras.layers.Dense(40, activation="relu", kernel_regularizer=regularizers.l2(0.001)) )
+-    deltaModel.add( tf.keras.layers.Dense(40, activation="relu", kernel_regularizer=regularizers.l2(0.001)) )
+-    deltaModel.add( tf.keras.layers.Dense(outputMixM))
+-    yDelta = deltaModel(inMeans)
+-
+-    covALayer = mm.layers.TrainableCovMatrix(outputMixM, name="CovA")
+-    covA = covALayer(inMeans)
+-
+-    mapLayer = mm.layers.GeneralMapping(outputMixM, name="Mapping", dtype=dataType)
+-    newDist = mapLayer({'means': inMeans, 'y':y, 'yDelta':yDelta, 'stdDevs': inStdDevs, 'weights': inWeight, 'covA': covA})
+-
+-    distLayer = mm.layers.Distribution(dtype=dataType, regularize_cov_epsilon=0.95)
+-    dist = distLayer(newDist)
+-
+-### Developement
+-```
+-$ py -m venv env
+-$ .\env\Scripts\activate
+-$ pip install -r requirements.txt
+-```
+-
+-
+-"""
+-
+-
+-pyarmor_runtime()
+-__pyarmor__(__name__, __file__, b'\x50\x59\x41\x52\x4d\x4f\x52\x00\x00\x03\x09\x00\x61\x0d\x0d\x0a\x08\x2d\xa0\x01\x00\x00\x00\x00\x01\x00\x00\x00\x40\x00\x00\x00\x8c\x01\x00\x00\x00\x00\x00\x18\x23\xb3\x4d\xe3\x3e\xe0\x36\xc5\x13\xd7\x87\x69\xc7\x67\xbf\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x57\xe8\xea\x90\x4f\x46\x22\xa0\x93\x30\x4e\x59\x97\xb8\xa4\xcf\x6b\x6d\x55\x19\xed\xaa\x8c\x4c\x68\xa1\x64\xe1\xc1\x70\xbf\x4b\x79\x82\x7f\xb0\x57\xba\x2e\xd8\xb8\x01\xf7\xd0\x7a\xa6\x7d\x31\x03\xea\x15\xa0\xd1\xa3\x0d\xc6\x74\x55\x22\xfb\x23\x91\xb3\x1e\x64\x47\xf0\x0a\xa3\x11\xf3\x9a\x2f\xdf\xfd\x1c\x83\x19\x22\x8d\x36\xaa\xc1\x61\x81\x86\x3e\x2b\x0e\x51\xba\x91\x57\x52\x82\x2c\x33\x94\xd0\xb0\x08\x9f\x7d\x31\x39\xc2\x9f\xb5\x53\xa4\x09\x3f\x48\x1c\x6a\xc4\xda\x74\x27\x3b\x6e\x53\x65\xed\xa5\xad\x34\xa9\xc0\x69\x5f\xc0\x2e\xdb\x04\xae\xb2\x42\xa7\x18\x80\x8e\x7d\xc2\x07\xea\xc2\xb0\xf5\xb9\xff\xc3\x8c\xe7\xb2\x92\x63\x50\xc5\x32\x72\xa5\x29\xb4\x0b\x75\x10\xdd\x4a\x32\xed\xa8\xfe\x87\x07\x0c\x29\x7a\xee\x28\x4b\x15\xff\x41\xba\x1b\x46\xb6\x6b\x46\xe1\x9c\xbb\x86\xf4\x4c\x13\xab\x7e\x77\xb5\x9d\x32\x19\xff\xec\x88\x60\x21\xfc\xfd\xf3\x0e\xc5\x4d\xa5\xf1\x2f\x28\xb0\x49\x3b\x6a\xf0\x19\x01\x6f\x5d\x92\x0f\x69\xfa\xd2\x3b\xdd\x63\xea\xd5\x03\xfd\x61\xf1\x31\xb6\xf1\xb9\xde\x5a\xec\xfb\x85\x0e\x15\xe9\x40\xfc\x02\x77\xc3\x12\xa3\xa2\x80\x37\x70\x35\xf5\xdd\x19\xe5\x41\x63\xbd\x65\x65\x13\xcd\xbe\xb4\x47\x98\xe1\x46\x3d\xad\x31\x28\x8b\x97\x09\x16\x2c\x20\x8c\x7e\x2e\x67\x93\x6c\x6a\x26\x1f\xda\x4a\xda\xcf\x93\x7e\x49\x4e\xdc\x5d\x29\x87\x41\x18\xff\x10\x65\xea\xcd\x21\xff\x2d\x4c\x62\xe4\x43\xad\x07\xea\x2b\x01\xa7\x85\x89\xd1\x33\xb1\x28\x39\x48\xca\xc2\xe1\x04\x28\x2d\x8f\xa2\x28\x63\xa3\x72\x1a\x71\x40\x4e\x76\x04\xe5\xd2\x05\x01\xfc\xb7\x2a\x58\x09\xa9\xa8\xfc\x83\x2a\x5f\xab\x57\x31\x04\x66\x75\xf8\x37\x4b\x2e\xe1\x01\xb7\x02\x7b\xbf\x1b\x66\xe7\x69\x0d', 2)
+-
+-# cleanup
+-del pyarmor_runtime
++## Copyright 2020-2023 Viktor Krueckl. All Rights Reserved.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
++# you may not use this file except in compliance with the License.
++# You may obtain a copy of the License at
++#
++#     http://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing, software
++# distributed under the License is distributed on an "AS IS" BASIS,
++# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++# See the License for the specific language governing permissions and
++# limitations under the License.
++# ==============================================================================
+ 
++from.binning import*
++__version__='0.4.0'
+```
+
+## mixturemapping_binning/binning.py
+
+```diff
+@@ -1 +1,56 @@
+-__pyarmor__(__name__, __file__, b'\x50\x59\x41\x52\x4d\x4f\x52\x00\x00\x03\x09\x00\x61\x0d\x0d\x0a\x08\x2d\xa0\x01\x00\x00\x00\x00\x01\x00\x00\x00\x40\x00\x00\x00\x02\x2e\x00\x00\x00\x00\x00\x10\xb9\xc8\xe7\x66\x0b\xb1\xc4\x65\x57\xd4\x25\x39\x49\xd7\xe8\x72\x00\x00\x00\x00\x00\x00\x00\x00\x82\xc6\x5c\x2e\x0e\x97\x34\x6d\x49\x9e\x10\x9d\xab\x6d\x78\x55\xe5\xd6\x4a\x98\xbc\x26\x0d\x1a\xe0\xb9\x6e\x8b\xff\x97\x8d\x1e\xfa\x7d\x39\x7c\x3f\xe9\xbc\xd9\xb1\x6b\x67\x2a\x01\x8e\xc2\x86\xff\x2d\xb3\xc2\x39\x35\x8c\xab\x44\xcf\xe9\x43\x7e\x1a\xd5\xbf\x22\x38\xbb\xb5\x21\x52\x6c\xc5\x98\x9f\xc0\xf8\xba\x4f\xb8\xe6\xbf\xea\x55\xa8\x53\xdd\x17\x19\x8e\xe3\xf7\x1c\x4d\xe8\x7d\xad\x91\x47\x93\xa2\x90\x07\x56\x88\xa5\xae\xec\xf3\x98\x93\x92\x1c\xf9\x41\x41\x7b\x6f\xcd\x96\x0d\x7a\x85\x93\x20\x67\x0a\x8f\x36\x98\xe3\xf4\x7e\x19\x62\x16\xd2\x17\x02\x3c\x76\x7e\xe7\x0d\x9d\x42\x1a\x7f\xd6\x91\xba\xca\x45\x5b\xc5\x9e\x08\x0c\xa5\xcd\x52\x91\x4b\x3f\x59\xb4\xa3\x81\xff\x3d\x73\xf5\xcd\x6b\x34\x6f\x54\xa9\x8d\xce\xf6\x18\xf9\xe0\xb7\xe7\xe4\xaa\x95\xe5\x90\x51\x9a\x1c\x42\x22\x29\x66\x99\x8e\x02\x59\xd2\x06\x3d\x15\xb8\xb9\xff\xf0\xe7\x27\xc6\x0a\x6e\xd1\x79\x4a\xf6\x52\x1e\xbe\x56\xe7\x05\x35\xe1\xb5\x9a\xaf\x87\xde\xb2\x8e\x12\x0c\xbb\xb1\x15\x4c\x44\x83\x0d\x4e\x2a\x94\xb6\x51\xdc\xb9\x02\x9e\x43\xfc\xf7\xec\x7d\x5c\xd1\xa8\xc7\xdf\x3c\x69\xc0\xa1\x06\xda\xa1\xe6\x8e\x43\x10\x3e\x6c\x3d\xc3\x62\x2e\xa1\xba\x40\x3b\xcc\x44\x13\x27\x41\x49\x45\x99\x52\x4a\x50\x0c\xd7\x0b\xe8\xb7\xaa\xa5\x16\xc2\xf5\x60\x26\x5f\x9e\x02\x18\x93\xce\xe2\xa1\x8e\x54\x82\x9b\xce\x04\x19\x07\xa3\xfc\xef\x2c\x6f\x3d\x00\x8f\x6b\xa0\x82\x5c\x91\xb2\xc9\xf0\xb0\xc2\x7a\xd0\x8d\x9d\x39\xad\x21\x2b\x97\xe1\xad\xac\x65\x21\x89\x25\xa4\xf7\x75\x89\x79\x8e\xb7\xb2\x68\xac\x6d\x02\xee\xa5\x86\xd7\x14\xb7\xf5\x2e\xa2\xb6\x55\x5d\x45\x10\x1e\x6b\xa2\xae\x99\x39\xff\x5f\xda\x59\xd7\x39\xa3\x7d\x78\x01\xc5\x8e\xa1\xcd\xf9\xb0\x5c\xa9\x8a\x0a\xa8\xe2\x39\xfd\x64\x2c\x14\x11\xb0\x75\x0f\xff\xa3\x78\x44\x75\xf7\x48\x1a\xe7\xb7\xce\xcd\x72\x5e\x3b\x04\xbb\x7d\x7d\xdd\x76\xb6\x54\x6a\x9d\x6a\x55\x78\xc4\x12\x88\x17\x52\xa9\x67\x13\x6f\xfb\x95\x4f\x75\x6f\x06\x5c\xde\xd1\x3e\x52\x26\x70\x10\xd3\xa7\x59\x5e\x3c\x32\xfd\x1c\x38\xb9\x1e\x69\x3d\xdd\xb4\x8f\x0b\x4b\xd2\x53\xcb\x23\xe3\x8e\x5c\x9c\x63\x58\xe2\x57\x0d\x8a\xad\x2a\x30\xa2\x02\x54\xf5\xcd\x7b\x47\xce\xbd\x98\x67\x1a\x2a\x67\x96\x7f\xf1\x77\x4a\x81\x05\x5c\xda\x49\x77\xc0\xba\xf5\x3e\xb9\x7d\xa8\x14\xa7\xdb\x16\x4a\xda\xd0\x61\xd1\xcc\x52\x97\xe2\x59\x1e\xac\xbe\x56\x66\x85\x81\x69\xa1\x93\xb7\x71\x5f\x4d\xbf\x6f\xb9\xc4\xf3\x11\x1b\xda\x0f\x29\x7a\xbe\x76\xbc\xd7\xd1\xe2\xc7\xf2\x82\x36\x90\x34\x3b\x93\x7b\x05\xd4\xd4\xfc\x93\xc9\x5c\x22\xb0\xd9\xd4\x0e\x1a\x2a\x2c\xc7\x18\x01\x19\xfa\xf7\x4d\x20\xc9\xbf\xa0\x97\x65\x1f\xdb\x5c\xd8\x31\xc7\x3c\x2a\x7a\x0a\xa5\xa9\xcc\x6c\x8e\xf9\x6a\xe9\xf8\xc2\x7d\xee\x7d\x2d\xb1\x07\x5e\xea\xa6\x27\x18\x1e\x67\x2c\x79\xce\xf2\x19\x30\x63\x34\x72\xde\xbf\x38\x1a\xc3\x92\x7c\xb4\x43\x4a\x6c\xe0\xcc\x21\xa1\x7c\x14\x88\x47\x44\x7e\xed\xba\xa8\x11\x74\x1b\x23\xa5\x54\x7d\x71\x83\xb2\xfe\x1c\xc2\xfb\x05\x78\xc2\x96\x44\x0e\x43\x61\xfa\x87\x36\x38\x77\xde\x03\x5e\x78\x3b\x2e\xc8\xb4\xd0\x38\x38\x9f\xb4\x40\x82\x33\x2d\xf5\xce\xa6\x04\x29\xad\x74\x16\x95\x41\x59\x70\xc2\x8e\xf4\x7e\xb4\x85\xe6\xfb\x9f\x51\x3f\xed\x6b\x83\xae\x3a\xd6\x7a\x9e\x79\xbb\x02\x60\xd7\x6d\x37\xb0\xf7\x00\x9e\x12\xac\xb3\x5d\x0b\x5b\xd6\xb4\x58\x53\xc9\x67\x86\x2e\x3c\xa1\xf6\x62\xe9\x4f\x0b\xbd\x72\x9a\x1e\x4e\xc2\x71\xe9\xc5\xc9\xc7\x8a\x2f\x2e\xe8\x48\x2b\x2a\xec\x9b\x48\x77\x0a\xe7\xdd\xf0\x3d\x12\x28\x98\xb5\x21\x53\x83\xc9\xfd\x8c\x05\x25\x26\x69\x8a\x5a\xc6\x47\x8e\xe1\xa8\xf3\x8d\x8c\xda\x84\x63\x7a\x6c\xb0\xe9\x92\xb1\xdf\x44\x1f\x64\x72\x2c\x64\x64\x23\xd6\x69\x6f\xc9\x3a\x30\x63\x9e\x69\x86\xa3\x8a\x2f\x76\xb4\xfd\x15\xbc\x0d\xd9\x9a\x86\xce\x8d\x58\xec\xbd\x67\x47\xa9\xd3\x72\x10\x25\x8e\x1e\xf1\x90\xe6\x95\x85\x60\x10\xf1\x8a\x6a\x15\xd4\x46\xc6\x0c\xc6\xc4\x72\x51\xa7\xde\x60\x50\xd2\x2e\x64\x3a\x16\x23\x83\xf0\x09\xe5\x37\x20\xb3\x68\x06\x0e\x05\x0f\xb7\x8c\x24\x36\x43\xde\x12\xc6\xfd\x0b\x63\x58\x18\xb0\x63\x82\xa6\xc2\xab\x22\xc1\x2d\xc9\x67\xf0\x99\x97\x43\xec\x51\xae\xd7\x97\x8d\x73\x1b\x2c\xbb\x12\x79\x02\xda\xcd\xaf\x77\xe7\x5b\xdf\xb7\xcb\xc7\xe6\x41\xbf\xb4\x4d\x81\x4d\xf9\x4f\x5b\x06\x3a\x00\x92\xba\x00\x11\xe6\x49\xc2\x0c\xeb\x15\x9e\xff\x4e\xc1\x87\xf1\x29\x24\x47\xf0\xea\x7f\xf1\x2e\xa1\xab\x0a\x97\xb7\xcb\xe3\xdc\x26\x90\x80\xb3\x6f\xad\xb2\xaa\x26\x8d\xef\xb9\xa5\x69\x64\xe3\x0b\xab\x4b\x17\x95\x09\x69\x8a\xa5\x8a\x7f\x57\xad\x8f\x87\xab\x21\xe9\xfd\x94\x97\x08\x52\xaa\xfb\xab\x67\x42\xef\x0c\x4c\x36\x29\xf4\xdf\x2c\xe5\xe8\xd6\x6a\x2a\xcf\xf9\xb6\xed\x9b\x71\xb7\x3b\xbe\xeb\x99\x23\x19\x82\xbf\x01\x0c\x0d\xfb\x6d\xb6\x79\xd3\xcc\x59\xe0\xbb\xbc\x21\x96\xfb\x07\x73\xa7\x7a\xc5\x50\xd8\xcd\x7f\xf7\xe4\x91\x72\x75\x44\xc7\xcc\x0e\xf1\xae\x51\x95\x77\xc8\xfa\xb9\xcc\xd5\xd6\xcb\x86\xf3\xee\x31\xa2\xf6\x18\xef\x4c\x98\x43\x56\x88\x8d\x4c\x5c\xca\xa8\xb9\xfb\xe0\x3c\x29\x84\x46\xa4\x1d\xf8\x2e\x6a\xb0\x37\x56\x7a\x60\x69\x75\x98\x6f\xad\x49\x6f\xb3\x5c\x74\xc5\x05\x26\x71\x2b\xb9\x5d\x39\xb1\xd7\x95\xaf\x0f\x1a\x0d\x03\x70\xbe\x54\xe7\x1a\x63\x17\xcf\xc4\x90\x1d\x74\x51\x1f\xbb\x6b\x67\xa9\x2c\x79\x07\xbd\xec\x64\xb3\xa1\x7b\x5f\x24\xf8\x3b\xcd\xcf\xd9\xa7\x3c\x4c\x34\x16\xb1\x68\xc4\x86\x7e\xb0\xac\x3e\x2b\x54\xf8\x89\x47\x56\x60\x13\xc2\x97\xfd\xa4\x7a\xd3\x90\x28\x2a\x2e\x7b\xf1\xa6\x4f\xb9\x41\x24\xa4\x89\x7e\x62\x83\x88\x84\xb6\xa1\x30\xdc\x9f\xf2\x83\x90\x68\x7e\xab\x52\x19\xc3\x12\xdc\xb9\xcb\x85\xd2\x09\x21\x91\xd2\xe7\x64\x77\x9e\x47\x84\x26\x24\xe7\x2b\xce\xe2\xab\x60\x5d\xd3\xe1\xf7\x22\x8d\x6c\xa3\xd5\x98\x64\x71\x2c\x7b\x9b\xd7\x46\xb7\x37\x11\xb8\xa0\x34\xf5\x47\xde\xc5\x8b\x17\x9b\x5b\xfa\x58\x96\xbc\x3a\xd5\xc8\x77\x0d\x3e\x7b\x72\xd1\xf2\x62\x2f\x08\x2a\x9c\x60\x50\x30\x34\x0b\x99\x0b\xaa\xeb\x6a\xb1\xca\x45\x94\xe2\xe5\xae\x31\xb8\x58\xfc\x18\x1c\xd5\xa1\x2a\xb3\xe8\x86\x1a\x42\xd7\xb8\x6c\x2d\x19\x6e\xf7\x77\x45\x78\xca\xdc\x00\x96\xd9\xe9\x3c\xe9\xbb\x5c\xbe\xc8\xe5\x2a\x08\x52\x0d\x10\xea\x93\x49\x22\x2f\x90\x5d\x80\xa9\xf9\x15\x2d\x67\x54\xd7\x78\x78\x36\xe1\x67\x48\x79\x8c\xe7\xf4\xbe\x5d\x52\xba\x2d\x5d\x6e\xf6\x0b\x46\x2d\xb5\x05\x36\xe8\xf0\x31\x5c\x43\xd7\x8c\xae\x3a\x03\xb3\x84\x6c\x4b\x42\xf2\xdc\x15\xcb\x7e\x10\x93\xa6\xcf\x88\xce\xde\xcc\x59\x53\x08\x95\xee\x46\x11\x8a\x3b\xd4\xca\x59\xe8\xe7\x37\x4e\x20\x86\x26\x0b\xf5\x7b\xc5\x1b\xcc\x93\xf5\x2f\x3f\x4b\x97\x94\xd8\x3a\x9c\x8e\xcd\xdd\xd0\xe6\x36\xfd\x94\xcb\x90\x91\x32\x73\x33\x4b\xcc\xc3\xce\x01\xcc\x71\x56\xcc\x29\xee\x03\x5e\x38\x16\x63\xe7\xb8\x94\xfc\x6e\xfb\x47\xe3\xd8\x37\x16\x12\xfe\x4d\x87\xda\x33\x1a\x65\x2e\x26\xe5\xb3\x0f\xb0\xf6\xce\xe6\x0e\xc1\x21\xb6\xc5\x22\x20\x2a\xf2\x36\x44\x90\x6d\xae\x28\x79\x5d\x6b\x9e\x2a\xd0\x97\x45\x8c\x83\xe9\x59\xd7\x37\x67\xb9\xf3\xb9\xea\xca\x90\x22\x84\x3b\xba\x43\x88\xba\xf3\x97\x6e\x71\x42\x87\x05\x56\xa7\xab\xcd\xd6\xf2\x29\x81\xfe\x3b\xdb\xe9\xa3\x90\x6a\xc0\x1e\xbb\x00\x48\x2f\xea\x24\x4a\x00\x48\xea\x82\xb5\x1e\x4e\xa6\xa4\xe9\xf4\x83\x57\xc5\x55\xa0\x28\xc8\xbf\xfa\x89\x7f\xcf\xdd\x06\x46\xfe\x25\x83\x39\x44\x7b\x8a\xa9\xe8\x52\xda\xbf\x49\x2d\x21\x86\xb3\x30\x80\x92\x35\xfa\xe2\xe0\x96\x91\x42\x70\x7f\x2b\x2a\xb9\x53\x92\x46\x5a\xb7\x56\x6b\x19\x24\x6c\xa7\xc2\x7a\xaa\x5c\x38\xec\x3c\x25\x3e\xbd\x36\xd9\x1b\x38\xa0\x34\x3e\xf9\xe4\x7b\xf5\xa0\xa8\x21\x61\xb0\x1b\x36\x05\xa9\x55\x8c\x73\x6e\x21\x27\xa0\x79\x9c\xa1\x50\xda\xfc\x50\xc4\x07\x90\x0b\xb5\xd3\xef\x6a\x79\x24\xa5\x69\xb2\x9e\x40\xb6\xfe\xb1\x65\x1c\x7b\x2a\x55\x0e\xef\x5e\xc5\x13\xe6\xd9\x46\x0b\x45\x9c\xa9\x03\x35\x94\xea\x9d\x02\x2c\x7e\x7b\x27\x56\xff\x81\x89\xe6\x77\x77\x1c\xb0\x1d\x7b\x72\xd9\xf6\x6c\x59\x5f\x5f\x8d\x8b\xdc\x1a\x61\x00\xc4\x91\x40\x40\x1a\xfd\xc3\x50\xa3\x9e\x06\xf4\xdf\xeb\xb3\x36\xad\xcc\xa7\x55\x74\x10\xee\xdf\xfc\xcb\x1b\xd6\xcb\xbc\xd9\x71\x7f\xcf\x4d\x9f\xfa\x1e\x92\x4a\x34\x8b\xf2\xa8\xd9\x79\xbf\xe1\xe8\xdb\x2d\x89\xe5\x25\x04\x15\x1b\xc9\x26\xd2\xaa\xc1\x0a\x77\xe2\x8c\xde\x9c\x3b\xe6\x0f\x2e\x98\x45\x18\x69\x13\x93\xdd\x44\x51\x43\xf6\xf7\x11\x12\x32\xcd\x01\x94\x3d\x2f\x8a\x63\x28\x5d\xa6\xa9\x76\x96\x2a\x12\x50\xdb\x69\xf9\xcc\x48\xa6\x4c\xb9\x75\x77\xfd\x81\x0d\x96\x07\xa5\xb3\x0f\x57\x6b\xd3\x93\x6d\xd8\x69\x52\x78\x9a\x7d\x0a\x5f\xab\xd6\x51\x7b\xf2\x87\x4f\x9b\xa3\x24\x14\x87\xc9\xd1\xc5\x3f\x9a\x2a\x59\xc4\x68\xa5\x67\x36\xae\xb0\xa1\xab\x50\x6b\xe4\x1c\x61\x3a\xed\xe9\x00\xca\x05\x07\xb9\x03\xf4\xea\xc3\x7e\x78\xf2\x75\xae\xb1\x72\xe3\x4f\x29\x93\xef\x76\x78\x67\xda\x8f\xf2\x17\xc2\xac\xda\x1f\x7f\xd2\x20\xcd\xfa\x86\x89\x85\x71\x5a\x5c\xba\xe6\xfb\x96\x70\x5a\x61\xa0\x2f\xfc\x00\x1d\x14\x79\x6d\x83\x41\xc0\x8d\xcd\x04\x7d\x16\x3a\x46\x64\x2b\x0c\xa1\x09\x95\x5f\xce\xb5\x45\x93\x11\x6f\x73\x95\x5d\x51\x30\x11\x90\x52\x65\xd0\x6d\x8b\xab\x8a\x80\x80\xa6\x57\x79\xc2\x96\x8c\x32\x17\xdc\x3a\xed\x26\x8b\xf6\x49\x5f\x88\xdf\x68\xba\x9a\xec\x8e\x20\x4c\xe5\xca\xda\x6e\x21\x13\xbc\x39\x72\x27\x53\x85\x2e\xe7\x41\xa5\xc1\x1a\xea\x06\xe6\x53\xf7\x93\x6a\xc0\xab\x48\xa9\xd8\xea\x8f\x35\x54\x88\x57\xcd\xbb\xd5\x00\xe8\x0a\x3b\x02\x21\xa8\x83\xe2\xe4\xc4\x37\x96\x56\x51\xb9\xe8\xee\x31\x70\x43\x3c\x0a\x9c\x58\xdc\x6a\x61\x4f\x89\x39\xac\x95\x66\x3d\x4f\x1e\x67\xe1\xfe\x76\x8c\xb4\xf4\x38\x2c\x86\x3a\x58\xa5\xe6\xb1\xb4\x8a\x30\xb1\xa7\x3e\xbf\x18\x52\x4b\x80\x71\x91\x45\xf9\xdb\x52\xa2\xf0\xbe\xb1\xc6\x2f\xc3\xe6\x1b\x5e\x5e\x20\xd5\xf5\xfb\x7e\x45\x3a\xb1\xe6\xb7\x01\x92\xcb\x6e\x73\xed\xa6\xd9\xc5\x80\x98\x4c\x32\xcd\x56\x26\x14\x94\xc0\x14\x86\x7c\xe3\x8d\x58\xa0\xd4\xce\x12\x5e\xb7\x76\x43\xa0\x35\x79\x6e\xb5\x40\xa9\x10\x99\x12\xb7\xc7\xac\xb5\x57\x7d\x3e\x16\x5f\x54\x82\xc4\x26\x40\xfc\x51\xe4\xe9\xcf\x83\x01\xdd\xec\x26\xb6\x44\x9c\xf5\x5a\x11\xcf\x64\x96\x64\xed\xa8\x15\xb6\x3e\x6b\x24\x98\x80\x11\xdd\x74\x6d\x95\x5b\x48\x77\x99\x6d\x39\x02\xa0\x32\x82\xc8\xf6\x4f\xec\xc3\x91\x25\x1f\x81\x85\x56\x15\x84\x84\x1b\xe8\xb3\x57\x12\x93\x46\x1f\xd5\x0a\x6f\x63\xdd\xec\xe8\x03\xac\xe5\xfb\xfb\x1e\xde\x65\x4a\x50\x65\x73\x14\x72\x84\xc3\xdf\xe2\xe9\x8a\x7b\xd4\x5b\x7a\x4c\x90\x2e\x62\x17\x6e\xcb\x3e\x94\x2c\x0d\x16\x9c\x2e\x9b\xce\x6d\xac\x05\xb3\x2f\x6a\x10\xf9\xc3\xdf\x1c\xc3\xc4\x6a\x28\x59\xdc\xfa\x9a\x48\x78\xbe\x3f\xac\x15\x6c\x84\x3c\x3e\x7b\x59\xe7\x48\xe0\x4f\x27\x18\x45\x0a\xc4\x71\x08\xf8\x45\xd4\xbf\x52\x9e\xa5\x95\x37\xe6\xa0\xdf\x42\xb3\xb9\x31\xf8\x57\xeb\xc4\xc4\xea\x1f\x89\x42\xc2\xbb\x07\x4b\x00\x7f\x6e\x77\x20\x85\xc0\x18\x51\x22\x04\xc8\x49\xfb\x3d\xee\xa4\x6f\x00\x6b\xfb\x6e\xd7\x3c\x2d\x79\x46\x38\x49\x3e\x8b\x78\xbf\x8a\xe7\xd9\x33\xb9\x4f\x01\xad\xbe\x31\xfb\x1a\xf2\x1f\x77\x7f\xaf\x4d\xa0\x8b\x2d\xf1\xdd\xe4\x1b\x9d\x81\xcb\x74\x75\x40\x24\x71\x0e\xd9\xf5\x0f\x19\x2a\x6b\xe9\xc4\x5b\xde\x81\x2d\x4d\x11\xb2\x85\xb4\xf0\x7c\x83\x98\xdd\x00\xf4\x99\x3d\x93\x90\xeb\xd0\xbc\xd7\x09\xb7\x46\x5b\x92\x35\xe5\xe5\x0e\x9a\xb9\x0c\x14\x19\xe4\x0a\x37\xaa\x05\x10\xce\xb4\x37\x45\x57\x04\x09\x7a\x78\x98\x98\xde\xe5\x3f\x0f\xb8\x44\xd9\x0d\xdd\x9b\xbc\x50\xa3\x56\x9c\x47\x06\x82\xfb\x91\x4e\x9c\x45\x6d\xc6\xcb\x94\x6d\x67\xb6\xe3\xcd\x81\xe1\x86\x4f\xe4\xc0\x8e\x31\x4c\x25\x36\xdd\x7e\xfb\x38\xee\x09\xa4\x22\xec\x2c\xc0\x99\x5c\x31\x0e\x0e\x08\x50\x47\xce\xf9\xcc\xee\xa3\xe0\x6f\x72\x09\x82\xa7\x2f\xfd\x22\xc8\x84\x41\x79\xcf\x03\x94\xea\xba\xc8\x4a\xd2\x88\xb6\xe4\xa0\x04\xf0\x29\xf5\x35\x41\x97\x2c\x1e\x01\x21\x01\x16\x34\xb9\x18\x43\x9e\x83\x57\x86\xd0\xbe\xe5\xb0\x9b\x97\x8b\xb8\x2d\x05\x85\x79\xb8\xf6\x0c\x31\x60\x1b\xee\x5d\xdf\x33\xbe\x09\xd8\x4e\xbc\x0e\x66\x87\x44\xca\xa1\x5b\xfa\xdd\x34\x8b\x62\x4d\x4c\x09\x77\x5b\xfc\x2b\x2f\x14\xcd\x83\xea\x08\xc2\xd8\x8a\xeb\xed\x7a\xb6\x67\x3f\x55\x73\xfe\x0e\xa1\xf0\x5a\x40\x7a\x58\xaf\xcc\x06\x08\xd2\xee\x7a\x4b\x3e\x24\x37\xba\x06\x97\x52\x4d\xc3\xf6\x01\x2d\xe2\x4c\xbd\xc4\x6a\x05\x40\x6e\xb3\x68\xe0\x99\xf6\xd6\xa0\x93\x4e\xe4\x93\xc8\xf3\xcb\xd9\x25\xbf\x46\x45\x3d\x70\x22\xa8\x35\x44\xd9\x0c\x5b\x1b\x56\xce\x85\x80\x42\xe0\x22\x71\xf1\xce\x5f\x0d\x93\x20\x9d\xd9\x1e\x02\x8c\xf3\x9e\x02\x74\x46\x91\xff\x7a\xde\xfc\x1d\x94\x26\x0b\x81\x2a\xc1\x62\x28\x4f\xc9\x3a\x6b\x5f\x04\x61\x44\x64\x91\xf4\x0c\xb6\x9d\x45\xbd\x84\x67\x6d\x9c\x1b\x99\x00\x33\x94\xee\x7d\x95\xde\xb5\x70\x3f\x11\x52\x01\xd0\x31\x1c\x5a\xc4\x06\x73\x43\x22\xcd\x02\x5b\x68\xc4\xd9\x72\xfe\xc3\x1a\xff\xb4\x2f\x27\x25\x4e\x15\xe3\x58\x4d\xff\x43\x51\x3e\x1d\x1c\x51\xba\x81\x4b\xf4\x83\xe8\xe9\xf9\x4d\x0a\x53\xdb\xba\xc7\x67\x88\xa4\x5a\x4b\x4f\xab\xf0\x0a\x89\x29\x66\x02\xf4\xa2\x8a\x3d\xc8\x18\x2f\x6d\x97\x29\x7f\x8a\x80\x4f\x9e\x8f\x3d\x4b\xb7\xc3\x6c\x2c\x3d\xba\xa4\x3b\xe5\x7d\x2b\x15\xa7\x44\xa9\x13\xdb\x96\x6b\x6e\x18\x63\x9a\x59\xad\x9f\x4c\xf1\xdb\xd4\x85\xa3\x7e\xb9\x13\xa0\x28\xde\x78\x6e\x0f\x68\xc6\xde\x05\x24\xf3\x79\x55\x35\x8e\x63\x14\xf2\x8e\x7d\x16\xe8\x2d\x10\xf4\x56\x20\x6d\xbc\xc5\xe6\x08\xb6\x50\xa6\xaf\x4c\x09\xd3\xd1\xe9\x43\x78\xc0\xd2\xd0\xef\x3a\x16\x59\x2d\x29\x2a\x38\x7d\x6e\x0c\x99\x81\x9e\x31\x4e\x54\xa8\xa5\x42\x64\x7f\x28\x97\x0d\xb2\x35\xda\x5a\x49\x56\x41\x6b\xae\xf6\x84\x6e\x39\xa8\x07\x26\x53\x73\x16\xb1\xca\xcf\xd2\x24\xbd\xcc\xd9\xc5\xb9\xb6\x2a\xf4\xba\x37\x15\x9a\xf6\x5e\x54\x5c\xab\x0b\x4a\xb1\x21\x13\x1d\x17\x4b\x67\x79\x68\x52\xbd\x01\x9e\xcf\x67\xae\xcd\xc6\x1a\x0f\x01\x7e\x4a\x9c\x5a\xa3\x04\x6e\xe9\x94\x55\x64\xcb\x2f\x60\xd4\xf4\x7a\xe5\xe4\x52\xdf\x2b\x56\x1e\xaf\x42\x01\x8b\x7a\x00\xc4\x07\x9c\xbe\xce\x02\x76\x3a\xc1\x97\x56\xdb\xeb\x92\x7d\x50\x06\x96\x87\x86\x6d\xa4\x95\x06\x0b\x2b\xfc\xef\x87\xf7\x40\x67\x86\x65\xaa\x3e\x4c\xde\xb4\x7b\xfe\xee\x35\x83\x2e\xcf\xbd\x51\xe4\x83\x8a\x2f\x5a\x32\x3e\xb5\x8a\xec\x9a\x0b\xa0\x22\xa1\x42\xc9\x1b\x4a\x7b\x48\xc3\x5c\x22\x7f\xaf\x47\xf7\x70\xe3\xd9\x80\xaa\x32\x58\xdb\xf5\xff\x94\x61\x47\xfa\x5d\xd3\xd9\x5a\xff\x36\x5d\xcf\x2c\x65\x0f\xb2\x33\x3d\x7f\x3a\xa1\xd6\xdc\x80\x3f\xe2\x24\x78\x4f\x86\x77\x7a\xc9\xa5\xf4\x4a\xc7\x49\xef\x94\x88\x4c\x0d\xfb\x38\x46\x32\x9e\xe0\x86\x37\x5e\xc4\x16\xb3\x90\xbb\xac\xa7\xd8\xd4\x76\x84\xa1\x0a\x27\xbc\xfa\x86\x8a\xcd\x03\x15\x7c\xff\x21\x51\xc1\xbc\xc3\x7d\xdd\x63\x28\x63\xdd\x88\x57\xce\xc5\xc6\x06\xf2\xf3\x07\xb7\xe7\x96\x85\x88\xc1\x23\x88\x14\x4c\xbc\x86\xf0\xec\xa0\x2b\xa3\x8e\x7d\x83\xf4\x6d\xb5\xf3\xeb\x1c\x8e\x01\x6d\x61\x1d\x8d\x35\x5e\x73\xca\x92\x97\x7c\x73\x4b\x63\x25\x6f\xa6\x3e\x4d\xde\x0b\x41\x40\x31\xa3\x85\x68\x15\x23\xc7\xa5\x66\xb3\x75\xd9\xa0\x7f\x3f\x54\xd9\xac\xf0\x45\xbc\xfb\x15\x16\xda\x84\xa0\xe7\x04\xf2\x15\x16\xc8\x0c\xaf\x6a\x69\x72\x05\xb5\x4a\x55\x97\x06\x25\x17\x99\x9f\xb0\xf3\x00\x81\x63\xbf\x5f\xee\xdf\x0e\x58\xad\x26\x63\xf2\xbb\x8b\x64\x29\x41\x25\x6f\x32\xdb\x01\x74\x3b\x2a\x0b\x5d\x73\xb3\x3e\x1a\x84\xdf\x0c\x07\x87\x0e\xff\xcc\x2b\xce\x2c\xa7\x98\xa1\x9f\xc0\xe4\x52\xf4\x4b\xae\x28\x92\x87\xfc\x67\x62\x51\xcb\xe4\x07\x60\x2d\xac\x26\x59\x1a\xf4\xf1\x32\x77\x31\x5a\x38\x50\x99\xd6\x9a\x0e\xea\x98\xa8\xf7\x99\x61\x12\xd0\x8d\xd0\x2b\xe1\xbe\xa6\x07\x3b\x1f\x1b\x41\xba\x6c\xa1\x28\x97\xe2\x29\x44\xc4\xc0\xee\x1e\x05\xa0\xb6\x42\x75\xb4\xee\x6f\x67\xe8\x52\x2c\x56\xd6\xae\xc3\x2a\x42\x8e\x8e\xf7\x0a\x13\x47\x8e\xe6\xe6\x86\x8a\xfa\xed\xc9\x0c\xf2\x63\xfa\x2e\xea\x97\x86\xb9\x9c\x93\x83\x32\xf8\x0d\x91\xc8\xd2\x2c\xdf\xe9\x8f\xdf\xeb\x79\xbd\x2b\x83\x0b\x8f\x4b\x80\x63\xd7\xca\xcb\x05\x46\x80\xac\x35\x4a\xf5\x6c\x30\x72\x8f\xba\xa9\x82\x2a\x91\x51\x09\x99\x2f\x54\x63\xc7\xb2\x01\xf6\xf2\xe3\x2d\x4d\xab\x04\x78\x29\x94\x71\xb2\xf2\x29\x38\x0f\x5c\x79\x49\x01\xc4\xce\x7a\x5d\x5e\xe6\x36\xc2\x8e\x33\xa3\x52\xf0\x5e\xc3\x71\xac\x24\x64\xb9\x37\xb2\x32\x3c\x38\xdb\xdf\xbb\xdf\x55\x74\x93\x62\x2b\x23\xd5\x24\x5d\x58\x8c\x86\x7a\x45\x86\x46\xff\xdb\x9b\xb6\xf2\xf8\xe2\x46\xa5\xe4\x5f\x38\x6b\xd7\xd4\xf0\xb6\x87\x93\x41\x81\xe8\x55\xfc\xa9\x0b\x45\x4a\x9e\x5b\x10\x7b\xa4\x4a\x44\x65\x74\x56\xe5\x10\x0b\xbe\xc9\xd0\x99\xab\xc1\x8f\xec\x49\x59\x2b\x10\x5d\xcb\x6f\x32\xa0\xee\xa5\xfd\x67\xa1\x6a\x65\x5e\x57\xe5\x50\x4c\x1f\x1e\xc9\xd6\xc7\x42\x5e\xe7\x56\x3b\xfc\x6b\xf7\xc9\xf8\x12\xad\xac\x63\xa1\x54\xe0\xf8\x81\x6c\xac\xa3\xaf\x0d\x88\x84\x28\x83\x6c\x93\x8e\x6c\x78\xd9\x49\xa2\xa4\x75\xcf\x23\xb9\x44\xde\x63\xf0\x2c\x2a\xf6\x1d\x82\x67\x19\xe1\xa9\x3b\xe7\x72\xe8\xa5\x78\x1b\x5a\xaa\xe1\x3a\x16\xfc\x1c\x74\x6a\x5d\x2c\x1c\x3c\x29\xa1\xdb\x1d\x28\xc3\xb4\x3f\xee\xb0\xe7\x4a\xbe\xc5\x08\x16\xbb\x73\x57\x51\xa3\xb8\xde\x7c\x5a\x65\x00\xbe\x98\xba\x4a\x54\xf2\x87\x0b\x70\xb2\x0a\x41\x47\x68\x08\x0b\x49\x26\xd4\xc2\xb3\x2b\x47\x15\x25\x86\xb5\xdf\x65\xcd\xb7\xf0\xfe\x5f\x8e\x17\x49\x36\x6a\x43\xef\xa4\x06\x2a\x27\xa6\x55\x5a\x55\xd9\xc7\x68\xd9\xf7\xea\x16\xde\x4c\x5b\x73\x4b\x35\xe8\x03\xbd\x7b\x62\x95\xd1\xe6\x8b\x24\x56\x1e\xf9\x24\xd1\x93\xfd\x77\x25\xd7\x1e\x58\x3f\x8d\x5c\x45\x77\xfe\xfb\x72\xd5\x24\xd5\xa6\xab\x14\xdc\xaa\x4e\x0d\xd8\x6d\x4c\x65\xb8\x1a\x04\x70\xd2\xb5\x04\x1a\xf8\x70\x6b\xae\x50\xa1\x3e\x16\xf1\xf9\xdf\xcf\x50\x0b\x57\x4f\x5d\x6d\x79\xa4\xdc\x16\xb5\x06\x68\x40\xdc\x8c\xe9\x26\x68\xa6\xc9\x43\xb3\xab\xc9\x3d\xa3\xcc\x37\xc3\xc0\xc0\x8c\xf8\x3e\x1e\xb8\xb0\xe8\x8d\xd6\x67\x53\x22\x1c\xf5\x88\xc9\x9e\xb6\x93\x2e\xc3\x75\x18\x60\xdb\xd7\x10\x41\xe3\x98\x4a\xa4\x72\xa1\x74\xb3\x9c\x11\xb1\xdb\xf0\xd0\xc6\xab\x02\x6a\x84\x85\x73\x19\xd5\xad\xfd\x9f\x4a\x54\x76\x77\xc6\xc0\x12\x13\x0b\xec\xb1\x3c\x8c\x60\x7a\x57\x31\x8a\xb3\xc8\x19\x23\xd9\x97\xcb\x67\x83\x52\xe4\xb3\xae\x44\x7d\xbb\x7a\x20\x5d\xdd\x5d\x19\x4b\xcb\xdd\x47\x51\xe9\xd2\xbe\xc3\xad\x16\x6b\x11\x7a\x4c\xbb\xb5\x85\x08\x49\xed\xc3\x37\x35\xae\x21\x2a\x61\x9f\x67\x05\xa6\x35\xde\x1e\x2e\x4a\x2f\x30\x52\xff\x60\x07\x08\x9e\x52\x30\x92\x4a\xd5\xb5\x89\xd6\x80\x1f\xb9\x23\xe9\x26\xab\xdc\xaf\x32\x59\xc9\xac\xde\x26\xaa\x83\x4e\x12\x6d\x21\xd1\xde\x3c\x7f\x79\x7a\xde\xfb\x16\xca\x87\x85\xb8\x2e\x7e\xdc\xb4\x03\x01\xd1\x5a\x48\x9b\xc2\x44\x40\xc7\x84\x3a\xbf\x9e\x49\x48\x1e\xd2\x47\xdb\x3f\xeb\x01\xb8\xa0\xf8\xc9\xcd\xfb\x4e\x30\xdb\xa7\xe3\x2b\xfa\xf5\xe9\x37\x68\x8c\x58\x4e\x5f\xad\xce\xa9\x01\xc4\xee\x9d\x54\x9a\x88\x22\x43\x4a\x98\xb9\x9b\x69\x5c\xe3\xc7\x59\xdf\x3b\x98\x48\xe7\x93\xd3\x3b\x75\x76\x06\xdd\x92\xde\x36\x95\x47\x67\x21\xa5\x78\x25\xaa\x9b\x77\xdf\x59\x02\x94\x31\xcf\x37\x36\x49\xf2\xa5\xa0\x3e\xa4\x16\x99\x8e\x32\xe3\x38\x84\xb8\x60\x39\xf3\xc4\xc3\x0b\xca\x9b\x26\x82\x78\x23\xbe\xb2\x9a\xe3\xc0\x99\xd6\xfc\x10\x02\x6c\x64\x4f\x76\x3e\x65\xac\x04\x4c\x76\xa9\xd5\x5e\x13\x90\x49\xab\xc5\xc9\x16\xc5\xbe\x1a\xb9\x50\x49\x20\xe9\xf6\x83\xb4\x20\x59\xd5\x93\x64\xab\xc8\xdf\x0e\x9b\x08\x0b\x79\xc0\xab\xba\xc5\x2b\x8a\xf2\x28\x96\x5f\x02\xbc\x88\x43\x0d\x88\x82\x51\xa7\xde\xee\x2e\x5b\x98\xb3\x39\xce\xaa\xc9\x11\x8c\xe3\x16\xbc\x11\xfe\x1e\xcf\x84\xb7\x80\x6b\xc9\x39\x1d\x34\x67\xab\x38\xc8\x21\x07\x56\x18\x89\xcf\xf8\xba\xd2\x59\xb2\x1b\xff\x1b\x12\xa2\x5a\x83\x3b\xf0\x81\xb5\x14\x42\x4d\x8c\x23\x6f\x93\x48\xb4\x2d\x08\xfe\x37\x6e\xe2\x25\x04\x3d\xbc\x94\x36\x96\x7e\xa0\x3d\x8a\x31\x6f\xdd\x37\xc9\x84\xc1\x5d\xa4\x90\x0c\x01\x4b\x75\xbc\x2f\xf4\xd8\xfa\xa1\xcc\x96\x39\x8e\x3e\x21\x9d\xc6\x51\xa6\x5c\x19\x0c\x7a\x2c\x07\xf4\x0e\xcf\x2d\x88\xb4\x42\xf5\x07\x00\x3a\x09\x1d\x4b\xeb\x96\xc1\xc2\xbd\x59\xd5\x1f\x8f\xd2\x6d\xd3\xb5\xb8\x20\xae\xfa\x4c\x70\x8f\xc8\x7d\x82\xfd\x9c\x7b\xb4\xc8\xc3\x2e\x71\xc3\x9a\x56\x2b\x3c\xa4\xba\xdd\xfe\x0c\xf3\x40\xb4\x20\xbe\x95\xaa\xca\x05\x15\x90\xa5\x8c\x0b\x24\xaf\x87\x12\x82\x9b\x9b\x80\x82\xb9\x79\x45\x16\xf0\xb3\x36\x3e\x99\x50\x69\xe0\x98\xa0\x13\xa4\xe3\x24\xf2\xe9\x79\xbb\x59\x45\x37\xed\x46\xcb\x1d\x0f\x2b\x39\x17\x69\x81\x39\xa8\x4f\x40\x9e\x17\xba\x55\x45\xd7\x29\xef\xf1\x77\xd8\xa9\x84\x9c\x2c\x88\xe5\x72\xb0\xdb\x6e\x87\x0b\x25\x18\x95\x19\x47\xf5\x1a\x6a\x22\x8b\xfa\x64\xde\x54\x47\x0e\xcd\x34\x8f\x82\x02\x73\xdb\x72\xad\xe5\x01\x9e\x39\xd4\x88\x3a\x2a\x76\x5d\x3e\xea\x03\xb2\xd1\xe6\x96\x07\x11\xea\x42\x50\xd1\x3f\xf1\x58\xac\x98\xe4\x44\x4c\x8a\x54\x76\x57\x14\xee\xa9\x00\x4e\x5d\xd1\xcb\x6f\x02\xa9\x00\x9e\x4c\xa4\x7e\x60\x62\xee\x6a\x66\xca\x05\x68\xc9\xd6\xf9\xd1\xef\xae\x6b\x56\xc6\x71\xa0\xc4\xd8\xc7\x3d\x08\x25\x75\xdf\xa9\xd3\x6d\x53\x2e\x3f\x86\x2e\x71\xa6\x40\x25\x2f\x4b\x7c\x78\xf7\x90\x4a\x85\xd6\xfb\xf8\x5a\x70\x9c\xca\x07\xb5\xdf\x52\x98\x2d\xa6\x48\x9f\x96\xbf\xf3\x54\x06\x90\x66\x91\x8b\x44\x47\x9d\x1e\x98\xfc\x13\xa1\xc5\x79\xb4\x9c\x4b\xca\xee\x6c\xfe\x94\xfb\xba\x53\x24\x7c\xd0\x4a\xf2\x4e\xb3\xc0\x5b\x20\x72\xaa\xbc\xa0\xa3\xd8\xfb\x57\xd9\x57\xf8\x34\xe6\x60\x94\x19\x1c\x5a\xd5\x6f\xba\x7a\x6a\x5d\xc6\x9e\xf6\x1b\x2c\x40\x76\x27\xd1\x48\x25\x6c\x2b\x99\xf7\x30\xa3\xbe\xcc\x28\x0a\xbd\xd3\x09\x5a\xf4\x09\xbf\xa9\x90\xdf\xcd\x08\xe1\xb0\xad\x1d\x3c\xa9\xfc\xc1\x16\xcd\x46\x5a\x04\xbc\xff\xcd\x85\xbe\x4f\x14\xb0\x91\xf2\x3b\x0c\x90\x66\x08\x84\x2a\x47\x93\x15\x43\x1f\xce\x3e\xc2\x88\x21\xa0\xaa\x4d\xde\x20\x82\x26\x1a\xb3\x5e\xe2\x43\x47\x7a\x7d\x83\x5e\x10\x30\x63\x0c\x0d\x28\xa6\xa7\xdf\x56\xe6\x5f\x42\xd8\x87\x89\x37\x9a\x1a\x3b\x80\x2a\x66\x6f\x19\xf0\x07\x4d\x70\xf0\x7a\xf8\x46\x1c\x0d\xb3\xfd\x82\x1a\xa6\xff\x04\x22\x92\x01\x6c\x04\xd8\x5c\x70\x3e\xc9\x4e\x42\x02\x92\x78\xc1\xfd\xb8\x55\x5a\x7c\xb8\x11\x68\x8f\x44\xc3\xe5\x5a\x71\x64\x6e\x36\xa0\x3f\x70\x25\x47\x1c\x50\xf0\xc4\xd0\x0f\x4f\xc9\xe6\xa0\x87\x1c\x63\xa7\xa5\xc0\x5c\x90\x5d\xae\xaa\x65\xbc\x27\x95\xaf\x34\xd0\x22\x0a\x68\x6a\x66\xfe\x83\xad\xec\xb1\xad\x52\xea\xb6\xea\xb9\x86\x7d\xa7\x4d\xe3\x2d\xbd\x1e\xd6\x2a\xe6\xba\xee\xd3\x6c\xe8\x92\x0e\xa7\xf5\x4b\x57\xac\x6a\xe0\x2a\xec\x7f\x98\x8a\x91\x8b\x0d\xf6\xbb\xf9\xd5\x58\x82\x51\x5b\xa0\xc4\x0d\x10\x6a\x1d\xf8\x9c\xc2\x98\x13\x4f\x08\xc6\xfa\x4e\x50\xd1\x2c\xf0\x86\xab\x39\x77\x2f\x4e\xed\x2c\x74\x41\xc9\x7d\xb7\x47\xc1\x10\x75\xf9\x09\xec\xff\x63\xa8\x5c\xc2\x96\xa2\x96\xa7\x26\x36\x41\x43\xa1\xf9\xe3\x75\x96\xfe\xbf\x2e\xb6\x82\x12\xa9\xd2\x5b\xdb\x35\xd1\x46\x01\x29\x13\xcd\x3b\xfc\x66\xfd\x6c\x27\x0a\xe3\x80\xa1\xb3\x51\xf9\x3e\x12\xb3\xce\xa2\x07\x3b\xb6\x9c\xf3\xa4\xa1\x1b\x0a\x7d\x7a\x47\x10\xd8\x6b\xf5\x17\xcf\x27\x69\xb2\x5a\xd9\x37\x76\x5b\x94\xaf\xc6\xe2\x1f\x4d\x92\xb0\xb4\xb4\xf0\x85\x8d\x25\x53\x76\xb0\x77\xf3\x88\x82\xa4\xfe\x2d\x5c\x19\x59\xa0\xca\x41\x24\x06\xfb\x79\x30\x36\xbe\x15\xba\x9b\xd2\x94\x46\x4f\x74\xa6\xbf\x24\xea\x2d\x9d\xc6\x6c\x42\xc8\x13\x86\x0b\x3d\xd0\x70\x4b\x48\x81\xa5\x5c\x05\xcc\x40\x3f\xdb\x81\x57\x39\x6c\xaa\xc1\x47\x36\x69\x86\x13\x4b\x63\x0e\xae\xec\x14\x16\xe9\x20\xa6\x5f\x36\x16\x9a\xe3\xec\x4f\xe9\x27\x52\xf6\x71\xe8\x21\x58\x56\x65\xd6\xca\xab\x51\x46\xc6\x62\x17\x60\x81\x91\x0b\x31\x19\x44\xce\xcd\x59\x5e\x52\x97\x69\x3e\xe9\xd9\xc4\xbf\x8f\x78\x27\xc9\xde\x1b\x9a\x7f\x69\x7b\x0c\x66\xa7\xd7\x94\x1c\x7a\xb7\xfb\xa7\x31\x94\xc7\x95\xa0\xa2\xe2\xa6\x19\xab\x20\x04\xd7\x88\x08\x49\x2b\x4c\x10\x77\xe7\x62\x74\x30\x76\xb1\xe5\x90\x31\x46\x86\x58\xbc\x12\x20\x4f\xa7\x34\x68\x0a\x63\x2c\x9c\xa8\x7b\xba\xae\x16\x24\xe5\xfb\x0d\x0c\x7e\x64\xad\x21\xff\xd3\x44\xf0\xfe\x73\x3c\x5e\x9e\xc5\xea\x78\x05\xee\x2f\x69\xfe\xb0\x7c\x01\xa8\x2e\x20\x9f\xae\xeb\x3e\x05\x24\x31\x58\x8b\xc9\x02\x6e\xd2\xb7\x69\x6c\x2c\xe5\x05\x22\x5d\xf4\xda\x05\x66\x81\x91\xeb\x8f\x6d\x68\xc4\xda\x5b\x3e\xfa\x4c\x47\x78\x99\xf4\xc6\x0d\x2c\x4c\xc8\xa9\xb9\xd4\x69\xe0\x1a\x58\x68\x3f\x76\x22\xe1\x33\xfd\x36\x41\x15\x51\xee\xa1\x18\xc3\xd6\x51\xcf\xdb\x2d\xf9\xfa\xb8\x5f\x74\x0d\x78\x4d\x0e\x9d\x3f\xb1\x45\xce\x1a\x45\xd0\x67\x7d\x62\x0e\xed\x8a\x44\x00\x9a\x92\x85\x8e\x23\x5b\x81\x49\xd3\xd8\x4f\x7a\x78\xef\x9b\xf2\xa6\x48\x40\x37\xd5\xf8\xd2\xb4\xfa\xf5\x39\x0f\x50\x24\x04\x51\x0a\xab\xb5\xf6\xaa\xfd\xd8\x84\x23\x3c\xca\x74\x62\xe2\x38\x93\x12\x89\xc6\xd3\x55\x25\x0b\x9d\xb5\xda\x29\xce\x5c\x9c\x86\xeb\x19\x60\x8c\xec\xcd\xc1\x10\x96\x3f\xf1\x2f\x56\x71\x7a\xe8\x94\x18\x35\x9a\x18\x8d\x0d\x98\xc6\x05\xb0\x1e\xa4\xf3\x00\xe1\xff\x07\x28\x2b\x9b\xb9\xcb\xe0\x83\xc3\x6e\xa4\x19\x9e\x6f\x68\xf4\xde\xea\x27\x66\xd9\x6d\xb9\x6f\xab\x4b\x50\xe5\xe2\x3f\x80\x74\x42\x88\xc9\x2f\x0f\xe9\xd8\xec\x75\x0a\xa0\x53\xc0\x69\xe8\x41\x21\x70\x6c\xba\x74\x06\xed\x4e\x4f\xac\x56\xa6\xc1\xa3\x57\x9e\xf0\x1a\xff\x61\xa6\x3e\x19\x83\x7b\x28\xa2\xae\x58\x77\x69\x4f\x47\xd1\x37\x40\x24\x1e\xd0\xeb\x05\x0e\x94\xe0\xac\x5e\xf1\x2b\x1b\x43\xd5\xbe\x0d\x05\x28\x7c\x4a\x1a\x69\x4d\x1f\xb6\x08\x9e\xc1\xad\x8b\x57\xc8\x53\xc3\x53\xa1\x79\x91\x0d\x21\xfe\xf1\x3b\xfb\xf0\x2a\xe3\xab\xbe\xfc\xb6\x86\xb8\x8e\x12\xeb\x23\xdd\xa1\x1d\x87\xa4\x97\x76\x2e\xc7\x4a\x37\xe6\xbd\x04\x5b\x81\x19\xcc\xf3\xa5\xb7\xe7\xbf\x6d\x34\xa2\x7e\x5c\x0c\x68\x2b\xfb\x64\xe9\xfc\xec\x90\xbd\x65\x9e\x5d\x4d\xdb\x4c\x55\x04\x91\x0f\x28\x08\x16\xba\x8e\xbf\xaf\x47\xbf\x5a\x3e\x9a\x09\xae\x62\x94\x6f\xed\x6f\x9c\x4d\xf4\x49\xbe\xa0\xe7\xdb\xa4\xf6\x5e\xe1\xb2\xed\xc3\x51\xa1\x6c\xa4\x96\xb1\xe7\x3a\x24\xc2\x38\xb4\xe9\x87\xfb\x27\xcc\xd2\xa8\x8f\x5c\x44\xe9\xbb\x1f\x16\x96\x44\x09\x33\xba\xb1\x8b\x16\x62\x13\x6c\x17\xd5\x5b\xc3\xf2\x4c\xb1\x73\x71\x6f\x1d\xf0\x52\x53\x36\x54\x6d\xd4\xcd\xc9\x80\x1e\x1a\xef\x0f\xbb\x4f\x97\xf5\x2b\x9d\x61\xf6\x08\x65\x1e\x77\xd0\x6d\xbe\xfc\xfd\x57\x21\xb2\x0c\x9d\x64\x47\xb2\xa6\xc4\xab\xc5\x20\x27\xd3\xff\x39\x8e\xd2\x13\x51\xb4\xbd\xa8\x50\xe0\xc0\xab\xd3\x64\xa6\x8d\xd9\x8d\xd6\x9f\x67\xb2\x70\xf0\xb4\x7a\xe1\x86\x90\x58\x99\x08\x06\x4c\x50\xe4\xa7\x23\x2a\x17\xc5\x8d\xa6\x17\x45\x48\x43\xa6\xa1\xb9\x5a\xb7\x86\xb8\xa4\x84\x67\xec\x91\x8e\x48\xee\x6b\x20\xef\x04\xb8\x4e\xe3\x7b\xfe\x17\x9f\xbf\xc7\xb4\xd0\x25\xd1\x72\x7d\x01\x1d\x51\x11\x9c\x3d\xd0\x04\xcb\x18\xfd\x34\xd0\xa9\xd4\x16\xad\xe4\x15\x91\x38\xd1\x67\xb6\x92\xac\x6f\x77\xe0\x62\x1c\x3a\xad\xe3\x42\x3e\xae\xdf\xc5\xb9\x8f\x7c\xdf\xb1\x28\x93\x40\x82\x28\xee\x6a\x65\x54\xcd\xf3\x24\x5c\x6f\x48\xdf\xc9\xbd\x4a\xb2\x1f\xf4\x6f\x5f\xbc\x81\xc1\x44\x5c\xa2\xa6\xd7\xe4\x3b\x54\x25\x2d\xe3\x0a\x4c\x0d\xa4\x98\x94\x39\x87\x9b\x5a\xd8\xf7\x4d\x18\x82\x7a\x47\xc2\xfd\xba\x5b\xd3\x67\xd1\x8b\x61\xe9\x3f\x09\x99\x80\x7b\xb8\xd1\x38\xaf\x42\xf2\x37\x80\xb0\x1e\x09\xf9\xa6\x15\x9c\xa7\x4c\x2f\x76\x72\xee\x0a\x6e\x9f\xc9\x94\x05\x7b\xc3\x30\x32\x99\x0b\x81\x5e\xfb\x01\x18\xeb\xb7\x06\xee\x6a\xc0\xc8\x4e\x5d\x3a\xf0\xa3\x9e\x10\x7f\x7f\xc1\x0a\x82\x38\xed\x9f\xec\x82\xf7\xe4\x28\x59\xef\x6f\xe3\xff\x83\x04\xac\x74\xa4\xf9\x7e\xde\xb7\x9b\x05\x5c\x4f\x3a\xae\x4c\x34\xeb\x31\xc0\xc6\x85\xff\x71\x75\x89\x29\x5c\xf7\x2b\x95\x73\x54\x63\x24\xbd\xfb\xc0\x95\x3a\x73\x6a\xdd\xc1\xc6\x1d\xc1\x46\x64\x70\xf1\x8d\x65\x4f\x43\x96\xb5\x8e\x3f\xed\x19\x1e\x76\x00\x1b\x48\x25\xa1\x92\x38\xc4\x5e\xa5\xaa\x31\xb0\x9f\x30\xe5\x47\x2d\x40\xa1\x5f\x4e\xa3\x09\xa1\xd3\x1b\x10\x27\x2c\x85\x98\xe3\x40\x59\xb4\x95\xa8\xe7\xf9\xff\x48\xc1\xfa\xf8\x84\x89\x10\xd9\xce\x0a\x83\xe4\xcc\x17\xcd\x12\xa7\x41\xcd\x6c\xc4\x93\xb3\xc6\x04\x23\x0a\xab\xa4\xa4\x04\x45\xf6\x0d\x75\x05\xad\x4d\x93\x31\x33\x68\x57\xdb\x43\x90\x98\x64\xe1\xc6\xd8\xae\xa7\x6d\x23\x6f\xb8\x53\xa4\xe0\x43\xea\x3b\xd7\x7a\xe7\x05\xc5\x09\x79\xb8\xfb\x71\xaa\x7e\x7b\x6d\x4f\x7b\x8b\xda\xc1\xcf\x40\x47\x9e\x15\x01\x0e\x35\xf5\x7a\x79\x3e\xda\x71\xd4\x2c\x2d\x79\x7d\xc8\x88\xe0\xa7\x54\x4a\x06\x95\x7c\xc1\x4d\x86\x60\x00\x30\x65\x1d\x3c\x83\xc3\xdc\xce\xe1\x20\xcf\x76\x37\xab\x16\x4a\xb9\x10\x22\xc0\x5c\xf6\xb2\x34\xc8\x9b\xd2\x06\x0c\xb7\x77\x66\x03\xa6\xac\x8c\x3c\x53\x40\xb8\xaa\x9f\x87\x80\x86\xab\xfe\x40\xd1\x74\x73\xfc\xdf\x94\x02\xd9\x13\x7b\x72\x47\x13\x6b\xff\x27\xb0\x7a\x89\xda\x59\x39\x72\x48\x99\x77\x6d\x59\xe8\x60\x59\x63\x80\x4c\xc3\x90\x87\x39\xf6\x89\x91\x80\xca\x16\x51\x16\x18\x00\xb2\xd2\xd3\x7f\x74\xe5\x46\x8f\x9c\xb8\x91\xd9\xc8\xb0\xa1\x16\x56\x37\x20\x44\xf6\x6a\x9c\x20\x90\x80\x28\x69\xf6\xf8\x4f\x13\xe8\xfe\x96\x46\x30\x3b\x18\xa7\x96\x47\x46\xfc\x09\xeb\x72\xa5\x3e\x63\xb4\x84\x44\x34\x61\x55\x55\x4c\x4d\x5e\xcf\xaa\x89\x77\xd7\xa3\xdc\xb4\x1a\x3e\xea\x08\xd6\xf8\x60\xa6\xa4\x30\xf4\x64\x07\x0d\x6d\x4d\xca\x34\x06\x45\x40\xd6\x87\xfc\x74\xa4\x21\xa4\x82\x8a\xe0\x8c\x2c\xfc\xe9\xfd\x8e\xa4\x6b\x07\x97\x18\xd2\x1e\x21\x30\x9c\x8f\x6c\x86\x7d\xdb\xca\x8e\xdc\xea\x1e\xc8\xe5\x64\xbd\x11\x7b\x2d\x11\x85\x64\xca\x1b\x64\x59\xea\x2e\x51\x9f\x66\x7f\x09\xfc\xc0\x08\xe8\x79\xfb\x5f\x5e\x56\xa9\x52\x23\x66\x60\xc5\x5d\xcd\xa8\x2b\x8b\x8d\xb6\x28\x0c\xe1\xd5\xe1\xbb\x4e\x95\x71\x27\x30\x06\x1f\x25\xa5\x30\x87\x54\xea\xf4\xc8\xc1\x6e\x33\x37\xd0\x29\x59\x7e\x53\x54\x7f\x0b\x18\xd3\x81\xe7\x6f\xaa\x1a\x9d\x71\xfa\xe9\x18\xaf\xa3\xce\x74\x38\x37\x96\xc0\x00\xce\x44\x6d\x44\xb1\x87\xa7\x53\x7b\xb8\x14\x3d\x30\x44\x5d\x19\xd6\xba\x34\xfd\x6d\xd9\x6a\xf7\xf7\xef\xde\x83\xc7\x89\xc9\x33\xbd\xb7\xf4\xb6\x4b\x1f\x8c\xae\xb6\x1c\x78\x32\xcf\xc8\x14\x3c\x28\x63\x3d\x43\x1d\x8d\xec\x4a\x23\x8a\x10\x12\x01\x1b\xdd\x65\x7a\xa7\xaa\x70\x37\x9e\x2a\x8a\xa3\xd4\xc4\xe2\x9d\x4d\x7f\xc4\xd7\xb5\xb3\xf8\xc1\x78\x50\xe1\x2d\x27\xb4\xe5\x36\xb4\xd1\x9f\x1f\x48\x25\x46\x64\xc8\x9d\xa2\x54\x0f\x89\x9c\x2a\xdb\x16\x1f\x32\x7e\xd4\x3a\xdc\xaf\x19\x18\xed\x2c\xb2\xd5\xa1\x24\x05\xf9\x5b\xdf\x5b\x45\xf6\xb5\x17\xcf\x78\x7f\x9a\xc8\x50\x6f\x1d\x00\x59\xdc\x56\x26\x4b\x3f\xd6\x28\xe4\x79\xa1\x67\xbf\x12\x7a\xcc\x98\xb4\x29\x77\xdf\x0e\xf7\x6d\xbc\x31\x10\xf1\xb4\xfa\xf8\x4b\x65\xd0\x30\x73\xd7\xad\xa4\xa1\x5f\xc9\xab\x08\x47\x5e\x0a\xe1\xba\xe7\x63\xcd\x36\xc9\x58\x95\xf0\xdc\xdd\x66\x72\x79\xf2\xd9\xbb\xd8\x7f\xf3\xb7\x78\x38\x13\x18\x85\x48\xfa\xb2\xe2\xb1\x6f\x98\x2a\x63\xc3\x63\x49\xe2\x9c\x6f\xf8\x79\x3e\xae\x75\x1e\xf1\xd8\x9b\xb0\x73\xb6\x67\x31\x85\x1f\x57\xf2\x10\xa8\xd7\xd9\x67\xbc\x34\xae\x31\xa3\x66\x9a\xc3\xdc\x03\xfd\x87\x07\x8b\x5c\x51\xfd\x27\x7d\x65\xcc\xe3\x3c\x9b\x38\x99\x88\x03\x01\xde\xf4\xa8\x77\x75\xf7\x48\x39\x05\x50\x3a\x4e\xf3\xbb\x21\x34\x52\xb3\x2c\xcd\x81\x88\xa3\xfe\x18\x1b\x95\xfe\x88\x3b\x76\x35\xb7\xb5\x2c\xbd\x5c\x52\x39\xdb\x15\x94\x53\x09\x8f\xbd\x01\x5a\x51\xb8\xbb\x5a\x63\x18\x9e\xd8\xbd\x1c\xb4\x94\x2e\xd1\x3f\x5f\x73\x31\x03\x09\xe3\x14\xb6\xb4\x75\x0e\x01\xcc\xb9\x9a\x72\xda\x57\x7a\xf8\x63\xd1\x46\x95\xdc\x97\x33\x0c\xe2\xbc\x39\xb1\x42\x48\xc8\x87\xd6\x81\x39\xfe\x95\x31\x64\xe0\x6d\x0c\x26\xa3\x68\xcd\x8f\xa0\xdd\x75\x41\x2a\xc0\x4b\x64\xe1\x72\x26\x61\x53\x5b\xfd\xf4\x56\x53\xb3\x8a\xda\x93\xe6\xa4\x14\x20\xfb\xd8\x56\xd5\x5e\x09\x5b\x48\xd6\xfe\xff\xa7\xbb\x5b\xaf\x7c\x8f\xd2\xec\x4c\x33\xa8\x33\x9a\x3f\xf1\xc2\x0b\x0e\xf6\x74\x1b\x3f\x12\xcb\xec\x33\xd5\x5e\x45\x8a\xcb\x98\x2f\x6e\x5e\x1f\x98\xa5\x93\x63\x7e\x69\x51\xd4\x7f\xb2\x10\xd2\xf2\x51\x96\x22\xec\xeb\xbc\x34\x63\x57\xd7\xe2\xda\x46\x2b\x82\x84\x6d\x1d\x66\x3f\x19\x7c\x55\xa9\x20\xa2\x00\x57\xf0\x10\x76\x95\x34\xfc\x41\xff\x19\xe4\x74\xc1\x6f\xaf\xe9\x32\xff\x37\x24\xa4\xc6\x1f\x1c\x38\xf2\x54\xe6\x72\xb6\x19\xab\x53\xbf\xa7\x01\x9b\xf2\xb9\x5c\x4f\xa8\x9c\x15\x2d\x9d\x81\xec\xa5\x16\xe3\x90\x0e\xca\xe7\x26\xee\xdb\xb3\x72\x42\xe9\x3b\x9a\xf7\x90\x9a\x57\x32\xd7\xb6\xb0\x78\x19\x94\xc9\x35\xfe\xbc\x5b\x15\x6a\x63\xc0\x44\xef\xfb\x4c\xec\xb5\x3d\x6b\x1a\x72\x26\xe2\x97\xda\xc0\xda\x3e\x18\xd6\x69\x0b\xc8\x8d\xc1\x41\x38\xd4\x39\x68\x60\x36\xf3\x51\x54\xda\x9e\xf0\x40\xc3\xaa\xf5\x83\x5d\x6f\x66\xa0\x61\xcc\x4b\x62\xeb\x75\xcb\xf5\xcb\x37\xc2\xb9\x39\x0c\xc0\x8d\x21\x41\xdf\xcb\xb8\xaf\xe4\xb1\xa9\xe6\xc9\x2b\xae\x04\x8d\x1c\x9d\xe1\x95\x84\x91\x31\x41\x5a\x58\x65\x68\x64\x6f\x5a\xd1\x04\x60\xfd\x3d\xe4\x91\xb5\xd6\x2c\x1e\x55\x62\x1b\x0d\x88\x79\xdc\x59\xd6\xf9\x69\x73\x40\x20\x46\x1c\x56\xdb\xb4\xbc\xfd\xd3\x62\x15\x45\xf1\x8f\xd0\x0a\xf1\xa5\x92\x15\xad\xd2\x95\x50\x90\x36\x67\xf9\x07\xa5\x07\x7e\x72\x20\xf2\x50\x6f\x8b\xc8\x36\x47\x5e\x75\x07\xc9\x58\x93\x2b\xf0\x6f\xb2\x5c\xc5\xfa\x22\xe9\xa1\x7e\x4d\xb1\xdc\xec\xcc\x08\x99\x00\x6f\xca\x07\x33\x90\xf5\xe4\xaa\x0b\x44\xee\xb8\x03\x49\xaa\x92\xc7\x84\x8a\xbb\xd3\xff\x4e\xf4\x2a\x0a\x49\xef\xa9\x0d\xa9\xb8\xfe\x60\x9c\xa3\xaa\x75\x32\x88\xa5\x06\x3c\x5d\xef\x5c\x1c\x33\x2b\xa8\xe9\x66\x17\xcc\x5d\xc4\xb4\x54\x58\x90\xd1\x77\xff\xf4\x2d\x84\x59\x4d\x9a\xc6\x72\x2b\xb1\x6a\x18\x67\xa2\x84\xe1\x41\xa5\xc2\x55\x84\x7c\x3b\x8f\xf1\xa1\x0d\x69\x1b\xab\x3a\xa2\x86\x40\x45\x9a\xaa\xa0\x14\x84\x26\xa6\x2d\x77\xe0\x11\x70\xe4\xc2\x71\xea\x10\x4a\x52\x59\x0f\xdb\x31\x1f\x45\x4f\x04\xd3\x39\xa6\x45\xb7\xbf\x60\xf1\xbe\x2c\xac\xcc\xb0\x71\x4d\x22\x54\x6d\x0b\x6e\xcc\x32\x7b\xd0\x7e\x54\xd6\x2f\x7a\x1b\x97\x77\x08\x8f\x45\x76\x9f\x04\x8a\x9d\xc0\xa7\x43\xb3\x19\x91\xf9\x90\xc1\xd4\xc1\x57\x8e\xb7\xae\x7e\xe6\xbd\xc2\xeb\xf4\x67\x73\x34\x4c\x09\x54\x8d\xe6\x5a\xa4\x93\x21\x67\x74\x4c\xe1\x41\x85\x74\xc9\x6c\xa8\xd7\x1f\xa3\xb1\x4f\x0e\x02\xd4\x61\xf8\x6c\xc9\xf8\x64\x50\xd5\x1f\x4b\x58\xd6\x79\x47\x27\xe6\xc0\xef\xa3\x7d\x5f\x5d\x4c\x9b\x26\x32\x37\x27\xf9\x25\x3e\xa4\xf7\x6d\x67\xa4\x52\x39\x59\x17\xe0\x49\x8c\x04\x88\xab\xbe\x28\x4a\xdc\x82\xe0\x7d\xe5\xa6\x64\x2e\x17\xe9\x0f\x72\xb1\xe0\x1a\x7f\x19\x0f\xab\xa9\xe2\x5d\xf5\x75\x20\xaa\x87\xf8\xa6\x45\x04\x82\x83\x42\x57\x4e\x3c\x03\xe1\xb6\x7f\x04\x83\x79\x26\x00\xe7\x63\x9f\x25\xd5\x54\x54\x94\xf1\x9c\xdf\xf7\x87\x48\x1c\x29\x17\xc2\x4f\xdd\x28\xaa\xd1\x0e\xd0\x76\xce\x39\x06\x4c\xb3\xd4\xcd\x36\x46\x8d\xc8\xcf\xc7\xd4\x36\xd9\xd5\xac\xae\x71\x6f\x97\xda\x76\x33\xb6\x1f\x86\x5d\x78\xba\x76\x48\x41\x6b\xc3\x73\x70\x70\x93\x22\xe0\xf1\x1f\xde\xf0\xcf\x5b\x66\xd3\x27\xc5\xf7\x78\xf0\xd6\x63\xb9\xf2\xf7\x5e\x4e\xb6\xdf\x9b\xa3\x39\x2b\x14\xde\x81\x57\xab\xd5\x28\x84\x73\x3a\xbe\xcc\x7b\x54\xad\xa9\x52\x14\x48\xe6\xb1\xf7\x12\x5e\xcc\xa0\xea\x21\xdb\xf9\x84\xa6\x39\xe4\x95\x02\x70\x35\xac\x56\xdf\xa5\xb7\xda\x03\x4a\x56\xbf\x90\xe8\x66\x44\x6d\x36\x4c\x8d\xdb\x52\xa8\xc4\x58\xf0\xa5\x1f\xa8\x93\x22\xab\x7b\x6d\xcf\xb6\x6a\x8f\xaa\x0f\x3b\x71\x8f\x94\xe1\xe4\xb1\x98\xca\xc6\x3d\x8d\x14\x22\xf1\x55\xab\xba\x1e\x3e\xed\xb5\x82\x74\x3e\xe9\x96\x57\x58\xa2\xe3\xae\x75\x88\x88\x89\x77\x45\x4a\x6a\x5f\x4c\x55\x09\x0c\x99\x18\xc6\x87\xf7\x0b\x2c\xfc\x09\xee\x79\x18\x5c\x86\x5a\xa7\xaa\x1a\xb6\x02\xd7\xee\x11\x64\xc4\xa5\x51\xc7\xa6\xb7\xd8\xe5\x09\x0d\xf1\x33\x4f\x36\xa8\x23\x56\xd6\x44\x3e\xf8\x6b\x2f\xa8\x18\x3a\xd6\xeb\x2b\xa8\x3b\x76\xbf\x00\xfb\x8e\xaf\x17\xc7\x98\xe4\x85\xbf\x4d\x8b\xc4\x2d\x0d\xb9\x21\x65\xa6\x6c\x74\xb9\xf0\xac\xd4\xa2\xff\x87\xa8\x67\x98\xac\xe5\x66\x1d\x41\x14\xd5\x94\x57\x9b\x91\xe7\xcd\x11\x3e\xb7\x3b\x32\xde\x39\xf4\xde\xe8\xbc\x00\x0e\x44\x0b\x0d\x83\xf0\x33\x75\xc1\x7b\x35\x80\xbb\x36\x89\x25\x7a\x39\x43\xf1\x53\x4f\x1c\x5a\xd3\xaa\x04\x23\xe8\x7b\xa2\x16\x89\xb5\x51\xd3\xc7\x5c\xc1\xcf\xb0\xfd\xa9\x6b\xfa\xc9\xb5\xec\x66\x03\x30\x87\x4a\x66\x3e\x8c\xf3\x96\x96\x18\xef\x96\x98\xd8\x4b\x07\x46\x4b\xb8\x8d\xcc\xe3\x9d\x46\x00\x83\xd5\x5c\x17\x58\x7f\x80\x00\x9b\xe4\xb8\x59\x15\x82\x93\xa9\x89\xb6\x3d\x1f\x68\x59\xac\xb8\xf7\x3c\x4e\xd8\x4a\x66\x8f\x27\xdd\xe7\x34\x75\x7d\x0c\x08\xeb\x52\x14\x22\x18\x84\xa3\x51\x63\x3f\x13\xb5\xa0\xae\x74\x2e\x2d\x6c\xff\x36\x67\x3b\x6b\xa8\x8f\xaa\xa9\x49\x6d\xf2\x0c\x66\x33\x0d\x83\x83\x1a\x47\xc2\x67\x18\x23\xea\xc8\x56\x72\xec\x82\xe4\xa6\xb9\x05\x98\xea\x94\xa3\x26\x2d\x09\x57\xd3\x53\xc9\x3c\x5b\x1a\x3b\x4e\x74\xe7\x30\xc3\x71\x6c\x86\x9c\xb5\xb0\x4e\x75\xd5\xb1\xca\x1d\xd0\xe1\x4b\x49\x9d\x40\x89\xeb\x08\xdf\x09\xf5\x68\x5e\x0d\xcd\xb8\x79\xb8\xc7\x8f\x59\x65\xaa\x9f\x6a\x09\xf0\x7a\x45\xa5\x4f\xe0\xdd\x7f\xdb\x7b\xe0\x5c\x71\x78\xd4\x23\x69\x84\xb2\x96\x49\x4f\x5a\x96\x88\xca\x9c\xbc\x98\xec\xa7\xcb\x8c\x3c\x28\x22\x1f\xa4\xdb\xd3\x2a\x10\x88\x3f\xae\x64\x88\x97\x5d\x61\xae\x04\x6d\xf3\xb5\xe8\x75\x81\x7a\x29\x2c\x13\xc5\xa0\x02\x3b\xf8\xe9\x26\x1f\x17\x77\x74\xe9\x02\xe9\x7c\x56\xd0\xf0\x2f\x06\x62\x4d\xf0\x01\x87\xa8\xbe\x1d\xf0\x7b\x2d\x1b\x53\x79\x11\xb3\xd0\x30\x87\xc0\x96\xe0\x4a\x75\x26\xa8\x99\xd4\x15\xbb\xb1\x42\xbd\xe9\x47\xaf\x2e\xd0\xe5\xa9\x94\xdc\xd9\xe0\x0a\x14\x3d\x20\x0b\x8d\x22\x3f\x43\x2e\x95\x08\x26\xad\xd5\x51\x33\x86\x9a\x0c\xa5\x8a\x00\x32\xe2\x12\xbb\x9d\x34\x08\xea\xd9\x5d\x33\x7f\x15\xa8\x8d\xc5\xa4\x4f\xf1\x85\x09\x84\xba\x10\xc1\x82\xa2\x7b\xe0\xda\xd3\xee\x57\x76\x52\x92\x7d\xa6\xd5\x83\x6c\xf3\x33\x14\xcd\x39\x1d\x3d\x24\xa4\x8f\xa5\x07\x20\xda\x98\xb1\x89\xe4\x67\x61\x10\xc7\x63\xa4\x37\x7f\x7c\x65\xae\x79\x44\x9f\x60\x42\x6e\x99\xfb\xb7\xd6\x2f\x30\x59\x61\x57\x04\x20\x1c\x05\x2c\xc2\xc1\x63\xb4\x67\x0a\xf3\x94\xc1\xe8\x98\x88\x04\x65\x9c\x4f\x63\x97\xea\x48\x8e\xbc\x61\xf1\x4e\x25\xcb\x59\x35\xa6\xb8\xe4\x8c\x60\x49\x7d\x97\xf6\x00\x22\x77\x06\x2e\x3e\x3f\x73\x88\x31\x0a\xda\xef\x42\xc9\xa6\x01\x5f\x86\x02\x40\x30\x4b\x53\xd4\x1f\x78\xac\xda\xac\x5a\x13\x65\x4b\x2d\x20\x3a\xe4\x71\x04\xb0\xd8\xe0\xfd\x69\xdb\xa8\x0a\xd5\x32\x20\x50\xc1\x0b\xd2\x84\x1c\xe6\x95\x79\x28\xc1\x69\x3e\xfa\x6b\x9b\x6f\x00\x37\xa2\x29\xc1\xb5\x85\x93\xc0\x0b\xe8\xb1\xaf\x26\xf2\xde\x71\x61\x68\x00\x86\x40\x34\x02\x4b\x5b\x7c\x05\x72\x8b\xc7\xb9\x92\x66\xfd\x3d\x3c\x16\x87\x16\x0d\x74\xb7\x7d\x24\x51\x4f\x4e\xf5\xe8\xef\x74\x46\xf4\x89\x55\xd7\x33\x40\x1e\x5a\xdf\xc1\x0d\xcc\xec\x4e\xb6\x06\x90\x5e\x9e\x8b\xa0\xdf\x07\x38\x41\x04\x82\xa9\x92\xb0\xc9\x90\xca\xbf\xf8\x16\x63\x01\x93\x54\xb6\x81\xfe\x05\xe1\x82\xee\xf1\xa4\xba\xee\xbf\x6f\x9e\x88\x0c\x15\x7a\x76\x95\xd2\xd3\xa3\x82\x20\x58\x01\x40\x51\x6d\xd5\xd2\x82\x21\x89\x3e\x06\x0f\xec\x7f\xc2\x8e\xad\x4f\xdd\xe9\x77\x68\x37\x01\x7d\x66\x22\x56\xb4\xb9\xd1\xd8\x9a\x27\xce\xfa\xb2\xe6\x4a\x78\x91\xeb\xb5\x17\x7f\x3f\x09\x3c\xf0\x0a\x33\xb9\x5e\x70\x06\xd2\xa4\x0d\x63\xcf\x38\xcd\xab\xef\xef\x2b\xba\xdb\x4c\x25\x54\x8f\xa7\x6d\xaf\x57\x38\x4b\x08\xad\x39\x08\x67\x94\x2d\x20\xd6\xb9\xa0\x05\xa7\x49\x7c\xdd\xac\xb6\x7a\x89\x1e\xf2\xe4\xfc\x34\x68\x91\x20\xc4\x0b\x5d\xb5\x0c\x3f\x02\x79\x1f\x12\xfe\x24\x40\x4a\x25\xff\x6f\x74\xf4\x35\x83\x68\xf5\x32\xbd\x43\xaa\x88\x26\xe9\xe5\x1b\x4e\x02\x0c\xb9\xb1\xdf\xbc\x98\xfa\xa6\x15\x9d\x60\x72\x96\x9a\xea\x7f\x33\x73\x1b\xba\x02\x5a\xf6\x05\xa8\x3c\xb5\x45\xc3\xe9\xdd\xb4\xa9\x2d\xa8\xe4\xe8\xab\x36\x77\x8e\xab\x9d\x3f\x21\xa1\x68\x6f\x79\x19\x5e\x6f\xaf\x61\xe8\x94\x05\xdc\xb2\x8c\x81\xc7\x96\xa3\x2a\x42\x9c\x11\xeb\x42\x75\xd0\xd3\x07\xf0\x03\x2c\x01\x9c\xdc\x26\xdb\x9c\x08\x1b\x19\xef\x89\xad\xa7\x5b\x3d\x8d\xd2\x18\xa2\xbe\x7d\xf6\x91\x64\xd6\x70\x4b\xbc\x6c\x85\x6b\x97\xea\x0b\xcc\xa7\xb8\xb9\x87\xc8\xfb\x48\x2d\x6f\x20\x70\xf8\xbf\xc7\xf8\x3a\xcd\xdf\xe6\xc3\x68\xd8\xca\xeb\x23\x66\x46\xf9\x5e\x59\xdf\xea\x02\xd2\x63\x2c\xac\xf3\xd1\x85\xcb\xf6\xfb\x27\x8b\x0c\xb4\xe1\x5c\x21\x18\xd3\x1e\xcf\x1e\x1d\xe1\xc7\x23\x01\x5c\xb8\x66\x49\xd5\xaf\x81\xd1\xa9\x48\x65\xaa\xb4\x69\xc4\x39\x6b\xf1\x84\x9a\x4c\xa4\xa1\x59\x6f\x51\xdf\xe6\xd4\xe1\x36\x2d\xc4\xb0\xb1\x7a\xd4\xb7\x7f\xfe\x11\xb3\xdd\xdd\xb7\x50\xcf\x79\xf8\x8e\xbc\x12\xb0\x0e\x29\x97\x6d\x83\xe7\xa8\x4e\x61\x6d\x41\x83\x94\x1a\x74\x8b\xd9\x3b\x4d\x37\x30\xb8\xfc\xa9\xf4\xc3\x44\x08\x19\x0c\xd4\xf7\xb4\x50\xe3\x1c\xf9\x4d\xa3\x96\x87\xf6\x51\xca\x43\x92\x6b\x97\xad\x9b\xbb\x58\xe3\x8c\xcc\x38\x6a\x2f\xfe\xdf\x2f\xbf\xe9\x4e\xeb\xee\x7b\xab\x9e\x47\x56\x25\xdf\x5b\x2f\xd3\x06\x0b\xb2\x6a\x3b\xdf\x5f\x1e\xa9\x8b\x05\x8c\xc6\x8b\x11\xb5\x85\x6e\xa2\xfb\xb1\x1b\xa7\x7f\x91\x6c\x77\x9a\x79\x13\xf8\x18\xa0\xfb\x2a\x4a\x92\x7b\xf6\x24\x56\x35\xae\x39\x5f\x7b\xea\x4b\xa9\x20\x18\xc4\xd1\x60\xcd\xcb\x34\xea\x04\x8b\x5a\xde\xb7\x60\x0c\xbb\x70\x15\x1f\x38\x74\xab\xda\x55\x95\xd3\x28\xa8\x3c\x60\x7a\xcc\x1c\x97\x5c\xb3\x0c\xe6\x90\x07\x89\xc3\x6d\x4b\xb7\xd1\xac\xbe\x76\xc0\xf7\x1d\x7f\x84\xc0\x84\x3e\xec\xe8\xa0\x20\x97\xd9\x75\x9d\x1c\x90\x63\xb5\x90\x3e\x20\xcf\x96\x86\x0d\x0b\x56\x6a\xb1\xe1\x49\xfd\x7a\x55\x65\x61\xd5\xfd\xc1\x2e\xeb\xbd\xf4\xc4\x26\x16\x23\xd2\xdb\xb9\x98\x14\xd9\xab\x4c\xb0\xb2\x17\xf5\xd4\x15\x2b\x59\xe9\xab\xcb\x98\xcf\xb5\x27\x95\xf9\x91\x60\x93\xfa\x96\x6b\x6f\xc1\xa1\x6e\xaa\xc7\xe2\x3e\x72\x6a\x9e\xb8\x21\x68\x7d\x6b\x71\x20\x85\x96\x43\x6a\x43\xf7\xfc\x01\x73\xed\x2b\x97\x15\x37\x71\x94\xc9\x92\x37\xdc\x6d\x54\xdd\x86\x11\xef\x37\x51\xcf\xd1\xac\xe8\xd0\x00\x41\x28\x8c\x9b\xfc\xc3\x42\xd4\x54\x66\x82\x63\x4a\x67\xcd\xc1\x6d\xd8\x64\x8f\x00\x29\x44\x8d\x8f\x87\xce\x63\x74\xdc\x69\x4b\xe1\x86\x3d\xef\x96\x63\xe4\xa9\x8a\xca\x64\xf0\xa9\xa1\xa3\xe6\xe0\x64\x25\xd5\xf0\x89\xa1\x8c\x19\x99\x07\x93\x78\xe7\x8f\x13\x60\xf4\xec\xba\xc3\xa8\x15\x04\x56\xa2\x6c\xf7\x6b\xb7\xa9\x51\xb4\xf7\xd5\xa4\x72\x86\x0d\x50\xc5\xdc\x83\xfa\x4e\xf2\x23\x70\x34\x7e\x63\xbf\xcb\xa4\x6b\x7c\x8e\xb8\x5b\x99\xff\x74\xc7\x0c\xe9\x49\xa7\x89\xab\x58\x85\xb7\x22\x75\x83\xf3\x40\x10\xce\xf8\x0c\xe8\x80\xbf\xe3\x1c\x8b\x1d\x27\x50\x91\x67\x2f\xcd\xc8\x4b\x2d\xf6\x09\x5f\x38\x2f\xca\xcd\xf0\x7a\xe6\x15\x45\x1e\xd6\x2a\xf7\xb6\xa5\xe8\xc7\x8d\x20\x32\xd5\xda\x63\xdf\x3e\xdc\x11\x17\xb1\x45\x43\x5c\x1d\xc2\xd0\x52\xb9\x4b\x12\xa7\x9f\xaf\x13\x98\x7d\xed\x40\x5f\xa3\xb2\x38\x3d\xb8\xb2\x67\x56\x89\xdd\xc1\x26\x48\xc6\xfb\xd9\x7e\x0f\x05\x26\x20\xe6\x8c\x72\xd5\xfb\xd3\x45\x02\x1d\x1e\x20\xf9\x10\x00\xee\x67\x29\xce\x38\x55\x01\x00\xa7\x9c\x44\xc5\x7a\x95\x6f\xe8\x5a\x67\xde\x99\x8c\xec\x49\xdb\xfc\x28\x37\x99\xc4\x20\x59\xa0\x2f\xef\x59\x22\x60\xee\x8a\x68\x0d\x75\x0d\xfe\xab\x4e\x59\xad\xa6\x8b\x3f\xfd\x99\x1e\x7d\xbe\x55\xc6\xb5\x55\x83\x5c\x93\x28\xbd\x91\x24\x6a\xcf\x05\x25\x6e\xf4\x9b\x13\xb3\xc6\x19\x5e\x98\x34\x40\x1f\x32\x07\x92\xac\x4f\x4c\xac\xb5\x12\xd5\x5c\xa9\x7e\x56\xc5\xe6\xa2\x25\xca\xc0\xa3\x7d\xc3\x92\x7a\x93\x68\x5f\xa7\xd7\x21\x2d\xbc\x0c\xdc\xdd\xa8\x46\x16\x29\x41\x92\xee\x00\xf5\x30\x74\x55\x44\xc5\xfc\xc1\x4c\xac\x94\xaf\xdd\x7e\xd4\xe3\xcd\xe9\x93\x76\xba\x6c\x1e\x05\x2f\x2d\x8a\xc3\xf8\x7b\xaa\x93\xf4\xe0\xde\x64\xfa\x2f\x37\xab\xbf\x15\x18\x1c\x60\x3a\x6a\x12\x57\x1d\x0b\xfc\x8e\x43\xdd\x84\xa1\x08\x32\x4b\x01\x37\xfe\x5c\x18\x3c\xb9\x21\x99\x6f\x2f\x57\xae\xef\x69\x24\xb6\x4f\x09\xd9\x7c\x90\x66\x4f\x93\x9a\xff\xd2\x79\x15\x86\xd6\xff\xc5\x89\xc6\xb8\x5b\x50\xa5\x2b\x65\x3c\x5c\xb1\xef\x6b\x1f\xd7\x6a\xe7\x78\xa8\x4f\x89\x27\x0d\x0e\x80\x9c\x81\x2e\xcd\xc6\xf6\xa3\xf0\xb5\x83\x76\x1a\x88\x80\x5f\xee\xcf\xfb\x1e\xc8\x4d\x22\xb9\x77\x27\xdf\x09\xc3\xe5\x7c\x80\x91\x54\xaa\x51\x4b\xa1\x07\x5a\x62\xe7\x66\x3a\xbd\xd9\xe1\x18\x0f\x6c\x00\xcb\x78\xa8\xf5\xaa\x03\x4b\xb6\xed\x26\x11\x30\x27\x38\x6b\xc9\x85\x8b\x30\x89\x45\x68\x57\xf4\x93\xef\xf7\xc3\xaf\x5c\x3a\x95\xde\x53\x21\xf6\x5d\xbb\xef\xf4\x96\x99\x5f\x2f\xd2\xbc\x01\x36\xca\x00\x6c\xe0\x39\x69\x8e\x0a\xb6\xca\xa2\x5d\xe7\x3d\xd6\x51\x9a\x53\x7a\x8d\x55\xb6\xf8\x22\x6e\xd5\xe3\x07\x50\x93\x31\x90\xd2\x8a\x01\x4b\xa6\x80\x92\x1e\x5d\x71\xcb\x09\xcf\x18\x90\xe5\x74\xfb\x6f\xb4\xea\xfc\xb6\xde\x19\xce\x16\xe8\xd8\x43\x1c\x2f\x87\xfb\x5e\x40\x4d\x34\x02\xae\xe7\x8f\xa9\x51\xd9\x30\x69\x03\x87\x11\x78\x12\x8d\xee\x5d\xb7\x26\xf5\xf2\xaf\x71\x36\x36\xd0\xd3\xbb\x06\xdb\xbb\x79\x81\xd1\x36\x6f\xf0\x4c\x44\x4b\xd5\xe4\x52\x27\xf9\xbc\xc1\xcd\x8e\x15\xde\x54\x1e\x63\xcc\x9f\x54\xcb\x99\x5e\xf3\x1b\x2d\xba\x23\x5c\xc3\xf7\x59\x8c\x8e\x26\x0b\xf6\xae\x58\xfb\x42\x34\xe0\xa0\x65\x60\xa5\x2d\x93\xaf\x5b\xda\x86\xb3\x29\xf2\x56\xdd\x36\xa2\x9b\x50\x65\x91\x5e\x99\x3b\x1e\x72\x24\x25\x83\xae\x1e\x34\x98\x0e\x0c\x03\x6c\xfd\xef\x40\x77\x50\x61\xb8\x3f\xc7\xbd\x94\xe1\xee\x48\x91\xf2\xdc\x2f\xa1\x87\x31\x76\x0d\x43\x4e\x8d\x99\x60\x63\xb2\x60\x86\x29\xb6\xe7\x8b\x0d\xf4\x63\x4d\xcd\xab\x44\x70\xeb\xa8\x23\xdb\xb7\xbc\x38\xc1\xc8\x72\xae\x67\x3d\x51\xc4\xc8\xbb\x9d\x9e\x92\xa0\xc1\x3a\x33\x1d\xaf\x31\x28\xc3\x76\x52\xd9\x26\xf6\x82\x8f\xf5\xd6\x7e\x5a\x2b\x33\x7b\xfd\x17\x94\xa1\x23\x59\x07\xc0\x3d\x31\xcb\xf2\xde\xcd\xfe\x5c\xce\xdd\x1a\xe0\x77\x0b\x2b\x33\x62\xa3\xd7\x61\x18\x18\xa6\x89\x88\x93\x48\xbf\x15\xbb\xca\x3c\x9b\xaf\x3f\x52\xec\xf4\x59\xc9\xe4\x57\x54\x31\x14\x07\x5d\x24\x07\xc3\x07\xfb\x21\xd5\x42\x9b\x06\xa8\x8b\x49\xbd\xc2\x2c\x5c\x51\x66\xe1\x5f\xd1\x9e\x7b\x03\x43\x02\xac\xfc\x98\xb2\x13\xef\x36\x29\x66\x26\x26\xd9\x1c\x35\x0f\x73\x1d\xd1\xb8\x0d\x84\x1f\x64\x65\x82\x1b\x4a\x8c\x1f\xf6\xda\x24\x4a\xca\x19\xfa\xfb\x50\xe6\x72\x3f\x53\x31\x37\x28\x18\x7f\xdc\xd5\x01\xcb\x6b\xad\x62\x70\x47\x58\x0e\x17\x8b\x16\xea\xee\x85\x20\x7a\xef\xc2\x5a\x46\xb3\xd8\x77\x2c\x0a\xf7\x10\x05\x2d\xb5\x29\x44\xc5\xa2\x49\x6c\xce\xaa\xc9\xec\x45\xb2\x95\xb5\x5d\x38\x68\x20\x08\x26\x39\xe1\xed\x5b\x07\x99\x7e\xbf\xa1\x92\xe2\xef\x95\xc7\x4f\x0a\x94\x02\xb5\xf9\x01\x70\x0d\x1d\x7e\xea\x10\x1b\x1f\x3b\x9b\xd0\x5e\x33\xf0\x40\x71\x9f\xec\x74\x2f\x2c\xce\xd3\x07\x17\xee\xa7\x63\x0a\x24\x5f\xf5\x5e\x62\xa5\x12\xcb\x48\x25\xc3\xf2\xf0\xb1\x41\xb1\x2c\x96\x80\xa6\xed\xea\xaa\x27\xa2\x7f\xa5\x29\x20\xdd\xd6\x8f\x78\x9c\x2d\x34\x99\x21\xda\x61\xe8\x99\xb7\x0a\xb8\x40\xe3\x5a\x29\xc7\xe2\xe2\x70\x10\x8e\x04\xae\xd3\x85\x8b\xae\x28\x42\xbd\x69\x34\x51\x10\xce\x0f\x9b\xd3\xce\x62\x82\xca\xcd\xe7\x34\xa6\x5d\x76\x2c\x52\x5f\xdd\x4a\xb3\x79\x78\x53\x17\xb6\x2f\x05\x76\x49\x05\x8a\xc0\x83\xe5\x2a\x69\x00\x6d\x13\xa4\x88\x2c\x83\x6e\xa7\x51\x6c\x04\x2b\xc0\xc1\xd4\xa1\x9b\xe8\x90\x9f\xfb\x2b\x2e\xc3\xb2\x0a\x42\xb1\x36\x5a\x4b\x82\x01\x1d\x47\x1b\xdf\x05\x3c\x2a\xb5\x40\xd9\x93\x1c\x56\xc6\x71\x6e\x46\x35\x78\x57\x08\x6e\xb8\x69\x1e\x83\x10\x36\x7b\x18\x98\x6f\xad\x9a\xe1\x73\xde\xa8\xba\x84\x04\xf3\xb9\x0c\xb2\x44\x6f\xb2\xab\x4b\xde\xef\x0c\x54\x4c\x9f\x7b\xae\x55\x71\xde\xd0\x4d\x71\x2e\x7e\x79\x90\xd3\xa4\xa6\x46\x39\x88\x9c\x3f\x97\xc3\x69\x0f\x0d\x13\x93\x9e\xa2\xa9\x68\x5c\xa9\x56\xb3\x86\xf9\xd5\x6d\x18\x34\x3f\x66\xf5\xa9\x55\xf6\x33\xb0\x81\xdd\x8f\xbb\x3d\x57\xac\xf0\xa4\x30\xf2\x46\xdb\x1b\x59\xea\x2b\x5c\x60\x73\x44\x73\x93\xd7\x66\xd7\x80\xfa\x3f\x44\xc3\x8e\x0b\x62\x13\x38\x59\x02\xbb\x07\x87\x78\xa5\xa2\x23\x3d\x35\x89\xa0\x6b\x00\xf8\xfb\xca\x86\xab\x87\xf7\x4b\x87\x5c\xe8\xec\x25\x3a\x7f\xb3\x64\xf4\x59\xb2\xe7\xf2\x30\xa8\x58\xff\x7a\x99\x72\x53\xcb\xa6\xfe\x99\x4d\x8c\x5e\x4c\x17\xee\x59\xfe\x47\x77\x0f\xba\x42\xca\x7f\x48\xa9\xe9\xa1\x34\x59\x31\x29\xeb\x62\xb7\x96\xd0\x1a\x2a\xbb\x09\x80\xa3\x8c\xfa\xe2\x58\x95\xa9\xdd\x44\x26\x1f\x43\x79\x41\xa8\xf6\x33\xd6\xab\x95\x36\xd5\xd7\xe4\xe4\xa2\x92\xa0\xcc\xc3\x21\x05\x8c\xdd\x11\x26\xc2\xcd\x54\x14\x4d\x2c\x0c\x99\xf6\x01\x5a\xd7\xac\xf8\x61\xc2\x0f\xfc\xb4\x51\xab\x79\x37\x3d\x98\xa4\x3c\x67\x34\xb3\x9e\x2b\x99\x65\x7a\xbd\xc1\xa0\x7a\xfc\x8c\xcf\xa8\x7e\x8b\x01\xc9\xf3\x3f\xb8\x55\x52\x9a\xbe\xa0\xfe\xbe\x46\xa6\x44\xef\x58\xbf\xaf\x01\xf9\x7a\x83\xb3\xa6\x5e\xdb\x6a\xde\xac\x90\x01\x05\x1e\x0b\xc0\x1e\xbd\x26\x9d\xfe\xf5\x8b\x40\xb1\xfd\x8b\xc1\x8b\x03\x34\xcd\x7d\x11\xac\xb2\xab\xdc\xb4\x9d\x42\xb2\x29\x49\x69\x01\x5c\xec\x8d\xca\x6f\x87\xce\x06\xa3\x90\x72\x94\x5f\x1d\xcb\x7d\xe2\x20\x72\x58\x65\xbf\x84\xc5\x82\xf4\x84\x0c\x3d\x5d\x31\xbe\x97\x5e\xdc\xdb\xb5\xa4\x61\x69\x91\x47\x0e\x6f\xea\x87\x71\x28\xef\xde\x8e\x73\xd4\xc6\x25\xc8\xc0\x11\xc2\x83\x92\x44\xa7\x79\x3d\x24\x56\xfc\xad\xab\xf8\x82\xf7\x8a\x83\x54\x4f\x06\x1c\x20\x6e\x09\x11\x4e\xab\x4a\x76\x5b\x75\xc3\xd9\x2a\x58\xcb\x9f\xcb\xd0\x57\x86\xa6\x8a\xdb\xa4\xeb\x76\x5a\xbe\xa8\x11\xe3\x9c\x34\x3c\xa4\x0b\xce\x47\x50\x94\x54\xf6\x81\x2b\xc0\xbe\x44\x15\xc9\xad\x46\xa9\x6d\x82\x39\x8b\x97\x35\xe3\x5d\xc0\x60\xa7\xed\x70\x07\x76\xcf\x50\xb8\x93\x45\xe9\x7a\x98\xb0\x69\x26\x26\x50\xa7\xd4\x2a\xc8\xf2\x30\xff\x5e\x42\x79\x8f\xff\xd7\x92\x7d\x30\x2e\x1d\xe5\x56\xf1\x3c\x92\x23\xa4\xeb\xd7\x84\x50\x34\x9d\xfb\x93\x9d\x47\xec\xe7\x92\xcb\x63\x19\xdf\x16\xaf\xb1\xb3\xed\x8c\xac\x7c\x0e\x92\x9a\x49\x1c\x2a\x8c\x9e\x21\x21\x9b\x98\x30\xe2\x1d\xfc\x43\x05\x98\xb4\xd9\x04\x15\x80\x46\xfb\x73\x67\x76\x09\xc3\xcf\x4f\xaa\x0f\x44\x89\x51\x92\x78\x6e\xbf\x35\x32\x52\x7b\xff\x82\xe8\x08\xf9\xea\xf2\x10\xd9\x53\x5d\x94\x7e\xd0\xe1\x0d\x67\x84\xee\x1e\x97\x83\xae\x5b\x78\xe2\xc6\xff\xba\xe6\x20\x2d\xb8\x59\x28\x0a\xc4\xf0\x37\xa0\xb5\x05\x43\x29\x9e\x51\x44\xc8\xb1\x66\x48\x24\x9d\x2a\x82\x6d\x0d\x57\xab\x2c\x65\xbe\x1a\xd7\x0e\xa7\x58\x85\x65\x12\x63\x67\xe1\x73\x43\x45\xa1\xc6\xa8\x94\x2b\xf6\xc3\x7c\x3c\x2a\xfb\x41\xcc\x52\x58\xcd\x45\x04\x28\xdc\x6a\x58\xb3\x27\x05\x4f\x7c\x5d\x5e\x28\xfe\xe7\x9f\x8c\xb4\xe7\x1b\x98\x97\x77\x31\x0c\x32\x5d\x1a\x0e\x3a\x1d\xb8\xc3\xcb\x0f\x6c\xda\x29\x43\xbf\xd1\x65\xd8\x66\xf6\xfb\x6c\xc2\x29\x1e\xf9\x10\xbb\xbb\x34\xde\x31\xde\x40\xf7\x24\xcd\xeb\x7f\x8e\x78\x6f\x31\xf7\x8f\x54\x31\xaa\x91\x55\x71\x12\x37\x6c\xd0\x3b\x0f\xd0\x0b\x86\x87\x00\x9a\x40\xd3\xd0\xfa\xdb\xc9\xad\x9a\x93\x7c\xcb\xd8\x0c\xbc\x1a\xd2\xf4\xf0\x14\xaf\x54\xe4\xca\x5f\x77\x25\xf8\x3e\x6d\x7b\xf6\x65\x05\x0d\xe6\x14\xa9\x28\xde\xca\xc5\x0e\x3b\xc7\x4b\x7f\x52\x4c\xb9\x2e\x23\xbd\xe6\x40\x79\x1e\x3b\x68\xdc\x8d\x8d\x57\x41\xbb\xce\x2b\xc0\xe0\x14\x4d\x35\x66\x6f\xb4\x1e\xff\xbf\x34\x1c\x09\x1f\xe4', 2)
++## Copyright 2020-2023 Viktor Krueckl. All Rights Reserved.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
++# you may not use this file except in compliance with the License.
++# You may obtain a copy of the License at
++#
++#     http://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing, software
++# distributed under the License is distributed on an "AS IS" BASIS,
++# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++# See the License for the specific language governing permissions and
++# limitations under the License.
++# ==============================================================================
++
++_B='diag'
++_A=None
++import numpy as _np
++from dataclasses import dataclass as _dataclass
++from typing import List
++import itertools
++@_dataclass
++class SingleBin:
++	means:0;weights:0;covariances:0;area:0;name:0
++	@property
++	def as_gmm(self):A=self;from sklearn.mixture import GaussianMixture as C;B=C(n_components=len(A.weights),covariance_type=_B);B.fit(A.means);B.means_=A.means;B.weights_=A.weights;B.covariances_=A.covariances;return B
++	def sample(A,n):return A.as_gmm.sample(n)[0]
++	def plot(A,dims=_A,**C):
++		B=dims;import plotly.express as D
++		if B:return D.scatter(x=A.means[:,B[0]],y=A.means[:,B[1]],error_x=_np.sqrt(A.covariances[:,B[0]]),error_y=_np.sqrt(A.covariances[:,B[1]]),size=A.weights,**C)
++		if A.means.shape[1]>1:return D.scatter(x=A.means[:,0],y=A.means[:,1],error_x=_np.sqrt(A.covariances[:,0]),error_y=_np.sqrt(A.covariances[:,1]),size=A.weights,**C)
++		return D.scatter(x=A.means[:,0],error_x=_np.sqrt(A.covariances[:,0]),size=A.weights,**C)
++class BinningScheme:
++	def __init__(A):A.bins=[]
++	def append(A,input):A.bins.append(input)
++	def extend(A,input):A.bins.extend(input)
++	@property
++	def means(self):return _np.stack([A.means for A in self.bins])
++	@property
++	def weights(self):return _np.stack([A.weights*A.area for A in self.bins])
++	@property
++	def covariances(self):return _np.stack([A.covariances for A in self.bins])
++	def to_dict(A,batch_tiles=1):B=batch_tiles;return{'bin_means':[A.means.tolist()]*B,'bin_covariances':[A.covariances.tolist()]*B,'bin_weights':[A.weights.tolist()]*B}
++	def __repr__(A):return f"BinningScheme(bins=[{', '.join([A.name for A in A.bins if A.name])}])"
++def combine(bins):
++	A=bins
++	def B(*A):return _np.stack([_np.concatenate(A)for A in itertools.product(*A)])
++	return SingleBin(means=B(*[A.means for A in A]),covariances=B(*[A.covariances for A in A]),weights=_np.prod(B(*[_np.expand_dims(A.weights,1)for A in A]),axis=1),area=_np.prod([A.area for A in A]),name='_'.join([A.name for A in A if A.name]))
++def getPolygonBin(points,name=_A,n=250,n_start=_A,n_oversample=1e2,tol=.1,max_iter=5000):
++	E=n_start;from shapely.geometry import Point;from shapely.geometry.polygon import Polygon as K;from sklearn.mixture import GaussianMixture as L;A=K(points);M=A.area/(A.bounds[2]-A.bounds[0])/(A.bounds[3]-A.bounds[1])
++	if E==_A:E=int(n*n_oversample/M)
++	B=_np.array([A.bounds[0],A.bounds[1]]);C=_np.array([A.bounds[2],A.bounds[3]]);G=abs(C[0]-B[0]);H=abs(C[1]-B[1]);I=_np.sqrt(E/(G*H));J=_np.meshgrid(_np.linspace(B[0],C[0],abs(int(I*G))),_np.linspace(B[1],C[1],abs(int(I*H))));D=_np.stack([J[0].flatten(),J[1].flatten()],1);_np.random.shuffle(D);D=_np.stack([B for B in D if A.contains(Point(B))]);F=L(n_components=n,random_state=42,covariance_type=_B,max_iter=max_iter,tol=tol,n_init=1).fit(D);return SingleBin(means=F.means_,covariances=F.covariances_,weights=F.weights_,area=A.area,name=name)
++def getRangeBin(min,max,name=_A,n=30,n_start=_A,n_oversample=2e2,tol=.01,max_iter=5000):
++	A=n_start;from sklearn.mixture import GaussianMixture as E
++	if A==_A:A=int(n*n_oversample)
++	D=(max-min)/A;B=_np.linspace(min+D/2,max-D/2,abs(A));B=_np.expand_dims(B,1);C=E(n_components=n,random_state=42,covariance_type=_B,max_iter=max_iter,tol=tol,n_init=1).fit(B);return SingleBin(means=C.means_,covariances=C.covariances_,weights=C.weights_,area=abs(max-min),name=name)
+```
+
+## src/__init__.py
+
+```diff
+@@ -53,17 +53,18 @@
+ 
+ 
+ from . import utils
+ from . import distributions
+ from . import layers
+ from . import binning
+ 
++
+ __all__ = ['utils', 'distributions', 'layers', 'binning']
+ 
+-__version__ = '0.4.0'
++__version__ = '0.5.0'
+ 
+ 
+ 
+ import os
+ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+ import tensorflow as tf
+ tf.get_logger().setLevel('INFO')
+```
+
+## src/binning.py
+
+```diff
+@@ -26,15 +26,15 @@
+     define a single bin as a Gaussian mixture with a
+     diagonal covariance matrix
+     """
+     means: _np.ndarray
+     weights: _np.ndarray
+     covariances: _np.ndarray
+     area: float
+-    name: str = None
++    name: str
+ 
+     @property
+     def as_gmm(self):
+         """ return the SingleBin dataclass as sklean GaussianMixture
+         """
+         from sklearn.mixture import GaussianMixture
+```
+
+## src/distributions.py
+
+```diff
+@@ -50,22 +50,32 @@
+             offset.append(offset[-1] + step)
+ 
+         # compute the full [size x size] matrix from the stdDev tensor
+         baseCovMatrix = _tf.matmul(_tf.reshape(stdDevTensor, [batchSize, size, 1], name="colVec"),
+                                    _tf.reshape(stdDevTensor, [
+                                                batchSize, 1, size], name="rowVec"),
+                                    name="CovMatrix")
+-
++        
+         # apply the correlation
+-        with _tf.name_scope("AddCorrelation"):
+-            output = [[baseCovMatrix[:, x, y] if x == y else
+-                       baseCovMatrix[:, x, y] * correlationTensor[y + offset[x]] if x < y else
+-                       baseCovMatrix[:, x, y] *
+-                       correlationTensor[x + offset[y]]
+-                       for x in range(size)] for y in range(size)]
++        if _tf.shape(correlationTensor).shape[0] == 1:
++          # correlation different fo each entry
++          with _tf.name_scope("AddCorrelation"):
++              output = [[baseCovMatrix[:, x, y] if x == y else
++                        baseCovMatrix[:, x, y] * correlationTensor[y + offset[x]] if x < y else
++                        baseCovMatrix[:, x, y] *
++                        correlationTensor[x + offset[y]]
++                        for x in range(size)] for y in range(size)]
++        else:
++          # same correlation for each entry
++          with _tf.name_scope("AddCorrelation"):
++              output = [[baseCovMatrix[:, x, y] if x == y else
++                        baseCovMatrix[:, x, y] * correlationTensor[:, y + offset[x]] if x < y else
++                        baseCovMatrix[:, x, y] *
++                        correlationTensor[:, x + offset[y]]
++                        for x in range(size)] for y in range(size)]            
+ 
+         # transform to bring the batch index back to
+         return _tf.transpose(output, name=name+"Transpose")
+ 
+ 
+ def regularizeCovMatrix(covMatrix, epsilon=0.999):
+     """regularize a covariance matrix to prevent cholesky transform errors
+```
+
+## src/utils.py
+
+```diff
+@@ -11,60 +11,65 @@
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ # import tensorflow parts
+ from doctest import OutputChecker
+-from tensorflow.python.ops.parallel_for import control_flow_ops as _control_flow_ops
++import tensorflow.python.ops
++from tensorflow.python.ops import control_flow_ops as _control_flow_ops
+ import tensorflow as _tf
+ 
+-# import numpy parts
+-from numpy import square as _square
+-from numpy import shape as _shape
+ 
+ 
+ 
+-def getSkleanGM(weights, means, stdDev):
++def getSkleanGM(weights, means, stdOrCov):
+     """
+-    create a Gaussian Mixture Model from Sklearn based on weights, means and stdDev
++    create a Gaussian Mixture Model from Sklearn based on weights, means and stdDev or covariances
+ 
+     Parameters:
+-        weights:  array-like, shape (n_components,)
+-                  The weights of each mixture components.
++        weights:      array-like, shape (n_components,)
++                      The weights of each mixture components.
+ 
+-        means:    array-like, shape (n_components, n_features)
+-                  The mean of each mixture component.
++        means:       array-like, shape (n_components, n_features)
++                     The mean of each mixture component.
+ 
+-        stdDev:   array-like
++        stdOrCov:    array-like, shape (n_components, n_features) or  (n_components, n_features, n_features)
++                     The standard deviations or the covariaes of the mixture
+ 
+     """
+ 
++    # import numpy parts
++    from numpy import square as _square
++    from numpy import shape as _shape
++
+     # import sklean parts
+     from sklearn.mixture import GaussianMixture as _skGM
+     from sklearn.mixture._gaussian_mixture import _compute_precision_cholesky as _skGM_compute_precision_cholesky    
+ 
+-    if(len(_shape(means)) != len(_shape(stdDev))):
+-        raise "Full covariance matrices not implemented yet?"
++    if(len(_shape(means)) != len(_shape(stdOrCov))):
++        if _shape(means)[-1] == _shape(stdOrCov)[-1] and _shape(means)[-1] == _shape(stdOrCov)[-2] and _shape(means)[0] == _shape(stdOrCov)[0]:
++            covariance_type='full'
++            covar = stdOrCov
++        else:
++            raise "Full covariance matrices not implemented yet?"
++    else:
++        covariance_type='diag'
++        covar = _square(stdOrCov)
++        
+ 
+     # extract the component size
+     n_components = _shape(means)[-2]
+ 
+-    # compute covariance matrix and inverse
+-    covar = _square(stdDev)
+-    prec = 1./covar
+-
+     # initialize gaussian mixture
+-    mix = _skGM(n_components, covariance_type='diag')
++    mix = _skGM(n_components, covariance_type=covariance_type)
+     mix.means_ = means
+     mix.weights_ = weights
+     mix.covariances_ = covar
+-    mix.precisions_ = prec
+-    mix.precisions_cholesky_ = _skGM_compute_precision_cholesky(
+-        mix.covariances_, mix.covariance_type)
++    mix.precisions_cholesky_ = _skGM_compute_precision_cholesky(mix.covariances_, mix.covariance_type)
+ 
+     return mix
+ 
+ 
+ def lastEntryJacobian(ys, xs, use_pfor=True, parallel_iterations=None, name='Jacobian', stop_gradients=None):
+     """ Constructs the Jacobi Matrix based of the last entries of `ys(xs)` w.r.t. `xs` at `xs`
+```
+
+## src/layers/__init__.py
+
+```diff
+@@ -10,22 +10,24 @@
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ 
+-from .covmatrix import TrainableCovMatrix
++from .covmatrix import TrainableCovMatrix, VarCovMatrix
+ from .linearmapping import LinearMapping
+ from .generalmapping import GeneralMapping
+-from .distribution import Distribution, DistributionMean, DistributionSampleLoss, DistributionSamples
++from .distribution import Distribution, DistributionMean, DistributionSampleLoss, DistributionSamples, DistributionKLLoss
+ from .binyield import BinYield, BinYieldStatic
+-from .gmrmapping import ConstGMR, DynamicGMR
++from .gmrmapping import  DynamicGMR
++from . import normalization
++from . import disttrafo
+ 
+-__all__ = [TrainableCovMatrix, LinearMapping, GeneralMapping, Distribution, BinYield, BinYieldStatic, ConstGMR, DynamicGMR, DistributionMean, DistributionSampleLoss, DistributionSamples]
++__all__ = [TrainableCovMatrix, VarCovMatrix, LinearMapping, GeneralMapping, Distribution, BinYield, BinYieldStatic,  DynamicGMR, DistributionMean, DistributionSampleLoss, DistributionSamples, DistributionKLLoss, normalization, disttrafo]
+ 
+ del covmatrix
+ del linearmapping
+ del distribution
+ del binyield
+ del generalmapping
+ del gmrmapping
+```
+
+## src/layers/_mapping.py
+
+```diff
+@@ -14,23 +14,23 @@
+ # ==============================================================================
+ 
+ 
+ # tensorflow imports
+ from tensorflow.keras.layers import Layer as _Layer
+ import tensorflow as _tf
+ 
+-class _Mapping(_Layer):
++class _M(_Layer):
+ 
+     def __init__(self, output_dim, regularize_cov_epsilon=None, **kwargs):
+         """
+         Args:
+           output_dim: size of the output dimension
+           regularize_cov_epsilon: if not None cov matrix corelation is restricted (eg. 0.995)
+         """
+-        super(_Mapping, self).__init__(**kwargs)
++        super(_M, self).__init__(**kwargs)
+ 
+         self.output_dim = output_dim
+         self._regularize_cov_epsilon = regularize_cov_epsilon
+         self.sampling = _tf.Variable(True, trainable=False, name="sampling")
+ 
+     def sampling_ON(self):
+         _tf.keras.backend.eval(self.sampling.assign(True))
+```
+
+## src/layers/binyield.py
+
+```diff
+@@ -12,18 +12,18 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ # tensorflow imports
+ import tensorflow as _tf
+ import numpy as _np
+-import tensorflow_probability as _tfp
++# import tensorflow_probability as _tfp
+ from ..binning import BinningScheme
+ from tensorflow.keras.layers import Layer as _Layer
+-_tfd = _tfp.distributions
++# _tfd = _tfp.distributions
+ 
+ 
+ class BinYieldStatic(_Layer):
+     """Create a keras layer to compute the bin yield.
+ 
+     We use sample points to define the bin structure. Each of the `binN`
+     bins has `sampleN` sample points with `outN` values. `outN` must
+```
+
+## src/layers/covmatrix.py
+
+```diff
+@@ -13,63 +13,60 @@
+ # limitations under the License.
+ # ==============================================================================
+ 
+ 
+ # tensorflow imports
+ import tensorflow as _tf
+ import tensorflow_probability as _tfp
++_tfd = _tfp.distributions
+ from tensorflow.keras.layers import Layer as _Layer
+-from tensorflow.keras.constraints import NonNeg as _NonNeg
+-from tensorflow.keras.constraints import MinMaxNorm as _MinMaxNorm
+-import tensorflow as _tf
+ 
++from ._mapping import _M
+ 
+ # mixturemapping imports
+ from mixturemapping.distributions import createCovMatrix as _createCovMatrix
+-from mixturemapping.distributions import regularizeCovMatrix as _regularizeCovMatrix
++from mixturemapping.distributions import regularizeCovMatrix as _r
+ 
+ 
+ class TrainableCovMatrix(_Layer):
+     """Generates an independently trainable covariance matrix
+ 
+     Important symmetry properties are generated automatically because the covariance matrix
+     is built up from standard deviations `TrainableCovMatrix.spread`
+     and correlations `TrainableCovMatrix.corr`.
+     
+     Params:
+       output
+ 
+ 
+-
+-
+     """
+ 
+     def __init__(self, output_dim, regularize=None,  **kwargs):
+         self._output_dim = output_dim
+         self._regularize = regularize
+         super(TrainableCovMatrix, self).__init__(**kwargs)
+ 
+     def build(self, input_shapes):
+         input_shape = input_shapes[0]
+ 
+         # Create trainable weighs
+         self.spread = self.add_weight(name='spread', shape=(
+-            1,  self._output_dim), initializer='uniform', trainable=True, constraint=_NonNeg())
++            1,  self._output_dim), initializer='uniform', trainable=True, )
+         correlationSize = int(self._output_dim * (self._output_dim-1) / 2)
+         if correlationSize > 0:
+             self.corr = self.add_weight(name='correlation', shape=(
+-                correlationSize,), initializer='uniform', trainable=True, constraint=_MinMaxNorm(-1.0, 1.0))
++                correlationSize,), initializer='uniform', trainable=True )
+         else:
+             self.corr = [0]
+ 
+         # Create the compute graph for the covariance addon part
+-        matrix = _createCovMatrix(self.spread, self.corr, self._output_dim)
++        matrix = _createCovMatrix(_tf.exp(self.spread), _tf.tanh(self.corr), self._output_dim)
+ 
+         if(self._regularize):
+-            matrix = _regularizeCovMatrix(matrix, self._regularize)
++            matrix = _r(matrix, self._regularize)
+ 
+         self.matrix = matrix
+ 
+         # call build of the base Layer class
+         super(TrainableCovMatrix, self).build(input_shape)
+ 
+     def call(self, x, **kwargs):
+@@ -78,12 +75,82 @@
+ 
+     def compute_output_shape(self, input_shape):
+         return (input_shape[0], self._output_dim, self._output_dim)
+ 
+ 
+     def get_config(self):
+         config = super().get_config().copy()
++        config.update({
++            'output_dim': self._output_dim,
++            'regularize': self._regularize
++        })
++        return config
++
++
++class VarCovMatrix(_M):
++    """Generates an variational covariance matrix
++
++    Important symmetry properties are generated automatically because the covariance matrix
++    is built up from standard deviations `VarCovMatrix.spread`
++    and correlations `VarCovMatrix.corr`.
++    
++    Params:
++      output
++
++    """
++
++    def __init__(self, output_dim, regularize=None,  **kwargs):
++        self._output_dim = output_dim
++        self._regularize = regularize
++        super(VarCovMatrix, self).__init__(output_dim=output_dim, **kwargs)
++
++    def build(self, input_shapes):
++        input_shape = input_shapes[0]
++
++        # Create trainable weighs
++        self.spread_mean = self.add_weight(name='spread_mean', shape=(self._output_dim,), initializer='normal', trainable=True, )
++        self.spread_std = self.add_weight(name='spread_std', shape=(self._output_dim,), initializer='normal', trainable=True, )
++
++        self.spread = _tfd.Normal(self.spread_mean, _tf.exp(self.spread_std))
++
++        correlationSize = int(self._output_dim * (self._output_dim-1) / 2)
++        if correlationSize > 0:
++            self.corr = self.add_weight(name='correlation_mean', shape=(correlationSize,), initializer='normal', trainable=True)
++        else:
++            self.corr = [0]
++
++        # call build of the base Layer class
++        super(VarCovMatrix, self).build(input_shape)
++
++    def call(self, x, **kwargs):
++        batch_size = _tf.shape(x)[0]
++
++
++        # compute varational or mean depending on sampling ON and OFF
++        spread = _tf.cond(self.sampling,
++                           lambda: _tf.exp(self.spread.sample(batch_size)),
++                           lambda: _tf.expand_dims(_tf.exp(self.spread_mean), 0)
++                         )
++        
++        corr = _tf.expand_dims(_tf.tanh(self.corr), 0)
++
++        # Create the compute graph for the covariance addon part
++        matrix = _createCovMatrix(spread, corr, self._output_dim)
++
++        if(self._regularize):
++            matrix = _r(matrix, self._regularize)
++
++        self.matrix = matrix
++
++        return matrix
++
++    def compute_output_shape(self, input_shape):
++        return (input_shape[0], self._output_dim, self._output_dim)
++
++
++    def get_config(self):
++        config = super().get_config().copy()
+         config.update({
+             'output_dim': self._output_dim,
+             'regularize': self._regularize
+         })
+         return config
+```
+
+## src/layers/distribution.py
+
+```diff
+@@ -11,21 +11,21 @@
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ 
+ # tensorflow imports
+-from mixturemapping.distributions import createMixDistBYmeanCovWeight as _createMixDistBYmeanCovWeight
+-from mixturemapping.distributions import regularizeCovMatrix as _regularizeCovMatrix
++from ..distributions import createMixDistBYmeanCovWeight as _c
++from ..distributions import regularizeCovMatrix as _r
+ 
+ import tensorflow as _tf
+ import tensorflow_probability as _tfp
+ from tensorflow.keras.layers import Layer as _Layer
+-_tfd = _tfp.distributions
++
+ 
+ 
+ class Distribution(_Layer):
+     """Create a keras layer with a gaussian mixture distribution.
+ 
+     Example::
+ 
+@@ -78,22 +78,22 @@
+ 
+         means = x["means"]
+         cov = x["covariances"]
+         weight = x["weights"]
+ 
+         # and regularize it (correlation restricion to prevent cholesky transform errors)
+         if(self._regularize_cov_epsilon):
+-            self.covMatrix = _regularizeCovMatrix(
++            self.covMatrix = _r(
+                 cov, self._regularize_cov_epsilon)
+         else:
+             self.covMatrix = cov
+ 
+        # condense everything into a tensorflow Distribution
+         self.distribution = _tfp.layers.DistributionLambda(
+-            lambda t: _createMixDistBYmeanCovWeight(
++            lambda t: _c(
+                 t[0], t[1], t[2], self.mix_dim, self.output_dim)
+         )([means, self.covMatrix, weight])
+ 
+         # return DistributionTensor(self.distribution)
+         return self.distribution
+ 
+     def compute_output_shape(self, input_shape):
+@@ -157,31 +157,120 @@
+         dist = distLayer(distParams)
+ 
+         lossdist = mm.layers.DistributionSampleLoss()({"dist": dist, "samples": inTsamples})
+     """
+ 
+     def __init__(self, ** kwargs):
+         super(DistributionSampleLoss, self).__init__(**kwargs)
++        self.loss = None
+ 
+     def call(self, x, **kwargs):
+         """Compute a sample based loss and add it to the model loss
+ 
+         :param dist: Distribution
+ 
+         :param sample: Samplepoints
+ 
+         :returns: distribution
+         """
+ 
+         dist = x["dist"]
+         samples = x["samples"]
+ 
+-        self.add_loss(-_tf.reduce_mean(dist.log_prob(samples)))
++        self.loss = -_tf.reduce_mean(dist.log_prob(samples))
++        self.add_loss(self.loss)
++
++        x.update({"loss": self.loss})
++
++        return x
++
++
++class DistributionKLLoss(_Layer):
++    """Create a keras layer to KL divergence loss
++
++    Example::
++
++        distParams = {"means": ???, "covariances": ???, "weights": ???}
++        distLayer = mm.layers.Distribution(regularize_cov_epsilon=0.95)
++        dist = distLayer(distParams)
++
++        lossdist = mm.layers.DistributionKLLoss()({"dist": dist, "means": means, "covariances": covs, "weights": weights})
++    """
++
++    def __init__(self, n_samples=100, symmetric=False, ** kwargs):
++        super(DistributionKLLoss, self).__init__(**kwargs)
++        self.n_samples = n_samples
++        self.loss = None
++        self.ideal_dist = None
++        self.samples = None
++        self.kl_divergence = None
++        self.symmetric = symmetric
++
++    def build(self, input_shapes):
++        if not ("means" in input_shapes and "covariances" in input_shapes and "weights" in input_shapes):
++            raise Exception(
++                "means, covariances and weights are needed to construct the ideal GMM!")
++
++        # deduce the input shape my the means tensor
++        input_shape = input_shapes["means"]
++
++        self.mix_dim = input_shape[1]
++        self.output_dim = input_shape[2]
++
++        # call build of the base Layer class
++        super(DistributionKLLoss, self).build(input_shapes["means"])        
++
++    def call(self, x, **kwargs):
++        """Compute a sample based KL divergence loss and add it to the model loss
++
++        :param dist: Distribution
++
++        :param means: Means of the ideal GMM
++
++        :param covariances: Covariances of the ideal GMM
++
++        :param weights: Weights of the ideal GMM
++
++        :returns: distribution
++        """
++        x = x.copy()
++
++        dist = x["dist"]
++        self.ideal_dist = _tfp.layers.DistributionLambda(
++            lambda t: _c(
++                t[0], t[1], t[2], self.mix_dim, self.output_dim)
++        )([x["means"], x["covariances"], x["weights"]])
++
++        # compute sampels
++        samples_ideal = self.ideal_dist.sample(self.n_samples)
++        self.samples_ideal = _tf.transpose(samples_ideal, [1, 0, 2])
++
++
++     
++
++        # compute the KL divergence based on the samples
++        kl_A = self.ideal_dist.log_prob(samples_ideal) - dist.log_prob(samples_ideal)
++
++        if self.symmetric:
++            samples_pred = dist.sample(self.n_samples)
++            self.samples_pred = _tf.transpose(samples_pred, [1, 0, 2])
++            kl_B = dist.log_prob(samples_pred) - self.ideal_dist.log_prob(samples_pred)
++            self.kl_divergence = _tf.reduce_mean(_tf.transpose(kl_A, [1,0]), 1) + _tf.reduce_mean(_tf.transpose(kl_B, [1,0]), 1)
++            
++        else:
++            self.kl_divergence = _tf.reduce_mean(_tf.transpose(kl_A, [1,0]), 1)
++        
++
++        self.loss = self.kl_divergence
++
++
++        self.add_loss(self.loss)
+ 
+-        return dist
++        x.update({"loss": self.loss})
++        return x
+ 
+ 
+ class DistributionSamples(_Layer):
+     """Create a keras layer to compute distribution samples
+ 
+     Example::
+```
+
+## src/layers/generalmapping.py
+
+```diff
+@@ -11,26 +11,24 @@
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ 
+ # tensorflow imports
+-from mixturemapping.distributions import regularizeCovMatrix as _regularizeCovMatrix
+-from mixturemapping.distributions import createMixDistBYmeanCovWeight as _createMixDistBYmeanCovWeight
+-from mixturemapping.utils import lastEntryJacobian as _lastEntryJacobian
+-from ._mapping import _Mapping
++from mixturemapping.distributions import regularizeCovMatrix as _r
++from ._mapping import _M
+ import tensorflow as _tf
+ import tensorflow_probability as _tfp
+ _tfd = _tfp.distributions
+ 
+ # internal imports
+ 
+ 
+-class GeneralMapping(_Mapping):
++class GeneralMapping(_M):
+     """ A free general mapping layer, that maps centers and distributions independently.
+ 
+     This layers can be used if the relationship between input distributions
+     and output distributions is free and general
+ 
+     Parameters:
+         yModel : Keras Model
+@@ -249,15 +247,15 @@
+                 # extend the mixture dimension if input covariance is independent
+                 cov = cov + _tf.expand_dims(x["covB"], 1)
+             else:
+                 cov = cov + x["covB"]
+ 
+         # and regularize it (correlation restricion to prevent cholesky transform errors)
+         if(self._regularize_cov_epsilon):
+-            self.covMatrix = _regularizeCovMatrix(
++            self.covMatrix = _r(
+                 cov, self._regularize_cov_epsilon)
+         else:
+             self.covMatrix = cov
+ 
+         return {
+             "means": means,
+             "covariances": self.covMatrix,
+```
+
+## src/layers/gmrmapping.py
+
+```diff
+@@ -11,71 +11,233 @@
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ # ==============================================================================
+ 
+ 
+ # tensorflow imports
+-from ._mapping import _Mapping
++from ._mapping import _M
+ import numpy as _np
+ import tensorflow as _tf
+ import tensorflow_probability as _tfp
+-from tensorflow.keras.constraints import NonNeg as _NonNeg
+-from tensorflow.keras.constraints import MinMaxNorm as _MinMaxNorm
+-from mixturemapping.distributions import createCovMatrix as _createCovMatrix
+ _tfd = _tfp.distributions
+ 
+ 
+-class _GMRmapping(_Mapping):
++class DynamicGMR(_M):
++    """ A trainable mapping layer using gaussian mixtures.
+ 
+-    def invert_indices(self, indices):
+-        n_features = self.model_m.shape[3]
+-        inv = _np.ones(n_features, dtype=bool)
+-        inv[indices] = False
++    This layers can be used if an initial guess of a trained Gaussian mixture of the combined input and
++    output coordinates is available.
++
++    Example::
++
++        import mixturemapping as mm
++
++        gmr = mm.layers.DynamicGMR(
++            output_dim=2,
++            input_dim=2,
++            mix_size=30,
++        )
++
++        transformedDist = gmr({"means": inMeans, "covariances": cov, "weights": inWeight})
++
++        distLayer = mm.layers.Distribution(dtype=dataType, regularize_cov_epsilon=0.95)
++        dist = distLayer(transformedDist)
++
++        sample_loss = distLayer.sample_loss(inTsamples)  
++
++
++    Parameters
++    ----------
++    output_dim: int
++        size of the output dimension
++    ???
++           
++
++
++    Returns
++    -------
++    {
++        "means" : Tensorflow Tensor
++            Centers of the mixture distributions
++        "covariances" : Tensorflow Tensor
++            Covariance matrices of the distributions
++        "weights" : Tensorflow Tensor
++            Weights of the mixture components
++    }
++    """
++
++    def __init__(self,  output_dim, input_dim, mix_size, n_components=None, **kwargs):
++        super(DynamicGMR, self).__init__(output_dim, **kwargs)
++        self.mix_size = mix_size
++        self.input_dim = input_dim
++        self.var_size = self.output_dim + self.input_dim
++        self.output_indices = list(range(self.input_dim, self.var_size))
++
++        # compute the input indices by inversion of the output indices
++        inv = _np.ones(self.var_size, dtype=bool)
++        inv[self.output_indices] = False
+         inv, = _np.where(inv)
+-        return inv
++        self.input_indices = inv
++
++        self.n_components = n_components
++        self.corr_size = int(self.var_size * (self.var_size-1) / 2)
+ 
+ 
+     def _to_np(self, a):
+         if isinstance(a, _np.ndarray):
+             return a
+         else:
+             return _np.array(a, dtype=self.dtype)
+ 
+-    def __init__(self, output_indices, n_components=None, **kwargs):
+-        self.output_indices = output_indices
+-        
+-        self.output_dim = len(self.output_indices)       
+-        self.n_components = n_components
+ 
+-        super(_GMRmapping, self).__init__(len(output_indices), **kwargs)
++    def set_gmm_values(self, means, covariances, weights):
++        """ Set the GMM parameters without creating new tensorflow operations
++
++        Parameters
++        ----------
++        means : numpy array 
++            Means array of the combined mixture distribution
++            shape: [mix, inDim]
++        covariances : numpy array 
++            Covariances array of the combined mixture distribution
++            shape: [mix, inDim, inDim]    
++        weights : numpy array 
++            Weights array of the combined mixture distribution
++            shape: [mix]           
++        """
++
++        # transform inputs into the right shape
++        input_spread = _np.array([_np.sqrt(_np.diagonal(m))
++                                 for m in covariances])
++        input_corr = covariances / _np.reshape(input_spread, [self.mix_size, 1, self.var_size]) / _np.reshape(
++            input_spread, [self.mix_size, self.var_size, 1])
++        triu_indices = _np.triu_indices(self.var_size, 1)
++        input_corr = input_corr[:, triu_indices[0], triu_indices[1]]
++
++        # const_input_corr_idx = [idx for idx, (x, y) in enumerate(_np.transpose(
++        #     triu_indices)) if x in self._input_indices and y in self._input_indices]
++        # var_input_corr_idx = [idx for idx in range(
++        #     self._corr_size) if idx not in const_input_corr_idx]
+ 
+-    def _update_matrices(self):
++        # set the trainable variable parts
++        _tf.keras.backend.set_value(self.model_cov_stddev_i, _np.log(input_spread)[:, self.input_indices])
++        _tf.keras.backend.set_value(self.model_cov_stddev_o, _np.log(input_spread)[:, self.output_indices])
++        _tf.keras.backend.set_value(self.model_cov_stddev_o_spread, _np.ones( (self.mix_size, self.output_dim))*-1.0)
++        _tf.keras.backend.set_value(self.model_m_i, means[:, self.input_indices])
++        _tf.keras.backend.set_value(self.model_m_o, means[:, self.output_indices])
++        _tf.keras.backend.set_value(self.model_cov_corr, _np.arctanh(input_corr))
++        _tf.keras.backend.set_value(self.model_w, weights)
+ 
+-        self.input_indices = self.invert_indices(self.output_indices)
+ 
+-        self.s11 = _tf.gather(_tf.gather(self.model_cov, self.input_indices, axis=3), self.input_indices, axis=4)
+-        self.s22 = _tf.gather(_tf.gather(self.model_cov, self.output_indices, axis=3), self.output_indices, axis=4)
++    def fit_gmms(self, np_inputs, tf_inputs, input_gmm, output_gmm, n_samples=10):
++        """fit_gmms can be used to pretrain the internal gmm
+ 
+-        self.s11I = _tf.linalg.pinv(self.s11)
+-        self.s21 = _tf.gather(_tf.gather(
+-            self.model_cov, self.output_indices, axis=3), self.input_indices, axis=4)
+-        self.s12 = _tf.linalg.matrix_transpose(self.s21)
++        Parameters
++        ----------
++        np_inputs:  dict of np.array
++            The numpy inputs needed to train the model
++        tf_inputs:  dict of input tensors
++            The inputs needed to compute the tensorflow model      
++        input_gmm:  mixturemaping gmm
++            dict of means, covariances and weights to define the input gmm
++        output_gmm: mixturemaping gmm
++            dict of means, covariances and weights to define the output gmm
++        n_samples: int
++            number of sampels to model each input gmm
++        """
+ 
+-        self.mu1 = _tf.gather(self.model_m, self.input_indices, axis=3)
+-        self.mu2 = _tf.gather(self.model_m, self.output_indices, axis=3)
++        from sklearn.mixture import GaussianMixture
++        from .distribution import Distribution, DistributionSamples
+ 
+-        self.p = _tfd.MultivariateNormalTriL(
+-            loc=self.mu1,
+-            scale_tril=_tf.linalg.cholesky(self.s11)
++        # create the model for the input samples
++        input_dist = Distribution()(input_gmm)
++        input_samples_tf = DistributionSamples(n_samples)(input_dist)
++
++        # create the model for the output samples
++        output_dist = Distribution()(output_gmm)
++        output_samples_tf = DistributionSamples(n_samples)(output_dist)
++
++        # combine the samples
++        samples_tf = _tf.reshape(
++                _tf.transpose(
++                _tf.concat([input_samples_tf, output_samples_tf], axis=1),
++                [0, 2, 1]
++            ),
++            [-1, self.var_size]
+         )
+ 
+-        self.model_mix_dim = _tf.shape(self.mu1)[1]
+-        
+-        self._update_matrices = True
++        sample_model =_tf.keras.Model(inputs=tf_inputs, outputs=samples_tf)
++        sample_model.compile()
++        samples = sample_model.predict(np_inputs)  
++
++        trainModel = GaussianMixture(n_components=self.mix_size)
++        trainModel.fit(samples)
++
++        self.set_gmm_values(
++            means=trainModel.means_,
++            covariances=trainModel.covariances_,
++            weights=trainModel.weights_
++        )
++
++
++    def build(self, input_shapes):
++        if not ("means" in input_shapes and "weights" in input_shapes):
++            raise Exception(
++                "means and weights are needed to construct the mapping layer!")
++
++        # create the trainable parts
++        # note the parts, which are describing the inputs, cannot be trained via backpropagation
++        # thats why we split it up in input _i and output _o
++        self.model_m_i = self.add_weight(
++            name='mean_var_i',
++            shape=(self.mix_size, self.input_dim),
++            initializer='uniform',
++            trainable=False            
++        )
++        self.model_cov_stddev_i = self.add_weight(
++            name='cov_stddev_var_i',
++            shape=( self.mix_size,  self.input_dim),
++            initializer='uniform',
++            trainable=True            
++        )
++
++
++        self.model_m_o = self.add_weight(
++            name='mean_var_o',
++            shape=(self.mix_size, self.output_dim),
++            initializer='uniform',
++            trainable=True            
++        )
++        self.model_cov_stddev_o = self.add_weight(
++            name='cov_stddev_var_o',
++            shape=( self.mix_size,  self.output_dim),
++            initializer='uniform',
++            trainable=True            
++        )
++        self.model_cov_stddev_o_spread = self.add_weight(
++            name='cov_stddev_var_o_delta',
++            shape=( self.mix_size,  self.output_dim),
++            initializer='uniform',
++            trainable=True            
++        )        
++
++        self.model_cov_corr = self.add_weight(
++            name='cov_corr_var',
++            shape=( self.mix_size,  self.corr_size),
++            initializer='uniform',
++            trainable=True            
++        )
++
++        self.model_w = self.add_weight(
++            name='weight_var',
++            shape=(self.mix_size,),
++            initializer='uniform',
++            trainable=False         
++        )
+ 
+ 
+     def call(self, x, **kwargs):
+         """Compute the output distribution layer based on `x` (dict of `tf.Tensors`)
+ 
+         Parameters:
+             means: Instance of `tf.Tensor`
+@@ -99,395 +261,149 @@
+                 Covariance matrix `tf.Tensor` of the output mixture distribution
+                 shape: [batch, mix, outDim, outDim]
+             weights: Instance of `tf.Tensor`
+                 Weight `tf.Tensor` ot the mixture components
+                 shape: [batch, mix]
+         """
+ 
+-
++        # extract the important keys from the input dict
+         means = x["means"]
+         covariances = x["covariances"]
+         weights = x["weights"]
+ 
+-        # TODO implement stdDevs case
++        # extract the batch size from the means tensor
++        _batchSize = _tf.shape(means)[0]
++
++        # combine the trainable an non trainable parts for the means
++        model_m = _tf.concat([self.model_m_i, self.model_m_o], axis=-1)
++
++        # combine the trainable and non trainable parts for for a 100% correlated cov matrix
++        # we make this variational
++        def get_base_cov():
++            model_cov_stddev = _tf.concat([self.model_cov_stddev_i, self.model_cov_stddev_o], axis=-1)
++            model_cov_stddev = _tf.exp(model_cov_stddev)
++            return _tf.tile(_tf.expand_dims(
++                _tf.matmul(_tf.reshape(model_cov_stddev, [self.mix_size, self.var_size, 1], name="colVec"),
++                           _tf.reshape(model_cov_stddev, [self.mix_size, 1, self.var_size], name="rowVec"),
++                           name="baseCovMatrix"),
++                           0), [_batchSize, 1, 1, 1])
++        
++        def get_base_cov_var():
++
++            model_cov_stddev_o = _tfd.Normal(self.model_cov_stddev_o, _tf.exp(self.model_cov_stddev_o_spread)).sample(_batchSize)
++            model_cov_stddev_i = _tf.tile(_tf.expand_dims(self.model_cov_stddev_i, 0), [_batchSize, 1, 1])
++
++            model_cov_stddev = _tf.concat([model_cov_stddev_i, model_cov_stddev_o], axis=-1)
++
++            model_cov_stddev = _tf.exp(model_cov_stddev)
++            return _tf.matmul(_tf.reshape(model_cov_stddev, [_batchSize, self.mix_size, self.var_size, 1], name="colVec"),
++                              _tf.reshape(model_cov_stddev, [_batchSize, self.mix_size, 1, self.var_size], name="rowVec"),
++                              name="baseCovMatrix")
++        
++        baseCovMatrix = _tf.cond(self.sampling, get_base_cov_var, get_base_cov)
++
++        # 1. rescale trainable vars
++        model_cov_corr = _tf.expand_dims(_tf.tanh(self.model_cov_corr), 0)
++        
++        # 3. add the correlation values from the model_cov_corr tensor
++        step = self.var_size-1
++        offset = [-1]
++        for i in range(self.var_size-1):
++            step = step - 1
++            offset.append(offset[-1] + step)
++        with _tf.name_scope("TransposedCorrelation"):
++            output = [[baseCovMatrix[:, :, x, y] if x == y else
++                       baseCovMatrix[:, :, x, y] * model_cov_corr[:, :, y + offset[x]] if x < y else
++                       baseCovMatrix[:, :, x, y] * model_cov_corr[:, :, x + offset[y]]
++                       for x in range(self.var_size)] for y in range(self.var_size)]
++        
++        model_cov = _tf.transpose(output, [2, 3, 0, 1], name="TransposeBack")     
+ 
++        # 4. extend the array sizes because we have to compute multiple overlaps between all Gaussians
++        model_m = _tf.expand_dims(_tf.expand_dims(model_m, 0), 2)
++        model_w = _tf.expand_dims(_tf.expand_dims(self.model_w, 0), 2)       
++        # note the cov matrix might be already different for each entry of the batch
++        model_cov = _tf.expand_dims(model_cov, 2) 
++
++
++        # 5. cut the parts from means and covariances based on the input and output indices
++        s11 = _tf.stop_gradient(_tf.gather(_tf.gather(model_cov, self.input_indices, axis=3), self.input_indices, axis=4))
++        s22 = _tf.gather(_tf.gather(model_cov, self.output_indices, axis=3), self.output_indices, axis=4)
++
++        s11I = _tf.linalg.pinv(s11)
++        s21 = _tf.gather(_tf.gather(
++            model_cov, self.output_indices, axis=3), self.input_indices, axis=4)
++        s12 = _tf.linalg.matrix_transpose(s21)
++
++        mu1 = _tf.gather(model_m, self.input_indices, axis=3)
++        mu2 = _tf.gather(model_m, self.output_indices, axis=3)
++
++        p = _tfd.MultivariateNormalTriL(
++            loc=mu1,
++            scale_tril=_tf.linalg.cholesky(s11)
++        )
+ 
++        # 6. extract input sizes
+         shape = _tf.shape(means)
+         batch_dim = shape[0]
+         input_mix_dim = shape[1]
+ 
++        # 7. expand the input gmm to allow the tensor thing
+         m = _tf.expand_dims(means, 1)
+         cov = _tf.expand_dims(covariances, 1)
+         w = _tf.expand_dims(weights, 1)
+ 
+-        out_m = self.mu2 + _tf.linalg.matmul(
+-            _tf.linalg.matmul(self.s21, self.s11I),
+-            _tf.expand_dims((m - self.mu1), 4)
++        # 8. some lin algebra :D
++        out_m = mu2 + _tf.linalg.matmul(
++            _tf.linalg.matmul(s21, s11I),
++            _tf.expand_dims((m - mu1), 4)
+         )[:, :, :, :, 0]
+ 
+         sigma_addon = _tf.linalg.matmul(_tf.linalg.matmul(_tf.linalg.matmul(
+-            _tf.linalg.matmul(self.s21, self.s11I),
++            _tf.linalg.matmul(s21, s11I),
+             cov),
+-            self.s11I), self.s12)
++            s11I), s12)
+ 
+-        out_cov = self.s22 - \
+-            _tf.matmul(_tf.matmul(self.s21, self.s11I), self.s12) + sigma_addon
++        out_cov = s22 - _tf.matmul(_tf.matmul(s21, s11I), s12) + sigma_addon
+ 
+-        prop = self.model_w * self.p.prob(m)
++        prop = model_w * p.prob(m)
+ 
+         total_prop = _tf.reduce_sum(prop, axis=1, keepdims=True)
+         prop = prop/total_prop
+         prop *= w
+ 
+         out_m = _tf.reshape(
+-            out_m, shape=[batch_dim, input_mix_dim*self.model_mix_dim, self.output_dim])
++            out_m, shape=[batch_dim, input_mix_dim*self.mix_size, self.output_dim])
+         out_cov = _tf.reshape(out_cov, shape=[
+-                              batch_dim, input_mix_dim*self.model_mix_dim, self.output_dim, self.output_dim])
+-        out_w = _tf.reshape(
+-            prop, shape=[batch_dim, input_mix_dim*self.model_mix_dim])
++                              batch_dim, input_mix_dim*self.mix_size, self.output_dim, self.output_dim])
++        out_w = _tf.reshape(prop, shape=[batch_dim, input_mix_dim*self.mix_size])
+ 
+         if self.n_components:
+             k = _tf.minimum(self.n_components,
+-                            input_mix_dim*self.model_mix_dim)
++                            input_mix_dim*self.mix_size)
+             topk = _tf.math.top_k(out_w, k=k)
+ 
+             out_w = topk.values
+             total_prop = _tf.reduce_sum(out_w, axis=1, keepdims=True)
+             out_w = out_w/total_prop
+ 
+             out_m = _tf.gather(out_m, topk.indices, axis=1, batch_dims=1)
+             out_cov = _tf.gather(out_cov, topk.indices, axis=1, batch_dims=1)
+ 
+         return {
+-            "means": out_m,
+-            "covariances": out_cov,
+-            "weights": out_w
+-
+-        }
+-
+-    @property
+-    def means_(self):
+-        return _tf.keras.backend.eval(self.model_m)[0, :, 0, :]
+-
+-    @property
+-    def covariances_(self):
+-        return _tf.keras.backend.eval(self.model_cov)[0, :, 0, :, :]   
+-
+-    @property
+-    def weights_(self):
+-        return _tf.keras.backend.eval(self.model_w)[0, :, 0]
++                "means": out_m,
++                "covariances": out_cov,
++                "weights": out_w
++            }
++    
++    
+ 
+     def get_config(self):
+         config = super().get_config().copy()
++
+         config.update({
+-            'output_indices': list(self.output_indices),
+-            'means': self.means_.tolist(),
+-            'covariances': self.covariances_.tolist(),
+-            'weights': self.weights_.tolist(),
+-            'n_components': self.n_components
++            'output_dim': self.output_dim,
++            'input_dim': self.input_dim,
++            'mix_size': self.mix_size,
++            'n_components  ': self.n_components,
+         })
+-        return config        
+-
+-class ConstGMR(_GMRmapping):
+-    """ A constant mapping layer using gaussian mixtures.
+-
+-    This layers can be used if a trained Gaussian mixture of the combined input and output coordinates are available.
+-
+-
+-    Example::
+-
+-        import mixturemapping as mm
+-        from sklearn.mixture import GaussianMixture
+-
+-        baseModel = GaussianMixture(n_components=50)
+-        baseModel.fit(combinedSamples)
+-
+-        gmr = mm.layers.ConstGMR(
+-            output_indices=[2, 3],
+-            means=baseModel.means_,
+-            covariances=baseModel.covariances_,
+-            weights=baseModel.weights_,
+-        )
+-
+-
+-    Parameters
+-    ----------
+-    output_indices : array 
+-        Array of the indices in the following distribution, which will server as output
+-    means : numpy array 
+-        Means array of the combined mixture distribution
+-        shape: [mix, inDim]
+-    covariances : numpy array 
+-        Covariances array of the combined mixture distribution
+-        shape: [mix, inDim, inDim]    
+-    weights : numpy array 
+-        Weights array of the combined mixture distribution
+-        shape: [mix]                    
+-        
+-
+-    Returns
+-    -------
+-    {
+-        "means" : Tensorflow Tensor
+-            Centers of the mixture distributions
+-        "covariances" : Tensorflow Tensor
+-            Covariance matrices of the distributions
+-        "weights" : Tensorflow Tensor
+-            Weights of the mixture components
+-    }
+-    """
+-    def __init__(self, output_indices, means, covariances, weights, n_components=None, **kwargs):
+-        super(ConstGMR, self).__init__(output_indices, n_components, **kwargs)
+-
+-        self.set_gmm(self._to_np(means), self._to_np(covariances), self._to_np(weights))
+-        self._update_matrices()
+-
+-    def set_gmm(self, means, covariances, weights):
+-        """ Set the initial GMM parameters
+-        
+-        Parameters
+-        ----------
+-        means : numpy array 
+-            Means array of the combined mixture distribution
+-            shape: [mix, inDim]
+-        covariances : numpy array 
+-            Covariances array of the combined mixture distribution
+-            shape: [mix, inDim, inDim]    
+-        weights : numpy array 
+-            Weights array of the combined mixture distribution
+-            shape: [mix]           
+-        """
+-        self.model_m = _tf.expand_dims(_tf.expand_dims(means, 0), 2)
+-        self.model_cov = _tf.expand_dims(_tf.expand_dims(covariances, 0), 2)
+-        self.model_w = _tf.expand_dims(_tf.expand_dims(weights, 0), 2)
+-
+-
+-class DynamicGMR(_GMRmapping):
+-    """ A constant mapping layer using gaussian mixtures.
+-
+-    This layers can be used if a trained Gaussian mixture of the combined input and output coordinates is available.
+-    In a further step the model can be also trained on samples.
+-
+-
+-    Example::
+-
+-        import mixturemapping as mm
+-        from sklearn.mixture import GaussianMixture
+-
+-        baseModel = GaussianMixture(n_components=50)
+-        baseModel.fit(combinedSamples)
+-
+-        gmr = mm.layers.DynamicGMR(
+-            output_indices=[2, 3],
+-            means=baseModel.means_,
+-            covariances=baseModel.covariances_,
+-            weights=baseModel.weights_,
+-        )
+-
+-        transformedDist = gmr({"means": inMeans, "covariances": cov, "weights": inWeight})
+-
+-        distLayer = mm.layers.Distribution(dtype=dataType, regularize_cov_epsilon=0.95)
+-        dist = distLayer(transformedDist)
+-
+-        sample_loss = distLayer.sample_loss(inTsamples)  
+-
+-
+-    Parameters
+-    ----------
+-    output_indices : array 
+-        Array of the indices in the following distribution, which will server as output
+-    means : numpy array 
+-        Means array of the combined mixture distribution
+-        shape: [mix, inDim]
+-    covariances : numpy array 
+-        Covariances array of the combined mixture distribution
+-        shape: [mix, inDim, inDim]    
+-    weights : numpy array 
+-        Weights array of the combined mixture distribution
+-        shape: [mix]                    
+-        
+-
+-    Returns
+-    -------
+-    {
+-        "means" : Tensorflow Tensor
+-            Centers of the mixture distributions
+-        "covariances" : Tensorflow Tensor
+-            Covariance matrices of the distributions
+-        "weights" : Tensorflow Tensor
+-            Weights of the mixture components
+-    }
+-    """
+-    def __init__(self, output_indices, means, covariances, weights, n_components=None, **kwargs):
+-        super(DynamicGMR, self).__init__(output_indices, n_components, **kwargs)
+-
+-        self.set_gmm(self._to_np(means), self._to_np(covariances), self._to_np(weights))
+-        self._update_matrices()
+-
+-
+-    def set_gmm(self, means, covariances, weights):
+-        """ Set the initial GMM parameters
+-        
+-        Parameters
+-        ----------
+-        means : numpy array 
+-            Means array of the combined mixture distribution
+-            shape: [mix, inDim]
+-        covariances : numpy array 
+-            Covariances array of the combined mixture distribution
+-            shape: [mix, inDim, inDim]    
+-        weights : numpy array 
+-            Weights array of the combined mixture distribution
+-            shape: [mix]           
+-        """
+-        # extract sizes
+-        self._mix_size = means.shape[0]
+-        self._var_size = means.shape[1]
+-        self._corr_size = int(self._var_size * (self._var_size-1) / 2)
+-
+-        self.input_indices = [i for i in range(self._var_size) if i not in self.output_indices]
+-
+-
+-        # transform inputs into the right shape
+-        input_spread = _np.array([_np.sqrt(_np.diagonal(m)) for m in covariances ])
+-        input_corr = covariances / _np.reshape(input_spread, [self._mix_size, 1, self._var_size]) / _np.reshape(input_spread, [self._mix_size, self._var_size, 1])
+-        triu_indices = _np.triu_indices(5, 1)
+-        input_corr = input_corr[:, triu_indices[0], triu_indices[1]]
+-        
+-        const_input_corr_idx = [idx for idx, (x, y) in enumerate(_np.transpose(triu_indices)) if x in self.input_indices and y in self.input_indices]
+-        var_input_corr_idx = [idx for idx in range(self._corr_size) if idx not in const_input_corr_idx]
+-
+-        # create the trainable means
+-        self._tf_means_var = self.add_weight(
+-            name='mean_var',
+-            shape=(self._mix_size, len(self.output_indices)),
+-            initializer='uniform',
+-            trainable=True            
+-        )
+-        self._tf_means_const = _tf.constant(
+-            means[:, self.input_indices],
+-            name='means_const'
+-        )
+-        # join the trainable and constant parts together
+-        self._tf_means = _tf.transpose([
+-            self._tf_means_var[:, self.output_indices.index(i)] if i in self.output_indices else self._tf_means_const[:, self.input_indices.index(i)]
+-            for i in range(self._var_size)
+-        ], name="means" )
+-
+-        # create the trainable standard deviations
+-        self._tf_spread_var_log = self.add_weight(
+-            name='spread_var_log',
+-            shape=(self._mix_size, len(self.output_indices)),
+-            initializer='uniform',
+-            trainable=True
+-        )
+-        self._tf_spread_var = _tf.exp(self._tf_spread_var_log, name="spread_var")
+-
+-        # create the constant parts
+-        self._tf_spread_const = _tf.constant(
+-            input_spread[:, self.input_indices],
+-            name='spread_const'
+-        )
+-
+-        # join the trainable and constant parts together
+-        self._tf_spread = _tf.transpose([
+-            self._tf_spread_var[:, self.output_indices.index(i)] if i in self.output_indices else self._tf_spread_const[:, self.input_indices.index(i)]
+-            for i in range(self._var_size)
+-        ], name="spread" )
+-
+-
+-        # create the trainable part of the correlation
+-        self._tf_corr_var_atanh = self.add_weight(
+-            name='corr_var',
+-            shape=(self._mix_size, len(var_input_corr_idx)),
+-            initializer='uniform',
+-            trainable=True
+-        )
+-        self._tf_corr_var = _tf.tanh(self._tf_corr_var_atanh, name="corr_var")
+-        self._tf_corr_const = _tf.constant(
+-            input_corr[:, const_input_corr_idx],
+-            name='corr_const'
+-        )
+-        # join the trainable and constant parts together
+-        self._tf_corr = _tf.transpose([
+-            self._tf_corr_var[:, var_input_corr_idx.index(i)] if i in var_input_corr_idx else self._tf_corr_const[:, const_input_corr_idx.index(i)]
+-            for i in range(self._corr_size)
+-        ], name="spread" )        
+-
+-        # create the constant part of the correlation
+-
+-        # compute the full [var_size x var_size] matrix from the stdDev tensor
+-        baseCovMatrix = _tf.matmul(_tf.reshape(self._tf_spread, [self._mix_size, self._var_size, 1], name="colVec"),
+-                                   _tf.reshape(self._tf_spread, [self._mix_size, 1, self._var_size], name="rowVec"),
+-                                   name="baseCovMatrix")
+-
+-        # offset matrix used to compute the index of the correlationTensor entry for the final matrix
+-        step = self._var_size-1
+-        offset = [-1]
+-        for i in range(self._var_size-1):
+-            step = step - 1
+-            offset.append(offset[-1] + step)
+-
+-        # apply the correlation
+-        with _tf.name_scope("TransposedCorrelation"):
+-            output = [[baseCovMatrix[:, x, y] if x == y else
+-                       baseCovMatrix[:, x, y] * self._tf_corr[:, y + offset[x]] if x < y else
+-                       baseCovMatrix[:, x, y] * self._tf_corr[:, x + offset[y]]
+-                       for x in range(self._var_size)] for y in range(self._var_size)]
+-        self._tf_covariances = _tf.transpose(output, name="TransposeBack")
+-
+-
+-        # create the trainable part of the correlation
+-        self._tf_weights_raw = self.add_weight(
+-            name='weights_raw',
+-            shape=(self._mix_size,),
+-            initializer='uniform',
+-            trainable=True,
+-        ) 
+-        weights_comp = _tf.abs(self._tf_weights_raw)
+-        weights_total = _tf.reduce_sum(weights_comp)
+-        self._tf_weights = weights_comp / weights_total
+-        
+-
+-        # set the trainable variable parts
+-        _tf.keras.backend.set_value(self._tf_spread_var_log, _np.log(input_spread[:, self.output_indices]))
+-        _tf.keras.backend.set_value(self._tf_means_var, means[:, self.output_indices])
+-        _tf.keras.backend.set_value(self._tf_corr_var_atanh, _np.arctanh(input_corr[:, var_input_corr_idx]))
+-        _tf.keras.backend.set_value(self._tf_weights_raw, weights)
+-
+-
+-        self.model_m = _tf.expand_dims(_tf.expand_dims(self._tf_means, 0), 2)
+-        self.model_cov = _tf.expand_dims(_tf.expand_dims(self._tf_covariances, 0), 2)
+-        self.model_w = _tf.expand_dims(_tf.expand_dims(self._tf_weights, 0), 2)
+-
+-
+-    def set_gmm_values(self, means, covariances, weights):
+-        """ Set the GMM parameters without creating new tensorflow operations
+-        
+-        Parameters
+-        ----------
+-        means : numpy array 
+-            Means array of the combined mixture distribution
+-            shape: [mix, inDim]
+-        covariances : numpy array 
+-            Covariances array of the combined mixture distribution
+-            shape: [mix, inDim, inDim]    
+-        weights : numpy array 
+-            Weights array of the combined mixture distribution
+-            shape: [mix]           
+-        """        
+-
+-
+-        # transform inputs into the right shape
+-        input_spread = _np.array([_np.sqrt(_np.diagonal(m)) for m in covariances ])
+-        input_corr = covariances / _np.reshape(input_spread, [self._mix_size, 1, self._var_size]) / _np.reshape(input_spread, [self._mix_size, self._var_size, 1])
+-        triu_indices = _np.triu_indices(5, 1)
+-        input_corr = input_corr[:, triu_indices[0], triu_indices[1]]
+-        
+-        const_input_corr_idx = [idx for idx, (x, y) in enumerate(_np.transpose(triu_indices)) if x in self._input_indices and y in self._input_indices]
+-        var_input_corr_idx = [idx for idx in range(self._corr_size) if idx not in const_input_corr_idx]
+-
+-        # set the trainable variable parts
+-        _tf.keras.backend.set_value(self._tf_spread_var_log, _np.log(input_spread[:, self.output_indices]))
+-        _tf.keras.backend.set_value(self._tf_means_var, means[:, self.output_indices])
+-        _tf.keras.backend.set_value(self._tf_corr_var_atanh, _np.arctanh(input_corr[:, var_input_corr_idx]))
+-        _tf.keras.backend.set_value(self._tf_weights_raw, weights)
++        return config
+```
+
+## src/layers/linearmapping.py
+
+```diff
+@@ -16,20 +16,18 @@
+ 
+ # tensorflow imports
+ import tensorflow as _tf
+ import tensorflow_probability as _tfp
+ _tfd = _tfp.distributions
+ 
+ # internal imports
+-from ._mapping import _Mapping
+-from mixturemapping.utils import lastEntryJacobian as _lastEntryJacobian
+-from mixturemapping.distributions import createMixDistBYmeanCovWeight as _createMixDistBYmeanCovWeight
+-from mixturemapping.distributions import regularizeCovMatrix as _regularizeCovMatrix
++from ._mapping import _M
++from mixturemapping.distributions import regularizeCovMatrix as _r
+ 
+-class LinearMapping(_Mapping):
++class LinearMapping(_M):
+     """ A free linear mapping layer, that maps centers and distributions independently.
+ 
+     This layers can be used if the relationship between input distributions
+     and output distributions is free and linear
+ 
+     Example::
+     
+@@ -122,15 +120,14 @@
+                 Covariance matrix `tf.Tensor` of the output mixture distribution
+                 shape: [batch, mix, outDim, outDim]
+             weights: Instance of `tf.Tensor`
+                 Weight `tf.Tensor` ot the mixture components
+                 shape: [batch, mix]
+         """
+ 
+-
+         # extract the batch size from the means tensor
+         _batchSize = _tf.shape(x["means"])[0]
+ 
+ 
+         # compute the mean values with our without sampling
+         means = _tf.cond(self.sampling,
+                          lambda: _tf.matmul(x["means"], self.kernel.sample(_batchSize)) +
+@@ -139,20 +136,33 @@
+                              x["means"], self.kernel_mean) + self.bias_mean
+                          )
+ 
+         # use the unsampled kernel for the distribution mapping
+         std_Kernel = _tf.expand_dims(_tf.expand_dims(
+             _tf.stop_gradient(self.kernel_mean), 0), 0)
+ 
+-        # extend stdDev Vectors
+-        bigStdDev = _tf.transpose(
+-            _tf.expand_dims(x["stdDevs"], 2), [0, 1, 3, 2])
+ 
+-        # compute the transformed standard deviations
+-        scaledKernel = _tf.multiply(bigStdDev, std_Kernel)
++        if "stdDevs" in x:
++            # if the input only contains standard deviations
++
++            # extend stdDev Vectors
++            bigStdDev = _tf.transpose(_tf.expand_dims(x["stdDevs"], 2), [0, 1, 3, 2])
++
++            # compute the transformed standard deviations
++            scaledKernel = _tf.multiply(bigStdDev, std_Kernel)
++        else:
++            # assume the input contains a covariance matrix x["covariances"]
++
++            # compute the squareroot of the covariance matrix
++            sqrtCov = _tf.linalg.sqrtm(x["covariances"])
++
++            # apply the kernel to transform the covariances
++            scaledKernel = _tf.matmul(sqrtCov, std_Kernel)
++
++
+ 
+         # compute Cov Matrix just given by the mapping from x to y
+         self.mappingCov = _tf.matmul(_tf.transpose(
+             scaledKernel, [0, 1, 3, 2]), scaledKernel)
+         cov = self.mappingCov
+ 
+         # add additional covariances if needed
+@@ -167,15 +177,15 @@
+                 # extend the mixture dimension if input covariance is independent
+                 cov = cov + _tf.expand_dims(x["covB"], 1)
+             else:
+                 cov = cov + x["covB"]
+ 
+         # and regularize it (correlation restricion to prevent cholesky transform errors)
+         if(self._regularize_cov_epsilon):
+-            self.covMatrix = _regularizeCovMatrix(
++            self.covMatrix = _r(
+                 cov, self._regularize_cov_epsilon)
+         else:
+             self.covMatrix = cov
+ 
+         return {
+             "means": means,
+             "covariances": self.covMatrix,
+```
+
+## Comparing `mixturemapping_binning-0.4.0.dist-info/METADATA` & `mixturemapping_binning-0.5.0.dist-info/METADATA`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: mixturemapping-binning
+-Version: 0.4.0
++Version: 0.5.0
+ Summary: UNKNOWN
+ Home-page: https://vk.github.io/mixturemapping-doc/
+ License: UNKNOWN
+ Keywords: binning mixturemapping
+ Platform: UNKNOWN
+ Classifier: Operating System :: OS Independent
+ Classifier: Programming Language :: Python
+```
+

@@ -9329,3 +9329,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:41:11] INFO root fetch - main [MainThread]: End processing [large-image-source-tifffile]: success
 [2023-05-21 22:41:12] INFO root fetch - main [MainThread]: End processing [large-image-source-vips]: success
 [2023-05-21 22:41:12] INFO root fetch - main [MainThread]: Store serial: [18189153]
+[2023-05-21 22:46:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189153]
+[2023-05-21 22:46:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-jaroslav-parallelSplitting
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mixturemapping-binning
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotjar-data-wrapper
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysolarmanv5
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: discoger
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: circuitpython-gauge
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tomte
+[2023-05-21 22:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lupin-grognard
+[2023-05-21 22:46:21] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-parallelSplitting]: New version: [20230521.20.42.770157] Old Version: [20230521.15.52.545939]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [discoger]: New version: [1.2.0] Old Version: [1.1.6]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [hotjar-data-wrapper]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [tomte]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [circuitpython-gauge]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [pysolarmanv5]: New version: [3.0.0] Old Version: [2.5.0]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [mixturemapping-binning]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-21 22:46:21] INFO root fetch - processPackages [discoger]: executing diffoscope
+[2023-05-21 22:46:21] INFO root fetch - processPackages [discoger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discoger-1.1.6.tar.gz tmp/discoger-1.2.0.tar.gz --markdown 20230521/d/discoger/1.1.6-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 22:46:21] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-21 22:46:21] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230521/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 22:46:21] INFO root fetch - processPackages [circuitpython-gauge]: executing diffoscope
+[2023-05-21 22:46:21] INFO root fetch - processPackages [circuitpython-gauge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-gauge-0.1.0.tar.gz tmp/circuitpython-gauge-0.2.0.tar.gz --markdown 20230521/c/circuitpython-gauge/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 22:46:21] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-parallelSplitting]: Downloading https://files.pythonhosted.org/packages/83/e9/f91fe040a2224e2a8f81c78bf365bef6b1c63a5730d0c2167c1bf88ec531/certora-cli-alpha-jaroslav-parallelSplitting-20230521.15.52.545939.tar.gz
+[2023-05-21 22:46:21] INFO root fetch - processPackages [tomte]: executing diffoscope
+[2023-05-21 22:46:21] INFO root fetch - processPackages [tomte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomte-0.2.8.tar.gz tmp/tomte-0.2.9.tar.gz --markdown 20230521/t/tomte/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 22:46:21] WARNING root fetch - processPackages [certora-cli-alpha-jaroslav-parallelSplitting]: Skipping package: exceeds size limit 38983453>=10485760
+[2023-05-21 22:46:21] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jaroslav-parallelSplitting] error
+[2023-05-21 22:46:21] INFO root fetch - processPackages [mixturemapping-binning]: Downloading https://files.pythonhosted.org/packages/de/cd/be95e27db0541c940f9e812d6c40168f95f14993b718473f0b41fb5124f2/mixturemapping_binning-0.4.0-py39-none-any.whl
+[2023-05-21 22:46:21] INFO root fetch - processPackages [pysolarmanv5]: Downloading https://files.pythonhosted.org/packages/f2/6b/477daf63058ebf69ef9a5a4f161e2b8e2ed9cdc320e6a72f1639e91d1d5f/pysolarmanv5-2.5.0.tar.gz
+[2023-05-21 22:46:22] INFO root fetch - processPackages [hotjar-data-wrapper]: executing diffoscope
+[2023-05-21 22:46:22] INFO root fetch - processPackages [hotjar-data-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotjar-data-wrapper-0.1.0.tar.gz tmp/hotjar-data-wrapper-0.1.1.tar.gz --markdown 20230521/h/hotjar-data-wrapper/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 22:46:22] INFO root fetch - processPackages [pysolarmanv5]: Downloading https://files.pythonhosted.org/packages/bb/b6/9c9ce9590b794916d50b3108e8e3cd30d26f86c3507d2551ce334eb457d2/pysolarmanv5-3.0.0.tar.gz
+[2023-05-21 22:46:22] INFO root fetch - processPackages [mixturemapping-binning]: Downloading https://files.pythonhosted.org/packages/f0/12/6278c0a1bc0efe2b41b1900c729a5ac26048a0211a8c00f55e5284aa747c/mixturemapping_binning-0.5.0-py39-none-any.whl
+[2023-05-21 22:46:22] INFO root fetch - processPackages [pysolarmanv5]: executing diffoscope
+[2023-05-21 22:46:22] INFO root fetch - processPackages [pysolarmanv5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysolarmanv5-2.5.0.tar.gz tmp/pysolarmanv5-3.0.0.tar.gz --markdown 20230521/p/pysolarmanv5/2.5.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-21 22:46:22] INFO root fetch - processPackages [mixturemapping-binning]: executing diffoscope
+[2023-05-21 22:46:22] INFO root fetch - processPackages [mixturemapping-binning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixturemapping_binning-0.4.0-py39-none-any.whl.zip tmp/mixturemapping_binning-0.5.0-py39-none-any.whl.zip --markdown 20230521/m/mixturemapping-binning/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [discoger]: success
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [hotjar-data-wrapper]: success
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [tomte]: success
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [circuitpython-gauge]: success
+[2023-05-21 22:46:23] INFO root fetch - main [MainThread]: End processing [pysolarmanv5]: success
+[2023-05-21 22:46:24] INFO root fetch - main [MainThread]: End processing [mixturemapping-binning]: success
+[2023-05-21 22:46:24] INFO root fetch - main [MainThread]: Store serial: [18189182]
