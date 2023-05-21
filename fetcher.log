@@ -818,3 +818,75 @@
 [2023-05-21 02:11:39] INFO root fetch - main [MainThread]: End processing [Wavelink]: success
 [2023-05-21 02:11:47] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2023-05-21 02:11:47] INFO root fetch - main [MainThread]: Store serial: [18184818]
+[2023-05-21 02:16:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184818]
+[2023-05-21 02:16:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantic-counter
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cwsearch-utils
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-events-notify
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-gitlab-runner
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-events-notify
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-watchful
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: longalpha-utils
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mlflow-tmp
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-skylight
+[2023-05-21 02:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zxkane.cdk-construct-simple-nat
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [semantic-counter]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [longalpha-utils]: New version: [0.49] Old Version: [0.48]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-watchful]: New version: [0.6.99] Old Version: [0.6.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230521/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-watchful]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-watchful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-watchful-0.6.98.tar.gz tmp/cdk-watchful-0.6.99.tar.gz --markdown 20230521/c/cdk-watchful/0.6.98-0.6.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [semantic-counter]: Downloading https://files.pythonhosted.org/packages/6e/36/2e6388c89b922e0921ce61d181c3ef573558c0849d61862477f43f5c03f8/semantic_counter-0.0.2.tar.gz
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20230521/c/cdktf-gitlab-runner/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [mlflow-tmp]: Downloading https://files.pythonhosted.org/packages/22/bc/93f3eef7d2163a2b7a59252baffa2d45e5495c7ff40e5c66a94a208d2dc5/mlflow_tmp-2.2.9.tar.gz
+[2023-05-21 02:16:56] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz --markdown 20230521/z/zxkane.cdk-construct-simple-nat/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20230521/c/cdk-skylight/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230521/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [longalpha-utils]: Downloading https://files.pythonhosted.org/packages/ed/40/e8ce1cc9669dbb5340cbee2f30574853e6e803e7b3e02e4a06d846ad3e4f/longalpha_utils-0.49.tar.gz
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230521/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 02:16:56] INFO root fetch - processPackages [semantic-counter]: Downloading https://files.pythonhosted.org/packages/1f/1c/96cac0507a1b3e754dc4d37df23287eac0af5c94a6be4eb535acf75c6df5/semantic_counter-0.0.3.tar.gz
+[2023-05-21 02:16:56] INFO root fetch - processPackages [longalpha-utils]: executing diffoscope
+[2023-05-21 02:16:56] INFO root fetch - processPackages [longalpha-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longalpha_utils-0.48.tar.gz tmp/longalpha_utils-0.49.tar.gz --markdown 20230521/l/longalpha-utils/0.48-0.49/diff.md --exclude *.pyd
+[2023-05-21 02:16:57] INFO root fetch - processPackages [semantic-counter]: executing diffoscope
+[2023-05-21 02:16:57] INFO root fetch - processPackages [semantic-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_counter-0.0.2.tar.gz tmp/semantic_counter-0.0.3.tar.gz --markdown 20230521/s/semantic-counter/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cwsearch-utils]: Start processing: cdk-amazon-chime-resources
+[2023-05-21 02:16:58] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-amazon-chime-resources]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Downloading https://files.pythonhosted.org/packages/15/ac/bee4d7971c4b31f5809d546f8f4d120d37a258cdbfb28775825c6a72b324/cdk-amazon-chime-resources-2.3.8.tar.gz
+[2023-05-21 02:16:58] WARNING root fetch - processPackages [cdk-amazon-chime-resources]: Skipping package: exceeds size limit 14200774>=10485760
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Start processing: cdk-common
+[2023-05-21 02:16:58] INFO root fetch - main [MainThread]: End processing [cdk-amazon-chime-resources] error
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230521/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:16:58] INFO root fetch - processPackages [cdk-skylight]: Start processing: to-pip
+[2023-05-21 02:16:58] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2023-05-21 02:16:58] INFO root fetch - processPackages [to-pip]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-21 02:16:58] INFO root fetch - processPackages [to-pip]: executing diffoscope
+[2023-05-21 02:16:58] INFO root fetch - processPackages [to-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-pip-2.0.3.tar.gz tmp/to-pip-2.0.4.tar.gz --markdown 20230521/t/to-pip/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-21 02:16:58] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2023-05-21 02:16:58] INFO root fetch - main [MainThread]: End processing [semantic-counter]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [cdk-watchful]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [zxkane.cdk-construct-simple-nat]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [longalpha-utils]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-05-21 02:16:59] INFO root fetch - main [MainThread]: End processing [to-pip]: success
+[2023-05-21 02:17:03] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 02:17:03] INFO root fetch - main [MainThread]: Store serial: [18184856]
