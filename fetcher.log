@@ -2684,3 +2684,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:15:59] INFO root fetch - main [MainThread]: End processing [tvdcn]: success
 [2023-05-21 07:16:01] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-05-21 07:16:01] INFO root fetch - main [MainThread]: Store serial: [18185736]
+[2023-05-21 07:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185736]
+[2023-05-21 07:21:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 07:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-meta-preview
+[2023-05-21 07:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panml
+[2023-05-21 07:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nyckel
+[2023-05-21 07:21:10] INFO root fetch - processPackages [wagtail-meta-preview]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 07:21:10] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 07:21:10] INFO root fetch - processPackages [panml]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-21 07:21:11] INFO root fetch - processPackages [wagtail-meta-preview]: Downloading https://files.pythonhosted.org/packages/08/40/5e78654810c91495d7ab99be34b0b3f91c5140081af88d201907608f6055/wagtail-meta-preview-2.0.0.tar.gz
+[2023-05-21 07:21:11] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/ad/0c/583b6e90803af99438d549b1b953b75f9688fedcebccce4c940a7d30977a/panml-0.0.13.tar.gz
+[2023-05-21 07:21:11] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-21 07:21:11] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230521/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 07:21:11] INFO root fetch - processPackages [wagtail-meta-preview]: Downloading https://files.pythonhosted.org/packages/cb/88/3486d6619fec80994658ad25b1796db655f88bd81cd091adefcd8518ef88/wagtail-meta-preview-2.0.1.tar.gz
+[2023-05-21 07:21:11] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/f6/1c/6b34c33287e364181a4c8d3104acaaf21f8bf0d6d397a1b77f6e7c9b557b/panml-0.0.14.tar.gz
+[2023-05-21 07:21:11] INFO root fetch - processPackages [wagtail-meta-preview]: executing diffoscope
+[2023-05-21 07:21:11] INFO root fetch - processPackages [wagtail-meta-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-meta-preview-2.0.0.tar.gz tmp/wagtail-meta-preview-2.0.1.tar.gz --markdown 20230521/w/wagtail-meta-preview/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 07:21:11] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-05-21 07:21:11] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.13.tar.gz tmp/panml-0.0.14.tar.gz --markdown 20230521/p/panml/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-21 07:21:12] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-21 07:21:12] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-05-21 07:21:12] INFO root fetch - main [MainThread]: End processing [wagtail-meta-preview]: success
+[2023-05-21 07:21:12] INFO root fetch - main [MainThread]: Store serial: [18185746]
