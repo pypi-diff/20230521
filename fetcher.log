@@ -8125,3 +8125,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:08:46] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2023-05-21 20:09:49] INFO root fetch - main [MainThread]: End processing [hugedict]: success
 [2023-05-21 20:09:49] INFO root fetch - main [MainThread]: Store serial: [18188472]
+[2023-05-21 20:15:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188472]
+[2023-05-21 20:15:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reactivated
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simba-UW-tf-dev
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixt
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poltergeist
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: taskanalytics-data-wrapper
+[2023-05-21 20:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-kacl
+[2023-05-21 20:15:09] INFO root fetch - processPackages [poltergeist]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-21 20:15:09] INFO root fetch - processPackages [agixt]: New version: [1.1.58b0] Old Version: [1.1.57b0]
+[2023-05-21 20:15:09] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 20:15:09] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.57b0.tar.gz tmp/agixt-1.1.58b0.tar.gz --markdown 20230521/a/agixt/1.1.57b0-1.1.58b0/diff.md --exclude *.pyd
+[2023-05-21 20:15:09] INFO root fetch - processPackages [taskanalytics-data-wrapper]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-21 20:15:09] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.60.3] Old Version: [1.60.2]
+[2023-05-21 20:15:09] INFO root fetch - processPackages [poltergeist]: executing diffoscope
+[2023-05-21 20:15:09] INFO root fetch - processPackages [poltergeist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poltergeist-0.6.1.tar.gz tmp/poltergeist-0.7.0.tar.gz --markdown 20230521/p/poltergeist/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-21 20:15:09] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-21 20:15:09] INFO root fetch - processPackages [python-kacl]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-21 20:15:10] INFO root fetch - processPackages [taskanalytics-data-wrapper]: Downloading https://files.pythonhosted.org/packages/24/d7/0935e0e4c6d14a8328babc21d9f6326f81bd1eca77ae8c17d9b94c6652f5/taskanalytics_data_wrapper-0.1.1.tar.gz
+[2023-05-21 20:15:10] INFO root fetch - processPackages [python-kacl]: Downloading https://files.pythonhosted.org/packages/52/74/4c5812c58eaef4a8e0ac896b85e7263039fae9fbddaef6b79684cdaf7b1a/python-kacl-0.3.4.tar.gz
+[2023-05-21 20:15:10] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-21 20:15:10] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230521/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-21 20:15:10] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/cb/10/b25aaf2877eb1615e4764f9eee69d9506547a79d4ff36407e1fd0d4ce01c/Simba-UW-tf-dev-1.60.3.tar.gz
+[2023-05-21 20:15:10] INFO root fetch - processPackages [taskanalytics-data-wrapper]: Downloading https://files.pythonhosted.org/packages/da/93/7cfc6eff8016dd19aeaf4b75f4036f505e0a104c80e0d56c09aa3cedfb27/taskanalytics-data-wrapper-0.1.2.tar.gz
+[2023-05-21 20:15:10] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-05-21 20:15:10] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.60.2.tar.gz tmp/Simba-UW-tf-dev-1.60.3.tar.gz --markdown 20230521/S/Simba-UW-tf-dev/1.60.2-1.60.3/diff.md --exclude *.pyd
+[2023-05-21 20:15:10] INFO root fetch - processPackages [python-kacl]: Downloading https://files.pythonhosted.org/packages/5f/01/99afe0096a2deea18a244c78d9dd87c3cbc168142690f487aa81de49ecf1/python-kacl-0.4.0.tar.gz
+[2023-05-21 20:15:10] INFO root fetch - processPackages [taskanalytics-data-wrapper]: executing diffoscope
+[2023-05-21 20:15:10] INFO root fetch - processPackages [taskanalytics-data-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskanalytics_data_wrapper-0.1.1.tar.gz tmp/taskanalytics-data-wrapper-0.1.2.tar.gz --markdown 20230521/t/taskanalytics-data-wrapper/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-21 20:15:10] INFO root fetch - processPackages [python-kacl]: executing diffoscope
+[2023-05-21 20:15:10] INFO root fetch - processPackages [python-kacl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-kacl-0.3.4.tar.gz tmp/python-kacl-0.4.0.tar.gz --markdown 20230521/p/python-kacl/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [poltergeist]: success
+[2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [taskanalytics-data-wrapper]: success
+[2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [python-kacl]: success
+[2023-05-21 20:15:16] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-05-21 20:15:16] INFO root fetch - main [MainThread]: Store serial: [18188489]
