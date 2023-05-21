@@ -1263,3 +1263,59 @@
 [2023-05-21 02:49:00] INFO root fetch - main [MainThread]: End processing [tiktokget]: success
 [2023-05-21 02:49:12] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-21 02:49:12] INFO root fetch - main [MainThread]: Store serial: [18185045]
+[2023-05-21 02:54:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185045]
+[2023-05-21 02:54:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smashed
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: projen
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jefferson-street-composer
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-slack-chatbot
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-databrew-cicd
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BTKSorgu
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mlflow-tmp
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: makim
+[2023-05-21 02:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: k-diffusion
+[2023-05-21 02:54:21] INFO root fetch - processPackages [jefferson-street-composer]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [smashed]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [BTKSorgu]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [k-diffusion]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [makim]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-21 02:54:21] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-21 02:54:21] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230521/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:54:21] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 02:54:21] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 02:54:21] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-21 02:54:21] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230521/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-21 02:54:21] INFO root fetch - processPackages [smashed]: Downloading https://files.pythonhosted.org/packages/a2/1d/fb98029bb479c5cdcc34971ad24719ae745d90ff912ec404b6d0487d9679/smashed-0.8.0.tar.gz
+[2023-05-21 02:54:21] INFO root fetch - processPackages [jefferson-street-composer]: Downloading https://files.pythonhosted.org/packages/a4/59/ed5f4e9795e92cb74d8ff1ba3587f64ddd94ce5ffc1ea4735b6a231cdf18/jefferson-street-composer-1.0.1.tar.gz
+[2023-05-21 02:54:21] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/8c/be/1e6983bb50d2173efef6c98aa34e39c6902966b3aba423cade9ac88256d6/BTKSorgu-1.3.5.tar.gz
+[2023-05-21 02:54:21] INFO root fetch - processPackages [k-diffusion]: Downloading https://files.pythonhosted.org/packages/0d/72/41a1c228774ffd96f1be4b28371a5bf294ba57cdb26eb672249b4e0ad844/k-diffusion-0.0.8.tar.gz
+[2023-05-21 02:54:21] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-21 02:54:21] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.3.4.tar.gz tmp/BTKSorgu-1.3.5.tar.gz --markdown 20230521/B/BTKSorgu/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-21 02:54:22] INFO root fetch - processPackages [makim]: Downloading https://files.pythonhosted.org/packages/d3/80/79343793697068b0ee8e9f6da3c98bd49cfe4ddc2c59933750172ce9c967/makim-1.8.1.tar.gz
+[2023-05-21 02:54:22] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-05-21 02:54:22] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230521/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:54:22] INFO root fetch - processPackages [jefferson-street-composer]: Downloading https://files.pythonhosted.org/packages/88/64/c45a6bfbddd8edbe8f050e312a6d10086f8fcfea3196e3330c662d4477ff/jefferson-street-composer-1.1.0.tar.gz
+[2023-05-21 02:54:22] INFO root fetch - processPackages [makim]: executing diffoscope
+[2023-05-21 02:54:22] INFO root fetch - processPackages [makim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makim-1.8.0.tar.gz tmp/makim-1.8.1.tar.gz --markdown 20230521/m/makim/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-21 02:54:22] INFO root fetch - processPackages [smashed]: Downloading https://files.pythonhosted.org/packages/8a/e3/86e471085f74f3a1f12af9e50e7861ecb1349ffc9f792e0898d67870a877/smashed-0.9.0.tar.gz
+[2023-05-21 02:54:22] INFO root fetch - processPackages [jefferson-street-composer]: executing diffoscope
+[2023-05-21 02:54:22] INFO root fetch - processPackages [jefferson-street-composer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-composer-1.0.1.tar.gz tmp/jefferson-street-composer-1.1.0.tar.gz --markdown 20230521/j/jefferson-street-composer/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 02:54:22] INFO root fetch - processPackages [k-diffusion]: Downloading https://files.pythonhosted.org/packages/3b/cf/c861651a67432318f53f2e28be78101a08d2455b49f90a912a4aa100d5c1/k-diffusion-0.0.9.tar.gz
+[2023-05-21 02:54:22] INFO root fetch - processPackages [k-diffusion]: executing diffoscope
+[2023-05-21 02:54:22] INFO root fetch - processPackages [k-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k-diffusion-0.0.8.tar.gz tmp/k-diffusion-0.0.9.tar.gz --markdown 20230521/k/k-diffusion/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 02:54:22] INFO root fetch - processPackages [smashed]: executing diffoscope
+[2023-05-21 02:54:22] INFO root fetch - processPackages [smashed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smashed-0.8.0.tar.gz tmp/smashed-0.9.0.tar.gz --markdown 20230521/s/smashed/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 02:54:23] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-21 02:54:23] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-21 02:54:23] INFO root fetch - main [MainThread]: End processing [jefferson-street-composer]: success
+[2023-05-21 02:54:23] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-05-21 02:54:23] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-21 02:54:24] INFO root fetch - main [MainThread]: End processing [k-diffusion]: success
+[2023-05-21 02:54:24] INFO root fetch - main [MainThread]: End processing [smashed]: success
+[2023-05-21 02:54:24] INFO root fetch - main [MainThread]: End processing [makim]: success
+[2023-05-21 02:54:26] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 02:54:26] INFO root fetch - main [MainThread]: Store serial: [18185073]
