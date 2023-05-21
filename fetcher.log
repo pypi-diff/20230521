@@ -4859,3 +4859,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:40:21] INFO root fetch - main [MainThread]: End processing [iters]: success
 [2023-05-21 13:40:22] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-05-21 13:40:22] INFO root fetch - main [MainThread]: Store serial: [18186826]
+[2023-05-21 13:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186826]
+[2023-05-21 13:45:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 13:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gym-saturation
+[2023-05-21 13:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: communica
+[2023-05-21 13:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kikuchipy
+[2023-05-21 13:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pix2tex
+[2023-05-21 13:45:31] INFO root fetch - processPackages [communica]: New version: [0.2.1b2] Old Version: [0.2.1b1]
+[2023-05-21 13:45:31] INFO root fetch - processPackages [gym-saturation]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-21 13:45:31] INFO root fetch - processPackages [pix2tex]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-21 13:45:31] INFO root fetch - processPackages [kikuchipy]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-21 13:45:31] INFO root fetch - processPackages [communica]: Downloading https://files.pythonhosted.org/packages/8e/ba/64a3e8b71ce1861032a7a61d561a2aca85973424b3b440580fbbe2932fd4/communica-0.2.1b2.tar.gz
+[2023-05-21 13:45:31] INFO root fetch - processPackages [gym-saturation]: Downloading https://files.pythonhosted.org/packages/a1/28/ff4b16cdf85c4a62f8ac5d0965076231ba341bb8627385755e30800edc2d/gym_saturation-0.9.2.tar.gz
+[2023-05-21 13:45:31] INFO root fetch - processPackages [kikuchipy]: Downloading https://files.pythonhosted.org/packages/c7/05/be54b446cbe38e51ee09c3afc31d943919437f4941b2733fdb41c279d6cc/kikuchipy-0.8.4.tar.gz
+[2023-05-21 13:45:31] INFO root fetch - processPackages [pix2tex]: Downloading https://files.pythonhosted.org/packages/5c/26/9890e7f84acfe7369743da7bf7176d4913f3e680782444a61399c33c9261/pix2tex-0.1.1-py3-none-any.whl
+[2023-05-21 13:45:31] INFO root fetch - processPackages [communica]: executing diffoscope
+[2023-05-21 13:45:31] INFO root fetch - processPackages [communica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communica-0.2.1b1.tar.gz tmp/communica-0.2.1b2.tar.gz --markdown 20230521/c/communica/0.2.1b1-0.2.1b2/diff.md --exclude *.pyd
+[2023-05-21 13:45:32] INFO root fetch - processPackages [gym-saturation]: Downloading https://files.pythonhosted.org/packages/72/43/ead26fdc1c43cba43dcebaaa10e41fb56239fa33e174049c222d2e3eec2b/gym_saturation-0.9.3.tar.gz
+[2023-05-21 13:45:32] INFO root fetch - processPackages [kikuchipy]: Downloading https://files.pythonhosted.org/packages/86/62/c35bd5dd5b1dd97ceea2cd9d8dc766eb23213f953c9c0aae7e4fc7859c06/kikuchipy-0.8.5.tar.gz
+[2023-05-21 13:45:32] INFO root fetch - processPackages [pix2tex]: Downloading https://files.pythonhosted.org/packages/ef/51/e5a49cee59c8632723a18f7b1a5f2d431825f589b12f6d61891ba020d8fb/pix2tex-0.1.2-py3-none-any.whl
+[2023-05-21 13:45:32] INFO root fetch - processPackages [gym-saturation]: executing diffoscope
+[2023-05-21 13:45:32] INFO root fetch - processPackages [gym-saturation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_saturation-0.9.2.tar.gz tmp/gym_saturation-0.9.3.tar.gz --markdown 20230521/g/gym-saturation/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-21 13:45:32] INFO root fetch - processPackages [pix2tex]: executing diffoscope
+[2023-05-21 13:45:32] INFO root fetch - processPackages [pix2tex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pix2tex-0.1.1-py3-none-any.whl.zip tmp/pix2tex-0.1.2-py3-none-any.whl.zip --markdown 20230521/p/pix2tex/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-21 13:45:32] INFO root fetch - processPackages [kikuchipy]: executing diffoscope
+[2023-05-21 13:45:32] INFO root fetch - processPackages [kikuchipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kikuchipy-0.8.4.tar.gz tmp/kikuchipy-0.8.5.tar.gz --markdown 20230521/k/kikuchipy/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-21 13:45:33] INFO root fetch - main [MainThread]: End processing [communica]: success
+[2023-05-21 13:45:33] INFO root fetch - main [MainThread]: End processing [gym-saturation]: success
+[2023-05-21 13:45:33] INFO root fetch - main [MainThread]: End processing [pix2tex]: success
+[2023-05-21 13:45:35] INFO root fetch - main [MainThread]: End processing [kikuchipy]: success
+[2023-05-21 13:45:35] INFO root fetch - main [MainThread]: Store serial: [18186837]
