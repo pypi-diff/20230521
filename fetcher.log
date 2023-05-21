@@ -8912,3 +8912,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:04:10] INFO root fetch - main [MainThread]: End processing [bed-reader]: success
 [2023-05-21 22:04:13] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-dynatrace]: success
 [2023-05-21 22:04:13] INFO root fetch - main [MainThread]: Store serial: [18188885]
+[2023-05-21 22:09:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188885]
+[2023-05-21 22:09:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 22:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aij
+[2023-05-21 22:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbrlabs-pulumi-grafana
+[2023-05-21 22:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openapi-pydantic
+[2023-05-21 22:09:28] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: New version: [0.0.9a1676744459] Old Version: [0.0.9]
+[2023-05-21 22:09:28] INFO root fetch - processPackages [openapi-pydantic]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-21 22:09:28] INFO root fetch - processPackages [aij]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 22:09:28] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: executing diffoscope
+[2023-05-21 22:09:28] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_grafana-0.0.9.tar.gz tmp/lbrlabs_pulumi_grafana-0.0.9a1676744459.tar.gz --markdown 20230521/l/lbrlabs-pulumi-grafana/0.0.9-0.0.9a1676744459/diff.md --exclude *.pyd
+[2023-05-21 22:09:28] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/45/05/46d069ade280a2b6efabdd1aa36a5e67b6feb955bfe8bfbbf5fe3b5c4d60/aij-1.0.9.tar.gz
+[2023-05-21 22:09:28] INFO root fetch - processPackages [openapi-pydantic]: Downloading https://files.pythonhosted.org/packages/09/9c/4bae14cd645fedf426d70b51326449d5037dd7ac62d9421f05d8edce81d5/openapi_pydantic-0.2.0.tar.gz
+[2023-05-21 22:09:28] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-21 22:09:28] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.0.8.tar.gz tmp/aij-1.0.9.tar.gz --markdown 20230521/a/aij/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 22:09:28] INFO root fetch - processPackages [openapi-pydantic]: executing diffoscope
+[2023-05-21 22:09:28] INFO root fetch - processPackages [openapi-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_pydantic-0.1.1.tar.gz tmp/openapi_pydantic-0.2.0.tar.gz --markdown 20230521/o/openapi-pydantic/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 22:09:29] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-21 22:09:29] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
+[2023-05-21 22:09:30] INFO root fetch - main [MainThread]: End processing [openapi-pydantic]: success
+[2023-05-21 22:09:30] INFO root fetch - main [MainThread]: Store serial: [18188916]
