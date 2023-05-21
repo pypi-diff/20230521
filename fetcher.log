@@ -9516,3 +9516,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [aliot-py]: success
 [2023-05-21 23:02:31] INFO root fetch - main [MainThread]: Store serial: [18189252]
+[2023-05-21 23:07:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189252]
+[2023-05-21 23:07:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyclean
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ondewo-vtsi-client
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rmmbr
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embykeeper
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dorado
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: appa
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: heaserver-folders-aws-s3
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ldimbenchmark
+[2023-05-21 23:07:40] INFO root fetch - processPackages [appa]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [pyclean]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [rmmbr]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ondewo-vtsi-client]: New version: [6.2.0] Old Version: [6.1.0]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [embykeeper]: New version: [2.1.0] Old Version: [2.0.9]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 23:07:40] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 23:07:40] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 23:07:40] INFO root fetch - processPackages [appa]: Downloading https://files.pythonhosted.org/packages/c2/ed/2af9538a4db6b8bf5ab064a76f41ba0231b91522b9df296848782f8aab0e/appa-0.2.0.tar.gz
+[2023-05-21 23:07:40] INFO root fetch - processPackages [rmmbr]: Downloading https://files.pythonhosted.org/packages/ee/c7/c802a78e2aeeb3bf971073dc8473b66d9044406b200093b352ad6de10327/rmmbr-0.0.6.tar.gz
+[2023-05-21 23:07:40] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2023-05-21 23:07:40] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230521/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ondewo-vtsi-client]: Downloading https://files.pythonhosted.org/packages/bc/3f/73bfa39b68bb9d839ce7ea003e81792a0c89a1acc9b364be8eb50f8dd3ce/ondewo-vtsi-client-6.2.0.tar.gz
+[2023-05-21 23:07:40] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/6c/13/3633caf1ad55089f5d3ab59e77f7a91dfbffd9f9cda2552874c628276e82/ldimbenchmark-0.2.6.tar.gz
+[2023-05-21 23:07:40] INFO root fetch - processPackages [pyclean]: Downloading https://files.pythonhosted.org/packages/00/e2/e5e80295db3ee9fd48130263b11721f374e3c83c15c52b5e101491318802/pyclean-2.7.2.tar.gz
+[2023-05-21 23:07:40] WARNING root fetch - processPackages [appa]: Skipping package: exceeds size limit 11653822>=10485760
+[2023-05-21 23:07:40] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/ec/83/907254058ca341691a913812243011b96321f947b575d9bdcde0b2c023c2/embykeeper-2.0.9.tar.gz
+[2023-05-21 23:07:40] INFO root fetch - main [MainThread]: End processing [appa] error
+[2023-05-21 23:07:41] INFO root fetch - processPackages [ondewo-vtsi-client]: executing diffoscope
+[2023-05-21 23:07:41] INFO root fetch - processPackages [ondewo-vtsi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-vtsi-client-6.1.0.tar.gz tmp/ondewo-vtsi-client-6.2.0.tar.gz --markdown 20230521/o/ondewo-vtsi-client/6.1.0-6.2.0/diff.md --exclude *.pyd
+[2023-05-21 23:07:41] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-21 23:07:41] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.5.tar.gz tmp/ldimbenchmark-0.2.6.tar.gz --markdown 20230521/l/ldimbenchmark/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-21 23:07:41] INFO root fetch - processPackages [rmmbr]: Downloading https://files.pythonhosted.org/packages/68/a1/4fe3f3fb41b60cecd89950ce629c519918b0afdc240ca6c16ae72855b02e/rmmbr-0.0.7.tar.gz
+[2023-05-21 23:07:41] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/25/8c/c372b3bad8f9b546e842cccf871e5d1f454d18dc9944c971551dc18cd792/embykeeper-2.1.0.tar.gz
+[2023-05-21 23:07:41] INFO root fetch - processPackages [pyclean]: Downloading https://files.pythonhosted.org/packages/2b/51/b27b335d625a0c9edb12431ee549e02da22298eaa35d149c5bb868d0052f/pyclean-2.7.3.tar.gz
+[2023-05-21 23:07:41] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2023-05-21 23:07:41] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-2.0.9.tar.gz tmp/embykeeper-2.1.0.tar.gz --markdown 20230521/e/embykeeper/2.0.9-2.1.0/diff.md --exclude *.pyd
+[2023-05-21 23:07:41] INFO root fetch - processPackages [pyclean]: executing diffoscope
+[2023-05-21 23:07:41] INFO root fetch - processPackages [pyclean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclean-2.7.2.tar.gz tmp/pyclean-2.7.3.tar.gz --markdown 20230521/p/pyclean/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-05-21 23:07:41] INFO root fetch - processPackages [rmmbr]: executing diffoscope
+[2023-05-21 23:07:41] INFO root fetch - processPackages [rmmbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmmbr-0.0.6.tar.gz tmp/rmmbr-0.0.7.tar.gz --markdown 20230521/r/rmmbr/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 23:07:42] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 23:07:42] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2023-05-21 23:07:42] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-21 23:07:42] INFO root fetch - main [MainThread]: End processing [ondewo-vtsi-client]: success
+[2023-05-21 23:07:42] INFO root fetch - main [MainThread]: End processing [rmmbr]: success
+[2023-05-21 23:07:43] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2023-05-21 23:07:43] INFO root fetch - main [MainThread]: End processing [pyclean]: success
+[2023-05-21 23:07:43] INFO root fetch - main [MainThread]: Store serial: [18189276]
