@@ -2841,3 +2841,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:02:36] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.6.2.tar.gz tmp/lantana-2.6.4.tar.gz --markdown 20230521/l/lantana/2.6.2-2.6.4/diff.md --exclude *.pyd
 [2023-05-21 08:02:37] INFO root fetch - main [MainThread]: End processing [lantana]: success
 [2023-05-21 08:02:37] INFO root fetch - main [MainThread]: Store serial: [18185851]
+[2023-05-21 08:07:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185851]
+[2023-05-21 08:07:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 08:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cm2py
+[2023-05-21 08:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2023-05-21 08:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lantana
+[2023-05-21 08:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: miraie-ac
+[2023-05-21 08:07:47] INFO root fetch - processPackages [lantana]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-21 08:07:47] INFO root fetch - processPackages [cm2py]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-21 08:07:47] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230520] Old Version: [2.4.0.dev20230519]
+[2023-05-21 08:07:47] INFO root fetch - processPackages [miraie-ac]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 08:07:48] INFO root fetch - processPackages [cm2py]: Downloading https://files.pythonhosted.org/packages/d8/71/2bc517de480aaf3f4d95e33571c8b8958710518bb9a12f5b68957a7d0046/cm2py-0.0.3.tar.gz
+[2023-05-21 08:07:48] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-21 08:07:48] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230519.tar.gz tmp/pyg_nightly-2.4.0.dev20230520.tar.gz --markdown 20230521/p/pyg-nightly/2.4.0.dev20230519-2.4.0.dev20230520/diff.md --exclude *.pyd
+[2023-05-21 08:07:48] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/00/3a/50a0a122b7d370e5421c2add1f080c87a5fde0befe5516e5312cce901f53/miraie-ac-0.2.8.tar.gz
+[2023-05-21 08:07:48] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/9f/8e/4550bba5e2494223a7808df2fa795d4c5ba55c0cb54c36cd4026eeaae59d/lantana-2.6.5.tar.gz
+[2023-05-21 08:07:48] INFO root fetch - processPackages [cm2py]: Downloading https://files.pythonhosted.org/packages/1e/cb/1b77a022136fb93986dda17026cf5b201526d3c2cdcd183372f382294f90/cm2py-0.1.0.tar.gz
+[2023-05-21 08:07:48] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2023-05-21 08:07:48] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.6.4.tar.gz tmp/lantana-2.6.5.tar.gz --markdown 20230521/l/lantana/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-21 08:07:48] INFO root fetch - processPackages [cm2py]: executing diffoscope
+[2023-05-21 08:07:48] INFO root fetch - processPackages [cm2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm2py-0.0.3.tar.gz tmp/cm2py-0.1.0.tar.gz --markdown 20230521/c/cm2py/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 08:07:48] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/e0/b0/8e2ea91eca1196a81c1b770d9de84b6c09c73c1d60fbb62b0c44f8ed044b/miraie-ac-0.2.9.tar.gz
+[2023-05-21 08:07:48] INFO root fetch - processPackages [miraie-ac]: executing diffoscope
+[2023-05-21 08:07:48] INFO root fetch - processPackages [miraie-ac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miraie-ac-0.2.8.tar.gz tmp/miraie-ac-0.2.9.tar.gz --markdown 20230521/m/miraie-ac/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 08:07:49] INFO root fetch - main [MainThread]: End processing [cm2py]: success
+[2023-05-21 08:07:49] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2023-05-21 08:07:49] INFO root fetch - main [MainThread]: End processing [miraie-ac]: success
+[2023-05-21 08:07:54] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-21 08:07:54] INFO root fetch - main [MainThread]: Store serial: [18185863]
