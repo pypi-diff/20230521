@@ -2731,3 +2731,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:31:33] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2023-05-21 07:31:33] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-21 07:31:33] INFO root fetch - main [MainThread]: Store serial: [18185755]
+[2023-05-21 07:36:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185755]
+[2023-05-21 07:36:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 07:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: authanor
+[2023-05-21 07:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-alconna-ariadne
+[2023-05-21 07:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna-avilla
+[2023-05-21 07:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arclet-alconna-graia
+[2023-05-21 07:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arclet-alconna-ichika
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-avilla]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-21 07:36:42] INFO root fetch - processPackages [authanor]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ariadne]: New version: [0.13.2] Old Version: [0.13.1]
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ichika]: New version: [0.13.2] Old Version: [0.13.1]
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-graia]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/c7/46/f61484da932fba048c4055ce37000a49fbe493e7a92c1239a94686133cf8/arclet-alconna-ariadne-0.13.1.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [authanor]: Downloading https://files.pythonhosted.org/packages/ba/3b/563113828fc7089e0f6e2d965cd56b8be3eab96983e3b80a3c618439a26d/authanor-1.0.1.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/b2/af/06255e783151ce68d35de5f017ca5df4824f78c8289a0a68d9682a144941/arclet-alconna-ichika-0.13.1.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-avilla]: Downloading https://files.pythonhosted.org/packages/71/1b/b06f39dfa4b73497f68d84cfacc42f0cb0e49dc08bbc18b4706059ffaadc/arclet-alconna-avilla-0.2.0.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-graia]: Downloading https://files.pythonhosted.org/packages/81/33/d4915aeae59920c0f2ed22afcc7ded2a9a7758f6a2732921f67476ad60af/arclet-alconna-graia-0.9.0.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/b4/6d/ee5441e4e1257addcda4645c5773135a4956905a69d89e1c7d41b14154a4/arclet-alconna-ariadne-0.13.2.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/96/36/8dfb22cdc0f184d5a14869bfa7c7f608a1aeec3de797a106093f69129c8d/arclet-alconna-ichika-0.13.2.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [authanor]: Downloading https://files.pythonhosted.org/packages/58/ca/1b42709838661e321c0514a1c8fbe2d936acba0726518190825038cb839a/authanor-1.0.2.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-avilla]: Downloading https://files.pythonhosted.org/packages/56/a1/7cb5ff9f274fdb76460249eba125a3125af806bc273601be741f982aaf8c/arclet-alconna-avilla-0.3.0.tar.gz
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ariadne]: executing diffoscope
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ariadne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ariadne-0.13.1.tar.gz tmp/arclet-alconna-ariadne-0.13.2.tar.gz --markdown 20230521/a/arclet-alconna-ariadne/0.13.1-0.13.2/diff.md --exclude *.pyd
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ichika]: executing diffoscope
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-ichika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ichika-0.13.1.tar.gz tmp/arclet-alconna-ichika-0.13.2.tar.gz --markdown 20230521/a/arclet-alconna-ichika/0.13.1-0.13.2/diff.md --exclude *.pyd
+[2023-05-21 07:36:42] INFO root fetch - processPackages [authanor]: executing diffoscope
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-avilla]: executing diffoscope
+[2023-05-21 07:36:42] INFO root fetch - processPackages [authanor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authanor-1.0.1.tar.gz tmp/authanor-1.0.2.tar.gz --markdown 20230521/a/authanor/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-avilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-avilla-0.2.0.tar.gz tmp/arclet-alconna-avilla-0.3.0.tar.gz --markdown 20230521/a/arclet-alconna-avilla/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 07:36:42] INFO root fetch - processPackages [arclet-alconna-graia]: Downloading https://files.pythonhosted.org/packages/dc/96/d3e155e743ed52df7ba0ccbfae61b3bd016965286eea7f049d5455905674/arclet-alconna-graia-0.9.1.tar.gz
+[2023-05-21 07:36:43] INFO root fetch - processPackages [arclet-alconna-graia]: executing diffoscope
+[2023-05-21 07:36:43] INFO root fetch - processPackages [arclet-alconna-graia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-graia-0.9.0.tar.gz tmp/arclet-alconna-graia-0.9.1.tar.gz --markdown 20230521/a/arclet-alconna-graia/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ariadne]: success
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-avilla]: success
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [authanor]: success
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ichika]: success
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
+[2023-05-21 07:36:44] INFO root fetch - main [MainThread]: Store serial: [18185771]
