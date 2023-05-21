@@ -2938,3 +2938,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:18:15] INFO root fetch - main [MainThread]: End processing [verse-core]: success
 [2023-05-21 08:18:19] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-21 08:18:19] INFO root fetch - main [MainThread]: Store serial: [18185895]
+[2023-05-21 08:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185895]
+[2023-05-21 08:23:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ejtraderMT
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dorado
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typst
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dorado
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-vault
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fake-bpy-module-latest
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ejtraderMT]: New version: [3.15] Old Version: [3.14]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [vector-vault]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [typst]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230520] Old Version: [20230519]
+[2023-05-21 08:23:27] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 08:23:27] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.7.tar.gz tmp/vector_vault-0.1.8.tar.gz --markdown 20230521/v/vector-vault/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:23:27] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:23:27] INFO root fetch - processPackages [ejtraderMT]: Downloading https://files.pythonhosted.org/packages/7e/15/e14d0d36da11658448729abbeca73266392a6c0ce590aabbcb637c0c4903/ejtraderMT-3.14.tar.gz
+[2023-05-21 08:23:27] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-21 08:23:27] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230519.tar.gz tmp/fake-bpy-module-latest-20230520.tar.gz --markdown 20230521/f/fake-bpy-module-latest/20230519-20230520/diff.md --exclude *.pyd
+[2023-05-21 08:23:27] INFO root fetch - processPackages [typst]: Downloading https://files.pythonhosted.org/packages/80/0c/13436b66c2f32b43fe49a934925cdecce8fd472bac471c66569f493e3f81/typst-0.3.0.tar.gz
+[2023-05-21 08:23:28] INFO root fetch - processPackages [ejtraderMT]: Downloading https://files.pythonhosted.org/packages/d7/61/869552e06ae8334b1863ac0652bfe72e9fe5155c5eab35f5f370ed73e9fd/ejtraderMT-3.15.tar.gz
+[2023-05-21 08:23:28] INFO root fetch - processPackages [ejtraderMT]: executing diffoscope
+[2023-05-21 08:23:28] INFO root fetch - processPackages [ejtraderMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderMT-3.14.tar.gz tmp/ejtraderMT-3.15.tar.gz --markdown 20230521/e/ejtraderMT/3.14-3.15/diff.md --exclude *.pyd
+[2023-05-21 08:23:28] INFO root fetch - processPackages [typst]: Downloading https://files.pythonhosted.org/packages/32/e4/adbaab4be09706ef3b01015178c3e55cd922bca82f52034e67c2870af2b1/typst-0.4.0.tar.gz
+[2023-05-21 08:23:29] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 08:23:29] INFO root fetch - processPackages [typst]: executing diffoscope
+[2023-05-21 08:23:29] INFO root fetch - processPackages [typst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typst-0.3.0.tar.gz tmp/typst-0.4.0.tar.gz --markdown 20230521/t/typst/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 08:23:29] INFO root fetch - main [MainThread]: End processing [ejtraderMT]: success
+[2023-05-21 08:23:29] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:23:30] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:23:31] INFO root fetch - main [MainThread]: End processing [typst]: success
+[2023-05-21 08:23:34] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-21 08:23:34] INFO root fetch - main [MainThread]: Store serial: [18185922]
