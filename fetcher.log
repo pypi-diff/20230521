@@ -9719,3 +9719,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:23:43] INFO root fetch - main [MainThread]: End processing [pflacco]: success
 [2023-05-21 23:23:45] INFO root fetch - main [MainThread]: End processing [fling-hub]: success
 [2023-05-21 23:23:45] INFO root fetch - main [MainThread]: Store serial: [18189402]
+[2023-05-21 23:28:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189402]
+[2023-05-21 23:28:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cengal
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyMouseKey
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfsd
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alacorder
+[2023-05-21 23:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vitriolic
+[2023-05-21 23:28:55] INFO root fetch - processPackages [cengal]: New version: [3.1.18.7] Old Version: [3.1.18.6]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [kfsd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [alacorder]: New version: [80.7.1] Old Version: [80.7.0]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [PyMouseKey]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [vitriolic]: New version: [3.1.0rc3] Old Version: [3.1.0rc2]
+[2023-05-21 23:28:55] INFO root fetch - processPackages [kfsd]: executing diffoscope
+[2023-05-21 23:28:55] INFO root fetch - processPackages [kfsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsd-0.0.8.tar.gz tmp/kfsd-0.0.9.tar.gz --markdown 20230521/k/kfsd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 23:28:55] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/3a/58/d6b861cd3ebe7eecf83e791c4c841d18d3ad7e315a4f623a6ebd5928eacc/cengal-3.1.18.6.tar.gz
+[2023-05-21 23:28:55] INFO root fetch - processPackages [PyMouseKey]: Downloading https://files.pythonhosted.org/packages/80/c5/006e37b29c71b7c82c07f575c2723f2654dfd89d8a8d889df1bf3ba9c2d6/PyMouseKey-1.0.5-py3-none-any.whl
+[2023-05-21 23:28:55] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/66/0a/bc5667118c6ceebe1c30683eb556c13c2637de34b00618bcc179f3985374/vitriolic-3.1.0rc2.tar.gz
+[2023-05-21 23:28:55] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/b0/59/d8c1cfaa8d404165ac82c9dbb7c87dca3c795c550ec7983eac6be02ff8ca/alacorder-80.7.1.tar.gz
+[2023-05-21 23:28:55] INFO root fetch - processPackages [PyMouseKey]: executing diffoscope
+[2023-05-21 23:28:55] INFO root fetch - processPackages [PyMouseKey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMouseKey-1.0.4-py3-none-any.whl.zip tmp/PyMouseKey-1.0.5-py3-none-any.whl.zip --markdown 20230521/P/PyMouseKey/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 23:28:55] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-21 23:28:55] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.7.0.tar.gz tmp/alacorder-80.7.1.tar.gz --markdown 20230521/a/alacorder/80.7.0-80.7.1/diff.md --exclude *.pyd
+[2023-05-21 23:28:55] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/8b/36/6ec45ae39c752a786e3562f7a4f1ca33e050f0c365096c60bf21235dcd57/cengal-3.1.18.7.tar.gz
+[2023-05-21 23:28:55] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-21 23:28:55] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230521/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-21 23:28:55] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-21 23:28:55] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.1.18.6.tar.gz tmp/cengal-3.1.18.7.tar.gz --markdown 20230521/c/cengal/3.1.18.6-3.1.18.7/diff.md --exclude *.pyd
+[2023-05-21 23:28:56] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/70/a0/d0b9d63abe21a237b7c2921a0eecc2cbc46305e98e90709efc6c949180cc/vitriolic-3.1.0rc3.tar.gz
+[2023-05-21 23:28:56] INFO root fetch - main [MainThread]: End processing [PyMouseKey]: success
+[2023-05-21 23:28:56] INFO root fetch - main [MainThread]: End processing [kfsd]: success
+[2023-05-21 23:28:57] INFO root fetch - processPackages [vitriolic]: executing diffoscope
+[2023-05-21 23:28:57] INFO root fetch - processPackages [vitriolic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitriolic-3.1.0rc2.tar.gz tmp/vitriolic-3.1.0rc3.tar.gz --markdown 20230521/v/vitriolic/3.1.0rc2-3.1.0rc3/diff.md --exclude *.pyd
+[2023-05-21 23:28:57] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-21 23:29:08] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
+[2023-05-21 23:29:11] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-21 23:29:27] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-21 23:29:27] INFO root fetch - main [MainThread]: Store serial: [18189418]
