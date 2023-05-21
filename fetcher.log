@@ -5143,3 +5143,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:18:05] INFO root fetch - main [MainThread]: End processing [sportsml]: success
 [2023-05-21 14:18:14] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-21 14:18:14] INFO root fetch - main [MainThread]: Store serial: [18186961]
+[2023-05-21 14:23:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186961]
+[2023-05-21 14:23:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 14:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepchecks
+[2023-05-21 14:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: changedetection.io
+[2023-05-21 14:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mona-sdk
+[2023-05-21 14:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simplebox
+[2023-05-21 14:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-llm
+[2023-05-21 14:23:23] INFO root fetch - processPackages [deepchecks]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-21 14:23:23] INFO root fetch - processPackages [python-llm]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 14:23:23] INFO root fetch - processPackages [changedetection.io]: New version: [0.42.1] Old Version: [0.42]
+[2023-05-21 14:23:23] INFO root fetch - processPackages [mona-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:23:23] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a152] Old Version: [0.0.1a151]
+[2023-05-21 14:23:23] INFO root fetch - processPackages [python-llm]: executing diffoscope
+[2023-05-21 14:23:23] INFO root fetch - processPackages [python-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-llm-0.1.6.tar.gz tmp/python-llm-0.1.7.tar.gz --markdown 20230521/p/python-llm/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 14:23:23] INFO root fetch - processPackages [deepchecks]: Downloading https://files.pythonhosted.org/packages/a6/cc/4ad18eb7dd1a77550fbb2fdb6d0c60769b45944eff49da4931f1524ef20d/deepchecks-0.9.1.tar.gz
+[2023-05-21 14:23:23] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/12/5e/804780ae7d4370eba77cedf38a994f4169dcb56b3ea5294bf7e464f59979/simplebox-0.0.1a151-py3-none-any.whl
+[2023-05-21 14:23:23] INFO root fetch - processPackages [mona-sdk]: Downloading https://files.pythonhosted.org/packages/77/c2/28caca48c10e039777e0b30189572242e59f5bf35f99d1c5187ce51fa97d/mona_sdk-0.0.8.tar.gz
+[2023-05-21 14:23:23] INFO root fetch - processPackages [changedetection.io]: Downloading https://files.pythonhosted.org/packages/e8/b4/324daa51fc9e54fe52e12e1df7f85f8e7384484050bb87d162768e24e7e1/changedetection.io-0.42.1-py3-none-any.whl
+[2023-05-21 14:23:24] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/17/1f/e430f13f780352a6d6cc86dbb184d22d67289d5c2380a98b90ceae1a7a46/simplebox-0.0.1a152-py3-none-any.whl
+[2023-05-21 14:23:24] INFO root fetch - processPackages [changedetection.io]: executing diffoscope
+[2023-05-21 14:23:24] INFO root fetch - processPackages [changedetection.io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/changedetection.io-0.42-py3-none-any.whl.zip tmp/changedetection.io-0.42.1-py3-none-any.whl.zip --markdown 20230521/c/changedetection.io/0.42-0.42.1/diff.md --exclude *.pyd
+[2023-05-21 14:23:24] INFO root fetch - processPackages [mona-sdk]: Downloading https://files.pythonhosted.org/packages/53/31/03a2f02a79557a6670cc5a0342bce2ac3783dac2252cba394719bc2a6cff/mona_sdk-0.0.9.tar.gz
+[2023-05-21 14:23:24] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-05-21 14:23:24] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a151-py3-none-any.whl.zip tmp/simplebox-0.0.1a152-py3-none-any.whl.zip --markdown 20230521/s/simplebox/0.0.1a151-0.0.1a152/diff.md --exclude *.pyd
+[2023-05-21 14:23:24] INFO root fetch - processPackages [mona-sdk]: executing diffoscope
+[2023-05-21 14:23:24] INFO root fetch - processPackages [mona-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mona_sdk-0.0.8.tar.gz tmp/mona_sdk-0.0.9.tar.gz --markdown 20230521/m/mona-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:23:25] INFO root fetch - main [MainThread]: End processing [python-llm]: success
+[2023-05-21 14:23:25] INFO root fetch - processPackages [deepchecks]: Downloading https://files.pythonhosted.org/packages/eb/30/c76562ae6e60b918f9dceb0c7f07786febcdc4d4520a33df89d40679a041/deepchecks-0.9.2.tar.gz
+[2023-05-21 14:23:25] INFO root fetch - main [MainThread]: End processing [mona-sdk]: success
+[2023-05-21 14:23:25] INFO root fetch - processPackages [deepchecks]: executing diffoscope
+[2023-05-21 14:23:25] INFO root fetch - processPackages [deepchecks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchecks-0.9.1.tar.gz tmp/deepchecks-0.9.2.tar.gz --markdown 20230521/d/deepchecks/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-21 14:23:25] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2023-05-21 14:23:26] INFO root fetch - main [MainThread]: End processing [changedetection.io]: success
+[2023-05-21 14:23:29] INFO root fetch - main [MainThread]: End processing [deepchecks]: success
+[2023-05-21 14:23:29] INFO root fetch - main [MainThread]: Store serial: [18186974]
