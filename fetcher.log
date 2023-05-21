@@ -3614,3 +3614,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:35:27] INFO root fetch - main [MainThread]: End processing [kfish]: success
 [2023-05-21 10:35:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-21 10:35:34] INFO root fetch - main [MainThread]: Store serial: [18186232]
+[2023-05-21 10:40:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186232]
+[2023-05-21 10:40:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 10:40:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgutils-hddly
+[2023-05-21 10:40:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: migdalor
+[2023-05-21 10:40:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioairzone-cloud
+[2023-05-21 10:40:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-estimator-nightly
+[2023-05-21 10:40:43] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-21 10:40:43] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-21 10:40:43] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev0] Old Version: [0.0.1.dev0]
+[2023-05-21 10:40:43] INFO root fetch - processPackages [aioairzone-cloud]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-21 10:40:43] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-21 10:40:43] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230521/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-21 10:40:43] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/d0/51/0016bfdf89e86b2f886042fd85df80505dc74d9ca6baebd954cce24bc868/migdalor-0.0.1.dev0.tar.gz
+[2023-05-21 10:40:43] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2023-05-21 10:40:43] INFO root fetch - processPackages [aioairzone-cloud]: Downloading https://files.pythonhosted.org/packages/d4/b0/8071dbfbebadf35b4c33129986e380f4880cb005bf33704959cf69428702/aioairzone-cloud-0.0.5.tar.gz
+[2023-05-21 10:40:43] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/74/5b/0ccfeeffbe81de7ba87786735f84fd7a84240cc3aa0f49c07ef913b3dda6/migdalor-0.0.2.dev0.tar.gz
+[2023-05-21 10:40:43] INFO root fetch - processPackages [aioairzone-cloud]: executing diffoscope
+[2023-05-21 10:40:43] INFO root fetch - processPackages [aioairzone-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioairzone-cloud-0.0.4.tar.gz tmp/aioairzone-cloud-0.0.5.tar.gz --markdown 20230521/a/aioairzone-cloud/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-21 10:40:43] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2023-05-21 10:40:43] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2023-05-21 10:40:43] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20230521/b/bgutils-hddly/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-21 10:40:43] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 10:40:43] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.1.dev0.tar.gz tmp/migdalor-0.0.2.dev0.tar.gz --markdown 20230521/m/migdalor/0.0.1.dev0-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-05-21 10:40:44] INFO root fetch - main [MainThread]: End processing [aioairzone-cloud]: success
+[2023-05-21 10:40:44] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2023-05-21 10:40:44] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 10:40:45] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-21 10:40:45] INFO root fetch - main [MainThread]: Store serial: [18186243]
