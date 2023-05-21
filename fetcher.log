@@ -1891,3 +1891,30 @@
 [2023-05-21 04:50:19] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20230515.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20230516.0-py3-none-any.whl.zip --markdown 20230521/o/odoo-addons-oca-account-invoicing/16.0.20230515.0-16.0.20230516.0/diff.md --exclude *.pyd
 [2023-05-21 04:50:20] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
 [2023-05-21 04:50:20] INFO root fetch - main [MainThread]: Store serial: [18185403]
+[2023-05-21 04:55:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185403]
+[2023-05-21 04:55:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 04:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phymmr-tools
+[2023-05-21 04:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glitter-sdk
+[2023-05-21 04:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tcoi
+[2023-05-21 04:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semantic-counter
+[2023-05-21 04:55:29] INFO root fetch - processPackages [phymmr-tools]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-21 04:55:29] INFO root fetch - processPackages [tcoi]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 04:55:29] INFO root fetch - processPackages [glitter-sdk]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-21 04:55:29] INFO root fetch - processPackages [semantic-counter]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 04:55:30] INFO root fetch - processPackages [glitter-sdk]: Downloading https://files.pythonhosted.org/packages/54/0f/f3074aeaba12ab0d25d33dbd2117a484741dcbbc39edf56f7b61567f7c32/glitter_sdk-0.2.4.tar.gz
+[2023-05-21 04:55:30] INFO root fetch - processPackages [tcoi]: Downloading https://files.pythonhosted.org/packages/7b/3f/43f86f8e7ea68050d6f1d9a7de6ece6be97ba1d6fcb8bb18ecfae0f13698/tcoi-0.2.4.tar.gz
+[2023-05-21 04:55:30] INFO root fetch - processPackages [semantic-counter]: Downloading https://files.pythonhosted.org/packages/b0/2e/eb5a16f70917f0b39cc34f3a1e06d67c8a00fcc18e6c6c99417586685271/semantic_counter-0.0.4.tar.gz
+[2023-05-21 04:55:30] INFO root fetch - processPackages [semantic-counter]: executing diffoscope
+[2023-05-21 04:55:30] INFO root fetch - processPackages [semantic-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_counter-0.0.3.tar.gz tmp/semantic_counter-0.0.4.tar.gz --markdown 20230521/s/semantic-counter/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 04:55:30] INFO root fetch - processPackages [phymmr-tools]: executing diffoscope
+[2023-05-21 04:55:30] INFO root fetch - processPackages [phymmr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phymmr_tools-0.4.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/phymmr_tools-0.4.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/p/phymmr-tools/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-21 04:55:30] INFO root fetch - processPackages [glitter-sdk]: executing diffoscope
+[2023-05-21 04:55:30] INFO root fetch - processPackages [glitter-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glitter_sdk-0.2.3.tar.gz tmp/glitter_sdk-0.2.4.tar.gz --markdown 20230521/g/glitter-sdk/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-21 04:55:30] INFO root fetch - processPackages [tcoi]: Downloading https://files.pythonhosted.org/packages/d2/3b/b303c73a536d0ba44548679ab8c50a6b442e7a3dad262564e9b9bbb00a96/tcoi-0.2.5.tar.gz
+[2023-05-21 04:55:30] INFO root fetch - processPackages [tcoi]: executing diffoscope
+[2023-05-21 04:55:30] INFO root fetch - processPackages [tcoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcoi-0.2.4.tar.gz tmp/tcoi-0.2.5.tar.gz --markdown 20230521/t/tcoi/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 04:55:31] INFO root fetch - main [MainThread]: End processing [semantic-counter]: success
+[2023-05-21 04:55:31] INFO root fetch - main [MainThread]: End processing [tcoi]: success
+[2023-05-21 04:55:31] INFO root fetch - main [MainThread]: End processing [glitter-sdk]: success
+[2023-05-21 04:55:44] INFO root fetch - main [MainThread]: End processing [phymmr-tools]: success
+[2023-05-21 04:55:44] INFO root fetch - main [MainThread]: Store serial: [18185417]
