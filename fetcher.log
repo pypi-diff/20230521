@@ -2975,3 +2975,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:23:31] INFO root fetch - main [MainThread]: End processing [typst]: success
 [2023-05-21 08:23:34] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-21 08:23:34] INFO root fetch - main [MainThread]: Store serial: [18185922]
+[2023-05-21 08:28:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185922]
+[2023-05-21 08:28:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dorado
+[2023-05-21 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pg-bulk-ingest
+[2023-05-21 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-vault
+[2023-05-21 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlflow-tmp
+[2023-05-21 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dorado
+[2023-05-21 08:28:46] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:28:46] INFO root fetch - processPackages [vector-vault]: New version: [0.2] Old Version: [0.1.9]
+[2023-05-21 08:28:46] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:28:46] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 08:28:46] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:28:46] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:28:46] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/97/df/294b64992e3174411cb0defa417efe6febddf3bc59a5f80646594d1ef01f/vector_vault-0.1.9.tar.gz
+[2023-05-21 08:28:46] INFO root fetch - processPackages [pg-bulk-ingest]: Downloading https://files.pythonhosted.org/packages/db/bb/df7525f74975aacf76789085425bed157db43bb21c9d69e39c9e4bedd944/pg_bulk_ingest-0.0.9.tar.gz
+[2023-05-21 08:28:46] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-21 08:28:46] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230521/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 08:28:46] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/f5/af/88ff7d54e0c041be4f2b3efcfaae55e7a13c44061cfaf6ebb69be02d6415/vector_vault-0.2.tar.gz
+[2023-05-21 08:28:46] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 08:28:46] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.9.tar.gz tmp/vector_vault-0.2.tar.gz --markdown 20230521/v/vector-vault/0.1.9-0.2/diff.md --exclude *.pyd
+[2023-05-21 08:28:47] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-21 08:28:47] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:28:48] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 08:28:48] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:28:50] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 08:28:50] INFO root fetch - main [MainThread]: Store serial: [18185937]
