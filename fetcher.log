@@ -1398,3 +1398,38 @@
 [2023-05-21 03:05:08] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-21 03:05:10] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 03:05:10] INFO root fetch - main [MainThread]: Store serial: [18185113]
+[2023-05-21 03:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185113]
+[2023-05-21 03:10:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scimap
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dorado
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reactivated
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redb-odm
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlflow-tmp
+[2023-05-21 03:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jefferson-street-composer
+[2023-05-21 03:10:19] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [scimap]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [jefferson-street-composer]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [redb-odm]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-21 03:10:19] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 03:10:19] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 03:10:19] INFO root fetch - processPackages [redb-odm]: executing diffoscope
+[2023-05-21 03:10:19] INFO root fetch - processPackages [redb-odm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redb-odm-1.1.9.tar.gz tmp/redb-odm-1.2.0.tar.gz --markdown 20230521/r/redb-odm/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 03:10:19] INFO root fetch - processPackages [jefferson-street-composer]: executing diffoscope
+[2023-05-21 03:10:19] INFO root fetch - processPackages [jefferson-street-composer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-composer-1.0.1.tar.gz tmp/jefferson-street-composer-1.1.0.tar.gz --markdown 20230521/j/jefferson-street-composer/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 03:10:19] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-21 03:10:19] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230521/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-21 03:10:19] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 03:10:19] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 03:10:19] INFO root fetch - processPackages [scimap]: Downloading https://files.pythonhosted.org/packages/ee/29/edfe115e8d5a7cceec77a07858e07ef8252179ce0695422d9335fb2aaf5c/scimap-1.2.0.tar.gz
+[2023-05-21 03:10:20] INFO root fetch - processPackages [scimap]: Downloading https://files.pythonhosted.org/packages/21/f2/588e26803d452b451e1e47b405279570f7b06f00c9c2aaf0b19069b89627/scimap-1.3.0.tar.gz
+[2023-05-21 03:10:20] INFO root fetch - processPackages [scimap]: executing diffoscope
+[2023-05-21 03:10:20] INFO root fetch - processPackages [scimap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scimap-1.2.0.tar.gz tmp/scimap-1.3.0.tar.gz --markdown 20230521/s/scimap/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-21 03:10:20] INFO root fetch - main [MainThread]: End processing [jefferson-street-composer]: success
+[2023-05-21 03:10:21] INFO root fetch - main [MainThread]: End processing [redb-odm]: success
+[2023-05-21 03:10:21] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 03:10:21] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-21 03:10:23] INFO root fetch - main [MainThread]: End processing [scimap]: success
+[2023-05-21 03:10:23] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 03:10:23] INFO root fetch - main [MainThread]: Store serial: [18185130]
