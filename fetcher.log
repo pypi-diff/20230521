@@ -6394,3 +6394,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:23:48] ERROR root fetch - processPackages [pwntools]: Timeout during execution of pkgdiff
 [2023-05-21 16:23:48] INFO root fetch - main [MainThread]: End processing [pwntools] error
 [2023-05-21 16:23:48] INFO root fetch - main [MainThread]: Store serial: [18187586]
+[2023-05-21 16:28:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187586]
+[2023-05-21 16:28:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gb2seq
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-useful
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openapi-pydantic
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pwntools
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gb2seq
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: readonce
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: finlogic
+[2023-05-21 16:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oceano-algos
+[2023-05-21 16:28:57] INFO root fetch - processPackages [gb2seq]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-21 16:28:57] INFO root fetch - processPackages [pwntools]: New version: [4.9.0b0] Old Version: [4.9.0]
+[2023-05-21 16:28:57] INFO root fetch - processPackages [flask-useful]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 16:28:57] INFO root fetch - processPackages [gb2seq]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-21 16:28:57] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 16:28:57] INFO root fetch - processPackages [readonce]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-21 16:28:57] WARNING root fetch - processPackages [openapi-pydantic]: Skipping, unable to determine old version
+[2023-05-21 16:28:58] INFO root fetch - main [MainThread]: End processing [openapi-pydantic] error
+[2023-05-21 16:28:58] INFO root fetch - processPackages [finlogic]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-21 16:28:58] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230521/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [pwntools]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [pwntools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwntools-4.9.0.tar.gz tmp/pwntools-4.9.0b0.tar.gz --markdown 20230521/p/pwntools/4.9.0-4.9.0b0/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: Downloading https://files.pythonhosted.org/packages/06/22/99e49bd674aff1241f15a7bee8018f4995aa4c69641fdd8db8f6813c127c/gb2seq-0.2.7.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: Downloading https://files.pythonhosted.org/packages/06/22/99e49bd674aff1241f15a7bee8018f4995aa4c69641fdd8db8f6813c127c/gb2seq-0.2.7.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [flask-useful]: Downloading https://files.pythonhosted.org/packages/3d/1b/55e35e71f12468e68eaf08d307b7df347da539d42fc24414414c89a2f354/flask_useful-0.2.2-py3-none-any.whl
+[2023-05-21 16:28:58] INFO root fetch - processPackages [readonce]: Downloading https://files.pythonhosted.org/packages/71/ff/30d1e53b2cb589a9eb479e856bfc7df90a052210ee3be103386027ac769d/readonce-1.0.2.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.6.tar.gz tmp/gb2seq-0.2.7.tar.gz --markdown 20230521/g/gb2seq/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.6.tar.gz tmp/gb2seq-0.2.7.tar.gz --markdown 20230521/g/gb2seq/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/35/d9/6a5611d05ced65e315582e7aeb7d80518736285b09d393e1fe88373cac3c/finlogic-0.4.5.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [flask-useful]: Downloading https://files.pythonhosted.org/packages/99/c7/1a5e974289c546fc0a3302572373670e119fc5a83c0e346f84fbe4cd79cf/flask-useful-0.2.3.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [flask-useful]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [flask-useful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_useful-0.2.2-py3-none-any.whl.zip tmp/flask-useful-0.2.3.tar.gz --markdown 20230521/f/flask-useful/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlogic-0.4.4.tar.gz tmp/finlogic-0.4.5.tar.gz --markdown 20230521/f/finlogic/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-21 16:28:58] INFO root fetch - processPackages [readonce]: Downloading https://files.pythonhosted.org/packages/61/21/cfa6fd5d2f6385c8103e3d39ec69711ac8a9a9fe45e762ed18e6344f7aac/readonce-1.0.3.tar.gz
+[2023-05-21 16:28:58] INFO root fetch - processPackages [readonce]: executing diffoscope
+[2023-05-21 16:28:58] INFO root fetch - processPackages [readonce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readonce-1.0.2.tar.gz tmp/readonce-1.0.3.tar.gz --markdown 20230521/r/readonce/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-21 16:28:59] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-21 16:28:59] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 16:28:59] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 16:28:59] INFO root fetch - main [MainThread]: End processing [flask-useful]: success
+[2023-05-21 16:29:00] INFO root fetch - main [MainThread]: End processing [readonce]: success
+[2023-05-21 16:29:00] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-05-21 16:31:58] ERROR root fetch - processPackages [pwntools]: Timeout during execution of pkgdiff
+[2023-05-21 16:31:58] INFO root fetch - main [MainThread]: End processing [pwntools] error
+[2023-05-21 16:31:58] INFO root fetch - main [MainThread]: Store serial: [18187610]
