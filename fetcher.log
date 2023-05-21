@@ -8555,3 +8555,16 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:10:15] INFO root fetch - processPackages [sqlite-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-utils-3.9.tar.gz tmp/sqlite-utils-3.9.1.tar.gz --markdown 20230521/s/sqlite-utils/3.9-3.9.1/diff.md --exclude *.pyd
 [2023-05-21 21:10:17] INFO root fetch - main [MainThread]: End processing [sqlite-utils]: success
 [2023-05-21 21:10:17] INFO root fetch - main [MainThread]: Store serial: [18188689]
+[2023-05-21 21:15:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188689]
+[2023-05-21 21:15:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 21:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2023-05-21 21:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: etm-dgraham
+[2023-05-21 21:15:26] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-05-21 21:15:26] INFO root fetch - processPackages [etm-dgraham]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-05-21 21:15:26] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-05-21 21:15:26] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230521/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-21 21:15:26] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-05-21 21:15:26] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.6.tar.gz tmp/etm-dgraham-4.9.7.tar.gz --markdown 20230521/e/etm-dgraham/4.9.6-4.9.7/diff.md --exclude *.pyd
+[2023-05-21 21:15:28] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-05-21 21:15:28] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-05-21 21:15:28] INFO root fetch - main [MainThread]: Store serial: [18188696]
