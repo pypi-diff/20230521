@@ -5097,3 +5097,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:12:40] INFO root fetch - main [MainThread]: End processing [statml]: success
 [2023-05-21 14:12:50] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-05-21 14:12:50] INFO root fetch - main [MainThread]: Store serial: [18186927]
+[2023-05-21 14:17:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186927]
+[2023-05-21 14:18:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leuci-xyz
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: comathon
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QtLogger
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiyobot
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cg
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sportsml
+[2023-05-21 14:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: panml
+[2023-05-21 14:18:02] INFO root fetch - processPackages [panml]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-21 14:18:02] INFO root fetch - processPackages [comathon]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:18:02] INFO root fetch - processPackages [hiyobot]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 14:18:03] INFO root fetch - processPackages [leuci-xyz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:18:03] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.13.tar.gz tmp/panml-0.0.14.tar.gz --markdown 20230521/p/panml/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.2.2.tar.gz tmp/hiyobot-0.2.3.tar.gz --markdown 20230521/h/hiyobot/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [QtLogger]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-21 14:18:03] INFO root fetch - processPackages [sportsml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 14:18:03] INFO root fetch - processPackages [comathon]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [comathon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comathon-0.0.8-py3-none-any.whl.zip tmp/comathon-0.0.9-py3-none-any.whl.zip --markdown 20230521/c/comathon/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [cg]: New version: [30.2.7] Old Version: [30.2.6]
+[2023-05-21 14:18:03] INFO root fetch - processPackages [sportsml]: Downloading https://files.pythonhosted.org/packages/1d/28/085f319bfc792dfc401c5a59273e91f5e9e78e3cf083ba12ad1dbc5dd580/sportsml-0.0.8.tar.gz
+[2023-05-21 14:18:03] INFO root fetch - processPackages [leuci-xyz]: Downloading https://files.pythonhosted.org/packages/eb/10/d9eee7a355b8ae704f58b8ac47ea3834448ba0ed26fef0f4a323f85a71ff/leuci-xyz-0.0.8.tar.gz
+[2023-05-21 14:18:03] INFO root fetch - processPackages [QtLogger]: Downloading https://files.pythonhosted.org/packages/ff/23/8549aca8f7054ff0efbec19be627bc20c663f5ec64836e0930c8b04b5afb/QtLogger-1.0.3-py3-none-any.whl
+[2023-05-21 14:18:03] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/6e/fd/c6c99a84677e9c82473767fb1aee51855b02e07610d216ac956727187536/cg-30.2.7.tar.gz
+[2023-05-21 14:18:03] INFO root fetch - processPackages [sportsml]: Downloading https://files.pythonhosted.org/packages/41/18/6f1819866aae7500d1b5cf577dd4d70e1c4ae7a3c48d347ebdb77ed0b9d0/sportsml-0.0.9.tar.gz
+[2023-05-21 14:18:03] INFO root fetch - processPackages [QtLogger]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [QtLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtLogger-1.0.2-py3-none-any.whl.zip tmp/QtLogger-1.0.3-py3-none-any.whl.zip --markdown 20230521/Q/QtLogger/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [sportsml]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [sportsml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportsml-0.0.8.tar.gz tmp/sportsml-0.0.9.tar.gz --markdown 20230521/s/sportsml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [leuci-xyz]: Downloading https://files.pythonhosted.org/packages/49/e6/d2f3f483b024d52c15669628ff1c665f3c1b583ee1b375f3d0f4670aa662/leuci-xyz-0.0.9.tar.gz
+[2023-05-21 14:18:03] INFO root fetch - processPackages [leuci-xyz]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [leuci-xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-xyz-0.0.8.tar.gz tmp/leuci-xyz-0.0.9.tar.gz --markdown 20230521/l/leuci-xyz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-21 14:18:03] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-30.2.6.tar.gz tmp/cg-30.2.7.tar.gz --markdown 20230521/c/cg/30.2.6-30.2.7/diff.md --exclude *.pyd
+[2023-05-21 14:18:03] ERROR root fetch - processPackages [leuci-xyz]: Diffoscope failed: Error: error creating container storage: the container name "angry_thompson" is already in use by "3f1648f839fd262fe905cc8ab278ab2c296951aa997f4728e72722a5b59c2deb". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-21 14:18:03] INFO root fetch - main [MainThread]: End processing [leuci-xyz] error
+[2023-05-21 14:18:04] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-21 14:18:04] INFO root fetch - main [MainThread]: End processing [comathon]: success
+[2023-05-21 14:18:04] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-05-21 14:18:04] INFO root fetch - main [MainThread]: End processing [QtLogger]: success
+[2023-05-21 14:18:05] INFO root fetch - main [MainThread]: End processing [sportsml]: success
+[2023-05-21 14:18:14] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-21 14:18:14] INFO root fetch - main [MainThread]: Store serial: [18186961]
