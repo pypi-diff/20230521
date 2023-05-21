@@ -2127,3 +2127,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-21 05:27:38] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
 [2023-05-21 05:27:38] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
 [2023-05-21 05:27:38] INFO root fetch - main [MainThread]: Store serial: [18185475]
+[2023-05-21 05:32:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185475]
+[2023-05-21 05:32:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 05:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymultiastar
+[2023-05-21 05:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: express-integrations-monday
+[2023-05-21 05:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muutils
+[2023-05-21 05:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-cave
+[2023-05-21 05:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydisadm
+[2023-05-21 05:32:49] INFO root fetch - processPackages [express-integrations-monday]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pydisadm]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-05-21 05:32:49] INFO root fetch - processPackages [nonebot-plugin-cave]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-21 05:32:49] INFO root fetch - processPackages [muutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pymultiastar]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 05:32:49] INFO root fetch - processPackages [express-integrations-monday]: executing diffoscope
+[2023-05-21 05:32:49] INFO root fetch - processPackages [express-integrations-monday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/express-integrations-monday-1.0.8.tar.gz tmp/express-integrations-monday-1.0.9.tar.gz --markdown 20230521/e/express-integrations-monday/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 05:32:49] INFO root fetch - processPackages [nonebot-plugin-cave]: Downloading https://files.pythonhosted.org/packages/e1/bc/2d0fb2d5e586bec5ae0ad36093fdf5ec423fd3d07bed539a9960343ecb69/nonebot_plugin_cave-1.1.8.tar.gz
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pydisadm]: Downloading https://files.pythonhosted.org/packages/20/1c/b43011190d9efb4eae616dedab1991509af588567a246c46b0cd4a045122/pydisadm-1.2.4.tar.gz
+[2023-05-21 05:32:49] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-05-21 05:32:49] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.3.8.tar.gz tmp/muutils-0.3.9.tar.gz --markdown 20230521/m/muutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pydisadm]: Downloading https://files.pythonhosted.org/packages/f1/4e/eb8d78d3218192a22ed1d637d9b42fcd909926818dd4e62acc954ca9f869/pydisadm-1.2.5.tar.gz
+[2023-05-21 05:32:49] INFO root fetch - processPackages [nonebot-plugin-cave]: Downloading https://files.pythonhosted.org/packages/15/ed/af65e818e8c18d4f00c8f5972692c556a2043b9a6ce15e07b56926a16bd5/nonebot_plugin_cave-1.1.9.tar.gz
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pymultiastar]: Downloading https://files.pythonhosted.org/packages/98/93/1bbfc58df869e1af3398f96bc77721548a26500e8e129bed787bb80e29fb/pymultiastar-0.0.9.tar.gz
+[2023-05-21 05:32:49] INFO root fetch - processPackages [nonebot-plugin-cave]: executing diffoscope
+[2023-05-21 05:32:49] INFO root fetch - processPackages [nonebot-plugin-cave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_cave-1.1.8.tar.gz tmp/nonebot_plugin_cave-1.1.9.tar.gz --markdown 20230521/n/nonebot-plugin-cave/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pydisadm]: executing diffoscope
+[2023-05-21 05:32:49] INFO root fetch - processPackages [pydisadm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydisadm-1.2.4.tar.gz tmp/pydisadm-1.2.5.tar.gz --markdown 20230521/p/pydisadm/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-05-21 05:32:49] WARNING root fetch - processPackages [pymultiastar]: Skipping package: exceeds size limit 48006983>=10485760
+[2023-05-21 05:32:49] INFO root fetch - main [MainThread]: End processing [pymultiastar] error
+[2023-05-21 05:32:50] INFO root fetch - main [MainThread]: End processing [express-integrations-monday]: success
+[2023-05-21 05:32:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cave]: success
+[2023-05-21 05:32:50] INFO root fetch - main [MainThread]: End processing [muutils]: success
+[2023-05-21 05:32:51] INFO root fetch - main [MainThread]: End processing [pydisadm]: success
+[2023-05-21 05:32:51] INFO root fetch - main [MainThread]: Store serial: [18185500]
