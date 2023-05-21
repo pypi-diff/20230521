@@ -4889,3 +4889,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:45:33] INFO root fetch - main [MainThread]: End processing [pix2tex]: success
 [2023-05-21 13:45:35] INFO root fetch - main [MainThread]: End processing [kikuchipy]: success
 [2023-05-21 13:45:35] INFO root fetch - main [MainThread]: Store serial: [18186837]
+[2023-05-21 13:50:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186837]
+[2023-05-21 13:50:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellmachine
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: conjuring
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qwak-core
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-pdf-term
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: weewx
+[2023-05-21 13:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EdgeGPT
+[2023-05-21 13:50:44] INFO root fetch - processPackages [cellmachine]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [py-pdf-term]: New version: [1.0.0] Old Version: [0.18.1]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [conjuring]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [qwak-core]: New version: [0.0.67] Old Version: [0.0.66]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [weewx]: New version: [5.0.0b1] Old Version: [5.0.0a30]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [EdgeGPT]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-05-21 13:50:44] INFO root fetch - processPackages [py-pdf-term]: Downloading https://files.pythonhosted.org/packages/75/5e/06b45a684efe52e9e040711dd128f8b399e555dadafbaa8f08d5591400e9/py-pdf-term-0.18.1.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-21 13:50:44] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.4.4.tar.gz tmp/EdgeGPT-0.5.0.tar.gz --markdown 20230521/E/EdgeGPT/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 13:50:44] INFO root fetch - processPackages [cellmachine]: Downloading https://files.pythonhosted.org/packages/38/e7/9bebb19521443296cf0b1af2bb60ae2f4d647b19b35930e918b3a4bcb1c3/cellmachine-0.0.3.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [weewx]: Downloading https://files.pythonhosted.org/packages/5b/b2/33cff1e349a94fc2edc6d4fb4a810c45e5caea0c15f7950d5f070ef55d56/weewx-5.0.0a30.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [conjuring]: Downloading https://files.pythonhosted.org/packages/ab/25/a652ae389be5b39d76f395331047a08ac8e275a81226db83dc857aaa274a/conjuring-0.3.0.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/34/45/fe44dcb9f7208f1f79ace3df801aa653cfefdabb5feab08e43b6695aea19/qwak_core-0.0.67.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [cellmachine]: executing diffoscope
+[2023-05-21 13:50:44] INFO root fetch - processPackages [cellmachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmachine-0.0.2.tar.gz tmp/cellmachine-0.0.3.tar.gz --markdown 20230521/c/cellmachine/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 13:50:44] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-21 13:50:44] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.66.tar.gz tmp/qwak_core-0.0.67.tar.gz --markdown 20230521/q/qwak-core/0.0.66-0.0.67/diff.md --exclude *.pyd
+[2023-05-21 13:50:44] INFO root fetch - processPackages [py-pdf-term]: Downloading https://files.pythonhosted.org/packages/ca/70/12c47dc513900014cd2a53ea35935140b6f6402cc7cf50e485800863d4ea/py_pdf_term-1.0.0.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [conjuring]: Downloading https://files.pythonhosted.org/packages/0b/a0/c79d0b4e4d557d8370467d88f80ba6b93d8f49d67b1d2bdb65c70e979c85/conjuring-0.4.0.tar.gz
+[2023-05-21 13:50:44] INFO root fetch - processPackages [py-pdf-term]: executing diffoscope
+[2023-05-21 13:50:44] INFO root fetch - processPackages [py-pdf-term]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-pdf-term-0.18.1.tar.gz tmp/py_pdf_term-1.0.0.tar.gz --markdown 20230521/p/py-pdf-term/0.18.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 13:50:45] INFO root fetch - processPackages [conjuring]: executing diffoscope
+[2023-05-21 13:50:45] INFO root fetch - processPackages [conjuring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjuring-0.3.0.tar.gz tmp/conjuring-0.4.0.tar.gz --markdown 20230521/c/conjuring/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 13:50:45] INFO root fetch - processPackages [weewx]: Downloading https://files.pythonhosted.org/packages/8e/46/054554353493b3ddbb22a8bcc8eb4edb849a123bd6ceedb4f35930abbfb0/weewx-5.0.0b1.tar.gz
+[2023-05-21 13:50:45] INFO root fetch - processPackages [weewx]: executing diffoscope
+[2023-05-21 13:50:45] INFO root fetch - processPackages [weewx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weewx-5.0.0a30.tar.gz tmp/weewx-5.0.0b1.tar.gz --markdown 20230521/w/weewx/5.0.0a30-5.0.0b1/diff.md --exclude *.pyd
+[2023-05-21 13:50:45] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-21 13:50:45] INFO root fetch - main [MainThread]: End processing [cellmachine]: success
+[2023-05-21 13:50:46] INFO root fetch - main [MainThread]: End processing [conjuring]: success
+[2023-05-21 13:50:47] INFO root fetch - main [MainThread]: End processing [py-pdf-term]: success
+[2023-05-21 13:50:49] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-21 13:50:53] INFO root fetch - main [MainThread]: End processing [weewx]: success
+[2023-05-21 13:50:53] INFO root fetch - main [MainThread]: Store serial: [18186855]
