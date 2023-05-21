@@ -4152,3 +4152,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:49:10] INFO root fetch - main [MainThread]: End processing [django-gcp]: success
 [2023-05-21 11:49:10] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
 [2023-05-21 11:49:10] INFO root fetch - main [MainThread]: Store serial: [18186499]
+[2023-05-21 11:54:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186499]
+[2023-05-21 11:54:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 11:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlflow-tmp
+[2023-05-21 11:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rico
+[2023-05-21 11:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqtcolor
+[2023-05-21 11:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytmac
+[2023-05-21 11:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inverter-connect
+[2023-05-21 11:54:19] INFO root fetch - processPackages [rico]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-21 11:54:19] WARNING root fetch - processPackages [pyqtcolor]: Skipping, unable to determine old version
+[2023-05-21 11:54:19] INFO root fetch - main [MainThread]: End processing [pyqtcolor] error
+[2023-05-21 11:54:19] INFO root fetch - processPackages [inverter-connect]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 11:54:19] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 11:54:19] INFO root fetch - processPackages [pytmac]: New version: [3.2.0] Old Version: [3.1.2]
+[2023-05-21 11:54:19] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-21 11:54:19] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.8.0.tar.gz tmp/inverter-connect-0.9.0.tar.gz --markdown 20230521/i/inverter-connect/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 11:54:19] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/09/b1/24f4dce6e75687b96874bbcb2187357c8d43b4ecc990ce5a27e4db9f4175/rico-0.0.4.tar.gz
+[2023-05-21 11:54:19] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 11:54:19] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 11:54:19] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/a9/f1/e488a5e1c2db42de5d23ff0009b3b7b11f21c6be358a84a6c09ceb88f9f4/pytmac-3.1.2.tar.gz
+[2023-05-21 11:54:19] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/3a/87/3736ea83c12586fb71105f08dbfedc24ea6eb252ca6bd0b748e0d1b59dbe/rico-0.0.5.tar.gz
+[2023-05-21 11:54:20] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/bd/68/b5eec027a57d7b88d1f676720d32c453881d40106c60b9c38d1921b58f6a/pytmac-3.2.0.tar.gz
+[2023-05-21 11:54:20] INFO root fetch - processPackages [rico]: executing diffoscope
+[2023-05-21 11:54:20] INFO root fetch - processPackages [rico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rico-0.0.4.tar.gz tmp/rico-0.0.5.tar.gz --markdown 20230521/r/rico/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-21 11:54:20] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-21 11:54:20] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.1.2.tar.gz tmp/pytmac-3.2.0.tar.gz --markdown 20230521/p/pytmac/3.1.2-3.2.0/diff.md --exclude *.pyd
+[2023-05-21 11:54:21] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-21 11:54:21] INFO root fetch - main [MainThread]: End processing [rico]: success
+[2023-05-21 11:54:21] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-21 11:54:23] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 11:54:23] INFO root fetch - main [MainThread]: Store serial: [18186512]
