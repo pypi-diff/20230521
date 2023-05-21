@@ -3129,3 +3129,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:54:54] INFO root fetch - main [MainThread]: End processing [dreamai-pdf]: success
 [2023-05-21 08:54:55] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
 [2023-05-21 08:54:55] INFO root fetch - main [MainThread]: Store serial: [18185991]
+[2023-05-21 09:00:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185991]
+[2023-05-21 09:00:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 09:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spider-st
+[2023-05-21 09:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gradio
+[2023-05-21 09:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoxx
+[2023-05-21 09:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vsdpir
+[2023-05-21 09:00:05] INFO root fetch - processPackages [autoxx]: New version: [0.0.13] Old Version: [0.0.12]
+[2023-05-21 09:00:05] INFO root fetch - processPackages [vsdpir]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-21 09:00:05] INFO root fetch - processPackages [gradio]: New version: [3.9.1] Old Version: [3.9]
+[2023-05-21 09:00:05] INFO root fetch - processPackages [spider-st]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-21 09:00:05] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/02/fa/13a680cfcb21c06971c15c01393632b7e037efa1d1dfd72121df592a4697/autoxx-0.0.12.tar.gz
+[2023-05-21 09:00:05] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/b2/2d/f8dc88b392cdaac54b5bf6b56af321211f705494f4a0b2a1589717c06ff5/gradio-3.9.tar.gz
+[2023-05-21 09:00:05] INFO root fetch - processPackages [vsdpir]: Downloading https://files.pythonhosted.org/packages/50/6b/51086093dd0ca63704f09fda0c02ae2a41c7e3907aa1d652f1b9f452dbb7/vsdpir-3.1.1-py3-none-any.whl
+[2023-05-21 09:00:05] INFO root fetch - processPackages [spider-st]: Downloading https://files.pythonhosted.org/packages/de/89/c681ee47130bea4bb484220680936622a7a3dd7ab97249768b6ff1826f6e/spider-st-0.0.5.tar.gz
+[2023-05-21 09:00:05] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 12444246>=10485760
+[2023-05-21 09:00:05] INFO root fetch - main [MainThread]: End processing [gradio] error
+[2023-05-21 09:00:05] INFO root fetch - processPackages [vsdpir]: executing diffoscope
+[2023-05-21 09:00:05] INFO root fetch - processPackages [vsdpir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsdpir-3.1.0-py3-none-any.whl.zip tmp/vsdpir-3.1.1-py3-none-any.whl.zip --markdown 20230521/v/vsdpir/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-21 09:00:05] INFO root fetch - processPackages [spider-st]: executing diffoscope
+[2023-05-21 09:00:05] INFO root fetch - processPackages [spider-st]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spider-st-0.0.4.tar.gz tmp/spider-st-0.0.5.tar.gz --markdown 20230521/s/spider-st/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-21 09:00:05] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/e7/8c/783f14313f74f4ab91e42a66bb6005e394e53278826230e46ce76cf86602/autoxx-0.0.13.tar.gz
+[2023-05-21 09:00:05] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-21 09:00:05] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.12.tar.gz tmp/autoxx-0.0.13.tar.gz --markdown 20230521/a/autoxx/0.0.12-0.0.13/diff.md --exclude *.pyd
+[2023-05-21 09:00:06] INFO root fetch - main [MainThread]: End processing [vsdpir]: success
+[2023-05-21 09:00:06] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-21 09:00:06] INFO root fetch - main [MainThread]: End processing [spider-st]: success
+[2023-05-21 09:00:06] INFO root fetch - main [MainThread]: Store serial: [18186004]
