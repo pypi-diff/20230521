@@ -6251,3 +6251,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:05:09] INFO root fetch - main [MainThread]: End processing [gaiaFramework]: success
 [2023-05-21 16:05:10] INFO root fetch - main [MainThread]: End processing [dearwatson]: success
 [2023-05-21 16:05:10] INFO root fetch - main [MainThread]: Store serial: [18187521]
+[2023-05-21 16:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187521]
+[2023-05-21 16:10:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 16:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: YMS
+[2023-05-21 16:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omfit-classes
+[2023-05-21 16:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leuci-pol
+[2023-05-21 16:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyjaws
+[2023-05-21 16:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: migdalor
+[2023-05-21 16:10:19] INFO root fetch - processPackages [YMS]: New version: [0.76] Old Version: [0.75]
+[2023-05-21 16:10:19] INFO root fetch - processPackages [pyjaws]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-21 16:10:19] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev8] Old Version: [0.0.2.dev7]
+[2023-05-21 16:10:19] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 16:10:19] INFO root fetch - processPackages [omfit-classes]: New version: [3.2023.7.2] Old Version: [3.2023.5.2]
+[2023-05-21 16:10:19] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-05-21 16:10:19] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230521/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 16:10:19] INFO root fetch - processPackages [omfit-classes]: Downloading https://files.pythonhosted.org/packages/2e/d0/286a2112764912a96e74856a5d9f479c33b47dabf2f052791fbbd46a1804/omfit_classes-3.2023.5.2.tar.gz
+[2023-05-21 16:10:19] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/98/51/ab804d4ae544edcd6319f0fb4600efc1420bc9906964877ff1f823fea2be/YMS-0.76.tar.gz
+[2023-05-21 16:10:19] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/05/b5/e407f33e625e137b44beb696cc314456d718fa2f0ecca37a0fd43d699942/migdalor-0.0.2.dev8.tar.gz
+[2023-05-21 16:10:19] INFO root fetch - processPackages [pyjaws]: Downloading https://files.pythonhosted.org/packages/ff/06/2804f47d4ab5d0134da900286dfa1fc149bec7bf6aee071550050bc16ff0/pyjaws-0.1.3.tar.gz
+[2023-05-21 16:10:19] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 16:10:19] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev7.tar.gz tmp/migdalor-0.0.2.dev8.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev7-0.0.2.dev8/diff.md --exclude *.pyd
+[2023-05-21 16:10:20] INFO root fetch - processPackages [pyjaws]: executing diffoscope
+[2023-05-21 16:10:20] INFO root fetch - processPackages [pyjaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjaws-0.1.2.tar.gz tmp/pyjaws-0.1.3.tar.gz --markdown 20230521/p/pyjaws/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-21 16:10:20] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-21 16:10:20] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.75.tar.gz tmp/YMS-0.76.tar.gz --markdown 20230521/Y/YMS/0.75-0.76/diff.md --exclude *.pyd
+[2023-05-21 16:10:20] INFO root fetch - processPackages [omfit-classes]: Downloading https://files.pythonhosted.org/packages/34/47/4689b08a3026fba7d0b3fa8734ba24c4073c3e36d54bd50195efa78882da/omfit_classes-3.2023.7.2.tar.gz
+[2023-05-21 16:10:20] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-05-21 16:10:21] INFO root fetch - processPackages [omfit-classes]: executing diffoscope
+[2023-05-21 16:10:21] INFO root fetch - processPackages [omfit-classes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omfit_classes-3.2023.5.2.tar.gz tmp/omfit_classes-3.2023.7.2.tar.gz --markdown 20230521/o/omfit-classes/3.2023.5.2-3.2023.7.2/diff.md --exclude *.pyd
+[2023-05-21 16:10:21] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 16:10:21] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-21 16:10:21] INFO root fetch - main [MainThread]: End processing [pyjaws]: success
+[2023-05-21 16:10:27] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
+[2023-05-21 16:10:27] INFO root fetch - main [MainThread]: Store serial: [18187536]
