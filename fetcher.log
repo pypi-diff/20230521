@@ -4136,3 +4136,19 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:43:35] INFO root fetch - processPackages [sympy.keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympy.keras-1.0.20.tar.gz tmp/sympy.keras-1.0.4.tar.gz --markdown 20230521/s/sympy.keras/1.0.20-1.0.4/diff.md --exclude *.pyd
 [2023-05-21 11:43:59] INFO root fetch - main [MainThread]: End processing [sympy.keras]: success
 [2023-05-21 11:43:59] INFO root fetch - main [MainThread]: Store serial: [18186494]
+[2023-05-21 11:49:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186494]
+[2023-05-21 11:49:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 11:49:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-gcp
+[2023-05-21 11:49:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: std.algorithm
+[2023-05-21 11:49:08] INFO root fetch - processPackages [std.algorithm]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-21 11:49:08] INFO root fetch - processPackages [django-gcp]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-21 11:49:09] INFO root fetch - processPackages [std.algorithm]: Downloading https://files.pythonhosted.org/packages/c9/bd/a8daf10ac495e381cb9ca3b976fccf02b02939366d75f402e4dd89879652/std.algorithm-1.1.2.tar.gz
+[2023-05-21 11:49:09] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/a3/ea/a0ba2534d8540b5905ac4a62ff379270051f18b10e85af024aafde36b9d2/django_gcp-0.9.3.tar.gz
+[2023-05-21 11:49:09] INFO root fetch - processPackages [django-gcp]: executing diffoscope
+[2023-05-21 11:49:09] INFO root fetch - processPackages [django-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gcp-0.9.2.tar.gz tmp/django_gcp-0.9.3.tar.gz --markdown 20230521/d/django-gcp/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-21 11:49:09] INFO root fetch - processPackages [std.algorithm]: Downloading https://files.pythonhosted.org/packages/5b/70/dc74ec2e47d8709539637107ad899a64f46efa82103ca3a06729579c9e00/std.algorithm-1.1.3.tar.gz
+[2023-05-21 11:49:09] INFO root fetch - processPackages [std.algorithm]: executing diffoscope
+[2023-05-21 11:49:09] INFO root fetch - processPackages [std.algorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std.algorithm-1.1.2.tar.gz tmp/std.algorithm-1.1.3.tar.gz --markdown 20230521/s/std.algorithm/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-21 11:49:10] INFO root fetch - main [MainThread]: End processing [django-gcp]: success
+[2023-05-21 11:49:10] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
+[2023-05-21 11:49:10] INFO root fetch - main [MainThread]: Store serial: [18186499]
