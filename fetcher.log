@@ -9099,3 +9099,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:30:40] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-dynatrace]: success
 [2023-05-21 22:30:41] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2023-05-21 22:30:41] INFO root fetch - main [MainThread]: Store serial: [18189028]
+[2023-05-21 22:35:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189028]
+[2023-05-21 22:35:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 22:35:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amplitude-data-wrapper
+[2023-05-21 22:35:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlite3-to-mysql
+[2023-05-21 22:35:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aij
+[2023-05-21 22:35:51] INFO root fetch - processPackages [sqlite3-to-mysql]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-21 22:35:51] INFO root fetch - processPackages [amplitude-data-wrapper]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-21 22:35:51] INFO root fetch - processPackages [aij]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 22:35:51] INFO root fetch - processPackages [sqlite3-to-mysql]: executing diffoscope
+[2023-05-21 22:35:51] INFO root fetch - processPackages [sqlite3-to-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite3-to-mysql-1.4.8.tar.gz tmp/sqlite3-to-mysql-1.4.9.tar.gz --markdown 20230521/s/sqlite3-to-mysql/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-21 22:35:51] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-21 22:35:51] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.0.8.tar.gz tmp/aij-1.0.9.tar.gz --markdown 20230521/a/aij/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 22:35:51] INFO root fetch - processPackages [amplitude-data-wrapper]: Downloading https://files.pythonhosted.org/packages/53/0c/c835528329bff64c617f1acadff0bc5ee8b220be6a42afac88b07e98afa7/amplitude-data-wrapper-0.4.1.tar.gz
+[2023-05-21 22:35:51] INFO root fetch - processPackages [amplitude-data-wrapper]: executing diffoscope
+[2023-05-21 22:35:51] INFO root fetch - processPackages [amplitude-data-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amplitude-data-wrapper-0.4.0.tar.gz tmp/amplitude-data-wrapper-0.4.1.tar.gz --markdown 20230521/a/amplitude-data-wrapper/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-21 22:35:52] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
+[2023-05-21 22:35:52] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-21 22:35:52] INFO root fetch - main [MainThread]: End processing [amplitude-data-wrapper]: success
+[2023-05-21 22:35:52] INFO root fetch - main [MainThread]: Store serial: [18189042]
