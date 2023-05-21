@@ -1319,3 +1319,49 @@
 [2023-05-21 02:54:24] INFO root fetch - main [MainThread]: End processing [makim]: success
 [2023-05-21 02:54:26] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 02:54:26] INFO root fetch - main [MainThread]: Store serial: [18185073]
+[2023-05-21 02:59:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185073]
+[2023-05-21 02:59:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlite3-to-mysql
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mysql-to-sqlite3
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tuneflow-devkit-py
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: panoptic
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AIPrompts
+[2023-05-21 02:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hummuspy
+[2023-05-21 02:59:34] INFO root fetch - processPackages [sqlite3-to-mysql]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-21 02:59:34] INFO root fetch - processPackages [tuneflow-devkit-py]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-21 02:59:34] INFO root fetch - processPackages [mysql-to-sqlite3]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-21 02:59:34] INFO root fetch - processPackages [panoptic]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-21 02:59:34] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 02:59:34] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-21 02:59:35] INFO root fetch - processPackages [panoptic]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [panoptic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panoptic-0.0.5.tar.gz tmp/panoptic-0.0.6.tar.gz --markdown 20230521/p/panoptic/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [AIPrompts]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-21 02:59:35] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230521/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/c0/a5/f3c981d0fa147d3f8147a0dd9129eb244287c0ef6f6c475f8cb98a79f33f/sqlite3-to-mysql-1.4.8.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230521/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [tuneflow-devkit-py]: Downloading https://files.pythonhosted.org/packages/ae/30/2f0f4d2d7583aad68746e36ea1bd3bf25ad414ac3aea7a22fd9f85fa49a3/tuneflow-devkit-py-0.8.3.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/9e/28/d27e28209dd843b3f891ef41e235d3fc71546995892345924e7758ca4fc8/mysql-to-sqlite3-1.4.8.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [AIPrompts]: Downloading https://files.pythonhosted.org/packages/ee/7f/11eca331f44de6a41d55052149a60d423026e27dee953ce569cf93884a81/AIPrompts-0.4.0.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [tuneflow-devkit-py]: Downloading https://files.pythonhosted.org/packages/fc/9a/e6a8e72a089203926fe408ef719e739d6c2f78ce6aae82812a65bc2ad391/tuneflow-devkit-py-0.8.4.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/c6/36/e456c6959042232c3e1d36aa121f9c9def0c5e92529d35e0c2d26d44cf4b/mysql-to-sqlite3-1.4.9.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [tuneflow-devkit-py]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [tuneflow-devkit-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-devkit-py-0.8.3.tar.gz tmp/tuneflow-devkit-py-0.8.4.tar.gz --markdown 20230521/t/tuneflow-devkit-py/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/69/65/95c014958ee2571ec300bb7efc29f290d37e5b5d610d59e7cdfba415a2bb/sqlite3-to-mysql-1.4.9.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [mysql-to-sqlite3]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [mysql-to-sqlite3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql-to-sqlite3-1.4.8.tar.gz tmp/mysql-to-sqlite3-1.4.9.tar.gz --markdown 20230521/m/mysql-to-sqlite3/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [AIPrompts]: Downloading https://files.pythonhosted.org/packages/da/35/54e9e5c76478a0f0813f12b50252242dae0fb2636dba295d567065053bc6/AIPrompts-0.5.0.tar.gz
+[2023-05-21 02:59:35] INFO root fetch - processPackages [AIPrompts]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [AIPrompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AIPrompts-0.4.0.tar.gz tmp/AIPrompts-0.5.0.tar.gz --markdown 20230521/A/AIPrompts/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 02:59:35] INFO root fetch - processPackages [sqlite3-to-mysql]: executing diffoscope
+[2023-05-21 02:59:35] INFO root fetch - processPackages [sqlite3-to-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite3-to-mysql-1.4.8.tar.gz tmp/sqlite3-to-mysql-1.4.9.tar.gz --markdown 20230521/s/sqlite3-to-mysql/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-21 02:59:36] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-21 02:59:36] INFO root fetch - main [MainThread]: End processing [tuneflow-devkit-py]: success
+[2023-05-21 02:59:36] INFO root fetch - main [MainThread]: End processing [mysql-to-sqlite3]: success
+[2023-05-21 02:59:37] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
+[2023-05-21 02:59:37] INFO root fetch - main [MainThread]: End processing [AIPrompts]: success
+[2023-05-21 02:59:38] INFO root fetch - main [MainThread]: End processing [panoptic]: success
+[2023-05-21 02:59:57] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-21 02:59:57] INFO root fetch - main [MainThread]: Store serial: [18185094]
