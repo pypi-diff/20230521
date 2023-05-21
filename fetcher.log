@@ -6684,3 +6684,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:58:04] INFO root fetch - main [MainThread]: End processing [aa-structures]: success
 [2023-05-21 16:58:11] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-21 16:58:11] INFO root fetch - main [MainThread]: Store serial: [18187716]
+[2023-05-21 17:03:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187716]
+[2023-05-21 17:03:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: talonfmt
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bgutils-hddly
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fmsne
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krbjack
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tbump
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smartdict
+[2023-05-21 17:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: not1mm
+[2023-05-21 17:03:20] INFO root fetch - processPackages [fmsne]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [talonfmt]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [tbump]: New version: [6.9.0] Old Version: [6.8.0]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [krbjack]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [smartdict]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-21 17:03:20] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2023-05-21 17:03:20] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20230521/b/bgutils-hddly/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/50/41/564cf8c9462fbb2e493fcb5b6756b8dbfb54b4181c8070611dbf5618bbf2/fmsne-0.6.1.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [krbjack]: Downloading https://files.pythonhosted.org/packages/f7/2e/08a862db35f534e298c4ff9ef6947557b1a7c8634b745b83caa821df04b7/krbjack-1.0.2.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [tbump]: Downloading https://files.pythonhosted.org/packages/63/7c/b80546f21588705c0b50d79e5d6b166deaa7544981e45c05f400d1d343a4/tbump-6.8.0.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [smartdict]: Downloading https://files.pythonhosted.org/packages/11/46/ba14e7f741fb3e9c55296181f585db029200742b3a7254a9b7a3c033179d/smartdict-0.0.5.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [talonfmt]: Downloading https://files.pythonhosted.org/packages/70/1f/8259425caad00476398f7fa3de5397ee6f8d7fe6c95128e4108c1cee3812/talonfmt-1.9.7.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230521/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [talonfmt]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [talonfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talonfmt-1.9.6.tar.gz tmp/talonfmt-1.9.7.tar.gz --markdown 20230521/t/talonfmt/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/5d/b6/6a83ff68bca917baa2fcdede4858b56990d67e655f97994c255b88b18057/fmsne-0.6.2.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [krbjack]: Downloading https://files.pythonhosted.org/packages/78/2d/1511db6bc4c80de65dc2714b1917b70cae872a23083561266742afb1da79/krbjack-1.1.0.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [tbump]: Downloading https://files.pythonhosted.org/packages/a1/c9/11043f63525fa15428cea911d2f7ab1376725f35c915e939a70708050a73/tbump-6.9.0.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [fmsne]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [fmsne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmsne-0.6.1.tar.gz tmp/fmsne-0.6.2.tar.gz --markdown 20230521/f/fmsne/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [krbjack]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [krbjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krbjack-1.0.2.tar.gz tmp/krbjack-1.1.0.tar.gz --markdown 20230521/k/krbjack/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [smartdict]: Downloading https://files.pythonhosted.org/packages/a8/2f/0b3e1be2150436201614e1d570f5b912c10126a454d32d2a243dee2361be/smartdict-0.0.6.tar.gz
+[2023-05-21 17:03:21] INFO root fetch - processPackages [tbump]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [tbump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbump-6.8.0.tar.gz tmp/tbump-6.9.0.tar.gz --markdown 20230521/t/tbump/6.8.0-6.9.0/diff.md --exclude *.pyd
+[2023-05-21 17:03:21] INFO root fetch - processPackages [smartdict]: executing diffoscope
+[2023-05-21 17:03:21] INFO root fetch - processPackages [smartdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartdict-0.0.5.tar.gz tmp/smartdict-0.0.6.tar.gz --markdown 20230521/s/smartdict/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-21 17:03:22] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2023-05-21 17:03:22] INFO root fetch - main [MainThread]: End processing [talonfmt]: success
+[2023-05-21 17:03:22] INFO root fetch - main [MainThread]: End processing [krbjack]: success
+[2023-05-21 17:03:23] INFO root fetch - main [MainThread]: End processing [smartdict]: success
+[2023-05-21 17:03:23] INFO root fetch - main [MainThread]: End processing [tbump]: success
+[2023-05-21 17:03:24] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-21 17:03:25] INFO root fetch - main [MainThread]: End processing [fmsne]: success
+[2023-05-21 17:03:25] INFO root fetch - main [MainThread]: Store serial: [18187736]
