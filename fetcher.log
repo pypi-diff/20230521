@@ -1216,3 +1216,20 @@
 [2023-05-21 02:38:37] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2023-05-21 02:38:38] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2023-05-21 02:38:38] INFO root fetch - main [MainThread]: Store serial: [18185023]
+[2023-05-21 02:43:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185023]
+[2023-05-21 02:43:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 02:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cuke
+[2023-05-21 02:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agixt
+[2023-05-21 02:43:47] INFO root fetch - processPackages [cuke]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-21 02:43:47] INFO root fetch - processPackages [agixt]: New version: [1.1.52b0] Old Version: [1.1.51b0]
+[2023-05-21 02:43:47] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/b7/86/71c9e610e2639ff3008c09e31be85e113e822a543df88716bb20dd5f8a7f/agixt-1.1.51b0.tar.gz
+[2023-05-21 02:43:47] INFO root fetch - processPackages [cuke]: Downloading https://files.pythonhosted.org/packages/93/6b/932379734dc0f143ca3d485d873449bacf9d5ebcb0e381705830c5fb2e3a/cuke-0.1.2.tar.gz
+[2023-05-21 02:43:47] INFO root fetch - processPackages [cuke]: Downloading https://files.pythonhosted.org/packages/44/e6/77b8effda07ad3b4af3fa812fb40d7ea9710da77004435b497350918ee30/cuke-0.1.3.tar.gz
+[2023-05-21 02:43:47] INFO root fetch - processPackages [cuke]: executing diffoscope
+[2023-05-21 02:43:47] INFO root fetch - processPackages [cuke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuke-0.1.2.tar.gz tmp/cuke-0.1.3.tar.gz --markdown 20230521/c/cuke/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-21 02:43:47] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/b6/78/0b033518a5e0b77bc8b529a4c3169d4755284799fe66cfff0f177b9899bb/agixt-1.1.52b0.tar.gz
+[2023-05-21 02:43:47] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 02:43:47] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.51b0.tar.gz tmp/agixt-1.1.52b0.tar.gz --markdown 20230521/a/agixt/1.1.51b0-1.1.52b0/diff.md --exclude *.pyd
+[2023-05-21 02:43:48] INFO root fetch - main [MainThread]: End processing [cuke]: success
+[2023-05-21 02:43:49] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 02:43:49] INFO root fetch - main [MainThread]: Store serial: [18185029]
