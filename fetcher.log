@@ -4106,3 +4106,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:38:22] INFO root fetch - processPackages [pyxel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxel-1.9.8-cp37-abi3-win_amd64.whl.zip tmp/pyxel-1.9.9-cp37-abi3-win_amd64.whl.zip --markdown 20230521/p/pyxel/1.9.8-1.9.9/diff.md --exclude *.pyd
 [2023-05-21 11:38:24] INFO root fetch - main [MainThread]: End processing [pyxel]: success
 [2023-05-21 11:38:24] INFO root fetch - main [MainThread]: Store serial: [18186483]
+[2023-05-21 11:43:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186483]
+[2023-05-21 11:43:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mach2
+[2023-05-21 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: migdalor
+[2023-05-21 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alfred-cli
+[2023-05-21 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sympy.keras
+[2023-05-21 11:43:33] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev1] Old Version: [0.0.2.dev0]
+[2023-05-21 11:43:33] INFO root fetch - processPackages [mach2]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 11:43:33] INFO root fetch - processPackages [alfred-cli]: New version: [2.0.0b3] Old Version: [2.0.0b2]
+[2023-05-21 11:43:33] INFO root fetch - processPackages [sympy.keras]: New version: [1.0.4] Old Version: [1.0.20]
+[2023-05-21 11:43:33] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/f0/23/7a36f5bdcd7033dcdeec294aeb85f5578a8e9fe9873c6dcd6e4ef1e8d83f/migdalor-0.0.2.dev1.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [alfred-cli]: Downloading https://files.pythonhosted.org/packages/a7/45/404df20ad3b5e3fe6102d9370f5bddde5e1905fbec4868b0e03e14a0a7d6/alfred_cli-2.0.0b2.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [sympy.keras]: Downloading https://files.pythonhosted.org/packages/04/37/e041e42530c44909faa1e4ed14f7bc13ad99c5f17c30bde19c98f7e1fd34/sympy.keras-1.0.20.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [mach2]: Downloading https://files.pythonhosted.org/packages/71/4f/7fc2bdc90ed2e5ccb4133c85816e772d71f895720d0c2d9cae3e6a5df702/mach2-0.0.1.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 11:43:33] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev0.tar.gz tmp/migdalor-0.0.2.dev1.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev0-0.0.2.dev1/diff.md --exclude *.pyd
+[2023-05-21 11:43:33] INFO root fetch - processPackages [alfred-cli]: Downloading https://files.pythonhosted.org/packages/ec/f2/68f5670c25a3ebddd69f546dcb7a428ccdda691189150c320310a2b761c3/alfred_cli-2.0.0b3.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [mach2]: Downloading https://files.pythonhosted.org/packages/9f/5b/a9ce4e9a5e89a95748453504f00f2f456f39644292aa180cfa70ce239dfe/mach2-0.0.2.tar.gz
+[2023-05-21 11:43:33] INFO root fetch - processPackages [mach2]: executing diffoscope
+[2023-05-21 11:43:33] INFO root fetch - processPackages [mach2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mach2-0.0.1.tar.gz tmp/mach2-0.0.2.tar.gz --markdown 20230521/m/mach2/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 11:43:33] INFO root fetch - processPackages [alfred-cli]: executing diffoscope
+[2023-05-21 11:43:33] INFO root fetch - processPackages [alfred-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred_cli-2.0.0b2.tar.gz tmp/alfred_cli-2.0.0b3.tar.gz --markdown 20230521/a/alfred-cli/2.0.0b2-2.0.0b3/diff.md --exclude *.pyd
+[2023-05-21 11:43:34] INFO root fetch - processPackages [sympy.keras]: Downloading https://files.pythonhosted.org/packages/0c/a3/653e1876e316d93b55020c701ed5e3da06e725cfa7f4ca63722a39bddaaa/sympy.keras-1.0.4.tar.gz
+[2023-05-21 11:43:34] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 11:43:34] INFO root fetch - main [MainThread]: End processing [mach2]: success
+[2023-05-21 11:43:35] INFO root fetch - main [MainThread]: End processing [alfred-cli]: success
+[2023-05-21 11:43:35] INFO root fetch - processPackages [sympy.keras]: executing diffoscope
+[2023-05-21 11:43:35] INFO root fetch - processPackages [sympy.keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympy.keras-1.0.20.tar.gz tmp/sympy.keras-1.0.4.tar.gz --markdown 20230521/s/sympy.keras/1.0.20-1.0.4/diff.md --exclude *.pyd
+[2023-05-21 11:43:59] INFO root fetch - main [MainThread]: End processing [sympy.keras]: success
+[2023-05-21 11:43:59] INFO root fetch - main [MainThread]: Store serial: [18186494]
