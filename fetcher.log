@@ -7203,3 +7203,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:06:27] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
 [2023-05-21 18:06:28] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-05-21 18:06:28] INFO root fetch - main [MainThread]: Store serial: [18187974]
+[2023-05-21 18:11:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187974]
+[2023-05-21 18:11:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: johnnycanencrypt
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openapi-pydantic
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydisadm
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utilki
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osw
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyerrors
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pioreactor-high-temp-plugin
+[2023-05-21 18:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tessa
+[2023-05-21 18:11:37] INFO root fetch - processPackages [pydisadm]: New version: [1.3.0] Old Version: [1.2.5]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [johnnycanencrypt]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [openapi-pydantic]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [pyerrors]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [utilki]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [osw]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [tessa]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-21 18:11:37] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 18:11:38] INFO root fetch - processPackages [johnnycanencrypt]: Downloading https://files.pythonhosted.org/packages/6c/fe/30deb1c9167533347ad7c90a14955db64524d96db97462241ab0f44a3b32/johnnycanencrypt-0.8.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [utilki]: Downloading https://files.pythonhosted.org/packages/62/e6/1537b7eff21a412d0d0aec4c5906e23add68cd169dedd2608d47c4d15dc2/utilki-0.2.1.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pyerrors]: Downloading https://files.pythonhosted.org/packages/15/2f/207679b07b1af4b6e09e2154cbaa939c4a982ae13888a3ee736ea38dfb10/pyerrors-2.7.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pydisadm]: Downloading https://files.pythonhosted.org/packages/47/2c/38ce06bd873fae3b75c60cec1013f8b67cd0e71950cd6cd9b7b540846777/pydisadm-1.3.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [openapi-pydantic]: Downloading https://files.pythonhosted.org/packages/3e/ed/fcfee02a10f1b65652f54839e5b67899a8dcef2faa526c65438116312f38/openapi_pydantic-0.1.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: Downloading https://files.pythonhosted.org/packages/15/53/461989fd9cc31f2723d1bf497fb191395263b6265923c682ca32c0515c4f/pioreactor_high_temp_plugin-0.0.1-py3-none-any.whl
+[2023-05-21 18:11:38] INFO root fetch - processPackages [osw]: Downloading https://files.pythonhosted.org/packages/27/28/7dce0f1b9b88600266cdd44926966e065e9a616c1f417267bc250603dae1/osw-0.7.2.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [tessa]: Downloading https://files.pythonhosted.org/packages/b8/ba/a05e556521bd94248d1e3534042866c2fc0c9390326c0a93ecb17182fcb6/tessa-0.6.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pydisadm]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pydisadm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydisadm-1.2.5.tar.gz tmp/pydisadm-1.3.0.tar.gz --markdown 20230521/p/pydisadm/1.2.5-1.3.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [johnnycanencrypt]: Downloading https://files.pythonhosted.org/packages/75/60/e39c277a8b222977f7228108570419830ccf12858d28477ffa0d13ede49a/johnnycanencrypt-0.9.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: Downloading https://files.pythonhosted.org/packages/d3/63/de3b2af44ba5fefb8ec9a44e5d7bb90ee2a59db9f17427f3f19abd35b1aa/pioreactor_high_temp_plugin-0.0.2-py3-none-any.whl
+[2023-05-21 18:11:38] INFO root fetch - processPackages [tessa]: Downloading https://files.pythonhosted.org/packages/aa/5f/49cc79da464dc0ca42852484fb8137bd45a057100e694bb70e9b28e7fe3a/tessa-0.7.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [osw]: Downloading https://files.pythonhosted.org/packages/c1/7c/5e044d550c519dbcb36419d2d2faf8f3a2b8a584a331728d06dd48d73c58/osw-0.8.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [utilki]: Downloading https://files.pythonhosted.org/packages/93/29/b3365ae671d9f6d8d93845707ea7dfe3b9704d68962e032c28d88da3e688/utilki-0.3.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [openapi-pydantic]: Downloading https://files.pythonhosted.org/packages/0c/b9/9b304144dea24aea8a0d25cffb4d2532e30b17f4f365281edd2c0a4c94a8/openapi_pydantic-0.1.1.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [johnnycanencrypt]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [johnnycanencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnnycanencrypt-0.8.0.tar.gz tmp/johnnycanencrypt-0.9.0.tar.gz --markdown 20230521/j/johnnycanencrypt/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pyerrors]: Downloading https://files.pythonhosted.org/packages/21/04/c2dd6a205fd30c64a51786804bff3245673f85c46d706ba4ec774fb3f54a/pyerrors-2.8.0.tar.gz
+[2023-05-21 18:11:38] INFO root fetch - processPackages [openapi-pydantic]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [openapi-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_pydantic-0.1.0.tar.gz tmp/openapi_pydantic-0.1.1.tar.gz --markdown 20230521/o/openapi-pydantic/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [tessa]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [tessa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tessa-0.6.0.tar.gz tmp/tessa-0.7.0.tar.gz --markdown 20230521/t/tessa/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pioreactor_high_temp_plugin-0.0.1-py3-none-any.whl.zip tmp/pioreactor_high_temp_plugin-0.0.2-py3-none-any.whl.zip --markdown 20230521/p/pioreactor-high-temp-plugin/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [utilki]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [utilki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilki-0.2.1.tar.gz tmp/utilki-0.3.0.tar.gz --markdown 20230521/u/utilki/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:38] INFO root fetch - processPackages [osw]: executing diffoscope
+[2023-05-21 18:11:38] INFO root fetch - processPackages [osw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osw-0.7.2.tar.gz tmp/osw-0.8.0.tar.gz --markdown 20230521/o/osw/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:39] INFO root fetch - processPackages [pyerrors]: executing diffoscope
+[2023-05-21 18:11:39] INFO root fetch - processPackages [pyerrors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerrors-2.7.0.tar.gz tmp/pyerrors-2.8.0.tar.gz --markdown 20230521/p/pyerrors/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-21 18:11:39] INFO root fetch - main [MainThread]: End processing [pydisadm]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [pioreactor-high-temp-plugin]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [tessa]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [utilki]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [johnnycanencrypt]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [openapi-pydantic]: success
+[2023-05-21 18:11:40] INFO root fetch - main [MainThread]: End processing [osw]: success
+[2023-05-21 18:11:41] INFO root fetch - main [MainThread]: End processing [pyerrors]: success
+[2023-05-21 18:11:41] INFO root fetch - main [MainThread]: Store serial: [18188002]
