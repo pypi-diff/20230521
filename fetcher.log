@@ -9009,3 +9009,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:19:59] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
 [2023-05-21 22:20:09] INFO root fetch - main [MainThread]: End processing [epyk]: success
 [2023-05-21 22:20:09] INFO root fetch - main [MainThread]: Store serial: [18188980]
+[2023-05-21 22:25:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188980]
+[2023-05-21 22:25:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: envoy.base.utils
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nidalee
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: squape
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tomte
+[2023-05-21 22:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lbrlabs-pulumi-dynatrace
+[2023-05-21 22:25:18] INFO root fetch - processPackages [tomte]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: New version: [0.0.3a1684697130] Old Version: [0.0.3a1670978549]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [squape]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [nidalee]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [tomte]: executing diffoscope
+[2023-05-21 22:25:18] INFO root fetch - processPackages [tomte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomte-0.2.6.tar.gz tmp/tomte-0.2.7.tar.gz --markdown 20230521/t/tomte/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-21 22:25:18] INFO root fetch - processPackages [envoy.base.utils]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 22:25:18] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: executing diffoscope
+[2023-05-21 22:25:18] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_dynatrace-0.0.3a1670978549.tar.gz tmp/lbrlabs_pulumi_dynatrace-0.0.3a1684697130.tar.gz --markdown 20230521/l/lbrlabs-pulumi-dynatrace/0.0.3a1670978549-0.0.3a1684697130/diff.md --exclude *.pyd
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 22:25:18] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 22:25:18] INFO root fetch - processPackages [squape]: Downloading https://files.pythonhosted.org/packages/55/d9/002eef0792c3b53d74370374f1c9bfd0bdde6491a31a5c63ef268fc6d666/squape-0.2.1.tar.gz
+[2023-05-21 22:25:18] INFO root fetch - processPackages [nidalee]: Downloading https://files.pythonhosted.org/packages/10/7a/59bae3ebb58ef342466a6f44f31ea5ed574cfcd1206172174c0eae90c40f/nidalee-0.1.8-py3-none-any.whl
+[2023-05-21 22:25:18] INFO root fetch - processPackages [envoy.base.utils]: executing diffoscope
+[2023-05-21 22:25:18] INFO root fetch - processPackages [envoy.base.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.base.utils-0.4.7.tar.gz tmp/envoy.base.utils-0.4.8.tar.gz --markdown 20230521/e/envoy.base.utils/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-21 22:25:18] INFO root fetch - processPackages [squape]: Downloading https://files.pythonhosted.org/packages/a0/b0/caeb77f550851f46e63fb94671c36e2c9d3abbf90943c5e76aa0a124933d/squape-0.2.2.tar.gz
+[2023-05-21 22:25:19] INFO root fetch - processPackages [nidalee]: Downloading https://files.pythonhosted.org/packages/7b/aa/5d7542fb6437eddba82a60b311003a8763fdde7cc5d9bce83abd335996cd/nidalee-0.1.9-py3-none-any.whl
+[2023-05-21 22:25:19] INFO root fetch - processPackages [squape]: executing diffoscope
+[2023-05-21 22:25:19] INFO root fetch - processPackages [squape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squape-0.2.1.tar.gz tmp/squape-0.2.2.tar.gz --markdown 20230521/s/squape/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 22:25:19] INFO root fetch - processPackages [nidalee]: executing diffoscope
+[2023-05-21 22:25:19] INFO root fetch - processPackages [nidalee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nidalee-0.1.8-py3-none-any.whl.zip tmp/nidalee-0.1.9-py3-none-any.whl.zip --markdown 20230521/n/nidalee/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 22:25:19] INFO root fetch - main [MainThread]: End processing [tomte]: success
+[2023-05-21 22:25:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 22:25:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 22:25:20] INFO root fetch - main [MainThread]: End processing [squape]: success
+[2023-05-21 22:25:20] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
+[2023-05-21 22:25:20] INFO root fetch - main [MainThread]: End processing [nidalee]: success
+[2023-05-21 22:25:25] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-dynatrace]: success
+[2023-05-21 22:25:25] INFO root fetch - main [MainThread]: Store serial: [18189004]
