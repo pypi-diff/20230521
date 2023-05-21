@@ -1869,3 +1869,13 @@
 [2023-05-21 04:34:49] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-21 04:34:54] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-05-21 04:34:54] INFO root fetch - main [MainThread]: Store serial: [18185395]
+[2023-05-21 04:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185395]
+[2023-05-21 04:40:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 04:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-webapp-skeleton
+[2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: New version: [0.4.1.dev5] Old Version: [0.4.1.dev4]
+[2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: Downloading https://files.pythonhosted.org/packages/14/63/e94faaaa045331ec1e0f6ee50f6b0a2dea0d1f2a1dda87a6984197d06bba/cdk_webapp_skeleton-0.4.1.dev4.tar.gz
+[2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: Downloading https://files.pythonhosted.org/packages/7e/40/44786880f340591e3adb02d10e81b303522c25d8393094adedae7035d707/cdk_webapp_skeleton-0.4.1.dev5.tar.gz
+[2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: executing diffoscope
+[2023-05-21 04:40:03] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.4.1.dev4.tar.gz tmp/cdk_webapp_skeleton-0.4.1.dev5.tar.gz --markdown 20230521/c/cdk-webapp-skeleton/0.4.1.dev4-0.4.1.dev5/diff.md --exclude *.pyd
+[2023-05-21 04:40:04] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
+[2023-05-21 04:40:04] INFO root fetch - main [MainThread]: Store serial: [18185398]
