@@ -2810,3 +2810,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:52:15] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
 [2023-05-21 07:52:16] INFO root fetch - main [MainThread]: End processing [astrometry]: success
 [2023-05-21 07:52:16] INFO root fetch - main [MainThread]: Store serial: [18185826]
+[2023-05-21 07:57:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185826]
+[2023-05-21 07:57:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shinherpro
+[2023-05-21 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stringtokenizer
+[2023-05-21 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-vault
+[2023-05-21 07:57:25] INFO root fetch - processPackages [vector-vault]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 07:57:25] INFO root fetch - processPackages [shinherpro]: New version: [1.6.0] Old Version: [1.5.9]
+[2023-05-21 07:57:25] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-21 07:57:25] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/a5/a4/054fa8aa3f9a3850a4b7543ae8a3f6cad14f9613c355568cd0a5b6113d12/vector_vault-0.1.7.tar.gz
+[2023-05-21 07:57:25] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/52/29/794cb777e0782e126880e4beea1091e43517b155488c2e1f4df47edfb2de/stringtokenizer-1.1.2.tar.gz
+[2023-05-21 07:57:26] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/2a/1e/4c407146b72c88efec3451ed2e5e79bcac8905f393fbdb589a8143d34125/shinherpro-1.6.0.tar.gz
+[2023-05-21 07:57:26] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 07:57:26] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.6.tar.gz tmp/vector_vault-0.1.7.tar.gz --markdown 20230521/v/vector-vault/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 07:57:26] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-21 07:57:26] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.1.tar.gz tmp/stringtokenizer-1.1.2.tar.gz --markdown 20230521/s/stringtokenizer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-21 07:57:26] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-21 07:57:26] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.5.9.tar.gz tmp/shinherpro-1.6.0.tar.gz --markdown 20230521/s/shinherpro/1.5.9-1.6.0/diff.md --exclude *.pyd
+[2023-05-21 07:57:27] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-21 07:57:27] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 07:57:27] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-21 07:57:27] INFO root fetch - main [MainThread]: Store serial: [18185846]
