@@ -993,3 +993,103 @@
 [2023-05-21 02:22:20] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-05-21 02:22:41] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
 [2023-05-21 02:22:41] INFO root fetch - main [MainThread]: Store serial: [18184906]
+[2023-05-21 02:27:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184906]
+[2023-05-21 02:27:52] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-ethereum-node
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-cr-constructs
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-cdk.asset-awscli-v1
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-valheim
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-aurora-globaldatabase
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: redb-odm
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sweetrpg-db
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-docker-image-deployment
+[2023-05-21 02:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdklabs.ecs-codedeploy
+[2023-05-21 02:27:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: New version: [2.2.99] Old Version: [2.2.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [redb-odm]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [sweetrpg-db]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: executing diffoscope
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz --markdown 20230521/c/cdklabs.ecs-codedeploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: executing diffoscope
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-docker-image-deployment-0.0.98.tar.gz tmp/cdk-docker-image-deployment-0.0.99.tar.gz --markdown 20230521/c/cdk-docker-image-deployment/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:52] INFO root fetch - processPackages [redb-odm]: Downloading https://files.pythonhosted.org/packages/d8/fa/e75a9f960afc8884d601810c6a18c34e359673eaa270237b69633f41bd50/redb-odm-1.1.9.tar.gz
+[2023-05-21 02:27:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: Downloading https://files.pythonhosted.org/packages/d8/5f/ec514d7b5296b58149a8b4407d5d4833dd7b24475d8d782b2c36a00c4d22/aws-cdk.asset-awscli-v1-2.2.98.tar.gz
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230521/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-21 02:27:52] INFO root fetch - processPackages [sweetrpg-db]: Downloading https://files.pythonhosted.org/packages/a9/8d/3d3cba136965ab00c0338cfe26c6389ebecbad7a6f919918dee83c8706be/sweetrpg-db-0.0.98.tar.gz
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230521/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/fe/58/3e435ab85ca79a785db1238624c29b48fc60946bcbae9b2813fd45cb0a41/cdk-cr-constructs-2.1.98.tar.gz
+[2023-05-21 02:27:52] WARNING root fetch - processPackages [aws-cdk.asset-awscli-v1]: Skipping package: exceeds size limit 14653629>=10485760
+[2023-05-21 02:27:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v1]: Start processing: clams-python
+[2023-05-21 02:27:52] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-awscli-v1] error
+[2023-05-21 02:27:52] INFO root fetch - processPackages [clams-python]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-21 02:27:52] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 12826336>=10485760
+[2023-05-21 02:27:52] INFO root fetch - processPackages [cdk-cr-constructs]: Start processing: sweetrpg-web-core
+[2023-05-21 02:27:52] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2023-05-21 02:27:52] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:53] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230521/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-db]: Downloading https://files.pythonhosted.org/packages/cd/b0/462b503c41bce59517535ee1abde52ec10f2d1d9cfecfa361efd1369becb/sweetrpg-db-0.0.99.tar.gz
+[2023-05-21 02:27:53] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20230521/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-db]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-db-0.0.98.tar.gz tmp/sweetrpg-db-0.0.99.tar.gz --markdown 20230521/s/sweetrpg-db/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:53] INFO root fetch - processPackages [redb-odm]: Downloading https://files.pythonhosted.org/packages/08/60/3402bf9e5e16dc611f41e24203c4f1d7b545d14a5e255b176b3cd141e671/redb-odm-1.2.0.tar.gz
+[2023-05-21 02:27:53] INFO root fetch - processPackages [redb-odm]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [redb-odm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redb-odm-1.1.9.tar.gz tmp/redb-odm-1.2.0.tar.gz --markdown 20230521/r/redb-odm/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2023-05-21 02:27:53] INFO root fetch - processPackages [clams-python]: Downloading https://files.pythonhosted.org/packages/8e/77/558a91fbed766facb84a256d2a3c556b0e26e1d6aa8ebd033545e100abd5/clams-python-0.6.3.tar.gz
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230521/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:53] INFO root fetch - processPackages [clams-python]: executing diffoscope
+[2023-05-21 02:27:53] INFO root fetch - processPackages [clams-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clams-python-0.6.2.tar.gz tmp/clams-python-0.6.3.tar.gz --markdown 20230521/c/clams-python/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Start processing: cdk8s
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230521/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk8s]: Start processing: sweetrpg-api-core
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
+[2023-05-21 02:27:54] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Start processing: symgt
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk8s-valheim]: Start processing: sweetrpg-library-objects
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [cdk8s-valheim]: success
+[2023-05-21 02:27:54] INFO root fetch - processPackages [symgt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 02:27:54] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2023-05-21 02:27:54] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-05-21 02:27:54] INFO root fetch - processPackages [symgt]: Downloading https://files.pythonhosted.org/packages/a5/8c/b3171226eb293977405824eac756f0d44379518a409cd1dbfc4ec6843fa2/symgt-0.0.4.tar.gz
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Start processing: cdk-certbot-dns-route53
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2023-05-21 02:27:54] INFO root fetch - main [MainThread]: End processing [sweetrpg-db]: success
+[2023-05-21 02:27:54] INFO root fetch - processPackages [symgt]: executing diffoscope
+[2023-05-21 02:27:54] INFO root fetch - processPackages [symgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symgt-0.0.3.tar.gz tmp/symgt-0.0.4.tar.gz --markdown 20230521/s/symgt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 02:27:54] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2023-05-21 02:27:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-21 02:27:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230521/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:55] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230521/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 02:27:55] INFO root fetch - main [MainThread]: End processing [clams-python]: success
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2023-05-21 02:27:55] INFO root fetch - main [MainThread]: End processing [redb-odm]: success
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-05-21 02:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230521/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-05-21 02:27:55] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
+[2023-05-21 02:27:56] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-21 02:27:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-05-21 02:27:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-05-21 02:27:57] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
+[2023-05-21 02:28:02] INFO root fetch - main [MainThread]: End processing [symgt]: success
+[2023-05-21 02:28:02] INFO root fetch - main [MainThread]: Store serial: [18184955]
