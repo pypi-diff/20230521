@@ -6597,3 +6597,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 16:47:36] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
 [2023-05-21 16:47:37] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-05-21 16:47:37] INFO root fetch - main [MainThread]: Store serial: [18187679]
+[2023-05-21 16:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187679]
+[2023-05-21 16:52:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-minio-storage
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starvote
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synbconvert
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtailgeowidget
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mleko
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elefantolib-fastapi
+[2023-05-21 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edx-enterprise
+[2023-05-21 16:52:46] INFO root fetch - processPackages [elefantolib-fastapi]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [starvote]: New version: [1.4] Old Version: [1.3]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [synbconvert]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [mleko]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [django-minio-storage]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [wagtailgeowidget]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [edx-enterprise]: New version: [3.9.9] Old Version: [3.9.7]
+[2023-05-21 16:52:46] INFO root fetch - processPackages [synbconvert]: Downloading https://files.pythonhosted.org/packages/00/53/369b89049be7d4ee1d66f11df785d439ff441edd89f2956f7c3c9ab6b7a6/synbconvert-0.6.0.tar.gz
+[2023-05-21 16:52:46] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/bc/a6/977b24411cc476f2b9dc5da24f4d09e82037a5ff8b9ed649990f0fb89f15/mleko-0.3.1.tar.gz
+[2023-05-21 16:52:46] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/7e/03/8380c17cbd109ed396e04997bccbd6c9a6fc98f0afc15a9783884ebf56f2/django-minio-storage-0.5.3.tar.gz
+[2023-05-21 16:52:46] INFO root fetch - processPackages [wagtailgeowidget]: Downloading https://files.pythonhosted.org/packages/f7/34/cc52a48c63a0582e5f22d0927608ebebd2727a0e8d920a4153c6562fe57e/wagtailgeowidget-7.0.0.tar.gz
+[2023-05-21 16:52:46] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/c3/99/3b4dadffc298f06772d1ea92aa96069971cf1caf1f37bca1d464cd8a7f36/starvote-1.4.tar.gz
+[2023-05-21 16:52:46] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-05-21 16:52:46] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.3.0.tar.gz tmp/mleko-0.3.1.tar.gz --markdown 20230521/m/mleko/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 16:52:46] INFO root fetch - processPackages [elefantolib-fastapi]: Downloading https://files.pythonhosted.org/packages/33/ec/3d03edf81149b13691e1a10fbdeccdfb2055b11b2ee295c783ac0ec22042/elefantolib_fastapi-0.3.0.tar.gz
+[2023-05-21 16:52:47] INFO root fetch - processPackages [elefantolib-fastapi]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [elefantolib-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib_fastapi-0.2.6.tar.gz tmp/elefantolib_fastapi-0.3.0.tar.gz --markdown 20230521/e/elefantolib-fastapi/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 16:52:47] INFO root fetch - processPackages [wagtailgeowidget]: Downloading https://files.pythonhosted.org/packages/7b/0c/c1b81fb16d9d372bd823e16921eb7979e85e31f60b78941ae85e7283b4a4/wagtailgeowidget-8.0.0.tar.gz
+[2023-05-21 16:52:47] INFO root fetch - processPackages [synbconvert]: Downloading https://files.pythonhosted.org/packages/4e/6a/550d80247c7bb09980b5133cc9f2cc54ef0706a94b733b19da88c54eca18/synbconvert-0.7.0.tar.gz
+[2023-05-21 16:52:47] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/12/2f/607864adb19d7f414729ba94b15380d90f26e381bee5e92256b14849d2fa/django-minio-storage-0.5.4.tar.gz
+[2023-05-21 16:52:47] INFO root fetch - processPackages [edx-enterprise]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [edx-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-enterprise-3.9.7.tar.gz tmp/edx-enterprise-3.9.9.tar.gz --markdown 20230521/e/edx-enterprise/3.9.7-3.9.9/diff.md --exclude *.pyd
+[2023-05-21 16:52:47] INFO root fetch - processPackages [starvote]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [starvote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starvote-1.3.tar.gz tmp/starvote-1.4.tar.gz --markdown 20230521/s/starvote/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-21 16:52:47] INFO root fetch - processPackages [wagtailgeowidget]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [wagtailgeowidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtailgeowidget-7.0.0.tar.gz tmp/wagtailgeowidget-8.0.0.tar.gz --markdown 20230521/w/wagtailgeowidget/7.0.0-8.0.0/diff.md --exclude *.pyd
+[2023-05-21 16:52:47] INFO root fetch - processPackages [synbconvert]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [synbconvert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synbconvert-0.6.0.tar.gz tmp/synbconvert-0.7.0.tar.gz --markdown 20230521/s/synbconvert/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-21 16:52:47] INFO root fetch - processPackages [django-minio-storage]: executing diffoscope
+[2023-05-21 16:52:47] INFO root fetch - processPackages [django-minio-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-minio-storage-0.5.3.tar.gz tmp/django-minio-storage-0.5.4.tar.gz --markdown 20230521/d/django-minio-storage/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-21 16:52:48] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-05-21 16:52:48] INFO root fetch - main [MainThread]: End processing [elefantolib-fastapi]: success
+[2023-05-21 16:52:48] INFO root fetch - main [MainThread]: End processing [synbconvert]: success
+[2023-05-21 16:52:49] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
+[2023-05-21 16:52:49] INFO root fetch - main [MainThread]: End processing [wagtailgeowidget]: success
+[2023-05-21 16:52:51] INFO root fetch - main [MainThread]: End processing [edx-enterprise]: success
+[2023-05-21 16:52:51] INFO root fetch - main [MainThread]: End processing [starvote]: success
+[2023-05-21 16:52:51] INFO root fetch - main [MainThread]: Store serial: [18187700]
