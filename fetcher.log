@@ -2706,3 +2706,13 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:21:12] INFO root fetch - main [MainThread]: End processing [panml]: success
 [2023-05-21 07:21:12] INFO root fetch - main [MainThread]: End processing [wagtail-meta-preview]: success
 [2023-05-21 07:21:12] INFO root fetch - main [MainThread]: Store serial: [18185746]
+[2023-05-21 07:26:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185746]
+[2023-05-21 07:26:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 07:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-05-21 07:26:21] INFO root fetch - processPackages [vector-vault]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-21 07:26:21] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/da/8d/0e1d2a8064c8f5244f485006a77fbc47f9bc71a26a01d4c24c2b2077cbbf/vector_vault-0.1.4.tar.gz
+[2023-05-21 07:26:22] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/08/e8/156a6cbba114e415a1ac4a42e0664b1841501069e9201bd821735cd37a6f/vector_vault-0.1.5.tar.gz
+[2023-05-21 07:26:22] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 07:26:22] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.4.tar.gz tmp/vector_vault-0.1.5.tar.gz --markdown 20230521/v/vector-vault/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-21 07:26:23] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 07:26:23] INFO root fetch - main [MainThread]: Store serial: [18185749]
