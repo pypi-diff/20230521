@@ -3918,3 +3918,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:17:31] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-21 11:17:31] INFO root fetch - main [MainThread]: End processing [uidom]: success
 [2023-05-21 11:17:31] INFO root fetch - main [MainThread]: Store serial: [18186395]
+[2023-05-21 11:22:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186395]
+[2023-05-21 11:22:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cuvec
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litestar-utils
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: movia
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sha256bit
+[2023-05-21 11:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: async-extensions
+[2023-05-21 11:22:40] INFO root fetch - processPackages [cuvec]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [movia]: New version: [1.0a1] Old Version: [1.0.0rc1]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [sha256bit]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [litestar-utils]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [async-extensions]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-21 11:22:40] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 11:22:41] INFO root fetch - processPackages [cuvec]: Downloading https://files.pythonhosted.org/packages/8e/98/82713851046d628766f2a4a717130c5b0924b182ca792d413a7d37abfa72/cuvec-2.8.0.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [movia]: Downloading https://files.pythonhosted.org/packages/a3/79/8dad71fa0f082fa667fb9b36ad53471adb412686ba1708f0eb6cd04143da/movia-1.0.0rc1.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [litestar-utils]: Downloading https://files.pythonhosted.org/packages/1e/92/e0038b4060f76565c1a2e9a14d59edabc738b1da54843822957e82430376/litestar_utils-0.1.1.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/6c/6b/d8fafdec91369314372bebeb22eb5ccbf422ab9b15fcff48e95fdb9a1660/sha256bit-0.0.8.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [sha256bit]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [sha256bit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sha256bit-0.0.7.tar.gz tmp/sha256bit-0.0.8.tar.gz --markdown 20230521/s/sha256bit/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [litestar-utils]: Downloading https://files.pythonhosted.org/packages/b7/c5/1cae9e14fc908f76f3ff0921f2aa5a7bc3e925ca616aada73dc0306455e7/litestar_utils-0.2.0.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [async-extensions]: Downloading https://files.pythonhosted.org/packages/2b/a3/202cd8b0d68fb78289df697df77fddbf6e370d667f4807a1952db8004f2e/async_extensions-1.4.0.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [cuvec]: Downloading https://files.pythonhosted.org/packages/5c/7c/f5deb0a68c87fdf2d2b634ea2461c84a48fc8666105a7472e80c2c5cb243/cuvec-2.9.0.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [movia]: Downloading https://files.pythonhosted.org/packages/db/0c/ef433f91f7821aec5a80f996969e1bfdbfd1be5eff126647e9cbeb053845/movia-1.0a1.tar.gz
+[2023-05-21 11:22:41] INFO root fetch - processPackages [async-extensions]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [async-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_extensions-1.3.0.tar.gz tmp/async_extensions-1.4.0.tar.gz --markdown 20230521/a/async-extensions/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [litestar-utils]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [litestar-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litestar_utils-0.1.1.tar.gz tmp/litestar_utils-0.2.0.tar.gz --markdown 20230521/l/litestar-utils/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [movia]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [movia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movia-1.0.0rc1.tar.gz tmp/movia-1.0a1.tar.gz --markdown 20230521/m/movia/1.0.0rc1-1.0a1/diff.md --exclude *.pyd
+[2023-05-21 11:22:41] INFO root fetch - processPackages [cuvec]: executing diffoscope
+[2023-05-21 11:22:41] INFO root fetch - processPackages [cuvec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuvec-2.8.0.tar.gz tmp/cuvec-2.9.0.tar.gz --markdown 20230521/c/cuvec/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-21 11:22:42] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 11:22:42] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 11:22:42] INFO root fetch - main [MainThread]: End processing [async-extensions]: success
+[2023-05-21 11:22:42] INFO root fetch - main [MainThread]: End processing [litestar-utils]: success
+[2023-05-21 11:22:43] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
+[2023-05-21 11:22:43] INFO root fetch - main [MainThread]: End processing [cuvec]: success
+[2023-05-21 11:22:43] INFO root fetch - main [MainThread]: End processing [movia]: success
+[2023-05-21 11:22:43] INFO root fetch - main [MainThread]: Store serial: [18186415]
