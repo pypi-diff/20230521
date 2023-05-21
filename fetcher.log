@@ -2357,3 +2357,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:14:58] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-21 06:14:58] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-21 06:14:58] INFO root fetch - main [MainThread]: Store serial: [18185560]
+[2023-05-21 06:20:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185560]
+[2023-05-21 06:20:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 06:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redcat
+[2023-05-21 06:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textagon
+[2023-05-21 06:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: creative-namer
+[2023-05-21 06:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heaserver-files-aws-s3
+[2023-05-21 06:20:06] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 06:20:06] INFO root fetch - processPackages [redcat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 06:20:06] INFO root fetch - processPackages [creative-namer]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-21 06:20:07] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-21 06:20:07] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-21 06:20:07] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230521/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 06:20:07] INFO root fetch - processPackages [creative-namer]: Downloading https://files.pythonhosted.org/packages/6b/c1/489d96ea1f227313d790415db584dac2de3f37d4b92323f7a5690861c95b/creative-namer-1.0.0.tar.gz
+[2023-05-21 06:20:07] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/4b/9b/73f33a94f4aff25bff8a0100e7c9f7d239d27c6bb47e91c553f03fccfde2/heaserver-files-aws-s3-1.0.0a8.tar.gz
+[2023-05-21 06:20:07] INFO root fetch - processPackages [redcat]: Downloading https://files.pythonhosted.org/packages/49/05/8e9dd06ca2d32a5b21fa04db59b66131e7950c1b29d9bbd7a8c48b2878e8/redcat-0.0.3.tar.gz
+[2023-05-21 06:20:07] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18398734>=10485760
+[2023-05-21 06:20:07] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2023-05-21 06:20:07] INFO root fetch - processPackages [redcat]: executing diffoscope
+[2023-05-21 06:20:07] INFO root fetch - processPackages [redcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcat-0.0.2.tar.gz tmp/redcat-0.0.3.tar.gz --markdown 20230521/r/redcat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 06:20:07] INFO root fetch - processPackages [creative-namer]: Downloading https://files.pythonhosted.org/packages/00/08/2be3429cb7e8f736cfa9edda650189535b4d131887ebfa318431655e45de/creative-namer-1.0.1.tar.gz
+[2023-05-21 06:20:07] INFO root fetch - processPackages [creative-namer]: executing diffoscope
+[2023-05-21 06:20:07] INFO root fetch - processPackages [creative-namer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/creative-namer-1.0.0.tar.gz tmp/creative-namer-1.0.1.tar.gz --markdown 20230521/c/creative-namer/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-21 06:20:08] INFO root fetch - main [MainThread]: End processing [redcat]: success
+[2023-05-21 06:20:08] INFO root fetch - main [MainThread]: End processing [creative-namer]: success
+[2023-05-21 06:20:08] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-21 06:20:08] INFO root fetch - main [MainThread]: Store serial: [18185581]
