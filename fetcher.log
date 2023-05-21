@@ -7828,3 +7828,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:37:16] INFO root fetch - main [MainThread]: End processing [vvv-rpc-server-update]: success
 [2023-05-21 19:37:17] INFO root fetch - main [MainThread]: End processing [edx-enterprise]: success
 [2023-05-21 19:37:17] INFO root fetch - main [MainThread]: Store serial: [18188258]
+[2023-05-21 19:42:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188258]
+[2023-05-21 19:42:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-django-ifactory
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: circuitpython-scales
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amplitude-data-wrapper
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyromark
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastdup
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipyflow-core
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ipyflow
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aa-charlink
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pytest-django-ifactory]: New version: [1.0.0] Old Version: [0.5.0]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [fastdup]: New version: [1.3] Old Version: [1.2]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [amplitude-data-wrapper]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [circuitpython-scales]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pyromark]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ipyflow]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ipyflow-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [aa-charlink]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pytest-django-ifactory]: Downloading https://files.pythonhosted.org/packages/50/62/254ba1811819f04d786662f31448fbec554230c0564bf3b58f6ae77a5263/pytest-django-ifactory-0.5.0.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [amplitude-data-wrapper]: Downloading https://files.pythonhosted.org/packages/d1/8f/8ec48ea8ef04167103308dfffe4b751e688c2b550bcd90d78064f723e10e/amplitude_data_wrapper-0.3.9.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/b7/16/1d20030e3a46b3ea4aec9d3ec5c19a5757e3ee491fb642bfdae5ef29069a/fastdup-1.2-cp39-cp39-win_amd64.whl
+[2023-05-21 19:42:27] INFO root fetch - processPackages [circuitpython-scales]: Downloading https://files.pythonhosted.org/packages/23/1c/bca84d9e05b9915292bc574a31ef5bdc8229555dc4307c7c84edea499d7a/circuitpython-scales-0.5.1.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/db/bd/ca303ac2cc76b8195215c82f48df60973f348d125112aebd5783c7278899/pyromark-0.1.1.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/77/ad/086ecd57d29fb2d6d76f3568829eddcd848def6f81960f15ebc2f9aed287/aa-charlink-0.3.0.tar.gz
+[2023-05-21 19:42:27] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 35399966>=10485760
+[2023-05-21 19:42:27] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ipyflow-core]: Downloading https://files.pythonhosted.org/packages/3a/18/e75746fd4516ba2696d7da04861ca9885ab4039f44cec923ec9021c954ff/ipyflow-core-0.0.98.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [amplitude-data-wrapper]: Downloading https://files.pythonhosted.org/packages/36/0b/405c79764ee590e363056fdaf3baf3afa8ab0d2c55a8ac1f3ccdf1e49f9b/amplitude-data-wrapper-0.4.0.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pytest-django-ifactory]: Downloading https://files.pythonhosted.org/packages/0c/4c/e43eb39d725c1b7261c5849685c738f196a84c7f35da49bcd944ac966e65/pytest-django-ifactory-1.0.0.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [circuitpython-scales]: Downloading https://files.pythonhosted.org/packages/dd/fe/a390991dbf446fbe4c9ff093468c5e200ee765df60bed091a636ce74706f/circuitpython-scales-0.6.0.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [amplitude-data-wrapper]: executing diffoscope
+[2023-05-21 19:42:27] INFO root fetch - processPackages [amplitude-data-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amplitude_data_wrapper-0.3.9.tar.gz tmp/amplitude-data-wrapper-0.4.0.tar.gz --markdown 20230521/a/amplitude-data-wrapper/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/61/03/7e60c51610a48225ad18fcb1989bf4acac269e31335f6bc32829c2c04a82/pyromark-0.1.2-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-21 19:42:27] INFO root fetch - processPackages [ipyflow]: Downloading https://files.pythonhosted.org/packages/16/2e/59847e7e8aa304134949f37c384de8d7be4c80a26fd25bc4641afc075a6e/ipyflow-0.0.98.tar.gz
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pytest-django-ifactory]: executing diffoscope
+[2023-05-21 19:42:27] INFO root fetch - processPackages [pytest-django-ifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-django-ifactory-0.5.0.tar.gz tmp/pytest-django-ifactory-1.0.0.tar.gz --markdown 20230521/p/pytest-django-ifactory/0.5.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 19:42:28] INFO root fetch - processPackages [circuitpython-scales]: executing diffoscope
+[2023-05-21 19:42:28] INFO root fetch - processPackages [circuitpython-scales]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-scales-0.5.1.tar.gz tmp/circuitpython-scales-0.6.0.tar.gz --markdown 20230521/c/circuitpython-scales/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 19:42:28] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/b5/d9/e95fae3174ab969a58d7653ef413a7222202f1a3a8025296e9cc10ed7a22/aa_charlink-0.4.0-py2.py3-none-any.whl
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow-core]: Downloading https://files.pythonhosted.org/packages/5c/88/3fd3bb8d277b9ffd707ae4815e7adad14f12478d43b163c206001e3c5f37/ipyflow-core-0.0.99.tar.gz
+[2023-05-21 19:42:28] INFO root fetch - processPackages [pyromark]: executing diffoscope
+[2023-05-21 19:42:28] INFO root fetch - processPackages [pyromark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyromark-0.1.1.tar.gz tmp/pyromark-0.1.2-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230521/p/pyromark/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow-core]: executing diffoscope
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-core-0.0.98.tar.gz tmp/ipyflow-core-0.0.99.tar.gz --markdown 20230521/i/ipyflow-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow]: Downloading https://files.pythonhosted.org/packages/67/2f/5f3c2a942a9d42acff3ddadfc2468577f883db25f6486c139878393a11ff/ipyflow-0.0.99.tar.gz
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow]: executing diffoscope
+[2023-05-21 19:42:28] INFO root fetch - processPackages [ipyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-0.0.98.tar.gz tmp/ipyflow-0.0.99.tar.gz --markdown 20230521/i/ipyflow/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 19:42:28] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-05-21 19:42:28] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.3.0.tar.gz tmp/aa_charlink-0.4.0-py2.py3-none-any.whl.zip --markdown 20230521/a/aa-charlink/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 19:42:29] INFO root fetch - main [MainThread]: End processing [amplitude-data-wrapper]: success
+[2023-05-21 19:42:29] INFO root fetch - main [MainThread]: End processing [circuitpython-scales]: success
+[2023-05-21 19:42:29] INFO root fetch - main [MainThread]: End processing [pytest-django-ifactory]: success
+[2023-05-21 19:42:29] INFO root fetch - main [MainThread]: End processing [pyromark]: success
+[2023-05-21 19:42:29] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-05-21 19:42:30] INFO root fetch - main [MainThread]: End processing [ipyflow-core]: success
+[2023-05-21 19:42:30] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
+[2023-05-21 19:42:30] INFO root fetch - main [MainThread]: Store serial: [18188341]
