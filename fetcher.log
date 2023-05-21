@@ -9567,3 +9567,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:07:43] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
 [2023-05-21 23:07:43] INFO root fetch - main [MainThread]: End processing [pyclean]: success
 [2023-05-21 23:07:43] INFO root fetch - main [MainThread]: Store serial: [18189276]
+[2023-05-21 23:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189276]
+[2023-05-21 23:12:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amino.fix
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lupin-grognard
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ondewo-sip-client
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dorado
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nml
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpudb
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dorado
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spetlr
+[2023-05-21 23:12:52] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ondewo-sip-client]: New version: [5.0.0] Old Version: [4.0.1]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [nml]: New version: [r1512] Old Version: [0.7.3]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [amino.fix]: New version: [2.3.6.1] Old Version: [2.3.6]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [gpudb]: New version: [7.1.9.4] Old Version: [7.1.9.3]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [spetlr]: New version: [1.1.86] Old Version: [1.1.84]
+[2023-05-21 23:12:52] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-21 23:12:52] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230521/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 23:12:52] INFO root fetch - processPackages [nml]: Downloading https://files.pythonhosted.org/packages/c7/ac/81d34d03b8db9bc455d927e9e28b840cf7d4d412dc9f22f3d80e738af18b/nml-0.7.3.tar.gz
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 23:12:52] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 23:12:52] INFO root fetch - processPackages [ondewo-sip-client]: Downloading https://files.pythonhosted.org/packages/71/a0/f74c2796326ef52fa7ecc64cf9738fc0f327947e3149ff695ab5630bb4ee/ondewo-sip-client-4.0.1.tar.gz
+[2023-05-21 23:12:52] INFO root fetch - processPackages [amino.fix]: Downloading https://files.pythonhosted.org/packages/6b/df/9e03b01a1d922d4fa72be64628e199f723bd165280d297d03aa190e1b3fd/amino.fix-2.3.6.1.tar.gz
+[2023-05-21 23:12:52] INFO root fetch - processPackages [gpudb]: Downloading https://files.pythonhosted.org/packages/cb/36/2bb8aaa00188e05086ac549569ed09ce04cb4918bea71d97f931b82751d5/gpudb-7.1.9.3-cp39-cp39-win_amd64.whl
+[2023-05-21 23:12:52] INFO root fetch - processPackages [spetlr]: Downloading https://files.pythonhosted.org/packages/9d/66/caa7c9c1d9d10ac8d62acd85450d26b5a560e75390160f63b63713be65ea/spetlr-1.1.84.tar.gz
+[2023-05-21 23:12:53] INFO root fetch - processPackages [amino.fix]: executing diffoscope
+[2023-05-21 23:12:53] INFO root fetch - processPackages [amino.fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.fix-2.3.6.tar.gz tmp/amino.fix-2.3.6.1.tar.gz --markdown 20230521/a/amino.fix/2.3.6-2.3.6.1/diff.md --exclude *.pyd
+[2023-05-21 23:12:53] INFO root fetch - processPackages [nml]: Downloading https://files.pythonhosted.org/packages/da/51/16019af084f51c3c90c31171b32d38d14e64457ad3c66b583cba7af32d39/nml-r1512.tar.gz
+[2023-05-21 23:12:53] INFO root fetch - processPackages [ondewo-sip-client]: Downloading https://files.pythonhosted.org/packages/92/f2/fbe701da7c39de670dcd20baa8e8bb365bb272b56415527b49b3b8ecc0e6/ondewo-sip-client-5.0.0.tar.gz
+[2023-05-21 23:12:53] INFO root fetch - processPackages [nml]: executing diffoscope
+[2023-05-21 23:12:53] INFO root fetch - processPackages [nml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nml-0.7.3.tar.gz tmp/nml-r1512.tar.gz --markdown 20230521/n/nml/0.7.3-r1512/diff.md --exclude *.pyd
+[2023-05-21 23:12:53] INFO root fetch - processPackages [gpudb]: Downloading https://files.pythonhosted.org/packages/b2/9a/815096564fc4bec01ed39326199d63528893d75217a716538e95f48a4902/gpudb-7.1.9.4-cp38-cp38-macosx_10_9_universal2.whl
+[2023-05-21 23:12:53] INFO root fetch - processPackages [ondewo-sip-client]: executing diffoscope
+[2023-05-21 23:12:53] INFO root fetch - processPackages [ondewo-sip-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-sip-client-4.0.1.tar.gz tmp/ondewo-sip-client-5.0.0.tar.gz --markdown 20230521/o/ondewo-sip-client/4.0.1-5.0.0/diff.md --exclude *.pyd
+[2023-05-21 23:12:53] INFO root fetch - processPackages [spetlr]: Downloading https://files.pythonhosted.org/packages/12/12/bf1765525bd6b2425865cb4df750551e20969b80faf6a1703ec0324e2838/spetlr-1.1.86.tar.gz
+[2023-05-21 23:12:53] INFO root fetch - processPackages [spetlr]: executing diffoscope
+[2023-05-21 23:12:53] INFO root fetch - processPackages [spetlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spetlr-1.1.84.tar.gz tmp/spetlr-1.1.86.tar.gz --markdown 20230521/s/spetlr/1.1.84-1.1.86/diff.md --exclude *.pyd
+[2023-05-21 23:12:54] INFO root fetch - processPackages [gpudb]: executing diffoscope
+[2023-05-21 23:12:54] INFO root fetch - processPackages [gpudb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpudb-7.1.9.3-cp39-cp39-win_amd64.whl.zip tmp/gpudb-7.1.9.4-cp38-cp38-macosx_10_9_universal2.whl.zip --markdown 20230521/g/gpudb/7.1.9.3-7.1.9.4/diff.md --exclude *.pyd
+[2023-05-21 23:12:54] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 23:12:54] INFO root fetch - main [MainThread]: End processing [amino.fix]: success
+[2023-05-21 23:12:54] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-21 23:12:54] INFO root fetch - main [MainThread]: End processing [ondewo-sip-client]: success
+[2023-05-21 23:12:55] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 23:12:55] INFO root fetch - main [MainThread]: End processing [spetlr]: success
+[2023-05-21 23:12:56] INFO root fetch - main [MainThread]: End processing [nml]: success
+[2023-05-21 23:12:56] INFO root fetch - main [MainThread]: End processing [gpudb]: success
+[2023-05-21 23:12:56] INFO root fetch - main [MainThread]: Store serial: [18189330]
