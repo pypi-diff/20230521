@@ -2298,3 +2298,12 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 05:59:26] INFO root fetch - main [MainThread]: End processing [mpl-markers]: success
 [2023-05-21 05:59:26] INFO root fetch - main [MainThread]: End processing [Flask-RESTful]: success
 [2023-05-21 05:59:26] INFO root fetch - main [MainThread]: Store serial: [18185535]
+[2023-05-21 06:04:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185535]
+[2023-05-21 06:04:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 06:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixt
+[2023-05-21 06:04:34] INFO root fetch - processPackages [agixt]: New version: [1.1.54b0] Old Version: [1.1.52b0]
+[2023-05-21 06:04:35] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/c8/fa/67031974f113470d66f6901efbf353043dff739814dcdf1d9d350861d550/agixt-1.1.54b0.tar.gz
+[2023-05-21 06:04:35] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 06:04:35] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.52b0.tar.gz tmp/agixt-1.1.54b0.tar.gz --markdown 20230521/a/agixt/1.1.52b0-1.1.54b0/diff.md --exclude *.pyd
+[2023-05-21 06:04:36] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 06:04:36] INFO root fetch - main [MainThread]: Store serial: [18185538]
