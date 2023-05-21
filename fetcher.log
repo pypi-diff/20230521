@@ -7950,3 +7950,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:47:42] INFO root fetch - main [MainThread]: End processing [antlr4-python2-runtime]: success
 [2023-05-21 19:47:42] INFO root fetch - main [MainThread]: End processing [antlr4-python3-runtime]: success
 [2023-05-21 19:47:42] INFO root fetch - main [MainThread]: Store serial: [18188382]
+[2023-05-21 19:52:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188382]
+[2023-05-21 19:52:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 19:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twyn
+[2023-05-21 19:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shell-gpt
+[2023-05-21 19:52:51] INFO root fetch - processPackages [twyn]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-21 19:52:51] INFO root fetch - processPackages [shell-gpt]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 19:52:51] INFO root fetch - processPackages [twyn]: executing diffoscope
+[2023-05-21 19:52:51] INFO root fetch - processPackages [twyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twyn-2.2.0.tar.gz tmp/twyn-2.3.0.tar.gz --markdown 20230521/t/twyn/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-21 19:52:51] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/3e/11/a29ecd3ae2271a6bf4ff799a58b1d4ce9b3611cdce07db7b252ad15ff229/shell_gpt-0.9.0.tar.gz
+[2023-05-21 19:52:52] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/16/4d/c31203eeded221acbefbb26e4338dc3cb1b1c1f0c62640af95232fef8a8f/shell_gpt-0.9.1.tar.gz
+[2023-05-21 19:52:52] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2023-05-21 19:52:52] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-0.9.0.tar.gz tmp/shell_gpt-0.9.1.tar.gz --markdown 20230521/s/shell-gpt/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 19:52:52] INFO root fetch - main [MainThread]: End processing [twyn]: success
+[2023-05-21 19:52:53] INFO root fetch - main [MainThread]: End processing [shell-gpt]: success
+[2023-05-21 19:52:53] INFO root fetch - main [MainThread]: Store serial: [18188389]
