@@ -5457,3 +5457,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:55:20] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
 [2023-05-21 14:55:20] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
 [2023-05-21 14:55:20] INFO root fetch - main [MainThread]: Store serial: [18187100]
+[2023-05-21 15:00:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187100]
+[2023-05-21 15:00:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txt2ebook
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twilix-python
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vhatable
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: melnor-bluetooth
+[2023-05-21 15:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: leap-model-rebuilder
+[2023-05-21 15:00:29] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [vhatable]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [twilix-python]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [leap-model-rebuilder]: New version: [0.1.6.dev4] Old Version: [0.1.6.dev3]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 15:00:29] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-21 15:00:29] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230521/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 15:00:29] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/aa/6c/ec6bfbce339a01cf0a94ddcee22d96354a0b3fafc82a9796e5858feb0f1a/twilix-python-0.0.6.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [vhatable]: Downloading https://files.pythonhosted.org/packages/d1/81/5ed44b3eef127e840a85e8f191b42a94e134f0569e3759ca3a0c6748ebc5/vhatable-1.0.1.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/7c/c4/d60a564f3da745273bfa35e59033388d7e8d9e9554261bd419d45d8071c7/txt2ebook-0.1.8.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/e7/af/88ed415eeb060a9647e8ba7f305e232a8a653e45e3be554d35da0853b98a/leap_model_rebuilder-0.1.6.dev3.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [melnor-bluetooth]: Downloading https://files.pythonhosted.org/packages/ae/1b/e370cededd784265fdbd6335ae11181f66a89b0bf7aba749457cb06e0590/melnor-bluetooth-0.0.8.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [vhatable]: Downloading https://files.pythonhosted.org/packages/15/a0/372cae27bb7b0e5f93d88d4ef0a4924b022c422201150f7e7fdae253776e/vhatable-1.0.2.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/db/72/e27619e656ffbb32b771d403681db9718307b75c56ab964d0884de34d89c/twilix-python-0.0.7.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [melnor-bluetooth]: Downloading https://files.pythonhosted.org/packages/ad/d8/409e697ace8337020f01d25524cfb5b7e0f4a4222e44db8121b100b86af9/melnor-bluetooth-0.0.9.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [vhatable]: executing diffoscope
+[2023-05-21 15:00:29] INFO root fetch - processPackages [vhatable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vhatable-1.0.1.tar.gz tmp/vhatable-1.0.2.tar.gz --markdown 20230521/v/vhatable/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-21 15:00:29] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-05-21 15:00:29] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230521/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:00:29] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/33/fc/f91a01b34c85050eb7f36c4d4a83edf175df8b8443c1c4c26432c923ef18/leap_model_rebuilder-0.1.6.dev4.tar.gz
+[2023-05-21 15:00:29] INFO root fetch - processPackages [twilix-python]: executing diffoscope
+[2023-05-21 15:00:29] INFO root fetch - processPackages [twilix-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilix-python-0.0.6.tar.gz tmp/twilix-python-0.0.7.tar.gz --markdown 20230521/t/twilix-python/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 15:00:30] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-05-21 15:00:30] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230521/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 15:00:30] INFO root fetch - processPackages [leap-model-rebuilder]: executing diffoscope
+[2023-05-21 15:00:30] INFO root fetch - processPackages [leap-model-rebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_rebuilder-0.1.6.dev3.tar.gz tmp/leap_model_rebuilder-0.1.6.dev4.tar.gz --markdown 20230521/l/leap-model-rebuilder/0.1.6.dev3-0.1.6.dev4/diff.md --exclude *.pyd
+[2023-05-21 15:00:30] INFO root fetch - main [MainThread]: End processing [vhatable]: success
+[2023-05-21 15:00:31] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
+[2023-05-21 15:00:31] INFO root fetch - main [MainThread]: End processing [melnor-bluetooth]: success
+[2023-05-21 15:00:31] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2023-05-21 15:00:31] INFO root fetch - main [MainThread]: End processing [leap-model-rebuilder]: success
+[2023-05-21 15:01:09] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-21 15:01:09] INFO root fetch - main [MainThread]: Store serial: [18187116]
