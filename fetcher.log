@@ -7885,3 +7885,68 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:42:30] INFO root fetch - main [MainThread]: End processing [ipyflow-core]: success
 [2023-05-21 19:42:30] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
 [2023-05-21 19:42:30] INFO root fetch - main [MainThread]: Store serial: [18188341]
+[2023-05-21 19:47:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188341]
+[2023-05-21 19:47:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-charlink
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antlr4-python2-runtime
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: antlr4-python3-runtime
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wodoo
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoprof
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twyn
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airunner
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tldraw
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: metalattice
+[2023-05-21 19:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aa-charlink
+[2023-05-21 19:47:38] INFO root fetch - processPackages [aa-charlink]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [antlr4-python3-runtime]: New version: [4.9.3] Old Version: [4.9.2]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [aa-charlink]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [antlr4-python2-runtime]: New version: [4.9.3] Old Version: [4.9.2]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [airunner]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [autoprof]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [metalattice]: New version: [0.1.21] Old Version: [0.0.27]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [tldraw]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [twyn]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-21 19:47:38] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-05-21 19:47:38] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-05-21 19:47:38] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230521/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-05-21 19:47:38] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.9.4.tar.gz tmp/airunner-1.9.5.tar.gz --markdown 20230521/a/airunner/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-21 19:47:38] INFO root fetch - processPackages [antlr4-python3-runtime]: Downloading https://files.pythonhosted.org/packages/04/9c/d5ef93dc1e5a862cae004a64d15425c2a1ae8ba967a08f03dfb11aedf7bf/antlr4-python3-runtime-4.9.2.tar.gz
+[2023-05-21 19:47:38] INFO root fetch - processPackages [antlr4-python2-runtime]: Downloading https://files.pythonhosted.org/packages/3f/a9/c7965bed3f5d506eb42924be290ee0da0233d708dc777109c1dbf732817d/antlr4-python2-runtime-4.9.2.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/2a/76/ed041dde0afe86cbe6576c2208fc9bebec2e8b59e19d7f6d9282c822ddaa/metalattice-0.0.27.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [autoprof]: Downloading https://files.pythonhosted.org/packages/88/2b/cb9f629f9ef2955c86f15170cedb4790124a36bbb1fdec7f7b51e973f338/autoprof-0.7.2-py2.py3-none-any.whl
+[2023-05-21 19:47:39] INFO root fetch - processPackages [twyn]: Downloading https://files.pythonhosted.org/packages/fc/17/a070899f49b869d9f3fe37d639b92ebc6cd3910817af142f325971b5b367/twyn-2.2.0.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/d0/e5/cb0b2517195dfa5459dfa93f628d9cdff334b9089c00369a6ed5c3c79002/aa-charlink-0.4.0.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/d0/e5/cb0b2517195dfa5459dfa93f628d9cdff334b9089c00369a6ed5c3c79002/aa-charlink-0.4.0.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python3-runtime]: Downloading https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [tldraw]: Downloading https://files.pythonhosted.org/packages/e2/71/f2b9711cf4d053be9cffad883427a60fbaaf6636692abb50257abfee6b0a/tldraw-0.0.3.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.3.0.tar.gz tmp/aa-charlink-0.4.0.tar.gz --markdown 20230521/a/aa-charlink/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.3.0.tar.gz tmp/aa-charlink-0.4.0.tar.gz --markdown 20230521/a/aa-charlink/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python3-runtime]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python3-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antlr4-python3-runtime-4.9.2.tar.gz tmp/antlr4-python3-runtime-4.9.3.tar.gz --markdown 20230521/a/antlr4-python3-runtime/4.9.2-4.9.3/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python2-runtime]: Downloading https://files.pythonhosted.org/packages/26/17/e91bd39c547d52325be6b36e97191feb0f53d5a7172c2f34d18031bb3b8c/antlr4-python2-runtime-4.9.3.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [metalattice]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [metalattice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalattice-0.0.27.tar.gz tmp/metalattice-0.1.21.tar.gz --markdown 20230521/m/metalattice/0.0.27-0.1.21/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [autoprof]: Downloading https://files.pythonhosted.org/packages/35/2d/1b703df3d914441b6bdf200f61edc6254a81ec150127ec00c2cad52d00f5/autoprof-0.7.3-py2.py3-none-any.whl
+[2023-05-21 19:47:39] INFO root fetch - processPackages [twyn]: Downloading https://files.pythonhosted.org/packages/44/f6/b77b4e4f382a4615cb247e66e1ea9a578650ec4cc5d7655d1b17e6fba9df/twyn-2.3.0.tar.gz
+[2023-05-21 19:47:39] INFO root fetch - processPackages [tldraw]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [tldraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tldraw-0.0.2.tar.gz tmp/tldraw-0.0.3.tar.gz --markdown 20230521/t/tldraw/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python2-runtime]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [antlr4-python2-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antlr4-python2-runtime-4.9.2.tar.gz tmp/antlr4-python2-runtime-4.9.3.tar.gz --markdown 20230521/a/antlr4-python2-runtime/4.9.2-4.9.3/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [autoprof]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [autoprof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoprof-0.7.2-py2.py3-none-any.whl.zip tmp/autoprof-0.7.3-py2.py3-none-any.whl.zip --markdown 20230521/a/autoprof/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-21 19:47:39] INFO root fetch - processPackages [twyn]: executing diffoscope
+[2023-05-21 19:47:39] INFO root fetch - processPackages [twyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twyn-2.2.0.tar.gz tmp/twyn-2.3.0.tar.gz --markdown 20230521/t/twyn/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-21 19:47:40] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-05-21 19:47:40] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-05-21 19:47:40] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-05-21 19:47:40] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-05-21 19:47:41] INFO root fetch - main [MainThread]: End processing [tldraw]: success
+[2023-05-21 19:47:41] INFO root fetch - main [MainThread]: End processing [metalattice]: success
+[2023-05-21 19:47:41] INFO root fetch - main [MainThread]: End processing [twyn]: success
+[2023-05-21 19:47:41] INFO root fetch - main [MainThread]: End processing [autoprof]: success
+[2023-05-21 19:47:42] INFO root fetch - main [MainThread]: End processing [antlr4-python2-runtime]: success
+[2023-05-21 19:47:42] INFO root fetch - main [MainThread]: End processing [antlr4-python3-runtime]: success
+[2023-05-21 19:47:42] INFO root fetch - main [MainThread]: Store serial: [18188382]
