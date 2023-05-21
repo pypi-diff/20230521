@@ -1233,3 +1233,33 @@
 [2023-05-21 02:43:48] INFO root fetch - main [MainThread]: End processing [cuke]: success
 [2023-05-21 02:43:49] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-21 02:43:49] INFO root fetch - main [MainThread]: Store serial: [18185029]
+[2023-05-21 02:48:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185029]
+[2023-05-21 02:48:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 02:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2023-05-21 02:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-05-21 02:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tiktokget
+[2023-05-21 02:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kubric-nightly
+[2023-05-21 02:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bytez
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tiktokget]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-21 02:48:58] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 02:48:58] INFO root fetch - processPackages [bytez]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-21 02:48:58] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305200044] Old Version: [4.9.2.dev202305190044]
+[2023-05-21 02:48:58] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tiktokget]: Downloading https://files.pythonhosted.org/packages/75/d7/76f639817b6e3efeff99f68da1bf37ac6331f13bfae2ac2960d49ec5820a/tiktokget-1.0.3.tar.gz
+[2023-05-21 02:48:58] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-21 02:48:58] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.98.tar.gz tmp/bytez-0.1.99.tar.gz --markdown 20230521/b/bytez/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-21 02:48:58] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-21 02:48:58] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-21 02:48:58] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-21 02:48:58] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230521/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305190044.tar.gz tmp/tfds-nightly-4.9.2.dev202305200044.tar.gz --markdown 20230521/t/tfds-nightly/4.9.2.dev202305190044-4.9.2.dev202305200044/diff.md --exclude *.pyd
+[2023-05-21 02:48:58] INFO root fetch - processPackages [tiktokget]: Downloading https://files.pythonhosted.org/packages/43/7a/d2d240f56dc57e314e08964930805e13ffcde17b8235f73dc009d0f39155/tiktokget-1.0.4.tar.gz
+[2023-05-21 02:48:59] INFO root fetch - processPackages [tiktokget]: executing diffoscope
+[2023-05-21 02:48:59] INFO root fetch - processPackages [tiktokget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiktokget-1.0.3.tar.gz tmp/tiktokget-1.0.4.tar.gz --markdown 20230521/t/tiktokget/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-21 02:48:59] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-21 02:48:59] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-21 02:49:00] INFO root fetch - main [MainThread]: End processing [tiktokget]: success
+[2023-05-21 02:49:12] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-21 02:49:12] INFO root fetch - main [MainThread]: Store serial: [18185045]
