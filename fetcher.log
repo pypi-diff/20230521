@@ -3322,3 +3322,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:27:13] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
 [2023-05-21 09:27:44] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-21 09:27:44] INFO root fetch - main [MainThread]: Store serial: [18186083]
+[2023-05-21 09:32:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186083]
+[2023-05-21 09:32:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 09:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfq-nightly
+[2023-05-21 09:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fschat
+[2023-05-21 09:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kiwitcms-github-marketplace
+[2023-05-21 09:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toollib
+[2023-05-21 09:32:53] INFO root fetch - processPackages [toollib]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-21 09:32:53] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230520] Old Version: [0.7.3.dev20230519]
+[2023-05-21 09:32:53] INFO root fetch - processPackages [fschat]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 09:32:53] INFO root fetch - processPackages [kiwitcms-github-marketplace]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-05-21 09:32:53] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/00/60/c3c7bac0920efb4e9161e48a6a967e592012aa747ee8988d3d1425b8e687/toollib-1.4.3-py3-none-any.whl
+[2023-05-21 09:32:53] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/08/b0/278e7efbbaf70ebf0b1546c62d2c4aed063494d2f8bf3230e0d7575fe720/tfq_nightly-0.7.3.dev20230519-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 09:32:53] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/87/62/b4da7a5a785f37c352f8353cd89801af7ae84d326d5f4edc3084d11032dd/fschat-0.2.8.tar.gz
+[2023-05-21 09:32:53] INFO root fetch - processPackages [kiwitcms-github-marketplace]: Downloading https://files.pythonhosted.org/packages/64/7f/797531fd07cdf7fe305feea82d3bcdd1bdb0f2848766ed90c9d3b938c218/kiwitcms-github-marketplace-2.3.2.tar.gz
+[2023-05-21 09:32:53] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819848>=10485760
+[2023-05-21 09:32:53] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-21 09:32:54] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/c0/d2/cc88424919a39410348e4e5a07ba0097d97c5c023de927bcacb79051e8fe/toollib-1.4.4-py3-none-any.whl
+[2023-05-21 09:32:54] INFO root fetch - processPackages [kiwitcms-github-marketplace]: Downloading https://files.pythonhosted.org/packages/2d/62/03399bd538af71a638a5370a4ec0bb1159ac327c9b24be80f65eb2502517/kiwitcms-github-marketplace-2.3.3.tar.gz
+[2023-05-21 09:32:54] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/c1/b0/505c6a4e83ac92e1871d446b70a468976b4ccdcfd047b5ebd73e5d37ba8b/fschat-0.2.9.tar.gz
+[2023-05-21 09:32:54] INFO root fetch - processPackages [kiwitcms-github-marketplace]: executing diffoscope
+[2023-05-21 09:32:54] INFO root fetch - processPackages [kiwitcms-github-marketplace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwitcms-github-marketplace-2.3.2.tar.gz tmp/kiwitcms-github-marketplace-2.3.3.tar.gz --markdown 20230521/k/kiwitcms-github-marketplace/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-05-21 09:32:54] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-05-21 09:32:54] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.4.3-py3-none-any.whl.zip tmp/toollib-1.4.4-py3-none-any.whl.zip --markdown 20230521/t/toollib/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-21 09:32:54] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-05-21 09:32:54] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.2.8.tar.gz tmp/fschat-0.2.9.tar.gz --markdown 20230521/f/fschat/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 09:32:55] INFO root fetch - main [MainThread]: End processing [kiwitcms-github-marketplace]: success
+[2023-05-21 09:32:55] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-05-21 09:32:55] INFO root fetch - main [MainThread]: End processing [toollib]: success
+[2023-05-21 09:32:55] INFO root fetch - main [MainThread]: Store serial: [18186095]
