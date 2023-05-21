@@ -1441,3 +1441,41 @@
 [2023-05-21 03:15:33] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230521/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
 [2023-05-21 03:15:34] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
 [2023-05-21 03:15:34] INFO root fetch - main [MainThread]: Store serial: [18185134]
+[2023-05-21 03:20:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185134]
+[2023-05-21 03:20:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hstsparser
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sops-secrets
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dorado
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redb-odm
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-lambda-subminute
+[2023-05-21 03:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Pgenlib
+[2023-05-21 03:20:43] INFO root fetch - processPackages [redb-odm]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [hstsparser]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [Pgenlib]: New version: [0.90.0] Old Version: [0.83.0]
+[2023-05-21 03:20:43] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 03:20:43] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230521/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:20:43] INFO root fetch - processPackages [redb-odm]: Downloading https://files.pythonhosted.org/packages/c2/6e/9b468b90378375918fa01e16ac6b79313d813c2c31a4d120508cf885f1ce/redb-odm-1.2.1.tar.gz
+[2023-05-21 03:20:43] INFO root fetch - processPackages [hstsparser]: Downloading https://files.pythonhosted.org/packages/1f/c1/7fe1dc620448f9df6dbb820052aebe795d9058ab864a758951a7850fa641/hstsparser-1.1.4.tar.gz
+[2023-05-21 03:20:43] INFO root fetch - processPackages [Pgenlib]: Downloading https://files.pythonhosted.org/packages/b5/f4/6cd16a7f543438c5910cec68bd5d49d231152753f3f53f4dda1322305522/Pgenlib-0.83.0.tar.gz
+[2023-05-21 03:20:43] INFO root fetch - processPackages [redb-odm]: executing diffoscope
+[2023-05-21 03:20:43] INFO root fetch - processPackages [redb-odm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redb-odm-1.2.0.tar.gz tmp/redb-odm-1.2.1.tar.gz --markdown 20230521/r/redb-odm/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-21 03:20:43] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230521/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-21 03:20:43] INFO root fetch - processPackages [hstsparser]: Downloading https://files.pythonhosted.org/packages/49/4c/8e1813bdfdd9000cfc9e2147a614a9533a8b8aabfb8df087bd46c8407ea7/hstsparser-1.1.5.tar.gz
+[2023-05-21 03:20:43] INFO root fetch - processPackages [hstsparser]: executing diffoscope
+[2023-05-21 03:20:43] INFO root fetch - processPackages [hstsparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstsparser-1.1.4.tar.gz tmp/hstsparser-1.1.5.tar.gz --markdown 20230521/h/hstsparser/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-21 03:20:43] INFO root fetch - processPackages [Pgenlib]: Downloading https://files.pythonhosted.org/packages/dc/26/3150424408411a6f326db5b2f61a5accf900dfe3d287f4452e73d62b0b01/Pgenlib-0.90.0.tar.gz
+[2023-05-21 03:20:44] INFO root fetch - processPackages [Pgenlib]: executing diffoscope
+[2023-05-21 03:20:44] INFO root fetch - processPackages [Pgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pgenlib-0.83.0.tar.gz tmp/Pgenlib-0.90.0.tar.gz --markdown 20230521/P/Pgenlib/0.83.0-0.90.0/diff.md --exclude *.pyd
+[2023-05-21 03:20:44] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 03:20:45] INFO root fetch - main [MainThread]: End processing [redb-odm]: success
+[2023-05-21 03:20:45] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-21 03:20:45] INFO root fetch - main [MainThread]: End processing [hstsparser]: success
+[2023-05-21 03:20:45] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-21 03:20:47] INFO root fetch - main [MainThread]: End processing [Pgenlib]: success
+[2023-05-21 03:20:47] INFO root fetch - main [MainThread]: Store serial: [18185153]
