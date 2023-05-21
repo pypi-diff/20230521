@@ -7438,3 +7438,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:37:49] INFO root fetch - main [MainThread]: End processing [cozify]: success
 [2023-05-21 18:37:49] INFO root fetch - main [MainThread]: End processing [pynamer]: success
 [2023-05-21 18:37:49] INFO root fetch - main [MainThread]: Store serial: [18188073]
+[2023-05-21 18:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188073]
+[2023-05-21 18:43:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 18:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: configzen
+[2023-05-21 18:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spiderYa
+[2023-05-21 18:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: databend
+[2023-05-21 18:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytket-qir
+[2023-05-21 18:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configzen
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-05-21 18:43:00] INFO root fetch - processPackages [databend]: New version: [1.1.43] Old Version: [1.1.42]
+[2023-05-21 18:43:00] INFO root fetch - processPackages [spiderYa]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-21 18:43:00] INFO root fetch - processPackages [pytket-qir]: New version: [0.2.0rc4] Old Version: [0.2.0rc3]
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/4d/3b/3082f94c37877cf7ec3d02aa9821045cbda59cf6c6ade8b2df29a7dbec16/configzen-0.1.33.tar.gz
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/4d/3b/3082f94c37877cf7ec3d02aa9821045cbda59cf6c6ade8b2df29a7dbec16/configzen-0.1.33.tar.gz
+[2023-05-21 18:43:00] INFO root fetch - processPackages [pytket-qir]: Downloading https://files.pythonhosted.org/packages/5b/31/0be3e1fabb0a9560aab562fd04b671bb1a5fba34db2a1962aa373e1406b5/pytket_qir-0.2.0rc3-py3-none-any.whl
+[2023-05-21 18:43:00] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/f6/39/ba35e30fb06426c4a9b5880129a475bee2b650d2c80064c0e7f8c38a8db1/databend-1.1.42-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 18:43:00] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/d7/7b/f097e0028a863ba9a091225e6c04ec6daee65902c45410ea04d1065d120f/spiderYa-0.1.5.tar.gz
+[2023-05-21 18:43:00] WARNING root fetch - processPackages [databend]: Skipping package: exceeds size limit 28071145>=10485760
+[2023-05-21 18:43:00] INFO root fetch - main [MainThread]: End processing [databend] error
+[2023-05-21 18:43:00] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-05-21 18:43:00] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.1.4.tar.gz tmp/spiderYa-0.1.5.tar.gz --markdown 20230521/s/spiderYa/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/13/7c/68d0aa202ea5875fde52a902988e1c947f5821cbafa204192d49ff954e42/configzen-0.1.34.tar.gz
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/13/7c/68d0aa202ea5875fde52a902988e1c947f5821cbafa204192d49ff954e42/configzen-0.1.34.tar.gz
+[2023-05-21 18:43:00] INFO root fetch - processPackages [pytket-qir]: Downloading https://files.pythonhosted.org/packages/4f/1d/329b7bcae9ba1e595366564867f3bdfe4d8bff10e2439c96fb41a7e6eac0/pytket_qir-0.2.0rc4-py3-none-any.whl
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.33.tar.gz tmp/configzen-0.1.34.tar.gz --markdown 20230521/c/configzen/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 18:43:00] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.33.tar.gz tmp/configzen-0.1.34.tar.gz --markdown 20230521/c/configzen/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-05-21 18:43:00] INFO root fetch - processPackages [pytket-qir]: executing diffoscope
+[2023-05-21 18:43:00] INFO root fetch - processPackages [pytket-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytket_qir-0.2.0rc3-py3-none-any.whl.zip tmp/pytket_qir-0.2.0rc4-py3-none-any.whl.zip --markdown 20230521/p/pytket-qir/0.2.0rc3-0.2.0rc4/diff.md --exclude *.pyd
+[2023-05-21 18:43:01] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-05-21 18:43:02] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 18:43:02] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
+[2023-05-21 18:43:02] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 18:43:02] INFO root fetch - main [MainThread]: Store serial: [18188086]
