@@ -4506,3 +4506,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:53:02] INFO root fetch - main [MainThread]: End processing [fil]: success
 [2023-05-21 12:53:04] INFO root fetch - main [MainThread]: End processing [xuanpolicy]: success
 [2023-05-21 12:53:04] INFO root fetch - main [MainThread]: Store serial: [18186653]
+[2023-05-21 12:58:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186653]
+[2023-05-21 12:58:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mleko
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BingImageCreator
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: windmill-api
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wmill
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wmill-pg
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zetsubou
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cookiecutter-pypackage-instance
+[2023-05-21 12:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: typing-aliases
+[2023-05-21 12:58:13] INFO root fetch - processPackages [mleko]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [zetsubou]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [BingImageCreator]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [typing-aliases]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-21 12:58:13] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/3e/59/b5a9f2444b4c4086f6ed7ddafbae975da110440c53cf8ba0528712761ebc/mleko-0.1.3.tar.gz
+[2023-05-21 12:58:13] INFO root fetch - processPackages [zetsubou]: Downloading https://files.pythonhosted.org/packages/c8/3b/52b4feb6836fd274f41e10598fc091da4bf03f1fb7689b827088d2a94107/zetsubou-0.7.0.tar.gz
+[2023-05-21 12:58:13] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: Downloading https://files.pythonhosted.org/packages/1c/2b/b8649185e8a596b2225f6443dc9db32c3f2810bcf0b39c7a8efc6b3960bc/cookiecutter-pypackage-instance-0.2.1.tar.gz
+[2023-05-21 12:58:13] INFO root fetch - processPackages [BingImageCreator]: Downloading https://files.pythonhosted.org/packages/5a/d1/07e1da5f7f816fc57eb05083b1746727173f480d20aebadab41224be01c7/BingImageCreator-0.2.0.tar.gz
+[2023-05-21 12:58:13] INFO root fetch - processPackages [typing-aliases]: Downloading https://files.pythonhosted.org/packages/14/c5/3a9907b510806dfa61d0948d66e0aecf033d6fd7c0874155e11a1e90d001/typing_aliases-1.1.1.tar.gz
+[2023-05-21 12:58:14] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230521/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230521/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/d8/5c/0932265c88ac40b0c067536517316bdd1879a54f0e5ae1b4d4f1022575ef/mleko-0.2.0.tar.gz
+[2023-05-21 12:58:14] INFO root fetch - processPackages [BingImageCreator]: Downloading https://files.pythonhosted.org/packages/c3/0f/52294ad65aacede8ffefc9659b5b700ac3604fc1fcc6034286b1ac1a6193/BingImageCreator-0.2.1.tar.gz
+[2023-05-21 12:58:14] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230521/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [zetsubou]: Downloading https://files.pythonhosted.org/packages/18/f8/099f97cc3804f41e8994425d3a675849f9d769e5ff69e2e579c440be2891/zetsubou-0.7.1.tar.gz
+[2023-05-21 12:58:14] INFO root fetch - processPackages [typing-aliases]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [typing-aliases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_aliases-1.1.0.tar.gz tmp/typing_aliases-1.1.1.tar.gz --markdown 20230521/t/typing-aliases/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.1.3.tar.gz tmp/mleko-0.2.0.tar.gz --markdown 20230521/m/mleko/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [BingImageCreator]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [BingImageCreator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BingImageCreator-0.2.0.tar.gz tmp/BingImageCreator-0.2.1.tar.gz --markdown 20230521/B/BingImageCreator/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [zetsubou]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [zetsubou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zetsubou-0.7.0.tar.gz tmp/zetsubou-0.7.1.tar.gz --markdown 20230521/z/zetsubou/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-21 12:58:14] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: Downloading https://files.pythonhosted.org/packages/f2/94/4b90adcbe8887bfd49d5617d871e603a595e33c364d3ab6146267cb24969/cookiecutter_pypackage_instance-1.0.0.tar.gz
+[2023-05-21 12:58:14] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: executing diffoscope
+[2023-05-21 12:58:14] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter-pypackage-instance-0.2.1.tar.gz tmp/cookiecutter_pypackage_instance-1.0.0.tar.gz --markdown 20230521/c/cookiecutter-pypackage-instance/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 12:58:15] INFO root fetch - main [MainThread]: End processing [typing-aliases]: success
+[2023-05-21 12:58:15] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-21 12:58:15] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-21 12:58:16] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-05-21 12:58:16] INFO root fetch - main [MainThread]: End processing [BingImageCreator]: success
+[2023-05-21 12:58:16] INFO root fetch - main [MainThread]: End processing [cookiecutter-pypackage-instance]: success
+[2023-05-21 12:58:16] INFO root fetch - main [MainThread]: End processing [zetsubou]: success
+[2023-05-21 12:58:29] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-21 12:58:29] INFO root fetch - main [MainThread]: Store serial: [18186680]
