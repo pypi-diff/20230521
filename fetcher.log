@@ -4660,3 +4660,73 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:19:08] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
 [2023-05-21 13:19:08] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
 [2023-05-21 13:19:08] INFO root fetch - main [MainThread]: Store serial: [18186722]
+[2023-05-21 13:24:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186722]
+[2023-05-21 13:24:17] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oceano-algos
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textLSP
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Agentik
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starvote
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strictdoc
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onboardme
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tensordict-nightly
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchtnt-nightly
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Agentic
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ccxt
+[2023-05-21 13:24:17] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [textLSP]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentik]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [starvote]: New version: [1.3] Old Version: [1.2]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentic]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [onboardme]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ccxt]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-05-21 13:24:17] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230521/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230521/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentik]: Downloading https://files.pythonhosted.org/packages/4d/ae/659d42ab275b0d685f6c11f671e4eafa03ddc2cce6c272fd904aa84ecb79/agentik-0.0.1.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [textLSP]: Downloading https://files.pythonhosted.org/packages/ff/79/d06ba63728f06748cbfafcb0b7f294b7c94affa85b259d26aa03f8a1dc88/textLSP-0.1.0.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/86/2f/e15346cbbcbc3c78438c0184b8653cecfaaec1965c445a0e1e21554b8c7b/starvote-1.3.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentic]: Downloading https://files.pythonhosted.org/packages/20/c8/f5ee701f69bb5996287a1d67ad38534c0af64cf9a04ea7a271693194c70c/agentic-0.0.1.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/8b/18/6cbb7e11e17658a04df9ec7ac6904b526954c83c9ab5916a6f850a6a34e5/onboardme-1.1.9.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230521/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentik]: Downloading https://files.pythonhosted.org/packages/27/7c/aeb5b69f986d47a98333d8b4283379ec18b1c8749165a5b51380972040e0/Agentik-0.0.2.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230521/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/60/83/f2f311e72f0bb14472e2b7b351da596a8e5fb68a8f624c7d619158c2e2f4/ccxt-3.1.4.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.1.8.tar.gz tmp/onboardme-1.1.9.tar.gz --markdown 20230521/o/onboardme/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentic]: Downloading https://files.pythonhosted.org/packages/f4/26/c3e530a5324d62f17f4fed0def808ee9bcdeecf942ea7e9531adf0d84d9b/Agentic-0.0.2.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [textLSP]: Downloading https://files.pythonhosted.org/packages/aa/6c/dd45e87f0e04d208946fcd27fcdf06368875dcd71e463dca675f82af585b/textLSP-0.2.0.tar.gz
+[2023-05-21 13:24:17] INFO root fetch - processPackages [starvote]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [starvote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starvote-1.2.tar.gz tmp/starvote-1.3.tar.gz --markdown 20230521/s/starvote/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentic]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentic-0.0.1.tar.gz tmp/Agentic-0.0.2.tar.gz --markdown 20230521/A/Agentic/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentik]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [Agentik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentik-0.0.1.tar.gz tmp/Agentik-0.0.2.tar.gz --markdown 20230521/A/Agentik/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.3.tar.gz tmp/ccxt-3.1.4.tar.gz --markdown 20230521/c/ccxt/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-05-21 13:24:17] INFO root fetch - processPackages [textLSP]: executing diffoscope
+[2023-05-21 13:24:17] INFO root fetch - processPackages [textLSP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textLSP-0.1.0.tar.gz tmp/textLSP-0.2.0.tar.gz --markdown 20230521/t/textLSP/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 13:24:18] INFO root fetch - processPackages [tensordict-nightly]: Start processing: argrelay
+[2023-05-21 13:24:18] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-21 13:24:18] INFO root fetch - processPackages [argrelay]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-05-21 13:24:18] WARNING root fetch - processPackages [argrelay]: fallback to get urls: [0.0.0.dev8]
+[2023-05-21 13:24:18] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 13:24:18] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 13:24:18] WARNING root fetch - processPackages [argrelay]: unable to get url for both version [0.0.0.dev8]
+[2023-05-21 13:24:18] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-21 13:24:18] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 13:24:18] INFO root fetch - main [MainThread]: End processing [argrelay] error
+[2023-05-21 13:24:19] INFO root fetch - main [MainThread]: End processing [Agentic]: success
+[2023-05-21 13:24:19] INFO root fetch - main [MainThread]: End processing [Agentik]: success
+[2023-05-21 13:24:19] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-05-21 13:24:19] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-21 13:24:20] INFO root fetch - main [MainThread]: End processing [starvote]: success
+[2023-05-21 13:24:20] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-21 13:24:20] INFO root fetch - main [MainThread]: End processing [textLSP]: success
+[2023-05-21 13:24:26] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-21 13:24:26] INFO root fetch - main [MainThread]: Store serial: [18186753]
