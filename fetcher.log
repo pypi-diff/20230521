@@ -6912,3 +6912,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:29:25] INFO root fetch - main [MainThread]: End processing [timeblok-py]: success
 [2023-05-21 17:29:25] INFO root fetch - main [MainThread]: End processing [tongsuopy-crayon]: success
 [2023-05-21 17:29:25] INFO root fetch - main [MainThread]: Store serial: [18187823]
+[2023-05-21 17:34:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187823]
+[2023-05-21 17:34:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lakeapi
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tomte
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keksik-api
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uplogic
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libecc
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: upbit-client
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cuid2
+[2023-05-21 17:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qwak-core
+[2023-05-21 17:34:34] INFO root fetch - processPackages [tomte]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [lakeapi]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [cuid2]: New version: [2.0.0] Old Version: [1.3.0]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [uplogic]: New version: [1.9.1.1] Old Version: [1.9.1]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [libecc]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [upbit-client]: New version: [1.3.4.0] Old Version: [1.3.2.0]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [qwak-core]: New version: [0.0.68] Old Version: [0.0.67]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [keksik-api]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-21 17:34:34] INFO root fetch - processPackages [cuid2]: Downloading https://files.pythonhosted.org/packages/ee/91/20332ecd3f506667265f69ca57155d8182f9bb1889e1f0199f57af32cf2e/cuid2-1.3.0.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [lakeapi]: Downloading https://files.pythonhosted.org/packages/9e/4b/de8ab40630c1ed0f8cb2c3b6b9260687d91c1445d6d052649f1820debdca/lakeapi-0.4.5.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [tomte]: Downloading https://files.pythonhosted.org/packages/b1/90/265a5ddeea02ff92f7c68ea1bebd8eceaae052d2a26db019c5455f7a64c5/tomte-0.2.4.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [upbit-client]: Downloading https://files.pythonhosted.org/packages/2a/fb/e0d550c059aa90ff6b02c64392d0c110fefe57c0d828520aafb44de76929/upbit-client-1.3.2.0.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [keksik-api]: Downloading https://files.pythonhosted.org/packages/0f/3b/061baebb8349cdf702695bce09e3824e1ba96c41fdbeba6106d0414488ae/keksik_api-0.1.5.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/21/38/0d8b6e3400970067e3456b0fd3fda7fd2c7a86acb8ae3cee44895af9fdb2/qwak_core-0.0.68.tar.gz
+[2023-05-21 17:34:34] INFO root fetch - processPackages [uplogic]: Downloading https://files.pythonhosted.org/packages/80/a5/b300d8a40ba38c5c8f7f5a2ef900ec744eae6438779c2d3d55d0576054ba/uplogic-1.9.1.1.tar.gz
+[2023-05-21 17:34:35] INFO root fetch - processPackages [keksik-api]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [keksik-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keksik_api-0.1.4.tar.gz tmp/keksik_api-0.1.5.tar.gz --markdown 20230521/k/keksik-api/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [libecc]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [libecc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libecc-1.0.8-py3-none-any.whl.zip tmp/libecc-1.0.9-py3-none-any.whl.zip --markdown 20230521/l/libecc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.67.tar.gz tmp/qwak_core-0.0.68.tar.gz --markdown 20230521/q/qwak-core/0.0.67-0.0.68/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [lakeapi]: Downloading https://files.pythonhosted.org/packages/31/84/a8408778f3b401641189ccb417148f210df5401ed4b4903d3681f73c1623/lakeapi-0.5.0.tar.gz
+[2023-05-21 17:34:35] INFO root fetch - processPackages [uplogic]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [uplogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uplogic-1.9.1.tar.gz tmp/uplogic-1.9.1.1.tar.gz --markdown 20230521/u/uplogic/1.9.1-1.9.1.1/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [tomte]: Downloading https://files.pythonhosted.org/packages/ea/90/c5fc628bbc6361c03f72abb11a29848fd8a3f512a831c988303fd589e86d/tomte-0.2.5.tar.gz
+[2023-05-21 17:34:35] INFO root fetch - processPackages [cuid2]: Downloading https://files.pythonhosted.org/packages/49/e2/34a6fefce469a2ca4572961af078680d546fc538a12a438ae21387ab9019/cuid2-2.0.0.tar.gz
+[2023-05-21 17:34:35] INFO root fetch - processPackages [lakeapi]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lakeapi-0.4.5.tar.gz tmp/lakeapi-0.5.0.tar.gz --markdown 20230521/l/lakeapi/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [tomte]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [tomte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomte-0.2.4.tar.gz tmp/tomte-0.2.5.tar.gz --markdown 20230521/t/tomte/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [cuid2]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [cuid2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuid2-1.3.0.tar.gz tmp/cuid2-2.0.0.tar.gz --markdown 20230521/c/cuid2/1.3.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-21 17:34:35] INFO root fetch - processPackages [upbit-client]: Downloading https://files.pythonhosted.org/packages/71/43/9a42ed962de4b9c4cc9e51fe3692a50f693f3c57a04537194099e3dc90c0/upbit-client-1.3.4.0.tar.gz
+[2023-05-21 17:34:35] INFO root fetch - processPackages [upbit-client]: executing diffoscope
+[2023-05-21 17:34:35] INFO root fetch - processPackages [upbit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upbit-client-1.3.2.0.tar.gz tmp/upbit-client-1.3.4.0.tar.gz --markdown 20230521/u/upbit-client/1.3.2.0-1.3.4.0/diff.md --exclude *.pyd
+[2023-05-21 17:34:36] INFO root fetch - main [MainThread]: End processing [cuid2]: success
+[2023-05-21 17:34:36] INFO root fetch - main [MainThread]: End processing [lakeapi]: success
+[2023-05-21 17:34:36] INFO root fetch - main [MainThread]: End processing [tomte]: success
+[2023-05-21 17:34:37] INFO root fetch - main [MainThread]: End processing [upbit-client]: success
+[2023-05-21 17:34:37] INFO root fetch - main [MainThread]: End processing [keksik-api]: success
+[2023-05-21 17:34:38] INFO root fetch - main [MainThread]: End processing [uplogic]: success
+[2023-05-21 17:34:40] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-21 17:34:47] INFO root fetch - main [MainThread]: End processing [libecc]: success
+[2023-05-21 17:34:47] INFO root fetch - main [MainThread]: Store serial: [18187852]
