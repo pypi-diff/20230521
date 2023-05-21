@@ -3501,3 +3501,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:14:42] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978979>=10485760
 [2023-05-21 10:14:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
 [2023-05-21 10:14:42] INFO root fetch - main [MainThread]: Store serial: [18186184]
+[2023-05-21 10:19:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186184]
+[2023-05-21 10:19:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu121
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commitcli
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu118
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vule-magics
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nvfuser-cu117
+[2023-05-21 10:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xgrid
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu117]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [commitcli]: New version: [1.3.1] Old Version: [1.3.0b3]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [vule-magics]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [xgrid]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu118-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/n/nvfuser-cu118/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu117]: executing diffoscope
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu117]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu117-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu117-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/n/nvfuser-cu117/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-05-21 10:19:51] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/n/nvfuser-cu121/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-21 10:19:51] INFO root fetch - processPackages [vule-magics]: Downloading https://files.pythonhosted.org/packages/41/f9/5801252a58e71b0ce746319f6927e2ece09f23bf9ae964c434e962559971/vule_magics-1.1.3.tar.gz
+[2023-05-21 10:19:51] INFO root fetch - processPackages [commitcli]: Downloading https://files.pythonhosted.org/packages/5c/b7/2e0f52ea0389749ef7e9d59bcf7ea03de13a34dfebd738eb515ffd625453/commitcli-1.3.0b3.tar.gz
+[2023-05-21 10:19:51] INFO root fetch - processPackages [xgrid]: Downloading https://files.pythonhosted.org/packages/18/f5/f9f68c290a0365ff0d8903dadb13d326a0286f5d436262257f7881dbe978/xgrid-0.0.4.tar.gz
+[2023-05-21 10:19:52] INFO root fetch - processPackages [commitcli]: Downloading https://files.pythonhosted.org/packages/5e/4f/3fb295d8803eaa9f171f9a06ef55d334ca783f11479dd92db81523c21429/commitcli-1.3.1.tar.gz
+[2023-05-21 10:19:52] INFO root fetch - processPackages [vule-magics]: Downloading https://files.pythonhosted.org/packages/b0/8a/fb429591fb2d7c3e37316020ee707c54f3260ee7ae86a558b9422e67fac9/vule_magics-1.2.0.tar.gz
+[2023-05-21 10:19:52] INFO root fetch - processPackages [xgrid]: Downloading https://files.pythonhosted.org/packages/8f/25/1a617b4ba51f3e801dd6653c9eb71db7921f0f8087a33672e5f467430adc/xgrid-0.0.5.tar.gz
+[2023-05-21 10:19:52] INFO root fetch - processPackages [commitcli]: executing diffoscope
+[2023-05-21 10:19:52] INFO root fetch - processPackages [commitcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commitcli-1.3.0b3.tar.gz tmp/commitcli-1.3.1.tar.gz --markdown 20230521/c/commitcli/1.3.0b3-1.3.1/diff.md --exclude *.pyd
+[2023-05-21 10:19:52] INFO root fetch - processPackages [vule-magics]: executing diffoscope
+[2023-05-21 10:19:52] INFO root fetch - processPackages [vule-magics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vule_magics-1.1.3.tar.gz tmp/vule_magics-1.2.0.tar.gz --markdown 20230521/v/vule-magics/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 10:19:52] INFO root fetch - processPackages [xgrid]: executing diffoscope
+[2023-05-21 10:19:52] INFO root fetch - processPackages [xgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xgrid-0.0.4.tar.gz tmp/xgrid-0.0.5.tar.gz --markdown 20230521/x/xgrid/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [commitcli]: success
+[2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [xgrid]: success
+[2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
+[2023-05-21 10:19:53] INFO root fetch - main [MainThread]: End processing [vule-magics]: success
+[2023-05-21 10:19:55] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2023-05-21 10:19:55] INFO root fetch - main [MainThread]: Store serial: [18186199]
