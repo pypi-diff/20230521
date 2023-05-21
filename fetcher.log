@@ -4406,3 +4406,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:37:18] INFO root fetch - main [MainThread]: End processing [databutton]: success
 [2023-05-21 12:37:24] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-05-21 12:37:24] INFO root fetch - main [MainThread]: Store serial: [18186613]
+[2023-05-21 12:42:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186613]
+[2023-05-21 12:42:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sumfolder1
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argrelay
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smtm
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: benchmark-runner
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: migdalor
+[2023-05-21 12:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qwak-core
+[2023-05-21 12:42:33] INFO root fetch - processPackages [smtm]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-21 12:42:33] INFO root fetch - processPackages [argrelay]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-05-21 12:42:33] INFO root fetch - processPackages [sumfolder1]: New version: [0.0.2] Old Version: [0.0.1rc6]
+[2023-05-21 12:42:33] INFO root fetch - processPackages [qwak-core]: New version: [0.0.66] Old Version: [0.0.65]
+[2023-05-21 12:42:33] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev5] Old Version: [0.0.2.dev4]
+[2023-05-21 12:42:33] WARNING root fetch - processPackages [argrelay]: fallback to get urls: [0.0.0.dev8]
+[2023-05-21 12:42:33] INFO root fetch - processPackages [benchmark-runner]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-21 12:42:33] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 12:42:33] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 12:42:33] WARNING root fetch - processPackages [argrelay]: unable to get url for both version [0.0.0.dev8]
+[2023-05-21 12:42:33] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-21 12:42:33] INFO root fetch - main [MainThread]: End processing [argrelay] error
+[2023-05-21 12:42:33] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/75/ad/e8d0d67e1193edd13d1a30547af03f9ebee1afeea0fd83549c9efef02f11/migdalor-0.0.2.dev5.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [smtm]: Downloading https://files.pythonhosted.org/packages/61/eb/32f1e25645c9ad7185a59b70bcd984995345f1b89dc643192ef242a8ceb9/smtm-1.1.1.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [sumfolder1]: Downloading https://files.pythonhosted.org/packages/f2/68/a3cd34e54ba900000ab0a7bc652669c5b5ca1c13c3b8bee6a3be577a1faf/sumfolder1-0.0.1rc6.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fc/b5/e1c605bc222864d410480cf39ddc2be764d2a08062c99210a12970f27293/qwak_core-0.0.65.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 12:42:33] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev4.tar.gz tmp/migdalor-0.0.2.dev5.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev4-0.0.2.dev5/diff.md --exclude *.pyd
+[2023-05-21 12:42:33] INFO root fetch - processPackages [benchmark-runner]: executing diffoscope
+[2023-05-21 12:42:33] INFO root fetch - processPackages [benchmark-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchmark-runner-1.0.98.tar.gz tmp/benchmark-runner-1.0.99.tar.gz --markdown 20230521/b/benchmark-runner/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-21 12:42:33] INFO root fetch - processPackages [sumfolder1]: Downloading https://files.pythonhosted.org/packages/29/26/d55f42e015b27b9ca4ad6b987bae234a52355bcc32cfe78fc343e5dbc552/sumfolder1-0.0.2.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [smtm]: Downloading https://files.pythonhosted.org/packages/56/c1/1992e61035bb5bfda948b78624bb104a46d7478dbb6d059716106e5d32ca/smtm-1.2.0.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/60/ae/5c30523f5f1519293e3eb7a9c9189a49249d7413090f09a31cc4fefbb28a/qwak_core-0.0.66.tar.gz
+[2023-05-21 12:42:33] INFO root fetch - processPackages [sumfolder1]: executing diffoscope
+[2023-05-21 12:42:33] INFO root fetch - processPackages [sumfolder1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sumfolder1-0.0.1rc6.tar.gz tmp/sumfolder1-0.0.2.tar.gz --markdown 20230521/s/sumfolder1/0.0.1rc6-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 12:42:33] INFO root fetch - processPackages [smtm]: executing diffoscope
+[2023-05-21 12:42:33] INFO root fetch - processPackages [smtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smtm-1.1.1.tar.gz tmp/smtm-1.2.0.tar.gz --markdown 20230521/s/smtm/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 12:42:33] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-21 12:42:33] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.65.tar.gz tmp/qwak_core-0.0.66.tar.gz --markdown 20230521/q/qwak-core/0.0.65-0.0.66/diff.md --exclude *.pyd
+[2023-05-21 12:42:34] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 12:42:35] INFO root fetch - main [MainThread]: End processing [benchmark-runner]: success
+[2023-05-21 12:42:35] INFO root fetch - main [MainThread]: End processing [sumfolder1]: success
+[2023-05-21 12:42:35] INFO root fetch - main [MainThread]: End processing [smtm]: success
+[2023-05-21 12:42:38] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-21 12:42:38] INFO root fetch - main [MainThread]: Store serial: [18186630]
