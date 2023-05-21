@@ -4310,3 +4310,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:16:01] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
 [2023-05-21 12:16:33] INFO root fetch - main [MainThread]: End processing [qm-sim]: success
 [2023-05-21 12:16:33] INFO root fetch - main [MainThread]: Store serial: [18186570]
+[2023-05-21 12:21:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186570]
+[2023-05-21 12:21:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 12:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Cryptem
+[2023-05-21 12:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p1monitor
+[2023-05-21 12:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: normcap
+[2023-05-21 12:21:41] INFO root fetch - processPackages [p1monitor]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-21 12:21:41] INFO root fetch - processPackages [Cryptem]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-21 12:21:41] INFO root fetch - processPackages [normcap]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-21 12:21:42] INFO root fetch - processPackages [p1monitor]: Downloading https://files.pythonhosted.org/packages/de/af/12367f95e482250cf7a0620d44cb420a363da018ea2b0dc1760a9424c707/p1monitor-2.3.0.tar.gz
+[2023-05-21 12:21:42] INFO root fetch - processPackages [normcap]: Downloading https://files.pythonhosted.org/packages/7a/3c/45dfd15052c6c08b83c936f608e89e8fb3b688b05d3a7af5c3250e83de86/normcap-0.4.1.tar.gz
+[2023-05-21 12:21:42] INFO root fetch - processPackages [Cryptem]: Downloading https://files.pythonhosted.org/packages/46/de/808c683cdc589e7abaf48d27976837612725a1766d8f14efb83c61cfbe57/Cryptem-0.1.0.tar.gz
+[2023-05-21 12:21:42] INFO root fetch - processPackages [Cryptem]: executing diffoscope
+[2023-05-21 12:21:42] INFO root fetch - processPackages [Cryptem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Cryptem-0.0.4.tar.gz tmp/Cryptem-0.1.0.tar.gz --markdown 20230521/C/Cryptem/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 12:21:42] INFO root fetch - processPackages [p1monitor]: Downloading https://files.pythonhosted.org/packages/ab/1c/430d6551414a9ee294b88eb572ebd2d8d9f6540da3b4c18f50c6030a0942/p1monitor-2.3.1.tar.gz
+[2023-05-21 12:21:42] INFO root fetch - processPackages [normcap]: Downloading https://files.pythonhosted.org/packages/fe/c2/55e0508deb3fa23823205c79fd0f68e1a761e5b5f6beffbbbf62dbb3d89f/normcap-0.4.2.tar.gz
+[2023-05-21 12:21:42] INFO root fetch - processPackages [p1monitor]: executing diffoscope
+[2023-05-21 12:21:42] INFO root fetch - processPackages [p1monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p1monitor-2.3.0.tar.gz tmp/p1monitor-2.3.1.tar.gz --markdown 20230521/p/p1monitor/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-21 12:21:42] INFO root fetch - processPackages [normcap]: executing diffoscope
+[2023-05-21 12:21:42] INFO root fetch - processPackages [normcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/normcap-0.4.1.tar.gz tmp/normcap-0.4.2.tar.gz --markdown 20230521/n/normcap/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-21 12:21:43] INFO root fetch - main [MainThread]: End processing [Cryptem]: success
+[2023-05-21 12:21:43] INFO root fetch - main [MainThread]: End processing [p1monitor]: success
+[2023-05-21 12:21:44] INFO root fetch - main [MainThread]: End processing [normcap]: success
+[2023-05-21 12:21:44] INFO root fetch - main [MainThread]: Store serial: [18186581]
