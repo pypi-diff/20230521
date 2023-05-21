@@ -8649,3 +8649,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:31:31] INFO root fetch - main [MainThread]: End processing [aiotiktok]: success
 [2023-05-21 21:31:31] INFO root fetch - main [MainThread]: End processing [websocket-client]: success
 [2023-05-21 21:31:31] INFO root fetch - main [MainThread]: Store serial: [18188733]
+[2023-05-21 21:36:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188733]
+[2023-05-21 21:36:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 21:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: guacli
+[2023-05-21 21:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-parser
+[2023-05-21 21:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pioreactor-high-temp-plugin
+[2023-05-21 21:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dominate
+[2023-05-21 21:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NaijaBet-Api
+[2023-05-21 21:36:40] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.5038855766] Old Version: [0.0.1.4775617509]
+[2023-05-21 21:36:40] INFO root fetch - processPackages [NaijaBet-Api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 21:36:40] INFO root fetch - processPackages [guacli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-21 21:36:40] INFO root fetch - processPackages [dominate]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-21 21:36:40] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 21:36:40] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/44/85/1352a4346c83f037958dccf92a4b5b0dc43d2e63289975098a3d56f31982/zuspec_parser-0.0.1.4775617509-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 21:36:40] INFO root fetch - processPackages [dominate]: Downloading https://files.pythonhosted.org/packages/12/d7/5e5f50f5d5bdd4282d2a70b9479c1d91d6628bebd4829e455cdf7366a92e/dominate-2.7.0.tar.gz
+[2023-05-21 21:36:40] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: Downloading https://files.pythonhosted.org/packages/ae/d4/e33c0faed9d4cf3f2d451001ce35fb4d7a40b3ec7b39b5633720d90ab9c0/pioreactor_high_temp_plugin-0.0.3-py3-none-any.whl
+[2023-05-21 21:36:40] INFO root fetch - processPackages [NaijaBet-Api]: Downloading https://files.pythonhosted.org/packages/3d/d9/00904083c2158b1160e0775c2df1870bfd233479f17817b0eb7a3e9b4aec/NaijaBet_Api-0.2.8.tar.gz
+[2023-05-21 21:36:40] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: executing diffoscope
+[2023-05-21 21:36:40] INFO root fetch - processPackages [pioreactor-high-temp-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pioreactor_high_temp_plugin-0.0.2-py3-none-any.whl.zip tmp/pioreactor_high_temp_plugin-0.0.3-py3-none-any.whl.zip --markdown 20230521/p/pioreactor-high-temp-plugin/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 21:36:40] INFO root fetch - processPackages [guacli]: Downloading https://files.pythonhosted.org/packages/b7/d9/a9b99f8d3a595fb77dadcff32ce8410fea38d25017d83d7eb6eb7fc7c93b/guacli-1.1.1.tar.gz
+[2023-05-21 21:36:40] INFO root fetch - processPackages [guacli]: executing diffoscope
+[2023-05-21 21:36:40] INFO root fetch - processPackages [guacli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guacli-1.1.0.tar.gz tmp/guacli-1.1.1.tar.gz --markdown 20230521/g/guacli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-21 21:36:40] INFO root fetch - processPackages [dominate]: Downloading https://files.pythonhosted.org/packages/13/3d/8d22916c12184f0c4930b9cdfb136a130e8d8eacf5942fc9883f2a189f6a/dominate-2.8.0.tar.gz
+[2023-05-21 21:36:41] INFO root fetch - processPackages [NaijaBet-Api]: Downloading https://files.pythonhosted.org/packages/99/78/2c26b8981c700c2a053610b90f8bb7c968368770c718a16daece0640b682/NaijaBet_Api-0.2.9.tar.gz
+[2023-05-21 21:36:41] INFO root fetch - processPackages [dominate]: executing diffoscope
+[2023-05-21 21:36:41] INFO root fetch - processPackages [dominate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dominate-2.7.0.tar.gz tmp/dominate-2.8.0.tar.gz --markdown 20230521/d/dominate/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-21 21:36:41] INFO root fetch - processPackages [NaijaBet-Api]: executing diffoscope
+[2023-05-21 21:36:41] INFO root fetch - processPackages [NaijaBet-Api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaijaBet_Api-0.2.8.tar.gz tmp/NaijaBet_Api-0.2.9.tar.gz --markdown 20230521/N/NaijaBet-Api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 21:36:41] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/5d/bc/a323883a9a03784b7ad11a97c2054bb21bce0f76b7d4465b6aebdea0cc37/zuspec_parser-0.0.1.5038855766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 21:36:41] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-05-21 21:36:41] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4775617509-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.5038855766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/z/zuspec-parser/0.0.1.4775617509-0.0.1.5038855766/diff.md --exclude *.pyd
+[2023-05-21 21:36:42] INFO root fetch - main [MainThread]: End processing [guacli]: success
+[2023-05-21 21:36:42] INFO root fetch - main [MainThread]: End processing [pioreactor-high-temp-plugin]: success
+[2023-05-21 21:36:42] INFO root fetch - main [MainThread]: End processing [NaijaBet-Api]: success
+[2023-05-21 21:36:42] INFO root fetch - main [MainThread]: End processing [dominate]: success
+[2023-05-21 21:37:47] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-05-21 21:37:47] INFO root fetch - main [MainThread]: Store serial: [18188753]
