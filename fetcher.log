@@ -3430,3 +3430,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:53:51] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2023-05-21 09:54:01] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-05-21 09:54:01] INFO root fetch - main [MainThread]: Store serial: [18186151]
+[2023-05-21 09:59:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186151]
+[2023-05-21 09:59:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 09:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shinherpro
+[2023-05-21 09:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleepyask
+[2023-05-21 09:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ersciyt
+[2023-05-21 09:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: umbridge
+[2023-05-21 09:59:09] INFO root fetch - processPackages [shinherpro]: New version: [1.6.0] Old Version: [1.5.9]
+[2023-05-21 09:59:09] INFO root fetch - processPackages [ersciyt]: New version: [1.88] Old Version: [1.87]
+[2023-05-21 09:59:09] INFO root fetch - processPackages [sleepyask]: New version: [6.0.0] Old Version: [5.2.0]
+[2023-05-21 09:59:10] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-21 09:59:10] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.5.9.tar.gz tmp/shinherpro-1.6.0.tar.gz --markdown 20230521/s/shinherpro/1.5.9-1.6.0/diff.md --exclude *.pyd
+[2023-05-21 09:59:10] INFO root fetch - processPackages [umbridge]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-21 09:59:10] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-05-21 09:59:10] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-5.2.0.tar.gz tmp/sleepyask-6.0.0.tar.gz --markdown 20230521/s/sleepyask/5.2.0-6.0.0/diff.md --exclude *.pyd
+[2023-05-21 09:59:10] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-21 09:59:10] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.87.tar.gz tmp/ersciyt-1.88.tar.gz --markdown 20230521/e/ersciyt/1.87-1.88/diff.md --exclude *.pyd
+[2023-05-21 09:59:10] INFO root fetch - processPackages [umbridge]: Downloading https://files.pythonhosted.org/packages/b2/12/37de4b3f71be73b49128abbaa600af9439bf183484ebe72ca751983c90d1/umbridge-1.2.2.tar.gz
+[2023-05-21 09:59:10] INFO root fetch - processPackages [umbridge]: Downloading https://files.pythonhosted.org/packages/14/94/469cce13d79f99bb556523137bf23a33a3aa1c6921aad5f13ddca3c007b9/umbridge-1.2.3.tar.gz
+[2023-05-21 09:59:10] INFO root fetch - processPackages [umbridge]: executing diffoscope
+[2023-05-21 09:59:10] INFO root fetch - processPackages [umbridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/umbridge-1.2.2.tar.gz tmp/umbridge-1.2.3.tar.gz --markdown 20230521/u/umbridge/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [sleepyask]: success
+[2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [umbridge]: success
+[2023-05-21 09:59:11] INFO root fetch - main [MainThread]: Store serial: [18186163]
