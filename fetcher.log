@@ -8881,3 +8881,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:58:54] INFO root fetch - main [MainThread]: End processing [twitchAPI]: success
 [2023-05-21 21:58:56] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
 [2023-05-21 21:58:56] INFO root fetch - main [MainThread]: Store serial: [18188875]
+[2023-05-21 22:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188875]
+[2023-05-21 22:04:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 22:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbrlabs-pulumi-dynatrace
+[2023-05-21 22:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clearml-agent
+[2023-05-21 22:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: efax
+[2023-05-21 22:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bed-reader
+[2023-05-21 22:04:06] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: New version: [0.0.3a1684697130] Old Version: [0.0.3a1670978549]
+[2023-05-21 22:04:06] INFO root fetch - processPackages [clearml-agent]: New version: [1.5.3rc3] Old Version: [1.5.3rc2]
+[2023-05-21 22:04:06] INFO root fetch - processPackages [efax]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-21 22:04:06] INFO root fetch - processPackages [bed-reader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 22:04:06] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: Downloading https://files.pythonhosted.org/packages/56/9a/2c736aeec020fa95129b19ac9c8537ee0ba544cb997c19d4fd1c1bf1bd36/lbrlabs_pulumi_dynatrace-0.0.3a1670978549.tar.gz
+[2023-05-21 22:04:06] INFO root fetch - processPackages [clearml-agent]: Downloading https://files.pythonhosted.org/packages/b2/b9/fe8bd53e72ebc3e0414d23e913dd1aa1d7711a14c89a3105cb66c745248d/clearml_agent-1.5.3rc2-py3-none-any.whl
+[2023-05-21 22:04:06] INFO root fetch - processPackages [bed-reader]: Downloading https://files.pythonhosted.org/packages/65/0b/f835dbca4c8301011cc4d36a34d824379afa41394124f1c40b3d276b959f/bed_reader-0.2.8.tar.gz
+[2023-05-21 22:04:06] INFO root fetch - processPackages [efax]: Downloading https://files.pythonhosted.org/packages/b0/d3/88cf57bd21b97ce0af97e91d814a97737f5278b22981e6339b869ec2b35a/efax-1.9.0.tar.gz
+[2023-05-21 22:04:06] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: Downloading https://files.pythonhosted.org/packages/bf/a8/b732dbef2d57e278159a42bb7d937bd93aa84b9768a3d46a0965268d9fae/lbrlabs_pulumi_dynatrace-0.0.3a1684697130.tar.gz
+[2023-05-21 22:04:06] INFO root fetch - processPackages [clearml-agent]: Downloading https://files.pythonhosted.org/packages/d4/33/8ec2f061742570a15712d6a486c229fa5871fbfe7af0fe3c935c56a97309/clearml_agent-1.5.3rc3-py3-none-any.whl
+[2023-05-21 22:04:06] INFO root fetch - processPackages [efax]: Downloading https://files.pythonhosted.org/packages/45/ae/9fd314ec092ce76a4044da94da01a98a1ff79c6ede08742ef86a83aea5be/efax-1.9.1.tar.gz
+[2023-05-21 22:04:06] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: executing diffoscope
+[2023-05-21 22:04:06] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_dynatrace-0.0.3a1670978549.tar.gz tmp/lbrlabs_pulumi_dynatrace-0.0.3a1684697130.tar.gz --markdown 20230521/l/lbrlabs-pulumi-dynatrace/0.0.3a1670978549-0.0.3a1684697130/diff.md --exclude *.pyd
+[2023-05-21 22:04:07] INFO root fetch - processPackages [clearml-agent]: executing diffoscope
+[2023-05-21 22:04:07] INFO root fetch - processPackages [clearml-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clearml_agent-1.5.3rc2-py3-none-any.whl.zip tmp/clearml_agent-1.5.3rc3-py3-none-any.whl.zip --markdown 20230521/c/clearml-agent/1.5.3rc2-1.5.3rc3/diff.md --exclude *.pyd
+[2023-05-21 22:04:07] INFO root fetch - processPackages [efax]: executing diffoscope
+[2023-05-21 22:04:07] INFO root fetch - processPackages [efax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efax-1.9.0.tar.gz tmp/efax-1.9.1.tar.gz --markdown 20230521/e/efax/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-21 22:04:07] INFO root fetch - processPackages [bed-reader]: Downloading https://files.pythonhosted.org/packages/8a/0c/e7cfa50c586c7e7045e1e7770793dfde3030cba6effb34dba3d0f212acdd/bed_reader-0.2.9.tar.gz
+[2023-05-21 22:04:08] INFO root fetch - main [MainThread]: End processing [efax]: success
+[2023-05-21 22:04:08] INFO root fetch - processPackages [bed-reader]: executing diffoscope
+[2023-05-21 22:04:08] INFO root fetch - processPackages [bed-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bed_reader-0.2.8.tar.gz tmp/bed_reader-0.2.9.tar.gz --markdown 20230521/b/bed-reader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 22:04:09] INFO root fetch - main [MainThread]: End processing [clearml-agent]: success
+[2023-05-21 22:04:10] INFO root fetch - main [MainThread]: End processing [bed-reader]: success
+[2023-05-21 22:04:13] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-dynatrace]: success
+[2023-05-21 22:04:13] INFO root fetch - main [MainThread]: Store serial: [18188885]
