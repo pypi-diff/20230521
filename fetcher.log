@@ -2336,3 +2336,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:09:47] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
 [2023-05-21 06:09:47] INFO root fetch - main [MainThread]: End processing [icatcher]: success
 [2023-05-21 06:09:47] INFO root fetch - main [MainThread]: Store serial: [18185552]
+[2023-05-21 06:14:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185552]
+[2023-05-21 06:14:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 06:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swachhdata
+[2023-05-21 06:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agixt
+[2023-05-21 06:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: configzen
+[2023-05-21 06:14:56] INFO root fetch - processPackages [swachhdata]: New version: [1.5.1a1] Old Version: [1.5.0a1]
+[2023-05-21 06:14:56] INFO root fetch - processPackages [agixt]: New version: [1.1.55b0] Old Version: [1.1.54b0]
+[2023-05-21 06:14:56] INFO root fetch - processPackages [configzen]: New version: [0.1.25] Old Version: [0.1.24]
+[2023-05-21 06:14:56] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/09/63/87b700f52d79e448bdb71f675522bb4264ed35404563198084fc0c9ef5bb/agixt-1.1.55b0.tar.gz
+[2023-05-21 06:14:56] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/15/31/c0d7db1446481236b57f4610a981d63cf8f337f06d4d079d31fddd5d5a93/swachhdata-1.5.1a1-py3-none-any.whl
+[2023-05-21 06:14:56] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-21 06:14:56] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-1.5.0a1-py3-none-any.whl.zip tmp/swachhdata-1.5.1a1-py3-none-any.whl.zip --markdown 20230521/s/swachhdata/1.5.0a1-1.5.1a1/diff.md --exclude *.pyd
+[2023-05-21 06:14:56] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/c3/85/813eb19d10c2fc1d9a0c18635a3fa74a06fb8982da1d26d6908d141f047b/configzen-0.1.25.tar.gz
+[2023-05-21 06:14:56] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 06:14:56] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.54b0.tar.gz tmp/agixt-1.1.55b0.tar.gz --markdown 20230521/a/agixt/1.1.54b0-1.1.55b0/diff.md --exclude *.pyd
+[2023-05-21 06:14:56] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 06:14:56] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.24.tar.gz tmp/configzen-0.1.25.tar.gz --markdown 20230521/c/configzen/0.1.24-0.1.25/diff.md --exclude *.pyd
+[2023-05-21 06:14:57] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-21 06:14:58] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 06:14:58] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 06:14:58] INFO root fetch - main [MainThread]: Store serial: [18185560]
