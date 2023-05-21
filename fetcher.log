@@ -7183,3 +7183,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:01:12] INFO root fetch - main [MainThread]: End processing [datoso]: success
 [2023-05-21 18:01:17] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-21 18:01:17] INFO root fetch - main [MainThread]: Store serial: [18187965]
+[2023-05-21 18:06:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187965]
+[2023-05-21 18:06:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pref-voting
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notification-service-nightly
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-flow-nightly
+[2023-05-21 18:06:26] INFO root fetch - processPackages [pref-voting]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 18:06:26] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-21 18:06:26] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-21 18:06:26] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230521/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 18:06:26] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230521/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 18:06:26] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/01/21/9f9679778e86a682352ddf51b322d7e9684bbaea00d40bb3f83f2c8aa8b9/pref_voting-0.2.8.tar.gz
+[2023-05-21 18:06:26] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/55/cb/b58f9631dab3deed8ceff45ced1fc81239327aaf62a8a362aaee18cd2d84/pref_voting-0.2.9.tar.gz
+[2023-05-21 18:06:26] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-05-21 18:06:26] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.2.8.tar.gz tmp/pref_voting-0.2.9.tar.gz --markdown 20230521/p/pref-voting/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 18:06:27] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-21 18:06:27] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-05-21 18:06:28] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-21 18:06:28] INFO root fetch - main [MainThread]: Store serial: [18187974]
