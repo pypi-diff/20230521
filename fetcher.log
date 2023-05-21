@@ -1695,3 +1695,20 @@
 [2023-05-21 03:51:09] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-21 03:51:10] INFO root fetch - main [MainThread]: End processing [bfg9000]: success
 [2023-05-21 03:51:10] INFO root fetch - main [MainThread]: Store serial: [18185306]
+[2023-05-21 03:56:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185306]
+[2023-05-21 03:56:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 03:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allianceauth-tax-tools
+[2023-05-21 03:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: allianceauth-securegroups
+[2023-05-21 03:56:19] INFO root fetch - processPackages [allianceauth-tax-tools]: New version: [0.0.1b6] Old Version: [0.0.1b1]
+[2023-05-21 03:56:19] INFO root fetch - processPackages [allianceauth-securegroups]: New version: [0.5.2b1] Old Version: [0.5.1]
+[2023-05-21 03:56:19] INFO root fetch - processPackages [allianceauth-tax-tools]: Downloading https://files.pythonhosted.org/packages/c3/22/5c8707a691e8d1e7cad3428e5c98e5d66193a061ab8a4cbb0e003a51b893/allianceauth-tax-tools-0.0.1b1.tar.gz
+[2023-05-21 03:56:19] INFO root fetch - processPackages [allianceauth-securegroups]: Downloading https://files.pythonhosted.org/packages/ba/ea/2f7074bc7be00b261c2d10404fffaf5ede02fae1554e2afeeb8cbb1228a8/allianceauth-securegroups-0.5.1.tar.gz
+[2023-05-21 03:56:19] INFO root fetch - processPackages [allianceauth-securegroups]: Downloading https://files.pythonhosted.org/packages/35/b3/797533da87ea900083deab3b0e37830f4e6abc96943b76846b6eb3d0a175/allianceauth-securegroups-0.5.2b1.tar.gz
+[2023-05-21 03:56:20] INFO root fetch - processPackages [allianceauth-securegroups]: executing diffoscope
+[2023-05-21 03:56:20] INFO root fetch - processPackages [allianceauth-securegroups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth-securegroups-0.5.1.tar.gz tmp/allianceauth-securegroups-0.5.2b1.tar.gz --markdown 20230521/a/allianceauth-securegroups/0.5.1-0.5.2b1/diff.md --exclude *.pyd
+[2023-05-21 03:56:20] INFO root fetch - processPackages [allianceauth-tax-tools]: Downloading https://files.pythonhosted.org/packages/2c/51/54e28e2006a6d21adf4c274af854c49be189f42ff74d33c2784bdf7925a8/allianceauth-tax-tools-0.0.1b6.tar.gz
+[2023-05-21 03:56:20] INFO root fetch - processPackages [allianceauth-tax-tools]: executing diffoscope
+[2023-05-21 03:56:20] INFO root fetch - processPackages [allianceauth-tax-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth-tax-tools-0.0.1b1.tar.gz tmp/allianceauth-tax-tools-0.0.1b6.tar.gz --markdown 20230521/a/allianceauth-tax-tools/0.0.1b1-0.0.1b6/diff.md --exclude *.pyd
+[2023-05-21 03:56:21] INFO root fetch - main [MainThread]: End processing [allianceauth-securegroups]: success
+[2023-05-21 03:56:21] INFO root fetch - main [MainThread]: End processing [allianceauth-tax-tools]: success
+[2023-05-21 03:56:21] INFO root fetch - main [MainThread]: Store serial: [18185314]
