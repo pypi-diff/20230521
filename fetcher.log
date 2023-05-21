@@ -6223,3 +6223,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [shopcloud-serverless]: success
 [2023-05-21 15:59:57] INFO root fetch - main [MainThread]: End processing [sosin]: success
 [2023-05-21 15:59:57] INFO root fetch - main [MainThread]: Store serial: [18187503]
+[2023-05-21 16:05:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187503]
+[2023-05-21 16:05:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 16:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-shays-CERT-1717
+[2023-05-21 16:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gaiaFramework
+[2023-05-21 16:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmake-init
+[2023-05-21 16:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dearwatson
+[2023-05-21 16:05:06] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-1717]: New version: [20230521.14.0.517459] Old Version: [20230518.15.31.722967]
+[2023-05-21 16:05:07] INFO root fetch - processPackages [gaiaFramework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 16:05:07] INFO root fetch - processPackages [cmake-init]: New version: [0.36.1] Old Version: [0.36.0]
+[2023-05-21 16:05:07] INFO root fetch - processPackages [dearwatson]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-21 16:05:07] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-1717]: Downloading https://files.pythonhosted.org/packages/96/5a/42a7fc13e810e17bdfe0be719e9fa798f35290e315581a20011eb63a1fe8/certora-cli-alpha-shays-CERT-1717-20230518.15.31.722967.tar.gz
+[2023-05-21 16:05:07] INFO root fetch - processPackages [gaiaFramework]: Downloading https://files.pythonhosted.org/packages/7d/31/d623b9c56c81d19a4de121c99750fbb5e7c9904c9f5bcee4b87e39922ece/gaiaFramework-1.0.8.tar.gz
+[2023-05-21 16:05:07] INFO root fetch - processPackages [cmake-init]: Downloading https://files.pythonhosted.org/packages/80/b8/bfe41a03a941abd89ebdd7681cdbbfeb559c04467db941c1a137ad05d69b/cmake-init-0.36.0.tar.gz
+[2023-05-21 16:05:07] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-1717]: Skipping package: exceeds size limit 38975550>=10485760
+[2023-05-21 16:05:07] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-1717] error
+[2023-05-21 16:05:07] INFO root fetch - processPackages [cmake-init]: Downloading https://files.pythonhosted.org/packages/fa/a6/9b4411bf6557346e0227bfae7b62d872eb70519980ddda735f9197515b43/cmake-init-0.36.1.tar.gz
+[2023-05-21 16:05:07] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/ca/a5/b450a3eb03ea11960b272c8dd235a0623344bebca9a294cab35e823a0ae7/dearwatson-0.7.5.tar.gz
+[2023-05-21 16:05:07] INFO root fetch - processPackages [gaiaFramework]: Downloading https://files.pythonhosted.org/packages/8a/6a/7e1b5292c38185a28ac09beb052442740b1217ef8bbc97a594fc4cbb0bb3/gaiaFramework-1.0.9.tar.gz
+[2023-05-21 16:05:07] INFO root fetch - processPackages [cmake-init]: executing diffoscope
+[2023-05-21 16:05:07] INFO root fetch - processPackages [cmake-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-init-0.36.0.tar.gz tmp/cmake-init-0.36.1.tar.gz --markdown 20230521/c/cmake-init/0.36.0-0.36.1/diff.md --exclude *.pyd
+[2023-05-21 16:05:07] INFO root fetch - processPackages [gaiaFramework]: executing diffoscope
+[2023-05-21 16:05:07] INFO root fetch - processPackages [gaiaFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaiaFramework-1.0.8.tar.gz tmp/gaiaFramework-1.0.9.tar.gz --markdown 20230521/g/gaiaFramework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 16:05:08] INFO root fetch - main [MainThread]: End processing [cmake-init]: success
+[2023-05-21 16:05:09] INFO root fetch - processPackages [dearwatson]: executing diffoscope
+[2023-05-21 16:05:09] INFO root fetch - processPackages [dearwatson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearwatson-0.7.4.tar.gz tmp/dearwatson-0.7.5.tar.gz --markdown 20230521/d/dearwatson/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-21 16:05:09] INFO root fetch - main [MainThread]: End processing [gaiaFramework]: success
+[2023-05-21 16:05:10] INFO root fetch - main [MainThread]: End processing [dearwatson]: success
+[2023-05-21 16:05:10] INFO root fetch - main [MainThread]: Store serial: [18187521]
