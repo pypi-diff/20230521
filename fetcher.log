@@ -9426,3 +9426,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:51:36] INFO root fetch - main [MainThread]: End processing [pysnptools]: success
 [2023-05-21 22:52:05] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-21 22:52:05] INFO root fetch - main [MainThread]: Store serial: [18189210]
+[2023-05-21 22:57:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189210]
+[2023-05-21 22:57:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMouseKey
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sftp-uploader
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymap-admin
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sftp-uploader
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cli-command-parser
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lupin-grognard
+[2023-05-21 22:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sidetrek
+[2023-05-21 22:57:14] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [PyMouseKey]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.21]
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 22:57:14] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-21 22:57:14] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230521/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/2d/5b/283dbd34872bc18d7316522c127c4e1ffa8bbf02a7cf48b699f2e770d175/sftp_uploader-1.0.4.tar.gz
+[2023-05-21 22:57:14] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/2d/5b/283dbd34872bc18d7316522c127c4e1ffa8bbf02a7cf48b699f2e770d175/sftp_uploader-1.0.4.tar.gz
+[2023-05-21 22:57:14] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/80/90/4007697ed975b5b938dd6bbaa69175f7af7e4c622f356f94f62e576f3df9/cli_command_parser-2023.5.21.tar.gz
+[2023-05-21 22:57:14] INFO root fetch - processPackages [PyMouseKey]: Downloading https://files.pythonhosted.org/packages/78/b1/eb00d5c13b72b146d9a6b8c9b4ba2a089310ebc675f79655c0fb5cb01f17/PyMouseKey-1.0.3.tar.gz
+[2023-05-21 22:57:14] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-05-21 22:57:14] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap_admin-0.9.1.tar.gz tmp/pymap_admin-0.9.2.tar.gz --markdown 20230521/p/pymap-admin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-21 22:57:14] INFO root fetch - processPackages [PyMouseKey]: Downloading https://files.pythonhosted.org/packages/1e/9b/550dce9a44185b998abe23f3ac07519c08e340b91b6936bda80fe6aa1ae6/PyMouseKey-1.0.4-py3-none-any.whl
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/87/17/7f34791697dffac9fa9d9709db25913b5ec0629b33b7351b0868f294bed1/sftp_uploader-1.0.5.tar.gz
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/87/17/7f34791697dffac9fa9d9709db25913b5ec0629b33b7351b0868f294bed1/sftp_uploader-1.0.5.tar.gz
+[2023-05-21 22:57:15] INFO root fetch - processPackages [PyMouseKey]: executing diffoscope
+[2023-05-21 22:57:15] INFO root fetch - processPackages [PyMouseKey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMouseKey-1.0.3.tar.gz tmp/PyMouseKey-1.0.4-py3-none-any.whl.zip --markdown 20230521/P/PyMouseKey/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-21 22:57:15] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-21 22:57:15] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.21.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230521/c/cli-command-parser/2023.5.21-2023.5.8/diff.md --exclude *.pyd
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.4.tar.gz tmp/sftp_uploader-1.0.5.tar.gz --markdown 20230521/s/sftp-uploader/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-21 22:57:15] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.4.tar.gz tmp/sftp_uploader-1.0.5.tar.gz --markdown 20230521/s/sftp-uploader/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [PyMouseKey]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-21 22:57:16] INFO root fetch - main [MainThread]: Store serial: [18189232]
