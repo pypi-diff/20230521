@@ -7658,3 +7658,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:14:59] INFO root fetch - main [MainThread]: End processing [pypipr]: success
 [2023-05-21 19:14:59] INFO root fetch - main [MainThread]: End processing [arkprts]: success
 [2023-05-21 19:14:59] INFO root fetch - main [MainThread]: Store serial: [18188182]
+[2023-05-21 19:20:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188182]
+[2023-05-21 19:20:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spiderYa
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: migdalor
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cengal
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nyckel
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tokenauth
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: talon-git-labeller
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-05-21 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spiderYa]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [migdalor]: New version: [0.0.2.dev9] Old Version: [0.0.2.dev8]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [cengal]: New version: [3.1.18.4] Old Version: [3.1.18.3]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [django-tokenauth]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [talon-git-labeller]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230521/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [django-tokenauth]: Downloading https://files.pythonhosted.org/packages/e2/04/3487bc8f233293f2b8d44ed6a43cafaa107ad1fce6307f3e1734fc7d35d8/django-tokenauth-0.5.2.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-21 19:20:10] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/89/ba/534bb0f8a9388ba24046c5e74790038a50f22822b8330b5c3b9ab1ab2cd9/cengal-3.1.18.4.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/21/df/7f3a0d646d20884d8049d74b9ca1d527c87d71a40fdd476020f906e8b5ca/spiderYa-0.1.7.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [talon-git-labeller]: Downloading https://files.pythonhosted.org/packages/19/05/92734535de627d1030bff6e83dc034cf2e99e1b23aaf67a6392aced2c9f4/talon_git_labeller-0.1.5.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [migdalor]: Downloading https://files.pythonhosted.org/packages/a1/9e/cbbf1edb485892124bb1fece6d90e88fd4edbbb4325b4e437bcc5ae31c74/migdalor-0.0.2.dev9.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230521/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [migdalor]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [migdalor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migdalor-0.0.2.dev8.tar.gz tmp/migdalor-0.0.2.dev9.tar.gz --markdown 20230521/m/migdalor/0.0.2.dev8-0.0.2.dev9/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.1.6.tar.gz tmp/spiderYa-0.1.7.tar.gz --markdown 20230521/s/spiderYa/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-21 19:20:10] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.1.18.3.tar.gz tmp/cengal-3.1.18.4.tar.gz --markdown 20230521/c/cengal/3.1.18.3-3.1.18.4/diff.md --exclude *.pyd
+[2023-05-21 19:20:10] INFO root fetch - processPackages [django-tokenauth]: Downloading https://files.pythonhosted.org/packages/c3/b0/1e42b5686f2a5da1837cc62dad6592b23a98538020a6e0abc0ce7ac33102/django-tokenauth-0.5.3.tar.gz
+[2023-05-21 19:20:10] INFO root fetch - processPackages [talon-git-labeller]: Downloading https://files.pythonhosted.org/packages/bf/62/94d0c9ea7b2349fadc042a84a122391c965403b1a5211038e3d000ea9a34/talon_git_labeller-0.1.6.tar.gz
+[2023-05-21 19:20:11] INFO root fetch - processPackages [django-tokenauth]: executing diffoscope
+[2023-05-21 19:20:11] INFO root fetch - processPackages [django-tokenauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tokenauth-0.5.2.tar.gz tmp/django-tokenauth-0.5.3.tar.gz --markdown 20230521/d/django-tokenauth/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-21 19:20:11] INFO root fetch - processPackages [talon-git-labeller]: executing diffoscope
+[2023-05-21 19:20:11] INFO root fetch - processPackages [talon-git-labeller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talon_git_labeller-0.1.5.tar.gz tmp/talon_git_labeller-0.1.6.tar.gz --markdown 20230521/t/talon-git-labeller/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-21 19:20:11] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-21 19:20:12] INFO root fetch - main [MainThread]: End processing [migdalor]: success
+[2023-05-21 19:20:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 19:20:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-21 19:20:12] INFO root fetch - main [MainThread]: End processing [talon-git-labeller]: success
+[2023-05-21 19:20:12] INFO root fetch - main [MainThread]: End processing [django-tokenauth]: success
+[2023-05-21 19:20:16] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-05-21 19:20:27] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-21 19:20:27] INFO root fetch - main [MainThread]: Store serial: [18188205]
