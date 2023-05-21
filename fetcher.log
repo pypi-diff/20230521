@@ -8163,3 +8163,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:15:11] INFO root fetch - main [MainThread]: End processing [python-kacl]: success
 [2023-05-21 20:15:16] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-05-21 20:15:16] INFO root fetch - main [MainThread]: Store serial: [18188489]
+[2023-05-21 20:20:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188489]
+[2023-05-21 20:20:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 20:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logmaster
+[2023-05-21 20:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-upnp-client
+[2023-05-21 20:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skellycam
+[2023-05-21 20:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cengal
+[2023-05-21 20:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coinpaprika-async
+[2023-05-21 20:20:25] INFO root fetch - processPackages [cengal]: New version: [3.1.18.5] Old Version: [3.1.18.4]
+[2023-05-21 20:20:25] INFO root fetch - processPackages [coinpaprika-async]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 20:20:25] INFO root fetch - processPackages [logmaster]: New version: [1.2] Old Version: [1.1.0]
+[2023-05-21 20:20:25] INFO root fetch - processPackages [skellycam]: New version: [2023.5.1083] Old Version: [2023.4.1082]
+[2023-05-21 20:20:25] INFO root fetch - processPackages [async-upnp-client]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 20:20:25] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-21 20:20:25] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.1.18.4.tar.gz tmp/cengal-3.1.18.5.tar.gz --markdown 20230521/c/cengal/3.1.18.4-3.1.18.5/diff.md --exclude *.pyd
+[2023-05-21 20:20:26] INFO root fetch - processPackages [logmaster]: Downloading https://files.pythonhosted.org/packages/7b/f4/3aa48fba6b744d5352c938bb01e6387502281a6b9f019122bd5e31412c03/logmaster-1.1.0.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [coinpaprika-async]: Downloading https://files.pythonhosted.org/packages/b9/2c/85c016ad9e2e934585f531488c6b91f0a5228b198c294521dde1c753903b/coinpaprika_async-2.0.0.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [async-upnp-client]: Downloading https://files.pythonhosted.org/packages/7d/2b/7ebb1f0cc93612224a4411059fa0ae9548c5169b803cf03e4daf1bbbc820/async_upnp_client-0.9.0.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [skellycam]: Downloading https://files.pythonhosted.org/packages/d3/fc/f0fd8f3bf475dac6d8bf11dde0c63194143b3878b53050d3e15229dab73b/skellycam-2023.4.1082.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [coinpaprika-async]: Downloading https://files.pythonhosted.org/packages/a1/ae/f7423e78511d033c59b6fbec107902d5885fef56357256d79763e0481e91/coinpaprika_async-2.0.1.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [logmaster]: Downloading https://files.pythonhosted.org/packages/42/05/f4c297e1920a1b5c4458bce886c8650432a59f8837833c9dbabb7d65cefb/logmaster-1.2.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [skellycam]: Downloading https://files.pythonhosted.org/packages/d5/ef/9ceefd1b5cc77ecc50dc8e887bd11b619b8338be5e4f4c8d5050408af767/skellycam-2023.5.1083.tar.gz
+[2023-05-21 20:20:26] INFO root fetch - processPackages [coinpaprika-async]: executing diffoscope
+[2023-05-21 20:20:26] INFO root fetch - processPackages [coinpaprika-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coinpaprika_async-2.0.0.tar.gz tmp/coinpaprika_async-2.0.1.tar.gz --markdown 20230521/c/coinpaprika-async/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 20:20:26] INFO root fetch - processPackages [logmaster]: executing diffoscope
+[2023-05-21 20:20:26] INFO root fetch - processPackages [logmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logmaster-1.1.0.tar.gz tmp/logmaster-1.2.tar.gz --markdown 20230521/l/logmaster/1.1.0-1.2/diff.md --exclude *.pyd
+[2023-05-21 20:20:26] INFO root fetch - processPackages [async-upnp-client]: Downloading https://files.pythonhosted.org/packages/17/b1/42f48df9fbdbb04889a223958bca9611fe3d17946ef40f925369b1070b6c/async_upnp_client-0.9.1-py3-none-any.whl
+[2023-05-21 20:20:26] INFO root fetch - processPackages [async-upnp-client]: executing diffoscope
+[2023-05-21 20:20:26] INFO root fetch - processPackages [async-upnp-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_upnp_client-0.9.0.tar.gz tmp/async_upnp_client-0.9.1-py3-none-any.whl.zip --markdown 20230521/a/async-upnp-client/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 20:20:27] INFO root fetch - processPackages [skellycam]: executing diffoscope
+[2023-05-21 20:20:27] INFO root fetch - processPackages [skellycam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skellycam-2023.4.1082.tar.gz tmp/skellycam-2023.5.1083.tar.gz --markdown 20230521/s/skellycam/2023.4.1082-2023.5.1083/diff.md --exclude *.pyd
+[2023-05-21 20:20:27] INFO root fetch - main [MainThread]: End processing [coinpaprika-async]: success
+[2023-05-21 20:20:27] INFO root fetch - main [MainThread]: End processing [logmaster]: success
+[2023-05-21 20:20:27] INFO root fetch - main [MainThread]: End processing [async-upnp-client]: success
+[2023-05-21 20:20:28] INFO root fetch - main [MainThread]: End processing [skellycam]: success
+[2023-05-21 20:20:39] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-21 20:20:39] INFO root fetch - main [MainThread]: Store serial: [18188503]
