@@ -2185,3 +2185,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-21 05:43:11] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230521/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
 [2023-05-21 05:43:12] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
 [2023-05-21 05:43:12] INFO root fetch - main [MainThread]: Store serial: [18185509]
+[2023-05-21 05:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185509]
+[2023-05-21 05:48:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 05:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esterdb
+[2023-05-21 05:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tatarubot2
+[2023-05-21 05:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazi
+[2023-05-21 05:48:21] INFO root fetch - processPackages [esterdb]: New version: [0.4.0] Old Version: [0.3.8]
+[2023-05-21 05:48:21] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 05:48:21] INFO root fetch - processPackages [lazi]: New version: [1.9.156] Old Version: [1.9.140]
+[2023-05-21 05:48:21] INFO root fetch - processPackages [lazi]: executing diffoscope
+[2023-05-21 05:48:21] INFO root fetch - processPackages [lazi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazi-1.9.140.tar.gz tmp/lazi-1.9.156.tar.gz --markdown 20230521/l/lazi/1.9.140-1.9.156/diff.md --exclude *.pyd
+[2023-05-21 05:48:21] INFO root fetch - processPackages [esterdb]: Downloading https://files.pythonhosted.org/packages/98/b1/afaec00fdc3f6a302b61c9229eea1980c7ac92ed4e961d1527fb72ac4b2e/esterdb-0.3.8.tar.gz
+[2023-05-21 05:48:21] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-05-21 05:48:21] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.8.tar.gz tmp/tatarubot2-0.1.9.tar.gz --markdown 20230521/t/tatarubot2/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 05:48:21] INFO root fetch - processPackages [esterdb]: Downloading https://files.pythonhosted.org/packages/7f/7a/d6ff0c86cd15bd4d1ee52710c03e895efd37ca46243a5156f1b55ac7278c/esterdb-0.4.0.tar.gz
+[2023-05-21 05:48:21] INFO root fetch - processPackages [esterdb]: executing diffoscope
+[2023-05-21 05:48:21] INFO root fetch - processPackages [esterdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esterdb-0.3.8.tar.gz tmp/esterdb-0.4.0.tar.gz --markdown 20230521/e/esterdb/0.3.8-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 05:48:22] INFO root fetch - main [MainThread]: End processing [lazi]: success
+[2023-05-21 05:48:22] ERROR root fetch - processPackages [tatarubot2]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-21 05:48:22] INFO root fetch - main [MainThread]: End processing [tatarubot2] error
+[2023-05-21 05:49:05] INFO root fetch - main [MainThread]: End processing [esterdb]: success
+[2023-05-21 05:49:05] INFO root fetch - main [MainThread]: Store serial: [18185517]
