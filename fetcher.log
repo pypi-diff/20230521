@@ -8685,3 +8685,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:36:42] INFO root fetch - main [MainThread]: End processing [dominate]: success
 [2023-05-21 21:37:47] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2023-05-21 21:37:47] INFO root fetch - main [MainThread]: Store serial: [18188753]
+[2023-05-21 21:43:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188753]
+[2023-05-21 21:43:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aij
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ldimbenchmark
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ondewo-vtsi-client
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydro-raster
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: azure-kinect-apiserver
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Orange3-Tools
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mkdpdf
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiotiktok
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [aiotiktok]: New version: [2.6.1] Old Version: [2.6]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [mkdpdf]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [azure-kinect-apiserver]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [aij]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [Orange3-Tools]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ondewo-vtsi-client]: New version: [6.0.0] Old Version: [5.0.0]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [hydro-raster]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-21 21:43:10] INFO root fetch - processPackages [azure-kinect-apiserver]: Downloading https://files.pythonhosted.org/packages/cc/56/2cb9270cdfb67517c33e80baa5762318a94f0ea6d88618954e2582a6a93e/azure-kinect-apiserver-0.2.0.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ondewo-vtsi-client]: Downloading https://files.pythonhosted.org/packages/36/ff/396d9b0cf4998e83701ca633cef719c8addfddb127e9c97f40234a595f80/ondewo-vtsi-client-5.0.0.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [mkdpdf]: Downloading https://files.pythonhosted.org/packages/34/cf/9bb6251ede75770da18c24305da2e3c14a1f32b11a375648b684a4a3f8ae/mkdpdf-0.2.1.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [aiotiktok]: Downloading https://files.pythonhosted.org/packages/bf/2f/4f81a46e65d8e90b3e54697a80326e450d2879824faddcee9afbfdaf4246/aiotiktok-2.6.1.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/56/52/cdede50b3a344a3c184b942c0fb404c482ee7ba38589a3d530f1a9b11400/aij-1.0.7.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [hydro-raster]: Downloading https://files.pythonhosted.org/packages/72/ba/b31c4862427636a404663c2ef1aefefce28b86ad2678e699388022b4bfed/hydro_raster-0.0.5.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [Orange3-Tools]: Downloading https://files.pythonhosted.org/packages/2d/d9/149225db131fa4f9c368dbd7d1734f1788727222526b87060f091dfdd1f1/Orange3-Tools-0.0.7.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/7a/ac/a86972e54790fc2982a8aefd79fbd971a3ba46a491200242fd669d0d1c0d/ldimbenchmark-0.2.5.tar.gz
+[2023-05-21 21:43:10] INFO root fetch - processPackages [Orange3-Tools]: executing diffoscope
+[2023-05-21 21:43:10] INFO root fetch - processPackages [Orange3-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Orange3-Tools-0.0.5.tar.gz tmp/Orange3-Tools-0.0.7.tar.gz --markdown 20230521/O/Orange3-Tools/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-21 21:43:10] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.4.tar.gz tmp/ldimbenchmark-0.2.5.tar.gz --markdown 20230521/l/ldimbenchmark/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [aiotiktok]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [aiotiktok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotiktok-2.6.tar.gz tmp/aiotiktok-2.6.1.tar.gz --markdown 20230521/a/aiotiktok/2.6-2.6.1/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [azure-kinect-apiserver]: Downloading https://files.pythonhosted.org/packages/91/e9/249d2124fed0546cf4e5937e03719c554f1fb57095d4105e90fb83a3e31e/azure-kinect-apiserver-0.2.2.tar.gz
+[2023-05-21 21:43:11] INFO root fetch - processPackages [ondewo-vtsi-client]: Downloading https://files.pythonhosted.org/packages/b4/40/6033757dc51056fe4a53f8306d6843f01942740accd73d60e7a8bf5502f2/ondewo-vtsi-client-6.0.0.tar.gz
+[2023-05-21 21:43:11] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/3a/b0/d287ea5dd678996854b6baaad0c61d260d586a2cfcd928658b0cd0ad2f01/aij-1.0.8.tar.gz
+[2023-05-21 21:43:11] INFO root fetch - processPackages [mkdpdf]: Downloading https://files.pythonhosted.org/packages/44/fd/7b6bd97b6ba49cd9e5b826bd558f10b8fcfce07e6330d640ad67e36aff32/mkdpdf-0.2.2.tar.gz
+[2023-05-21 21:43:11] INFO root fetch - processPackages [azure-kinect-apiserver]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [azure-kinect-apiserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-kinect-apiserver-0.2.0.tar.gz tmp/azure-kinect-apiserver-0.2.2.tar.gz --markdown 20230521/a/azure-kinect-apiserver/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [ondewo-vtsi-client]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [ondewo-vtsi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-vtsi-client-5.0.0.tar.gz tmp/ondewo-vtsi-client-6.0.0.tar.gz --markdown 20230521/o/ondewo-vtsi-client/5.0.0-6.0.0/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.0.7.tar.gz tmp/aij-1.0.8.tar.gz --markdown 20230521/a/aij/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [mkdpdf]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [mkdpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdpdf-0.2.1.tar.gz tmp/mkdpdf-0.2.2.tar.gz --markdown 20230521/m/mkdpdf/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 21:43:11] INFO root fetch - processPackages [hydro-raster]: Downloading https://files.pythonhosted.org/packages/1f/e5/d9966681a83c2fea366a42c62c7b0b57621696e9f72ad295a9fec48b82ad/hydro_raster-0.0.6.tar.gz
+[2023-05-21 21:43:11] INFO root fetch - processPackages [hydro-raster]: executing diffoscope
+[2023-05-21 21:43:11] INFO root fetch - processPackages [hydro-raster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_raster-0.0.5.tar.gz tmp/hydro_raster-0.0.6.tar.gz --markdown 20230521/h/hydro-raster/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-21 21:43:12] INFO root fetch - main [MainThread]: End processing [Orange3-Tools]: success
+[2023-05-21 21:43:12] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-21 21:43:12] INFO root fetch - main [MainThread]: End processing [aiotiktok]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [mkdpdf]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [azure-kinect-apiserver]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [ondewo-vtsi-client]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [hydro-raster]: success
+[2023-05-21 21:43:13] INFO root fetch - main [MainThread]: Store serial: [18188776]
