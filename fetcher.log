@@ -4182,3 +4182,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 11:54:21] INFO root fetch - main [MainThread]: End processing [pytmac]: success
 [2023-05-21 11:54:23] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 11:54:23] INFO root fetch - main [MainThread]: Store serial: [18186512]
+[2023-05-21 11:59:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186512]
+[2023-05-21 11:59:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 11:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inverter-connect
+[2023-05-21 11:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: extr
+[2023-05-21 11:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extr-ds
+[2023-05-21 11:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dicfg
+[2023-05-21 11:59:32] INFO root fetch - processPackages [inverter-connect]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 11:59:32] INFO root fetch - processPackages [dicfg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr-ds]: New version: [0.0.9] Old Version: [0.0.80]
+[2023-05-21 11:59:32] INFO root fetch - processPackages [dicfg]: Downloading https://files.pythonhosted.org/packages/5c/21/ff11ac3df8cbb3bf13af48ca49d7102bbe91d709576c691d7c4568c8812a/dicfg-0.0.8.tar.gz
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr-ds]: Downloading https://files.pythonhosted.org/packages/bf/85/db4b8f3bbc2191ea5465037c23d5c06b5516eaf6b2cc8b38f656090c894d/extr-ds-0.0.80.tar.gz
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.8.tar.gz tmp/extr-0.0.9.tar.gz --markdown 20230521/e/extr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr-ds]: executing diffoscope
+[2023-05-21 11:59:32] INFO root fetch - processPackages [extr-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-ds-0.0.80.tar.gz tmp/extr-ds-0.0.9.tar.gz --markdown 20230521/e/extr-ds/0.0.80-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 11:59:32] INFO root fetch - processPackages [dicfg]: Downloading https://files.pythonhosted.org/packages/3e/3f/8fbd37fdbc93673603e0d62128a6d24b9faa0fa8cd5b06a1fffe345bcc59/dicfg-0.0.9.tar.gz
+[2023-05-21 11:59:32] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-21 11:59:32] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.8.0.tar.gz tmp/inverter-connect-0.9.0.tar.gz --markdown 20230521/i/inverter-connect/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 11:59:33] INFO root fetch - processPackages [dicfg]: executing diffoscope
+[2023-05-21 11:59:33] INFO root fetch - processPackages [dicfg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicfg-0.0.8.tar.gz tmp/dicfg-0.0.9.tar.gz --markdown 20230521/d/dicfg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 11:59:33] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-05-21 11:59:33] INFO root fetch - main [MainThread]: End processing [extr-ds]: success
+[2023-05-21 11:59:34] INFO root fetch - main [MainThread]: End processing [dicfg]: success
+[2023-05-21 11:59:34] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-21 11:59:34] INFO root fetch - main [MainThread]: Store serial: [18186524]
