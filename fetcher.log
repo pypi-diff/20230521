@@ -3395,3 +3395,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:43:19] INFO root fetch - main [MainThread]: End processing [tootbot]: success
 [2023-05-21 09:43:20] INFO root fetch - main [MainThread]: End processing [sequana-rnaseq]: success
 [2023-05-21 09:43:20] INFO root fetch - main [MainThread]: Store serial: [18186132]
+[2023-05-21 09:48:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186132]
+[2023-05-21 09:48:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 09:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-bulk-ingest
+[2023-05-21 09:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hordelib
+[2023-05-21 09:48:29] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 09:48:29] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-21 09:48:29] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230521/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 09:48:29] INFO root fetch - processPackages [hordelib]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-21 09:48:30] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/0d/17/53621b012aa2da0bddea888d7c0c429161babad8aa34be372faf5962c84f/hordelib-1.2.0.tar.gz
+[2023-05-21 09:48:31] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-21 09:48:31] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-21 09:48:31] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.1.2.tar.gz tmp/hordelib-1.2.0.tar.gz --markdown 20230521/h/hordelib/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-21 09:48:41] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-21 09:48:41] INFO root fetch - main [MainThread]: Store serial: [18186139]
