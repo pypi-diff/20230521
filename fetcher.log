@@ -689,3 +689,57 @@
 [2023-05-21 02:01:05] INFO root fetch - main [MainThread]: End processing [bytez]: success
 [2023-05-21 02:01:05] INFO root fetch - main [MainThread]: End processing [bytez]: success
 [2023-05-21 02:01:05] INFO root fetch - main [MainThread]: Store serial: [18184753]
+[2023-05-21 02:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184753]
+[2023-05-21 02:06:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libheader
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-cli
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchdatasets-nightly
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlflow-tmp
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cmsplugin-blocks
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sports2d
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaxkern-nightly
+[2023-05-21 02:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: to-pip
+[2023-05-21 02:06:14] INFO root fetch - processPackages [libheader]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [lifx-cli]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.8]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [cmsplugin-blocks]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [to-pip]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1684540990] Old Version: [1684454599]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [sports2d]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-21 02:06:14] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1684454599.tar.gz tmp/torchdatasets-nightly-1684540990.tar.gz --markdown 20230521/t/torchdatasets-nightly/1684454599-1684540990/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230521/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [to-pip]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [to-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-pip-2.0.0.tar.gz tmp/to-pip-2.0.1.tar.gz --markdown 20230521/t/to-pip/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mlflow-tmp]: Downloading https://files.pythonhosted.org/packages/34/a3/3d5e193a84248b66d48a646a9f9a8ff46ea2dd3f7acde92ddf4e1969eff9/mlflow_tmp-2.2.8.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230521/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [cmsplugin-blocks]: Downloading https://files.pythonhosted.org/packages/3e/57/c1ff15a3faf4567dc2fb9fb5eb0fecd345e3c249b9ba43d0ae2924059210/cmsplugin-blocks-1.0.0.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/17/cf/589e6788317c26436ea61858e2db9b647bbb6dd3d2fbcbdb59ff22f4ae8e/lifx_cli-2.5.2.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [sports2d]: Downloading https://files.pythonhosted.org/packages/fe/f2/ca584111af150b1a80292bc1831a9bc1197571e2a87d6c7ec9261d7de650/sports2d-0.2.0.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-2.5.1.tar.gz tmp/lifx_cli-2.5.2.tar.gz --markdown 20230521/l/lifx-cli/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [libheader]: Downloading https://files.pythonhosted.org/packages/8b/3b/e766e5f045cd9b882854bbfc3a82e178e4880715609016a77fd47cdc4955/libheader-1.1.0.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [cmsplugin-blocks]: Downloading https://files.pythonhosted.org/packages/53/66/de5b5a965bb3bf7d502e31165f720ef53cf3621ceb538cb4528bb3e12208/cmsplugin-blocks-1.1.0.tar.gz
+[2023-05-21 02:06:14] INFO root fetch - processPackages [sports2d]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [sports2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sports2d-0.1.2.tar.gz tmp/sports2d-0.2.0.tar.gz --markdown 20230521/s/sports2d/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [libheader]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [libheader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libheader-1.0.7.tar.gz tmp/libheader-1.1.0.tar.gz --markdown 20230521/l/libheader/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [cmsplugin-blocks]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [cmsplugin-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmsplugin-blocks-1.0.0.tar.gz tmp/cmsplugin-blocks-1.1.0.tar.gz --markdown 20230521/c/cmsplugin-blocks/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 02:06:14] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.8.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.8-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 02:06:15] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-21 02:06:15] INFO root fetch - main [MainThread]: End processing [to-pip]: success
+[2023-05-21 02:06:15] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-21 02:06:16] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-21 02:06:16] INFO root fetch - main [MainThread]: End processing [libheader]: success
+[2023-05-21 02:06:16] INFO root fetch - main [MainThread]: End processing [sports2d]: success
+[2023-05-21 02:06:17] INFO root fetch - main [MainThread]: End processing [cmsplugin-blocks]: success
+[2023-05-21 02:06:19] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 02:06:25] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-21 02:06:25] INFO root fetch - main [MainThread]: Store serial: [18184779]
