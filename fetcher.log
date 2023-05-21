@@ -9471,3 +9471,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2023-05-21 22:57:16] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
 [2023-05-21 22:57:16] INFO root fetch - main [MainThread]: Store serial: [18189232]
+[2023-05-21 23:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189232]
+[2023-05-21 23:02:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: talondoc
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliot-py
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sidetrek
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QuNet
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sftp-uploader
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: agixt
+[2023-05-21 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: amino.fix
+[2023-05-21 23:02:29] INFO root fetch - processPackages [aliot-py]: New version: [1.0.0] Old Version: [0.5.0]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [talondoc]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [agixt]: New version: [1.1.61b0] Old Version: [1.1.60b0]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [amino.fix]: New version: [2.3.6] Old Version: [2.3.5.5]
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230521/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [aliot-py]: Downloading https://files.pythonhosted.org/packages/0c/ce/681cb7d03e615fca5f8cfa49a4aa527f02f036240ce7938adadf7087467b/aliot-py-0.5.0.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/7d/8c/3278752ed96809439003300c2831a88064a72666bcb1b2979ec41ab161e8/agixt-1.1.61b0.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [amino.fix]: Downloading https://files.pythonhosted.org/packages/cd/e2/ca1bd3a58c48cd46cfe1d55c91b9c8a86a73370fc66037544997f58141d4/amino.fix-2.3.5.5.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/4f/30/f0bf1ccf78c2c68005b38e12fe6fe5bf6877c57dab57512173670415821c/sftp_uploader-1.0.6.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [talondoc]: Downloading https://files.pythonhosted.org/packages/a5/f6/4971a48280837fb53546de86dfabc7134451aaba757a995786c33138a5bf/talondoc-0.6.0.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.5.tar.gz tmp/sftp_uploader-1.0.6.tar.gz --markdown 20230521/s/sftp-uploader/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.60b0.tar.gz tmp/agixt-1.1.61b0.tar.gz --markdown 20230521/a/agixt/1.1.60b0-1.1.61b0/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [aliot-py]: Downloading https://files.pythonhosted.org/packages/6c/b3/8e44add6617752756c25b9d929aab70d3a554ef8180234a3f4709de082fa/aliot-py-1.0.0.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [talondoc]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [talondoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talondoc-0.5.1.tar.gz tmp/talondoc-0.6.0.tar.gz --markdown 20230521/t/talondoc/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [amino.fix]: Downloading https://files.pythonhosted.org/packages/ef/52/0ea8158bb35765a4c6cf899d99e74e55f0f26453e7ba9c9f795d5ffed85b/amino.fix-2.3.6.tar.gz
+[2023-05-21 23:02:29] INFO root fetch - processPackages [aliot-py]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [aliot-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliot-py-0.5.0.tar.gz tmp/aliot-py-1.0.0.tar.gz --markdown 20230521/a/aliot-py/0.5.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 23:02:29] INFO root fetch - processPackages [amino.fix]: executing diffoscope
+[2023-05-21 23:02:29] INFO root fetch - processPackages [amino.fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.fix-2.3.5.5.tar.gz tmp/amino.fix-2.3.6.tar.gz --markdown 20230521/a/amino.fix/2.3.5.5-2.3.6/diff.md --exclude *.pyd
+[2023-05-21 23:02:30] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-21 23:02:30] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 23:02:30] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [amino.fix]: success
+[2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [talondoc]: success
+[2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 23:02:31] INFO root fetch - main [MainThread]: End processing [aliot-py]: success
+[2023-05-21 23:02:31] INFO root fetch - main [MainThread]: Store serial: [18189252]
