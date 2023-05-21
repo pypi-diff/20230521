@@ -8026,3 +8026,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:58:06] INFO root fetch - main [MainThread]: End processing [grafana-api-sdk]: success
 [2023-05-21 19:58:19] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-21 19:58:19] INFO root fetch - main [MainThread]: Store serial: [18188415]
+[2023-05-21 20:03:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188415]
+[2023-05-21 20:03:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudflare
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kobject
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sidetrek
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyDistances
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seaport
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hledger-lots
+[2023-05-21 20:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fast-poisson-solver
+[2023-05-21 20:03:29] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [cloudflare]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [seaport]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [kobject]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [fast-poisson-solver]: New version: [0.1.9] Old Version: [0.1.11]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [hledger-lots]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-21 20:03:29] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230521/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 20:03:29] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 20:03:29] INFO root fetch - processPackages [fast-poisson-solver]: Downloading https://files.pythonhosted.org/packages/a5/67/6b4bde3ec33c72a3bbc02507e77b00b9848d665f654b52460e499922e321/fast_poisson_solver-0.1.11-py3-none-any.whl
+[2023-05-21 20:03:29] INFO root fetch - processPackages [seaport]: Downloading https://files.pythonhosted.org/packages/c3/9c/52d43b0c1be10cf34f15379700b8045b61a9587122420841055e6953e526/seaport-0.8.0.tar.gz
+[2023-05-21 20:03:29] INFO root fetch - processPackages [hledger-lots]: Downloading https://files.pythonhosted.org/packages/c7/3f/5e52f64c9c335f6667feb93319c5bb459a9e1147aaea7e94093d2a68ecb9/hledger_lots-0.4.1.tar.gz
+[2023-05-21 20:03:29] WARNING root fetch - processPackages [fast-poisson-solver]: Skipping package: exceeds size limit 12316658>=10485760
+[2023-05-21 20:03:29] INFO root fetch - main [MainThread]: End processing [fast-poisson-solver] error
+[2023-05-21 20:03:29] INFO root fetch - processPackages [kobject]: Downloading https://files.pythonhosted.org/packages/e1/c2/e16f006bcecce206b2e4c366888d1fc1227db6540b2072ed746776166e72/kobject-0.4.0.tar.gz
+[2023-05-21 20:03:29] INFO root fetch - processPackages [cloudflare]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudflare-2.9.8.tar.gz tmp/cloudflare-2.9.9.tar.gz --markdown 20230521/c/cloudflare/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-21 20:03:29] INFO root fetch - processPackages [kobject]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [kobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobject-0.3.9.tar.gz tmp/kobject-0.4.0.tar.gz --markdown 20230521/k/kobject/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 20:03:29] INFO root fetch - processPackages [hledger-lots]: Downloading https://files.pythonhosted.org/packages/9e/51/a24a935d39159cd686274a5a937702ce519b28dacc14df2d608f45091927/hledger_lots-0.4.2.tar.gz
+[2023-05-21 20:03:29] INFO root fetch - processPackages [seaport]: Downloading https://files.pythonhosted.org/packages/f8/40/397e6208dd5cf6abb04b29b56d2f08391ae2829ff4369280cb6d74a2b3c7/seaport-0.9.0.tar.gz
+[2023-05-21 20:03:29] INFO root fetch - processPackages [hledger-lots]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [hledger-lots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hledger_lots-0.4.1.tar.gz tmp/hledger_lots-0.4.2.tar.gz --markdown 20230521/h/hledger-lots/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-21 20:03:29] INFO root fetch - processPackages [seaport]: executing diffoscope
+[2023-05-21 20:03:29] INFO root fetch - processPackages [seaport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaport-0.8.0.tar.gz tmp/seaport-0.9.0.tar.gz --markdown 20230521/s/seaport/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 20:03:30] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-21 20:03:30] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [kobject]: success
+[2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [cloudflare]: success
+[2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [seaport]: success
+[2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [hledger-lots]: success
+[2023-05-21 20:03:31] INFO root fetch - main [MainThread]: Store serial: [18188434]
