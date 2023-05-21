@@ -2307,3 +2307,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:04:35] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.52b0.tar.gz tmp/agixt-1.1.54b0.tar.gz --markdown 20230521/a/agixt/1.1.52b0-1.1.54b0/diff.md --exclude *.pyd
 [2023-05-21 06:04:36] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-21 06:04:36] INFO root fetch - main [MainThread]: Store serial: [18185538]
+[2023-05-21 06:09:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185538]
+[2023-05-21 06:09:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 06:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchility
+[2023-05-21 06:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: icatcher
+[2023-05-21 06:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swachhdata
+[2023-05-21 06:09:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: brainpylib
+[2023-05-21 06:09:45] INFO root fetch - processPackages [icatcher]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 06:09:45] INFO root fetch - processPackages [swachhdata]: New version: [1.5.0a1] Old Version: [1.4.1]
+[2023-05-21 06:09:45] INFO root fetch - processPackages [torchility]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-21 06:09:45] INFO root fetch - processPackages [brainpylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 06:09:45] INFO root fetch - processPackages [torchility]: executing diffoscope
+[2023-05-21 06:09:45] INFO root fetch - processPackages [torchility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchility-0.6.8.tar.gz tmp/torchility-0.6.9.tar.gz --markdown 20230521/t/torchility/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-21 06:09:45] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/70/4c/7baa821db58bdc553f66a8044ede6a84cf95a0ad3dfb1478924bc5a9ce46/swachhdata-1.4.1-py3-none-any.whl
+[2023-05-21 06:09:45] INFO root fetch - processPackages [brainpylib]: Downloading https://files.pythonhosted.org/packages/28/ce/0331adb4da28abafe3a051692717c682a123fcdcec29a652d1fea2ffac33/brainpylib-0.1.8-cp39-cp39-win_amd64.whl
+[2023-05-21 06:09:45] INFO root fetch - processPackages [icatcher]: Downloading https://files.pythonhosted.org/packages/af/69/803f12bf94f9ae3f404314a3f014b0c46c81020d6ae482bf81e56f67cdae/icatcher-0.0.8.tar.gz
+[2023-05-21 06:09:45] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/bf/9f/3679a4485f1b5985f7ef3e6a6ae8d6ade792636a8a1c17c477006a85213c/swachhdata-1.5.0a1-py3-none-any.whl
+[2023-05-21 06:09:45] INFO root fetch - processPackages [icatcher]: Downloading https://files.pythonhosted.org/packages/d3/a4/da31e7a6d4c85a5bd57d72560947ecb2adf62cfcf8b74ba698951557b37b/icatcher-0.0.9.tar.gz
+[2023-05-21 06:09:45] INFO root fetch - processPackages [brainpylib]: Downloading https://files.pythonhosted.org/packages/ea/e1/1bea42e5c487b7853e58c9b566fa6984af41999e08ecb929fb1b9620a571/brainpylib-0.1.9-cp39-cp39-win_amd64.whl
+[2023-05-21 06:09:46] INFO root fetch - processPackages [icatcher]: executing diffoscope
+[2023-05-21 06:09:46] INFO root fetch - processPackages [icatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icatcher-0.0.8.tar.gz tmp/icatcher-0.0.9.tar.gz --markdown 20230521/i/icatcher/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 06:09:46] INFO root fetch - processPackages [brainpylib]: executing diffoscope
+[2023-05-21 06:09:46] INFO root fetch - processPackages [brainpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainpylib-0.1.8-cp39-cp39-win_amd64.whl.zip tmp/brainpylib-0.1.9-cp39-cp39-win_amd64.whl.zip --markdown 20230521/b/brainpylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 06:09:46] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-21 06:09:46] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-1.4.1-py3-none-any.whl.zip tmp/swachhdata-1.5.0a1-py3-none-any.whl.zip --markdown 20230521/s/swachhdata/1.4.1-1.5.0a1/diff.md --exclude *.pyd
+[2023-05-21 06:09:46] INFO root fetch - main [MainThread]: End processing [torchility]: success
+[2023-05-21 06:09:47] INFO root fetch - main [MainThread]: End processing [brainpylib]: success
+[2023-05-21 06:09:47] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-21 06:09:47] INFO root fetch - main [MainThread]: End processing [icatcher]: success
+[2023-05-21 06:09:47] INFO root fetch - main [MainThread]: Store serial: [18185552]
