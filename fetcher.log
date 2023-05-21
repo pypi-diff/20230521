@@ -8487,3 +8487,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:59:12] INFO root fetch - main [MainThread]: End processing [vocabtrimmer]: success
 [2023-05-21 20:59:53] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
 [2023-05-21 20:59:53] INFO root fetch - main [MainThread]: Store serial: [18188657]
+[2023-05-21 21:04:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188657]
+[2023-05-21 21:05:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fieldedge-utilities
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alpha-trader-python
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dlt
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: catcli
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: x-dgcnn
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rick
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vws-python
+[2023-05-21 21:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Shimarin
+[2023-05-21 21:05:02] INFO root fetch - processPackages [Shimarin]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [alpha-trader-python]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [x-dgcnn]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [Shimarin]: executing diffoscope
+[2023-05-21 21:05:02] INFO root fetch - processPackages [Shimarin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shimarin-0.0.6.tar.gz tmp/Shimarin-0.0.7.tar.gz --markdown 20230521/S/Shimarin/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 21:05:02] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [dlt]: New version: [0.2.8a0] Old Version: [0.2.8]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [x-dgcnn]: executing diffoscope
+[2023-05-21 21:05:02] INFO root fetch - processPackages [x-dgcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-dgcnn-0.0.4.tar.gz tmp/x-dgcnn-0.1.0.tar.gz --markdown 20230521/x/x-dgcnn/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 21:05:02] INFO root fetch - processPackages [rick]: New version: [0.6.0] Old Version: [0.1.2]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [vws-python]: New version: [2023.5.21] Old Version: [2023.3.5]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [catcli]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-21 21:05:02] INFO root fetch - processPackages [alpha-trader-python]: Downloading https://files.pythonhosted.org/packages/b2/7a/dca72be219aeed36370747e612bac32d4cfc7414228f3b5c0f22d19db3c3/alpha_trader_python-0.3.1.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/18/e9/196e167185922e4c2f8840e35e6948584014b1eef466996fe49c2b3935ce/dlt-0.2.8.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [fieldedge-utilities]: Downloading https://files.pythonhosted.org/packages/94/51/27351e27b84fb88e4cafeee9829c12c91fa3a932466885fd524f7745c83c/fieldedge-utilities-0.9.4.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [rick]: Downloading https://files.pythonhosted.org/packages/fb/df/64373e3800b092ae8e2378c219c6150fdd31966baf71524f31854281dcaf/rick-0.1.2.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [catcli]: Downloading https://files.pythonhosted.org/packages/87/e2/3890e6ba0dfb3cb5bf7848c79150df4b961b36bcf7beb94bad3b8a39d6b0/catcli-0.9.3.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [alpha-trader-python]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [alpha-trader-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha_trader_python-0.3.0.tar.gz tmp/alpha_trader_python-0.3.1.tar.gz --markdown 20230521/a/alpha-trader-python/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 21:05:03] INFO root fetch - processPackages [vws-python]: Downloading https://files.pythonhosted.org/packages/be/9e/ecc3ac17792d4bc1a0c9456ceee0dc6c2d022c1d818704b9ab97265f4a93/vws-python-2023.3.5.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [rick]: Downloading https://files.pythonhosted.org/packages/01/98/9291b2989c48c4809db8258988a329995e4522ddec1b572f0a388f7d1270/rick-0.6.0.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [dlt]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlt-0.2.8.tar.gz tmp/dlt-0.2.8a0.tar.gz --markdown 20230521/d/dlt/0.2.8-0.2.8a0/diff.md --exclude *.pyd
+[2023-05-21 21:05:03] INFO root fetch - processPackages [catcli]: Downloading https://files.pythonhosted.org/packages/84/f6/9b52f5244f1870b4c56be6ddeb7982fabc583c2f448be95b95d487cf2010/catcli-0.9.4.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [fieldedge-utilities]: Downloading https://files.pythonhosted.org/packages/a4/cc/5e3cca6cf81fd198ab60061c1fc2991aa7d6101683864c4fac3709547e03/fieldedge-utilities-0.9.5.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [rick]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [catcli]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [catcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catcli-0.9.3.tar.gz tmp/catcli-0.9.4.tar.gz --markdown 20230521/c/catcli/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-21 21:05:03] INFO root fetch - processPackages [rick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rick-0.1.2.tar.gz tmp/rick-0.6.0.tar.gz --markdown 20230521/r/rick/0.1.2-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 21:05:03] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230521/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-21 21:05:03] INFO root fetch - processPackages [vws-python]: Downloading https://files.pythonhosted.org/packages/80/ca/7e5c334ac26853761c11a28322178165dc41e1e233e845782836bbabe3fe/vws-python-2023.5.21.tar.gz
+[2023-05-21 21:05:03] INFO root fetch - processPackages [vws-python]: executing diffoscope
+[2023-05-21 21:05:03] INFO root fetch - processPackages [vws-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vws-python-2023.3.5.tar.gz tmp/vws-python-2023.5.21.tar.gz --markdown 20230521/v/vws-python/2023.3.5-2023.5.21/diff.md --exclude *.pyd
+[2023-05-21 21:05:04] INFO root fetch - main [MainThread]: End processing [x-dgcnn]: success
+[2023-05-21 21:05:04] INFO root fetch - main [MainThread]: End processing [Shimarin]: success
+[2023-05-21 21:05:04] INFO root fetch - main [MainThread]: End processing [alpha-trader-python]: success
+[2023-05-21 21:05:04] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [catcli]: success
+[2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [rick]: success
+[2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [vws-python]: success
+[2023-05-21 21:05:05] INFO root fetch - main [MainThread]: End processing [dlt]: success
+[2023-05-21 21:05:05] INFO root fetch - main [MainThread]: Store serial: [18188682]
