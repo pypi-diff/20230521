@@ -8284,3 +8284,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:25:54] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
 [2023-05-21 20:26:34] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
 [2023-05-21 20:26:34] INFO root fetch - main [MainThread]: Store serial: [18188541]
+[2023-05-21 20:31:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188541]
+[2023-05-21 20:31:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: callingcardstools
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqint
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-kacl
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytmac
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbrlabs-pulumi-grafana
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rick-db
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-vault
+[2023-05-21 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aioratelimits
+[2023-05-21 20:31:44] INFO root fetch - processPackages [aioratelimits]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [pytmac]: New version: [3.2.0] Old Version: [3.1.2]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [vector-vault]: New version: [0.2.1] Old Version: [0.2]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [callingcardstools]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: New version: [0.0.9a1676744459] Old Version: [0.0.9]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [python-kacl]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [rick-db]: New version: [1.1.2] Old Version: [1.0.9]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [pyqint]: New version: [0.9.7.1] Old Version: [0.9.7.0]
+[2023-05-21 20:31:44] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-21 20:31:44] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.1.2.tar.gz tmp/pytmac-3.2.0.tar.gz --markdown 20230521/p/pytmac/3.1.2-3.2.0/diff.md --exclude *.pyd
+[2023-05-21 20:31:44] INFO root fetch - processPackages [aioratelimits]: Downloading https://files.pythonhosted.org/packages/30/30/70ee784518ac63ab25a77d87f3531f5c8bc2ede3c48e73192023dd39d115/aioratelimits-0.2.3.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/3d/57/4c1e7da531836ec00c669a4ace4d0cced3a797eecb1f4c84c763335cc3df/pyqint-0.9.7.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 20:31:44] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/b1/a1/b0f96c1b1c3ef4e7f78677320966c8b96c53887d83c19f41f21f8ee22599/vector_vault-0.2.1.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: Downloading https://files.pythonhosted.org/packages/99/7c/32adc9db96c9ce0f9da0fb6b7ec4804e3f7fa15587226413fb6ad986b5dd/lbrlabs_pulumi_grafana-0.0.9.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [python-kacl]: Downloading https://files.pythonhosted.org/packages/e4/b6/58dba6e17fa4419bc736109b0fa06e6166d686860edb2352c18fd12a9b79/python-kacl-0.4.1.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [rick-db]: Downloading https://files.pythonhosted.org/packages/21/e2/8a43e4f0bbfa4069c3343acba5847dc1894e1456a4d6ad06114beb035316/rick-db-1.0.9.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [aioratelimits]: executing diffoscope
+[2023-05-21 20:31:44] INFO root fetch - processPackages [aioratelimits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioratelimits-0.2.2.tar.gz tmp/aioratelimits-0.2.3.tar.gz --markdown 20230521/a/aioratelimits/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 20:31:44] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/58/21/cad614f5253d81d1c7350e4ac206b7e78aef71ede7ad8986e44cc05ef00a/callingcardstools-1.0.0.tar.gz
+[2023-05-21 20:31:44] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 20:31:44] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.2.tar.gz tmp/vector_vault-0.2.1.tar.gz --markdown 20230521/v/vector-vault/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 20:31:44] INFO root fetch - processPackages [callingcardstools]: executing diffoscope
+[2023-05-21 20:31:44] INFO root fetch - processPackages [callingcardstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/callingcardstools-0.2.0.tar.gz tmp/callingcardstools-1.0.0.tar.gz --markdown 20230521/c/callingcardstools/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 20:31:44] INFO root fetch - processPackages [python-kacl]: executing diffoscope
+[2023-05-21 20:31:44] INFO root fetch - processPackages [python-kacl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-kacl-0.4.0.tar.gz tmp/python-kacl-0.4.1.tar.gz --markdown 20230521/p/python-kacl/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-21 20:31:44] INFO root fetch - processPackages [rick-db]: Downloading https://files.pythonhosted.org/packages/bc/ad/f9b6e1d6870d14e36eb47debe29e7e7bf76b25b144183731f1fd1647e34c/rick-db-1.1.2.tar.gz
+[2023-05-21 20:31:45] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: Downloading https://files.pythonhosted.org/packages/25/cf/d768b574b37d63047b5d5a60dd626ad05aef20de627d8401ab3473c26141/lbrlabs_pulumi_grafana-0.0.9a1676744459.tar.gz
+[2023-05-21 20:31:45] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/e1/6f/f0baaa4fc34d51a75654547ad912cdf525f93b34ef1a95f1294cd34dadbc/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 20:31:45] INFO root fetch - processPackages [rick-db]: executing diffoscope
+[2023-05-21 20:31:45] INFO root fetch - processPackages [rick-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rick-db-1.0.9.tar.gz tmp/rick-db-1.1.2.tar.gz --markdown 20230521/r/rick-db/1.0.9-1.1.2/diff.md --exclude *.pyd
+[2023-05-21 20:31:45] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: executing diffoscope
+[2023-05-21 20:31:45] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_grafana-0.0.9.tar.gz tmp/lbrlabs_pulumi_grafana-0.0.9a1676744459.tar.gz --markdown 20230521/l/lbrlabs-pulumi-grafana/0.0.9-0.0.9a1676744459/diff.md --exclude *.pyd
+[2023-05-21 20:31:45] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2023-05-21 20:31:45] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.7.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/p/pyqint/0.9.7.0-0.9.7.1/diff.md --exclude *.pyd
+[2023-05-21 20:31:46] INFO root fetch - main [MainThread]: End processing [aioratelimits]: success
+[2023-05-21 20:31:46] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-21 20:31:46] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 20:31:46] INFO root fetch - main [MainThread]: End processing [callingcardstools]: success
+[2023-05-21 20:31:47] INFO root fetch - main [MainThread]: End processing [python-kacl]: success
+[2023-05-21 20:31:47] INFO root fetch - main [MainThread]: End processing [rick-db]: success
+[2023-05-21 20:31:48] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
+[2023-05-21 20:32:08] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2023-05-21 20:32:08] INFO root fetch - main [MainThread]: Store serial: [18188587]
