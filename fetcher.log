@@ -7639,3 +7639,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:09:20] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-21 19:09:48] INFO root fetch - main [MainThread]: End processing [py-lav]: success
 [2023-05-21 19:09:48] INFO root fetch - main [MainThread]: Store serial: [18188173]
+[2023-05-21 19:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188173]
+[2023-05-21 19:14:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 19:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2023-05-21 19:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secrets-env
+[2023-05-21 19:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arkprts
+[2023-05-21 19:14:58] INFO root fetch - processPackages [arkprts]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-21 19:14:58] INFO root fetch - processPackages [pypipr]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-21 19:14:58] INFO root fetch - processPackages [secrets-env]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 19:14:58] INFO root fetch - processPackages [secrets-env]: executing diffoscope
+[2023-05-21 19:14:58] INFO root fetch - processPackages [secrets-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secrets_env-0.8.0-py3-none-any.whl.zip tmp/secrets_env-0.9.0.tar.gz --markdown 20230521/s/secrets-env/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 19:14:58] INFO root fetch - processPackages [arkprts]: Downloading https://files.pythonhosted.org/packages/cc/22/e49ea0064f0a90ac0021b4ab8f79c6df76db0630db43e3d9784ceeb6b1b1/arkprts-0.1.3.tar.gz
+[2023-05-21 19:14:58] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-21 19:14:58] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.94.tar.gz tmp/pypipr-0.1.95.tar.gz --markdown 20230521/p/pypipr/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-21 19:14:58] INFO root fetch - processPackages [arkprts]: executing diffoscope
+[2023-05-21 19:14:58] INFO root fetch - processPackages [arkprts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkprts-0.1.2.tar.gz tmp/arkprts-0.1.3.tar.gz --markdown 20230521/a/arkprts/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-21 19:14:59] INFO root fetch - main [MainThread]: End processing [secrets-env]: success
+[2023-05-21 19:14:59] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-21 19:14:59] INFO root fetch - main [MainThread]: End processing [arkprts]: success
+[2023-05-21 19:14:59] INFO root fetch - main [MainThread]: Store serial: [18188182]
