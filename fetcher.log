@@ -5996,3 +5996,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:27:50] INFO root fetch - main [MainThread]: End processing [wagtail-trash]: success
 [2023-05-21 15:27:51] INFO root fetch - main [MainThread]: End processing [kivy-ios]: success
 [2023-05-21 15:27:51] INFO root fetch - main [MainThread]: Store serial: [18187350]
+[2023-05-21 15:32:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187350]
+[2023-05-21 15:33:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cookiecutter-pypackage-instance
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leuci-xyz
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seaplayer
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-alconna
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: poetry-plugin-sort
+[2023-05-21 15:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sigmaSMSApi
+[2023-05-21 15:33:00] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [leuci-xyz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [poetry-plugin-sort]: New version: [0.2.0b2] Old Version: [0.1.1]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [sigmaSMSApi]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-21 15:33:00] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [cookiecutter-pypackage-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter-pypackage-instance-0.2.1.tar.gz tmp/cookiecutter_pypackage_instance-1.0.0.tar.gz --markdown 20230521/c/cookiecutter-pypackage-instance/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 15:33:00] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230521/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-21 15:33:00] INFO root fetch - processPackages [poetry-plugin-sort]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [poetry-plugin-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_sort-0.1.1.tar.gz tmp/poetry_plugin_sort-0.2.0b2.tar.gz --markdown 20230521/p/poetry-plugin-sort/0.1.1-0.2.0b2/diff.md --exclude *.pyd
+[2023-05-21 15:33:00] INFO root fetch - processPackages [sigmaSMSApi]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [sigmaSMSApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaSMSApi-0.4.1-py3-none-any.whl.zip tmp/sigmaSMSApi-0.5.0-py3-none-any.whl.zip --markdown 20230521/s/sigmaSMSApi/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 15:33:00] INFO root fetch - processPackages [leuci-xyz]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [leuci-xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-xyz-0.0.8.tar.gz tmp/leuci-xyz-0.0.9.tar.gz --markdown 20230521/l/leuci-xyz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:33:00] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/29/02/dc901d1e4f7e5db1ab399e2a495b93e208ddbd71be9a4ac81273fa7f4f70/nonebot-plugin-alconna-0.5.1.tar.gz
+[2023-05-21 15:33:00] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2023-05-21 15:33:00] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.5.0.tar.gz tmp/nonebot-plugin-alconna-0.5.1.tar.gz --markdown 20230521/n/nonebot-plugin-alconna/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-21 15:33:01] INFO root fetch - main [MainThread]: End processing [cookiecutter-pypackage-instance]: success
+[2023-05-21 15:33:01] INFO root fetch - main [MainThread]: End processing [sigmaSMSApi]: success
+[2023-05-21 15:33:01] INFO root fetch - main [MainThread]: End processing [poetry-plugin-sort]: success
+[2023-05-21 15:33:01] INFO root fetch - main [MainThread]: End processing [leuci-xyz]: success
+[2023-05-21 15:33:02] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-21 15:33:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2023-05-21 15:33:02] INFO root fetch - main [MainThread]: Store serial: [18187370]
