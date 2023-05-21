@@ -2622,3 +2622,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:02:22] INFO root fetch - main [MainThread]: End processing [squander]: success
 [2023-05-21 07:02:49] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-21 07:02:49] INFO root fetch - main [MainThread]: Store serial: [18185686]
+[2023-05-21 07:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185686]
+[2023-05-21 07:08:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dask-cuda
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dorado
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-model-server
+[2023-05-21 07:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tflite-support-nightly
+[2023-05-21 07:08:01] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 07:08:01] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230521] Old Version: [1.1.8b20230520]
+[2023-05-21 07:08:01] INFO root fetch - processPackages [tflite-support-nightly]: New version: [0.4.4.dev20230519] Old Version: [0.4.4.dev20230518]
+[2023-05-21 07:08:01] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230521] Old Version: [0.1.1.dev20230520]
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dask-cuda]: New version: [23.6.0a230521] Old Version: [23.6.0a230520]
+[2023-05-21 07:08:02] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230520] Old Version: [2.14.0.dev20230519]
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 07:08:02] INFO root fetch - processPackages [tflite-support-nightly]: Downloading https://files.pythonhosted.org/packages/5c/32/bcccf0f7747e40048c9cecc539c1a97624814e34dd1bae799504177b9baa/tflite_support_nightly-0.4.4.dev20230518-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-21 07:08:02] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/c8/2a/a8c90ed7989441f0bc646d6b77be6b0f3b6625c9ed44ac81315cc2364a2b/multi_model_server-1.1.8b20230521-py2.py3-none-any.whl
+[2023-05-21 07:08:02] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/63/7c/7fa8dc110b8229e925c32704ee593d4781aeeb43f30a70ee8606c63aa780/rapid_pe-0.1.1.dev20230520.tar.gz
+[2023-05-21 07:08:02] WARNING root fetch - processPackages [tflite-support-nightly]: Skipping package: exceeds size limit 60850717>=10485760
+[2023-05-21 07:08:02] INFO root fetch - main [MainThread]: End processing [tflite-support-nightly] error
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/c3/6c/56f6a9adb1355891588c073bd7899a77d4222de8d2d5091c9a7ccade3c9f/dask-cuda-23.6.0a230521.tar.gz
+[2023-05-21 07:08:02] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/6b/63/6ef551f054e49e6a0c005deeefb538d338746e86ed599fe1fc792eafce08/tflite_runtime_nightly-2.14.0.dev20230520-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-21 07:08:02] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/3f/20/7da5756b02e5c8f415bf9fc3a4a4f2f1a22a44f3ca3727c75da700942b97/rapid_pe-0.1.1.dev20230521.tar.gz
+[2023-05-21 07:08:02] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-21 07:08:02] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230520.tar.gz tmp/rapid_pe-0.1.1.dev20230521.tar.gz --markdown 20230521/r/rapid-pe/0.1.1.dev20230520-0.1.1.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-21 07:08:02] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.6.0a230520.tar.gz tmp/dask-cuda-23.6.0a230521.tar.gz --markdown 20230521/d/dask-cuda/23.6.0a230520-23.6.0a230521/diff.md --exclude *.pyd
+[2023-05-21 07:08:02] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-21 07:08:02] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230519-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230520-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230521/t/tflite-runtime-nightly/2.14.0.dev20230519-2.14.0.dev20230520/diff.md --exclude *.pyd
+[2023-05-21 07:08:03] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-21 07:08:03] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230520-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230521-py2.py3-none-any.whl.zip --markdown 20230521/m/multi-model-server/1.1.8b20230520-1.1.8b20230521/diff.md --exclude *.pyd
+[2023-05-21 07:08:03] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 07:08:03] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-21 07:08:05] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-21 07:08:05] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-21 07:10:49] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-21 07:10:49] INFO root fetch - main [MainThread]: Store serial: [18185711]
