@@ -7965,3 +7965,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:52:52] INFO root fetch - main [MainThread]: End processing [twyn]: success
 [2023-05-21 19:52:53] INFO root fetch - main [MainThread]: End processing [shell-gpt]: success
 [2023-05-21 19:52:53] INFO root fetch - main [MainThread]: Store serial: [18188389]
+[2023-05-21 19:57:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188389]
+[2023-05-21 19:58:02] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cengal
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poltergeist
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ext-list
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osism
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sidetrek
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vws-python-mock
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: grafana-api-sdk
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ext-list
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sportsml
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sportsml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.8.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230521/s/sidetrek/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 19:58:02] INFO root fetch - processPackages [cengal]: New version: [3.1.18.5] Old Version: [3.1.18.4]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [osism]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ext-list]: New version: [1.1.1a0] Old Version: [1.1.1]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ext-list]: New version: [1.1.1a0] Old Version: [1.1.1]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [vws-python-mock]: New version: [2023.5.21] Old Version: [2023.4.8]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [poltergeist]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [grafana-api-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sportsml]: executing diffoscope
+[2023-05-21 19:58:02] INFO root fetch - processPackages [sportsml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportsml-0.0.8.tar.gz tmp/sportsml-0.0.9.tar.gz --markdown 20230521/s/sportsml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ext-list]: Downloading https://files.pythonhosted.org/packages/13/65/b287efa84c2e25d1c272ba8fc7f13f0266fd9982a963244b1b4099a67f68/ext-list-1.1.1.tar.gz
+[2023-05-21 19:58:02] INFO root fetch - processPackages [ext-list]: Downloading https://files.pythonhosted.org/packages/13/65/b287efa84c2e25d1c272ba8fc7f13f0266fd9982a963244b1b4099a67f68/ext-list-1.1.1.tar.gz
+[2023-05-21 19:58:02] INFO root fetch - processPackages [poltergeist]: Downloading https://files.pythonhosted.org/packages/d8/cc/c232f5803590b47d3144cec4c8e3f6dcc35ec77ff45b565cc72868856554/poltergeist-0.6.1.tar.gz
+[2023-05-21 19:58:02] INFO root fetch - processPackages [osism]: Downloading https://files.pythonhosted.org/packages/d9/e4/97288db572dab148de08d6921483c28336f8657f5955abf4742e87d99ce1/osism-0.9.7.tar.gz
+[2023-05-21 19:58:02] INFO root fetch - processPackages [vws-python-mock]: Downloading https://files.pythonhosted.org/packages/cb/cc/3e397bdd30c7858b8632787d9ac70934d86355ced8106b00f94020fdc949/vws-python-mock-2023.4.8.tar.gz
+[2023-05-21 19:58:02] INFO root fetch - processPackages [grafana-api-sdk]: Downloading https://files.pythonhosted.org/packages/39/2d/6da1f4932ae54849f12273da3b60e6f935abbb266b3bb0361a2509573741/grafana-api-sdk-0.1.0.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/dd/bd/8374079037f6319f51ffd188240f1825f8dd0c8c3dff682b73bf0070a389/cengal-3.1.18.5.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [grafana-api-sdk]: Downloading https://files.pythonhosted.org/packages/6c/9d/d1d2344ed6553ac6379d562241c8d2787c081a096bc7755a190f555a76b5/grafana-api-sdk-0.1.1.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.1.18.4.tar.gz tmp/cengal-3.1.18.5.tar.gz --markdown 20230521/c/cengal/3.1.18.4-3.1.18.5/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: Downloading https://files.pythonhosted.org/packages/33/24/31fa3f7f10773eb83834f6fc410cab111189054c5cbbbfaa238e04092b15/ext-list-1.1.1a0.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: Downloading https://files.pythonhosted.org/packages/33/24/31fa3f7f10773eb83834f6fc410cab111189054c5cbbbfaa238e04092b15/ext-list-1.1.1a0.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [vws-python-mock]: Downloading https://files.pythonhosted.org/packages/c0/e5/a635e39195456f49e2737345fef8ccae1c5576dd7449abfe97b4a94b3c4b/vws-python-mock-2023.5.21.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [grafana-api-sdk]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [grafana-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grafana-api-sdk-0.1.0.tar.gz tmp/grafana-api-sdk-0.1.1.tar.gz --markdown 20230521/g/grafana-api-sdk/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [poltergeist]: Downloading https://files.pythonhosted.org/packages/4e/4f/686794e044234ed9173e832a85e16d23dbb5d8e3639cf15d48960e1be53d/poltergeist-0.7.0.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [osism]: Downloading https://files.pythonhosted.org/packages/f7/c9/7fabbdb50265b5306f0b31470c421517d434bda5f7f3f41fe3fcd98acac0/osism-0.9.8.tar.gz
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ext-list-1.1.1.tar.gz tmp/ext-list-1.1.1a0.tar.gz --markdown 20230521/e/ext-list/1.1.1-1.1.1a0/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [ext-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ext-list-1.1.1.tar.gz tmp/ext-list-1.1.1a0.tar.gz --markdown 20230521/e/ext-list/1.1.1-1.1.1a0/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [vws-python-mock]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [vws-python-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vws-python-mock-2023.4.8.tar.gz tmp/vws-python-mock-2023.5.21.tar.gz --markdown 20230521/v/vws-python-mock/2023.4.8-2023.5.21/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [poltergeist]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [poltergeist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poltergeist-0.6.1.tar.gz tmp/poltergeist-0.7.0.tar.gz --markdown 20230521/p/poltergeist/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - processPackages [osism]: executing diffoscope
+[2023-05-21 19:58:03] INFO root fetch - processPackages [osism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osism-0.9.7.tar.gz tmp/osism-0.9.8.tar.gz --markdown 20230521/o/osism/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-21 19:58:03] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-21 19:58:04] INFO root fetch - main [MainThread]: End processing [sportsml]: success
+[2023-05-21 19:58:05] INFO root fetch - main [MainThread]: End processing [ext-list]: success
+[2023-05-21 19:58:05] INFO root fetch - main [MainThread]: End processing [poltergeist]: success
+[2023-05-21 19:58:05] INFO root fetch - main [MainThread]: End processing [ext-list]: success
+[2023-05-21 19:58:05] INFO root fetch - main [MainThread]: End processing [osism]: success
+[2023-05-21 19:58:05] INFO root fetch - main [MainThread]: End processing [vws-python-mock]: success
+[2023-05-21 19:58:06] INFO root fetch - main [MainThread]: End processing [grafana-api-sdk]: success
+[2023-05-21 19:58:19] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-21 19:58:19] INFO root fetch - main [MainThread]: Store serial: [18188415]
