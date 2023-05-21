@@ -6731,3 +6731,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:03:24] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-21 17:03:25] INFO root fetch - main [MainThread]: End processing [fmsne]: success
 [2023-05-21 17:03:25] INFO root fetch - main [MainThread]: Store serial: [18187736]
+[2023-05-21 17:08:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187736]
+[2023-05-21 17:08:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ldimbenchmark
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dvc
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpulink
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gb2seq
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cluedin
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spiderYa
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gb2seq
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spalah
+[2023-05-21 17:08:34] INFO root fetch - processPackages [cluedin]: New version: [2.1.0rc1] Old Version: [2.1.0]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gpulink]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [dvc]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spalah]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spiderYa]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.8.tar.gz tmp/gb2seq-0.2.9.tar.gz --markdown 20230521/g/gb2seq/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.8.tar.gz tmp/gb2seq-0.2.9.tar.gz --markdown 20230521/g/gb2seq/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [cluedin]: Downloading https://files.pythonhosted.org/packages/f2/e5/80957e8433300177f7a029386004e135c462d567c002788e05d8f98bca3d/cluedin-2.1.0.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gpulink]: Downloading https://files.pythonhosted.org/packages/3c/6a/18092197b3294496a19358a8fd3eff9fb4c58ce5ff210b901b0d59431a5a/gpulink-0.3.0.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/56/8b/8cc133842e84e9406c000d952c8e2aaa622d53a47176e5fe078e54b65db4/ldimbenchmark-0.2.3.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/1c/da/ca187c08e8429dc1e6d41c5b2182e720910169b36413db05afe5c541631f/spiderYa-0.1.1.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spalah]: Downloading https://files.pythonhosted.org/packages/57/e2/d8bb44dbb1bdaa057e33f32b58d8c3fd91154cf614027d55b446f720e8ea/spalah-1.0.1.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.2.tar.gz tmp/ldimbenchmark-0.2.3.tar.gz --markdown 20230521/l/ldimbenchmark/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spalah]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spalah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spalah-1.0.0.tar.gz tmp/spalah-1.0.1.tar.gz --markdown 20230521/s/spalah/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.1.0.tar.gz tmp/spiderYa-0.1.1.tar.gz --markdown 20230521/s/spiderYa/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [cluedin]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [cluedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluedin-2.1.0.tar.gz tmp/cluedin-2.1.0rc1.tar.gz --markdown 20230521/c/cluedin/2.1.0-2.1.0rc1/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gpulink]: Downloading https://files.pythonhosted.org/packages/2f/06/f4861d835e09333d93d23c45c810e4796ee4e0478917f7adf1075f5809cc/gpulink-0.4.0.tar.gz
+[2023-05-21 17:08:34] INFO root fetch - processPackages [dvc]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [dvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-2.9.4.tar.gz tmp/dvc-2.9.5.tar.gz --markdown 20230521/d/dvc/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gpulink]: executing diffoscope
+[2023-05-21 17:08:34] INFO root fetch - processPackages [gpulink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpulink-0.3.0.tar.gz tmp/gpulink-0.4.0.tar.gz --markdown 20230521/g/gpulink/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 17:08:35] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 17:08:35] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 17:08:36] INFO root fetch - main [MainThread]: End processing [spalah]: success
+[2023-05-21 17:08:36] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-21 17:08:36] INFO root fetch - main [MainThread]: End processing [cluedin]: success
+[2023-05-21 17:08:36] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-05-21 17:08:37] INFO root fetch - main [MainThread]: End processing [gpulink]: success
+[2023-05-21 17:08:40] INFO root fetch - main [MainThread]: End processing [dvc]: success
+[2023-05-21 17:08:40] INFO root fetch - main [MainThread]: Store serial: [18187760]
