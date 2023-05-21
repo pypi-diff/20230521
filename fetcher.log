@@ -7473,3 +7473,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:43:02] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
 [2023-05-21 18:43:02] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-21 18:43:02] INFO root fetch - main [MainThread]: Store serial: [18188086]
+[2023-05-21 18:48:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188086]
+[2023-05-21 18:48:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfixest
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agixt
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiderYa
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2023-05-21 18:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neopolitan
+[2023-05-21 18:48:10] INFO root fetch - processPackages [pyfixest]: New version: [0.6] Old Version: [0.5.2]
+[2023-05-21 18:48:10] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-21 18:48:10] INFO root fetch - processPackages [agixt]: New version: [1.1.58b0] Old Version: [1.1.57b0]
+[2023-05-21 18:48:10] INFO root fetch - processPackages [spiderYa]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-21 18:48:10] INFO root fetch - processPackages [pypipr]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-21 18:48:10] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.94.tar.gz tmp/pypipr-0.1.95.tar.gz --markdown 20230521/p/pypipr/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/0b/b1/e3feca9537c9174186b777a1de224c9f1cb06e1833e76d2c55bbee278fcd/pyfixest-0.5.2.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/d4/d5/041096c69c827ace299a8e304889965fdac04b8eca99a4c63c4b2fdf3f30/knowledgebase-gsheet-gpt-1.2.2.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230521/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 18:48:11] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/9d/70/53cb732f648808f1fd30b7436c6e81b181aba31e53c9c9c9cf8908771236/agixt-1.1.57b0.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/4f/f7/7b6f29efd0e49abd351fb336c4734fd0744e1fae20bb8bfca6aa592e21e0/spiderYa-0.1.6.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/04/6d/f4c8c138f7429e93b197a61438af744397bb3540d5a45b995f26ecf4d082/knowledgebase-gsheet-gpt-1.2.3.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/cc/4b/96e1a66476d47de91d5fe2953ffdb619dcc9ad82154e8526d0df39b47fe0/pyfixest-0.6.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.1.5.tar.gz tmp/spiderYa-0.1.6.tar.gz --markdown 20230521/s/spiderYa/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-21 18:48:11] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/c5/78/96a53448883617ed32c60b039f770b5d5b1dfa14abe64372d3736dc2c44f/agixt-1.1.58b0.tar.gz
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pyfixest]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [pyfixest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfixest-0.5.2.tar.gz tmp/pyfixest-0.6.tar.gz --markdown 20230521/p/pyfixest/0.5.2-0.6/diff.md --exclude *.pyd
+[2023-05-21 18:48:11] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.2.2.tar.gz tmp/knowledgebase-gsheet-gpt-1.2.3.tar.gz --markdown 20230521/k/knowledgebase-gsheet-gpt/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-21 18:48:11] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 18:48:11] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.57b0.tar.gz tmp/agixt-1.1.58b0.tar.gz --markdown 20230521/a/agixt/1.1.57b0-1.1.58b0/diff.md --exclude *.pyd
+[2023-05-21 18:48:12] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-21 18:48:12] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-21 18:48:12] INFO root fetch - main [MainThread]: End processing [pyfixest]: success
+[2023-05-21 18:48:12] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-05-21 18:48:13] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-21 18:48:13] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 18:48:13] INFO root fetch - main [MainThread]: Store serial: [18188104]
