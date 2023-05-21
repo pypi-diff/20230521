@@ -7733,3 +7733,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 19:25:38] INFO root fetch - main [MainThread]: End processing [ElectronCounting]: success
 [2023-05-21 19:26:22] INFO root fetch - main [MainThread]: End processing [py-lav]: success
 [2023-05-21 19:26:22] INFO root fetch - main [MainThread]: Store serial: [18188217]
+[2023-05-21 19:31:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188217]
+[2023-05-21 19:31:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webscrapbook
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memory-graph
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: videosrc
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aio.api.github
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moto
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sun
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-data-browser
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cliffy
+[2023-05-21 19:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wodoo
+[2023-05-21 19:31:31] INFO root fetch - processPackages [memory-graph]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [videosrc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [aio.api.github]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [sun]: New version: [1.5.0] Old Version: [1.4.9]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [cliffy]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [webscrapbook]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [django-data-browser]: New version: [4.2.1] Old Version: [4.1.1]
+[2023-05-21 19:31:31] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-21 19:31:32] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-21 19:31:32] INFO root fetch - processPackages [videosrc]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [videosrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videosrc-0.1.8-py3-none-any.whl.zip tmp/videosrc-0.1.9-py3-none-any.whl.zip --markdown 20230521/v/videosrc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230521/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230521/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230521/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [sun]: Downloading https://files.pythonhosted.org/packages/64/b4/0306c082587279deb614d23af967fac862c3fbd168639df81612c5e271ee/sun-1.4.9.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [cliffy]: Downloading https://files.pythonhosted.org/packages/4a/12/c454f3f3048ceb068fb54b1e52497731d2215040dd600a35c935667dfdfb/cliffy-0.2.7.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [aio.api.github]: Downloading https://files.pythonhosted.org/packages/da/5a/6002b57e2c3b3f10af0cf31b4a77668a27a7d1af02ff5ecbf35c70ca391d/aio.api.github-0.2.0.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [django-data-browser]: Downloading https://files.pythonhosted.org/packages/d9/55/feac43e49f09c569c45881b331d5eb0207c26d27ab254cb0733dc25353c8/django-data-browser-4.1.1.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/02/8e/21a12963a994f0ee2915312f5ace5bc7bd1606e7337014f25c79792175cd/memory_graph-0.1.7.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [webscrapbook]: Downloading https://files.pythonhosted.org/packages/07/60/e9bb349d39a87e850941abc4819da696b3af22e111db87dd8af605c93ce5/webscrapbook-2.0.0b9.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [memory-graph]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [memory-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_graph-0.1.6.tar.gz tmp/memory_graph-0.1.7.tar.gz --markdown 20230521/m/memory-graph/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [cliffy]: Downloading https://files.pythonhosted.org/packages/5b/1a/c519ac895630ddadc4078b5649948cf0c9f23888903daf85dd3cc10c7390/cliffy-0.2.8.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [aio.api.github]: Downloading https://files.pythonhosted.org/packages/9a/f0/e05a56cf38b327bea1825f188521e313a52b103f32e60cd3f57dbce9913b/aio.api.github-0.2.2.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-2.0.0b8.tar.gz tmp/webscrapbook-2.0.0b9.tar.gz --markdown 20230521/w/webscrapbook/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [cliffy]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [cliffy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliffy-0.2.7.tar.gz tmp/cliffy-0.2.8.tar.gz --markdown 20230521/c/cliffy/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [django-data-browser]: Downloading https://files.pythonhosted.org/packages/08/ba/c6410522f67aa574b63e26f7c671a2f334cf79a92c1e029460d383b498b9/django-data-browser-4.2.1.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [sun]: Downloading https://files.pythonhosted.org/packages/fc/f2/8ed4d5876a8b9c55cf829b67d4728ca35edc71093d201524e6b9949c01d4/sun-1.5.0.tar.gz
+[2023-05-21 19:31:32] INFO root fetch - processPackages [aio.api.github]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [aio.api.github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio.api.github-0.2.0.tar.gz tmp/aio.api.github-0.2.2.tar.gz --markdown 20230521/a/aio.api.github/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [sun]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [sun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sun-1.4.9.tar.gz tmp/sun-1.5.0.tar.gz --markdown 20230521/s/sun/1.4.9-1.5.0/diff.md --exclude *.pyd
+[2023-05-21 19:31:32] INFO root fetch - processPackages [django-data-browser]: executing diffoscope
+[2023-05-21 19:31:32] INFO root fetch - processPackages [django-data-browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-data-browser-4.1.1.tar.gz tmp/django-data-browser-4.2.1.tar.gz --markdown 20230521/d/django-data-browser/4.1.1-4.2.1/diff.md --exclude *.pyd
+[2023-05-21 19:31:33] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-21 19:31:33] INFO root fetch - main [MainThread]: End processing [videosrc]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [aio.api.github]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [sun]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [cliffy]: success
+[2023-05-21 19:31:34] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
+[2023-05-21 19:31:51] INFO root fetch - main [MainThread]: End processing [django-data-browser]: success
+[2023-05-21 19:32:03] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-21 19:32:03] INFO root fetch - main [MainThread]: Store serial: [18188244]
