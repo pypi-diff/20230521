@@ -2893,3 +2893,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:13:04] INFO root fetch - main [MainThread]: End processing [fastjsonschema]: success
 [2023-05-21 08:13:04] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-21 08:13:04] INFO root fetch - main [MainThread]: Store serial: [18185874]
+[2023-05-21 08:18:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185874]
+[2023-05-21 08:18:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: verse-core
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: to-pip
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-vault
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vsdpir
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretext
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spider-st
+[2023-05-21 08:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dorado
+[2023-05-21 08:18:13] INFO root fetch - processPackages [verse-core]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vsdpir]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [spider-st]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [to-pip]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vector-vault]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [pretext]: New version: [1.5.4.dev20230521] Old Version: [1.5.4.dev20230519]
+[2023-05-21 08:18:13] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vsdpir]: Downloading https://files.pythonhosted.org/packages/16/b2/7b430a53144a4f9be4a7294f4642c281db6f77640b326a4a6aff10177702/vsdpir-3.0.1-py3-none-any.whl
+[2023-05-21 08:18:13] INFO root fetch - processPackages [spider-st]: Downloading https://files.pythonhosted.org/packages/73/b1/db8b3ca1e6296772eb60b91d6fd7bd12d5946ccea798e092b8e59a2d5e5e/spider-st-0.0.4.tar.gz
+[2023-05-21 08:18:13] INFO root fetch - processPackages [to-pip]: Downloading https://files.pythonhosted.org/packages/99/b0/5c25d4746b706bf2f74c0d9fc4175136e6218d39f8d54e131cb814639511/to-pip-2.1.0.tar.gz
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/76/78/093e0925d8f63d9fe520f7161f2dca9036b1d24e82c98fa85345d3773295/vector_vault-0.1.8.tar.gz
+[2023-05-21 08:18:13] INFO root fetch - processPackages [to-pip]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [to-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-pip-2.0.7.tar.gz tmp/to-pip-2.1.0.tar.gz --markdown 20230521/t/to-pip/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-05-21 08:18:13] INFO root fetch - processPackages [verse-core]: Downloading https://files.pythonhosted.org/packages/87/58/fe0990bb53f33fbb33f83b2e9e6ffab9bf709efdc65ccdb77ea1ec83d4d4/verse-core-0.0.8.tar.gz
+[2023-05-21 08:18:13] INFO root fetch - processPackages [spider-st]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [spider-st]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spider-st-0.0.3.tar.gz tmp/spider-st-0.0.4.tar.gz --markdown 20230521/s/spider-st/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 08:18:13] INFO root fetch - processPackages [verse-core]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [verse-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verse-core-0.0.7.tar.gz tmp/verse-core-0.0.8.tar.gz --markdown 20230521/v/verse-core/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-21 08:18:13] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/cb/58/f2d48fb47acdfbc36291f3de642353cf72cf1dafea6c6a21679f59c63466/pretext-1.5.4.dev20230521.tar.gz
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.7.tar.gz tmp/vector_vault-0.1.8.tar.gz --markdown 20230521/v/vector-vault/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vsdpir]: Downloading https://files.pythonhosted.org/packages/5c/a7/7b20dd0edc0604faf5d5d39a7fc28f761dcc038a956bc68debdf13c2a383/vsdpir-3.1.0-py3-none-any.whl
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vsdpir]: executing diffoscope
+[2023-05-21 08:18:13] INFO root fetch - processPackages [vsdpir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsdpir-3.0.1-py3-none-any.whl.zip tmp/vsdpir-3.1.0-py3-none-any.whl.zip --markdown 20230521/v/vsdpir/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-05-21 08:18:14] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-21 08:18:14] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.4.dev20230519.tar.gz tmp/pretext-1.5.4.dev20230521.tar.gz --markdown 20230521/p/pretext/1.5.4.dev20230519-1.5.4.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 08:18:14] INFO root fetch - main [MainThread]: End processing [to-pip]: success
+[2023-05-21 08:18:14] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:18:15] INFO root fetch - main [MainThread]: End processing [vsdpir]: success
+[2023-05-21 08:18:15] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 08:18:15] INFO root fetch - main [MainThread]: End processing [spider-st]: success
+[2023-05-21 08:18:15] INFO root fetch - main [MainThread]: End processing [verse-core]: success
+[2023-05-21 08:18:19] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-21 08:18:19] INFO root fetch - main [MainThread]: Store serial: [18185895]
