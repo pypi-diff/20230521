@@ -3069,3 +3069,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:44:25] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-sdk]: success
 [2023-05-21 08:44:32] INFO root fetch - main [MainThread]: End processing [widget-code-input]: success
 [2023-05-21 08:44:32] INFO root fetch - main [MainThread]: Store serial: [18185963]
+[2023-05-21 08:49:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185963]
+[2023-05-21 08:49:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-code-ui
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: md-browse
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: je-auto-control
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: je-auto-control-dev
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: je-api-testka
+[2023-05-21 08:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: je-api-testka-dev
+[2023-05-21 08:49:41] INFO root fetch - processPackages [md-browse]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [gpt-code-ui]: New version: [0.42.9] Old Version: [0.42.8]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.88]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/fe/82/5d47d9dc40f5160c1e5af87805b57f0fea8befb6da98aa53104a18dc591b/je_api_testka_dev-0.0.88.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [md-browse]: Downloading https://files.pythonhosted.org/packages/81/4c/193e8234e940194588cd304bd871cf631ce03ba7d37fec4f696ae3f53128/md-browse-0.0.1.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka]: Downloading https://files.pythonhosted.org/packages/05/d3/6e752e8b6e2b67e21ffcd427ed3bac63c12348adf3a626180bee475ba1fd/je_api_testka-0.0.98.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control-0.0.97.tar.gz tmp/je_auto_control-0.0.99.tar.gz --markdown 20230521/j/je-auto-control/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230521/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 08:49:41] INFO root fetch - processPackages [gpt-code-ui]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [gpt-code-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_code_ui-0.42.8.tar.gz tmp/gpt_code_ui-0.42.9.tar.gz --markdown 20230521/g/gpt-code-ui/0.42.8-0.42.9/diff.md --exclude *.pyd
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka]: Downloading https://files.pythonhosted.org/packages/a2/12/2e290beab81cc049ca40bb4900a68a6a67cdad5d5a5c927a4b1499415d33/je_api_testka-0.0.99.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/56/33/3fdf0251bbc6a8adb02966cc117dca9766627058cc5f140be419573d9256/je_api_testka_dev-0.0.9.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [md-browse]: Downloading https://files.pythonhosted.org/packages/7b/ec/422e480a5baa3276ea68d88e8b25ce62be2877202cbba0abb4e3d7e2409b/md-browse-0.0.2.tar.gz
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka-0.0.98.tar.gz tmp/je_api_testka-0.0.99.tar.gz --markdown 20230521/j/je-api-testka/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 08:49:41] INFO root fetch - processPackages [md-browse]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [md-browse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md-browse-0.0.1.tar.gz tmp/md-browse-0.0.2.tar.gz --markdown 20230521/m/md-browse/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-05-21 08:49:41] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.88.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230521/j/je-api-testka-dev/0.0.88-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 08:49:42] INFO root fetch - main [MainThread]: End processing [je-auto-control]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [md-browse]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [gpt-code-ui]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [je-api-testka]: success
+[2023-05-21 08:49:43] INFO root fetch - main [MainThread]: Store serial: [18185981]
