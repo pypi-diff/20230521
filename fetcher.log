@@ -1433,3 +1433,11 @@
 [2023-05-21 03:10:23] INFO root fetch - main [MainThread]: End processing [scimap]: success
 [2023-05-21 03:10:23] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-21 03:10:23] INFO root fetch - main [MainThread]: Store serial: [18185130]
+[2023-05-21 03:15:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185130]
+[2023-05-21 03:15:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 03:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-hugo-deploy
+[2023-05-21 03:15:32] INFO root fetch - processPackages [cdk-hugo-deploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:15:33] INFO root fetch - processPackages [cdk-hugo-deploy]: executing diffoscope
+[2023-05-21 03:15:33] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230521/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:15:34] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
+[2023-05-21 03:15:34] INFO root fetch - main [MainThread]: Store serial: [18185134]
