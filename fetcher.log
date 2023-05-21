@@ -6155,3 +6155,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:49:34] INFO root fetch - main [MainThread]: End processing [Bonsu]: success
 [2023-05-21 15:49:36] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
 [2023-05-21 15:49:36] INFO root fetch - main [MainThread]: Store serial: [18187458]
+[2023-05-21 15:54:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187458]
+[2023-05-21 15:54:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-bus-client
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bambooai
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: melnor-bluetooth
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enhanced-google-search
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: atomlite
+[2023-05-21 15:54:45] INFO root fetch - processPackages [bambooai]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.4a9] Old Version: [0.0.4a8]
+[2023-05-21 15:54:45] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:54:45] INFO root fetch - processPackages [enhanced-google-search]: New version: [0.3] Old Version: [0.2]
+[2023-05-21 15:54:45] WARNING root fetch - processPackages [atomlite]: Skipping, unable to determine old version
+[2023-05-21 15:54:45] INFO root fetch - main [MainThread]: End processing [atomlite] error
+[2023-05-21 15:54:45] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-05-21 15:54:45] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230521/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:54:45] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/f8/6f/48191e26c000853ef41e1eebfe9583ab65164754f8416139041853cb5e2b/bambooai-0.2.5.tar.gz
+[2023-05-21 15:54:45] INFO root fetch - processPackages [enhanced-google-search]: Downloading https://files.pythonhosted.org/packages/e8/4a/6b993b2d729b475206867ed2bb27d1a500507ef27d7dde86acfcca2da3e9/enhanced_google_search-0.2.tar.gz
+[2023-05-21 15:54:45] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-21 15:54:45] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.2.4.tar.gz tmp/bambooai-0.2.5.tar.gz --markdown 20230521/b/bambooai/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2023-05-21 15:54:45] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-bus-client-0.0.4a8.tar.gz tmp/ovos-bus-client-0.0.4a9.tar.gz --markdown 20230521/o/ovos-bus-client/0.0.4a8-0.0.4a9/diff.md --exclude *.pyd
+[2023-05-21 15:54:45] INFO root fetch - processPackages [enhanced-google-search]: Downloading https://files.pythonhosted.org/packages/50/8c/551da157e5231fc78e3d4f3abc7638cd9df2d35cf2b67149567b890e29d8/enhanced_google_search-0.3.tar.gz
+[2023-05-21 15:54:45] INFO root fetch - processPackages [enhanced-google-search]: executing diffoscope
+[2023-05-21 15:54:45] INFO root fetch - processPackages [enhanced-google-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanced_google_search-0.2.tar.gz tmp/enhanced_google_search-0.3.tar.gz --markdown 20230521/e/enhanced-google-search/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-21 15:54:46] INFO root fetch - main [MainThread]: End processing [melnor-bluetooth]: success
+[2023-05-21 15:54:46] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-21 15:54:46] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
+[2023-05-21 15:54:47] INFO root fetch - main [MainThread]: End processing [enhanced-google-search]: success
+[2023-05-21 15:54:47] INFO root fetch - main [MainThread]: Store serial: [18187487]
