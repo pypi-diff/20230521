@@ -4730,3 +4730,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 13:24:20] INFO root fetch - main [MainThread]: End processing [textLSP]: success
 [2023-05-21 13:24:26] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-21 13:24:26] INFO root fetch - main [MainThread]: Store serial: [18186753]
+[2023-05-21 13:29:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186753]
+[2023-05-21 13:29:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchrl-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchrec-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchserve-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-model-archiver-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torch-workflow-archiver-nightly
+[2023-05-21 13:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: signalflow
+[2023-05-21 13:29:35] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:29:35] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:29:35] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:29:35] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230521/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-21 13:29:36] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-21 13:29:36] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-21 13:29:36] INFO root fetch - processPackages [signalflow]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230521/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:29:36] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-21 13:29:36] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230521/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-21 13:29:36] INFO root fetch - processPackages [signalflow]: Downloading https://files.pythonhosted.org/packages/37/00/059503dec27fd27120a841577b0b76503e50bad2cc4d8a00a1ff6b726c0e/signalflow-0.0.3-cp38-cp38-macosx_10_15_x86_64.whl
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/2f/a3/c8fea2a4a17b2ca7f33d5cd35472849730ecc0480921bceea1e2de34f10c/torchrec_nightly-2023.5.7-py39-none-any.whl
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230521/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/35/12/eb3353710fdeb54ba10756aff257224fac6dd4ea00d82561249249e6cde1/torchrec_nightly-2023.5.8-py39-none-any.whl
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-21 13:29:36] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip --markdown 20230521/t/torchrec-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-21 13:29:36] INFO root fetch - processPackages [signalflow]: Downloading https://files.pythonhosted.org/packages/50/7f/6fe076fa6d0fbe278197cc07b62b47519baae7beea5ca33f0239fe46987e/signalflow-0.0.4-cp39-cp39-macosx_11_0_arm64.whl
+[2023-05-21 13:29:37] INFO root fetch - processPackages [signalflow]: executing diffoscope
+[2023-05-21 13:29:37] INFO root fetch - processPackages [signalflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalflow-0.0.3-cp38-cp38-macosx_10_15_x86_64.whl.zip tmp/signalflow-0.0.4-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230521/s/signalflow/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 13:29:37] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-21 13:29:37] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-21 13:29:38] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-21 13:29:38] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-21 13:29:39] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-21 13:29:52] INFO root fetch - main [MainThread]: End processing [signalflow]: success
+[2023-05-21 13:29:52] INFO root fetch - main [MainThread]: Store serial: [18186786]
