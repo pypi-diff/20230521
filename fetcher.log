@@ -2105,3 +2105,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-21 05:17:16] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-21 05:17:17] INFO root fetch - main [MainThread]: End processing [dj-rest-auth]: success
 [2023-05-21 05:17:17] INFO root fetch - main [MainThread]: Store serial: [18185460]
+[2023-05-21 05:22:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185460]
+[2023-05-21 05:22:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-21 05:22:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaobject
+[2023-05-21 05:22:25] INFO root fetch - processPackages [heaobject]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-21 05:22:26] INFO root fetch - processPackages [heaobject]: executing diffoscope
+[2023-05-21 05:22:26] INFO root fetch - processPackages [heaobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaobject-1.0.0a8.tar.gz tmp/heaobject-1.0.0a9.tar.gz --markdown 20230521/h/heaobject/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-21 05:22:27] INFO root fetch - main [MainThread]: End processing [heaobject]: success
+[2023-05-21 05:22:27] INFO root fetch - main [MainThread]: Store serial: [18185467]
