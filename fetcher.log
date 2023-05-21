@@ -5916,3 +5916,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:17:24] INFO root fetch - main [MainThread]: End processing [jupyterlab-language-pack-zh-TW]: success
 [2023-05-21 15:17:25] INFO root fetch - main [MainThread]: End processing [jupyterlab-language-pack-tr-TR]: success
 [2023-05-21 15:17:25] INFO root fetch - main [MainThread]: Store serial: [18187290]
+[2023-05-21 15:22:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187290]
+[2023-05-21 15:22:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-language-pack-zh-TW
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigmaSMSApi
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sigmaSMSApi
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fflogsapi
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qwak-core
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: code-loader
+[2023-05-21 15:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fbgemm-gpu-nightly
+[2023-05-21 15:22:34] INFO root fetch - processPackages [qwak-core]: New version: [0.0.67] Old Version: [0.0.66]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [jupyterlab-language-pack-zh-TW]: New version: [3.6.post3] Old Version: [3.6.post2]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.20] Old Version: [2023.5.19]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fflogsapi]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [jupyterlab-language-pack-zh-TW]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [jupyterlab-language-pack-zh-TW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_language_pack_zh_tw-3.6.post2.tar.gz tmp/jupyterlab_language_pack_zh_tw-3.6.post3-py2.py3-none-any.whl.zip --markdown 20230521/j/jupyterlab-language-pack-zh-TW/3.6.post2-3.6.post3/diff.md --exclude *.pyd
+[2023-05-21 15:22:34] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 15:22:34] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.66.tar.gz tmp/qwak_core-0.0.67.tar.gz --markdown 20230521/q/qwak-core/0.0.66-0.0.67/diff.md --exclude *.pyd
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: Downloading https://files.pythonhosted.org/packages/51/56/986516b1d9a6807c1c49f2f428875048f6a28c571c39a8ad9a4991c1196f/sigmaSMSApi-0.4.1-py3-none-any.whl
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: Downloading https://files.pythonhosted.org/packages/51/56/986516b1d9a6807c1c49f2f428875048f6a28c571c39a8ad9a4991c1196f/sigmaSMSApi-0.4.1-py3-none-any.whl
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fflogsapi]: Downloading https://files.pythonhosted.org/packages/eb/96/d6855413ec71e142bdac4ea93cae8cf69f003db72235bf9e4f4797768709/fflogsapi-1.0.1.tar.gz
+[2023-05-21 15:22:34] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/2b/01/67f0774553562f5ae0a08a3b821df90162bf956d036fab47342f443911f4/code-loader-0.2.8.tar.gz
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/e3/78/05169201f643a58c870ada1b2843c499fe6a45ef8ee2d3e542ce87f33066/fbgemm_gpu_nightly-2023.5.19-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-21 15:22:34] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 283983553>=10485760
+[2023-05-21 15:22:34] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: Downloading https://files.pythonhosted.org/packages/b7/18/fc2c8cfaf70d1e2c894413d3eb0e5efee01f4651df0bb95753a6f00b1584/sigmaSMSApi-0.5.0-py3-none-any.whl
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: Downloading https://files.pythonhosted.org/packages/b7/18/fc2c8cfaf70d1e2c894413d3eb0e5efee01f4651df0bb95753a6f00b1584/sigmaSMSApi-0.5.0-py3-none-any.whl
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fflogsapi]: Downloading https://files.pythonhosted.org/packages/94/75/9761f1766e2366cb3eff97ea6a53141e1be03e41f173b811c91271db7890/fflogsapi-1.1.0.tar.gz
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaSMSApi-0.4.1-py3-none-any.whl.zip tmp/sigmaSMSApi-0.5.0-py3-none-any.whl.zip --markdown 20230521/s/sigmaSMSApi/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [sigmaSMSApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaSMSApi-0.4.1-py3-none-any.whl.zip tmp/sigmaSMSApi-0.5.0-py3-none-any.whl.zip --markdown 20230521/s/sigmaSMSApi/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 15:22:34] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/23/3d/c50351675c5df1eec25c494b3e7b9f9b516c43bd5d3db8cc4447604a8f74/code-loader-0.2.9.tar.gz
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fflogsapi]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [fflogsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fflogsapi-1.0.1.tar.gz tmp/fflogsapi-1.1.0.tar.gz --markdown 20230521/f/fflogsapi/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 15:22:34] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-21 15:22:34] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230521/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 15:22:35] INFO root fetch - main [MainThread]: End processing [sigmaSMSApi]: success
+[2023-05-21 15:22:36] INFO root fetch - main [MainThread]: End processing [sigmaSMSApi]: success
+[2023-05-21 15:22:36] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-21 15:22:36] INFO root fetch - main [MainThread]: End processing [jupyterlab-language-pack-zh-TW]: success
+[2023-05-21 15:22:36] INFO root fetch - main [MainThread]: End processing [fflogsapi]: success
+[2023-05-21 15:22:39] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-21 15:22:39] INFO root fetch - main [MainThread]: Store serial: [18187338]
