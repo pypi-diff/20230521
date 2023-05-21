@@ -4333,3 +4333,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 12:21:43] INFO root fetch - main [MainThread]: End processing [p1monitor]: success
 [2023-05-21 12:21:44] INFO root fetch - main [MainThread]: End processing [normcap]: success
 [2023-05-21 12:21:44] INFO root fetch - main [MainThread]: Store serial: [18186581]
+[2023-05-21 12:26:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186581]
+[2023-05-21 12:26:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 12:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assisted-service-client
+[2023-05-21 12:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-react-admin
+[2023-05-21 12:26:53] INFO root fetch - processPackages [fastapi-react-admin]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-21 12:26:53] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-21 12:26:53] INFO root fetch - processPackages [fastapi-react-admin]: Downloading https://files.pythonhosted.org/packages/9e/34/66d5fa1e9bbba95eaeeaca07f1c24e0122c1192d0b5b55d0b316e9fc57af/fastapi_react_admin-2.0.3.tar.gz
+[2023-05-21 12:26:53] INFO root fetch - processPackages [fastapi-react-admin]: executing diffoscope
+[2023-05-21 12:26:53] INFO root fetch - processPackages [fastapi-react-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_react_admin-2.0.2.tar.gz tmp/fastapi_react_admin-2.0.3.tar.gz --markdown 20230521/f/fastapi-react-admin/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-21 12:26:53] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-21 12:26:53] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230521/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-21 12:26:54] INFO root fetch - main [MainThread]: End processing [fastapi-react-admin]: success
+[2023-05-21 12:26:56] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-21 12:26:56] INFO root fetch - main [MainThread]: Store serial: [18186586]
