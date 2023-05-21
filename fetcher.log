@@ -3476,3 +3476,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:04:21] INFO root fetch - main [MainThread]: End processing [mynacode]: success
 [2023-05-21 10:04:22] INFO root fetch - main [MainThread]: End processing [opensesame-extension-osweb]: success
 [2023-05-21 10:04:22] INFO root fetch - main [MainThread]: Store serial: [18186172]
+[2023-05-21 10:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186172]
+[2023-05-21 10:09:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 10:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gqt
+[2023-05-21 10:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2023-05-21 10:09:31] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230521] Old Version: [0.3.1.dev20230520]
+[2023-05-21 10:09:31] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-21 10:09:31] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/f6/42/c3456a454af46ac77b803ae0357673ff6e3e9cd192e4d707483210b667c5/pyglove-0.3.1.dev20230521.tar.gz
+[2023-05-21 10:09:31] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-05-21 10:09:31] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230520.tar.gz tmp/pyglove-0.3.1.dev20230521.tar.gz --markdown 20230521/p/pyglove/0.3.1.dev20230520-0.3.1.dev20230521/diff.md --exclude *.pyd
+[2023-05-21 10:09:31] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-21 10:09:31] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230521/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-21 10:09:32] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-21 10:09:33] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-05-21 10:09:33] INFO root fetch - main [MainThread]: Store serial: [18186178]
