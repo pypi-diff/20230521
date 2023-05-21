@@ -3108,3 +3108,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
 [2023-05-21 08:49:43] INFO root fetch - main [MainThread]: End processing [je-api-testka]: success
 [2023-05-21 08:49:43] INFO root fetch - main [MainThread]: Store serial: [18185981]
+[2023-05-21 08:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185981]
+[2023-05-21 08:54:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 08:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webuiapi
+[2023-05-21 08:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai-pdf
+[2023-05-21 08:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiosumma
+[2023-05-21 08:54:53] INFO root fetch - processPackages [dreamai-pdf]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-21 08:54:53] INFO root fetch - processPackages [webuiapi]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-21 08:54:53] INFO root fetch - processPackages [aiosumma]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-21 08:54:53] INFO root fetch - processPackages [dreamai-pdf]: Downloading https://files.pythonhosted.org/packages/ad/f1/d99a6ade64dcf5d65ae9367637698f284d2cdbcef586fecb3f8951e66b09/dreamai_pdf-0.0.9.tar.gz
+[2023-05-21 08:54:53] INFO root fetch - processPackages [webuiapi]: Downloading https://files.pythonhosted.org/packages/4f/b2/6c06522e73bd9e619d87fae3c8073663c0536a44302fde8b7390ccae2225/webuiapi-0.8.1-py3-none-any.whl
+[2023-05-21 08:54:53] INFO root fetch - processPackages [webuiapi]: executing diffoscope
+[2023-05-21 08:54:53] INFO root fetch - processPackages [webuiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webuiapi-0.8.0-py3-none-any.whl.zip tmp/webuiapi-0.8.1-py3-none-any.whl.zip --markdown 20230521/w/webuiapi/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-21 08:54:53] INFO root fetch - processPackages [aiosumma]: executing diffoscope
+[2023-05-21 08:54:53] INFO root fetch - processPackages [aiosumma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosumma-2.9.8-py3-none-any.whl.zip tmp/aiosumma-2.9.9-py3-none-any.whl.zip --markdown 20230521/a/aiosumma/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-21 08:54:53] INFO root fetch - processPackages [dreamai-pdf]: Downloading https://files.pythonhosted.org/packages/3c/92/18758c4f2d92b41602c09bf1870d74c83c0690820f13dc7ece8f815b2978/dreamai_pdf-0.1.0.tar.gz
+[2023-05-21 08:54:53] INFO root fetch - processPackages [dreamai-pdf]: executing diffoscope
+[2023-05-21 08:54:53] INFO root fetch - processPackages [dreamai-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_pdf-0.0.9.tar.gz tmp/dreamai_pdf-0.1.0.tar.gz --markdown 20230521/d/dreamai-pdf/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-21 08:54:54] INFO root fetch - main [MainThread]: End processing [webuiapi]: success
+[2023-05-21 08:54:54] INFO root fetch - main [MainThread]: End processing [dreamai-pdf]: success
+[2023-05-21 08:54:55] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
+[2023-05-21 08:54:55] INFO root fetch - main [MainThread]: Store serial: [18185991]
