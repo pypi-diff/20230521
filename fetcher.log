@@ -8626,3 +8626,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:25:56] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/p/pyqint/0.9.7.1-0.9.7.2/diff.md --exclude *.pyd
 [2023-05-21 21:26:19] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2023-05-21 21:26:19] INFO root fetch - main [MainThread]: Store serial: [18188722]
+[2023-05-21 21:31:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188722]
+[2023-05-21 21:31:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 21:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SIOTCommon
+[2023-05-21 21:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiotiktok
+[2023-05-21 21:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: websocket-client
+[2023-05-21 21:31:29] INFO root fetch - processPackages [SIOTCommon]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-21 21:31:29] INFO root fetch - processPackages [aiotiktok]: New version: [2.6] Old Version: [2.5.4]
+[2023-05-21 21:31:29] INFO root fetch - processPackages [websocket-client]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-21 21:31:29] INFO root fetch - processPackages [websocket-client]: Downloading https://files.pythonhosted.org/packages/8b/94/696484b0c13234c91b316bc3d82d432f9b589a9ef09d016875a31c670b76/websocket-client-1.5.1.tar.gz
+[2023-05-21 21:31:29] INFO root fetch - processPackages [aiotiktok]: Downloading https://files.pythonhosted.org/packages/a2/04/36be1685a228aafedeb6959337eff0857a34f96d88fcbc97a3dcaab5b4bb/aiotiktok-2.5.4.tar.gz
+[2023-05-21 21:31:29] INFO root fetch - processPackages [SIOTCommon]: Downloading https://files.pythonhosted.org/packages/05/0a/7bd666d21953f536bc6f09e7f4cf263da99ac0a8a909670f9010cd299236/SIOTCommon-0.1.1.tar.gz
+[2023-05-21 21:31:29] INFO root fetch - processPackages [aiotiktok]: Downloading https://files.pythonhosted.org/packages/30/28/ef2dc072b6c349028f4d1085a0963c305d0dc6e1c05b7f16746310a00cbe/aiotiktok-2.6.tar.gz
+[2023-05-21 21:31:29] INFO root fetch - processPackages [SIOTCommon]: executing diffoscope
+[2023-05-21 21:31:29] INFO root fetch - processPackages [SIOTCommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SIOTCommon-0.1.tar.gz tmp/SIOTCommon-0.1.1.tar.gz --markdown 20230521/S/SIOTCommon/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 21:31:29] INFO root fetch - processPackages [websocket-client]: Downloading https://files.pythonhosted.org/packages/3f/f2/2624e12ef854ee667d92ac5dc7815932095e0852e5ff2b2bf57feda8a11b/websocket-client-1.5.2.tar.gz
+[2023-05-21 21:31:29] INFO root fetch - processPackages [aiotiktok]: executing diffoscope
+[2023-05-21 21:31:29] INFO root fetch - processPackages [aiotiktok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotiktok-2.5.4.tar.gz tmp/aiotiktok-2.6.tar.gz --markdown 20230521/a/aiotiktok/2.5.4-2.6/diff.md --exclude *.pyd
+[2023-05-21 21:31:30] INFO root fetch - processPackages [websocket-client]: executing diffoscope
+[2023-05-21 21:31:30] INFO root fetch - processPackages [websocket-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websocket-client-1.5.1.tar.gz tmp/websocket-client-1.5.2.tar.gz --markdown 20230521/w/websocket-client/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-21 21:31:30] INFO root fetch - main [MainThread]: End processing [SIOTCommon]: success
+[2023-05-21 21:31:31] INFO root fetch - main [MainThread]: End processing [aiotiktok]: success
+[2023-05-21 21:31:31] INFO root fetch - main [MainThread]: End processing [websocket-client]: success
+[2023-05-21 21:31:31] INFO root fetch - main [MainThread]: Store serial: [18188733]
