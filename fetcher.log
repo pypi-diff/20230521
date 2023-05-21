@@ -1712,3 +1712,33 @@
 [2023-05-21 03:56:21] INFO root fetch - main [MainThread]: End processing [allianceauth-securegroups]: success
 [2023-05-21 03:56:21] INFO root fetch - main [MainThread]: End processing [allianceauth-tax-tools]: success
 [2023-05-21 03:56:21] INFO root fetch - main [MainThread]: Store serial: [18185314]
+[2023-05-21 04:01:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185314]
+[2023-05-21 04:01:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 04:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webuiapi
+[2023-05-21 04:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctransformers
+[2023-05-21 04:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysubcipher
+[2023-05-21 04:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hya
+[2023-05-21 04:01:29] INFO root fetch - processPackages [ctransformers]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-21 04:01:29] INFO root fetch - processPackages [hya]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 04:01:29] INFO root fetch - processPackages [pysubcipher]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-21 04:01:29] INFO root fetch - processPackages [webuiapi]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-21 04:01:29] INFO root fetch - processPackages [pysubcipher]: Downloading https://files.pythonhosted.org/packages/1e/fc/17752b0ad4a5f46e82ee1796d71c72637286765370a4dd1188da4a4cb81d/pysubcipher-2.0.0.tar.gz
+[2023-05-21 04:01:29] INFO root fetch - processPackages [hya]: Downloading https://files.pythonhosted.org/packages/88/9f/571983d4a200a868249100d3da4114a5c835aacdbbf14070515553e0e0d0/hya-0.0.8.tar.gz
+[2023-05-21 04:01:29] INFO root fetch - processPackages [webuiapi]: Downloading https://files.pythonhosted.org/packages/c5/04/5752905d81608d9f7fdbb01dc72fcfb6f856bc43d092670d0403f2a382be/webuiapi-0.7.0-py3-none-any.whl
+[2023-05-21 04:01:30] INFO root fetch - processPackages [ctransformers]: Downloading https://files.pythonhosted.org/packages/43/20/fe63f308d9bb863f02812adbb3a1694a98c26f87168d8815bbc7b0ea0f13/ctransformers-0.2.0.tar.gz
+[2023-05-21 04:01:30] INFO root fetch - processPackages [webuiapi]: Downloading https://files.pythonhosted.org/packages/c9/1c/331eaff4fa1a4218b5a71571f52aa1216c941717f2f4e8685aded5bc19a2/webuiapi-0.8.0-py3-none-any.whl
+[2023-05-21 04:01:30] INFO root fetch - processPackages [hya]: Downloading https://files.pythonhosted.org/packages/a8/51/8e6d1eb73bdd5274603284c11b4391db34dcb259f3f103635014308bb051/hya-0.0.9.tar.gz
+[2023-05-21 04:01:30] INFO root fetch - processPackages [webuiapi]: executing diffoscope
+[2023-05-21 04:01:30] INFO root fetch - processPackages [webuiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webuiapi-0.7.0-py3-none-any.whl.zip tmp/webuiapi-0.8.0-py3-none-any.whl.zip --markdown 20230521/w/webuiapi/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-21 04:01:30] INFO root fetch - processPackages [hya]: executing diffoscope
+[2023-05-21 04:01:30] INFO root fetch - processPackages [hya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hya-0.0.8.tar.gz tmp/hya-0.0.9.tar.gz --markdown 20230521/h/hya/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 04:01:30] INFO root fetch - processPackages [pysubcipher]: Downloading https://files.pythonhosted.org/packages/c2/80/b6b33fbab6a2c1fdebe707fae51eb54355bbcec6549d3e6d940bf0004b7a/pysubcipher-2.0.1.tar.gz
+[2023-05-21 04:01:30] INFO root fetch - processPackages [pysubcipher]: executing diffoscope
+[2023-05-21 04:01:30] INFO root fetch - processPackages [pysubcipher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubcipher-2.0.0.tar.gz tmp/pysubcipher-2.0.1.tar.gz --markdown 20230521/p/pysubcipher/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-21 04:01:30] INFO root fetch - processPackages [ctransformers]: executing diffoscope
+[2023-05-21 04:01:30] INFO root fetch - processPackages [ctransformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctransformers-0.1.2.tar.gz tmp/ctransformers-0.2.0.tar.gz --markdown 20230521/c/ctransformers/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 04:01:31] INFO root fetch - main [MainThread]: End processing [webuiapi]: success
+[2023-05-21 04:01:31] INFO root fetch - main [MainThread]: End processing [pysubcipher]: success
+[2023-05-21 04:01:31] INFO root fetch - main [MainThread]: End processing [hya]: success
+[2023-05-21 04:02:07] INFO root fetch - main [MainThread]: End processing [ctransformers]: success
+[2023-05-21 04:02:07] INFO root fetch - main [MainThread]: Store serial: [18185331]
