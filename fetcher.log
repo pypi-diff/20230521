@@ -8337,3 +8337,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:31:48] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
 [2023-05-21 20:32:08] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2023-05-21 20:32:08] INFO root fetch - main [MainThread]: Store serial: [18188587]
+[2023-05-21 20:37:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188587]
+[2023-05-21 20:37:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 20:37:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyRDDLGym
+[2023-05-21 20:37:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prompt-generator
+[2023-05-21 20:37:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reactivated
+[2023-05-21 20:37:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reactivated
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-21 20:37:17] INFO root fetch - processPackages [pyRDDLGym]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-21 20:37:17] INFO root fetch - processPackages [prompt-generator]: New version: [0.2.1] Old Version: [0.2]
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230521/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-21 20:37:17] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230521/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-21 20:37:18] INFO root fetch - processPackages [pyRDDLGym]: Downloading https://files.pythonhosted.org/packages/56/75/8f966535e6f15d790c043909f932376d09027f5838659f45da96e8ac72cb/pyRDDLGym-1.0.4.tar.gz
+[2023-05-21 20:37:18] INFO root fetch - processPackages [prompt-generator]: Downloading https://files.pythonhosted.org/packages/5f/66/205bc6fef35ca45c0cf1300e5ff1f8a4ebde81fb357e87786214abcbd00c/prompt-generator-0.2.tar.gz
+[2023-05-21 20:37:18] INFO root fetch - processPackages [prompt-generator]: Downloading https://files.pythonhosted.org/packages/4a/1a/f907aac857c99621c1af7f098da02bcbb91bb447e9ab984f566c461a4b81/prompt-generator-0.2.1.tar.gz
+[2023-05-21 20:37:18] INFO root fetch - processPackages [pyRDDLGym]: Downloading https://files.pythonhosted.org/packages/3f/74/adef79d28628969450e7cbf3e516f9d1b6bed4fe05f981390f1e548288f7/pyRDDLGym-1.0.5.tar.gz
+[2023-05-21 20:37:18] INFO root fetch - processPackages [prompt-generator]: executing diffoscope
+[2023-05-21 20:37:18] INFO root fetch - processPackages [prompt-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt-generator-0.2.tar.gz tmp/prompt-generator-0.2.1.tar.gz --markdown 20230521/p/prompt-generator/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 20:37:18] INFO root fetch - processPackages [pyRDDLGym]: executing diffoscope
+[2023-05-21 20:37:18] INFO root fetch - processPackages [pyRDDLGym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyRDDLGym-1.0.4.tar.gz tmp/pyRDDLGym-1.0.5.tar.gz --markdown 20230521/p/pyRDDLGym/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-21 20:37:19] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-21 20:37:19] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-21 20:37:19] INFO root fetch - main [MainThread]: End processing [prompt-generator]: success
+[2023-05-21 20:37:20] INFO root fetch - main [MainThread]: End processing [pyRDDLGym]: success
+[2023-05-21 20:37:20] INFO root fetch - main [MainThread]: Store serial: [18188606]
