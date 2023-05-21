@@ -7564,3 +7564,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 18:58:39] INFO root fetch - main [MainThread]: End processing [jarvis4se]: success
 [2023-05-21 18:58:44] INFO root fetch - main [MainThread]: End processing [vvv-rpc-server-update]: success
 [2023-05-21 18:58:44] INFO root fetch - main [MainThread]: Store serial: [18188143]
+[2023-05-21 19:03:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188143]
+[2023-05-21 19:03:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: videosrc
+[2023-05-21 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sherlockpipe
+[2023-05-21 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secrets-env
+[2023-05-21 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rwpp
+[2023-05-21 19:03:54] INFO root fetch - processPackages [videosrc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 19:03:54] INFO root fetch - processPackages [secrets-env]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-21 19:03:54] INFO root fetch - processPackages [rwpp]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-21 19:03:54] INFO root fetch - processPackages [sherlockpipe]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-21 19:03:54] INFO root fetch - processPackages [rwpp]: Downloading https://files.pythonhosted.org/packages/7f/89/024283063cb63cd79ca864a4bc62991103a56385fca5706728667e322bb5/rwpp-0.1.2.tar.gz
+[2023-05-21 19:03:54] INFO root fetch - processPackages [secrets-env]: Downloading https://files.pythonhosted.org/packages/d0/40/079851ea6eb1e83288c07004b0971996976fcef632afb0a328e7cca8a287/secrets_env-0.8.0-py3-none-any.whl
+[2023-05-21 19:03:54] INFO root fetch - processPackages [videosrc]: Downloading https://files.pythonhosted.org/packages/18/a1/77aba52de3b4bfaf17ebda220f149dfb351567c27fdd535a781f71c675ed/videosrc-0.1.9-py3-none-any.whl
+[2023-05-21 19:03:54] INFO root fetch - processPackages [videosrc]: executing diffoscope
+[2023-05-21 19:03:54] INFO root fetch - processPackages [videosrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videosrc-0.1.8-py3-none-any.whl.zip tmp/videosrc-0.1.9-py3-none-any.whl.zip --markdown 20230521/v/videosrc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 19:03:54] INFO root fetch - processPackages [sherlockpipe]: executing diffoscope
+[2023-05-21 19:03:54] INFO root fetch - processPackages [sherlockpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlockpipe-0.9.6.tar.gz tmp/sherlockpipe-0.9.7.tar.gz --markdown 20230521/s/sherlockpipe/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-21 19:03:54] INFO root fetch - processPackages [rwpp]: Downloading https://files.pythonhosted.org/packages/4b/64/e74c36e036496ff2885b809fe9432f37ddef7b9a3ac08ac0f8b636347b01/rwpp-0.1.3.tar.gz
+[2023-05-21 19:03:55] INFO root fetch - processPackages [rwpp]: executing diffoscope
+[2023-05-21 19:03:55] INFO root fetch - processPackages [rwpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwpp-0.1.2.tar.gz tmp/rwpp-0.1.3.tar.gz --markdown 20230521/r/rwpp/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-21 19:03:55] INFO root fetch - processPackages [secrets-env]: Downloading https://files.pythonhosted.org/packages/2c/68/06f6d7814b78d71721223ed0e03e90e48e2959c60319bb23cf0d7fd0eef0/secrets_env-0.9.0.tar.gz
+[2023-05-21 19:03:55] INFO root fetch - processPackages [secrets-env]: executing diffoscope
+[2023-05-21 19:03:55] INFO root fetch - processPackages [secrets-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secrets_env-0.8.0-py3-none-any.whl.zip tmp/secrets_env-0.9.0.tar.gz --markdown 20230521/s/secrets-env/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 19:03:56] INFO root fetch - main [MainThread]: End processing [videosrc]: success
+[2023-05-21 19:03:56] INFO root fetch - main [MainThread]: End processing [sherlockpipe]: success
+[2023-05-21 19:03:56] INFO root fetch - main [MainThread]: End processing [rwpp]: success
+[2023-05-21 19:03:56] INFO root fetch - main [MainThread]: End processing [secrets-env]: success
+[2023-05-21 19:03:56] INFO root fetch - main [MainThread]: Store serial: [18188154]
