@@ -5178,3 +5178,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 14:23:26] INFO root fetch - main [MainThread]: End processing [changedetection.io]: success
 [2023-05-21 14:23:29] INFO root fetch - main [MainThread]: End processing [deepchecks]: success
 [2023-05-21 14:23:29] INFO root fetch - main [MainThread]: Store serial: [18186974]
+[2023-05-21 14:28:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186974]
+[2023-05-21 14:28:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CobWeb-lnx
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolforge-weld
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: t-python-markdown
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: YMS
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ml-hyperparameters
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twilix-python
+[2023-05-21 14:28:38] INFO root fetch - processPackages [twilix-python]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 14:28:38] INFO root fetch - processPackages [toolforge-weld]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-21 14:28:38] INFO root fetch - processPackages [CobWeb-lnx]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-21 14:28:38] INFO root fetch - processPackages [t-python-markdown]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-21 14:28:38] INFO root fetch - processPackages [YMS]: New version: [0.75] Old Version: [0.74]
+[2023-05-21 14:28:38] INFO root fetch - processPackages [ml-hyperparameters]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 14:28:39] INFO root fetch - processPackages [twilix-python]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [twilix-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilix-python-0.0.2.tar.gz tmp/twilix-python-0.0.3.tar.gz --markdown 20230521/t/twilix-python/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 14:28:39] INFO root fetch - processPackages [toolforge-weld]: Downloading https://files.pythonhosted.org/packages/08/74/cefb3cb2b4f760d8fd8b2320c99ca166890d6d4ab83c408de2baed215fc9/toolforge-weld-0.2.0.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [ml-hyperparameters]: Downloading https://files.pythonhosted.org/packages/fa/bf/72934073d2b9bcb31b23801d72a68a353f95267e76c9c898afef95d4f820/ml_hyperparameters-0.0.1.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [t-python-markdown]: Downloading https://files.pythonhosted.org/packages/5d/87/3fba7a49c99161b7d8be25baed9356db884b5de51a2e11d4e56141966cfb/t_python_markdown-1.4.0.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [CobWeb-lnx]: Downloading https://files.pythonhosted.org/packages/c4/d5/07ab5523ca10ffeff573be8efbb51bdee6d9f446acef352be0e3474e0283/CobWeb-lnx-1.0.1.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/92/0a/a29708d319afca6e5dd6a2893e31fb3156d75fab28afcbcdb5f76c9e8337/YMS-0.74.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/41/8a/54ac51dc9416b4c84fd011cb462f32afc6800c44de5bfd02fe3c51259f9b/YMS-0.75.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [ml-hyperparameters]: Downloading https://files.pythonhosted.org/packages/2a/ff/6ede0b914ddfc763207118c0e2102b9f4cb75fed3a74f56c7f9a81df5b07/ml_hyperparameters-0.0.2.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [t-python-markdown]: Downloading https://files.pythonhosted.org/packages/35/5a/9b02308c3575aca1a8aa2332044be0510bff0a66bd611661b60784b0e473/t_python_markdown-1.4.1.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [toolforge-weld]: Downloading https://files.pythonhosted.org/packages/1f/e2/cae700029079bd15c60fb63a20bf7869c9fbbcbe67e7bb545974c6534f06/toolforge-weld-0.2.1.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [CobWeb-lnx]: Downloading https://files.pythonhosted.org/packages/c2/bb/dfeb6e6492ecae39c8f9aa247c56e96c2fdcd47a3c194303a006e07ded2f/CobWeb-lnx-1.1.0.tar.gz
+[2023-05-21 14:28:39] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.74.tar.gz tmp/YMS-0.75.tar.gz --markdown 20230521/Y/YMS/0.74-0.75/diff.md --exclude *.pyd
+[2023-05-21 14:28:39] INFO root fetch - processPackages [t-python-markdown]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [t-python-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t_python_markdown-1.4.0.tar.gz tmp/t_python_markdown-1.4.1.tar.gz --markdown 20230521/t/t-python-markdown/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-21 14:28:39] INFO root fetch - processPackages [CobWeb-lnx]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [CobWeb-lnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CobWeb-lnx-1.0.1.tar.gz tmp/CobWeb-lnx-1.1.0.tar.gz --markdown 20230521/C/CobWeb-lnx/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-21 14:28:39] INFO root fetch - processPackages [toolforge-weld]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [toolforge-weld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolforge-weld-0.2.0.tar.gz tmp/toolforge-weld-0.2.1.tar.gz --markdown 20230521/t/toolforge-weld/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 14:28:39] INFO root fetch - processPackages [ml-hyperparameters]: executing diffoscope
+[2023-05-21 14:28:39] INFO root fetch - processPackages [ml-hyperparameters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_hyperparameters-0.0.1.tar.gz tmp/ml_hyperparameters-0.0.2.tar.gz --markdown 20230521/m/ml-hyperparameters/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 14:28:40] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
+[2023-05-21 14:28:40] INFO root fetch - main [MainThread]: End processing [CobWeb-lnx]: success
+[2023-05-21 14:28:40] INFO root fetch - main [MainThread]: End processing [t-python-markdown]: success
+[2023-05-21 14:28:40] INFO root fetch - main [MainThread]: End processing [ml-hyperparameters]: success
+[2023-05-21 14:28:41] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-21 14:28:41] INFO root fetch - main [MainThread]: End processing [toolforge-weld]: success
+[2023-05-21 14:28:41] INFO root fetch - main [MainThread]: Store serial: [18186992]
