@@ -2559,3 +2559,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:51:16] INFO root fetch - main [MainThread]: End processing [spotify-aac-downloader]: success
 [2023-05-21 06:51:16] INFO root fetch - main [MainThread]: End processing [pysast]: success
 [2023-05-21 06:51:16] INFO root fetch - main [MainThread]: Store serial: [18185666]
+[2023-05-21 06:56:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185666]
+[2023-05-21 06:56:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 06:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-forward
+[2023-05-21 06:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swachhdata
+[2023-05-21 06:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konductor
+[2023-05-21 06:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stmaterial
+[2023-05-21 06:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyreason
+[2023-05-21 06:56:25] INFO root fetch - processPackages [swachhdata]: New version: [1.5.3a1] Old Version: [1.5.2a1]
+[2023-05-21 06:56:25] INFO root fetch - processPackages [openai-forward]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-21 06:56:25] INFO root fetch - processPackages [stmaterial]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-21 06:56:25] INFO root fetch - processPackages [pyreason]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-21 06:56:25] INFO root fetch - processPackages [konductor]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 06:56:25] INFO root fetch - processPackages [swachhdata]: Downloading https://files.pythonhosted.org/packages/3a/78/393e162cfc426342f63686a26597814772e437aa5c2597a81fc4d28c9044/swachhdata-1.5.3a1-py3-none-any.whl
+[2023-05-21 06:56:25] INFO root fetch - processPackages [openai-forward]: Downloading https://files.pythonhosted.org/packages/a9/20/6e774e21d073892a340f45204f347ed265de46f890033d7bbec247164627/openai_forward-0.1.9.tar.gz
+[2023-05-21 06:56:25] INFO root fetch - processPackages [konductor]: Downloading https://files.pythonhosted.org/packages/a1/a2/365f6f2d1fc442453c0d022cb42cb2bff7a6b2c41939ed2485c20a4d5b8d/konductor-0.0.2.tar.gz
+[2023-05-21 06:56:25] INFO root fetch - processPackages [stmaterial]: Downloading https://files.pythonhosted.org/packages/69/c2/9a46917103682e426cbad258d675f24fdbfd120b352f683e2a494df45596/stmaterial-0.0.7.tar.gz
+[2023-05-21 06:56:26] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-21 06:56:26] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-1.5.2a1-py3-none-any.whl.zip tmp/swachhdata-1.5.3a1-py3-none-any.whl.zip --markdown 20230521/s/swachhdata/1.5.2a1-1.5.3a1/diff.md --exclude *.pyd
+[2023-05-21 06:56:26] INFO root fetch - processPackages [pyreason]: Downloading https://files.pythonhosted.org/packages/ff/1c/8c9837076906d69ae97765f62637bed079538ddc4856e48ec3da9a27b633/pyreason-1.5.3.tar.gz
+[2023-05-21 06:56:26] INFO root fetch - processPackages [openai-forward]: Downloading https://files.pythonhosted.org/packages/6c/52/51120488d36beec1da33a03a8c46143d17d19021e0b5f6bb3bcf0684b468/openai_forward-0.2.0.tar.gz
+[2023-05-21 06:56:26] INFO root fetch - processPackages [pyreason]: executing diffoscope
+[2023-05-21 06:56:26] INFO root fetch - processPackages [pyreason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreason-1.5.2.tar.gz tmp/pyreason-1.5.3.tar.gz --markdown 20230521/p/pyreason/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-21 06:56:26] INFO root fetch - processPackages [konductor]: Downloading https://files.pythonhosted.org/packages/88/a2/ae52ef26e5c72cfe56c02b3de5e94bded14227206673223f8e53fcad82d6/konductor-0.0.3.tar.gz
+[2023-05-21 06:56:26] INFO root fetch - processPackages [konductor]: executing diffoscope
+[2023-05-21 06:56:26] INFO root fetch - processPackages [konductor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konductor-0.0.2.tar.gz tmp/konductor-0.0.3.tar.gz --markdown 20230521/k/konductor/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 06:56:26] INFO root fetch - processPackages [openai-forward]: executing diffoscope
+[2023-05-21 06:56:26] INFO root fetch - processPackages [openai-forward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_forward-0.1.9.tar.gz tmp/openai_forward-0.2.0.tar.gz --markdown 20230521/o/openai-forward/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-21 06:56:26] INFO root fetch - processPackages [stmaterial]: Downloading https://files.pythonhosted.org/packages/91/b6/1fa5453ce66b10fcb3aff8a3fd4c88a5065c19e4ab87b5e9f4db972ab9a4/stmaterial-0.0.8.tar.gz
+[2023-05-21 06:56:26] INFO root fetch - processPackages [stmaterial]: executing diffoscope
+[2023-05-21 06:56:26] INFO root fetch - processPackages [stmaterial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stmaterial-0.0.7.tar.gz tmp/stmaterial-0.0.8.tar.gz --markdown 20230521/s/stmaterial/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-21 06:56:27] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-21 06:56:27] INFO root fetch - main [MainThread]: End processing [pyreason]: success
+[2023-05-21 06:56:27] INFO root fetch - main [MainThread]: End processing [openai-forward]: success
+[2023-05-21 06:56:28] INFO root fetch - main [MainThread]: End processing [stmaterial]: success
+[2023-05-21 06:57:09] INFO root fetch - main [MainThread]: End processing [konductor]: success
+[2023-05-21 06:57:09] INFO root fetch - main [MainThread]: Store serial: [18185680]
