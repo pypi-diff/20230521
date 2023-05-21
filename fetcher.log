@@ -6097,3 +6097,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:44:06] INFO root fetch - main [MainThread]: End processing [PyroFork]: success
 [2023-05-21 15:44:20] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-21 15:44:20] INFO root fetch - main [MainThread]: Store serial: [18187419]
+[2023-05-21 15:49:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187419]
+[2023-05-21 15:49:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webscrapbook
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: serial-deserial-lib
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: melnor-bluetooth
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bridgecrew
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-react-admin
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metron-tagger
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tomcru
+[2023-05-21 15:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: atomlite
+[2023-05-21 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pybrary
+[2023-05-21 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Bonsu
+[2023-05-21 15:49:30] INFO root fetch - processPackages [fastapi-react-admin]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [webscrapbook]: New version: [2.0.0b8] Old Version: [1.9.0]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [tomcru]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [serial-deserial-lib]: New version: [0.2] Old Version: [0.1]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [pybrary]: New version: [0.3.0] Old Version: [0.2320.1]
+[2023-05-21 15:49:30] WARNING root fetch - processPackages [atomlite]: Skipping, unable to determine old version
+[2023-05-21 15:49:30] INFO root fetch - processPackages [metron-tagger]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [fastapi-react-admin]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [fastapi-react-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_react_admin-2.0.2.tar.gz tmp/fastapi_react_admin-2.0.3.tar.gz --markdown 20230521/f/fastapi-react-admin/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230521/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - main [MainThread]: End processing [atomlite] error
+[2023-05-21 15:49:30] INFO root fetch - processPackages [tomcru]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [tomcru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomcru-0.2.8.tar.gz tmp/tomcru-0.2.9.tar.gz --markdown 20230521/t/tomcru/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230521/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [Bonsu]: New version: [3.6.2] Old Version: [3.6.1]
+[2023-05-21 15:49:30] INFO root fetch - processPackages [pybrary]: Downloading https://files.pythonhosted.org/packages/48/0b/cd889af2c9e10eb10be54152af2ebd6c5a510f011119cdf20a96b8e6efd5/pybrary-0.2320.1.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [serial-deserial-lib]: Downloading https://files.pythonhosted.org/packages/db/16/f2bad66b914a15bae2fb56b94adc74ffdfac8d967b8b723e7643230494d2/serial_deserial_lib-0.1.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [metron-tagger]: Downloading https://files.pythonhosted.org/packages/02/22/3033850891ade6189e286e1c845b7bfd43b9402f3eb629d0c03e6e5a2bf8/metron_tagger-1.4.3.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-1.9.0.tar.gz tmp/webscrapbook-2.0.0b8.tar.gz --markdown 20230521/w/webscrapbook/1.9.0-2.0.0b8/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [Bonsu]: Downloading https://files.pythonhosted.org/packages/7e/d5/00baa8b17a8f2ae1351e6e0ef49a6d3f36db10a52f5ad54bf37447e8e123/Bonsu-3.6.1.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [serial-deserial-lib]: Downloading https://files.pythonhosted.org/packages/a5/34/7c8b517b40671f7298bf30073dff5388fa3988b4f8a21964d1453eaff322/serial_deserial_lib-0.2.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [metron-tagger]: Downloading https://files.pythonhosted.org/packages/7a/97/c9a3066a04b6452c91331520662ccacb6f3215bdec2aab1bc87ef52936c0/metron_tagger-1.4.4.tar.gz
+[2023-05-21 15:49:30] INFO root fetch - processPackages [pybrary]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [pybrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrary-0.2320.1.tar.gz tmp/pybrary-0.3.0.tar.gz --markdown 20230521/p/pybrary/0.2320.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [serial-deserial-lib]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [serial-deserial-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial_deserial_lib-0.1.tar.gz tmp/serial_deserial_lib-0.2.tar.gz --markdown 20230521/s/serial-deserial-lib/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-21 15:49:30] INFO root fetch - processPackages [metron-tagger]: executing diffoscope
+[2023-05-21 15:49:30] INFO root fetch - processPackages [metron-tagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metron_tagger-1.4.3.tar.gz tmp/metron_tagger-1.4.4.tar.gz --markdown 20230521/m/metron-tagger/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-21 15:49:31] INFO root fetch - processPackages [Bonsu]: Downloading https://files.pythonhosted.org/packages/3b/dc/21825f308109962f24535daef46426f4a1855d137918c63de0529a0a5b6f/Bonsu-3.6.2-cp310-cp310-win_amd64.whl
+[2023-05-21 15:49:31] INFO root fetch - main [MainThread]: End processing [fastapi-react-admin]: success
+[2023-05-21 15:49:31] INFO root fetch - main [MainThread]: End processing [melnor-bluetooth]: success
+[2023-05-21 15:49:31] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-21 15:49:32] INFO root fetch - main [MainThread]: End processing [tomcru]: success
+[2023-05-21 15:49:32] INFO root fetch - main [MainThread]: End processing [pybrary]: success
+[2023-05-21 15:49:32] INFO root fetch - main [MainThread]: End processing [serial-deserial-lib]: success
+[2023-05-21 15:49:32] INFO root fetch - main [MainThread]: End processing [metron-tagger]: success
+[2023-05-21 15:49:33] INFO root fetch - processPackages [Bonsu]: executing diffoscope
+[2023-05-21 15:49:33] INFO root fetch - processPackages [Bonsu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bonsu-3.6.1.tar.gz tmp/Bonsu-3.6.2-cp310-cp310-win_amd64.whl.zip --markdown 20230521/B/Bonsu/3.6.1-3.6.2/diff.md --exclude *.pyd
+[2023-05-21 15:49:34] INFO root fetch - main [MainThread]: End processing [Bonsu]: success
+[2023-05-21 15:49:36] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
+[2023-05-21 15:49:36] INFO root fetch - main [MainThread]: Store serial: [18187458]
