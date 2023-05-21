@@ -6806,3 +6806,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:13:50] INFO root fetch - main [MainThread]: End processing [Shiphelm]: success
 [2023-05-21 17:13:51] INFO root fetch - main [MainThread]: End processing [keksik-api]: success
 [2023-05-21 17:13:51] INFO root fetch - main [MainThread]: Store serial: [18187771]
+[2023-05-21 17:18:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187771]
+[2023-05-21 17:19:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 17:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spiderYa
+[2023-05-21 17:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gb2seq
+[2023-05-21 17:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTkMessagebox
+[2023-05-21 17:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: constrainedlr
+[2023-05-21 17:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-page-blocks
+[2023-05-21 17:19:00] INFO root fetch - processPackages [gb2seq]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-21 17:19:00] INFO root fetch - processPackages [constrainedlr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 17:19:00] INFO root fetch - processPackages [django-page-blocks]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-05-21 17:19:00] INFO root fetch - processPackages [CTkMessagebox]: New version: [2.0] Old Version: [1.80]
+[2023-05-21 17:19:00] INFO root fetch - processPackages [spiderYa]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-21 17:19:00] INFO root fetch - processPackages [gb2seq]: executing diffoscope
+[2023-05-21 17:19:00] INFO root fetch - processPackages [gb2seq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gb2seq-0.2.8.tar.gz tmp/gb2seq-0.2.9.tar.gz --markdown 20230521/g/gb2seq/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-21 17:19:00] INFO root fetch - processPackages [constrainedlr]: Downloading https://files.pythonhosted.org/packages/ae/93/7716fc29c0998052283079d4006b2c02db093a9d5874ec71c8b078b71f8e/constrainedlr-0.0.9.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [django-page-blocks]: Downloading https://files.pythonhosted.org/packages/66/dd/33b346e518a8b605d043b23f202ca3856800b3641c08db0332e3f0152f60/django-page-blocks-0.3.5.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/d0/53/1b88a77e9077aaed255fe2db9fcea7d185f66a8b8fc2f3131b8bedd08134/spiderYa-0.1.2.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [CTkMessagebox]: Downloading https://files.pythonhosted.org/packages/8d/7b/aa8b237d4344de677ec00021e1b70b258e9015b5de6a2c414bf394579d0e/CTkMessagebox-1.80.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [constrainedlr]: executing diffoscope
+[2023-05-21 17:19:00] INFO root fetch - processPackages [constrainedlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constrainedlr-0.0.8.tar.gz tmp/constrainedlr-0.0.9.tar.gz --markdown 20230521/c/constrainedlr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 17:19:00] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-05-21 17:19:00] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.1.1.tar.gz tmp/spiderYa-0.1.2.tar.gz --markdown 20230521/s/spiderYa/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-21 17:19:00] INFO root fetch - processPackages [django-page-blocks]: Downloading https://files.pythonhosted.org/packages/be/2e/5a86239377db3bc4f1f88e3352e7853e1425ce396187a964aa76cc0a2956/django-page-blocks-0.4.0.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [CTkMessagebox]: Downloading https://files.pythonhosted.org/packages/d1/c9/8278d9426ad9b3591d527f5a17a93803f451e1a775388c19d05c5ecbcf75/CTkMessagebox-2.0.tar.gz
+[2023-05-21 17:19:00] INFO root fetch - processPackages [CTkMessagebox]: executing diffoscope
+[2023-05-21 17:19:00] INFO root fetch - processPackages [CTkMessagebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTkMessagebox-1.80.tar.gz tmp/CTkMessagebox-2.0.tar.gz --markdown 20230521/C/CTkMessagebox/1.80-2.0/diff.md --exclude *.pyd
+[2023-05-21 17:19:00] INFO root fetch - processPackages [django-page-blocks]: executing diffoscope
+[2023-05-21 17:19:00] INFO root fetch - processPackages [django-page-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-page-blocks-0.3.5.tar.gz tmp/django-page-blocks-0.4.0.tar.gz --markdown 20230521/d/django-page-blocks/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-05-21 17:19:01] INFO root fetch - main [MainThread]: End processing [constrainedlr]: success
+[2023-05-21 17:19:01] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-05-21 17:19:02] INFO root fetch - main [MainThread]: End processing [CTkMessagebox]: success
+[2023-05-21 17:19:02] INFO root fetch - main [MainThread]: End processing [django-page-blocks]: success
+[2023-05-21 17:19:03] INFO root fetch - main [MainThread]: End processing [gb2seq]: success
+[2023-05-21 17:19:03] INFO root fetch - main [MainThread]: Store serial: [18187785]
