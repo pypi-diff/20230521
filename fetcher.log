@@ -8069,3 +8069,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [seaport]: success
 [2023-05-21 20:03:31] INFO root fetch - main [MainThread]: End processing [hledger-lots]: success
 [2023-05-21 20:03:31] INFO root fetch - main [MainThread]: Store serial: [18188434]
+[2023-05-21 20:08:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188434]
+[2023-05-21 20:08:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipyflow-core
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipyflow
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioratelimits
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-dmidecode
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vvv-rpc-server-update
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xe-admix
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: piperider-nightly
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hugedict
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: RL-OM
+[2023-05-21 20:08:40] INFO root fetch - processPackages [vvv-rpc-server-update]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ipyflow]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [aioratelimits]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ipyflow-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [vvv-rpc-server-update]: executing diffoscope
+[2023-05-21 20:08:40] INFO root fetch - processPackages [vvv-rpc-server-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvv_rpc_server_update-0.0.1-py3-none-any.whl.zip tmp/vvv_rpc_server_update-0.0.2-py3-none-any.whl.zip --markdown 20230521/v/vvv-rpc-server-update/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 20:08:40] INFO root fetch - processPackages [RL-OM]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [xe-admix]: New version: [1.0.9] Old Version: [0.3.1]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [py-dmidecode]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ipyflow]: executing diffoscope
+[2023-05-21 20:08:40] INFO root fetch - processPackages [ipyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-0.0.98.tar.gz tmp/ipyflow-0.0.99.tar.gz --markdown 20230521/i/ipyflow/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 20:08:40] INFO root fetch - processPackages [hugedict]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-21 20:08:40] INFO root fetch - processPackages [aioratelimits]: executing diffoscope
+[2023-05-21 20:08:40] INFO root fetch - processPackages [aioratelimits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioratelimits-0.2.1.tar.gz tmp/aioratelimits-0.2.2.tar.gz --markdown 20230521/a/aioratelimits/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 20:08:41] INFO root fetch - processPackages [xe-admix]: Downloading https://files.pythonhosted.org/packages/da/86/978cf182a55e37d0e6b4a24b799b6ac63d701bb1c3a4643bfbf80468a966/xe-admix-0.3.1.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/67/2e/b8905d54d36ae32c471433ae0be8011b3e8d414576c3b395fff9cfcd1b39/RL_OM-0.0.2.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [py-dmidecode]: Downloading https://files.pythonhosted.org/packages/a7/4c/e4ac478bb3908a13c583a92ee434da96ec9de1e89ed476487fb945fb98c6/py-dmidecode-0.1.0.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [hugedict]: Downloading https://files.pythonhosted.org/packages/d9/ec/67623f8628a4bcad24dd3709e5b462a7b8edc3186d0970efc26ec8dcfcaa/hugedict-2.9.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 20:08:41] INFO root fetch - processPackages [xe-admix]: Downloading https://files.pythonhosted.org/packages/25/a2/88514f08841eeab04e8c5514ee4c8249ca964776033a387d98cac7df2021/xe-admix-1.0.9.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [py-dmidecode]: Downloading https://files.pythonhosted.org/packages/a1/10/def36b230951f538d73cfa891330b5c638b31b19c9dbd5a32f05d7b0f0e6/py_dmidecode-0.1.1.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-21 20:08:41] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230521/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-21 20:08:41] INFO root fetch - processPackages [ipyflow-core]: executing diffoscope
+[2023-05-21 20:08:41] INFO root fetch - processPackages [ipyflow-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-core-0.0.98.tar.gz tmp/ipyflow-core-0.0.99.tar.gz --markdown 20230521/i/ipyflow-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 20:08:41] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/a3/01/5a1679514cecc09c6200918e1265be8e3703f6799cd053985ed17d72f8ed/RL_OM-0.0.3.tar.gz
+[2023-05-21 20:08:41] INFO root fetch - processPackages [py-dmidecode]: executing diffoscope
+[2023-05-21 20:08:41] INFO root fetch - processPackages [py-dmidecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-dmidecode-0.1.0.tar.gz tmp/py_dmidecode-0.1.1.tar.gz --markdown 20230521/p/py-dmidecode/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-21 20:08:41] INFO root fetch - processPackages [xe-admix]: executing diffoscope
+[2023-05-21 20:08:41] INFO root fetch - processPackages [xe-admix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xe-admix-0.3.1.tar.gz tmp/xe-admix-1.0.9.tar.gz --markdown 20230521/x/xe-admix/0.3.1-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 20:08:41] INFO root fetch - processPackages [RL-OM]: executing diffoscope
+[2023-05-21 20:08:41] INFO root fetch - processPackages [RL-OM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RL_OM-0.0.2.tar.gz tmp/RL_OM-0.0.3.tar.gz --markdown 20230521/R/RL-OM/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 20:08:42] INFO root fetch - main [MainThread]: End processing [aioratelimits]: success
+[2023-05-21 20:08:42] INFO root fetch - processPackages [hugedict]: Downloading https://files.pythonhosted.org/packages/92/61/4109a9c0c7bb01eefb965b5b386abacc7d6a554e4c79c6de0bdcb1d32d8a/hugedict-2.9.2-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 20:08:42] INFO root fetch - main [MainThread]: End processing [py-dmidecode]: success
+[2023-05-21 20:08:42] INFO root fetch - main [MainThread]: End processing [ipyflow-core]: success
+[2023-05-21 20:08:43] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
+[2023-05-21 20:08:43] INFO root fetch - main [MainThread]: End processing [xe-admix]: success
+[2023-05-21 20:08:43] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
+[2023-05-21 20:08:43] INFO root fetch - processPackages [hugedict]: executing diffoscope
+[2023-05-21 20:08:43] INFO root fetch - processPackages [hugedict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugedict-2.9.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/hugedict-2.9.2-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230521/h/hugedict/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-05-21 20:08:44] INFO root fetch - main [MainThread]: End processing [vvv-rpc-server-update]: success
+[2023-05-21 20:08:46] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-21 20:09:49] INFO root fetch - main [MainThread]: End processing [hugedict]: success
+[2023-05-21 20:09:49] INFO root fetch - main [MainThread]: Store serial: [18188472]
