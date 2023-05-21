@@ -9780,3 +9780,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:34:39] INFO root fetch - main [MainThread]: End processing [pikaur]: success
 [2023-05-21 23:34:39] INFO root fetch - main [MainThread]: End processing [aligned]: success
 [2023-05-21 23:34:39] INFO root fetch - main [MainThread]: Store serial: [18189427]
+[2023-05-21 23:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189427]
+[2023-05-21 23:39:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taskiq-dependencies
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dpath
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlite-utils
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sktime
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: guidance
+[2023-05-21 23:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: letterboxd-stats
+[2023-05-21 23:39:48] INFO root fetch - processPackages [taskiq-dependencies]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [dpath]: New version: [git-unknown] Old Version: [2.1.6]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [guidance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [sqlite-utils]: New version: [3.9.1] Old Version: [3.9]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [sqlite-utils]: executing diffoscope
+[2023-05-21 23:39:48] INFO root fetch - processPackages [sqlite-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-utils-3.9.tar.gz tmp/sqlite-utils-3.9.1.tar.gz --markdown 20230521/s/sqlite-utils/3.9-3.9.1/diff.md --exclude *.pyd
+[2023-05-21 23:39:48] INFO root fetch - processPackages [letterboxd-stats]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [sktime]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-21 23:39:48] INFO root fetch - processPackages [taskiq-dependencies]: Downloading https://files.pythonhosted.org/packages/c0/ff/1987f72727f40b4c861d3e55912de832e56f21132483b74d64279f17545a/taskiq_dependencies-1.2.3.tar.gz
+[2023-05-21 23:39:48] INFO root fetch - processPackages [guidance]: executing diffoscope
+[2023-05-21 23:39:48] INFO root fetch - processPackages [guidance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guidance-0.0.8.tar.gz tmp/guidance-0.0.9.tar.gz --markdown 20230521/g/guidance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 23:39:48] INFO root fetch - processPackages [dpath]: Downloading https://files.pythonhosted.org/packages/0a/81/044f03129b6006fc594654bb26c22a9417346037261c767ac6e0773ca1dd/dpath-2.1.6.tar.gz
+[2023-05-21 23:39:49] INFO root fetch - processPackages [sktime]: Downloading https://files.pythonhosted.org/packages/14/3c/02b40dd3133f7607421dcc3c5b44747f5bc0f6af14cc7a14e83b686f1ed1/sktime-0.8.1.tar.gz
+[2023-05-21 23:39:49] INFO root fetch - processPackages [letterboxd-stats]: Downloading https://files.pythonhosted.org/packages/4e/1e/447ee6928bc1434639ba60baf141f62e2ca9272efc470c0bcee06f8074d0/letterboxd_stats-0.1.8.tar.gz
+[2023-05-21 23:39:49] INFO root fetch - processPackages [taskiq-dependencies]: Downloading https://files.pythonhosted.org/packages/5d/10/3fa580f9035dff111c84d394f3f8cf994e941150650ea2fab848f854650c/taskiq_dependencies-1.2.4.tar.gz
+[2023-05-21 23:39:49] INFO root fetch - processPackages [dpath]: Downloading https://files.pythonhosted.org/packages/5e/0d/08e94120b3a336e9946304959112a8346a777e14dd9e390762e7905199ae/dpath-git-unknown.tar.gz
+[2023-05-21 23:39:49] INFO root fetch - processPackages [taskiq-dependencies]: executing diffoscope
+[2023-05-21 23:39:49] INFO root fetch - processPackages [taskiq-dependencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq_dependencies-1.2.3.tar.gz tmp/taskiq_dependencies-1.2.4.tar.gz --markdown 20230521/t/taskiq-dependencies/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-21 23:39:49] INFO root fetch - processPackages [dpath]: executing diffoscope
+[2023-05-21 23:39:49] INFO root fetch - processPackages [dpath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpath-2.1.6.tar.gz tmp/dpath-git-unknown.tar.gz --markdown 20230521/d/dpath/2.1.6-git-unknown/diff.md --exclude *.pyd
+[2023-05-21 23:39:49] INFO root fetch - processPackages [letterboxd-stats]: Downloading https://files.pythonhosted.org/packages/7d/c4/7e458386b28cce24839f51edf5be3247e2090f45569b24a28e18acfbbc06/letterboxd_stats-0.1.9.tar.gz
+[2023-05-21 23:39:49] WARNING root fetch - processPackages [sktime]: Skipping package: exceeds size limit 11076866>=10485760
+[2023-05-21 23:39:49] INFO root fetch - main [MainThread]: End processing [sktime] error
+[2023-05-21 23:39:49] INFO root fetch - processPackages [letterboxd-stats]: executing diffoscope
+[2023-05-21 23:39:49] INFO root fetch - processPackages [letterboxd-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letterboxd_stats-0.1.8.tar.gz tmp/letterboxd_stats-0.1.9.tar.gz --markdown 20230521/l/letterboxd-stats/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [guidance]: success
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [taskiq-dependencies]: success
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [sqlite-utils]: success
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [dpath]: success
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [letterboxd-stats]: success
+[2023-05-21 23:39:50] INFO root fetch - main [MainThread]: Store serial: [18189445]
