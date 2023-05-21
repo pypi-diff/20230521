@@ -8741,3 +8741,79 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [ondewo-vtsi-client]: success
 [2023-05-21 21:43:13] INFO root fetch - main [MainThread]: End processing [hydro-raster]: success
 [2023-05-21 21:43:13] INFO root fetch - main [MainThread]: Store serial: [18188776]
+[2023-05-21 21:48:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188776]
+[2023-05-21 21:48:22] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdg
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: XlsxWriter
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manim-voiceover
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mkdpdf
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aa-inactivity
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ubi-reader
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: griptape
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: copul
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tjax
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: djangoldp-tzcld
+[2023-05-21 21:48:22] INFO root fetch - processPackages [mkdpdf]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [ubi-reader]: New version: [0.8.7] Old Version: [0.8.5]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [pdg]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [manim-voiceover]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [aa-inactivity]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [griptape]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [copul]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [XlsxWriter]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [djangoldp-tzcld]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-21 21:48:22] INFO root fetch - processPackages [XlsxWriter]: Downloading https://files.pythonhosted.org/packages/17/00/b99c915fa2118b9a1dd061a5bf82094c843ab481c714c6d826668df834ad/XlsxWriter-3.1.0.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [pdg]: Downloading https://files.pythonhosted.org/packages/54/68/cb652c7484ed9f6022d66cb4315c371dea0dba36d7fd1ede830990694005/pdg-0.0.3.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [aa-inactivity]: Downloading https://files.pythonhosted.org/packages/b4/c4/3fdd69136535f783315608161e9531b0e1d9cdaa4a978f644e24fdc950fe/aa-inactivity-0.1.0a6.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [ubi-reader]: Downloading https://files.pythonhosted.org/packages/9b/01/3d7249f5503ec9a02479115569c404be80c1bd4c907e8f8809b75d7aa1c5/ubi_reader-0.8.5.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [manim-voiceover]: Downloading https://files.pythonhosted.org/packages/01/76/c49b5d8910b0431a50cdd9eb7590cf47c41421ca53ca536b47ab47b6e83b/manim_voiceover-0.3.2.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [mkdpdf]: Downloading https://files.pythonhosted.org/packages/14/95/c883cb28e5b5725dcb30a79b40b4643536592e6a366cf7316968609702dd/mkdpdf-0.2.3.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [copul]: Downloading https://files.pythonhosted.org/packages/ea/74/daee8f71c688fbfcad23203ea2c25f238ed602cf77ac6a39c31df0f1ddb0/copul-0.0.1.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/0a/6a/2363c88006dd7f98956bcd37716a18eff3b3138599af4e6dbde76d22d085/tjax-0.8.4.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [mkdpdf]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [mkdpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdpdf-0.2.2.tar.gz tmp/mkdpdf-0.2.3.tar.gz --markdown 20230521/m/mkdpdf/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [griptape]: Downloading https://files.pythonhosted.org/packages/d3/e7/7c06c5c2173f5e68123d3bdeb9f89c59f9548675ab8e244c9a62bd4cf34d/griptape-0.9.1.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [aa-inactivity]: Downloading https://files.pythonhosted.org/packages/3f/a0/f95613b490a9a490dab5e2535768cad1450893d880b2b08c02324942c118/aa-inactivity-0.1.0a7.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [manim-voiceover]: Downloading https://files.pythonhosted.org/packages/76/8a/db8c8f3f328e34990ee5de22c6ff6542cd748b345587c3e0f9943bf03d01/manim_voiceover-0.3.3.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [griptape]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape-0.9.0.tar.gz tmp/griptape-0.9.1.tar.gz --markdown 20230521/g/griptape/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [ubi-reader]: Downloading https://files.pythonhosted.org/packages/34/7a/e6dd5064b88bc477e210d09dc8a8039602b39a1ed4ede83049d9862dc526/ubi_reader-0.8.7.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [pdg]: Downloading https://files.pythonhosted.org/packages/8d/fe/f74f1359b7a728c5a36b7df25e3f0b570de4cea39cd27f70743bfd719bd5/pdg-0.0.4.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [XlsxWriter]: Downloading https://files.pythonhosted.org/packages/e1/6e/954f509c86b65706c0eb7b6d26723a993c84c8ca5e1ee482c77adeaa8b9e/XlsxWriter-3.1.1.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [copul]: Downloading https://files.pythonhosted.org/packages/14/ed/719f42fb79f12825c3a2461578912c96947867c74e82e2e044898aa2f520/copul-0.0.2.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [djangoldp-tzcld]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [djangoldp-tzcld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_tzcld-1.0.8.tar.gz tmp/djangoldp_tzcld-1.0.9.tar.gz --markdown 20230521/d/djangoldp-tzcld/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [aa-inactivity]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [aa-inactivity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-inactivity-0.1.0a6.tar.gz tmp/aa-inactivity-0.1.0a7.tar.gz --markdown 20230521/a/aa-inactivity/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [manim-voiceover]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [manim-voiceover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim_voiceover-0.3.2.tar.gz tmp/manim_voiceover-0.3.3.tar.gz --markdown 20230521/m/manim-voiceover/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [copul]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [ubi-reader]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [copul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copul-0.0.1.tar.gz tmp/copul-0.0.2.tar.gz --markdown 20230521/c/copul/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [ubi-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubi_reader-0.8.5.tar.gz tmp/ubi_reader-0.8.7.tar.gz --markdown 20230521/u/ubi-reader/0.8.5-0.8.7/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [XlsxWriter]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [XlsxWriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/XlsxWriter-3.1.0.tar.gz tmp/XlsxWriter-3.1.1.tar.gz --markdown 20230521/X/XlsxWriter/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [pdg]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [pdg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdg-0.0.3.tar.gz tmp/pdg-0.0.4.tar.gz --markdown 20230521/p/pdg/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-21 21:48:23] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/be/f1/ce1970f050f673ae52c304257120a380736f531fee4d81b57ab0f24b506f/tjax-0.9.0.tar.gz
+[2023-05-21 21:48:23] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2023-05-21 21:48:23] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20230521/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 21:48:24] INFO root fetch - processPackages [mkdpdf]: Start processing: patchparser
+[2023-05-21 21:48:24] INFO root fetch - main [MainThread]: End processing [mkdpdf]: success
+[2023-05-21 21:48:24] INFO root fetch - processPackages [patchparser]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 21:48:25] INFO root fetch - processPackages [patchparser]: Downloading https://files.pythonhosted.org/packages/f6/62/4bfa3e1067a2b8d64eafa857466e0afe24e5b6f1b79266ec31809f8c1f99/patchparser-0.0.2.tar.gz
+[2023-05-21 21:48:25] INFO root fetch - main [MainThread]: End processing [djangoldp-tzcld]: success
+[2023-05-21 21:48:25] INFO root fetch - processPackages [patchparser]: Downloading https://files.pythonhosted.org/packages/cc/bd/d8d8ba061fa11015f096dc0c126e2da18b2fd41ae70dc2ded317895ea16d/patchparser-0.0.3.tar.gz
+[2023-05-21 21:48:25] INFO root fetch - main [MainThread]: End processing [aa-inactivity]: success
+[2023-05-21 21:48:25] INFO root fetch - processPackages [patchparser]: executing diffoscope
+[2023-05-21 21:48:25] INFO root fetch - processPackages [patchparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patchparser-0.0.2.tar.gz tmp/patchparser-0.0.3.tar.gz --markdown 20230521/p/patchparser/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 21:48:25] INFO root fetch - main [MainThread]: End processing [ubi-reader]: success
+[2023-05-21 21:48:25] INFO root fetch - main [MainThread]: End processing [manim-voiceover]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [pdg]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [copul]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [griptape]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [XlsxWriter]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: End processing [patchparser]: success
+[2023-05-21 21:48:26] INFO root fetch - main [MainThread]: Store serial: [18188807]
