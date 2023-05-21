@@ -1742,3 +1742,18 @@
 [2023-05-21 04:01:31] INFO root fetch - main [MainThread]: End processing [hya]: success
 [2023-05-21 04:02:07] INFO root fetch - main [MainThread]: End processing [ctransformers]: success
 [2023-05-21 04:02:07] INFO root fetch - main [MainThread]: Store serial: [18185331]
+[2023-05-21 04:07:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185331]
+[2023-05-21 04:07:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 04:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xhs
+[2023-05-21 04:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpservice
+[2023-05-21 04:07:22] INFO root fetch - processPackages [xhs]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-21 04:07:22] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-21 04:07:23] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/46/33/caaaef31f910a23d169e082b49eb9992718b54420cefd82b88103449adb7/xhs-0.2.1.tar.gz
+[2023-05-21 04:07:23] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-21 04:07:23] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230521/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-21 04:07:23] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/a0/e8/daa255471557af0b1c8a37bdcec1502e462c86f1b27b20db6572824a325c/xhs-0.2.2.tar.gz
+[2023-05-21 04:07:23] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-05-21 04:07:23] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.2.1.tar.gz tmp/xhs-0.2.2.tar.gz --markdown 20230521/x/xhs/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-21 04:07:24] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-21 04:07:24] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-05-21 04:07:24] INFO root fetch - main [MainThread]: Store serial: [18185339]
