@@ -8845,3 +8845,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 21:53:38] INFO root fetch - main [MainThread]: End processing [arraykit]: success
 [2023-05-21 21:53:43] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
 [2023-05-21 21:53:43] INFO root fetch - main [MainThread]: Store serial: [18188835]
+[2023-05-21 21:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188835]
+[2023-05-21 21:58:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 21:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitchAPI
+[2023-05-21 21:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbrlabs-pulumi-grafana
+[2023-05-21 21:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmake-build-extension
+[2023-05-21 21:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sequana-denovo
+[2023-05-21 21:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agixt
+[2023-05-21 21:58:52] INFO root fetch - processPackages [sequana-denovo]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-21 21:58:52] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: New version: [0.0.9a1676744459] Old Version: [0.0.9]
+[2023-05-21 21:58:52] INFO root fetch - processPackages [twitchAPI]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-21 21:58:52] INFO root fetch - processPackages [agixt]: New version: [1.1.60b0] Old Version: [1.1.59b0]
+[2023-05-21 21:58:52] INFO root fetch - processPackages [cmake-build-extension]: New version: [0.5.2.dev9] Old Version: [0.5.2.dev7]
+[2023-05-21 21:58:52] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: executing diffoscope
+[2023-05-21 21:58:52] INFO root fetch - processPackages [lbrlabs-pulumi-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_grafana-0.0.9.tar.gz tmp/lbrlabs_pulumi_grafana-0.0.9a1676744459.tar.gz --markdown 20230521/l/lbrlabs-pulumi-grafana/0.0.9-0.0.9a1676744459/diff.md --exclude *.pyd
+[2023-05-21 21:58:52] INFO root fetch - processPackages [sequana-denovo]: Downloading https://files.pythonhosted.org/packages/5c/e9/9aa5cc6cba898a728d6edcdab0806b4589ae1b56281904e8c6546b2a125c/sequana_denovo-0.8.5.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/b4/3f/fecc27c0e08d63d3cfcf584241519ca96b43cd4445309d30c5326de2cd00/cmake-build-extension-0.5.2.dev7.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/9c/13/849d8fc706391679e15f3a3fb3b415aae1ec82a3e63b548b9be13a60df62/agixt-1.1.59b0.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [twitchAPI]: Downloading https://files.pythonhosted.org/packages/7b/a8/dc1db9ed672502900adf7c08f5dccb571216010d513d2d656cbcd413e9c0/twitchAPI-3.8.0.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/b7/e6/28b3fb1995400fb588e3147facea237111a7c3cfa8d4f7d84ce0bb45da97/agixt-1.1.60b0.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/c1/66/71805974df31932c541b42f3f67ae5988d26fe89d183f0a071d1ef602ab5/cmake-build-extension-0.5.2.dev9.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [sequana-denovo]: Downloading https://files.pythonhosted.org/packages/f4/f7/96a638943f95ace43243cb2b9c29fa95461717d96eba317f29c7a95ebb64/sequana_denovo-0.9.0.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [twitchAPI]: Downloading https://files.pythonhosted.org/packages/78/a9/8b0e6099e346731917347c5157547d666bd4c7fc88d0810c18b2149ec8ed/twitchAPI-3.9.0.tar.gz
+[2023-05-21 21:58:52] INFO root fetch - processPackages [cmake-build-extension]: executing diffoscope
+[2023-05-21 21:58:52] INFO root fetch - processPackages [cmake-build-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-build-extension-0.5.2.dev7.tar.gz tmp/cmake-build-extension-0.5.2.dev9.tar.gz --markdown 20230521/c/cmake-build-extension/0.5.2.dev7-0.5.2.dev9/diff.md --exclude *.pyd
+[2023-05-21 21:58:53] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 21:58:53] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.59b0.tar.gz tmp/agixt-1.1.60b0.tar.gz --markdown 20230521/a/agixt/1.1.59b0-1.1.60b0/diff.md --exclude *.pyd
+[2023-05-21 21:58:53] INFO root fetch - processPackages [sequana-denovo]: executing diffoscope
+[2023-05-21 21:58:53] INFO root fetch - processPackages [sequana-denovo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequana_denovo-0.8.5.tar.gz tmp/sequana_denovo-0.9.0.tar.gz --markdown 20230521/s/sequana-denovo/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-21 21:58:53] INFO root fetch - processPackages [twitchAPI]: executing diffoscope
+[2023-05-21 21:58:53] INFO root fetch - processPackages [twitchAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitchAPI-3.8.0.tar.gz tmp/twitchAPI-3.9.0.tar.gz --markdown 20230521/t/twitchAPI/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-21 21:58:54] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
+[2023-05-21 21:58:54] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 21:58:54] INFO root fetch - main [MainThread]: End processing [sequana-denovo]: success
+[2023-05-21 21:58:54] INFO root fetch - main [MainThread]: End processing [twitchAPI]: success
+[2023-05-21 21:58:56] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-grafana]: success
+[2023-05-21 21:58:56] INFO root fetch - main [MainThread]: Store serial: [18188875]
