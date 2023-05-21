@@ -5500,3 +5500,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 15:00:31] INFO root fetch - main [MainThread]: End processing [leap-model-rebuilder]: success
 [2023-05-21 15:01:09] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-21 15:01:09] INFO root fetch - main [MainThread]: Store serial: [18187116]
+[2023-05-21 15:06:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187116]
+[2023-05-21 15:06:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dynamicprompts
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sftp-uploader
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: melnor-bluetooth
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typing-aliases
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Fletxible
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: leap-model-parser
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: plugget
+[2023-05-21 15:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-stdlib
+[2023-05-21 15:06:18] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [typing-aliases]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.20] Old Version: [2023.5.19]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230521/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.0] Old Version: [0.1.4]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [typing-aliases]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [typing-aliases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_aliases-1.1.0.tar.gz tmp/typing_aliases-1.1.1.tar.gz --markdown 20230521/t/typing-aliases/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [Fletxible]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230521/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [plugget]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-21 15:06:18] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/b9/71/624f125c25b0e60368f91eff04fb71f0cd76fd45101ae451cfb2f9e03818/fbgemm_gpu_nightly_cpu-2023.5.20-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-21 15:06:18] INFO root fetch - processPackages [dynamicprompts]: Downloading https://files.pythonhosted.org/packages/87/c2/5e3f25854cbb4d864594ad23ba6cb8e3fec7ea1f9019d6212fa5023079f5/dynamicprompts-0.7.0.tar.gz
+[2023-05-21 15:06:18] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/58/42/2effb65e1e5f23e8a7062a543313a3f39c0972473ff117d4a47e799b8563/sftp_uploader-1.0.0.tar.gz
+[2023-05-21 15:06:18] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.97.tar.gz tmp/leap_model_parser-0.1.98.tar.gz --markdown 20230521/l/leap-model-parser/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [Fletxible]: Downloading https://files.pythonhosted.org/packages/2e/a4/26a6bf2dd8b82a4fb94e3ebffa296d0685106eef5603f569691a69af7c02/Fletxible-0.5.2.tar.gz
+[2023-05-21 15:06:18] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-0.1.4.tar.gz tmp/sftp_uploader-1.0.0.tar.gz --markdown 20230521/s/sftp-uploader/0.1.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [plugget]: Downloading https://files.pythonhosted.org/packages/3f/b6/8004adc20260ee17793e986a25ebeda3a2f6b509a329f251fea0b04aabaa/plugget-0.0.7.tar.gz
+[2023-05-21 15:06:18] INFO root fetch - processPackages [Fletxible]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [Fletxible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fletxible-0.5.1.tar.gz tmp/Fletxible-0.5.2.tar.gz --markdown 20230521/F/Fletxible/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-21 15:06:18] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-21 15:06:18] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230521/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-21 15:06:19] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-21 15:06:19] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.19-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.20-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230521/f/fbgemm-gpu-nightly-cpu/2023.5.19-2023.5.20/diff.md --exclude *.pyd
+[2023-05-21 15:06:19] INFO root fetch - processPackages [plugget]: executing diffoscope
+[2023-05-21 15:06:19] INFO root fetch - processPackages [plugget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugget-0.0.6.tar.gz tmp/plugget-0.0.7.tar.gz --markdown 20230521/p/plugget/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-21 15:06:19] INFO root fetch - processPackages [dynamicprompts]: Downloading https://files.pythonhosted.org/packages/ae/0d/5bdf08e801cc2236121d773910b04001eff8837954547fe8990a32ba43cb/dynamicprompts-0.7.1.tar.gz
+[2023-05-21 15:06:19] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-05-21 15:06:19] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230521/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-21 15:06:19] INFO root fetch - processPackages [melnor-bluetooth]: Start processing: vhatable
+[2023-05-21 15:06:19] INFO root fetch - main [MainThread]: End processing [melnor-bluetooth]: success
+[2023-05-21 15:06:19] INFO root fetch - processPackages [vhatable]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-21 15:06:20] INFO root fetch - processPackages [vhatable]: executing diffoscope
+[2023-05-21 15:06:20] INFO root fetch - processPackages [vhatable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vhatable-1.0.1.tar.gz tmp/vhatable-1.0.2.tar.gz --markdown 20230521/v/vhatable/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-21 15:06:20] INFO root fetch - main [MainThread]: End processing [typing-aliases]: success
+[2023-05-21 15:06:20] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-21 15:06:20] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-21 15:06:20] INFO root fetch - main [MainThread]: End processing [Fletxible]: success
+[2023-05-21 15:06:21] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-21 15:06:21] INFO root fetch - main [MainThread]: End processing [plugget]: success
+[2023-05-21 15:06:21] INFO root fetch - main [MainThread]: End processing [dynamicprompts]: success
+[2023-05-21 15:06:21] INFO root fetch - main [MainThread]: End processing [vhatable]: success
+[2023-05-21 15:06:37] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2023-05-21 15:06:50] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-21 15:06:50] INFO root fetch - main [MainThread]: Store serial: [18187153]
