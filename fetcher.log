@@ -3455,3 +3455,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
 [2023-05-21 09:59:11] INFO root fetch - main [MainThread]: End processing [umbridge]: success
 [2023-05-21 09:59:11] INFO root fetch - main [MainThread]: Store serial: [18186163]
+[2023-05-21 10:04:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186163]
+[2023-05-21 10:04:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-21 10:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opensesame-extension-osweb
+[2023-05-21 10:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mynacode
+[2023-05-21 10:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sleepyask
+[2023-05-21 10:04:19] INFO root fetch - processPackages [sleepyask]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-05-21 10:04:20] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-21 10:04:20] INFO root fetch - processPackages [opensesame-extension-osweb]: New version: [2.0.0.0a8] Old Version: [2.0.0.0a7]
+[2023-05-21 10:04:20] INFO root fetch - processPackages [mynacode]: Downloading https://files.pythonhosted.org/packages/1d/24/3d4ef0a0a267fb47bcbac68ff9b760a9b892095f2ee727874f0286d600c3/mynacode-1.0.98-py3-none-any.whl
+[2023-05-21 10:04:20] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/63/f7/07d910e6e11972ab61a1ad7320a70497c5cc740d0f391ea6eed5afd248c0/sleepyask-6.0.1.tar.gz
+[2023-05-21 10:04:20] INFO root fetch - processPackages [opensesame-extension-osweb]: executing diffoscope
+[2023-05-21 10:04:20] INFO root fetch - processPackages [opensesame-extension-osweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame_extension_osweb-2.0.0.0a7.tar.gz tmp/opensesame_extension_osweb-2.0.0.0a8.tar.gz --markdown 20230521/o/opensesame-extension-osweb/2.0.0.0a7-2.0.0.0a8/diff.md --exclude *.pyd
+[2023-05-21 10:04:20] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-05-21 10:04:20] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-6.0.0.tar.gz tmp/sleepyask-6.0.1.tar.gz --markdown 20230521/s/sleepyask/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-05-21 10:04:20] INFO root fetch - processPackages [mynacode]: Downloading https://files.pythonhosted.org/packages/38/32/362f7abef6d28b78afa03843fa2eadc7bb1454ef66bde894a08e281d5bfb/mynacode-1.0.99-py3-none-any.whl
+[2023-05-21 10:04:20] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-21 10:04:20] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230521/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-21 10:04:21] INFO root fetch - main [MainThread]: End processing [sleepyask]: success
+[2023-05-21 10:04:21] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-21 10:04:22] INFO root fetch - main [MainThread]: End processing [opensesame-extension-osweb]: success
+[2023-05-21 10:04:22] INFO root fetch - main [MainThread]: Store serial: [18186172]
