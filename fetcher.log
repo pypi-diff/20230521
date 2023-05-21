@@ -2869,3 +2869,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:07:49] INFO root fetch - main [MainThread]: End processing [miraie-ac]: success
 [2023-05-21 08:07:54] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-21 08:07:54] INFO root fetch - main [MainThread]: Store serial: [18185863]
+[2023-05-21 08:12:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185863]
+[2023-05-21 08:13:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 08:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixt
+[2023-05-21 08:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastjsonschema
+[2023-05-21 08:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dorado
+[2023-05-21 08:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: musicpy
+[2023-05-21 08:13:02] INFO root fetch - processPackages [agixt]: New version: [1.1.56b0] Old Version: [1.1.55b0]
+[2023-05-21 08:13:02] INFO root fetch - processPackages [fastjsonschema]: New version: [2.9] Old Version: [2.8]
+[2023-05-21 08:13:02] WARNING root fetch - processPackages [musicpy]: Skipping, unable to determine old version
+[2023-05-21 08:13:02] INFO root fetch - main [MainThread]: End processing [musicpy] error
+[2023-05-21 08:13:02] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-21 08:13:02] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-21 08:13:02] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230521/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-21 08:13:02] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/9c/b9/391afd849a117fbe4c4e5fb8af9796391e7dee2a142d7d106ed96533959c/agixt-1.1.56b0.tar.gz
+[2023-05-21 08:13:02] INFO root fetch - processPackages [fastjsonschema]: Downloading https://files.pythonhosted.org/packages/50/e7/4f91329b2d8cfbd67493f267372cd9979547b77593cda196dbf0c635b966/fastjsonschema-2.8.tar.gz
+[2023-05-21 08:13:03] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-21 08:13:03] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.55b0.tar.gz tmp/agixt-1.1.56b0.tar.gz --markdown 20230521/a/agixt/1.1.55b0-1.1.56b0/diff.md --exclude *.pyd
+[2023-05-21 08:13:03] INFO root fetch - processPackages [fastjsonschema]: Downloading https://files.pythonhosted.org/packages/b9/3e/e407b4c33853514b949c41582d39c915584bf61de737d67eca3510518b88/fastjsonschema-2.9.tar.gz
+[2023-05-21 08:13:03] INFO root fetch - processPackages [fastjsonschema]: executing diffoscope
+[2023-05-21 08:13:03] INFO root fetch - processPackages [fastjsonschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastjsonschema-2.8.tar.gz tmp/fastjsonschema-2.9.tar.gz --markdown 20230521/f/fastjsonschema/2.8-2.9/diff.md --exclude *.pyd
+[2023-05-21 08:13:04] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-21 08:13:04] INFO root fetch - main [MainThread]: End processing [fastjsonschema]: success
+[2023-05-21 08:13:04] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-21 08:13:04] INFO root fetch - main [MainThread]: Store serial: [18185874]
