@@ -6877,3 +6877,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 17:24:14] INFO root fetch - main [MainThread]: End processing [hledger-args]: success
 [2023-05-21 17:24:14] INFO root fetch - main [MainThread]: End processing [runningz]: success
 [2023-05-21 17:24:14] INFO root fetch - main [MainThread]: Store serial: [18187801]
+[2023-05-21 17:29:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18187801]
+[2023-05-21 17:29:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 17:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shinherpro
+[2023-05-21 17:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keksik-api
+[2023-05-21 17:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: timeblok-py
+[2023-05-21 17:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpulink
+[2023-05-21 17:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tongsuopy-crayon
+[2023-05-21 17:29:23] INFO root fetch - processPackages [tongsuopy-crayon]: New version: [1.0.2b3] Old Version: [1.0.2b2]
+[2023-05-21 17:29:23] INFO root fetch - processPackages [shinherpro]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-21 17:29:23] INFO root fetch - processPackages [gpulink]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-21 17:29:23] INFO root fetch - processPackages [timeblok-py]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-05-21 17:29:23] INFO root fetch - processPackages [keksik-api]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-21 17:29:23] INFO root fetch - processPackages [tongsuopy-crayon]: Downloading https://files.pythonhosted.org/packages/fa/2f/aaecdf1f41293f9e5c897a631381b3034390ff31dc8686f3954f0527a231/tongsuopy_crayon-1.0.2b2-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-21 17:29:23] INFO root fetch - processPackages [gpulink]: Downloading https://files.pythonhosted.org/packages/cf/bc/e3a6c976285b86f6f712d6c67d5a4a60b03d7947ea6e3c0683abba13ac36/gpulink-0.4.1.tar.gz
+[2023-05-21 17:29:23] INFO root fetch - processPackages [keksik-api]: Downloading https://files.pythonhosted.org/packages/55/4e/79aedbe017b7304e7509cf68fd16d84c7ca0c2508114b88d9302b99f1695/keksik_api-0.1.4.tar.gz
+[2023-05-21 17:29:23] INFO root fetch - processPackages [timeblok-py]: Downloading https://files.pythonhosted.org/packages/35/48/bd3ca81c2d5d09a8ea491b07c54aaf5af96eafe1686bbb3e555b004f5679/timeblok_py-0.4.5.tar.gz
+[2023-05-21 17:29:23] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/ba/0d/50b3182988e47ec0358bae385a22025bf847909fde6791d856c7682b9358/shinherpro-1.6.4.tar.gz
+[2023-05-21 17:29:23] INFO root fetch - processPackages [gpulink]: executing diffoscope
+[2023-05-21 17:29:23] INFO root fetch - processPackages [gpulink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpulink-0.4.0.tar.gz tmp/gpulink-0.4.1.tar.gz --markdown 20230521/g/gpulink/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-21 17:29:23] INFO root fetch - processPackages [keksik-api]: executing diffoscope
+[2023-05-21 17:29:23] INFO root fetch - processPackages [keksik-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keksik_api-0.1.3.tar.gz tmp/keksik_api-0.1.4.tar.gz --markdown 20230521/k/keksik-api/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-21 17:29:23] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-21 17:29:23] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.6.3.tar.gz tmp/shinherpro-1.6.4.tar.gz --markdown 20230521/s/shinherpro/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-21 17:29:23] INFO root fetch - processPackages [timeblok-py]: Downloading https://files.pythonhosted.org/packages/11/cd/803993d192fd3fa6a6f9dadb2c83f1aed5332b5239cff06ffa687b09b308/timeblok_py-0.5.0.tar.gz
+[2023-05-21 17:29:23] INFO root fetch - processPackages [timeblok-py]: executing diffoscope
+[2023-05-21 17:29:23] INFO root fetch - processPackages [timeblok-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeblok_py-0.4.5.tar.gz tmp/timeblok_py-0.5.0.tar.gz --markdown 20230521/t/timeblok-py/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-05-21 17:29:23] INFO root fetch - processPackages [tongsuopy-crayon]: Downloading https://files.pythonhosted.org/packages/89/f1/e1de75a3b5c733069be798276704e368d987a56579ec345b5f4a84044acf/tongsuopy_crayon-1.0.2b3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl
+[2023-05-21 17:29:24] INFO root fetch - processPackages [tongsuopy-crayon]: executing diffoscope
+[2023-05-21 17:29:24] INFO root fetch - processPackages [tongsuopy-crayon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tongsuopy_crayon-1.0.2b2-pp39-pypy39_pp73-win_amd64.whl.zip tmp/tongsuopy_crayon-1.0.2b3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.zip --markdown 20230521/t/tongsuopy-crayon/1.0.2b2-1.0.2b3/diff.md --exclude *.pyd
+[2023-05-21 17:29:24] INFO root fetch - main [MainThread]: End processing [gpulink]: success
+[2023-05-21 17:29:24] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-21 17:29:25] INFO root fetch - main [MainThread]: End processing [keksik-api]: success
+[2023-05-21 17:29:25] INFO root fetch - main [MainThread]: End processing [timeblok-py]: success
+[2023-05-21 17:29:25] INFO root fetch - main [MainThread]: End processing [tongsuopy-crayon]: success
+[2023-05-21 17:29:25] INFO root fetch - main [MainThread]: Store serial: [18187823]
