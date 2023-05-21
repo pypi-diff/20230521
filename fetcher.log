@@ -3721,3 +3721,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 10:56:30] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
 [2023-05-21 10:56:30] INFO root fetch - main [MainThread]: End processing [migdalor]: success
 [2023-05-21 10:56:30] INFO root fetch - main [MainThread]: Store serial: [18186278]
+[2023-05-21 11:01:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186278]
+[2023-05-21 11:01:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: irails
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latch-postgres
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textual-fspicker
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: topologicpy
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-naturel-gpt
+[2023-05-21 11:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysubcipher
+[2023-05-21 11:01:38] INFO root fetch - processPackages [latch-postgres]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-21 11:01:38] INFO root fetch - processPackages [textual-fspicker]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 11:01:39] INFO root fetch - processPackages [irails]: New version: [1.3.20] Old Version: [1.3.19]
+[2023-05-21 11:01:39] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-21 11:01:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-05-21 11:01:39] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-05-21 11:01:39] INFO root fetch - processPackages [latch-postgres]: executing diffoscope
+[2023-05-21 11:01:39] INFO root fetch - processPackages [latch-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_postgres-0.1.8.tar.gz tmp/latch_postgres-0.1.9.tar.gz --markdown 20230521/l/latch-postgres/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-21 11:01:39] INFO root fetch - processPackages [pysubcipher]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-05-21 11:01:39] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-05-21 11:01:39] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-05-21 11:01:39] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/5d/98/3bcefc81e3c6cc73e9df8f5979671d13d1f02fd41895488507e21c7ed68d/irails-1.3.20.tar.gz
+[2023-05-21 11:01:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/83/22/4267424d62646a05b1bf473857b77f199f6e40f5e4745fb78060cbf2c8d8/nonebot_plugin_naturel_gpt-2.1.3.tar.gz
+[2023-05-21 11:01:39] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-21 11:01:39] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.19.tar.gz tmp/irails-1.3.20.tar.gz --markdown 20230521/i/irails/1.3.19-1.3.20/diff.md --exclude *.pyd
+[2023-05-21 11:01:39] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/f7/2b/e4022ac75827901fc92269e1b0ec25d040adb6ab11b2f09a33a625f525f1/textual_fspicker-0.0.3-py3-none-any.whl
+[2023-05-21 11:01:39] INFO root fetch - processPackages [textual-fspicker]: executing diffoscope
+[2023-05-21 11:01:39] INFO root fetch - processPackages [textual-fspicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual_fspicker-0.0.2-py3-none-any.whl.zip tmp/textual_fspicker-0.0.3-py3-none-any.whl.zip --markdown 20230521/t/textual-fspicker/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 11:01:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/28/6c/434f1e962bccea43789e0848f48081338d9365168d1f60c50edaf4cd19e2/nonebot_plugin_naturel_gpt-2.1.4.tar.gz
+[2023-05-21 11:01:39] INFO root fetch - processPackages [pysubcipher]: Downloading https://files.pythonhosted.org/packages/d1/47/9d98235e031d9ac966f08afb69dcbafd5f8ea99e5757698cdd3b5e5cb534/pysubcipher-2.1.0.tar.gz
+[2023-05-21 11:01:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: executing diffoscope
+[2023-05-21 11:01:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_naturel_gpt-2.1.3.tar.gz tmp/nonebot_plugin_naturel_gpt-2.1.4.tar.gz --markdown 20230521/n/nonebot-plugin-naturel-gpt/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-05-21 11:01:39] INFO root fetch - processPackages [pysubcipher]: executing diffoscope
+[2023-05-21 11:01:39] INFO root fetch - processPackages [pysubcipher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubcipher-2.0.1.tar.gz tmp/pysubcipher-2.1.0.tar.gz --markdown 20230521/p/pysubcipher/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-05-21 11:01:40] INFO root fetch - main [MainThread]: End processing [latch-postgres]: success
+[2023-05-21 11:01:40] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
+[2023-05-21 11:01:40] INFO root fetch - main [MainThread]: End processing [pysubcipher]: success
+[2023-05-21 11:01:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-naturel-gpt]: success
+[2023-05-21 11:01:42] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-21 11:01:42] INFO root fetch - main [MainThread]: Store serial: [18186294]
