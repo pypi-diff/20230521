@@ -3156,3 +3156,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:00:06] INFO root fetch - main [MainThread]: End processing [autoxx]: success
 [2023-05-21 09:00:06] INFO root fetch - main [MainThread]: End processing [spider-st]: success
 [2023-05-21 09:00:06] INFO root fetch - main [MainThread]: Store serial: [18186004]
+[2023-05-21 09:05:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186004]
+[2023-05-21 09:05:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 09:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-material
+[2023-05-21 09:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2023-05-21 09:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysast
+[2023-05-21 09:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sisaptools
+[2023-05-21 09:05:15] INFO root fetch - processPackages [flet-material]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-21 09:05:15] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-21 09:05:15] INFO root fetch - processPackages [pysast]: New version: [1.1.2a0] Old Version: [1.1.0a0]
+[2023-05-21 09:05:15] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-21 09:05:16] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-21 09:05:16] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230521/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-21 09:05:16] INFO root fetch - processPackages [flet-material]: Downloading https://files.pythonhosted.org/packages/1a/a7/95b07dbf009096b06966186311ffb9011540c615d9257bdb2b408d04cfe5/flet-material-0.3.0.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [sisaptools]: Downloading https://files.pythonhosted.org/packages/96/02/9b4bfd32347388e1847764a78c7a71ec5021f029c567f97a40ad392fbada/sisaptools-1.9.8.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [pysast]: Downloading https://files.pythonhosted.org/packages/e9/8a/0757d7358da70439e488a2388d0449217644a6f585b382072b36563d1716/pysast-1.1.0a0.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [flet-material]: Downloading https://files.pythonhosted.org/packages/3d/19/f1f63ac20506d6396613be2f9bb4e4feae07b7f6129a8272cd736764da70/flet-material-0.3.1.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [sisaptools]: Downloading https://files.pythonhosted.org/packages/fa/b7/9ed03e2a5a0fab512a4b6a72bcb2957691b047981b21811a85b006208ce0/sisaptools-1.9.9.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-21 09:05:16] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230521/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-21 09:05:16] INFO root fetch - processPackages [pysast]: Downloading https://files.pythonhosted.org/packages/b9/eb/c5e9ce4ef7a551ecaa623eb0133070a83da7174b93ae65e727da8d31d7fb/pysast-1.1.2a0.tar.gz
+[2023-05-21 09:05:16] INFO root fetch - processPackages [pysast]: executing diffoscope
+[2023-05-21 09:05:16] INFO root fetch - processPackages [pysast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysast-1.1.0a0.tar.gz tmp/pysast-1.1.2a0.tar.gz --markdown 20230521/p/pysast/1.1.0a0-1.1.2a0/diff.md --exclude *.pyd
+[2023-05-21 09:05:16] INFO root fetch - processPackages [flet-material]: executing diffoscope
+[2023-05-21 09:05:16] INFO root fetch - processPackages [flet-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-material-0.3.0.tar.gz tmp/flet-material-0.3.1.tar.gz --markdown 20230521/f/flet-material/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-21 09:05:17] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-21 09:05:17] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-21 09:05:17] INFO root fetch - main [MainThread]: End processing [pysast]: success
+[2023-05-21 09:05:18] INFO root fetch - main [MainThread]: End processing [flet-material]: success
+[2023-05-21 09:05:18] INFO root fetch - main [MainThread]: Store serial: [18186017]
