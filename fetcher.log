@@ -2769,3 +2769,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ichika]: success
 [2023-05-21 07:36:44] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
 [2023-05-21 07:36:44] INFO root fetch - main [MainThread]: Store serial: [18185771]
+[2023-05-21 07:41:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185771]
+[2023-05-21 07:41:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 07:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-05-21 07:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mosek-license-server
+[2023-05-21 07:41:53] INFO root fetch - processPackages [mosek-license-server]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-21 07:41:53] INFO root fetch - processPackages [vector-vault]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-21 07:41:53] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/29/7e/cb56de12db99964545ca6f17fee78448ff0e3d91ca52cf10b22b0afaf680/mosek_license_server-0.1.2.tar.gz
+[2023-05-21 07:41:53] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/78/1e/7ef0b57ca02a81fdb860882a64839ee429291ba8e8e3a442638561c95ef5/vector_vault-0.1.6.tar.gz
+[2023-05-21 07:41:53] INFO root fetch - processPackages [mosek-license-server]: executing diffoscope
+[2023-05-21 07:41:53] INFO root fetch - processPackages [mosek-license-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosek_license_server-0.1.1.tar.gz tmp/mosek_license_server-0.1.2.tar.gz --markdown 20230521/m/mosek-license-server/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-21 07:41:53] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 07:41:53] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.5.tar.gz tmp/vector_vault-0.1.6.tar.gz --markdown 20230521/v/vector-vault/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-21 07:41:54] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
+[2023-05-21 07:41:54] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 07:41:54] INFO root fetch - main [MainThread]: Store serial: [18185779]
