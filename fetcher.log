@@ -3351,3 +3351,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 09:32:55] INFO root fetch - main [MainThread]: End processing [fschat]: success
 [2023-05-21 09:32:55] INFO root fetch - main [MainThread]: End processing [toollib]: success
 [2023-05-21 09:32:55] INFO root fetch - main [MainThread]: Store serial: [18186095]
+[2023-05-21 09:37:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18186095]
+[2023-05-21 09:38:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 09:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2023-05-21 09:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlflow-tmp
+[2023-05-21 09:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lalsuite
+[2023-05-21 09:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aa-fleetpings
+[2023-05-21 09:38:04] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-21 09:38:04] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-21 09:38:05] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-21 09:38:05] INFO root fetch - processPackages [aa-fleetpings]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-21 09:38:05] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-21 09:38:05] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230521/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-21 09:38:05] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-21 09:38:05] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-21 09:38:05] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-21 09:38:05] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-21 09:38:05] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230521/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-21 09:38:05] INFO root fetch - processPackages [aa-fleetpings]: executing diffoscope
+[2023-05-21 09:38:05] INFO root fetch - processPackages [aa-fleetpings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-fleetpings-2.8.0.tar.gz tmp/aa-fleetpings-2.9.0.tar.gz --markdown 20230521/a/aa-fleetpings/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-21 09:38:06] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-21 09:38:07] INFO root fetch - main [MainThread]: End processing [aa-fleetpings]: success
+[2023-05-21 09:38:09] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-21 09:38:09] INFO root fetch - main [MainThread]: Store serial: [18186123]
