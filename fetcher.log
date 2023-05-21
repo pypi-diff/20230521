@@ -1510,3 +1510,43 @@
 [2023-05-21 03:25:58] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
 [2023-05-21 03:28:21] INFO root fetch - main [MainThread]: End processing [duckdb]: success
 [2023-05-21 03:28:21] INFO root fetch - main [MainThread]: Store serial: [18185185]
+[2023-05-21 03:33:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185185]
+[2023-05-21 03:33:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioregistry
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scotthsieh-projen-statemachine
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starvote
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sweetrpg-api-core
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neon-homeassistant-skill
+[2023-05-21 03:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prompt-optimizer
+[2023-05-21 03:33:30] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [prompt-optimizer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [starvote]: New version: [1.2] Old Version: [1.1]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230521/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-05-21 03:33:30] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230521/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:33:31] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/a5/ff/7d6fb1acc1111270d9f022b30f5db21faf302dfe3a66948e64f17ab6d3a9/starvote-1.2.tar.gz
+[2023-05-21 03:33:31] INFO root fetch - processPackages [prompt-optimizer]: Downloading https://files.pythonhosted.org/packages/82/1c/8a1feae81004c0e9db4476405040e139eb675fb44b6ba9764b0569f39179/prompt_optimizer-0.2.1.tar.gz
+[2023-05-21 03:33:31] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-05-21 03:33:31] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230521/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 03:33:31] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-05-21 03:33:31] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230521/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-21 03:33:31] INFO root fetch - processPackages [prompt-optimizer]: executing diffoscope
+[2023-05-21 03:33:31] INFO root fetch - processPackages [prompt-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_optimizer-0.2.0.tar.gz tmp/prompt_optimizer-0.2.1.tar.gz --markdown 20230521/p/prompt-optimizer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 03:33:31] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-05-21 03:33:31] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230521/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-21 03:33:31] INFO root fetch - processPackages [starvote]: executing diffoscope
+[2023-05-21 03:33:31] INFO root fetch - processPackages [starvote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starvote-1.1.tar.gz tmp/starvote-1.2.tar.gz --markdown 20230521/s/starvote/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-21 03:33:32] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-21 03:33:32] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-05-21 03:33:32] INFO root fetch - main [MainThread]: End processing [neon-homeassistant-skill]: success
+[2023-05-21 03:33:32] INFO root fetch - main [MainThread]: End processing [prompt-optimizer]: success
+[2023-05-21 03:33:32] INFO root fetch - main [MainThread]: End processing [starvote]: success
+[2023-05-21 03:33:34] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-05-21 03:35:31] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-05-21 03:35:31] INFO root fetch - main [MainThread]: Store serial: [18185225]
