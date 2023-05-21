@@ -8364,3 +8364,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 20:37:19] INFO root fetch - main [MainThread]: End processing [prompt-generator]: success
 [2023-05-21 20:37:20] INFO root fetch - main [MainThread]: End processing [pyRDDLGym]: success
 [2023-05-21 20:37:20] INFO root fetch - main [MainThread]: Store serial: [18188606]
+[2023-05-21 20:42:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18188606]
+[2023-05-21 20:42:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 20:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-05-21 20:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnadb
+[2023-05-21 20:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fling-hub
+[2023-05-21 20:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: classifier-free-guidance-pytorch
+[2023-05-21 20:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: x-dgcnn
+[2023-05-21 20:42:29] INFO root fetch - processPackages [vector-vault]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-21 20:42:29] INFO root fetch - processPackages [dnadb]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-21 20:42:29] INFO root fetch - processPackages [x-dgcnn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 20:42:29] INFO root fetch - processPackages [fling-hub]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-05-21 20:42:29] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-21 20:42:29] INFO root fetch - processPackages [x-dgcnn]: executing diffoscope
+[2023-05-21 20:42:29] INFO root fetch - processPackages [x-dgcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-dgcnn-0.0.2.tar.gz tmp/x-dgcnn-0.0.3.tar.gz --markdown 20230521/x/x-dgcnn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 20:42:29] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/17/b9/fc05826395de953c0e977e2d912b94b987478df46e05f2446be9e57e1095/vector_vault-0.2.2.tar.gz
+[2023-05-21 20:42:29] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/69/d8/8fd3756f30ba7ab28ec291a05b5c57e41a668dbcb7c583f6f4e9cd19dff3/dnadb-0.5.0.tar.gz
+[2023-05-21 20:42:29] INFO root fetch - processPackages [fling-hub]: Downloading https://files.pythonhosted.org/packages/65/c1/ba74f6ed11300d0bb4a65ce9270e83824868bb9cffc13b71422f87fc8a67/fling_hub-0.1.3.tar.gz
+[2023-05-21 20:42:29] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: Downloading https://files.pythonhosted.org/packages/be/9e/8c6de8644da61168aae36e0a81ffbb46a5985f12ded44bb5d33e787a9039/classifier-free-guidance-pytorch-0.2.0.tar.gz
+[2023-05-21 20:42:30] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/b4/f1/885e38a9f06cfceb576705aabe03fa026838596137a7534459f6c65edd97/dnadb-0.6.0.tar.gz
+[2023-05-21 20:42:30] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/bd/96/55121390205df51c081bbb777b122d4eeb6880647b97cf383197160b7c5b/vector_vault-0.2.3.tar.gz
+[2023-05-21 20:42:30] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-05-21 20:42:30] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.5.0.tar.gz tmp/dnadb-0.6.0.tar.gz --markdown 20230521/d/dnadb/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-21 20:42:30] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: Downloading https://files.pythonhosted.org/packages/c9/a2/e47ec4fd440b29e71252148eecb7f9fdef6dc2885a6292ff74ac119ecf1d/classifier-free-guidance-pytorch-0.2.1.tar.gz
+[2023-05-21 20:42:30] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-21 20:42:30] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.2.2.tar.gz tmp/vector_vault-0.2.3.tar.gz --markdown 20230521/v/vector-vault/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-21 20:42:30] INFO root fetch - processPackages [fling-hub]: Downloading https://files.pythonhosted.org/packages/5b/7f/6aa447744cc161fad933582d7707ecbdf57d5059142f813149592fe2e0cb/fling_hub-0.1.5.tar.gz
+[2023-05-21 20:42:30] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: executing diffoscope
+[2023-05-21 20:42:30] INFO root fetch - processPackages [classifier-free-guidance-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classifier-free-guidance-pytorch-0.2.0.tar.gz tmp/classifier-free-guidance-pytorch-0.2.1.tar.gz --markdown 20230521/c/classifier-free-guidance-pytorch/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-21 20:42:30] INFO root fetch - processPackages [fling-hub]: executing diffoscope
+[2023-05-21 20:42:30] INFO root fetch - processPackages [fling-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fling_hub-0.1.3.tar.gz tmp/fling_hub-0.1.5.tar.gz --markdown 20230521/f/fling-hub/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-05-21 20:42:30] INFO root fetch - main [MainThread]: End processing [x-dgcnn]: success
+[2023-05-21 20:42:31] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-05-21 20:42:31] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-21 20:42:31] INFO root fetch - main [MainThread]: End processing [classifier-free-guidance-pytorch]: success
+[2023-05-21 20:42:32] INFO root fetch - main [MainThread]: End processing [fling-hub]: success
+[2023-05-21 20:42:32] INFO root fetch - main [MainThread]: Store serial: [18188622]
