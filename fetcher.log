@@ -9819,3 +9819,16 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [dpath]: success
 [2023-05-21 23:39:50] INFO root fetch - main [MainThread]: End processing [letterboxd-stats]: success
 [2023-05-21 23:39:50] INFO root fetch - main [MainThread]: Store serial: [18189445]
+[2023-05-21 23:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18189445]
+[2023-05-21 23:44:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 23:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymap
+[2023-05-21 23:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotbox
+[2023-05-21 23:44:59] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 23:44:59] INFO root fetch - processPackages [pymap]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-21 23:44:59] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-05-21 23:44:59] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230521/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 23:44:59] INFO root fetch - processPackages [pymap]: executing diffoscope
+[2023-05-21 23:44:59] INFO root fetch - processPackages [pymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-0.9.6.tar.gz tmp/pymap-0.9.7.tar.gz --markdown 20230521/p/pymap/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-21 23:45:00] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-05-21 23:45:01] INFO root fetch - main [MainThread]: End processing [pymap]: success
+[2023-05-21 23:45:01] INFO root fetch - main [MainThread]: Store serial: [18189451]
