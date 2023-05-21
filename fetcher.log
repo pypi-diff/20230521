@@ -2794,3 +2794,19 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 07:47:03] INFO root fetch - processPackages [spider-st]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spider-st-0.0.1.tar.gz tmp/spider-st-0.0.3.tar.gz --markdown 20230521/s/spider-st/0.0.1-0.0.3/diff.md --exclude *.pyd
 [2023-05-21 07:47:05] INFO root fetch - main [MainThread]: End processing [spider-st]: success
 [2023-05-21 07:47:05] INFO root fetch - main [MainThread]: Store serial: [18185789]
+[2023-05-21 07:52:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185789]
+[2023-05-21 07:52:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-21 07:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: urllib3-ext-hface
+[2023-05-21 07:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astrometry
+[2023-05-21 07:52:13] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-21 07:52:13] INFO root fetch - processPackages [astrometry]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-05-21 07:52:14] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/2b/13/19217230dc8f71063719f33062c39379d7c4618391e656e0c3b7582d716b/urllib3_ext_hface-0.2.5.tar.gz
+[2023-05-21 07:52:14] INFO root fetch - processPackages [astrometry]: Downloading https://files.pythonhosted.org/packages/7b/d2/dff4be710848a00d3d0101262fe6c4faa7e4a2d753e3246ac26d65500272/astrometry-4.1.1.tar.gz
+[2023-05-21 07:52:14] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-21 07:52:14] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.4.tar.gz tmp/urllib3_ext_hface-0.2.5.tar.gz --markdown 20230521/u/urllib3-ext-hface/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-21 07:52:14] INFO root fetch - processPackages [astrometry]: Downloading https://files.pythonhosted.org/packages/59/24/2f09ddd39bec44444d1a52143c694eec07e31c50257f4d2ad68642453e2e/astrometry-4.1.2-cp39-cp39-musllinux_1_1_x86_64.whl
+[2023-05-21 07:52:15] INFO root fetch - processPackages [astrometry]: executing diffoscope
+[2023-05-21 07:52:15] INFO root fetch - processPackages [astrometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrometry-4.1.1.tar.gz tmp/astrometry-4.1.2-cp39-cp39-musllinux_1_1_x86_64.whl.zip --markdown 20230521/a/astrometry/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-05-21 07:52:15] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-21 07:52:16] INFO root fetch - main [MainThread]: End processing [astrometry]: success
+[2023-05-21 07:52:16] INFO root fetch - main [MainThread]: Store serial: [18185826]
