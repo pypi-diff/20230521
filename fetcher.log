@@ -3040,3 +3040,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 08:39:10] INFO root fetch - processPackages [johnsnowlabs-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_tmp-4.4.5.tar.gz tmp/johnsnowlabs_tmp-4.4.6.tar.gz --markdown 20230521/j/johnsnowlabs-tmp/4.4.5-4.4.6/diff.md --exclude *.pyd
 [2023-05-21 08:39:11] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-tmp]: success
 [2023-05-21 08:39:11] INFO root fetch - main [MainThread]: Store serial: [18185952]
+[2023-05-21 08:44:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185952]
+[2023-05-21 08:44:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-21 08:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: urllib3-ext-hface
+[2023-05-21 08:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaapi-cloud-sdk
+[2023-05-21 08:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: widget-code-input
+[2023-05-21 08:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scorecardpipeline
+[2023-05-21 08:44:20] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-21 08:44:20] INFO root fetch - processPackages [metaapi-cloud-sdk]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-05-21 08:44:20] INFO root fetch - processPackages [scorecardpipeline]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-21 08:44:20] INFO root fetch - processPackages [widget-code-input]: New version: [3.6.2] Old Version: [3.6.1]
+[2023-05-21 08:44:20] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/33/8c/7322724753bc179c29f91be8b4964d5f039c5ca35562b2a8df3301f9a5b0/metaapi_cloud_sdk-9.0.0.tar.gz
+[2023-05-21 08:44:20] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/ac/1b/2d56ccf3b965687c82cf7c91fcf1400278ed63757bf597ad53a95b1f9202/urllib3_ext_hface-0.2.6.tar.gz
+[2023-05-21 08:44:20] INFO root fetch - processPackages [scorecardpipeline]: Downloading https://files.pythonhosted.org/packages/d1/c3/adf8fae10fc7feda8698feb6793d3be9655236c7f613022f4e70ac36e50f/scorecardpipeline-0.1.3.tar.gz
+[2023-05-21 08:44:20] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-21 08:44:20] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.5.tar.gz tmp/urllib3_ext_hface-0.2.6.tar.gz --markdown 20230521/u/urllib3-ext-hface/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-21 08:44:20] INFO root fetch - processPackages [widget-code-input]: Downloading https://files.pythonhosted.org/packages/b8/f8/559b304da98b1ff7675066f601abc362dc0dadb2ee1c481088e77834f6a2/widget_code_input-3.6.2.tar.gz
+[2023-05-21 08:44:20] INFO root fetch - processPackages [scorecardpipeline]: Downloading https://files.pythonhosted.org/packages/b5/24/a05a8bfaaae677f7a04732bf2178d0b80add9e08d22e33583f28b9004834/scorecardpipeline-0.1.4.tar.gz
+[2023-05-21 08:44:20] INFO root fetch - processPackages [widget-code-input]: executing diffoscope
+[2023-05-21 08:44:20] INFO root fetch - processPackages [widget-code-input]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/widget_code_input-3.6.1.tar.gz tmp/widget_code_input-3.6.2.tar.gz --markdown 20230521/w/widget-code-input/3.6.1-3.6.2/diff.md --exclude *.pyd
+[2023-05-21 08:44:20] INFO root fetch - processPackages [scorecardpipeline]: executing diffoscope
+[2023-05-21 08:44:20] INFO root fetch - processPackages [scorecardpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecardpipeline-0.1.3.tar.gz tmp/scorecardpipeline-0.1.4.tar.gz --markdown 20230521/s/scorecardpipeline/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-21 08:44:20] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/fd/e4/b2cb22b3a9fdf7221355894a097d71589eb7a4278d087eb9c6cf2102160a/metaapi_cloud_sdk-9.1.0.tar.gz
+[2023-05-21 08:44:21] INFO root fetch - processPackages [metaapi-cloud-sdk]: executing diffoscope
+[2023-05-21 08:44:21] INFO root fetch - processPackages [metaapi-cloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaapi_cloud_sdk-9.0.0.tar.gz tmp/metaapi_cloud_sdk-9.1.0.tar.gz --markdown 20230521/m/metaapi-cloud-sdk/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-05-21 08:44:21] INFO root fetch - main [MainThread]: End processing [scorecardpipeline]: success
+[2023-05-21 08:44:21] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-21 08:44:25] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-sdk]: success
+[2023-05-21 08:44:32] INFO root fetch - main [MainThread]: End processing [widget-code-input]: success
+[2023-05-21 08:44:32] INFO root fetch - main [MainThread]: Store serial: [18185963]
