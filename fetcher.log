@@ -2487,3 +2487,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-21 06:40:49] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-21 06:40:50] INFO root fetch - main [MainThread]: End processing [pybash]: success
 [2023-05-21 06:40:50] INFO root fetch - main [MainThread]: Store serial: [18185635]
+[2023-05-21 06:45:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185635]
+[2023-05-21 06:45:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-21 06:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: searchcode-cli
+[2023-05-21 06:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nyckel
+[2023-05-21 06:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mcmc-statphys
+[2023-05-21 06:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-openupgrade-scripts
+[2023-05-21 06:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configzen
+[2023-05-21 06:45:58] INFO root fetch - processPackages [mcmc-statphys]: New version: [0.4.2] Old Version: [0.3.0]
+[2023-05-21 06:45:58] INFO root fetch - processPackages [configzen]: New version: [0.1.27] Old Version: [0.1.26]
+[2023-05-21 06:45:58] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-21 06:45:58] INFO root fetch - processPackages [searchcode-cli]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-21 06:45:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [16.0.1.0.0.7] Old Version: [16.0.1.0.0.6]
+[2023-05-21 06:45:59] INFO root fetch - processPackages [mcmc-statphys]: Downloading https://files.pythonhosted.org/packages/bd/15/8f4e4cce833488bd92c04f73a43e4f3924ebdf65261b3d9667fc4e74c2a8/mcmc_statphys-0.3.0.tar.gz
+[2023-05-21 06:45:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/f4/b8/c4ded879ba5c4e996b787b0811f2047cd9955619a3e9cb7e2b844942fc14/odoo_addon_openupgrade_scripts-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-21 06:45:59] INFO root fetch - processPackages [searchcode-cli]: Downloading https://files.pythonhosted.org/packages/73/a0/3f45d529048bf496a18e4ff6942e21955aea8beaeaaaea3c4cd6bfaf10e6/searchcode-cli-2.1.1.tar.gz
+[2023-05-21 06:45:59] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/02/a4/7573f6dfa399b3625a4046a6e8e29c705ed8caf6a12538f68fa1cac0d253/configzen-0.1.27.tar.gz
+[2023-05-21 06:45:59] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-21 06:45:59] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.26.tar.gz tmp/configzen-0.1.27.tar.gz --markdown 20230521/c/configzen/0.1.26-0.1.27/diff.md --exclude *.pyd
+[2023-05-21 06:45:59] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-21 06:45:59] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230521/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-21 06:45:59] INFO root fetch - processPackages [mcmc-statphys]: Downloading https://files.pythonhosted.org/packages/42/6b/80788bd5b3649f5945db229e14747db1f42d31252d65d88140712bfdfee1/mcmc_statphys-0.4.2.tar.gz
+[2023-05-21 06:45:59] INFO root fetch - processPackages [searchcode-cli]: Downloading https://files.pythonhosted.org/packages/08/ba/46948f349e66cf2776731e43a76c5eee4aaa0685ef4be2a6557eb5ac826c/searchcode-cli-2.1.2.tar.gz
+[2023-05-21 06:45:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/5c/a8/85ee714599c3fab831e0904acba84ae7b5c49175973d58d479f00a8d6d5b/odoo_addon_openupgrade_scripts-16.0.1.0.0.7-py3-none-any.whl
+[2023-05-21 06:45:59] INFO root fetch - processPackages [mcmc-statphys]: executing diffoscope
+[2023-05-21 06:45:59] INFO root fetch - processPackages [mcmc-statphys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcmc_statphys-0.3.0.tar.gz tmp/mcmc_statphys-0.4.2.tar.gz --markdown 20230521/m/mcmc-statphys/0.3.0-0.4.2/diff.md --exclude *.pyd
+[2023-05-21 06:45:59] INFO root fetch - processPackages [searchcode-cli]: executing diffoscope
+[2023-05-21 06:45:59] INFO root fetch - processPackages [searchcode-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchcode-cli-2.1.1.tar.gz tmp/searchcode-cli-2.1.2.tar.gz --markdown 20230521/s/searchcode-cli/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-21 06:45:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2023-05-21 06:45:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-16.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230521/o/odoo-addon-openupgrade-scripts/16.0.1.0.0.6-16.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-05-21 06:46:00] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-21 06:46:00] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-21 06:46:00] INFO root fetch - main [MainThread]: End processing [searchcode-cli]: success
+[2023-05-21 06:46:00] INFO root fetch - main [MainThread]: End processing [mcmc-statphys]: success
+[2023-05-21 06:46:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2023-05-21 06:46:06] INFO root fetch - main [MainThread]: Store serial: [18185651]
