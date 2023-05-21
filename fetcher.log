@@ -1826,3 +1826,46 @@
 [2023-05-21 04:29:36] INFO root fetch - main [MainThread]: End processing [segment-geospatial]: success
 [2023-05-21 04:29:36] INFO root fetch - main [MainThread]: End processing [PyDrive2]: success
 [2023-05-21 04:29:36] INFO root fetch - main [MainThread]: Store serial: [18185376]
+[2023-05-21 04:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18185376]
+[2023-05-21 04:34:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wbddh
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-24
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monailabel-weekly
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-plus-26
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iam-actions
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moptipy
+[2023-05-21 04:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk8s-plus-25
+[2023-05-21 04:34:45] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2321] Old Version: [0.5.dev2320]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [wbddh]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [moptipy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230521] Old Version: [1.2.20230520]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-21 04:34:45] INFO root fetch - processPackages [moptipy]: executing diffoscope
+[2023-05-21 04:34:45] INFO root fetch - processPackages [moptipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipy-0.9.8.tar.gz tmp/moptipy-0.9.9.tar.gz --markdown 20230521/m/moptipy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.8.tar.gz tmp/cdk8s-plus-26-2.3.9.tar.gz --markdown 20230521/c/cdk8s-plus-26/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.8.tar.gz tmp/cdk8s-plus-25-2.7.9.tar.gz --markdown 20230521/c/cdk8s-plus-25/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-21 04:34:45] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/a0/4b/b849031a90390996ad51553589cbd2cfd7031f48dfe6566905b793ac2cac/iam_actions-1.2.20230520.tar.gz
+[2023-05-21 04:34:45] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/02/a6/85b10c52840e594c04e75930aad4be388744339ab944fb226f606429bc2b/monailabel_weekly-0.5.dev2320-py3-none-any.whl
+[2023-05-21 04:34:45] INFO root fetch - processPackages [wbddh]: Downloading https://files.pythonhosted.org/packages/71/be/4f36ad0bf363b8f7d428c4fb9e18f48130dcef68081a6f4c0cdc42ae68d7/wbddh-0.0.3-py3-none-any.whl
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-21 04:34:45] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.8.tar.gz tmp/cdk8s-plus-24-2.7.9.tar.gz --markdown 20230521/c/cdk8s-plus-24/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-21 04:34:45] INFO root fetch - processPackages [wbddh]: executing diffoscope
+[2023-05-21 04:34:45] INFO root fetch - processPackages [wbddh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbddh-0.0.2-py3-none-any.whl.zip tmp/wbddh-0.0.3-py3-none-any.whl.zip --markdown 20230521/w/wbddh/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-21 04:34:45] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/9f/0c/ac14089a292274953d6be82ffd4120ba0e2684b88bc01c5a8c5b71bb67b0/iam_actions-1.2.20230521.tar.gz
+[2023-05-21 04:34:46] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-21 04:34:46] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230520.tar.gz tmp/iam_actions-1.2.20230521.tar.gz --markdown 20230521/i/iam-actions/1.2.20230520-1.2.20230521/diff.md --exclude *.pyd
+[2023-05-21 04:34:46] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/7e/c7/6a05ef6b7b52ec495903f0c75221c7499265c3cc3b93847fd3126f45c679/monailabel_weekly-0.5.dev2321-py3-none-any.whl
+[2023-05-21 04:34:46] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-05-21 04:34:46] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230521:/home/abi/fetcher/20230521:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2320-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2321-py3-none-any.whl.zip --markdown 20230521/m/monailabel-weekly/0.5.dev2320-0.5.dev2321/diff.md --exclude *.pyd
+[2023-05-21 04:34:47] INFO root fetch - main [MainThread]: End processing [wbddh]: success
+[2023-05-21 04:34:47] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-21 04:34:47] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-21 04:34:47] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-21 04:34:48] INFO root fetch - main [MainThread]: End processing [moptipy]: success
+[2023-05-21 04:34:49] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-21 04:34:54] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-05-21 04:34:54] INFO root fetch - main [MainThread]: Store serial: [18185395]
